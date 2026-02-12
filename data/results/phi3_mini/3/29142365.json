@@ -1,0 +1,11 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.85,
+  "comment": null,
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "29142365.json"
+}

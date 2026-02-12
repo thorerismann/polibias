@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left with a negative tone towards Bitcoin and financial institutions but remains mostly factual without clear favoritism.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29142365.json"
+}

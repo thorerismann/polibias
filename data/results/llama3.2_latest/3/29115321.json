@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision critique des actions de Donald Trump et des Etats-Unis, soulignant la menace qu'elles représentent pour l'Europe et le système international. Le ton est souvent délibérément accusatoire contre les États-Unis, ce qui confère à l'article un ton nettement gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29115321.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on Swiss winter sports performance, presenting results from skiing, snowboarding, and biathlon. It offers a neutral account of the athletes' achievements and setbacks without explicitly favoring any political viewpoint.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147331.json"
+}

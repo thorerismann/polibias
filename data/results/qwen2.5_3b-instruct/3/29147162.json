@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses regulations aimed at reducing textile waste, but also highlights potential negative impacts on charities and the environmental benefits of such measures.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147162.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "The article focuses on a natural disaster and the political response to it. There is some criticism of government inaction but not overt partisan leaning.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29134931.json"
+}

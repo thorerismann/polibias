@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The subject matter of the article is factual and does not explicitly lean left or right.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29139994.json"
+}

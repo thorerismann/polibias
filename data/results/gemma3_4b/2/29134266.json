@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily critiques the US alliance with Europe, highlighting European skepticism and advocating for greater autonomy. It frames the US as intentionally seeking to undermine the EU, reflecting a critical perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134266.json"
+}

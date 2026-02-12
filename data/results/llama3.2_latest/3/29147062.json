@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "L'article présente une vision néfastre de la Suisse et de son relations avec les Etats-Unis, en faisant des allégations sans preuves contre Karin Keller-Sutter et en soulignant l'influence économique des entreprises suisses sur le pays.\n\nLa mention de cadeaux coûteux apportés au président américain par les représentants suisses est également une manœuvre pour manipuler la perception du public.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147062.json"
+}

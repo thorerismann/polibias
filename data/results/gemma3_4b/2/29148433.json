@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "This article is a simple obituary. It does not present a political viewpoint or favor either side.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148433.json"
+}

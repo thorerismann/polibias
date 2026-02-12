@@ -1,0 +1,11 @@
+{
+  "subject_bias": null,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": "The provided bias scores are based on the content's language and framing rather than explicit political leanings or affiliations.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "29148256.json"
+}

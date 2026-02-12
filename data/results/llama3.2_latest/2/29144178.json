@@ -1,0 +1,11 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une présentation positive de la situation, en soulignant les efforts des autorités pour répondre rapidement aux affaires de maltraitance animale et en mettant en avant l'importance de la vigilance des agriculteurs pour détecter les signes de détresse. Le ton est objectif et informatif.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29144178.json"
+}

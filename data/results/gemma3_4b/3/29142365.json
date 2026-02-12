@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a cryptocurrency market downturn, attributing it to market dynamics and investor behavior. It highlights uncertainty surrounding the US economy and its impact on risk assets, without explicitly endorsing a particular political viewpoint.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29142365.json"
+}

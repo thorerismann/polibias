@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.875,
+  "confidence": 0.9,
+  "comment": "The article shows a clear left-leaning framing and bias towards the Swiss perspective with negative language used when discussing Trump's policies.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147062.json"
+}

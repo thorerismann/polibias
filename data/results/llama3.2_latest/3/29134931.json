@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton critique envers le gouvernement italien pour son handling du glissement de terrain à Niscemi, ce qui donne une orientation légèrement gauche. La couverture met également en avant les conséquences sociales et politiques des dégâts causés par la nature, indiquant une préférence pour l'approche sociale et progressive.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134931.json"
+}

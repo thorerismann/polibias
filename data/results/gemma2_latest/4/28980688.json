@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.1,
+  "confidence": 0.6,
+  "comment": "The article presents a generally neutral view of the Swiss-Iraqi economic relationship. There is a slight leftward lean due to emphasis on development and infrastructure.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "28980688.json"
+}

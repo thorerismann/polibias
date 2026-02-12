@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article is a straightforward announcement of a series of promotional contests and giveaways organized by a Swiss broadcasting company (RTS). It details the rules, prizes, and winners of several competitions, with no discernible political leaning.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29123091.json"
+}

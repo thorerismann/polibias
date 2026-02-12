@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article focuses on a case of alleged exploitation, presenting a sympathetic view of the worker's situation. The inclusion of a legal expert's opinion highlights concerns about systemic issues and insufficient protections.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148256.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the debate against the climate fund, highlighting concerns about debt and ineffective measures. It leans right by emphasizing existing legal frameworks and fiscal responsibility.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29138340.json"
+}

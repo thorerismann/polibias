@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article appears to have a slight left-leaning framing bias due to the focus on economic development and social issues in Iraq; however, it's mostly neutral with minimal subject or treatment biases.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "28980688.json"
+}

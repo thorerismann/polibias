@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article provides a straightforward report on the opening ceremony, focusing on the events and participants. It includes mentions of key figures like Giorgio Armani and political leaders, indicating a relatively neutral but slightly positive framing towards the event and Italian leadership.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29142442.json"
+}

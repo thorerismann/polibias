@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents factual information about a specific calendar phenomenon with no discernible political slant.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29139994.json"
+}

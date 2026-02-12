@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the situation, acknowledging both Ukrainian and US perspectives regarding elections in Ukraine. It highlights challenges and public opinion regarding holding elections amidst the ongoing conflict.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148270.json"
+}

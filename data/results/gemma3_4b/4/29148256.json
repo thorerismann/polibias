@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.4,
+  "confidence": 0.8,
+  "comment": "The article focuses on a case of alleged exploitation and highlights legal challenges to a Swiss practice. The framing leans slightly towards criticizing the system and offering a sympathetic perspective on the worker's situation, while the legal expert's comments emphasize the need for stronger protections.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148256.json"
+}

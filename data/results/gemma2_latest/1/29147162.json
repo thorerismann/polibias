@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.6,
+  "comment": "The article focuses on EU regulations to reduce textile waste, presenting both supporting and critical viewpoints. Framing leans slightly left due to emphasis on environmental concerns.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29147162.json"
+}

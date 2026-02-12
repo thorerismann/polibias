@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article focuses on a natural disaster in Italy, questioning the negligence and delay in identifying and addressing potential risks. The tone is predominantly critical towards government actions and infrastructure projects.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29134931.json"
+}

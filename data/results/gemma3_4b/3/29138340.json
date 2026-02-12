@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the debate as opposing a climate fund, highlighting concerns about debt and ineffective spending. It favors the perspective of those opposing the initiative, particularly Simone de Montmollin, while presenting the proponents' arguments with skepticism.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29138340.json"
+}

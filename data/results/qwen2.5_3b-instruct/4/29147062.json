@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "The article is left-leaning in its subject selection and framing, focusing on the trade deficit with Switzerland and Trump's interactions with the Swiss leadership.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147062.json"
+}

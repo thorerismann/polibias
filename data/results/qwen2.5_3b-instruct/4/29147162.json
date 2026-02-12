@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article discusses a proposed EU regulation on textile waste but also highlights concerns from NGOs about its potential negative impacts on charities, presenting an uneven treatment of perspectives.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147162.json"
+}

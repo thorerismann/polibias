@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.2,
+  "confidence": 0.95,
+  "comment": "The article maintains a mostly neutral tone with slight leanings towards the left through positive language for Swiss skiers' accomplishments.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147304.json"
+}

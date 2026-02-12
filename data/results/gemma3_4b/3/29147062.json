@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on Donald Trump's perspective and criticisms of the Swiss economy, framing the situation as benefiting from US trade deals. It highlights Trump's statements and US-Switzerland agreements, giving a favorable impression to the US perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147062.json"
+}

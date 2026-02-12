@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "L'article présente une perspective globale sur les relations économiques entre l'Irak et la Suisse, soulignant l'importance de partenariats économiques pour le développement irakien. La représentation des opinions variées, notamment celle de Rasha Oudeh et Mohammed al Najar, ajoute un équilibre à la narration.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "28980688.json"
+}

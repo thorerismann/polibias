@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on the Swiss government's response to a fire and its impact on victims. The language is neutral and objective.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29147656.json"
+}

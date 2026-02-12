@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.25,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a balanced view with no clear bias towards left or right, but has slightly tilted framing and treatment in favor of Switzerland and the business ecosystem within Iraq.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "28980688.json"
+}

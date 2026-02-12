@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the natural disaster and its consequences, with a slight emphasis on the government's response and the need for preventative measures. It highlights concerns about past negligence and the potential for future damage.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134931.json"
+}

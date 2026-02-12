@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article provides a neutral overview of Swiss winter sports performances at the 2026 Olympics. It covers skiing, snowboarding, and biathlon, highlighting successes and failures of Swiss athletes alongside international competitors.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147331.json"
+}

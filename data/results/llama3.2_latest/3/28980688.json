@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.6,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre, mais les citations de politiciens irakiens et suisses ont une légère orientation à droite en raison des expressions utilisées (par exemple \"l’Irak dispose chaque année d’environ 150 milliards de revenus pétroliers\"). La dynamique économique entre l'Irak et la Suisse est présentée comme positive, ce qui suggère un angle favorable à la politique économique suisse.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "28980688.json"
+}

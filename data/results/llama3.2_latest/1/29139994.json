@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0,
+  "framing_bias": 0,
+  "treatment_bias": 0,
+  "guests_bias": 0,
+  "confidence": 1.0,
+  "comment": "L&#39;article présente un sujet neutre, sans indication de préférence politique. La formulation du texte est objective et informative.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29139994.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision critique du système de travail en Suisse et souligne les absences de protection pour les travailleurs immigrés. Le ton est generally neutre, mais avec quelques écho de critique des politiques gouvernementales.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148256.json"
+}

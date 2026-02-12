@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article uses mostly neutral language with slight left-leaning framing when discussing the calendar system.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29139994.json"
+}

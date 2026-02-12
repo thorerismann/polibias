@@ -1,0 +1,11 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article displays a consistent left-leaning bias with strong criticism of US foreign policy and skepticism towards the military alliance with Europe.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29134266.json"
+}

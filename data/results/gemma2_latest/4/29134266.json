@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article focuses on European concerns regarding US influence and NATO. The framing is critical of US actions while presenting Europe in a more sympathetic light.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29134266.json"
+}

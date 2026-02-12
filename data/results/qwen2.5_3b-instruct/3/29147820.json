@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses the increase in disability benefits and proposes measures to support young adults, showing a left-leaning approach towards social welfare reforms.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147820.json"
+}

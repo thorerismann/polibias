@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article shows a slight left bias in topic selection and framing with negative treatment of right-leaning policies towards victims' aid; guests are not politically charged.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147656.json"
+}

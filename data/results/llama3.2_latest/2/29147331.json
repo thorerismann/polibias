@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.05,
+  "guests_bias": -0.01,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton relativement neutre, mais avec une légère prédominance de termes positives pour les athlètes suisses. La discussion sur la qualification des Suissesses en snowboard halfpipe est présentée comme une affaire majeure, ce qui pourrait suggérer une certaine partialité à l'égard du pays.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147331.json"
+}

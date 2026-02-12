@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical perspective on the US-Europe relationship, highlighting concerns about dependence and potential American disinterest in European stability. It leans towards a skeptical view of US intentions and advocates for European autonomy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134266.json"
+}

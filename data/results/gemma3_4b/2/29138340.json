@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article predominantly frames the issue as a debate against climate protection, leaning towards skepticism regarding the initiative. It critiques the initiative's funding mechanism and potential for debt, while highlighting existing legal frameworks and a cautious approach to spending.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29138340.json"
+}

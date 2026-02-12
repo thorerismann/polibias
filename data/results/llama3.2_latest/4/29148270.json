@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision plus nuancée de la situation, soulignant les obstacles et les défis face à l'organisation d'un vote en temps de guerre. La mention des opinions divergentes sur le sujet du cessez-le-feu et des garanties de sécurité suggère un approche plus équilibrée.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148270.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.4,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article discusses EU regulations on textile waste, framing it as a response to consumer concerns and promoting circular practices. It highlights concerns from a representative of a charity sector, suggesting a critical perspective on the potential impact of the regulations.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147162.json"
+}

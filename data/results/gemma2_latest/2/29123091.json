@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article describes a promotional contest for the Winter Olympics. No discernible political leanings or bias.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29123091.json"
+}

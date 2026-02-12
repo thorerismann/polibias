@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.1,
+  "confidence": 0.6,
+  "comment": "The article presents both sides of the argument regarding a climate fund initiative in Switzerland. However, it gives more attention and platform to the opposing viewpoint, potentially influencing reader perception.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29138340.json"
+}

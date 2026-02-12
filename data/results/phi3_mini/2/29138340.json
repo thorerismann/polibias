@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article seems to present a left-leaning perspective on the initiative against climate change funding in Switzerland by favoring current efforts and highlighting potential drawbacks of increased spending through taxes or endorsement funds. It does not provide equal consideration for both sides.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29138340.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.15,
+  "guests_bias": -0.01,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton légèrement critique envers les Suisses, mais sans attaque spécifique contre Franjo von Allmen. La mention de 'moisson historique' suggère également une certaine amélioration de la performance du skieur.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147304.json"
+}

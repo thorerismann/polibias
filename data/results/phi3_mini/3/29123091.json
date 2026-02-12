@@ -1,0 +1,11 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.7,
+  "comment": "The article appears to lean slightly towards the left with its promotion of a grassroots-style competition and community engagement but maintains a neutral framing overall.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "29123091.json"
+}

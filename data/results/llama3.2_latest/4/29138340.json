@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.25,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Le texte contient des éléments de framing et de traitement qui suggèrent une certaine préservation de la dynamique politique suisse, ce qui pourrait être interprété comme un favorisant de l'extrême droite, toutefois le sujet évoqué est une question très sensible et politiquement chargée en Suisse, avec des partisans et opposants marqués. La prise de position de la conseillère nationale sur ce sujet est plus favorable à la réforme du système fiscal suisse et à la protection climatique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29138340.json"
+}

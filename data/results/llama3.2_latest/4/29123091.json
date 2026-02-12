@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un concours de ski et de week-end en hiver sans mentionner explicitement les politiques ou les idéologies des sponsoring, ce qui suggère une approche neutre.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29123091.json"
+}

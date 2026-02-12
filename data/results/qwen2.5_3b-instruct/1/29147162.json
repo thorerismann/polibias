@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article discusses a proposed European Union regulation to reduce textile waste and improve environmental conditions, but also highlights concerns about potential adverse effects on charitable organizations.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147162.json"
+}

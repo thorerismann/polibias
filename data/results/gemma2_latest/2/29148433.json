@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "This is a straightforward obituary with no discernible political leanings. The tone is respectful and focuses on the deceased's personal life.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29148433.json"
+}

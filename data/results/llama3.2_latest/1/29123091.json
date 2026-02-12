@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et ne contient aucune mention de parti politique. Les informations sur les gagnants et les prix sont fournies sans anymneie politiques.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29123091.json"
+}

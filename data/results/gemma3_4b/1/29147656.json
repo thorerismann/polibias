@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses government aid and legal recourse for victims of a tragic fire, presenting a neutral overview of the situation and proposed solutions. It focuses on the financial support and legal frameworks being implemented, without explicitly favoring a particular political stance.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147656.json"
+}

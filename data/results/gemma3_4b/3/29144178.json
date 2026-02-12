@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.3,
+  "confidence": 0.7,
+  "comment": "The article focuses on a local agricultural incident involving animal neglect, presenting both the farmer's perspective and the authorities' response. It highlights concerns about preventative measures and increased scrutiny within the agricultural sector.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29144178.json"
+}

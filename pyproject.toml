@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polibias"
+version = "0.1.0"
+description = "Political bias scoring of news articles using local LLMs (Ollama)."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "pandas>=2.0",
+    "requests>=2.31",
+    "plotly>=5.18",
+    "streamlit>=1.30",
+]
+
+[project.optional-dependencies]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=2.0",
+    "myst-parser>=3.0",
+]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[project.scripts]
+polibias = "polibias.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+polibias = ["prompt.md"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

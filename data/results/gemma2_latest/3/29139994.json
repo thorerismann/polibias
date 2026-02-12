@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is purely factual and presents information about calendar configurations. There is no discernible political lean.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29139994.json"
+}

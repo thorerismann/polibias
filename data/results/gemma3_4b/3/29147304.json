@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article focuses on Swiss skiers' performance at the Olympics, highlighting successes and disappointments. It predominantly celebrates Franjo von Allmen's achievements and contributions to Swiss ski history.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147304.json"
+}

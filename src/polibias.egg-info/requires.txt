@@ -1,0 +1,14 @@
+beautifulsoup4>=4.12
+pandas>=2.0
+requests>=2.31
+plotly>=5.18
+streamlit>=1.30
+
+[dev]
+pytest>=8.0
+ruff>=0.4
+
+[docs]
+sphinx>=7.0
+sphinx-rtd-theme>=2.0
+myst-parser>=3.0

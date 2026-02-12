@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article mostly leans left due to its focus on environmental concerns and criticism of the fast fashion industry's impact. The framing bias score reflects a slightly more critical tone towards right-leaning entities if any were mentioned.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147162.json"
+}

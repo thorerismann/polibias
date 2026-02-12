@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article reports on government aid to victims of a fire, with no clear political slant.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29147656.json"
+}

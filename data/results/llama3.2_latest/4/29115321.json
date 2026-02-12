@@ -1,0 +1,11 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 1.0,
+  "comment": "L'article présente une vision très critique de la politique américaine et sa relation avec l'Europe, ce qui suggère un bias à gauche. Le ton est souvent sarcastique et critique envers les décisions américaines, notamment celles de Donald Trump. Les experts invités sont également présentés comme des critiques de la politique américaine.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29115321.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.75,
+  "framing_bias": -0.75,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article consistently portrays the initiative in a negative light, highlighting its potential drawbacks and criticizing the Swiss political system's ability to address climate issues.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29138340.json"
+}

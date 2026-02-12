@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article is generally neutral in its subject selection and framing, but leans slightly towards the left with respect to treatment of athletes from various countries and guests at the ceremony.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29142442.json"
+}

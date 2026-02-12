@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0,
+  "framing_bias": 0,
+  "treatment_bias": 0,
+  "guests_bias": 0,
+  "confidence": 1,
+  "comment": "L'article présente une analyse objective des calendriers et de la durée du mois parfait, sans mentionner d'opinion politique. L'information est présentée de manière neutre et informative.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29139994.json"
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+polibias = polibias.__main__:main

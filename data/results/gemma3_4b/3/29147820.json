@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a Swiss government proposal regarding disability benefits and workforce integration, primarily focusing on supporting young adults. It highlights concerns about rising disability claims among young people and proposes measures to address the issue.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147820.json"
+}

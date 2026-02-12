@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses the challenges faced by victims and their families in Switzerland, emphasizing the need for better support systems and agreements to avoid lengthy legal processes.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147656.json"
+}

@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article provides a straightforward report on the opening ceremony of the Winter Olympics, focusing on the events and attendees. There's a slight positive framing towards the Italian hosts and the event's cultural aspects.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29142442.json"
+}

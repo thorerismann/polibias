@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "La cérémonie d'ouverture des Jeux de Milan Cortina 2026 a été marquée par une ambiance paixfulle et harmonique, avec un message de paix et d'harmonie entre les cultures. La direction artistique a été confiée à Marco Ballich, qui a répondu aux attentes en présentant une cérémonie moins clivante et moins coûteuse que celle de Paris.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29142442.json"
+}

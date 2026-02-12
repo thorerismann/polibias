@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": -0.05,
+  "guests_bias": 0,
+  "confidence": 0.6,
+  "comment": "L'article présente une analyse neutre des événements, mais une légère tendance à la droite apparaît dans les déclarations de la Première ministre Giorgia Meloni.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134931.json"
+}

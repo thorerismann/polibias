@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a factual account of the 1951 Swiss avalanches. There is no discernible political leaning in the subject matter, tone, or treatment of sources.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29144921.json"
+}

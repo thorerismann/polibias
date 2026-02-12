@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.25,
+  "confidence": 0.8,
+  "comment": "L'initiative pour un fonds climat est présentée comme une menace pour la stabilité financière de la Suisse, ce qui peut être considéré comme une manœuvre politique. La conseillère nationale Simone de Montmollin présente des arguments contre l'initiative en soulignant les coûts et les risques pour le futur des générations.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29138340.json"
+}

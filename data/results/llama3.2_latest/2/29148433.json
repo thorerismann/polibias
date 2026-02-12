@@ -1,0 +1,11 @@
+{
+  "subject_bias": 0,
+  "framing_bias": -1,
+  "treatment_bias": -1,
+  "guests_bias": 0,
+  "confidence": 0,
+  "comment": "The article presents a sympathetic tone towards the late James David Van Der Beek, highlighting his courage and dignity in the face of cancer. The language used is generally positive and respectful.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148433.json"
+}

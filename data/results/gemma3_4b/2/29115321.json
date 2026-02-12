@@ -1,0 +1,11 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "The article heavily frames the US actions as destabilizing and hostile to Europe, emphasizing threats from Trump and Russia. It predominantly treats the US perspective as negative, highlighting their attempts to dismantle the EU and undermine democratic institutions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29115321.json"
+}
