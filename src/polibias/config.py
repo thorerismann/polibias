@@ -11,6 +11,7 @@ Configuration values are accessed via attributes or properties::
 
 from __future__ import annotations
 
+import hashlib
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List
@@ -30,8 +31,11 @@ class Settings:
     # ---- runtime params ----
     runs: int = 4
     timeout: int = 200
+    scrape_timeout: int = 30
     parse_retries: int = 2
-    ollama_url: str = "http://127.0.0.1:11434/api/generate"
+    max_workers: int = 4
+    max_article_chars: int = 6000
+    ollama_host: str = "http://127.0.0.1:11434"
 
     models: List[str] = field(default_factory=lambda: [
         "llama3.2:latest",
@@ -69,6 +73,14 @@ class Settings:
         return self.data_dir / "errors"
 
     @property
+    def stats_csv_path(self) -> Path:
+        return self.data_dir / "stats_report.csv"
+
+    @property
+    def report_html_path(self) -> Path:
+        return self.data_dir / "report.html"
+
+    @property
     def bias_csv_path(self) -> Path:
         return self.data_dir / "bias_data.csv"
 
@@ -95,6 +107,11 @@ class Settings:
     @property
     def prompt_template(self) -> str:
         return self.prompt_template_path.read_text(encoding="utf-8")
+
+    @property
+    def prompt_hash(self) -> str:
+        """Short SHA-256 hex of the prompt template for reproducibility."""
+        return hashlib.sha256(self.prompt_template.encode()).hexdigest()[:12]
 
     def __post_init__(self) -> None:
         if not self.data_dir.is_dir():
