@@ -36,7 +36,7 @@ class RTSArticle:
 
 # ---------- Fetch ----------
 
-def fetch_rts_soup(url: str) -> BeautifulSoup:
+def fetch_rts_soup(url: str, timeout: int = 30) -> BeautifulSoup:
     req = Request(
         url,
         headers={
@@ -44,7 +44,7 @@ def fetch_rts_soup(url: str) -> BeautifulSoup:
             "Accept-Language": "fr-CH,fr;q=0.9,en;q=0.8,de;q=0.7",
         },
     )
-    with urlopen(req, timeout=15) as r:
+    with urlopen(req, timeout=timeout) as r:
         ctype = (r.headers.get("Content-Type") or "").lower()
         if "text/html" not in ctype:
             raise ValueError(f"Not HTML: {ctype}")
@@ -189,8 +189,8 @@ def _publisher_name(j: Dict[str, Any]) -> Optional[str]:
 
 # ---------- Orchestrator ----------
 
-def parse_html(url: str) -> RTSArticle:
-    soup = fetch_rts_soup(url)
+def parse_html(url: str, timeout: int = 30) -> RTSArticle:
+    soup = fetch_rts_soup(url, timeout=timeout)
     jsonld = extract_jsonld_newsarticle(soup)
     return RTSArticle(
         title=_extract_title(soup),
@@ -240,7 +240,7 @@ def scrape_articles(settings) -> None:
         if not url.startswith("http"):
             continue
         try:
-            data = parse_html(url)
+            data = parse_html(url, timeout=settings.timeout)
             if is_dataclass(data):
                 data = asdict(data)
             fname = _make_filename(data)

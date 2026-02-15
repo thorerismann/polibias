@@ -10,9 +10,12 @@ dependencies:
   - requests>=2.31
   - plotly>=5.18
   - streamlit>=1.30
+  - scipy>=1.11
+  - tqdm>=4.66
   - sphinx>=7.0
   - sphinx_rtd_theme>=2.0
   - pytest>=8.0
   - pip:
       - myst-parser>=3.0
       - ruff>=0.4
+      - ollama>=0.4

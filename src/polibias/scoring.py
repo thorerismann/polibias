@@ -1,16 +1,22 @@
-"""Send articles to Ollama models and collect bias scores."""
+"""Send articles to Ollama models and collect bias scores.
+
+Uses the ``ollama`` Python package with ``format='json'`` for guaranteed
+valid JSON output.  Articles within a single model/run are scored in
+parallel via ThreadPoolExecutor (safe — single model loaded in Ollama,
+no extra RAM).
+"""
 
 from __future__ import annotations
 
 import json
-import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import requests
+import ollama
+from tqdm import tqdm
 
-_LEADING_ZERO_NUM = re.compile(r"(:\s*)(-?)00(?=[\d.])")
 _REQUIRED_KEYS = [
     "subject_bias",
     "framing_bias",
@@ -21,33 +27,34 @@ _REQUIRED_KEYS = [
 ]
 
 
-def _fix_leading_zeros(raw: str) -> str:
-    return _LEADING_ZERO_NUM.sub(r"\1\20", raw)
+# ---------- Ollama interaction ----------
+
+def _get_client(settings) -> ollama.Client:
+    return ollama.Client(host=settings.ollama_host)
 
 
-def call_ollama(model: str, prompt: str, settings) -> str:
-    r = requests.post(
-        settings.ollama_url,
-        json={
-            "model": model,
-            "prompt": prompt,
-            "stream": False,
-            "options": settings.ollama_options,
-        },
-        timeout=settings.timeout,
+def call_ollama(client: ollama.Client, model: str, prompt: str, settings) -> str:
+    """Call Ollama with JSON mode enabled."""
+    resp = client.generate(
+        model=model,
+        prompt=prompt,
+        format="json",
+        options=settings.ollama_options,
+        keep_alive="5m",
     )
-    r.raise_for_status()
-    return r.json().get("response", "")
+    return resp.response
 
 
-def _strip_markdown_json(text: str) -> str:
-    text = text.strip()
-    if text.startswith("```"):
-        text = text.split("\n", 1)[1]
-    if text.endswith("```"):
-        text = text.rsplit("\n", 1)[0]
-    return text.strip()
+# ---------- Article truncation ----------
 
+def _truncate_article(body: str, max_chars: int) -> str:
+    """Truncate article text to stay within context limits."""
+    if len(body) <= max_chars:
+        return body
+    return body[:max_chars] + "\n\n[... article truncated for model context limit ...]"
+
+
+# ---------- Result formatting ----------
 
 def _blank_result() -> dict[str, Any]:
     return {k: None for k in _REQUIRED_KEYS}
@@ -59,6 +66,7 @@ def _format_result(
     status: str,
     model: str,
     article: str,
+    prompt_hash: str = "",
 ) -> dict[str, Any]:
     out = _blank_result()
     for k in _REQUIRED_KEYS:
@@ -67,8 +75,11 @@ def _format_result(
     out["status"] = status
     out["model"] = model
     out["article"] = article
+    out["prompt_hash"] = prompt_hash
     return out
 
+
+# ---------- Error logging ----------
 
 def _log_error(settings, payload: dict[str, Any]) -> None:
     settings.errors_dir.mkdir(parents=True, exist_ok=True)
@@ -99,168 +110,182 @@ def _retry_prompt(raw: str) -> str:
     )
 
 
-def parse_json_from_model(text: str) -> dict[str, Any]:
-    raw = _strip_markdown_json(text)
-
-    # Normal parse
-    try:
-        return json.loads(raw)
-    except json.JSONDecodeError as e1:
-        err1 = e1
-
-    # Leading-zero fix
-    try:
-        return json.loads(_fix_leading_zeros(raw))
-    except json.JSONDecodeError as e2:
-        err2 = e2
-
-    # Truncation repair (last resort)
-    if "{" not in raw:
-        raise ValueError("Model output doesn't contain a JSON object.") from err2
-
-    repaired = raw.strip()
-    if repaired.count('"') % 2 == 1:
-        repaired += '"'
-    if not repaired.endswith("}"):
-        repaired += "\n}"
-
-    try:
-        return json.loads(repaired)
-    except json.JSONDecodeError as e3:
-        msg = (
-            "Failed to parse model output as JSON.\n"
-            f"normal: {err1}\nnumber-fix: {err2}\nrepair: {e3}"
-        )
-        raise ValueError(msg) from e3
-
+# ---------- Single-article scoring ----------
 
 def score_one_article(
+    client: ollama.Client,
     article_path: Path,
     model: str,
     run: int,
     settings,
 ) -> dict[str, Any]:
+    """Score a single article. Returns a result dict."""
     body = json.loads(article_path.read_text(encoding="utf-8"))["body"]
+    body = _truncate_article(body, settings.max_article_chars)
     prompt = settings.prompt_template.replace("{{ARTICLE_TEXT}}", body)
+    prompt_hash = settings.prompt_hash
 
+    # First attempt
     try:
-        raw = call_ollama(model, prompt, settings)
+        raw = call_ollama(client, model, prompt, settings)
     except Exception as e:
-        _log_error(
-            settings,
-            {
-                "stage": "call_ollama_failed",
-                "model": model,
-                "article": article_path.name,
-                "run": run,
-                "error": repr(e),
-            },
-        )
+        _log_error(settings, {
+            "stage": "call_ollama_failed",
+            "model": model,
+            "article": article_path.name,
+            "run": run,
+            "error": repr(e),
+        })
         return _format_result(
-            {},
-            status="fallback",
-            model=model,
-            article=article_path.name,
+            {}, status="fallback", model=model,
+            article=article_path.name, prompt_hash=prompt_hash,
         )
 
+    # JSON mode should give us valid JSON, but validate structure
     try:
-        data = parse_json_from_model(raw)
+        data = json.loads(raw)
         if not isinstance(data, dict):
             raise ValueError("Model output parsed to a non-object JSON value.")
         return _format_result(
-            data,
-            status="ok",
-            model=model,
-            article=article_path.name,
+            data, status="ok", model=model,
+            article=article_path.name, prompt_hash=prompt_hash,
         )
     except Exception as e:
-        _log_error(
-            settings,
-            {
-                "stage": "json_parse_failed",
-                "model": model,
-                "article": article_path.name,
-                "run": run,
-                "error": repr(e),
-                "raw_len": len(raw),
-            },
-        )
+        _log_error(settings, {
+            "stage": "json_parse_failed",
+            "model": model,
+            "article": article_path.name,
+            "run": run,
+            "error": repr(e),
+            "raw_len": len(raw),
+        })
 
+    # Retry loop (should be rare with format='json')
     last_raw = raw
     for attempt in range(1, settings.parse_retries + 1):
         try:
-            retry_raw = call_ollama(model, _retry_prompt(last_raw), settings)
+            retry_raw = call_ollama(client, model, _retry_prompt(last_raw), settings)
         except Exception as e:
-            _log_error(
-                settings,
-                {
-                    "stage": "retry_call_failed",
-                    "model": model,
-                    "article": article_path.name,
-                    "run": run,
-                    "attempt": attempt,
-                    "error": repr(e),
-                },
-            )
+            _log_error(settings, {
+                "stage": "retry_call_failed",
+                "model": model,
+                "article": article_path.name,
+                "run": run,
+                "attempt": attempt,
+                "error": repr(e),
+            })
             continue
 
         try:
-            data = parse_json_from_model(retry_raw)
+            data = json.loads(retry_raw)
             if not isinstance(data, dict):
                 raise ValueError("Model output parsed to a non-object JSON value.")
             return _format_result(
-                data,
-                status="recovered",
-                model=model,
-                article=article_path.name,
+                data, status="recovered", model=model,
+                article=article_path.name, prompt_hash=prompt_hash,
             )
         except Exception as e:
-            _log_error(
-                settings,
-                {
-                    "stage": "retry_parse_failed",
-                    "model": model,
-                    "article": article_path.name,
-                    "run": run,
-                    "attempt": attempt,
-                    "error": repr(e),
-                    "raw_len": len(retry_raw),
-                },
-            )
+            _log_error(settings, {
+                "stage": "retry_parse_failed",
+                "model": model,
+                "article": article_path.name,
+                "run": run,
+                "attempt": attempt,
+                "error": repr(e),
+                "raw_len": len(retry_raw),
+            })
             last_raw = retry_raw
 
     return _format_result(
-        {},
-        status="fallback",
-        model=model,
-        article=article_path.name,
+        {}, status="fallback", model=model,
+        article=article_path.name, prompt_hash=prompt_hash,
     )
+
+
+# ---------- Parallel article scoring ----------
+
+def _score_and_save(
+    client: ollama.Client,
+    article_path: Path,
+    out_file: Path,
+    model: str,
+    run: int,
+    settings,
+) -> str:
+    """Score one article and write result to disk. Returns status string."""
+    result = score_one_article(client, article_path, model, run, settings)
+    out_file.write_text(
+        json.dumps(result, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    return result.get("status", "ok")
 
 
 def score_all(settings) -> None:
     """Score every article with every model for N runs.
 
-    Skips individual article/model/run combinations whose output
-    JSON already exists on disk.
+    Models are processed sequentially (only one model loaded at a time —
+    safe for systems with no swap).  Articles within each model/run are
+    scored in parallel via ThreadPoolExecutor.
     """
     results_dir = settings.results_dir
+    client = _get_client(settings)
+
     for model in settings.models:
-        print(f"\n{'='*50}")
+        print(f"\n{'=' * 50}")
         print(f"MODEL: {model}")
-        print(f"{'='*50}")
+        print(f"{'=' * 50}")
+
         for run in range(1, settings.runs + 1):
-            print(f"\n--- Run {run}/{settings.runs} ---")
             out_dir = results_dir / model.replace(":", "_") / str(run)
             out_dir.mkdir(parents=True, exist_ok=True)
-            for p in sorted(settings.webdata_dir.glob("*.json")):
+
+            articles = sorted(settings.webdata_dir.glob("*.json"))
+            todo = []
+            skipped = 0
+            for p in articles:
                 out_file = out_dir / f"{p.stem}.json"
                 if out_file.exists():
-                    print(f"  [skip] {p.stem}")
-                    continue
-                print(f"  [score] {p.stem} ...", end=" ", flush=True)
-                result = score_one_article(p, model, run, settings)
-                out_file.write_text(
-                    json.dumps(result, ensure_ascii=False, indent=2),
-                    encoding="utf-8",
-                )
-                print(f"[{result.get('status', 'ok')}]")
+                    skipped += 1
+                else:
+                    todo.append((p, out_file))
+
+            if skipped:
+                print(f"  Run {run}/{settings.runs}: {skipped} already scored, {len(todo)} to do")
+            else:
+                print(f"  Run {run}/{settings.runs}: {len(todo)} articles")
+
+            if not todo:
+                continue
+
+            bar = tqdm(
+                total=len(todo),
+                desc=f"  run {run}",
+                unit="article",
+                leave=True,
+            )
+
+            with ThreadPoolExecutor(max_workers=settings.max_workers) as pool:
+                futures = {
+                    pool.submit(
+                        _score_and_save, client, p, out_file, model, run, settings
+                    ): p.stem
+                    for p, out_file in todo
+                }
+                for future in as_completed(futures):
+                    stem = futures[future]
+                    try:
+                        status = future.result()
+                        bar.set_postfix_str(f"{stem} [{status}]")
+                    except Exception as e:
+                        bar.set_postfix_str(f"{stem} [error]")
+                        _log_error(settings, {
+                            "stage": "worker_exception",
+                            "model": model,
+                            "article": stem,
+                            "run": run,
+                            "error": repr(e),
+                        })
+                    bar.update(1)
+
+            bar.close()
