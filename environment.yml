@@ -7,9 +7,7 @@ dependencies:
   - pip
   - pandas>=2.0
   - beautifulsoup4>=4.12
-  - requests>=2.31
   - plotly>=5.18
-  - streamlit>=1.30
   - scipy>=1.11
   - tqdm>=4.66
   - sphinx>=7.0

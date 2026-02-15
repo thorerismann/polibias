@@ -31,6 +31,7 @@ class Settings:
     # ---- runtime params ----
     runs: int = 4
     timeout: int = 200
+    scrape_timeout: int = 30
     parse_retries: int = 2
     max_workers: int = 4
     max_article_chars: int = 6000

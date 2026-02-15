@@ -240,7 +240,7 @@ def scrape_articles(settings) -> None:
         if not url.startswith("http"):
             continue
         try:
-            data = parse_html(url, timeout=settings.timeout)
+            data = parse_html(url, timeout=settings.scrape_timeout)
             if is_dataclass(data):
                 data = asdict(data)
             fname = _make_filename(data)

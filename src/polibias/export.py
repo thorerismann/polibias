@@ -5,7 +5,6 @@ from __future__ import annotations
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
 
 def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:

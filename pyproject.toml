@@ -12,9 +12,7 @@ requires-python = ">=3.10"
 dependencies = [
     "beautifulsoup4>=4.12",
     "pandas>=2.0",
-    "requests>=2.31",
     "plotly>=5.18",
-    "streamlit>=1.30",
     "ollama>=0.4",
     "tqdm>=4.66",
     "scipy>=1.11",

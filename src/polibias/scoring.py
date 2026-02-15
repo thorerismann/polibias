@@ -30,7 +30,7 @@ _REQUIRED_KEYS = [
 # ---------- Ollama interaction ----------
 
 def _get_client(settings) -> ollama.Client:
-    return ollama.Client(host=settings.ollama_host)
+    return ollama.Client(host=settings.ollama_host, timeout=settings.timeout)
 
 
 def call_ollama(client: ollama.Client, model: str, prompt: str, settings) -> str:

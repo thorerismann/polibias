@@ -10,7 +10,7 @@ Usage::
     python -m polibias validate     # pre-flight checks (Ollama, models, data)
     python -m polibias stats        # compute statistical analysis
     python -m polibias export       # generate HTML report, LaTeX, summaries
-    python -m polibias viz          # launch Streamlit dashboard
+    python -m polibias viz          # generate HTML report and open it
 """
 
 from __future__ import annotations
@@ -87,6 +87,25 @@ def _run_export(settings):
     print("  Export complete.")
 
 
+def _run_viz(settings):
+    import webbrowser
+
+    from polibias.export import run_export
+
+    print("\nGenerating HTML report ...")
+    run_export(settings)
+
+    report_path = settings.report_html_path
+    if report_path.exists():
+        url = report_path.as_uri()
+        print(f"\n  Report ready: {report_path}")
+        print(f"  Opening in browser ...")
+        webbrowser.open(url)
+    else:
+        print(f"  ERROR: Report was not generated. Check for errors above.")
+        sys.exit(1)
+
+
 def _run_check(settings):
     print("\nPipeline save-path check")
     web_count = len(list(settings.webdata_dir.glob("*.json")))
@@ -115,14 +134,6 @@ def _run_check(settings):
         print(f"    - {settings.web_csv_path}")
 
 
-def _run_viz(settings):
-    import subprocess
-
-    dashboard = str(settings.root / "src" / "polibias" / "dashboard.py")
-    print("\nLaunching Streamlit dashboard ...")
-    subprocess.run([sys.executable, "-m", "streamlit", "run", dashboard], check=True)
-
-
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
         prog="polibias",
@@ -144,10 +155,6 @@ def main(argv: list[str] | None = None) -> None:
 
     settings = Settings()
 
-    if args.command == "viz":
-        _run_viz(settings)
-        return
-
     if args.command == "validate":
         _run_validate(settings)
         return
@@ -158,6 +165,10 @@ def main(argv: list[str] | None = None) -> None:
 
     if args.command == "export":
         _run_export(settings)
+        return
+
+    if args.command == "viz":
+        _run_viz(settings)
         return
 
     pipeline_steps = {
