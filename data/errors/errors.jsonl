@@ -86,3 +86,21 @@
 {"stage": "json_parse_failed", "model": "gemma3:4b", "article": "29115321.json", "run": 3, "error": "error('invalid group reference 20 at position 3')", "raw_len": 380, "ts": "2026-02-12T05:52:26.199069+00:00"}
 {"stage": "retry_parse_failed", "model": "gemma3:4b", "article": "29115321.json", "run": 3, "attempt": 1, "error": "error('invalid group reference 20 at position 3')", "raw_len": 383, "ts": "2026-02-12T05:52:48.012873+00:00"}
 {"stage": "retry_parse_failed", "model": "gemma3:4b", "article": "29115321.json", "run": 3, "attempt": 2, "error": "error('invalid group reference 20 at position 3')", "raw_len": 390, "ts": "2026-02-12T05:53:06.006448+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29150791.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:19:24.117067+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29151828.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:19:24.118319+00:00"}
+{"stage": "json_parse_failed", "model": "gemma2:latest", "article": "29151828.json", "run": 2, "error": "JSONDecodeError('Expecting property name enclosed in double quotes: line 26 column 1 (char 437)')", "raw_len": 437, "ts": "2026-02-15T01:22:35.468583+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29150974.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:22:44.226265+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29150791.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:22:44.227128+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29151828.json", "run": 3, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:27:44.471886+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29150974.json", "run": 3, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:27:44.472725+00:00"}
+{"stage": "json_parse_failed", "model": "gemma2:latest", "article": "29151828.json", "run": 4, "error": "JSONDecodeError('Expecting property name enclosed in double quotes: line 23 column 1 (char 318)')", "raw_len": 318, "ts": "2026-02-15T01:30:37.420491+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29150974.json", "run": 4, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:31:04.578349+00:00"}
+{"stage": "call_ollama_failed", "model": "gemma2:latest", "article": "29150791.json", "run": 4, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:31:04.578925+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29151828.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:36:00.478087+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29150974.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:36:00.479224+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29150791.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:39:20.587283+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29150974.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:39:20.587843+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29150791.json", "run": 3, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:42:40.699292+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29151828.json", "run": 3, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:42:40.698982+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29151828.json", "run": 4, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:46:00.804946+00:00"}
+{"stage": "call_ollama_failed", "model": "phi3:mini", "article": "29150791.json", "run": 4, "error": "ReadTimeout('timed out')", "ts": "2026-02-15T01:46:00.806053+00:00"}

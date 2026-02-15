@@ -1,13 +1,16 @@
+LICENSE
 README.md
 pyproject.toml
 src/polibias/__init__.py
 src/polibias/__main__.py
 src/polibias/analysis.py
 src/polibias/config.py
-src/polibias/dashboard.py
+src/polibias/export.py
 src/polibias/prompt.md
 src/polibias/scoring.py
 src/polibias/scraper.py
+src/polibias/stats.py
+src/polibias/validation.py
 src/polibias.egg-info/PKG-INFO
 src/polibias.egg-info/SOURCES.txt
 src/polibias.egg-info/dependency_links.txt
