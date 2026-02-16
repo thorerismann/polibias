@@ -104,11 +104,13 @@ def _df_to_html(df: pd.DataFrame, float_fmt: str = "%.3f") -> str:
 
 # ---------- Main report builder ----------
 
-def build_html_report(bias_df: pd.DataFrame, output_path: str) -> None:
+def build_html_report(
+    bias_df: pd.DataFrame, output_path: str, kappa_bins: int = 5,
+) -> None:
     """Generate a standalone HTML report with charts and stats tables."""
     from polibias.stats import build_stats_report
 
-    report = build_stats_report(bias_df)
+    report = build_stats_report(bias_df, kappa_bins=kappa_bins)
 
     figs = [
         _bias_scatter_by_model(bias_df),
@@ -258,6 +260,7 @@ def run_export(settings) -> None:
     """Load bias data and generate all export outputs."""
     from polibias.analysis import build_bias_frame
 
+    settings.run_dir.mkdir(parents=True, exist_ok=True)
     bias_df = build_bias_frame(settings)
     if bias_df.empty:
         print("  No bias data found. Run 'score' and 'analyse' first.")
@@ -265,18 +268,18 @@ def run_export(settings) -> None:
 
     # HTML report
     html_path = str(settings.report_html_path)
-    build_html_report(bias_df, html_path)
+    build_html_report(bias_df, html_path, kappa_bins=settings.kappa_bins)
     print(f"  Wrote HTML report: {html_path}")
 
     # Article summaries
     summaries = build_article_summaries(bias_df)
-    summary_path = settings.data_dir / "article_summaries.csv"
+    summary_path = settings.article_summaries_csv_path
     summaries.to_csv(summary_path, index=False)
     print(f"  Wrote article summaries: {summary_path}")
 
     # LaTeX
     latex = build_latex_table(bias_df)
-    latex_path = settings.data_dir / "bias_table.tex"
+    latex_path = settings.latex_table_path
     with open(latex_path, "w", encoding="utf-8") as f:
         f.write(latex)
     print(f"  Wrote LaTeX table: {latex_path}")

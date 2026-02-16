@@ -33,14 +33,21 @@ def _get_client(settings) -> ollama.Client:
     return ollama.Client(host=settings.ollama_host, timeout=settings.timeout)
 
 
-def call_ollama(client: ollama.Client, model: str, prompt: str, settings) -> str:
-    """Call Ollama with JSON mode enabled."""
+def call_ollama(
+    client: ollama.Client, model: str, *, system: str, prompt: str, settings,
+) -> str:
+    """Call Ollama with JSON mode enabled.
+
+    *system* carries the scoring instructions (identity + rules).
+    *prompt* carries only the article text to evaluate.
+    """
     resp = client.generate(
         model=model,
+        system=system,
         prompt=prompt,
         format="json",
         options=settings.ollama_options,
-        keep_alive="5m",
+        keep_alive=settings.keep_alive,
     )
     return resp.response
 
@@ -91,6 +98,33 @@ def _log_error(settings, payload: dict[str, Any]) -> None:
         f.write("\n")
 
 
+def _safe_name(s: str) -> str:
+    return "".join(c if c.isalnum() or c in "._-" else "_" for c in s)
+
+
+def _save_failed_raw(
+    settings,
+    *,
+    stage: str,
+    model: str,
+    article: str,
+    run: int,
+    raw: str,
+    attempt: int | None = None,
+) -> Path:
+    raw_dir = settings.errors_dir / "raw_outputs"
+    raw_dir.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
+    attempt_part = f"_attempt{attempt}" if attempt is not None else ""
+    fname = (
+        f"{ts}_{_safe_name(stage)}_{_safe_name(model)}_run{run}_"
+        f"{_safe_name(article)}{attempt_part}.txt"
+    )
+    out_path = raw_dir / fname
+    out_path.write_text(raw, encoding="utf-8")
+    return out_path
+
+
 def _truncate_raw(raw: str, limit: int = 4000) -> str:
     if len(raw) <= limit:
         return raw
@@ -122,12 +156,13 @@ def score_one_article(
     """Score a single article. Returns a result dict."""
     body = json.loads(article_path.read_text(encoding="utf-8"))["body"]
     body = _truncate_article(body, settings.max_article_chars)
-    prompt = settings.prompt_template.replace("{{ARTICLE_TEXT}}", body)
+    system_msg = settings.prompt_template
+    user_msg = f"Article:\n<<<ARTICLE_START>>>\n{body}\n<<<ARTICLE_END>>>"
     prompt_hash = settings.prompt_hash
 
     # First attempt
     try:
-        raw = call_ollama(client, model, prompt, settings)
+        raw = call_ollama(client, model, system=system_msg, prompt=user_msg, settings=settings)
     except Exception as e:
         _log_error(settings, {
             "stage": "call_ollama_failed",
@@ -151,20 +186,34 @@ def score_one_article(
             article=article_path.name, prompt_hash=prompt_hash,
         )
     except Exception as e:
+        raw_str = raw if isinstance(raw, str) else repr(raw)
+        raw_path = _save_failed_raw(
+            settings,
+            stage="json_parse_failed",
+            model=model,
+            article=article_path.name,
+            run=run,
+            raw=raw_str,
+        )
         _log_error(settings, {
             "stage": "json_parse_failed",
             "model": model,
             "article": article_path.name,
             "run": run,
             "error": repr(e),
-            "raw_len": len(raw),
+            "raw_len": len(raw_str),
+            "raw_file": str(raw_path),
         })
 
     # Retry loop (should be rare with format='json')
     last_raw = raw
     for attempt in range(1, settings.parse_retries + 1):
         try:
-            retry_raw = call_ollama(client, model, _retry_prompt(last_raw), settings)
+            retry_raw = call_ollama(
+                client, model,
+                system=system_msg, prompt=_retry_prompt(last_raw),
+                settings=settings,
+            )
         except Exception as e:
             _log_error(settings, {
                 "stage": "retry_call_failed",
@@ -185,6 +234,16 @@ def score_one_article(
                 article=article_path.name, prompt_hash=prompt_hash,
             )
         except Exception as e:
+            retry_raw_str = retry_raw if isinstance(retry_raw, str) else repr(retry_raw)
+            raw_path = _save_failed_raw(
+                settings,
+                stage="retry_parse_failed",
+                model=model,
+                article=article_path.name,
+                run=run,
+                raw=retry_raw_str,
+                attempt=attempt,
+            )
             _log_error(settings, {
                 "stage": "retry_parse_failed",
                 "model": model,
@@ -192,7 +251,8 @@ def score_one_article(
                 "run": run,
                 "attempt": attempt,
                 "error": repr(e),
-                "raw_len": len(retry_raw),
+                "raw_len": len(retry_raw_str),
+                "raw_file": str(raw_path),
             })
             last_raw = retry_raw
 

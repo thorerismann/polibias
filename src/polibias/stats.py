@@ -45,12 +45,15 @@ def fleiss_kappa(ratings_matrix: np.ndarray) -> float:
     return float((P_bar - P_e) / (1 - P_e))
 
 
-def compute_fleiss_kappa(bias_df: pd.DataFrame, col: str = "overall_bias") -> float:
+def compute_fleiss_kappa(
+    bias_df: pd.DataFrame, col: str = "overall_bias", n_bins: int = 5,
+) -> float:
     """Global Fleiss' kappa across all articles.
 
     Each model is a rater.  Each article is a subject.  Model scores are
-    averaged over runs, then discretised into 5 equal-width bins on [-1, 1].
-    The result is a single kappa value measuring inter-model agreement.
+    averaged over runs, then discretised into *n_bins* equal-width bins on
+    [-1, 1].  The result is a single kappa value measuring inter-model
+    agreement.
     """
     df = bias_df.dropna(subset=[col])
     model_article_means = df.groupby(["article_id", "model"])[col].mean().reset_index()
@@ -60,7 +63,7 @@ def compute_fleiss_kappa(bias_df: pd.DataFrame, col: str = "overall_bias") -> fl
     if pivot.shape[0] < 2 or pivot.shape[1] < 2:
         return float("nan")
 
-    n_cats = 5
+    n_cats = n_bins
     ratings = np.zeros((len(pivot), n_cats), dtype=float)
     for i, (_, row) in enumerate(pivot.iterrows()):
         binned = _to_bins(row, n_bins=n_cats).dropna()
@@ -159,13 +162,13 @@ def compute_model_ci(bias_df: pd.DataFrame, col: str = "overall_bias", confidenc
 
 # ---------- Orchestrator ----------
 
-def build_stats_report(bias_df: pd.DataFrame) -> dict[str, Any]:
+def build_stats_report(bias_df: pd.DataFrame, kappa_bins: int = 5) -> dict[str, Any]:
     """Compute all stats and return as a dict of DataFrames."""
     report: dict[str, Any] = {}
 
     report["model_ci"] = compute_model_ci(bias_df)
     report["icc_per_model"] = compute_icc_per_model(bias_df)
-    report["fleiss_kappa"] = compute_fleiss_kappa(bias_df)
+    report["fleiss_kappa"] = compute_fleiss_kappa(bias_df, n_bins=kappa_bins)
 
     # Summary stats per model
     summary_rows = []
@@ -189,12 +192,13 @@ def run_stats(settings) -> None:
     """Load bias CSV, compute stats, print and save report."""
     from polibias.analysis import build_bias_frame
 
+    settings.run_dir.mkdir(parents=True, exist_ok=True)
     bias_df = build_bias_frame(settings)
     if bias_df.empty:
         print("  No bias data found. Run 'score' and 'analyse' first.")
         return
 
-    report = build_stats_report(bias_df)
+    report = build_stats_report(bias_df, kappa_bins=settings.kappa_bins)
 
     print("\n--- Model summary ---")
     if not report["model_summary"].empty:

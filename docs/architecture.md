@@ -2,48 +2,65 @@
 
 ## Pipeline overview
 
-polibias runs a three-stage pipeline:
+`polibias` runs a three-stage pipeline:
 
-### 1. Scraping (`polibias.scraper`)
+1. Scraping (`polibias.scraper`)
+2. Scoring (`polibias.scoring`)
+3. Analysis/export (`polibias.analysis`, `polibias.stats`, `polibias.export`)
 
-Fetches HTML from RTS article URLs, extracts structured content using
-BeautifulSoup and JSON-LD metadata, and saves each article as a JSON file.
+### 1. Scraping
 
-### 2. Scoring (`polibias.scoring`)
+- Reads URLs from `data/input_files/some_rts_links.csv`
+- Fetches/parses RTS pages
+- Writes article JSON to shared storage: `data/webdata/*.json`
 
-For each article, for each model, for N independent runs:
+### 2. Scoring
 
-- Loads the article body text
-- Fills the prompt template with the article
-- Sends the prompt to Ollama's `/api/generate` endpoint
-- Parses the JSON response (with fallback repair for malformed output)
-- Saves the per-article score to disk
+For each article, model, and run:
 
-Results are organized as `data/results/{model}/{run}/{article_id}.json`.
+- Builds a prompt from `src/polibias/prompt.md`
+- Calls Ollama in JSON mode
+- Parses/validates output shape
+- Retries parse failures with a repair prompt
+- Writes score JSON to run-specific results directory
 
-### 3. Analysis (`polibias.analysis`)
+Score outputs:
 
-Collects all score JSONs into a single pandas DataFrame, computes the
-`overall_bias` as the mean of the four bias dimensions, and exports CSVs.
+- `data/runs/<run_dir>/results/<model>/<run>/<article_id>.json`
 
-Canonical aggregate outputs are `data/bias_data.csv` and `data/web_data.csv`.
-Use `python -m polibias check` to verify expected files exist.
+Error outputs:
 
-## Bias dimensions
+- `data/runs/<run_dir>/errors/errors.jsonl`
+- `data/runs/<run_dir>/errors/raw_outputs/*.txt`
 
-| Dimension        | Question                                        |
-|------------------|-------------------------------------------------|
-| `subject_bias`   | Does the topic selection lean left or right?     |
-| `framing_bias`   | Is the narrative left- or right-leaning?         |
-| `treatment_bias` | Does the article treat one side more favorably?  |
-| `guests_bias`    | Are quoted voices more left or more right?       |
+### 3. Analysis/export
 
-All scores are in `[-1.0, +1.0]` where negative = left, positive = right.
+Reads run-specific results and writes run-specific derived outputs:
+
+- `bias_data.csv`
+- `web_data.csv`
+- `stats_report.csv`
+- `report.html`
+- `article_summaries.csv`
+- `bias_table.tex`
+
+All under:
+
+- `data/runs/<run_dir>/`
+
+## Run directory model
+
+The CLI option `--run-dir` selects the run folder name under `data/runs/`.
+
+Examples:
+
+- `--run-dir baseline`
+- `--run-dir temp_02_ctx2k`
+
+If omitted, run directory name defaults to `run_results`.
 
 ## Idempotency
 
-Every step checks for existing outputs before doing work:
-
-- **Scraping** skips articles whose JSON already exists in `webdata/`
-- **Scoring** skips article/model/run combinations whose JSON already exists
-- **Analysis** always rebuilds CSVs from whatever results are on disk
+- Scraping skips already-saved article JSON files in `data/webdata/`
+- Scoring skips existing `(model, run, article)` result files in selected run dir
+- Analysis/export rebuild from the selected run dir’s results

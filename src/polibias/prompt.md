@@ -34,9 +34,3 @@ Schema:
   "confidence": <float>,
   "comment": <MAX 2 sentence string>,
 }
-
-
-Article:
-<<<ARTICLE_START>>>
-{{ARTICLE_TEXT}}
-<<<ARTICLE_END>>>

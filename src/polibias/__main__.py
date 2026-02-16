@@ -17,9 +17,13 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
+from typing import Any
+
+from polibias.config import Settings, load_settings
 
 
-def _run_validate(settings):
+def _run_validate(settings: Settings) -> None:
     from polibias.validation import validate
 
     ok = validate(settings)
@@ -27,7 +31,7 @@ def _run_validate(settings):
         sys.exit(1)
 
 
-def _run_scrape(settings):
+def _run_scrape(settings: Settings) -> None:
     from polibias.scraper import scrape_articles
 
     print("\n[1/3] Scraping articles ...")
@@ -38,7 +42,7 @@ def _run_scrape(settings):
     print("  Scraping complete.")
 
 
-def _run_score(settings):
+def _run_score(settings: Settings) -> None:
     from polibias.scoring import score_all
 
     print("\n[2/3] Scoring articles with Ollama models ...")
@@ -49,10 +53,11 @@ def _run_score(settings):
     print("  Scoring complete.")
 
 
-def _run_analyse(settings):
+def _run_analyse(settings: Settings) -> None:
     from polibias.analysis import build_bias_frame, build_webdata_frame
 
     print("\n[3/3] Building analysis CSVs ...")
+    settings.run_dir.mkdir(parents=True, exist_ok=True)
     bias_csv = settings.bias_csv_path
     web_csv = settings.web_csv_path
 
@@ -71,7 +76,7 @@ def _run_analyse(settings):
     print("  Analysis complete.")
 
 
-def _run_stats(settings):
+def _run_stats(settings: Settings) -> None:
     from polibias.stats import run_stats
 
     print("\nComputing statistics ...")
@@ -79,7 +84,7 @@ def _run_stats(settings):
     print("  Statistics complete.")
 
 
-def _run_export(settings):
+def _run_export(settings: Settings) -> None:
     from polibias.export import run_export
 
     print("\nGenerating exports ...")
@@ -87,7 +92,7 @@ def _run_export(settings):
     print("  Export complete.")
 
 
-def _run_viz(settings):
+def _run_viz(settings: Settings) -> None:
     import webbrowser
 
     from polibias.export import run_export
@@ -106,8 +111,9 @@ def _run_viz(settings):
         sys.exit(1)
 
 
-def _run_check(settings):
+def _run_check(settings: Settings) -> None:
     print("\nPipeline save-path check")
+    print(f"  run dir: {settings.run_dir}")
     web_count = len(list(settings.webdata_dir.glob("*.json")))
     result_count = len(list(settings.results_dir.glob("*/*/*.json")))
     print(f"  webdata JSONs: {web_count}")
@@ -126,10 +132,10 @@ def _run_check(settings):
     if settings.legacy_results_bias_csv_path.exists():
         legacy.append(str(settings.legacy_results_bias_csv_path))
     if legacy:
-        print("  WARNING: Legacy CSV(s) found outside canonical data outputs:")
+        print("  WARNING: Legacy CSV(s) found outside run-dir outputs:")
         for p in legacy:
             print(f"    - {p}")
-        print("  Canonical outputs are only under data/:")
+        print("  Canonical outputs for this run are:")
         print(f"    - {settings.bias_csv_path}")
         print(f"    - {settings.web_csv_path}")
 
@@ -149,11 +155,23 @@ def main(argv: list[str] | None = None) -> None:
         ],
         help="Pipeline step to run (default: all)",
     )
+    parser.add_argument(
+        "--run-dir",
+        default=None,
+        help="Run folder name under data/runs/ (default: run_results).",
+    )
+    parser.add_argument(
+        "--config",
+        default=None,
+        help="Path to a TOML config file (keys map to Settings fields).",
+    )
     args = parser.parse_args(argv)
 
-    from polibias.config import Settings
-
-    settings = Settings()
+    config_path = Path(args.config) if args.config else None
+    overrides: dict[str, Any] = {}
+    if args.run_dir is not None:
+        overrides["run_name"] = args.run_dir
+    settings = load_settings(config_path, **overrides)
 
     if args.command == "validate":
         _run_validate(settings)
@@ -179,6 +197,7 @@ def main(argv: list[str] | None = None) -> None:
 
     if args.command == "all":
         print("polibias — running full pipeline")
+        print(f"Run outputs: {settings.run_dir}")
         _run_validate(settings)
         for step in pipeline_steps.values():
             step(settings)
