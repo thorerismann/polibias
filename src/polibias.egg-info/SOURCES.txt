@@ -17,3 +17,6 @@ src/polibias.egg-info/dependency_links.txt
 src/polibias.egg-info/entry_points.txt
 src/polibias.egg-info/requires.txt
 src/polibias.egg-info/top_level.txt
+tests/test_pipeline_smoke.py
+tests/test_run_dirs.py
+tests/test_scoring_failures.py

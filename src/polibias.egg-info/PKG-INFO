@@ -46,9 +46,9 @@ Dynamic: license-file
 
 Political bias scoring of Swiss news articles using local LLMs via [Ollama](https://ollama.com).
 
-polibias scrapes articles from [RTS](https://www.rts.ch) (Radio Television Suisse), sends them through multiple small language models, and scores each article for political bias along four dimensions. Running each model multiple times reveals how **consistent** (or volatile) each model's judgments are.
+`polibias` scrapes RTS articles, scores them across four bias dimensions with local models, and produces CSV/statistics/HTML outputs.
 
-## Bias dimensions
+## Bias Dimensions
 
 | Dimension | What it measures |
 |---|---|
@@ -57,30 +57,26 @@ polibias scrapes articles from [RTS](https://www.rts.ch) (Radio Television Suiss
 | `treatment_bias` | Does the article treat one side more favorably? |
 | `guests_bias` | Are quoted voices more left or more right? |
 
-Scores range from **-1.0** (left-leaning) to **+1.0** (right-leaning). An `overall_bias` is computed as the mean of all four.
+Scores are in `[-1.0, +1.0]` where negative means left-leaning and positive means right-leaning.
 
 ## Setup
 
 ### Prerequisites
 
-- **Ollama** running locally (`ollama serve`) with models pulled:
-  ```bash
-  ollama pull llama3.2:latest
-  ollama pull gemma2:latest
-  ollama pull phi3:mini
-  ollama pull qwen2.5:3b-instruct
-  ollama pull gemma3:4b
-  ```
+- Ollama running locally (`ollama serve`)
+- Python 3.10+
 
-### Install with mamba (recommended)
+Pull the default models from `src/polibias/config.py` (example):
 
 ```bash
-mamba env create -f environment.yml
-mamba activate polibias
-pip install -e .
+ollama pull llama3.2:latest
+ollama pull gemma2:latest
+ollama pull phi3:mini
+ollama pull qwen2.5:3b-instruct
+ollama pull gemma3:4b
 ```
 
-### Install with pip only
+### Install
 
 ```bash
 python -m venv .venv && source .venv/bin/activate
@@ -89,75 +85,64 @@ pip install -e .
 
 ## Runbook
 
-Edit only these files:
-- `src/polibias/config.py` for model/runtime settings
-- `data/input_files/some_rts_links.csv` for RTS URLs
-- `src/polibias/prompt.md` if you want to change the scoring prompt
+`--run-dir` selects the output folder name under `data/runs/`.
 
-Run only these commands:
+If omitted, it defaults to `run_results`.
+
+```bash
+python -m polibias all --run-dir temp_02_ctx2k
+python -m polibias all --run-dir temp_08_ctx4k
+```
+
+You can run individual steps too:
 
 ```bash
 python -m polibias scrape
-python -m polibias score
-python -m polibias analyse
-python -m polibias check
-python -m polibias viz
+python -m polibias score --run-dir exp_a
+python -m polibias analyse --run-dir exp_a
+python -m polibias stats --run-dir exp_a
+python -m polibias export --run-dir exp_a
+python -m polibias viz --run-dir exp_a
+python -m polibias check --run-dir exp_a
 ```
 
-The pipeline is **idempotent** — it skips any work whose output already exists on disk. Re-running is safe and fast.
+## Output Layout
 
-Get outputs here:
-- `data/webdata/*.json` scraped article content
-- `data/results/{model}/{run}/*.json` model scores
-- `data/bias_data.csv` aggregated bias rows
-- `data/web_data.csv` cleaned article metadata
+Shared scraped content:
 
-## Project structure
+- `data/webdata/*.json`
 
-```
-polibias/
-├── src/polibias/           # Python package
-│   ├── __main__.py         # CLI entry point
-│   ├── config.py           # Settings dataclass
-│   ├── scraper.py          # RTS article fetcher + parser
-│   ├── scoring.py          # Ollama model scoring
-│   ├── analysis.py         # DataFrame aggregation
-│   ├── dashboard.py        # Streamlit visualization
-│   └── prompt.md           # Prompt template
-├── data/
-│   ├── input_files/        # URL list (some_rts_links.csv)
-│   ├── webdata/            # Scraped article JSONs
-│   ├── results/            # Model output JSONs (model/run/article.json)
-│   ├── bias_data.csv       # Aggregated bias scores
-│   └── web_data.csv        # Cleaned article metadata
-├── docs/                   # Sphinx documentation (ReadTheDocs-ready)
-├── environment.yml         # Mamba environment spec
-├── pyproject.toml          # Package metadata
-└── requirements.txt        # Pip dependencies
-```
+Per-run outputs:
+
+- `data/runs/<run_dir>/results/<model>/<run>/*.json`
+- `data/runs/<run_dir>/errors/errors.jsonl`
+- `data/runs/<run_dir>/errors/raw_outputs/*.txt` (raw failed model responses)
+- `data/runs/<run_dir>/bias_data.csv`
+- `data/runs/<run_dir>/web_data.csv`
+- `data/runs/<run_dir>/stats_report.csv`
+- `data/runs/<run_dir>/report.html`
+- `data/runs/<run_dir>/article_summaries.csv`
+- `data/runs/<run_dir>/bias_table.tex`
 
 ## Configuration
 
-Edit `src/polibias/config.py` to change models, number of runs, Ollama options (temperature, context length), or timeout. The prompt template lives at `src/polibias/prompt.md`.
+Edit `src/polibias/config.py` to change models, runs, timeouts, and Ollama options.
 
-Legacy prototype code has been moved to `archive/app_legacy/` and is not used by the packaged pipeline.
+Prompt template:
 
-## Dashboard
+- `src/polibias/prompt.md`
 
-The Streamlit dashboard provides interactive visualizations:
+Input URL file:
 
-- Bias scatter plots by model and by article
-- Box plots showing per-model variance
-- Heatmap of mean bias across models and articles
-- Confidence vs. absolute bias scatter
+- `data/input_files/some_rts_links.csv`
 
-## Documentation
+## Tests
 
-Full docs are built with Sphinx and hosted on ReadTheDocs:
+Install dev deps and run:
 
 ```bash
-pip install -e ".[docs]"
-cd docs && make html
+pip install -e "[dev]"
+python -m pytest -q
 ```
 
 ## License
