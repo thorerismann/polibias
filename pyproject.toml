@@ -28,6 +28,9 @@ dev = [
     "pytest>=8.0",
     "ruff>=0.4",
 ]
+cloud = [
+    "google-cloud-storage>=2.14",
+]
 
 [project.scripts]
 polibias = "polibias.__main__:main"

@@ -5,6 +5,9 @@ ollama>=0.4
 tqdm>=4.66
 scipy>=1.11
 
+[cloud]
+google-cloud-storage>=2.14
+
 [dev]
 pytest>=8.0
 ruff>=0.4

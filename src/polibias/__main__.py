@@ -11,11 +11,13 @@ Usage::
     python -m polibias stats        # compute statistical analysis
     python -m polibias export       # generate HTML report, LaTeX, summaries
     python -m polibias viz          # generate HTML report and open it
+    python -m polibias upload       # upload run results to GCS
 """
 
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 from typing import Any
@@ -140,6 +142,35 @@ def _run_check(settings: Settings) -> None:
         print(f"    - {settings.web_csv_path}")
 
 
+def _run_upload(settings: Settings, bucket: str) -> None:
+    try:
+        from google.cloud import storage  # type: ignore[import-untyped]
+    except ImportError:
+        print("  ERROR: google-cloud-storage not installed.")
+        print("  Install with: pip install 'polibias[cloud]'")
+        sys.exit(1)
+
+    run_dir = settings.run_dir
+    if not run_dir.exists():
+        print(f"  ERROR: Run directory not found: {run_dir}")
+        sys.exit(1)
+
+    prefix = settings.run_name
+    client = storage.Client()
+    gcs_bucket = client.bucket(bucket)
+
+    uploaded = 0
+    for path in sorted(run_dir.rglob("*")):
+        if path.is_dir():
+            continue
+        blob_name = f"{prefix}/{path.relative_to(run_dir)}"
+        blob = gcs_bucket.blob(blob_name)
+        blob.upload_from_filename(str(path))
+        uploaded += 1
+
+    print(f"  Uploaded {uploaded} file(s) to gs://{bucket}/{prefix}/")
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(
         prog="polibias",
@@ -151,7 +182,7 @@ def main(argv: list[str] | None = None) -> None:
         default="all",
         choices=[
             "all", "scrape", "score", "analyse",
-            "check", "validate", "stats", "export", "viz",
+            "check", "validate", "stats", "export", "viz", "upload",
         ],
         help="Pipeline step to run (default: all)",
     )
@@ -164,6 +195,11 @@ def main(argv: list[str] | None = None) -> None:
         "--config",
         default=None,
         help="Path to a TOML config file (keys map to Settings fields).",
+    )
+    parser.add_argument(
+        "--bucket",
+        default=None,
+        help="GCS bucket name for the 'upload' command.",
     )
     args = parser.parse_args(argv)
 
@@ -187,6 +223,15 @@ def main(argv: list[str] | None = None) -> None:
 
     if args.command == "viz":
         _run_viz(settings)
+        return
+
+    if args.command == "upload":
+        bucket = args.bucket or os.environ.get("GCS_BUCKET")
+        if not bucket:
+            print("  ERROR: --bucket or GCS_BUCKET env var is required.")
+            sys.exit(1)
+        print(f"\nUploading results to gs://{bucket}/ ...")
+        _run_upload(settings, bucket)
         return
 
     pipeline_steps = {

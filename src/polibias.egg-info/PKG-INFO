@@ -40,6 +40,8 @@ Requires-Dist: myst-parser>=3.0; extra == "docs"
 Provides-Extra: dev
 Requires-Dist: pytest>=8.0; extra == "dev"
 Requires-Dist: ruff>=0.4; extra == "dev"
+Provides-Extra: cloud
+Requires-Dist: google-cloud-storage>=2.14; extra == "cloud"
 Dynamic: license-file
 
 # polibias

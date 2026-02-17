@@ -46,6 +46,10 @@ class Settings:
         "phi3:mini",
         "qwen2.5:3b-instruct",
         "gemma3:4b",
+        "olmo-3:7b",
+        "MichelRosselli/apertus:latest",
+        "mistral:latest"
+        
     ])
 
     ollama_options: ModelOptions = field(default_factory=lambda: {

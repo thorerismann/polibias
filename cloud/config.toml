@@ -1,0 +1,29 @@
+# Cloud-tuned settings for polibias on Cloud Run with L4 GPU.
+#
+# The L4 has 24 GB VRAM — plenty for all 5 models.
+# Higher parallelism and longer timeouts vs local defaults.
+
+[polibias]
+runs = 5
+timeout = 300          # Longer timeout for cold model loads
+scrape_timeout = 60    # Cloud egress can be slower
+max_workers = 8        # L4 can handle more parallel scoring threads
+max_article_chars = 6000
+keep_alive = "30m"     # Keep models loaded longer (no memory pressure)
+
+models = [
+        "llama3.2:latest",
+        "gemma2:latest",
+        "phi3:mini",
+        "qwen2.5:3b-instruct",
+        "gemma3:4b",
+        "olmo-3:7b",
+        "MichelRosselli/apertus:latest",
+        "mistral:latest"
+        
+]
+
+[polibias.ollama_options]
+temperature = 0.8
+num_predict = 250
+num_ctx = 2048
