@@ -117,7 +117,7 @@ def _run_check(settings: Settings) -> None:
     print("\nPipeline save-path check")
     print(f"  run dir: {settings.run_dir}")
     web_count = len(list(settings.webdata_dir.glob("*.json")))
-    result_count = len(list(settings.results_dir.glob("*/*/*.json")))
+    result_count = len(list(settings.results_dir.rglob("*.json")))
     print(f"  webdata JSONs: {web_count}")
     print(f"  result JSONs: {result_count}")
     print(

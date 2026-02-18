@@ -20,23 +20,30 @@ def build_bias_frame(settings) -> pd.DataFrame:
     rows = []
     for run in range(1, settings.runs + 1):
         for model in settings.models:
-            model_dir = settings.results_dir / model.replace(":", "_") / str(run)
-            if not model_dir.is_dir():
-                continue
-            for p in model_dir.glob("*.json"):
-                data = json.loads(p.read_text(encoding="utf-8"))
-                rows.append({
-                    "model": model,
-                    "article_id": p.stem,
-                    "subject_bias": data.get("subject_bias"),
-                    "framing_bias": data.get("framing_bias"),
-                    "treatment_bias": data.get("treatment_bias"),
-                    "guests_bias": data.get("guests_bias"),
-                    "confidence": data.get("confidence"),
-                    "comment": data.get("comment"),
-                    "status": data.get("status", "ok"),
-                    "run": run,
-                })
+            canonical_dir = settings.results_dir / settings.model_output_dirname(model) / str(run)
+            legacy_dir = settings.results_dir / model.replace(":", "_") / str(run)
+
+            model_dirs = [canonical_dir]
+            if legacy_dir != canonical_dir:
+                model_dirs.append(legacy_dir)
+
+            for model_dir in model_dirs:
+                if not model_dir.is_dir():
+                    continue
+                for p in model_dir.glob("*.json"):
+                    data = json.loads(p.read_text(encoding="utf-8"))
+                    rows.append({
+                        "model": model,
+                        "article_id": p.stem,
+                        "subject_bias": data.get("subject_bias"),
+                        "framing_bias": data.get("framing_bias"),
+                        "treatment_bias": data.get("treatment_bias"),
+                        "guests_bias": data.get("guests_bias"),
+                        "confidence": data.get("confidence"),
+                        "comment": data.get("comment"),
+                        "status": data.get("status", "ok"),
+                        "run": run,
+                    })
 
     df = pd.DataFrame(rows)
     if not df.empty:

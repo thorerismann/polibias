@@ -297,7 +297,7 @@ def score_all(settings) -> None:
         print(f"{'=' * 50}")
 
         for run in range(1, settings.runs + 1):
-            out_dir = results_dir / model.replace(":", "_") / str(run)
+            out_dir = results_dir / settings.model_output_dirname(model) / str(run)
             out_dir.mkdir(parents=True, exist_ok=True)
 
             articles = sorted(settings.webdata_dir.glob("*.json"))

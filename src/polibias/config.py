@@ -31,10 +31,10 @@ class Settings:
 
     # ---- runtime params ----
     runs: int = 4
-    timeout: int = 200
+    timeout: int = 400
     scrape_timeout: int = 30
     parse_retries: int = 2
-    max_workers: int = 4
+    max_workers: int = 2
     max_article_chars: int = 6000
     ollama_host: str = "http://127.0.0.1:11434"
     keep_alive: str = "5m"
@@ -46,14 +46,16 @@ class Settings:
         "phi3:mini",
         "qwen2.5:3b-instruct",
         "gemma3:4b",
-        "olmo-3:7b",
         "MichelRosselli/apertus:latest",
-        "mistral:latest"
+        "mistral:latest",
+        "llama3.1:8b",
+        "olmo-3:7b",
+        "phi3.5:latest",
         
     ])
 
     ollama_options: ModelOptions = field(default_factory=lambda: {
-        "temperature": 0.8,
+        "temperature": 0.4,
         "num_predict": 250,
         "num_ctx": 2048,
     })

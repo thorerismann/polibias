@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from polibias.analysis import build_bias_frame
-from polibias.config import Settings
+from polibias.config import Settings, model_output_dirname
 
 
 def _mk_settings(tmp_path: Path, *, run_name: str) -> Settings:
@@ -50,3 +50,38 @@ def test_bias_frame_reads_only_selected_run_dir(tmp_path: Path) -> None:
     assert len(df1) == 1
     assert df1.iloc[0]["article_id"] == "a1"
     assert df2.empty
+
+
+def test_model_output_dirname_flattens_slashes() -> None:
+    assert model_output_dirname("MichelRosselli/apertus:latest") == "MichelRosselli_apertus_latest"
+
+
+def test_bias_frame_reads_legacy_nested_model_dir(tmp_path: Path) -> None:
+    (tmp_path / "data").mkdir(parents=True, exist_ok=True)
+    settings = Settings(
+        root=tmp_path,
+        run_name="exp_legacy",
+        models=["MichelRosselli/apertus:latest"],
+        runs=1,
+    )
+
+    legacy_model_dir = settings.results_dir / "MichelRosselli" / "apertus_latest" / "1"
+    legacy_model_dir.mkdir(parents=True, exist_ok=True)
+    (legacy_model_dir / "a2.json").write_text(
+        json.dumps(
+            {
+                "subject_bias": 0.0,
+                "framing_bias": 0.0,
+                "treatment_bias": 0.0,
+                "guests_bias": 0.0,
+                "confidence": 1.0,
+                "comment": "ok",
+                "status": "ok",
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    df = build_bias_frame(settings)
+    assert len(df) == 1
+    assert df.iloc[0]["article_id"] == "a2"
