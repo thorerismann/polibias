@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import json
+
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -36,6 +38,72 @@ def _bias_heatmap(bdf: pd.DataFrame) -> go.Figure:
         aspect="auto", title="Mean bias: articles x models",
     )
     fig.update_layout(height=height, margin=dict(l=200, r=20, t=60, b=40))
+    return fig
+
+
+def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
+    """Dot chart across the 4 sub-bias dimensions (article x bias, model as color)."""
+    dims = ["subject_bias", "framing_bias", "treatment_bias", "guests_bias"]
+    long_df = bdf.melt(
+        id_vars=["model", "article_id", "run", "comment"],
+        value_vars=dims,
+        var_name="dimension",
+        value_name="bias",
+    )
+    long_df["article_str"] = long_df["article_id"].astype(str)
+
+    fig = px.scatter(
+        long_df,
+        x="article_str",
+        y="bias",
+        color="model",
+        facet_col="dimension",
+        facet_col_wrap=2,
+        hover_data={
+            "article_str": False,
+            "article_id": True,
+            "model": True,
+            "run": True,
+            "comment": True,
+        },
+        title="Sub-bias dots by article (4 dimensions)",
+    )
+    fig.update_yaxes(range=[-1, 1])
+    fig.update_xaxes(type="category", tickangle=45)
+    fig.update_layout(height=850)
+    return fig
+
+
+def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
+    """Dot chart with same underlying article-model-run data as the heatmap family."""
+    df = bdf.copy()
+    df["article_str"] = df["article_id"].astype(str)
+    df["comment"] = df["comment"].fillna("").astype(str)
+
+    fig = px.scatter(
+        df,
+        x="article_str",
+        y="overall_bias",
+        color="model",
+        symbol="run",
+        hover_data={
+            "article_str": False,
+            "article_id": True,
+            "model": True,
+            "run": True,
+            "comment": True,
+            "subject_bias": ":.3f",
+            "framing_bias": ":.3f",
+            "treatment_bias": ":.3f",
+            "guests_bias": ":.3f",
+            "overall_bias": ":.3f",
+            "confidence": ":.3f",
+        },
+        title="Overall bias dots by article (model color, run symbol)",
+    )
+    fig.update_yaxes(range=[-1, 1], title="overall_bias")
+    fig.update_xaxes(type="category", tickangle=45, title="article_id")
+    fig.update_layout(height=650)
     return fig
 
 
@@ -95,11 +163,144 @@ tr:nth-child(even) { background: #fafafa; }
 .kappa-box .value { font-size: 2em; font-weight: bold; }
 .kappa-box .label { color: #666; }
 .section-note { color: #777; font-size: 0.9em; margin-top: -10px; }
+.comment-controls { display: grid; grid-template-columns: repeat(3, minmax(180px, 1fr)); gap: 10px;
+                    margin: 14px 0; align-items: end; }
+.comment-controls label { display: block; font-size: 0.9em; color: #555; margin-bottom: 4px; }
+.comment-controls select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.comment-box { border: 1px solid #ddd; border-radius: 8px; background: #fafafa;
+               min-height: 70px; padding: 12px; white-space: pre-wrap; }
 """
 
 
 def _df_to_html(df: pd.DataFrame, float_fmt: str = "%.3f") -> str:
     return df.to_html(index=False, float_format=float_fmt, na_rep="—")
+
+
+def _comment_explorer_html(bdf: pd.DataFrame) -> str:
+    cols = [
+        "model", "run", "article_id", "comment", "subject_bias", "framing_bias",
+        "treatment_bias", "guests_bias", "overall_bias", "confidence", "status",
+    ]
+    data = bdf[cols].copy().fillna("")
+    records = data.to_dict(orient="records")
+    records_json = json.dumps(records, ensure_ascii=False)
+
+    return f"""
+<div id=\"comment-explorer\">
+  <div class=\"comment-controls\">
+    <div>
+      <label for=\"model-select\">Model</label>
+      <select id=\"model-select\"></select>
+    </div>
+    <div>
+      <label for=\"run-select\">Run</label>
+      <select id=\"run-select\"></select>
+    </div>
+    <div>
+      <label for=\"article-select\">Article</label>
+      <select id=\"article-select\"></select>
+    </div>
+  </div>
+  <div id=\"comment-box\" class=\"comment-box\">Select model, run, and article.</div>
+</div>
+<script>
+(function() {{
+  const rows = {records_json};
+  const modelSel = document.getElementById('model-select');
+  const runSel = document.getElementById('run-select');
+  const articleSel = document.getElementById('article-select');
+  const box = document.getElementById('comment-box');
+
+  function uniq(values) {{
+    return Array.from(new Set(values)).filter(v => v !== '').sort();
+  }}
+
+  function setOptions(selectEl, values) {{
+    selectEl.innerHTML = '';
+    const all = document.createElement('option');
+    all.value = '__ALL__';
+    all.textContent = 'All';
+    selectEl.appendChild(all);
+    for (const v of values) {{
+      const opt = document.createElement('option');
+      opt.value = String(v);
+      opt.textContent = String(v);
+      selectEl.appendChild(opt);
+    }}
+  }}
+
+  function selectedValue(sel) {{
+    return sel.value === '__ALL__' ? null : sel.value;
+  }}
+
+  function filterRows() {{
+    const m = selectedValue(modelSel);
+    const r = selectedValue(runSel);
+    const a = selectedValue(articleSel);
+    return rows.filter(x =>
+      (!m || String(x.model) === m) &&
+      (!r || String(x.run) === r) &&
+      (!a || String(x.article_id) === a)
+    );
+  }}
+
+  function refreshRunOptions() {{
+    const m = selectedValue(modelSel);
+    const filtered = rows.filter(x => !m || String(x.model) === m);
+    const current = runSel.value;
+    setOptions(runSel, uniq(filtered.map(x => String(x.run))));
+    if (Array.from(runSel.options).some(o => o.value === current)) runSel.value = current;
+  }}
+
+  function refreshArticleOptions() {{
+    const m = selectedValue(modelSel);
+    const r = selectedValue(runSel);
+    const filtered = rows.filter(x =>
+      (!m || String(x.model) === m) &&
+      (!r || String(x.run) === r)
+    );
+    const current = articleSel.value;
+    setOptions(articleSel, uniq(filtered.map(x => String(x.article_id))));
+    if (Array.from(articleSel.options).some(o => o.value === current)) articleSel.value = current;
+  }}
+
+  function updateCommentBox() {{
+    const filtered = filterRows();
+    if (!filtered.length) {{
+      box.textContent = 'No matching records for this selection.';
+      return;
+    }}
+
+    const lines = filtered.slice(0, 10).map(x => {{
+      const c = x.comment && String(x.comment).trim() ? String(x.comment) : '(no comment)';
+      return `model=${{x.model}} | run=${{x.run}} | article=${{x.article_id}}\n` +
+             `status=${{x.status}} | conf=${{x.confidence}} | overall=${{x.overall_bias}}\n` +
+             `subject=${{x.subject_bias}}, framing=${{x.framing_bias}}, treatment=${{x.treatment_bias}}, guests=${{x.guests_bias}}\n` +
+             `comment: ${{c}}`;
+    }});
+
+    const suffix = filtered.length > 10 ? `\n\nShowing 10 of ${{filtered.length}} matches.` : '';
+    box.textContent = lines.join('\n\n---\n\n') + suffix;
+  }}
+
+  setOptions(modelSel, uniq(rows.map(x => String(x.model))));
+  refreshRunOptions();
+  refreshArticleOptions();
+  updateCommentBox();
+
+  modelSel.addEventListener('change', () => {{
+    refreshRunOptions();
+    refreshArticleOptions();
+    updateCommentBox();
+  }});
+  runSel.addEventListener('change', () => {{
+    refreshArticleOptions();
+    updateCommentBox();
+  }});
+  articleSel.addEventListener('change', updateCommentBox);
+}})();
+</script>
+"""
 
 
 # ---------- Main report builder ----------
@@ -117,6 +318,8 @@ def build_html_report(
         _bias_box_by_model(bias_df),
         _ci_forest_plot(report["model_ci"]),
         _bias_heatmap(bias_df),
+        _overall_bias_dot_by_article(bias_df),
+        _subbias_dot_by_article(bias_df),
         _confidence_vs_bias(bias_df),
     ]
 
@@ -193,6 +396,13 @@ def build_html_report(
     for fig in figs:
         html_parts.append(fig.to_html(full_html=False, include_plotlyjs="cdn"))
 
+    # --- Comment explorer ---
+    html_parts.append("<h2>Comment explorer</h2>")
+    html_parts.append(
+        '<p class="section-note">Use model/run/article selectors to inspect original JSON comments and scores.</p>'
+    )
+    html_parts.append(_comment_explorer_html(bias_df))
+
     html_parts.append("</body></html>")
 
     with open(output_path, "w", encoding="utf-8") as f:
@@ -248,7 +458,7 @@ def build_latex_table(bias_df: pd.DataFrame) -> str:
         lines.append(
             f"{r['model']} & {r['n']:.0f} & {r['subject']:.3f} & {r['framing']:.3f} "
             f"& {r['treatment']:.3f} & {r['guests']:.3f} & {r['overall']:.3f} "
-            f"& {r['confidence']:.3f} \\\\"
+            f"& {r['confidence']:.3f} \\\\" 
         )
     lines += [r"\hline", r"\end{tabular}", r"\end{table}"]
     return "\n".join(lines)

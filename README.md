@@ -58,8 +58,16 @@ python -m polibias score --run-dir exp_a
 python -m polibias analyse --run-dir exp_a
 python -m polibias stats --run-dir exp_a
 python -m polibias export --run-dir exp_a
+python -m polibias bambi --run-dir exp_a
 python -m polibias viz --run-dir exp_a
 python -m polibias check --run-dir exp_a
+```
+
+Bayesian audit extras (optional):
+
+```bash
+pip install -e "[bayes]"
+python -m polibias bambi --run-dir exp_a
 ```
 
 ## Output Layout

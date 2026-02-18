@@ -10,6 +10,7 @@ Usage::
     python -m polibias validate     # pre-flight checks (Ollama, models, data)
     python -m polibias stats        # compute statistical analysis
     python -m polibias export       # generate HTML report, LaTeX, summaries
+    python -m polibias bambi        # Bayesian two-part audit of scoring behaviour
     python -m polibias viz          # generate HTML report and open it
     python -m polibias upload       # upload run results to GCS
 """
@@ -92,6 +93,23 @@ def _run_export(settings: Settings) -> None:
     print("\nGenerating exports ...")
     run_export(settings)
     print("  Export complete.")
+
+
+def _run_bambi(settings: Settings, args: argparse.Namespace) -> None:
+    from polibias.bambi_audit import BambiAuditOptions, run_bambi_audit
+
+    print("\nRunning Bayesian scoring-behaviour audit ...")
+    opts = BambiAuditOptions(
+        draws=args.bayes_draws,
+        tune=args.bayes_tune,
+        chains=args.bayes_chains,
+        cores=args.bayes_cores,
+        target_accept=args.bayes_target_accept,
+        random_seed=args.bayes_seed,
+        collapse_runs=args.bayes_collapse_runs,
+    )
+    run_bambi_audit(settings, opts)
+    print("  Bayesian audit complete.")
 
 
 def _run_viz(settings: Settings) -> None:
@@ -182,7 +200,7 @@ def main(argv: list[str] | None = None) -> None:
         default="all",
         choices=[
             "all", "scrape", "score", "analyse",
-            "check", "validate", "stats", "export", "viz", "upload",
+            "check", "validate", "stats", "export", "bambi", "viz", "upload",
         ],
         help="Pipeline step to run (default: all)",
     )
@@ -200,6 +218,22 @@ def main(argv: list[str] | None = None) -> None:
         "--bucket",
         default=None,
         help="GCS bucket name for the 'upload' command.",
+    )
+    parser.add_argument("--bayes-draws", type=int, default=1000, help="Bambi posterior draws.")
+    parser.add_argument("--bayes-tune", type=int, default=1000, help="Bambi warmup/tune steps.")
+    parser.add_argument("--bayes-chains", type=int, default=2, help="Bambi chains.")
+    parser.add_argument("--bayes-cores", type=int, default=2, help="Bambi parallel cores.")
+    parser.add_argument(
+        "--bayes-target-accept",
+        type=float,
+        default=0.9,
+        help="Bambi target_accept for NUTS.",
+    )
+    parser.add_argument("--bayes-seed", type=int, default=42, help="Bambi random seed.")
+    parser.add_argument(
+        "--bayes-collapse-runs",
+        action="store_true",
+        help="Collapse repeated runs to model/article averages before score model.",
     )
     args = parser.parse_args(argv)
 
@@ -219,6 +253,10 @@ def main(argv: list[str] | None = None) -> None:
 
     if args.command == "export":
         _run_export(settings)
+        return
+
+    if args.command == "bambi":
+        _run_bambi(settings, args)
         return
 
     if args.command == "viz":
