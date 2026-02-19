@@ -10,7 +10,8 @@ Usage::
     python -m polibias validate     # pre-flight checks (Ollama, models, data)
     python -m polibias stats        # compute statistical analysis
     python -m polibias export       # generate HTML report, LaTeX, summaries
-    python -m polibias bambi        # Bayesian two-part audit of scoring behaviour
+    python -m polibias bambi-analyse  # Bayesian fit + holdout prediction analysis
+    python -m polibias bambi-viz      # build HTML report from Bayesian outputs
     python -m polibias viz          # generate HTML report and open it
     python -m polibias upload       # upload run results to GCS
 """
@@ -43,6 +44,36 @@ def _run_scrape(settings: Settings) -> None:
         print(f"  Found {n} existing article(s) — only missing ones will be fetched.")
     scrape_articles(settings)
     print("  Scraping complete.")
+
+
+def _run_scrape_federalist(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_federalist import fetch_article_links, scrape_federalist
+
+    out_dir = settings.webdata_dir
+    if urls_file:
+        urls = Path(urls_file).read_text().splitlines()
+        print(f"\nScraping {len(urls)} Federalist URLs from {urls_file} → {out_dir}")
+    else:
+        print(f"\nFetching Federalist article links (limit={limit}) ...")
+        urls = fetch_article_links(limit=limit, timeout=settings.scrape_timeout)
+        print(f"  Found {len(urls)} article links.")
+    scrape_federalist(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  Federalist scraping complete.")
+
+
+def _run_scrape_jacobin(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_jacobin import fetch_article_links, scrape_jacobin
+
+    out_dir = settings.webdata_dir
+    if urls_file:
+        urls = Path(urls_file).read_text().splitlines()
+        print(f"\nScraping {len(urls)} Jacobin URLs from {urls_file} → {out_dir}")
+    else:
+        print(f"\nFetching Jacobin article links (limit={limit}) ...")
+        urls = fetch_article_links(limit=limit, timeout=settings.scrape_timeout)
+        print(f"  Found {len(urls)} article links.")
+    scrape_jacobin(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  Jacobin scraping complete.")
 
 
 def _run_score(settings: Settings) -> None:
@@ -95,8 +126,8 @@ def _run_export(settings: Settings) -> None:
     print("  Export complete.")
 
 
-def _run_bambi(settings: Settings, args: argparse.Namespace) -> None:
-    from polibias.bambi_audit import BambiAuditOptions, run_bambi_audit
+def _run_bambi_analyse(settings: Settings, args: argparse.Namespace) -> None:
+    from polibias.bambi_audit import BambiAuditOptions, run_bambi_analyse
 
     print("\nRunning Bayesian scoring-behaviour audit ...")
     opts = BambiAuditOptions(
@@ -107,9 +138,20 @@ def _run_bambi(settings: Settings, args: argparse.Namespace) -> None:
         target_accept=args.bayes_target_accept,
         random_seed=args.bayes_seed,
         collapse_runs=args.bayes_collapse_runs,
+        complete_articles_only=args.bayes_complete_articles_only,
+        no_imputation=args.bayes_no_imputation,
+        test_fraction=args.bayes_test_fraction,
     )
-    run_bambi_audit(settings, opts)
+    run_bambi_analyse(settings, opts)
     print("  Bayesian audit complete.")
+
+
+def _run_bambi_viz(settings: Settings) -> None:
+    from polibias.bambi_audit import run_bambi_viz
+
+    print("\nGenerating Bayesian HTML report ...")
+    run_bambi_viz(settings)
+    print("  Bayesian report complete.")
 
 
 def _run_viz(settings: Settings) -> None:
@@ -199,10 +241,23 @@ def main(argv: list[str] | None = None) -> None:
         nargs="?",
         default="all",
         choices=[
-            "all", "scrape", "score", "analyse",
-            "check", "validate", "stats", "export", "bambi", "viz", "upload",
+            "all", "scrape", "scrape-federalist", "scrape-jacobin",
+            "score", "analyse",
+            "check", "validate", "stats", "export", "bambi", "bambi-analyse", "bambi-viz", "viz", "upload",
         ],
         help="Pipeline step to run (default: all)",
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=20,
+        help="Max articles to fetch from homepage (scrape-federalist / scrape-jacobin).",
+    )
+    parser.add_argument(
+        "--urls-file",
+        type=Path,
+        default=None,
+        help="Plain-text file with one URL per line (scrape-federalist / scrape-jacobin).",
     )
     parser.add_argument(
         "--run-dir",
@@ -219,9 +274,9 @@ def main(argv: list[str] | None = None) -> None:
         default=None,
         help="GCS bucket name for the 'upload' command.",
     )
-    parser.add_argument("--bayes-draws", type=int, default=1000, help="Bambi posterior draws.")
-    parser.add_argument("--bayes-tune", type=int, default=1000, help="Bambi warmup/tune steps.")
-    parser.add_argument("--bayes-chains", type=int, default=2, help="Bambi chains.")
+    parser.add_argument("--bayes-draws", type=int, default=1500, help="Bambi posterior draws.")
+    parser.add_argument("--bayes-tune", type=int, default=1500, help="Bambi warmup/tune steps.")
+    parser.add_argument("--bayes-chains", type=int, default=4, help="Bambi chains.")
     parser.add_argument("--bayes-cores", type=int, default=2, help="Bambi parallel cores.")
     parser.add_argument(
         "--bayes-target-accept",
@@ -235,6 +290,22 @@ def main(argv: list[str] | None = None) -> None:
         action="store_true",
         help="Collapse repeated runs to model/article averages before score model.",
     )
+    parser.add_argument(
+        "--bayes-complete-articles-only",
+        action="store_true",
+        help="Only include articles where every model has at least one successful score.",
+    )
+    parser.add_argument(
+        "--bayes-no-imputation",
+        action="store_true",
+        help="Disable predictor imputation; failure model drops confidence/length predictors.",
+    )
+    parser.add_argument(
+        "--bayes-test-fraction",
+        type=float,
+        default=0.5,
+        help="Holdout test fraction for Bayesian prediction evaluation.",
+    )
     args = parser.parse_args(argv)
 
     config_path = Path(args.config) if args.config else None
@@ -242,6 +313,14 @@ def main(argv: list[str] | None = None) -> None:
     if args.run_dir is not None:
         overrides["run_name"] = args.run_dir
     settings = load_settings(config_path, **overrides)
+
+    if args.command == "scrape-federalist":
+        _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
+        return
+
+    if args.command == "scrape-jacobin":
+        _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
+        return
 
     if args.command == "validate":
         _run_validate(settings)
@@ -255,8 +334,12 @@ def main(argv: list[str] | None = None) -> None:
         _run_export(settings)
         return
 
-    if args.command == "bambi":
-        _run_bambi(settings, args)
+    if args.command in {"bambi", "bambi-analyse"}:
+        _run_bambi_analyse(settings, args)
+        return
+
+    if args.command == "bambi-viz":
+        _run_bambi_viz(settings)
         return
 
     if args.command == "viz":
