@@ -38,9 +38,10 @@ def _run_validate(settings: Settings) -> None:
 def _run_scrape(settings: Settings) -> None:
     from polibias.scraper import scrape_articles
 
-    print("\n[1/3] Scraping articles ...")
-    if any(settings.webdata_dir.glob("*.json")):
-        n = len(list(settings.webdata_dir.glob("*.json")))
+    rts_dir = settings.source_webdata_dir("rts")
+    print("\n[1/3] Scraping RTS articles ...")
+    if any(rts_dir.glob("*.json")):
+        n = len(list(rts_dir.glob("*.json")))
         print(f"  Found {n} existing article(s) — only missing ones will be fetched.")
     scrape_articles(settings)
     print("  Scraping complete.")
@@ -49,7 +50,7 @@ def _run_scrape(settings: Settings) -> None:
 def _run_scrape_federalist(settings: Settings, limit: int, urls_file: Path | None) -> None:
     from polibias.scraper_federalist import fetch_article_links, scrape_federalist
 
-    out_dir = settings.webdata_dir
+    out_dir = settings.source_webdata_dir("the_federalist")
     if urls_file:
         urls = Path(urls_file).read_text().splitlines()
         print(f"\nScraping {len(urls)} Federalist URLs from {urls_file} → {out_dir}")
@@ -64,7 +65,7 @@ def _run_scrape_federalist(settings: Settings, limit: int, urls_file: Path | Non
 def _run_scrape_jacobin(settings: Settings, limit: int, urls_file: Path | None) -> None:
     from polibias.scraper_jacobin import fetch_article_links, scrape_jacobin
 
-    out_dir = settings.webdata_dir
+    out_dir = settings.source_webdata_dir("jacobin")
     if urls_file:
         urls = Path(urls_file).read_text().splitlines()
         print(f"\nScraping {len(urls)} Jacobin URLs from {urls_file} → {out_dir}")
@@ -80,7 +81,7 @@ def _run_score(settings: Settings) -> None:
     from polibias.scoring import score_all
 
     print("\n[2/3] Scoring articles with Ollama models ...")
-    if not any(settings.webdata_dir.glob("*.json")):
+    if not settings.all_source_webdata_dirs:
         print("  ERROR: No articles found. Run 'scrape' first.")
         sys.exit(1)
     score_all(settings)

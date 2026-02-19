@@ -4,6 +4,9 @@ plotly>=5.18
 ollama>=0.4
 tqdm>=4.66
 scipy>=1.11
+bambi>=0.13
+arviz>=0.18
+matplotlib>=3.8
 
 [cloud]
 google-cloud-storage>=2.14

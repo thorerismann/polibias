@@ -24,6 +24,11 @@ def _default_root() -> Path:
     return Path(__file__).resolve().parent.parent.parent
 
 
+def model_output_dirname(model: str) -> str:
+    """Return a filesystem-safe directory name for model outputs."""
+    return "".join(c if c.isalnum() or c in "._-" else "_" for c in model)
+
+
 @dataclass(frozen=True)
 class Settings:
     root: Path = field(default_factory=_default_root)
@@ -47,9 +52,7 @@ class Settings:
         "qwen2.5:3b-instruct",
         "gemma3:4b",
         "MichelRosselli/apertus:latest",
-        "mistral:latest",
         "llama3.1:8b",
-        "olmo-3:7b",
         "phi3.5:latest",
         
     ])
@@ -73,6 +76,17 @@ class Settings:
     def webdata_dir(self) -> Path:
         return self.data_dir / "webdata"
 
+    def source_webdata_dir(self, source: str) -> Path:
+        """Per-source webdata subfolder, e.g. data/webdata/rts/."""
+        return self.webdata_dir / source
+
+    @property
+    def all_source_webdata_dirs(self) -> list:
+        """All existing per-source webdata subdirectories."""
+        if not self.webdata_dir.is_dir():
+            return []
+        return [d for d in sorted(self.webdata_dir.iterdir()) if d.is_dir()]
+
     @property
     def runs_dir(self) -> Path:
         return self.data_dir / "runs"
@@ -84,6 +98,10 @@ class Settings:
     @property
     def results_dir(self) -> Path:
         return self.run_dir / "results"
+
+    def source_results_dir(self, source: str) -> Path:
+        """Per-source results directory, e.g. run_dir/rts_results/."""
+        return self.run_dir / f"{source}_results"
 
     @property
     def errors_dir(self) -> Path:
@@ -156,6 +174,9 @@ class Settings:
             raise RuntimeError("run_name cannot be empty.")
         if run_name in {".", ".."} or "/" in run_name or "\\" in run_name:
             raise RuntimeError("run_name must be a simple folder name (no path separators).")
+
+    def model_output_dirname(self, model: str) -> str:
+        return model_output_dirname(model)
 
 
 def load_settings(config_path: Path | None = None, **overrides: Any) -> Settings:

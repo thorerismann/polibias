@@ -16,34 +16,64 @@ _TAG_RE = re.compile(r"<[^>]+>")
 # ---------- Bias results ----------
 
 def build_bias_frame(settings) -> pd.DataFrame:
-    """Collect all per-article score JSONs into a single DataFrame."""
+    """Collect all per-article score JSONs into a single DataFrame.
+
+    Looks in both the legacy results/ dir and the per-source dirs
+    (rts_results/, jacobin_results/, the_federalist_results/, etc.).
+    Adds a 'source' column derived from the directory name.
+    """
     rows = []
-    for run in range(1, settings.runs + 1):
-        for model in settings.models:
-            canonical_dir = settings.results_dir / settings.model_output_dirname(model) / str(run)
-            legacy_dir = settings.results_dir / model.replace(":", "_") / str(run)
 
-            model_dirs = [canonical_dir]
-            if legacy_dir != canonical_dir:
-                model_dirs.append(legacy_dir)
+    # Collect all candidate (source, model_dir) pairs to scan
+    def _iter_model_dirs(base_dir, source_label):
+        for run in range(1, settings.runs + 1):
+            for model in settings.models:
+                canonical = base_dir / settings.model_output_dirname(model) / str(run)
+                legacy = base_dir / model.replace(":", "_") / str(run)
+                for d in {canonical, legacy}:
+                    if d.is_dir():
+                        yield source_label, run, model, d
 
-            for model_dir in model_dirs:
-                if not model_dir.is_dir():
-                    continue
-                for p in model_dir.glob("*.json"):
-                    data = json.loads(p.read_text(encoding="utf-8"))
-                    rows.append({
-                        "model": model,
-                        "article_id": p.stem,
-                        "subject_bias": data.get("subject_bias"),
-                        "framing_bias": data.get("framing_bias"),
-                        "treatment_bias": data.get("treatment_bias"),
-                        "guests_bias": data.get("guests_bias"),
-                        "confidence": data.get("confidence"),
-                        "comment": data.get("comment"),
-                        "status": data.get("status", "ok"),
-                        "run": run,
-                    })
+    # Legacy flat results/ dir (pre-source-split runs)
+    for source, run, model, model_dir in _iter_model_dirs(settings.results_dir, "rts"):
+        for p in model_dir.glob("*.json"):
+            data = json.loads(p.read_text(encoding="utf-8"))
+            rows.append({
+                "source": source,
+                "model": model,
+                "article_id": p.stem,
+                "subject_bias": data.get("subject_bias"),
+                "framing_bias": data.get("framing_bias"),
+                "treatment_bias": data.get("treatment_bias"),
+                "guests_bias": data.get("guests_bias"),
+                "confidence": data.get("confidence"),
+                "comment": data.get("comment"),
+                "status": data.get("status", "ok"),
+                "run": run,
+            })
+
+    # Per-source results dirs (<source>_results/)
+    for src_dir in sorted(settings.run_dir.glob("*_results")):
+        if not src_dir.is_dir():
+            continue
+        # Derive source label from directory name, e.g. "rts_results" -> "rts"
+        source_label = src_dir.name.removesuffix("_results")
+        for source, run, model, model_dir in _iter_model_dirs(src_dir, source_label):
+            for p in model_dir.glob("*.json"):
+                data = json.loads(p.read_text(encoding="utf-8"))
+                rows.append({
+                    "source": source_label,
+                    "model": model,
+                    "article_id": p.stem,
+                    "subject_bias": data.get("subject_bias"),
+                    "framing_bias": data.get("framing_bias"),
+                    "treatment_bias": data.get("treatment_bias"),
+                    "guests_bias": data.get("guests_bias"),
+                    "confidence": data.get("confidence"),
+                    "comment": data.get("comment"),
+                    "status": data.get("status", "ok"),
+                    "run": run,
+                })
 
     df = pd.DataFrame(rows)
     if not df.empty:
@@ -80,7 +110,10 @@ def _word_count(text: Optional[str]) -> int:
 def build_webdata_frame(settings) -> pd.DataFrame:
     """Build a cleaned DataFrame from the scraped web-data JSONs."""
     records = []
-    for p in sorted(settings.webdata_dir.glob("*.json")):
+    all_json = []
+    for src_dir in settings.all_source_webdata_dirs:
+        all_json.extend(sorted(src_dir.glob("*.json")))
+    for p in all_json:
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
         except Exception as e:

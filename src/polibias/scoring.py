@@ -287,8 +287,12 @@ def score_all(settings) -> None:
     Models are processed sequentially (only one model loaded at a time —
     safe for systems with no swap).  Articles within each model/run are
     scored in parallel via ThreadPoolExecutor.
+
+    Results are written to per-source subdirectories:
+      <run_dir>/rts_results/<model>/<run>/
+      <run_dir>/jacobin_results/<model>/<run>/
+      <run_dir>/the_federalist_results/<model>/<run>/
     """
-    results_dir = settings.results_dir
     client = _get_client(settings)
 
     for model in settings.models:
@@ -297,18 +301,22 @@ def score_all(settings) -> None:
         print(f"{'=' * 50}")
 
         for run in range(1, settings.runs + 1):
-            out_dir = results_dir / settings.model_output_dirname(model) / str(run)
-            out_dir.mkdir(parents=True, exist_ok=True)
-
-            articles = sorted(settings.webdata_dir.glob("*.json"))
             todo = []
             skipped = 0
-            for p in articles:
-                out_file = out_dir / f"{p.stem}.json"
-                if out_file.exists():
-                    skipped += 1
-                else:
-                    todo.append((p, out_file))
+            for src_dir in settings.all_source_webdata_dirs:
+                source = src_dir.name
+                out_dir = (
+                    settings.source_results_dir(source)
+                    / settings.model_output_dirname(model)
+                    / str(run)
+                )
+                out_dir.mkdir(parents=True, exist_ok=True)
+                for p in sorted(src_dir.glob("*.json")):
+                    out_file = out_dir / f"{p.stem}.json"
+                    if out_file.exists():
+                        skipped += 1
+                    else:
+                        todo.append((p, out_file))
 
             if skipped:
                 print(f"  Run {run}/{settings.runs}: {skipped} already scored, {len(todo)} to do")

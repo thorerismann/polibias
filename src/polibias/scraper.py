@@ -228,9 +228,9 @@ def _make_filename(article: dict) -> str:
 def scrape_articles(settings) -> None:
     """Fetch articles from the input URL list and save as JSON.
 
-    Skips articles whose JSON already exists in ``webdata_dir``.
+    Skips articles whose JSON already exists in the rts webdata subfolder.
     """
-    webdata_dir = settings.webdata_dir
+    webdata_dir = settings.source_webdata_dir("rts")
     webdata_dir.mkdir(parents=True, exist_ok=True)
 
     with open(settings.input_file, "r") as f:

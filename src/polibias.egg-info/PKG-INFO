@@ -33,6 +33,9 @@ Requires-Dist: plotly>=5.18
 Requires-Dist: ollama>=0.4
 Requires-Dist: tqdm>=4.66
 Requires-Dist: scipy>=1.11
+Requires-Dist: bambi>=0.13
+Requires-Dist: arviz>=0.18
+Requires-Dist: matplotlib>=3.8
 Provides-Extra: docs
 Requires-Dist: sphinx>=7.0; extra == "docs"
 Requires-Dist: sphinx-rtd-theme>=2.0; extra == "docs"
@@ -92,20 +95,22 @@ pip install -e .
 If omitted, it defaults to `run_results`.
 
 ```bash
-python -m polibias all --run-dir temp_02_ctx2k
-python -m polibias all --run-dir temp_08_ctx4k
+polibias all --run-dir temp_02_ctx2k
+polibias all --run-dir temp_08_ctx4k
 ```
 
 You can run individual steps too:
 
 ```bash
-python -m polibias scrape
-python -m polibias score --run-dir exp_a
-python -m polibias analyse --run-dir exp_a
-python -m polibias stats --run-dir exp_a
-python -m polibias export --run-dir exp_a
-python -m polibias viz --run-dir exp_a
-python -m polibias check --run-dir exp_a
+polibias scrape
+polibias score --run-dir exp_a
+polibias analyse --run-dir exp_a
+polibias stats --run-dir exp_a
+polibias export --run-dir exp_a
+polibias bambi-analyse --run-dir exp_a
+polibias bambi-viz --run-dir exp_a
+polibias viz --run-dir exp_a
+polibias check --run-dir exp_a
 ```
 
 ## Output Layout
