@@ -32,6 +32,7 @@ class RTSArticle:
     date_accessed: str
     sources: List[str]
     credit: List[str]
+    source: str = "rts"
 
 
 # ---------- Fetch ----------

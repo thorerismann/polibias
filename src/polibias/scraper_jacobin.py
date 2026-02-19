@@ -42,6 +42,7 @@ class JacobinArticle:
     publisher_name: str
     date_published: Optional[str]
     date_accessed: str
+    source: str = "jacobin"
 
 
 # ---------- Fetch ----------

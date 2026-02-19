@@ -35,6 +35,7 @@ class FederalistArticle:
     date_modified: Optional[str]
     date_accessed: str
     word_count: Optional[int]
+    source: str = "the_federalist"
 
 
 # ---------- Fetch ----------
