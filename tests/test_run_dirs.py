@@ -85,3 +85,32 @@ def test_bias_frame_reads_legacy_nested_model_dir(tmp_path: Path) -> None:
     df = build_bias_frame(settings)
     assert len(df) == 1
     assert df.iloc[0]["article_id"] == "a2"
+
+
+def test_bias_frame_coerces_string_numbers_and_invalids(tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path, run_name="exp_mixed_types")
+
+    model_dir = settings.source_results_dir("jacobin") / "m1" / "1"
+    model_dir.mkdir(parents=True, exist_ok=True)
+    (model_dir / "a3.json").write_text(
+        json.dumps(
+            {
+                "subject_bias": "0.2",
+                "framing_bias": "-0.1",
+                "treatment_bias": "bad-value",
+                "guests_bias": 0.1,
+                "confidence": "0.8",
+                "comment": "ok",
+                "status": "ok",
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    df = build_bias_frame(settings)
+    assert len(df) == 1
+    row = df.iloc[0]
+    assert row["subject_bias"] == 0.2
+    assert row["framing_bias"] == -0.1
+    assert row["confidence"] == 0.8
+    assert abs(row["overall_bias"] - 0.06666666666666667) < 1e-12

@@ -96,3 +96,18 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
     seen.clear()
     cli.main(["viz", "--source", "the_federalist"])
     assert seen["viz"] == ("the_federalist", "report_fed.html")
+
+
+def test_cli_passes_runs_override(monkeypatch, tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path)
+    seen: dict[str, object] = {}
+
+    def _load_settings(config_path, **overrides):  # noqa: ANN001
+        seen["overrides"] = overrides
+        return settings
+
+    monkeypatch.setattr(cli, "load_settings", _load_settings)
+    monkeypatch.setattr(cli, "_run_score_source", lambda s, source: None)
+
+    cli.main(["score", "--source", "jacobin", "--runs", "2"])
+    assert seen["overrides"]["runs"] == 2

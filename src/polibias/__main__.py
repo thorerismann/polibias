@@ -374,6 +374,12 @@ def _build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Path to a TOML config file (keys map to Settings fields).",
     )
+    common.add_argument(
+        "--runs",
+        type=int,
+        default=None,
+        help="Override number of scoring runs for this invocation.",
+    )
 
     subparsers = parser.add_subparsers(dest="command")
 
@@ -488,6 +494,10 @@ def main(argv: list[str] | None = None) -> None:
     overrides: dict[str, Any] = {}
     if args.run_dir is not None:
         overrides["run_name"] = args.run_dir
+    if args.runs is not None:
+        if args.runs < 1:
+            parser.error("--runs must be >= 1")
+        overrides["runs"] = args.runs
     settings = load_settings(config_path, **overrides)
 
     if args.command == "run":

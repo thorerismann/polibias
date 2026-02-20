@@ -78,6 +78,10 @@ def build_bias_frame(settings) -> pd.DataFrame:
     df = pd.DataFrame(rows)
     if not df.empty:
         bias_cols = ["subject_bias", "framing_bias", "treatment_bias", "guests_bias"]
+        numeric_cols = [*bias_cols, "confidence"]
+        for col in numeric_cols:
+            if col in df.columns:
+                df[col] = pd.to_numeric(df[col], errors="coerce")
         df["overall_bias"] = df[bias_cols].mean(axis=1)
     return df
 
