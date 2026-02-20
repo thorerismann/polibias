@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
+from typing import Mapping
 
 import numpy as np
 import pandas as pd
@@ -306,9 +308,14 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 # ---------- Main report builder ----------
 
 def build_html_report(
-    bias_df: pd.DataFrame, output_path: str, kappa_bins: int = 5,
+    bias_df: pd.DataFrame,
+    output_path: str,
+    kappa_bins: int = 5,
+    *,
+    title: str = "polibias — Bias Analysis Report",
+    include_tables: bool = True,
 ) -> None:
-    """Generate a standalone HTML report with charts and stats tables."""
+    """Generate a standalone HTML report."""
     from polibias.stats import build_stats_report
 
     report = build_stats_report(bias_df, kappa_bins=kappa_bins)
@@ -329,67 +336,70 @@ def build_html_report(
         "<title>polibias report</title>",
         f"<style>{_CSS}</style>",
         "</head><body>",
-        "<h1>polibias — Bias Analysis Report</h1>",
+        f"<h1>{title}</h1>",
     ]
 
-    # --- Model summary table ---
-    html_parts.append("<h2>Model summary</h2>")
-    html_parts.append('<p class="section-note">Mean bias scores per dimension. '
-                      'Scale: -1.0 (left) to +1.0 (right).</p>')
-    if not report["model_summary"].empty:
-        summary = report["model_summary"].copy()
-        display_cols = ["model"]
-        for c in ["overall_bias_mean", "subject_bias_mean", "framing_bias_mean",
-                   "treatment_bias_mean", "guests_bias_mean",
-                   "overall_bias_std", "n_ok", "n_recovered", "n_fallback"]:
-            if c in summary.columns:
-                display_cols.append(c)
-        html_parts.append(_df_to_html(summary[display_cols]))
+    if include_tables:
+        # --- Model summary table ---
+        html_parts.append("<h2>Model summary</h2>")
+        html_parts.append('<p class="section-note">Mean bias scores per dimension. '
+                          'Scale: -1.0 (left) to +1.0 (right).</p>')
+        if not report["model_summary"].empty:
+            summary = report["model_summary"].copy()
+            display_cols = ["model"]
+            for c in ["overall_bias_mean", "subject_bias_mean", "framing_bias_mean",
+                      "treatment_bias_mean", "guests_bias_mean",
+                      "overall_bias_std", "n_ok", "n_recovered", "n_fallback"]:
+                if c in summary.columns:
+                    display_cols.append(c)
+            html_parts.append(_df_to_html(summary[display_cols]))
 
-    # --- Confidence intervals table ---
-    html_parts.append("<h2>Confidence intervals (95%)</h2>")
-    html_parts.append('<p class="section-note">If the CI crosses zero, the model\'s '
-                      'bias is not statistically distinguishable from neutral.</p>')
-    if not report["model_ci"].empty:
-        html_parts.append(_df_to_html(report["model_ci"]))
+        # --- Confidence intervals table ---
+        html_parts.append("<h2>Confidence intervals (95%)</h2>")
+        html_parts.append('<p class="section-note">If the CI crosses zero, the model\'s '
+                          'bias is not statistically distinguishable from neutral.</p>')
+        if not report["model_ci"].empty:
+            html_parts.append(_df_to_html(report["model_ci"]))
 
-    # --- ICC table ---
-    html_parts.append("<h2>Within-model consistency (ICC)</h2>")
-    html_parts.append('<p class="section-note">'
-                      'ICC(1,1) measures how consistently a model scores the same article '
-                      'across runs. 0 = random, 1 = perfect. Below 0.4 is poor.</p>')
-    if not report["icc_per_model"].empty:
-        html_parts.append(_df_to_html(report["icc_per_model"]))
+        # --- ICC table ---
+        html_parts.append("<h2>Within-model consistency (ICC)</h2>")
+        html_parts.append('<p class="section-note">'
+                          'ICC(1,1) measures how consistently a model scores the same article '
+                          'across runs. 0 = random, 1 = perfect. Below 0.4 is poor.</p>')
+        if not report["icc_per_model"].empty:
+            html_parts.append(_df_to_html(report["icc_per_model"]))
 
-    # --- Fleiss' kappa ---
-    kappa = report["fleiss_kappa"]
-    kappa_str = f"{kappa:.3f}" if not np.isnan(kappa) else "N/A"
-    if np.isnan(kappa):
-        kappa_interp = "insufficient data"
-    elif kappa < 0:
-        kappa_interp = "less than chance"
-    elif kappa < 0.21:
-        kappa_interp = "slight agreement"
-    elif kappa < 0.41:
-        kappa_interp = "fair agreement"
-    elif kappa < 0.61:
-        kappa_interp = "moderate agreement"
-    elif kappa < 0.81:
-        kappa_interp = "substantial agreement"
+        # --- Fleiss' kappa ---
+        kappa = report["fleiss_kappa"]
+        kappa_str = f"{kappa:.3f}" if not np.isnan(kappa) else "N/A"
+        if np.isnan(kappa):
+            kappa_interp = "insufficient data"
+        elif kappa < 0:
+            kappa_interp = "less than chance"
+        elif kappa < 0.21:
+            kappa_interp = "slight agreement"
+        elif kappa < 0.41:
+            kappa_interp = "fair agreement"
+        elif kappa < 0.61:
+            kappa_interp = "moderate agreement"
+        elif kappa < 0.81:
+            kappa_interp = "substantial agreement"
+        else:
+            kappa_interp = "near-perfect agreement"
+
+        html_parts.append("<h2>Inter-model agreement (Fleiss' kappa)</h2>")
+        html_parts.append('<p class="section-note">'
+                          "Measures how much the models agree when scoring the same articles. "
+                          "Scale: &lt;0.20 slight, 0.21-0.40 fair, 0.41-0.60 moderate, "
+                          "0.61-0.80 substantial, &gt;0.80 near-perfect.</p>")
+        html_parts.append(
+            f'<div class="kappa-box">'
+            f'<span class="value">{kappa_str}</span> '
+            f'<span class="label">— {kappa_interp}</span>'
+            f'</div>'
+        )
     else:
-        kappa_interp = "near-perfect agreement"
-
-    html_parts.append("<h2>Inter-model agreement (Fleiss' kappa)</h2>")
-    html_parts.append('<p class="section-note">'
-                      "Measures how much the models agree when scoring the same articles. "
-                      "Scale: &lt;0.20 slight, 0.21-0.40 fair, 0.41-0.60 moderate, "
-                      "0.61-0.80 substantial, &gt;0.80 near-perfect.</p>")
-    html_parts.append(
-        f'<div class="kappa-box">'
-        f'<span class="value">{kappa_str}</span> '
-        f'<span class="label">— {kappa_interp}</span>'
-        f'</div>'
-    )
+        html_parts.append('<p class="section-note">Compact source report (charts + comment explorer).</p>')
 
     # --- Charts ---
     html_parts.append("<h2>Charts</h2>")
@@ -466,30 +476,144 @@ def build_latex_table(bias_df: pd.DataFrame) -> str:
 
 # ---------- Entry point ----------
 
-def run_export(settings) -> None:
-    """Load bias data and generate all export outputs."""
+def run_export(
+    settings,
+    *,
+    source: str | None = None,
+    output_filename: str | None = None,
+    include_tables: bool = True,
+    write_artifacts: bool = True,
+) -> None:
+    """Load bias data and generate export outputs."""
     from polibias.analysis import build_bias_frame
 
     settings.run_dir.mkdir(parents=True, exist_ok=True)
     bias_df = build_bias_frame(settings)
+    if source is not None:
+        bias_df = bias_df[bias_df["source"] == source].copy()
     if bias_df.empty:
         print("  No bias data found. Run 'score' and 'analyse' first.")
         return
 
     # HTML report
-    html_path = str(settings.report_html_path)
-    build_html_report(bias_df, html_path, kappa_bins=settings.kappa_bins)
+    report_path = settings.run_dir / output_filename if output_filename else settings.report_html_path
+    html_path = str(report_path)
+    title = "polibias — Bias Analysis Report" if source is None else f"polibias — {source} Bias Report"
+    build_html_report(
+        bias_df,
+        html_path,
+        kappa_bins=settings.kappa_bins,
+        title=title,
+        include_tables=include_tables,
+    )
     print(f"  Wrote HTML report: {html_path}")
 
-    # Article summaries
-    summaries = build_article_summaries(bias_df)
-    summary_path = settings.article_summaries_csv_path
-    summaries.to_csv(summary_path, index=False)
-    print(f"  Wrote article summaries: {summary_path}")
+    if write_artifacts:
+        # Article summaries
+        summaries = build_article_summaries(bias_df)
+        summary_path = settings.article_summaries_csv_path
+        summaries.to_csv(summary_path, index=False)
+        print(f"  Wrote article summaries: {summary_path}")
 
-    # LaTeX
-    latex = build_latex_table(bias_df)
-    latex_path = settings.latex_table_path
-    with open(latex_path, "w", encoding="utf-8") as f:
-        f.write(latex)
-    print(f"  Wrote LaTeX table: {latex_path}")
+        # LaTeX
+        latex = build_latex_table(bias_df)
+        latex_path = settings.latex_table_path
+        with open(latex_path, "w", encoding="utf-8") as f:
+            f.write(latex)
+        print(f"  Wrote LaTeX table: {latex_path}")
+
+
+def run_export_cross_source(
+    settings,
+    *,
+    output_filename: str = "report_all.html",
+    source_reports: Mapping[str, str] | None = None,
+) -> None:
+    from polibias.analysis import build_bias_frame
+
+    bias_df = build_bias_frame(settings)
+    if bias_df.empty:
+        print("  No bias data found. Run 'score' and 'analyse' first.")
+        return
+
+    by_source_model = (
+        bias_df.groupby(["source", "model"], as_index=False)
+        .agg(
+            overall_bias_mean=("overall_bias", "mean"),
+            overall_bias_std=("overall_bias", "std"),
+            confidence_mean=("confidence", "mean"),
+            n_scores=("overall_bias", "count"),
+            n_articles=("article_id", "nunique"),
+        )
+        .sort_values(["source", "overall_bias_mean"], ascending=[True, False])
+    )
+    by_source_dim = (
+        bias_df.groupby("source", as_index=False)
+        .agg(
+            subject_bias_mean=("subject_bias", "mean"),
+            framing_bias_mean=("framing_bias", "mean"),
+            treatment_bias_mean=("treatment_bias", "mean"),
+            guests_bias_mean=("guests_bias", "mean"),
+            overall_bias_mean=("overall_bias", "mean"),
+            confidence_mean=("confidence", "mean"),
+            n_scores=("overall_bias", "count"),
+            n_articles=("article_id", "nunique"),
+        )
+        .sort_values("source")
+    )
+    cross_tab = (
+        pd.pivot_table(
+            bias_df,
+            index="article_id",
+            columns="source",
+            values="overall_bias",
+            aggfunc="mean",
+        )
+        .reset_index()
+        .sort_values("article_id")
+    )
+    source_model_heat = (
+        bias_df.groupby(["source", "model"], as_index=False)["overall_bias"]
+        .mean()
+        .pivot(index="source", columns="model", values="overall_bias")
+    )
+    fig = px.imshow(
+        source_model_heat,
+        color_continuous_scale="RdBu",
+        zmin=-1,
+        zmax=1,
+        aspect="auto",
+        title="Mean overall bias by source and model",
+    )
+
+    links_html = ""
+    if source_reports:
+        links = [
+            f'<li><a href="{Path(name).name}">{source}</a></li>'
+            for source, name in source_reports.items()
+        ]
+        links_html = "<h2>Per-source reports</h2><ul>" + "".join(links) + "</ul>"
+
+    html_parts = [
+        "<!DOCTYPE html><html><head>",
+        '<meta charset="utf-8">',
+        "<title>polibias cross-source report</title>",
+        f"<style>{_CSS}</style>",
+        "</head><body>",
+        "<h1>polibias — Cross-source report</h1>",
+        '<p class="section-note">Cross-reference view across all sources in this run.</p>',
+        links_html,
+        "<h2>Source summary</h2>",
+        _df_to_html(by_source_dim),
+        "<h2>Source x model summary</h2>",
+        _df_to_html(by_source_model),
+        "<h2>Article cross-tab (mean overall bias)</h2>",
+        _df_to_html(cross_tab),
+        "<h2>Heatmap</h2>",
+        fig.to_html(full_html=False, include_plotlyjs="cdn"),
+        "</body></html>",
+    ]
+
+    out_path = settings.run_dir / output_filename
+    out_path.write_text("\n".join(html_parts), encoding="utf-8")
+    print(f"  Wrote cross-source HTML report: {out_path}")

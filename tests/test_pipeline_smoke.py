@@ -32,8 +32,9 @@ def test_analyse_writes_csvs_to_run_dir(tmp_path: Path) -> None:
     )
 
     # Minimal webdata file
-    settings.webdata_dir.mkdir(parents=True, exist_ok=True)
-    (settings.webdata_dir / "a1.json").write_text(
+    src_dir = settings.source_webdata_dir("rts")
+    src_dir.mkdir(parents=True, exist_ok=True)
+    (src_dir / "a1.json").write_text(
         json.dumps(
             {
                 "title": "T",

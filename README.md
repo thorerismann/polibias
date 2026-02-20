@@ -2,7 +2,7 @@
 
 Political bias scoring of Swiss news articles using local LLMs via [Ollama](https://ollama.com).
 
-`polibias` scrapes RTS articles, scores them across four bias dimensions with local models, and produces CSV/statistics/HTML outputs.
+`polibias` scrapes RTS/Federalist/Jacobin articles, scores them across four bias dimensions with local models, and produces CSV/statistics/HTML outputs.
 
 ## Bias Dimensions
 
@@ -46,45 +46,66 @@ pip install -e .
 If omitted, it defaults to `run_results`.
 
 ```bash
-python -m polibias all --run-dir temp_02_ctx2k
-python -m polibias all --run-dir temp_08_ctx4k
+polibias all --run-dir temp_02_ctx2k
+polibias all --run-dir temp_08_ctx4k
 ```
 
 You can run individual steps too:
 
 ```bash
-python -m polibias scrape
-python -m polibias score --run-dir exp_a
-python -m polibias analyse --run-dir exp_a
-python -m polibias stats --run-dir exp_a
-python -m polibias export --run-dir exp_a
-python -m polibias bambi --run-dir exp_a
-python -m polibias viz --run-dir exp_a
-python -m polibias check --run-dir exp_a
+polibias scrape
+polibias scrape-federalist --limit 20
+polibias scrape-jacobin --limit 20
+
+polibias score --run-dir exp_a
+polibias score-rts --run-dir exp_a
+polibias score-federalist --run-dir exp_a
+polibias score-jacobin --run-dir exp_a
+
+polibias analyse --run-dir exp_a
+polibias stats --run-dir exp_a
+polibias export --run-dir exp_a
+polibias bambi --run-dir exp_a
+
+polibias viz --run-dir exp_a
+polibias viz-rts --run-dir exp_a
+polibias viz-fed --run-dir exp_a
+polibias viz-jacobin --run-dir exp_a
+polibias viz-all --run-dir exp_a
+
+polibias check --run-dir exp_a
 ```
 
 Bayesian audit extras (optional):
 
 ```bash
 pip install -e "[bayes]"
-python -m polibias bambi --run-dir exp_a
+polibias bambi --run-dir exp_a
 ```
 
 ## Output Layout
 
 Shared scraped content:
 
-- `data/webdata/*.json`
+- `data/webdata/rts/*.json`
+- `data/webdata/the_federalist/*.json`
+- `data/webdata/jacobin/*.json`
 
 Per-run outputs:
 
-- `data/runs/<run_dir>/results/<model>/<run>/*.json`
+- `data/runs/<run_dir>/rts_results/<model>/<run>/*.json`
+- `data/runs/<run_dir>/the_federalist_results/<model>/<run>/*.json`
+- `data/runs/<run_dir>/jacobin_results/<model>/<run>/*.json`
 - `data/runs/<run_dir>/errors/errors.jsonl`
 - `data/runs/<run_dir>/errors/raw_outputs/*.txt` (raw failed model responses)
 - `data/runs/<run_dir>/bias_data.csv`
 - `data/runs/<run_dir>/web_data.csv`
 - `data/runs/<run_dir>/stats_report.csv`
 - `data/runs/<run_dir>/report.html`
+- `data/runs/<run_dir>/report_rts.html`
+- `data/runs/<run_dir>/report_fed.html`
+- `data/runs/<run_dir>/report_jacobin.html`
+- `data/runs/<run_dir>/report_all.html`
 - `data/runs/<run_dir>/article_summaries.csv`
 - `data/runs/<run_dir>/bias_table.tex`
 

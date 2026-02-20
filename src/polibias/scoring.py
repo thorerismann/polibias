@@ -12,7 +12,7 @@ import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Iterable
 
 import ollama
 from tqdm import tqdm
@@ -281,7 +281,7 @@ def _score_and_save(
     return result.get("status", "ok")
 
 
-def score_all(settings) -> None:
+def score_all(settings, sources: Iterable[str] | None = None) -> None:
     """Score every article with every model for N runs.
 
     Models are processed sequentially (only one model loaded at a time —
@@ -294,6 +294,7 @@ def score_all(settings) -> None:
       <run_dir>/the_federalist_results/<model>/<run>/
     """
     client = _get_client(settings)
+    selected = set(sources) if sources is not None else None
 
     for model in settings.models:
         print(f"\n{'=' * 50}")
@@ -305,6 +306,8 @@ def score_all(settings) -> None:
             skipped = 0
             for src_dir in settings.all_source_webdata_dirs:
                 source = src_dir.name
+                if selected is not None and source not in selected:
+                    continue
                 out_dir = (
                     settings.source_results_dir(source)
                     / settings.model_output_dirname(model)

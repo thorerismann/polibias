@@ -4,7 +4,10 @@ Usage::
 
     python -m polibias              # run full pipeline
     python -m polibias scrape       # only scrape articles
-    python -m polibias score        # only run model scoring
+    python -m polibias score        # run model scoring for all sources
+    python -m polibias score-rts    # score RTS only
+    python -m polibias score-federalist  # score Federalist only
+    python -m polibias score-jacobin  # score Jacobin only
     python -m polibias analyse      # only build CSVs from results
     python -m polibias check        # verify expected output files
     python -m polibias validate     # pre-flight checks (Ollama, models, data)
@@ -13,6 +16,10 @@ Usage::
     python -m polibias bambi-analyse  # Bayesian fit + holdout prediction analysis
     python -m polibias bambi-viz      # build HTML report from Bayesian outputs
     python -m polibias viz          # generate HTML report and open it
+    python -m polibias viz-rts      # generate RTS-only HTML report
+    python -m polibias viz-fed      # generate Federalist-only HTML report
+    python -m polibias viz-jacobin  # generate Jacobin-only HTML report
+    python -m polibias viz-all      # generate cross-source HTML report
     python -m polibias upload       # upload run results to GCS
 """
 
@@ -85,6 +92,20 @@ def _run_score(settings: Settings) -> None:
         print("  ERROR: No articles found. Run 'scrape' first.")
         sys.exit(1)
     score_all(settings)
+    print("  Scoring complete.")
+
+
+def _run_score_source(settings: Settings, source: str) -> None:
+    from polibias.scoring import score_all
+
+    src_dir = settings.source_webdata_dir(source)
+    if not src_dir.exists():
+        print(f"  ERROR: No scraped articles found for source '{source}' in {src_dir}.")
+        print("  Run the corresponding scrape command first.")
+        sys.exit(1)
+
+    print(f"\nScoring source '{source}' with Ollama models ...")
+    score_all(settings, sources=[source])
     print("  Scoring complete.")
 
 
@@ -174,11 +195,76 @@ def _run_viz(settings: Settings) -> None:
         sys.exit(1)
 
 
+def _run_viz_source(settings: Settings, source: str, *, output_name: str) -> None:
+    import webbrowser
+
+    from polibias.export import run_export
+
+    print(f"\nGenerating HTML report for source '{source}' ...")
+    run_export(
+        settings,
+        source=source,
+        output_filename=output_name,
+        include_tables=False,
+        write_artifacts=False,
+    )
+
+    report_path = settings.run_dir / output_name
+    if report_path.exists():
+        print(f"\n  Report ready: {report_path}")
+        print("  Opening in browser ...")
+        webbrowser.open(report_path.as_uri())
+    else:
+        print("  ERROR: Report was not generated. Check for errors above.")
+        sys.exit(1)
+
+
+def _run_viz_all(settings: Settings) -> None:
+    import webbrowser
+
+    from polibias.export import run_export, run_export_cross_source
+
+    targets = [
+        ("rts", "report_rts.html"),
+        ("the_federalist", "report_fed.html"),
+        ("jacobin", "report_jacobin.html"),
+    ]
+    generated: dict[str, str] = {}
+    for source, output_name in targets:
+        if settings.source_webdata_dir(source).exists():
+            run_export(
+                settings,
+                source=source,
+                output_filename=output_name,
+                include_tables=False,
+                write_artifacts=False,
+            )
+            generated[source] = output_name
+
+    if not generated:
+        print("  ERROR: No source webdata directories found. Run scrape first.")
+        sys.exit(1)
+
+    print("\nGenerating cross-source report ...")
+    run_export_cross_source(settings, output_filename="report_all.html", source_reports=generated)
+
+    report_path = settings.run_dir / "report_all.html"
+    if report_path.exists():
+        print(f"\n  Cross-source report ready: {report_path}")
+        print("  Opening in browser ...")
+        webbrowser.open(report_path.as_uri())
+    else:
+        print("  ERROR: Cross-source report was not generated. Check for errors above.")
+        sys.exit(1)
+
+
 def _run_check(settings: Settings) -> None:
     print("\nPipeline save-path check")
     print(f"  run dir: {settings.run_dir}")
-    web_count = len(list(settings.webdata_dir.glob("*.json")))
+    web_count = sum(len(list(d.glob("*.json"))) for d in settings.all_source_webdata_dirs)
     result_count = len(list(settings.results_dir.rglob("*.json")))
+    for src_results in settings.run_dir.glob("*_results"):
+        result_count += len(list(src_results.rglob("*.json")))
     print(f"  webdata JSONs: {web_count}")
     print(f"  result JSONs: {result_count}")
     print(
@@ -243,8 +329,9 @@ def main(argv: list[str] | None = None) -> None:
         default="all",
         choices=[
             "all", "scrape", "scrape-federalist", "scrape-jacobin",
-            "score", "analyse",
-            "check", "validate", "stats", "export", "bambi", "bambi-analyse", "bambi-viz", "viz", "upload",
+            "score", "score-rts", "score-federalist", "score-jacobin", "analyse",
+            "check", "validate", "stats", "export", "bambi", "bambi-analyse", "bambi-viz",
+            "viz", "viz-rts", "viz-fed", "viz-jacobin", "viz-all", "upload",
         ],
         help="Pipeline step to run (default: all)",
     )
@@ -347,6 +434,22 @@ def main(argv: list[str] | None = None) -> None:
         _run_viz(settings)
         return
 
+    if args.command == "viz-rts":
+        _run_viz_source(settings, "rts", output_name="report_rts.html")
+        return
+
+    if args.command == "viz-fed":
+        _run_viz_source(settings, "the_federalist", output_name="report_fed.html")
+        return
+
+    if args.command == "viz-jacobin":
+        _run_viz_source(settings, "jacobin", output_name="report_jacobin.html")
+        return
+
+    if args.command == "viz-all":
+        _run_viz_all(settings)
+        return
+
     if args.command == "upload":
         bucket = args.bucket or os.environ.get("GCS_BUCKET")
         if not bucket:
@@ -370,6 +473,12 @@ def main(argv: list[str] | None = None) -> None:
             step(settings)
     elif args.command == "check":
         _run_check(settings)
+    elif args.command == "score-rts":
+        _run_score_source(settings, "rts")
+    elif args.command == "score-federalist":
+        _run_score_source(settings, "the_federalist")
+    elif args.command == "score-jacobin":
+        _run_score_source(settings, "jacobin")
     else:
         pipeline_steps[args.command](settings)
 
