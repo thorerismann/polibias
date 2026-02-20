@@ -46,41 +46,51 @@ pip install -e .
 If omitted, it defaults to `run_results`.
 
 ```bash
-polibias all --run-dir temp_02_ctx2k
-polibias all --run-dir temp_08_ctx4k
+polibias run --run-dir temp_02_ctx2k
+polibias run --run-dir temp_08_ctx4k
 ```
 
-You can run individual steps too:
+You can run individual grouped commands too:
 
 ```bash
-polibias scrape
-polibias scrape-federalist --limit 20
-polibias scrape-jacobin --limit 20
+polibias scrape --source rts
+polibias scrape --source the_federalist --limit 20
+polibias scrape --source jacobin --limit 20
 
-polibias score --run-dir exp_a
-polibias score-rts --run-dir exp_a
-polibias score-federalist --run-dir exp_a
-polibias score-jacobin --run-dir exp_a
+polibias score --run-dir exp_a --source all
+polibias score --run-dir exp_a --source rts
+polibias score --run-dir exp_a --source the_federalist
+polibias score --run-dir exp_a --source jacobin
 
-polibias analyse --run-dir exp_a
+polibias analyze --run-dir exp_a
 polibias stats --run-dir exp_a
 polibias export --run-dir exp_a
-polibias bambi --run-dir exp_a
+polibias bambi analyze --run-dir exp_a
+polibias bambi viz --run-dir exp_a
 
-polibias viz --run-dir exp_a
-polibias viz-rts --run-dir exp_a
-polibias viz-fed --run-dir exp_a
-polibias viz-jacobin --run-dir exp_a
-polibias viz-all --run-dir exp_a
+polibias viz --run-dir exp_a                     # report.html
+polibias viz --run-dir exp_a --source rts
+polibias viz --run-dir exp_a --source the_federalist
+polibias viz --run-dir exp_a --source jacobin
+polibias viz --run-dir exp_a --source all        # report_all.html
 
 polibias check --run-dir exp_a
 ```
+
+Legacy commands (`all`, `analyse`, `score-rts`, `viz-fed`, etc.) are still accepted.
 
 Bayesian audit extras (optional):
 
 ```bash
 pip install -e "[bayes]"
 polibias bambi --run-dir exp_a
+```
+
+Streamlit control panel (optional):
+
+```bash
+pip install -e "[ui]"
+streamlit run app/streamlit_app.py
 ```
 
 ## Output Layout

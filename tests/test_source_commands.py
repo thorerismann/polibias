@@ -70,6 +70,11 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
     monkeypatch.setattr(cli, "_run_score_source", lambda s, source: seen.setdefault("score", source))
     monkeypatch.setattr(
         cli,
+        "_run_scrape_federalist",
+        lambda s, limit, urls_file: seen.setdefault("scrape", ("the_federalist", limit, urls_file)),
+    )
+    monkeypatch.setattr(
+        cli,
         "_run_viz_source",
         lambda s, source, output_name: seen.setdefault("viz", (source, output_name)),
     )
@@ -78,4 +83,16 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
     assert seen["score"] == "the_federalist"
 
     cli.main(["viz-fed"])
+    assert seen["viz"] == ("the_federalist", "report_fed.html")
+
+    seen.clear()
+    cli.main(["score", "--source", "the_federalist"])
+    assert seen["score"] == "the_federalist"
+
+    seen.clear()
+    cli.main(["scrape", "--source", "the_federalist", "--limit", "11"])
+    assert seen["scrape"] == ("the_federalist", 11, None)
+
+    seen.clear()
+    cli.main(["viz", "--source", "the_federalist"])
     assert seen["viz"] == ("the_federalist", "report_fed.html")

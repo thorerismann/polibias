@@ -1,26 +1,24 @@
 """CLI entry point for polibias.
 
-Usage::
+Grouped command usage::
 
-    python -m polibias              # run full pipeline
-    python -m polibias scrape       # only scrape articles
-    python -m polibias score        # run model scoring for all sources
-    python -m polibias score-rts    # score RTS only
-    python -m polibias score-federalist  # score Federalist only
-    python -m polibias score-jacobin  # score Jacobin only
-    python -m polibias analyse      # only build CSVs from results
-    python -m polibias check        # verify expected output files
-    python -m polibias validate     # pre-flight checks (Ollama, models, data)
-    python -m polibias stats        # compute statistical analysis
-    python -m polibias export       # generate HTML report, LaTeX, summaries
-    python -m polibias bambi-analyse  # Bayesian fit + holdout prediction analysis
-    python -m polibias bambi-viz      # build HTML report from Bayesian outputs
-    python -m polibias viz          # generate HTML report and open it
-    python -m polibias viz-rts      # generate RTS-only HTML report
-    python -m polibias viz-fed      # generate Federalist-only HTML report
-    python -m polibias viz-jacobin  # generate Jacobin-only HTML report
-    python -m polibias viz-all      # generate cross-source HTML report
-    python -m polibias upload       # upload run results to GCS
+    python -m polibias run                        # run full pipeline
+    python -m polibias scrape --source rts
+    python -m polibias scrape --source the_federalist --limit 20
+    python -m polibias score --source all
+    python -m polibias score --source jacobin
+    python -m polibias analyze
+    python -m polibias validate
+    python -m polibias stats
+    python -m polibias export
+    python -m polibias bambi analyze
+    python -m polibias bambi viz
+    python -m polibias viz                        # main report.html
+    python -m polibias viz --source rts
+    python -m polibias viz --source all           # cross-source report_all.html
+    python -m polibias upload --bucket my-bucket
+
+Legacy single-token commands are still accepted for backward compatibility.
 """
 
 from __future__ import annotations
@@ -32,6 +30,47 @@ from pathlib import Path
 from typing import Any
 
 from polibias.config import Settings, load_settings
+
+
+SOURCE_CHOICES = ["rts", "the_federalist", "jacobin", "all"]
+SOURCE_ALIAS = {
+    "fed": "the_federalist",
+    "federalist": "the_federalist",
+}
+
+
+def _normalize_source(source: str) -> str:
+    return SOURCE_ALIAS.get(source, source)
+
+
+def _translate_legacy_argv(argv: list[str]) -> list[str]:
+    """Map legacy flat commands to grouped subcommands."""
+    if not argv:
+        return ["run"]
+
+    cmd = argv[0]
+    rest = argv[1:]
+
+    mapping: dict[str, list[str]] = {
+        "all": ["run"],
+        "analyse": ["analyze"],
+        "scrape-federalist": ["scrape", "--source", "the_federalist"],
+        "scrape-jacobin": ["scrape", "--source", "jacobin"],
+        "score-rts": ["score", "--source", "rts"],
+        "score-federalist": ["score", "--source", "the_federalist"],
+        "score-jacobin": ["score", "--source", "jacobin"],
+        "viz-rts": ["viz", "--source", "rts"],
+        "viz-fed": ["viz", "--source", "the_federalist"],
+        "viz-jacobin": ["viz", "--source", "jacobin"],
+        "viz-all": ["viz", "--source", "all"],
+        "bambi": ["bambi", "analyze"],
+        "bambi-analyse": ["bambi", "analyze"],
+        "bambi-viz": ["bambi", "viz"],
+    }
+
+    if cmd in mapping:
+        return mapping[cmd] + rest
+    return argv
 
 
 def _run_validate(settings: Settings) -> None:
@@ -188,10 +227,10 @@ def _run_viz(settings: Settings) -> None:
     if report_path.exists():
         url = report_path.as_uri()
         print(f"\n  Report ready: {report_path}")
-        print(f"  Opening in browser ...")
+        print("  Opening in browser ...")
         webbrowser.open(url)
     else:
-        print(f"  ERROR: Report was not generated. Check for errors above.")
+        print("  ERROR: Report was not generated. Check for errors above.")
         sys.exit(1)
 
 
@@ -318,83 +357,132 @@ def _run_upload(settings: Settings, bucket: str) -> None:
     print(f"  Uploaded {uploaded} file(s) to gs://{bucket}/{prefix}/")
 
 
-def main(argv: list[str] | None = None) -> None:
+def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="polibias",
         description="Political bias scoring of news articles using local LLMs.",
     )
-    parser.add_argument(
-        "command",
-        nargs="?",
-        default="all",
-        choices=[
-            "all", "scrape", "scrape-federalist", "scrape-jacobin",
-            "score", "score-rts", "score-federalist", "score-jacobin", "analyse",
-            "check", "validate", "stats", "export", "bambi", "bambi-analyse", "bambi-viz",
-            "viz", "viz-rts", "viz-fed", "viz-jacobin", "viz-all", "upload",
-        ],
-        help="Pipeline step to run (default: all)",
-    )
-    parser.add_argument(
-        "--limit",
-        type=int,
-        default=20,
-        help="Max articles to fetch from homepage (scrape-federalist / scrape-jacobin).",
-    )
-    parser.add_argument(
-        "--urls-file",
-        type=Path,
-        default=None,
-        help="Plain-text file with one URL per line (scrape-federalist / scrape-jacobin).",
-    )
-    parser.add_argument(
+
+    common = argparse.ArgumentParser(add_help=False)
+    common.add_argument(
         "--run-dir",
         default=None,
         help="Run folder name under data/runs/ (default: run_results).",
     )
-    parser.add_argument(
+    common.add_argument(
         "--config",
         default=None,
         help="Path to a TOML config file (keys map to Settings fields).",
     )
-    parser.add_argument(
+
+    subparsers = parser.add_subparsers(dest="command")
+
+    subparsers.add_parser("run", aliases=["all"], parents=[common], help="Run full pipeline")
+
+    p_scrape = subparsers.add_parser("scrape", parents=[common], help="Scrape article sources")
+    p_scrape.add_argument(
+        "--source",
+        default="rts",
+        choices=SOURCE_CHOICES,
+        help="Source to scrape (default: rts)",
+    )
+    p_scrape.add_argument(
+        "--limit",
+        type=int,
+        default=20,
+        help="Max articles to fetch for homepage-backed scrapers.",
+    )
+    p_scrape.add_argument(
+        "--urls-file",
+        type=Path,
+        default=None,
+        help="Plain-text file with one URL per line (federalist/jacobin scrape).",
+    )
+
+    p_score = subparsers.add_parser("score", parents=[common], help="Run model scoring")
+    p_score.add_argument(
+        "--source",
+        default="all",
+        choices=SOURCE_CHOICES,
+        help="Source to score (default: all)",
+    )
+
+    subparsers.add_parser(
+        "analyze",
+        aliases=["analyse"],
+        parents=[common],
+        help="Build analysis CSVs",
+    )
+    subparsers.add_parser("check", parents=[common], help="Check expected outputs")
+    subparsers.add_parser("validate", parents=[common], help="Run pre-flight validation")
+    subparsers.add_parser("stats", parents=[common], help="Compute statistics")
+    subparsers.add_parser("export", parents=[common], help="Generate report artifacts")
+
+    p_viz = subparsers.add_parser("viz", parents=[common], help="Generate/open HTML reports")
+    p_viz.add_argument(
+        "--source",
+        default="default",
+        choices=["default", *SOURCE_CHOICES],
+        help="default=report.html, all=report_all.html, otherwise source-specific report",
+    )
+
+    p_upload = subparsers.add_parser("upload", parents=[common], help="Upload run outputs to GCS")
+    p_upload.add_argument(
         "--bucket",
         default=None,
-        help="GCS bucket name for the 'upload' command.",
+        help="GCS bucket name for upload (or use GCS_BUCKET env var).",
     )
-    parser.add_argument("--bayes-draws", type=int, default=1500, help="Bambi posterior draws.")
-    parser.add_argument("--bayes-tune", type=int, default=1500, help="Bambi warmup/tune steps.")
-    parser.add_argument("--bayes-chains", type=int, default=4, help="Bambi chains.")
-    parser.add_argument("--bayes-cores", type=int, default=2, help="Bambi parallel cores.")
-    parser.add_argument(
+
+    p_bambi = subparsers.add_parser("bambi", parents=[common], help="Bayesian audit tools")
+    p_bambi_sub = p_bambi.add_subparsers(dest="bambi_command")
+    p_bambi_sub.add_parser("viz", help="Build Bayesian HTML report")
+    p_bambi_sub.add_parser("analyze", aliases=["analyse"], help="Run Bayesian fit + holdout")
+    p_bambi.set_defaults(bambi_command="analyze")
+    p_bambi.add_argument("--bayes-draws", type=int, default=1500, help="Bambi posterior draws.")
+    p_bambi.add_argument("--bayes-tune", type=int, default=1500, help="Bambi warmup/tune steps.")
+    p_bambi.add_argument("--bayes-chains", type=int, default=4, help="Bambi chains.")
+    p_bambi.add_argument("--bayes-cores", type=int, default=2, help="Bambi parallel cores.")
+    p_bambi.add_argument(
         "--bayes-target-accept",
         type=float,
         default=0.9,
         help="Bambi target_accept for NUTS.",
     )
-    parser.add_argument("--bayes-seed", type=int, default=42, help="Bambi random seed.")
-    parser.add_argument(
+    p_bambi.add_argument("--bayes-seed", type=int, default=42, help="Bambi random seed.")
+    p_bambi.add_argument(
         "--bayes-collapse-runs",
         action="store_true",
         help="Collapse repeated runs to model/article averages before score model.",
     )
-    parser.add_argument(
+    p_bambi.add_argument(
         "--bayes-complete-articles-only",
         action="store_true",
         help="Only include articles where every model has at least one successful score.",
     )
-    parser.add_argument(
+    p_bambi.add_argument(
         "--bayes-no-imputation",
         action="store_true",
         help="Disable predictor imputation; failure model drops confidence/length predictors.",
     )
-    parser.add_argument(
+    p_bambi.add_argument(
         "--bayes-test-fraction",
         type=float,
         default=0.5,
         help="Holdout test fraction for Bayesian prediction evaluation.",
     )
-    args = parser.parse_args(argv)
+
+    return parser
+
+
+def main(argv: list[str] | None = None) -> None:
+    raw = list(argv) if argv is not None else sys.argv[1:]
+    normalized = _translate_legacy_argv(raw)
+
+    parser = _build_parser()
+    args = parser.parse_args(normalized)
+
+    if args.command is None:
+        args = parser.parse_args(["run"])
 
     config_path = Path(args.config) if args.config else None
     overrides: dict[str, Any] = {}
@@ -402,52 +490,78 @@ def main(argv: list[str] | None = None) -> None:
         overrides["run_name"] = args.run_dir
     settings = load_settings(config_path, **overrides)
 
-    if args.command == "scrape-federalist":
-        _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
+    if args.command == "run":
+        print("polibias — running full pipeline")
+        print(f"Run outputs: {settings.run_dir}")
+        _run_validate(settings)
+        _run_scrape(settings)
+        _run_score(settings)
+        _run_analyse(settings)
+        print("\nDone.")
         return
 
-    if args.command == "scrape-jacobin":
-        _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
+    if args.command == "scrape":
+        source = _normalize_source(args.source)
+        if source == "rts":
+            _run_scrape(settings)
+        elif source == "the_federalist":
+            _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "jacobin":
+            _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
+        else:
+            _run_scrape(settings)
+            _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
+            _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
+        print("\nDone.")
+        return
+
+    if args.command == "score":
+        source = _normalize_source(args.source)
+        if source == "all":
+            _run_score(settings)
+        else:
+            _run_score_source(settings, source)
+        print("\nDone.")
+        return
+
+    if args.command in {"analyze", "analyse"}:
+        _run_analyse(settings)
+        print("\nDone.")
+        return
+
+    if args.command == "check":
+        _run_check(settings)
+        print("\nDone.")
         return
 
     if args.command == "validate":
         _run_validate(settings)
+        print("\nDone.")
         return
 
     if args.command == "stats":
         _run_stats(settings)
+        print("\nDone.")
         return
 
     if args.command == "export":
         _run_export(settings)
-        return
-
-    if args.command in {"bambi", "bambi-analyse"}:
-        _run_bambi_analyse(settings, args)
-        return
-
-    if args.command == "bambi-viz":
-        _run_bambi_viz(settings)
+        print("\nDone.")
         return
 
     if args.command == "viz":
-        _run_viz(settings)
-        return
-
-    if args.command == "viz-rts":
-        _run_viz_source(settings, "rts", output_name="report_rts.html")
-        return
-
-    if args.command == "viz-fed":
-        _run_viz_source(settings, "the_federalist", output_name="report_fed.html")
-        return
-
-    if args.command == "viz-jacobin":
-        _run_viz_source(settings, "jacobin", output_name="report_jacobin.html")
-        return
-
-    if args.command == "viz-all":
-        _run_viz_all(settings)
+        source = _normalize_source(args.source)
+        if source == "default":
+            _run_viz(settings)
+        elif source == "all":
+            _run_viz_all(settings)
+        elif source == "rts":
+            _run_viz_source(settings, "rts", output_name="report_rts.html")
+        elif source == "the_federalist":
+            _run_viz_source(settings, "the_federalist", output_name="report_fed.html")
+        elif source == "jacobin":
+            _run_viz_source(settings, "jacobin", output_name="report_jacobin.html")
+        print("\nDone.")
         return
 
     if args.command == "upload":
@@ -457,32 +571,18 @@ def main(argv: list[str] | None = None) -> None:
             sys.exit(1)
         print(f"\nUploading results to gs://{bucket}/ ...")
         _run_upload(settings, bucket)
+        print("\nDone.")
         return
 
-    pipeline_steps = {
-        "scrape": _run_scrape,
-        "score": _run_score,
-        "analyse": _run_analyse,
-    }
+    if args.command == "bambi":
+        if args.bambi_command in {"analyze", "analyse", None}:
+            _run_bambi_analyse(settings, args)
+        elif args.bambi_command == "viz":
+            _run_bambi_viz(settings)
+        print("\nDone.")
+        return
 
-    if args.command == "all":
-        print("polibias — running full pipeline")
-        print(f"Run outputs: {settings.run_dir}")
-        _run_validate(settings)
-        for step in pipeline_steps.values():
-            step(settings)
-    elif args.command == "check":
-        _run_check(settings)
-    elif args.command == "score-rts":
-        _run_score_source(settings, "rts")
-    elif args.command == "score-federalist":
-        _run_score_source(settings, "the_federalist")
-    elif args.command == "score-jacobin":
-        _run_score_source(settings, "jacobin")
-    else:
-        pipeline_steps[args.command](settings)
-
-    print("\nDone.")
+    parser.error(f"Unknown command: {args.command}")
 
 
 if __name__ == "__main__":

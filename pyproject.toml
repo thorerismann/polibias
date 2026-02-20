@@ -36,6 +36,9 @@ bayes = [
 cloud = [
     "google-cloud-storage>=2.14",
 ]
+ui = [
+    "streamlit>=1.40",
+]
 
 [project.scripts]
 polibias = "polibias.__main__:main"
