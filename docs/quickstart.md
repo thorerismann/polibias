@@ -34,7 +34,7 @@ If `--run-dir` is omitted, the default is `run_results`.
 ## Data flow
 
 ```text
-data/input_files/some_rts_links.csv        -> URLs to scrape
+data/input_files/rts_links.txt        -> URLs to scrape
 data/webdata/*.json                        -> parsed article content (shared)
 data/runs/<run_dir>/results/...            -> per-article model scores
 data/runs/<run_dir>/bias_data.csv          -> aggregated scores

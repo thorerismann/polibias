@@ -24,6 +24,7 @@ from typing import Any, Dict, List, Optional
 from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
+from polibias.filenames import stable_article_filename
 
 
 # ---------- Schema ----------
@@ -243,14 +244,7 @@ def fetch_article_links(limit: int = 20, timeout: int = 15) -> List[str]:
 # ---------- Persistence ----------
 
 def _make_filename(article: dict) -> str:
-    url = article.get("canonical_url") or ""
-    m = re.search(r"jacobin\.com/(\d{4}/\d{2}/[^/?#]+)", url)
-    if m:
-        slug = re.sub(r"[^a-zA-Z0-9]+", "_", m.group(1)).strip("_")
-        return f"{slug[:60]}.json"
-    title = article.get("title") or "article"
-    slug = re.sub(r"[^a-zA-Z0-9]+", "_", title.lower()).strip("_")
-    return f"{slug[:40]}.json"
+    return stable_article_filename(article, "jacobin")
 
 
 def scrape_jacobin(

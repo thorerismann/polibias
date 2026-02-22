@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import textwrap
 from pathlib import Path
 from typing import Mapping
 
@@ -14,18 +15,109 @@ import plotly.graph_objects as go
 
 # ---------- Chart builders ----------
 
-def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
-    return px.scatter(
-        bdf, y="overall_bias", x="model", color="confidence",
-        title="Overall bias by model",
+_SOURCE_LABELS = {
+    "rts": "RTS",
+    "jacobin": "Jacobin",
+    "the_federalist": "The Federalist",
+    "watson": "Watson",
+    "lib_inst": "Liberal Institute",
+    "protestinfo": "Protestinfo",
+    "cathinfo": "Cathinfo",
+}
+
+
+def _label_source(source: str) -> str:
+    return _SOURCE_LABELS.get(source, str(source))
+
+
+def _style_hover(fig: go.Figure) -> go.Figure:
+    fig.update_layout(
+        hoverlabel=dict(
+            bgcolor="#111827",
+            bordercolor="#374151",
+            font=dict(color="#F9FAFB", size=12),
+            align="left",
+        )
     )
+    return fig
+
+
+def _wrap_for_hover(value: str, width: int = 85) -> str:
+    text = (value or "").strip()
+    if not text:
+        return "(no comment)"
+    parts = []
+    for line in text.splitlines():
+        wrapped = textwrap.wrap(line, width=width, break_long_words=False, replace_whitespace=False)
+        parts.extend(wrapped or [""])
+    return "<br>".join(parts)
+
+
+def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
+    df = bdf.copy()
+    df["source_label"] = df["source"].astype(str).map(_label_source)
+    df["comment_hover"] = df["comment"].fillna("").astype(str).map(_wrap_for_hover)
+    fig = px.scatter(
+        df,
+        x="model",
+        y="overall_bias",
+        color="source_label",
+        symbol="run",
+        custom_data=[
+            "run",
+            "article_id",
+            "confidence",
+            "subject_bias",
+            "framing_bias",
+            "treatment_bias",
+            "guests_bias",
+            "comment_hover",
+        ],
+        hover_data={
+            "source_label": False,
+            "source": False,
+            "model": True,
+            "run": True,
+            "article_id": True,
+            "overall_bias": ":.3f",
+            "subject_bias": ":.3f",
+            "framing_bias": ":.3f",
+            "treatment_bias": ":.3f",
+            "guests_bias": ":.3f",
+            "confidence": ":.3f",
+            "comment": True,
+        },
+        labels={
+            "model": "Model",
+            "overall_bias": "Overall bias",
+            "source_label": "Article source",
+        },
+        title="Overall bias by model (article source color)",
+    )
+    fig.update_yaxes(range=[-1, 1])
+    fig.update_xaxes(title="Model")
+    fig.update_layout(legend_title_text="Article source")
+    fig.update_traces(
+        hovertemplate=(
+            "<b>Model:</b> %{x}<br>"
+            "<b>Bias:</b> %{y:.3f}<br>"
+            "<b>Article source:</b> %{fullData.name}<br>"
+            "<b>Run:</b> %{customdata[0]}<br>"
+            "<b>Article:</b> %{customdata[1]}<br>"
+            "<b>Confidence:</b> %{customdata[2]:.3f}<br>"
+            "<b>Sub-biases:</b> subject=%{customdata[3]:.3f}, framing=%{customdata[4]:.3f}, "
+            "treatment=%{customdata[5]:.3f}, guests=%{customdata[6]:.3f}<br>"
+            "<b>Comment:</b><br>%{customdata[7]}<extra></extra>"
+        )
+    )
+    return _style_hover(fig)
 
 
 def _bias_box_by_model(bdf: pd.DataFrame) -> go.Figure:
     fig = px.box(bdf, x="model", y="overall_bias", points="all", color="model",
                  title="Bias variance by model")
     fig.update_layout(showlegend=False)
-    return fig
+    return _style_hover(fig)
 
 
 def _bias_heatmap(bdf: pd.DataFrame) -> go.Figure:
@@ -40,14 +132,14 @@ def _bias_heatmap(bdf: pd.DataFrame) -> go.Figure:
         aspect="auto", title="Mean bias: articles x models",
     )
     fig.update_layout(height=height, margin=dict(l=200, r=20, t=60, b=40))
-    return fig
+    return _style_hover(fig)
 
 
 def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
     """Dot chart across the 4 sub-bias dimensions (article x bias, model as color)."""
     dims = ["subject_bias", "framing_bias", "treatment_bias", "guests_bias"]
     long_df = bdf.melt(
-        id_vars=["model", "article_id", "run", "comment"],
+        id_vars=["model", "article_id", "run", "comment", "source"],
         value_vars=dims,
         var_name="dimension",
         value_name="bias",
@@ -66,6 +158,7 @@ def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
             "article_id": True,
             "model": True,
             "run": True,
+            "source": True,
             "comment": True,
         },
         title="Sub-bias dots by article (4 dimensions)",
@@ -73,7 +166,7 @@ def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
     fig.update_yaxes(range=[-1, 1])
     fig.update_xaxes(type="category", tickangle=45)
     fig.update_layout(height=850)
-    return fig
+    return _style_hover(fig)
 
 
 def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
@@ -81,6 +174,8 @@ def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
     df = bdf.copy()
     df["article_str"] = df["article_id"].astype(str)
     df["comment"] = df["comment"].fillna("").astype(str)
+    df["comment_hover"] = df["comment"].map(_wrap_for_hover)
+    df["source_label"] = df["source"].astype(str).map(_label_source)
 
     fig = px.scatter(
         df,
@@ -88,11 +183,25 @@ def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
         y="overall_bias",
         color="model",
         symbol="run",
+        facet_col="source_label",
+        facet_col_wrap=2,
+        custom_data=[
+            "model",
+            "run",
+            "source_label",
+            "subject_bias",
+            "framing_bias",
+            "treatment_bias",
+            "guests_bias",
+            "comment_hover",
+            "confidence",
+        ],
         hover_data={
             "article_str": False,
             "article_id": True,
             "model": True,
             "run": True,
+            "source_label": True,
             "comment": True,
             "subject_bias": ":.3f",
             "framing_bias": ":.3f",
@@ -101,21 +210,35 @@ def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
             "overall_bias": ":.3f",
             "confidence": ":.3f",
         },
-        title="Overall bias dots by article (model color, run symbol)",
+        title="Overall bias dots by article and source (model color, run symbol)",
     )
     fig.update_yaxes(range=[-1, 1], title="overall_bias")
     fig.update_xaxes(type="category", tickangle=45, title="article_id")
-    fig.update_layout(height=650)
-    return fig
+    fig.update_layout(height=900)
+    fig.update_traces(
+        hovertemplate=(
+            "<b>Article:</b> %{x}<br>"
+            "<b>Bias:</b> %{y:.3f}<br>"
+            "<b>Model:</b> %{customdata[0]}<br>"
+            "<b>Run:</b> %{customdata[1]}<br>"
+            "<b>Article source:</b> %{customdata[2]}<br>"
+            "<b>Confidence:</b> %{customdata[8]:.3f}<br>"
+            "<b>Sub-biases:</b> subject=%{customdata[3]:.3f}, framing=%{customdata[4]:.3f}, "
+            "treatment=%{customdata[5]:.3f}, guests=%{customdata[6]:.3f}<br>"
+            "<b>Comment:</b><br>%{customdata[7]}<extra></extra>"
+        )
+    )
+    return _style_hover(fig)
 
 
 def _confidence_vs_bias(bdf: pd.DataFrame) -> go.Figure:
     bdf = bdf.copy()
     bdf["abs_bias"] = bdf["overall_bias"].abs()
-    return px.scatter(
+    fig = px.scatter(
         bdf, x="confidence", y="abs_bias", color="model",
         title="Confidence vs |overall bias|",
     )
+    return _style_hover(fig)
 
 
 def _ci_forest_plot(ci_df: pd.DataFrame) -> go.Figure:
@@ -145,7 +268,7 @@ def _ci_forest_plot(ci_df: pd.DataFrame) -> go.Figure:
         yaxis_title="",
         xaxis=dict(range=[-0.8, 0.4]),
     )
-    return fig
+    return _style_hover(fig)
 
 
 # ---------- HTML helpers ----------
@@ -180,7 +303,7 @@ def _df_to_html(df: pd.DataFrame, float_fmt: str = "%.3f") -> str:
 
 def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     cols = [
-        "model", "run", "article_id", "comment", "subject_bias", "framing_bias",
+        "model", "run", "source", "article_id", "comment", "subject_bias", "framing_bias",
         "treatment_bias", "guests_bias", "overall_bias", "confidence", "status",
     ]
     data = bdf[cols].copy().fillna("")
@@ -275,7 +398,7 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 
     const lines = filtered.slice(0, 10).map(x => {{
       const c = x.comment && String(x.comment).trim() ? String(x.comment) : '(no comment)';
-      return `model=${{x.model}} | run=${{x.run}} | article=${{x.article_id}}\n` +
+      return `model=${{x.model}} | run=${{x.run}} | source=${{x.source}} | article=${{x.article_id}}\n` +
              `status=${{x.status}} | conf=${{x.confidence}} | overall=${{x.overall_bias}}\n` +
              `subject=${{x.subject_bias}}, framing=${{x.framing_bias}}, treatment=${{x.treatment_bias}}, guests=${{x.guests_bias}}\n` +
              `comment: ${{c}}`;

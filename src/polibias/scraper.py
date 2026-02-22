@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import json
-import re
 from dataclasses import asdict, dataclass, is_dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -11,6 +10,7 @@ from typing import Any, Dict, List, Optional
 from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
+from polibias.filenames import stable_article_filename
 
 
 # ---------- Schema ----------
@@ -215,14 +215,7 @@ def parse_html(url: str, timeout: int = 30) -> RTSArticle:
 # ---------- Persistence ----------
 
 def _make_filename(article: dict) -> str:
-    url = article.get("canonical_url") or article.get("url")
-    if isinstance(url, str):
-        m = re.search(r"-(\d+)\.html$", url)
-        if m:
-            return f"{m.group(1)}.json"
-    title = article.get("title") or article.get("headline") or "article"
-    slug = re.sub(r"[^a-zA-Z0-9]+", "_", title.lower()).strip("_")
-    return f"{slug[:30]}.json"
+    return stable_article_filename(article, "rts")
 
 
 def scrape_articles(settings) -> None:

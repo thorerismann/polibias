@@ -5,6 +5,10 @@ Grouped command usage::
     python -m polibias run                        # run full pipeline
     python -m polibias scrape --source rts
     python -m polibias scrape --source the_federalist --limit 20
+    python -m polibias scrape --source watson --limit 20
+    python -m polibias scrape --source lib_inst --limit 20
+    python -m polibias scrape --source protestinfo --limit 20
+    python -m polibias scrape --source cathinfo --limit 20
     python -m polibias score --source all
     python -m polibias score --source jacobin
     python -m polibias analyze
@@ -15,6 +19,10 @@ Grouped command usage::
     python -m polibias bambi viz
     python -m polibias viz                        # main report.html
     python -m polibias viz --source rts
+    python -m polibias viz --source watson
+    python -m polibias viz --source lib_inst
+    python -m polibias viz --source protestinfo
+    python -m polibias viz --source cathinfo
     python -m polibias viz --source all           # cross-source report_all.html
     python -m polibias upload --bucket my-bucket
 
@@ -26,17 +34,68 @@ from __future__ import annotations
 import argparse
 import os
 import sys
+from contextlib import redirect_stderr, redirect_stdout
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from polibias.config import Settings, load_settings
 
 
-SOURCE_CHOICES = ["rts", "the_federalist", "jacobin", "all"]
+SOURCE_CHOICES = [
+    "rts",
+    "the_federalist",
+    "jacobin",
+    "watson",
+    "lib_inst",
+    "protestinfo",
+    "cathinfo",
+    "all",
+]
 SOURCE_ALIAS = {
     "fed": "the_federalist",
     "federalist": "the_federalist",
+    "libinst": "lib_inst",
+    "watson_fr": "watson",
+    "protestantinfo": "protestinfo",
 }
+
+QUICK_HELP = """polibias quick help
+
+Core idea
+  --run-dir selects which run folder under data/runs/ to use.
+  --source selects which source to act on
+    (rts, the_federalist, jacobin, watson, lib_inst, protestinfo, cathinfo, all).
+
+Important
+  There is no --source-dir flag.
+  Use --run-dir, e.g.:
+    polibias viz --run-dir temp0.4
+
+Most useful commands
+  polibias run --run-dir exp_a
+  polibias scrape --run-dir exp_a --source all
+  polibias score --run-dir exp_a --source all
+  polibias analyze --run-dir exp_a
+  polibias stats --run-dir exp_a
+  polibias export --run-dir exp_a
+  polibias check --run-dir exp_a
+
+Visualization
+  polibias viz --run-dir exp_a
+  polibias viz --run-dir exp_a --source rts
+  polibias viz --run-dir exp_a --source the_federalist
+  polibias viz --run-dir exp_a --source jacobin
+  polibias viz --run-dir exp_a --source watson
+  polibias viz --run-dir exp_a --source lib_inst
+  polibias viz --run-dir exp_a --source protestinfo
+  polibias viz --run-dir exp_a --source cathinfo
+  polibias viz --run-dir exp_a --source all
+
+Bayesian
+  polibias bambi analyze --run-dir exp_a
+  polibias bambi viz --run-dir exp_a
+"""
 
 
 def _normalize_source(source: str) -> str:
@@ -93,34 +152,101 @@ def _run_scrape(settings: Settings) -> None:
     print("  Scraping complete.")
 
 
+def _load_source_urls(settings: Settings, source: str, urls_file: Path | None) -> list[str]:
+    path = Path(urls_file) if urls_file else settings.data_dir / "input_files" / f"{source}_links.txt"
+    if not path.exists():
+        print(f"  ERROR: URL list not found for source '{source}': {path}")
+        print("  Provide --urls-file or create the default input file.")
+        sys.exit(1)
+    urls = [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    if not urls:
+        print(f"  ERROR: URL list is empty for source '{source}': {path}")
+        sys.exit(1)
+    return urls
+
+
 def _run_scrape_federalist(settings: Settings, limit: int, urls_file: Path | None) -> None:
-    from polibias.scraper_federalist import fetch_article_links, scrape_federalist
+    from polibias.scraper_federalist import scrape_federalist
 
     out_dir = settings.source_webdata_dir("the_federalist")
-    if urls_file:
-        urls = Path(urls_file).read_text().splitlines()
-        print(f"\nScraping {len(urls)} Federalist URLs from {urls_file} → {out_dir}")
-    else:
-        print(f"\nFetching Federalist article links (limit={limit}) ...")
-        urls = fetch_article_links(limit=limit, timeout=settings.scrape_timeout)
-        print(f"  Found {len(urls)} article links.")
+    urls = _load_source_urls(settings, "the_federalist", urls_file)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "the_federalist_links.txt"
+    print(f"\nScraping {len(urls)} Federalist URLs from {src} → {out_dir}")
     scrape_federalist(urls, out_dir, timeout=settings.scrape_timeout)
     print("  Federalist scraping complete.")
 
 
 def _run_scrape_jacobin(settings: Settings, limit: int, urls_file: Path | None) -> None:
-    from polibias.scraper_jacobin import fetch_article_links, scrape_jacobin
+    from polibias.scraper_jacobin import scrape_jacobin
 
     out_dir = settings.source_webdata_dir("jacobin")
-    if urls_file:
-        urls = Path(urls_file).read_text().splitlines()
-        print(f"\nScraping {len(urls)} Jacobin URLs from {urls_file} → {out_dir}")
-    else:
-        print(f"\nFetching Jacobin article links (limit={limit}) ...")
-        urls = fetch_article_links(limit=limit, timeout=settings.scrape_timeout)
-        print(f"  Found {len(urls)} article links.")
+    urls = _load_source_urls(settings, "jacobin", urls_file)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "jacobin_links.txt"
+    print(f"\nScraping {len(urls)} Jacobin URLs from {src} → {out_dir}")
     scrape_jacobin(urls, out_dir, timeout=settings.scrape_timeout)
     print("  Jacobin scraping complete.")
+
+
+def _run_scrape_watson(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_watson import scrape_watson
+
+    out_dir = settings.source_webdata_dir("watson")
+    urls = _load_source_urls(settings, "watson", urls_file)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "watson_links.txt"
+    print(f"\nScraping {len(urls)} Watson URLs from {src} → {out_dir}")
+    scrape_watson(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  Watson scraping complete.")
+
+
+def _run_scrape_lib_inst(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_lib_inst import scrape_lib_inst
+
+    out_dir = settings.source_webdata_dir("lib_inst")
+    urls = _load_source_urls(settings, "lib_inst", urls_file)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "lib_inst_links.txt"
+    print(f"\nScraping {len(urls)} Lib Inst URLs from {src} → {out_dir}")
+    scrape_lib_inst(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  Lib Inst scraping complete.")
+
+
+def _run_scrape_protestinfo(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_protestinfo import scrape_protestinfo
+
+    out_dir = settings.source_webdata_dir("protestinfo")
+    urls = _load_source_urls(settings, "protestinfo", urls_file)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "protestinfo_links.txt"
+    print(f"\nScraping {len(urls)} Protestinfo URLs from {src} → {out_dir}")
+    scrape_protestinfo(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  Protestinfo scraping complete.")
+
+
+def _run_scrape_cathinfo(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_cathinfo import scrape_cathinfo
+
+    out_dir = settings.source_webdata_dir("cathinfo")
+    urls = _load_source_urls(settings, "cathinfo", urls_file)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "cathinfo_links.txt"
+    print(f"\nScraping {len(urls)} Cathinfo URLs from {src} → {out_dir}")
+    scrape_cathinfo(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  Cathinfo scraping complete.")
+
+
+def _run_scrape_all_with_input_files(settings: Settings) -> None:
+    _run_scrape(settings)
+    targets = [
+        ("the_federalist", _run_scrape_federalist),
+        ("jacobin", _run_scrape_jacobin),
+        ("watson", _run_scrape_watson),
+        ("lib_inst", _run_scrape_lib_inst),
+        ("protestinfo", _run_scrape_protestinfo),
+        ("cathinfo", _run_scrape_cathinfo),
+    ]
+    for source, fn in targets:
+        default_file = settings.data_dir / "input_files" / f"{source}_links.txt"
+        if not default_file.exists():
+            print(f"  [skip] {source}: no input file at {default_file}")
+            continue
+        fn(settings, limit=0, urls_file=None)
 
 
 def _run_score(settings: Settings) -> None:
@@ -267,6 +393,10 @@ def _run_viz_all(settings: Settings) -> None:
         ("rts", "report_rts.html"),
         ("the_federalist", "report_fed.html"),
         ("jacobin", "report_jacobin.html"),
+        ("watson", "report_watson.html"),
+        ("lib_inst", "report_lib_inst.html"),
+        ("protestinfo", "report_protestinfo.html"),
+        ("cathinfo", "report_cathinfo.html"),
     ]
     generated: dict[str, str] = {}
     for source, output_name in targets:
@@ -380,6 +510,11 @@ def _build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Override number of scoring runs for this invocation.",
     )
+    common.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Stream command output to terminal (default writes to run log file).",
+    )
 
     subparsers = parser.add_subparsers(dest="command")
 
@@ -402,7 +537,7 @@ def _build_parser() -> argparse.ArgumentParser:
         "--urls-file",
         type=Path,
         default=None,
-        help="Plain-text file with one URL per line (federalist/jacobin scrape).",
+        help="Plain-text file with one URL per line (for non-RTS source scrape).",
     )
 
     p_score = subparsers.add_parser("score", parents=[common], help="Run model scoring")
@@ -423,6 +558,7 @@ def _build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("validate", parents=[common], help="Run pre-flight validation")
     subparsers.add_parser("stats", parents=[common], help="Compute statistics")
     subparsers.add_parser("export", parents=[common], help="Generate report artifacts")
+    subparsers.add_parser("help", help="Show practical command help")
 
     p_viz = subparsers.add_parser("viz", parents=[common], help="Generate/open HTML reports")
     p_viz.add_argument(
@@ -480,31 +616,12 @@ def _build_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def main(argv: list[str] | None = None) -> None:
-    raw = list(argv) if argv is not None else sys.argv[1:]
-    normalized = _translate_legacy_argv(raw)
-
-    parser = _build_parser()
-    args = parser.parse_args(normalized)
-
-    if args.command is None:
-        args = parser.parse_args(["run"])
-
-    config_path = Path(args.config) if args.config else None
-    overrides: dict[str, Any] = {}
-    if args.run_dir is not None:
-        overrides["run_name"] = args.run_dir
-    if args.runs is not None:
-        if args.runs < 1:
-            parser.error("--runs must be >= 1")
-        overrides["runs"] = args.runs
-    settings = load_settings(config_path, **overrides)
-
+def _dispatch_command(args: argparse.Namespace, settings: Settings, parser: argparse.ArgumentParser) -> None:
     if args.command == "run":
         print("polibias — running full pipeline")
         print(f"Run outputs: {settings.run_dir}")
         _run_validate(settings)
-        _run_scrape(settings)
+        _run_scrape_all_with_input_files(settings)
         _run_score(settings)
         _run_analyse(settings)
         print("\nDone.")
@@ -518,10 +635,22 @@ def main(argv: list[str] | None = None) -> None:
             _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
         elif source == "jacobin":
             _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "watson":
+            _run_scrape_watson(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "lib_inst":
+            _run_scrape_lib_inst(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "protestinfo":
+            _run_scrape_protestinfo(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "cathinfo":
+            _run_scrape_cathinfo(settings, limit=args.limit, urls_file=args.urls_file)
         else:
             _run_scrape(settings)
             _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
             _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
+            _run_scrape_watson(settings, limit=args.limit, urls_file=args.urls_file)
+            _run_scrape_lib_inst(settings, limit=args.limit, urls_file=args.urls_file)
+            _run_scrape_protestinfo(settings, limit=args.limit, urls_file=args.urls_file)
+            _run_scrape_cathinfo(settings, limit=args.limit, urls_file=args.urls_file)
         print("\nDone.")
         return
 
@@ -571,6 +700,14 @@ def main(argv: list[str] | None = None) -> None:
             _run_viz_source(settings, "the_federalist", output_name="report_fed.html")
         elif source == "jacobin":
             _run_viz_source(settings, "jacobin", output_name="report_jacobin.html")
+        elif source == "watson":
+            _run_viz_source(settings, "watson", output_name="report_watson.html")
+        elif source == "lib_inst":
+            _run_viz_source(settings, "lib_inst", output_name="report_lib_inst.html")
+        elif source == "protestinfo":
+            _run_viz_source(settings, "protestinfo", output_name="report_protestinfo.html")
+        elif source == "cathinfo":
+            _run_viz_source(settings, "cathinfo", output_name="report_cathinfo.html")
         print("\nDone.")
         return
 
@@ -593,6 +730,51 @@ def main(argv: list[str] | None = None) -> None:
         return
 
     parser.error(f"Unknown command: {args.command}")
+
+
+def main(argv: list[str] | None = None) -> None:
+    raw = list(argv) if argv is not None else sys.argv[1:]
+    normalized = _translate_legacy_argv(raw)
+
+    parser = _build_parser()
+    args = parser.parse_args(normalized)
+
+    if args.command is None:
+        args = parser.parse_args(["run"])
+
+    if args.command == "help":
+        print(QUICK_HELP)
+        return
+
+    config_path = Path(args.config) if args.config else None
+    overrides: dict[str, Any] = {}
+    if args.run_dir is not None:
+        overrides["run_name"] = args.run_dir
+    if args.runs is not None:
+        if args.runs < 1:
+            parser.error("--runs must be >= 1")
+        overrides["runs"] = args.runs
+    settings = load_settings(config_path, **overrides)
+
+    if args.verbose:
+        _dispatch_command(args, settings, parser)
+        return
+
+    settings.run_dir.mkdir(parents=True, exist_ok=True)
+    log_path = settings.run_dir / "polibias.log"
+    started = datetime.now(timezone.utc).isoformat()
+    try:
+        with log_path.open("a", encoding="utf-8") as f, redirect_stdout(f), redirect_stderr(f):
+            print(f"\n[{started}] command: {' '.join(normalized)}")
+            _dispatch_command(args, settings, parser)
+    except SystemExit:
+        print(f"Command failed. See log: {log_path}")
+        raise
+    except Exception:
+        print(f"Command failed. See log: {log_path}")
+        raise
+
+    print(f"Done. Detailed logs: {log_path} (use --verbose to stream output)")
 
 
 if __name__ == "__main__":

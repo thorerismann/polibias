@@ -289,9 +289,7 @@ def score_all(settings, sources: Iterable[str] | None = None) -> None:
     scored in parallel via ThreadPoolExecutor.
 
     Results are written to per-source subdirectories:
-      <run_dir>/rts_results/<model>/<run>/
-      <run_dir>/jacobin_results/<model>/<run>/
-      <run_dir>/the_federalist_results/<model>/<run>/
+      <run_dir>/<source>_results/<model>/<run>/
     """
     client = _get_client(settings)
     selected = set(sources) if sources is not None else None
@@ -304,27 +302,33 @@ def score_all(settings, sources: Iterable[str] | None = None) -> None:
         for run in range(1, settings.runs + 1):
             todo = []
             skipped = 0
+            source_counts: dict[str, int] = {}
             for src_dir in settings.all_source_webdata_dirs:
                 source = src_dir.name
                 if selected is not None and source not in selected:
                     continue
+                files = sorted(src_dir.glob("*.json"))
+                source_counts[source] = len(files)
                 out_dir = (
                     settings.source_results_dir(source)
                     / settings.model_output_dirname(model)
                     / str(run)
                 )
                 out_dir.mkdir(parents=True, exist_ok=True)
-                for p in sorted(src_dir.glob("*.json")):
+                for p in files:
                     out_file = out_dir / f"{p.stem}.json"
                     if out_file.exists():
                         skipped += 1
                     else:
-                        todo.append((p, out_file))
+                        todo.append((source, p, out_file))
 
             if skipped:
                 print(f"  Run {run}/{settings.runs}: {skipped} already scored, {len(todo)} to do")
             else:
                 print(f"  Run {run}/{settings.runs}: {len(todo)} articles")
+            if source_counts:
+                by_source = ", ".join(f"{src}={n}" for src, n in sorted(source_counts.items()))
+                print(f"    Sources: {by_source}")
 
             if not todo:
                 continue
@@ -340,8 +344,8 @@ def score_all(settings, sources: Iterable[str] | None = None) -> None:
                 futures = {
                     pool.submit(
                         _score_and_save, client, p, out_file, model, run, settings
-                    ): p.stem
-                    for p, out_file in todo
+                    ): f"{source}/{p.stem}"
+                    for source, p, out_file in todo
                 }
                 for future in as_completed(futures):
                     stem = futures[future]

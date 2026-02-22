@@ -21,6 +21,10 @@ SOURCE_LABELS = {
     "RTS": "rts",
     "The Federalist": "the_federalist",
     "Jacobin": "jacobin",
+    "Watson": "watson",
+    "Liberal Institute": "lib_inst",
+    "Protestinfo": "protestinfo",
+    "Cathinfo": "cathinfo",
     "All Sources": "all",
 }
 
@@ -58,6 +62,10 @@ def _show_artifacts(settings: Settings) -> None:
         settings.run_dir / "report_rts.html",
         settings.run_dir / "report_fed.html",
         settings.run_dir / "report_jacobin.html",
+        settings.run_dir / "report_watson.html",
+        settings.run_dir / "report_lib_inst.html",
+        settings.run_dir / "report_protestinfo.html",
+        settings.run_dir / "report_cathinfo.html",
         settings.run_dir / "report_all.html",
     ]:
         exists = "yes" if p.exists() else "no"
@@ -73,7 +81,7 @@ def main() -> None:
         st.header("Settings")
         run_name = st.text_input("Run name", value="run_results")
         config_path = st.text_input("Config TOML path (optional)", value="")
-        source_label = st.selectbox("Source", list(SOURCE_LABELS.keys()), index=3)
+        source_label = st.selectbox("Source", list(SOURCE_LABELS.keys()), index=len(SOURCE_LABELS) - 1)
         limit = st.number_input("Scrape link limit", min_value=1, max_value=500, value=20)
         urls_file = st.text_input("URLs file for scrape (optional)", value="")
         bucket = st.text_input("GCS bucket (upload)", value="")
@@ -108,6 +116,38 @@ def main() -> None:
                     int(limit),
                     urls_file_path,
                 )
+            elif source == "watson":
+                _run_action(
+                    "Scrape Watson",
+                    cli._run_scrape_watson,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+            elif source == "lib_inst":
+                _run_action(
+                    "Scrape Liberal Institute",
+                    cli._run_scrape_lib_inst,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+            elif source == "protestinfo":
+                _run_action(
+                    "Scrape Protestinfo",
+                    cli._run_scrape_protestinfo,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+            elif source == "cathinfo":
+                _run_action(
+                    "Scrape Cathinfo",
+                    cli._run_scrape_cathinfo,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
             else:
                 _run_action("Scrape RTS", cli._run_scrape, settings)
                 _run_action(
@@ -120,6 +160,34 @@ def main() -> None:
                 _run_action(
                     "Scrape Jacobin",
                     cli._run_scrape_jacobin,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+                _run_action(
+                    "Scrape Watson",
+                    cli._run_scrape_watson,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+                _run_action(
+                    "Scrape Liberal Institute",
+                    cli._run_scrape_lib_inst,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+                _run_action(
+                    "Scrape Protestinfo",
+                    cli._run_scrape_protestinfo,
+                    settings,
+                    int(limit),
+                    urls_file_path,
+                )
+                _run_action(
+                    "Scrape Cathinfo",
+                    cli._run_scrape_cathinfo,
                     settings,
                     int(limit),
                     urls_file_path,
@@ -163,6 +231,38 @@ def main() -> None:
                     settings,
                     "jacobin",
                     output_name="report_jacobin.html",
+                )
+            elif source == "watson":
+                _run_action(
+                    "Watson report",
+                    cli._run_viz_source,
+                    settings,
+                    "watson",
+                    output_name="report_watson.html",
+                )
+            elif source == "lib_inst":
+                _run_action(
+                    "Liberal Institute report",
+                    cli._run_viz_source,
+                    settings,
+                    "lib_inst",
+                    output_name="report_lib_inst.html",
+                )
+            elif source == "protestinfo":
+                _run_action(
+                    "Protestinfo report",
+                    cli._run_viz_source,
+                    settings,
+                    "protestinfo",
+                    output_name="report_protestinfo.html",
+                )
+            elif source == "cathinfo":
+                _run_action(
+                    "Cathinfo report",
+                    cli._run_viz_source,
+                    settings,
+                    "cathinfo",
+                    output_name="report_cathinfo.html",
                 )
         if st.button("Check Outputs"):
             _run_action("Check", cli._run_check, settings)

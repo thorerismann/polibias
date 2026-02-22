@@ -10,7 +10,7 @@
 
 ### 1. Scraping
 
-- Reads URLs from `data/input_files/some_rts_links.csv`
+- Reads URLs from `data/input_files/rts_links.txt`
 - Fetches/parses RTS pages
 - Writes article JSON to shared storage: `data/webdata/*.json`
 

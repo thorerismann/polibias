@@ -75,6 +75,16 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
     )
     monkeypatch.setattr(
         cli,
+        "_run_scrape_watson",
+        lambda s, limit, urls_file: seen.setdefault("scrape", ("watson", limit, urls_file)),
+    )
+    monkeypatch.setattr(
+        cli,
+        "_run_scrape_protestinfo",
+        lambda s, limit, urls_file: seen.setdefault("scrape", ("protestinfo", limit, urls_file)),
+    )
+    monkeypatch.setattr(
+        cli,
         "_run_viz_source",
         lambda s, source, output_name: seen.setdefault("viz", (source, output_name)),
     )
@@ -97,6 +107,30 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
     cli.main(["viz", "--source", "the_federalist"])
     assert seen["viz"] == ("the_federalist", "report_fed.html")
 
+    seen.clear()
+    cli.main(["scrape", "--source", "watson", "--limit", "9"])
+    assert seen["scrape"] == ("watson", 9, None)
+
+    seen.clear()
+    cli.main(["score", "--source", "lib_inst"])
+    assert seen["score"] == "lib_inst"
+
+    seen.clear()
+    cli.main(["viz", "--source", "lib_inst"])
+    assert seen["viz"] == ("lib_inst", "report_lib_inst.html")
+
+    seen.clear()
+    cli.main(["scrape", "--source", "protestinfo", "--limit", "7"])
+    assert seen["scrape"] == ("protestinfo", 7, None)
+
+    seen.clear()
+    cli.main(["score", "--source", "cathinfo"])
+    assert seen["score"] == "cathinfo"
+
+    seen.clear()
+    cli.main(["viz", "--source", "cathinfo"])
+    assert seen["viz"] == ("cathinfo", "report_cathinfo.html")
+
 
 def test_cli_passes_runs_override(monkeypatch, tmp_path: Path) -> None:
     settings = _mk_settings(tmp_path)
@@ -111,3 +145,38 @@ def test_cli_passes_runs_override(monkeypatch, tmp_path: Path) -> None:
 
     cli.main(["score", "--source", "jacobin", "--runs", "2"])
     assert seen["overrides"]["runs"] == 2
+
+
+def test_cli_help_prints_quick_help(monkeypatch, capsys) -> None:
+    monkeypatch.setattr(cli, "load_settings", lambda *args, **kwargs: None)
+    cli.main(["help"])
+    out = capsys.readouterr().out
+    assert "polibias quick help" in out
+    assert "There is no --source-dir flag." in out
+    assert "polibias viz --run-dir temp0.4" in out
+
+
+def test_cli_default_writes_run_log(monkeypatch, tmp_path: Path, capsys) -> None:
+    settings = _mk_settings(tmp_path)
+    monkeypatch.setattr(cli, "load_settings", lambda config_path, **overrides: settings)
+    monkeypatch.setattr(cli, "_run_score_source", lambda s, source: None)
+
+    cli.main(["score", "--source", "jacobin"])
+
+    out = capsys.readouterr().out
+    assert "Detailed logs:" in out
+    log_path = settings.run_dir / "polibias.log"
+    assert log_path.exists()
+    assert "command: score --source jacobin" in log_path.read_text(encoding="utf-8")
+
+
+def test_cli_verbose_streams_output(monkeypatch, tmp_path: Path, capsys) -> None:
+    settings = _mk_settings(tmp_path)
+    monkeypatch.setattr(cli, "load_settings", lambda config_path, **overrides: settings)
+    monkeypatch.setattr(cli, "_run_score_source", lambda s, source: print(f"score={source}"))
+
+    cli.main(["score", "--source", "jacobin", "--verbose"])
+
+    out = capsys.readouterr().out
+    assert "score=jacobin" in out
+    assert "Detailed logs:" not in out

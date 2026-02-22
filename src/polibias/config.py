@@ -70,7 +70,7 @@ class Settings:
 
     @property
     def input_file(self) -> Path:
-        return self.data_dir / "input_files" / "some_rts_links.csv"
+        return self.data_dir / "input_files" / "rts_links.txt"
 
     @property
     def webdata_dir(self) -> Path:
