@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.6,
+  "guests_bias": "Not Applicable",
+  "confidence": 0.9,
+  "comment": "L'article présente une perspective négative sur le bitcoin en lien avec les incertitudes économiques et la réaction des investisseurs face à un potentiel tour de vis monétaire par Kevin Warsh au sein de la Fed. Le ton est clairement dystopique, suggérant que l'argent numérique n'est plus considéré comme une valeur refuge.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

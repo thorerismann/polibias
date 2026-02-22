@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.0,
+  "comment": "L'article manque d'informations pour évaluer la subject_bias, le framing_bias et le treatment_bias. La Chronique RTS semble avoir un ton critique envers les théories religieuses.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "1af9330e7254"
+}

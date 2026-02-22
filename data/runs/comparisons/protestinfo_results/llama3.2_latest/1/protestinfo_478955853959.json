@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente des recettes de soupe de carême avec un ton neutre et sans évoquer explicitement des politiques ou des idées partisanes. Les recettes sont présentées comme des suggestions pour une collecte ou une œuvre caritative, ce qui suggère une approche altruiste et non politique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.0,
+  "treatment_bias": 0.8,
+  "guests_bias": 1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of France's fertility plan, highlighting potential drawbacks and unintended consequences. The language used is often emotive and critical, suggesting a right-leaning bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

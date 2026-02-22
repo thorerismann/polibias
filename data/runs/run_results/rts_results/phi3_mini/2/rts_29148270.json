@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.85,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article appears to lean left with a focus on the Ukrainian perspective and President Zelensky's statements against election conditions imposed by Russia or threats from the US administration.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

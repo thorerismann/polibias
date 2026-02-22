@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.4,
+  "confidence": 0.8,
+  "comment": "The article focuses on concerns regarding potential links between Swiss universities and Israeli military research, framing the issue as a question of ethics and potential war crimes. The article presents a balanced view, with the professor expressing concerns and the government awaiting further information.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

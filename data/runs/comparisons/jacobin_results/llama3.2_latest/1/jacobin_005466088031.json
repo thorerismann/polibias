@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents a left-leaning perspective on labor organizing, highlighting the UAW's successful mass-scale organizing efforts and criticizing traditional structure-based approaches as inadequate. The author argues for a more flexible and worker-to-worker approach to organizing, emphasizing the importance of strategic fluency in adapting to different terrain and resistance.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "1af9330e7254"
+}

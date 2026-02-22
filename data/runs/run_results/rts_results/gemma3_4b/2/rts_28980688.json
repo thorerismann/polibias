@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article presents a generally positive view of Swiss investment in Iraq, highlighting opportunities and partnerships. It acknowledges risks but focuses on the potential for economic development.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

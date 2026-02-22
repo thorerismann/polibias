@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article focuses on the deceased's character and family, presenting a respectful and neutral account of his passing. The mention of his faith and courage adds a slightly positive framing.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

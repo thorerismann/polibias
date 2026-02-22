@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton relativement neutre, mais avec une légère orientation à gauche en raison de la mention des garanties de sécurité offertes par les États-Unis et du soutien de Volodymyr Zelensky aux élections dans le cadre d'un cessez-le-feu. La popularité de Zelensky est également mentionnée, ce qui pourrait suggérer une légère orientation à gauche dans la rédaction.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

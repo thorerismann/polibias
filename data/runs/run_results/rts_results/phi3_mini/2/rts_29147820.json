@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": -0.5,
+  "guests_bias": null,
+  "confidence": 0.8,
+  "comment": "The article discusses the Swiss Invalidity Insurance system with a neutral tone and framing towards political issues of AI.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.5,
+  "confidence": 0.4,
+  "comment": "Le sujet est neutre, mais le ton de l'article semble légèrement sympathique envers James Van Der Beek.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

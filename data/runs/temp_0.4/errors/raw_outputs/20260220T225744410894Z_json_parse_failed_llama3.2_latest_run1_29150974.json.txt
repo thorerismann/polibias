@@ -1,0 +1,7 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision générale de la situation, sans évoquer explicitement des positions politiques partiales. Cependant, certaines phrases comme « le droit fondamental à la défense » peuvent être perçues comme favorables aux avocats et aux droits individuels.", "Le ton est dominé par une attitude de réflexion et d'analyse, plutôt que par des positions politiques ou idéologiques.":"}

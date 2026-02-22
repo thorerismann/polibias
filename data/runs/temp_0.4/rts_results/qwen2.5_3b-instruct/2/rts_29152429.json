@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.67,
+  "guests_bias": 1.0,
+  "confidence": 0.98,
+  "comment": "The article heavily focuses on the political reactions and lacks any significant coverage of the actual incident, giving a clear left-leaning bias. The right-wing voices are portrayed more harshly than the left-wing ones.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

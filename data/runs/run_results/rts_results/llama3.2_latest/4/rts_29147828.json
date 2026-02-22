@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une perspective pro-ukrainienne, avec des témoignages et des observations qui mettent en avant les souffrances des Ukrainiens et la menace permanente de la guerre. La présentation de l'expérience des Européens de l'Est est critiquée par Maurine Mercier, ce qui suggère une attitude critique à l'égard de la représentation occidentale de ces régions.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147828.json",
+  "prompt_hash": "1af9330e7254"
+}

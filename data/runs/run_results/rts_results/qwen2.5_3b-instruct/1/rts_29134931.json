@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on a tragic event in Niscemi, Italy and its aftermath. It highlights the lack of proper risk management and potential negligence by authorities and residents. The author presents this as an example to question current practices.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

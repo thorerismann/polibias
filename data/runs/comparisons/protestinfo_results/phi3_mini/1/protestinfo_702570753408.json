@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.8,
+  "treatment_bias": -1.0,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article criticizes tech companies for abandoning their defense of fundamental principles and human rights to align with Trump's policies, indicating a left-leaning bias in both framing and treatment.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

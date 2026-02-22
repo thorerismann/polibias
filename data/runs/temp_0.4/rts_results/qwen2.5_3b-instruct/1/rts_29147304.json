@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.3,
+  "confidence": 1.0,
+  "comment": "The article focuses on a Swiss skier's performance in the Olympics, highlighting his historic achievement and comparing him to other athletes. It leans left by emphasizing his achievements over others.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

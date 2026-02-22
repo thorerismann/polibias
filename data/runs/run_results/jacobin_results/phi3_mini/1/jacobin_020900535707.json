@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "The article is left-leaning in its subject matter and framing by highlighting issues of care as political struggles that reflect broader societal problems. The treatment bias towards the right for public accountability shows a clear favoritism to progressive views on social welfare.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_mothers_nordic_welfare_state_social_reproduction.json",
+  "prompt_hash": "1af9330e7254"
+}

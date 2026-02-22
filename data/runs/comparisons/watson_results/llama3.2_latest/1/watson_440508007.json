@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Artikel besprechen die Auswirkungen einer gerichtlichen Entscheidung auf Donald Trumps Zollpolitik und die möglichen Rückforderungspläne von Schweizer Unternehmen. Die Analyse zeigt, dass der Text eine neutralere Haltung einnimmt, da es sich um eine Berichterstattung über eine reale Ereignisberichterstattung handelt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_440508007.json",
+  "prompt_hash": "1af9330e7254"
+}

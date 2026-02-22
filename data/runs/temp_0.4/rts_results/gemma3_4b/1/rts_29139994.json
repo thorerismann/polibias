@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article discusses calendar mechanics and occurrences, presenting factual information about February 'perfect months'. There is no discernible political leaning or bias in the content.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

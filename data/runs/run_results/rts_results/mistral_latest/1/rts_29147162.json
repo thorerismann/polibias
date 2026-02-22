@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a European Union regulation aimed at reducing textile waste and its impact on the environment. While it does not explicitly favor any political ideology, it seems to lean slightly against charitable organizations due to concerns about them being overwhelmed with unwanted textiles.",
+  "status": "ok",
+  "model": "mistral:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

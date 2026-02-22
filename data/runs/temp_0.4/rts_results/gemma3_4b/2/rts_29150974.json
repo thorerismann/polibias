@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article expresses concern about attacks on lawyers and the intense media scrutiny surrounding a legal case, advocating for a calm and respectful judicial process. It emphasizes the importance of the legal profession upholding the rule of law and protecting access to justice.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29150974.json",
+  "prompt_hash": "1af9330e7254"
+}

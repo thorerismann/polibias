@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article exhibits a clear left-leaning bias by framing Gen Z's spending habits as irresponsible and criticizing their lifestyle choices without acknowledging systemic issues like housing shortages or student debt burdens that contribute to economic challenges. The tone suggests blame on the younger generation while overlooking structural factors, aligning with a left-leaning perspective against generational division.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_20_media_mock_gen_z_for_rotisserie_chickens_because_.json",
+  "prompt_hash": "1af9330e7254"
+}

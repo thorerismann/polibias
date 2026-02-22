@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article provides a straightforward account of the opening ceremony, highlighting key events and participants. It includes mentions of prominent Italian and Swiss figures, leaning slightly towards a neutral perspective due to the focus on celebrating the event itself.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

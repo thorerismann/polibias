@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral and informative discussion of the mother-led movements in Sweden, highlighting their focus on public accountability and care as a political issue. The tone is generally balanced, with some subtle undertones suggesting a left-leaning perspective.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_mothers_nordic_welfare_state_social_reproduction.json",
+  "prompt_hash": "1af9330e7254"
+}

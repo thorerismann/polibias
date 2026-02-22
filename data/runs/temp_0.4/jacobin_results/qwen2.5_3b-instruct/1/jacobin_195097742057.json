@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans left with a strong focus on the decline of traditional political structures and institutions, while criticizing contemporary forms of hyperpolitics for their lack of lasting impact.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "2026_02_hyperpolitics_jager_institutions_media_review.json",
+  "prompt_hash": "1af9330e7254"
+}

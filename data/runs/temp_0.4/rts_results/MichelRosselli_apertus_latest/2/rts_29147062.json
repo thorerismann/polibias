@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the relationship between the U.S. and Switzerland, focusing on trade issues and President Trump's stance. The tone is critical of Trump, highlighting his perceived pressure tactics towards Switzerland.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

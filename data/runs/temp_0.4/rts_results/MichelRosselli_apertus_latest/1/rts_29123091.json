@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Le sujet du concours est neutre, car il ne traite pas de questions politiques ou idéologiques. Le cadre et le traitement sont également neutres, car ils se concentrent sur un événement sportif spécifique (Jeux Olympiques Milan-Cortina 2026) sans inclure d'éléments politiquement chargés.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

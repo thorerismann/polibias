@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.85,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.7,
+  "confidence": 0.95,
+  "comment": "The article presents a strong left-leaning bias through its negative portrayal of Rodrigo Chaves's administration and policies. The framing is heavily biased against the right due to its critique of his government actions.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

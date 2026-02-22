@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a mostly neutral tone, with some slight left-leaning framing in discussing the labor laws and Chipotle's treatment of workers. The author highlights the positive outcomes of the unionization efforts and the impact of pro-labor legislation, which may be perceived as left-leaning.", "The article provides a balanced view of the topic, but the emphasis on the successes of the unionization efforts and the criticism of Chipotle's practices may lean slightly to the left.":"",
+  "comment": "The author presents evidence from the labor laws and Chipotle's history of violating them, which suggests a left-leaning bias in the framing of the narrative.",
+  "confidence": 0.9,
+  "comment": "Overall, the article appears to be written from a neutral perspective, but with some subtle hints towards a left-leaning viewpoint.",
+  "confidence": 0.95,
+  "comment": "The author's focus on the positive outcomes of unionization and

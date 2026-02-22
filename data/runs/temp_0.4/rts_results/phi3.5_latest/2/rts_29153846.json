@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article primarily discusses issues related to poverty and social welfare in Switzerland without overtly favoring a political ideology or leaning towards the left or right; it reports facts about socio-economic conditions with an apparent neutral stance.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

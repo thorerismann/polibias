@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.75,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.1,
+  "confidence": 0.9,
+  "comment": "The article indicates a clear left-leaning bias by criticizing the collaboration between Swiss universities and Israeli military institutions in research funded or potentially influenced by this partnership (framing/treatment_bias). The criticism of Benyamin Netanyahu's government policies is indicative of anti-Israel sentiment, further suggesting a leftist perspective. However, the presence of Julia Steinberger as an invited speaker may slightly balance out these biases but does not completely neutralize them due to her explicit critique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

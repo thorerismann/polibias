@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.7,
+  "confidence": 0.8,
+  "comment": "This article presents a balanced view of the incident, but with a slight lean towards left-leaning sources and framing. The inclusion of quotes from Rima Hassan's party and the description of the incident as a 'guet-apens' suggest a more critical tone towards right-wing groups.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

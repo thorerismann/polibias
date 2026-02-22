@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses poverty in Switzerland, highlighting the increasing number of people living below the minimum vital income and the challenges faced by children from low-income families.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

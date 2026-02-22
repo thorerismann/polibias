@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans slightly towards left-leaning views by discussing social issues and advocating for public accountability in care services; however, it maintains a neutral tone without overtly favoring either political side.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_mothers_nordic_welfare_state_social_reproduction.json",
+  "prompt_hash": "1af9330e7254"
+}

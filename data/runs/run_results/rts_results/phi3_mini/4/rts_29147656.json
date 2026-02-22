@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.1,
+  "confidence": 0.95,
+  "comment": "The article shows a clear preference for the victim's rights and portrayal of negligence by authorities but lacks strong partisan language or representation.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

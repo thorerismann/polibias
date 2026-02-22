@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans against the Democratic perspective by criticizing their policies and emphasizing Republican reforms as a positive step towards controlling Medicaid costs. The framing suggests that Democrats' actions led to unsustainable growth in spending despite previous attempts at reform under Biden, indicating left-leaning bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_20_democrats_claim_gop_gutted_medicaid_federal_data_.json",
+  "prompt_hash": "1af9330e7254"
+}

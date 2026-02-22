@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical perspective on the US-Europe relationship, highlighting concerns about American reliability and advocating for European autonomy. It frames the US strategy as actively seeking to undermine the European Union.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

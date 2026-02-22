@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.95,
+  "comment": "The article suggests a critical view of the IOC's consideration to involve private equity in financing its events by presenting it as potentially exploitative and profit-driven rather than purely philanthropic or community-oriented; this leans slightly towards left bias. The framing implies skepticism about commercializing sports, which tends toward a more traditionalist view often associated with the political right.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_olympics_private_equity_ioc_revenue.json",
+  "prompt_hash": "1af9330e7254"
+}

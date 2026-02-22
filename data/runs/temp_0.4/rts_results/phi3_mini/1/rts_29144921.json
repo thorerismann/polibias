@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual account of the significant snowfall in Switzerland during January and February of 1951 with some focus on left-leaning sentiments towards government action following disasters.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

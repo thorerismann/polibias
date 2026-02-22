@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article leans right by criticizing US policy and advocating for European autonomy. It frames the US as actively seeking to undermine the EU, highlighting concerns about American influence and European dependence. The guest, Gnesotto, expresses skepticism towards the US alliance and pushes for a more independent European defense strategy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

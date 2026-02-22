@@ -1,0 +1,6 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.3,
+  "comment": "L'article présente une histoire factuelle d'une affaire de maltraitance animale sans faire explicitement appel à un parti politique ou idéologie spécifique et semble chercher des réponses pratiques pour éviter les problèmes futurs. Le ton est neutre, se concentrant sur l'événement lui-même ainsi que la réponse de diverses parties concernées plutôt qu'une position partisane. Cependant, le terme 'maltraitance animale', qui peut être perçu comme un sujet sensible pour les défenseurs des droits d'animaux ou ceux avec une attitude proécologique plus conservatrice/libre-pouvoirs (qui peuvent avoir tendance à privilégier la protection de l'animal), suggère légèrement le droit et peut influencer un sentiment partisan. Par conséquent

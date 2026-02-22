@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.3,
+  "confidence": 0.7,
+  "comment": "The article heavily frames the shooter's transgender identity as a central, potentially politically motivated element, while downplaying the violent nature of the crime. It also criticizes media outlets for allegedly concealing this information, exhibiting a strong right-leaning bias.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_17_corporate_media_give_trans_hockey_game_shooter_th.json",
+  "prompt_hash": "1af9330e7254"
+}

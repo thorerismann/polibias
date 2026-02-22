@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article évoque l'impact profond de la Seconde Guerre mondiale sur les Européens de l'Est, soulignant leur perception différente des conflits par rapport à l'Occident.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147828.json",
+  "prompt_hash": "1af9330e7254"
+}

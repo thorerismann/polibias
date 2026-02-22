@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral and informative discussion on the history and implementation of universal pre-K in New York City, with no apparent bias towards either side of the political spectrum.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "L'article présente également des informations sur les oppositions à l'initiative, ainsi que des citations de personnes qui soulignent les risques d'un endettement massif et les incertitudes liées à la mise en œuvre de cette mesure.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

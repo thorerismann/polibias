@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.05,
+  "guests_bias": 0.2,
+  "confidence": 0.95,
+  "comment": "The article appears to be fairly balanced in its coverage of the Olympic opening ceremony with a slight leaning towards left-leaning due to references but not overtly biased.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

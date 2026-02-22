@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.75,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.85,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans left due to its critical stance towards Israel's military-academic links and the Israeli government under Benyamin Netanyahu.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

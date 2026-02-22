@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral view on the topic of private equity investment in the Olympics, with no clear left or right leaning. The language used is formal and objective, suggesting a balanced approach to the subject.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article traite de la situation en Ukraine et des obstacles à l'organisation d'élections, sans prendre clairement parti pour un camp politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,8 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision libérale et critique de l'initiative climatique, avec des arguments contre la mise en place d'un fonds climat. Les citations de Simone de Montmollin soulignent les inconvénients financiers et les préoccupations concernant le système suisse et le principe du frein à l'endettement.", "La publication est rédigée dans un ton critique et négatif envers l'initiative climatique, ce qui suggère une orientation libérale.":"",
+  "comment": "L'article présente une vision libérale et critique de l'initiative climatique, avec des arguments contre la mise en place d'un fonds climat. Les citations de Simone de Montmollin soulignent les inconvénients financiers et les préoccupations concernant le système suisse et le principe du frein

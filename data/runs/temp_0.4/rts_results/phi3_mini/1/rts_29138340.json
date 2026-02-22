@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article presents a balanced view with slight left-leaning framing due to the focus on environmental concerns and criticisms of current measures; however, it also includes conservative arguments about fiscal responsibility.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

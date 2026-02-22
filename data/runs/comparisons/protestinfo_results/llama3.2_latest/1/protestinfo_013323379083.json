@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L&#39;article semble traiter les sujets de manière neutre et n&#39;inclut pas d&#39;informations politiques partiales. Les citations sont absentes, ce qui suggère un manque de perspective politique des invités.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "1af9330e7254"
+}

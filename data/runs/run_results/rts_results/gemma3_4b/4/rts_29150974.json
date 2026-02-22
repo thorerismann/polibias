@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article expresses concern about the treatment of lawyers and advocates for a fair trial, emphasizing the importance of judicial independence and respect for legal proceedings. It calls for restraint and a focus on the principles of the rule of law.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29150974.json",
+  "prompt_hash": "1af9330e7254"
+}

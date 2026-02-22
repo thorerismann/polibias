@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is slightly left-leaning due to its focus on dialogue and discussion in a polarized society but maintains neutrality overall.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

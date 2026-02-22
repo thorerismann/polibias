@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite un sujet neutre, la sécurité alimentaire et les rappels de lait pour bébé, avec une approche critique des entreprises accusées d'avoir réagi tardivement.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

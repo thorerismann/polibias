@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left with a negative framing bias due to its focus on environmental and social issues in the textile industry. Treatment of both sides is fairly neutral, but there's concern about charities being burdened by unsold clothing.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article clearly leans left by framing the ACS and its actions as part of a 'leftist-led judicial coup.' The tone suggests disapproval towards these efforts to counteract conservative appointments through activism in lower courts. Jeffrey Toobin's admission about Democrats using federal judge appointments for opposition rather than presenting an alternative vision further indicates bias against the left.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_18_nyt_accidentally_confesses_theres_a_left_wing_jud.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of the socio-economic issues in Switzerland with an evident leftist bias towards addressing social welfare concerns and income inequality.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

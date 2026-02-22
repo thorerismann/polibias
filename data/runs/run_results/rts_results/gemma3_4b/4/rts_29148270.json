@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the situation regarding Ukrainian elections, citing both US pressure and Ukrainian concerns about security and ongoing conflict. It highlights the significant obstacles to holding elections in the current circumstances.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

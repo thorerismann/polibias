@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the US-Europe relationship as one of dependency and potential conflict, highlighting European skepticism towards American defense guarantees. It leans towards a critical perspective of US foreign policy and emphasizes the need for European autonomy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a neutral subject bias, with no clear left or right leaning in the topic selection. The framing is negative, focusing on tensions and confrontations between Chaves's administration and political elites. Treatment of both sides is unfavorable to Chavez's approach, which is criticized for its populist style and aggressive tactics against institutions. There are no quoted speakers or invited voices with clear left or right leanings.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

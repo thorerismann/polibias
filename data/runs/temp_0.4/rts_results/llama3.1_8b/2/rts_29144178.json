@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.8,
+  "confidence": 0.7,
+  "comment": "This article presents a balanced view of the animal maltreatment case in La Brévine, with quotes from both authorities and the affected farmer. However, the framing bias is slightly right-leaning due to the inclusion of statements from Loïc Frey, an UDC politician, who expresses concern about the situation.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

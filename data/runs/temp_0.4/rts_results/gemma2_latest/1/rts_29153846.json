@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on economic hardship in Switzerland, highlighting issues of poverty and access to healthcare. The tone is descriptive rather than overtly partisan.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

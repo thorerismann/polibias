@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced discussion of organizing strategies, favoring a pragmatic approach that blends momentum-based tactics with established structure-based methods. It highlights the UAW's challenges stemming from outdated practices and ultimately advocates for a bold, scalable strategy to address declining union density.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": 0.05,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.65,
+  "comment": "La réforme prévoit des mesures destinées à soutenir les jeunes adultes, ce qui suggère un ton légèrement favorable au côté gauche. Cependant, il est important de noter que la réforme également vise à stabiliser et assainir les finances de l'AI, ce qui pourrait être perçu comme une mesure neutre ou même légèrement favorisant le côté droit.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article appears to be neutral and informative, discussing a specific phenomenon in calendar history without taking a clear stance or promoting a particular agenda.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

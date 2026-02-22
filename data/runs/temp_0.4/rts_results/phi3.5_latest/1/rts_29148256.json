@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article neutrally reports on a case of labor exploitation and legal proceedings without overtly favoring any political ideology or leaning. It discusses the rights and protections for migrant workers in Switzerland but does not explicitly frame it from a left-leaning (progressive) or right-leaning (conservative/traditionalist) perspective.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

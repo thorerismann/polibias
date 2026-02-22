@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "This article discusses the recent decline of bitcoin and its impact on other financial markets, such as gold and silver. The tone is neutral, focusing on economic factors rather than political opinions.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

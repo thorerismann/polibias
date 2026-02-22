@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans slightly left due to its critical tone towards the initiative and focus on ecological priorities over financial concerns for climate action.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

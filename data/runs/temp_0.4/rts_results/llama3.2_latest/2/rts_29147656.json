@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton neutre et objective, mais les citations du Conseil fédéral suggèrent une certaine favorisation de la Confédération par rapport aux victimes. Le langage utilisé pour décrire les accords à l'amiable est également légèrement plus favorable à la Confédération que dans d'autres articles.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

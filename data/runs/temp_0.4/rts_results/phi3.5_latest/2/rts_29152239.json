@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans left with a strong negative framing towards Israel and emphasizes the suffering of Gaza civilians due to Israeli actions while highlighting Hamas's perspective on violations by Israel. The guests or sources quoted are primarily associated with Palestinian perspectives, indicating bias against Israel.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29152239.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": 1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.2,
+  "confidence": 0.9,
+  "comment": "The article heavily criticizes left-leaning legal groups and judges while portraying conservative viewpoints favorably. The framing is strongly right-leaning.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_18_nyt_accidentally_confesses_theres_a_left_wing_jud.json",
+  "prompt_hash": "1af9330e7254"
+}

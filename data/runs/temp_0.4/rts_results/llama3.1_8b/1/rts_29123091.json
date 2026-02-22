@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article appears to be a neutral, informative piece about a radio contest. The language and tone are objective, but there is a slight left-leaning bias in the framing of the contest as a way for people to win prizes while being informed about the Milan-Cortina 2026 Olympics.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

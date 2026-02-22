@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision très critique des politiques de Donald Trump en matière d'économie et de relations internationales, ce qui suggère un ton libéral ou gauche. Le langage utilisé pour décrire les actions du président américain est souvent négatif, ce qui pourrait indiquer une préférence pour l'information libérale.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

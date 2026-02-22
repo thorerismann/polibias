@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "The article discusses the concept of universal childcare, its history in New York City, and the challenges of implementing it. The tone is informative and neutral, with a slight left-leaning bias due to the discussion of progressive policies.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

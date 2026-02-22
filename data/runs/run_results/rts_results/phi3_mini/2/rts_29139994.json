@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses a calendar-related concept without overt political bias but with slight leanings towards non-English speaking countries' preference for starting the week on Monday.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

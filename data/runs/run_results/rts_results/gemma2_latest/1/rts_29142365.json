@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "The article focuses on financial market events and does not express clear political opinions. The framing slightly leans left due to the mention of 'tour de vis monétaire' (tightening monetary policy) which is often associated with left-leaning economic views.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

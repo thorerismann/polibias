@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.6,
+  "comment": "The article focuses on a trade dispute between the US and Switzerland, framing it from a perspective that highlights Trump's actions and statements. While not overtly biased against Swiss officials, the tone suggests a more favorable view of Trump's positions.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

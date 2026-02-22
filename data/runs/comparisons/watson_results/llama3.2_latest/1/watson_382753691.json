@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "Der Artikel präsentiert eine ausgewogene und neutrale Darstellung der Vorteile und Risiken von KI im Gesundheitswesen. Die Autoren betonen die Notwendigkeit, das volle Potenzial von KI zu nutzen, ohne sich von Angst vor Technologie lähmen zu lassen.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_382753691.json",
+  "prompt_hash": "1af9330e7254"
+}

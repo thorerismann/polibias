@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents information from both Israeli and Palestinian sources, but heavily frames the conflict as a violation of a ceasefire by Israel, emphasizing Israeli actions and accusations of targeting civilians. It leans toward a critical perspective of Israel's actions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29152239.json",
+  "prompt_hash": "1af9330e7254"
+}

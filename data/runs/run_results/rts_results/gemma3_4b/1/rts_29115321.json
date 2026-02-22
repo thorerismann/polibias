@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article paints a largely negative picture of the US's role in global affairs, framing it as destabilizing and actively seeking to undermine the European Union and its democratic institutions. It highlights concerns about US influence, Russian support for right-wing parties, and a shift towards a more power-based international order.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29115321.json",
+  "prompt_hash": "1af9330e7254"
+}

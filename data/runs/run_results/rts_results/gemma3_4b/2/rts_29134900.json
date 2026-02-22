@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article overwhelmingly presents a left-leaning perspective, detailing the dire humanitarian situation in Gaza and criticizing Israeli actions. It focuses on the suffering of the population and the lack of international support, highlighting the voices of those directly affected.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

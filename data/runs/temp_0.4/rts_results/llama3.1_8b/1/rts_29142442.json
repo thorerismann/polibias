@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.75,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a generally neutral tone, but with some subtle left-leaning biases in the selection of topics and framing. The emphasis on social and cultural aspects, as well as the inclusion of progressive figures like Giorgio Armani, could be seen as slightly biased towards the left.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

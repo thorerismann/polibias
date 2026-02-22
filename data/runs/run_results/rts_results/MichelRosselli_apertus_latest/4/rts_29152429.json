@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "Le drame a été présenté comme une rixe entre militants d'extrême droite et d'extrême gauche, avec des accusations de violence physique. Le président Macron a appelé au calme et à la retenue, tandis que le parti LFI s'est défendu de toute implication.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

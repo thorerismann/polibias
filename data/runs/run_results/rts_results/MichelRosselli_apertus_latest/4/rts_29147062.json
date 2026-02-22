@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article focuses on Trump's comments about Switzerland and its economic relationship with the U.S., without clear political actors.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

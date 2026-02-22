@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.3,
+  "confidence": 0.9,
+  "comment": "The article leans slightly to the left due to its focus on environmental and social issues with a negative portrayal of current societal actions towards these problems.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,7 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article maintains a neutral tone while discussing the maltreatment of animals and subsequent investigations without overt political leanings or bias in its framing. The treatment seems slightly biased against agriculture due to concerns about animal welfare but does not explicitly favor one side politically, hence slight negative score for subject_bias towards regulation/animal rights perspective. Framing is neutral with a minor tilt toward the importance of monitoring and prevention in farming practices (framing_bias: -0.2). The treatment bias leans slightly against agriculturalists due to criticism but lacks strong political slant, hence negative score for treatment bias (-0.3) as it implies some blame on their part without explicit right-leaning or leftist rhetoric; guests are not politically charged

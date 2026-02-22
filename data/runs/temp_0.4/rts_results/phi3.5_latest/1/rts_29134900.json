@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article heavily frames the situation in Gaza with a negative bias towards Israel and its policies, suggesting unfavorable treatment of Palestinians without presenting counterarguments or Israeli perspectives on security concerns.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

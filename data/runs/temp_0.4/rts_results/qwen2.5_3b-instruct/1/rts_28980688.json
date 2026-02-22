@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.97,
+  "comment": "The article discusses economic relations between Switzerland and Iraq, with a focus on business opportunities and partnerships. It does not show clear bias towards either side.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

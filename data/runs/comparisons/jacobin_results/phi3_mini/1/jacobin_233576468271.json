@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article presents a personal narrative with no clear bias towards left or right politics in the subject matter; however, it emphasizes social change and power research within political contexts which may suggest a leaning toward progressive ideologies.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

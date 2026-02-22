@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Le concours est généralement neutre, mais la mention de 'champion du Monde' et les prix en nature pour les gagnants suggèrent un légèrement plus d'influence à gauche, tandis que le fait qu'il s'agisse d'un concours sportif avec des prix en nature pourrait suggérer une légère influence à droite.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

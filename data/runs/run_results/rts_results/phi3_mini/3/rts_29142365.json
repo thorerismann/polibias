@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article is significantly left-leaning in its viewpoint about Bitcoin's decline due to concerns over the US economy and investor behavior towards tech assets being seen negatively; guests or references not specified.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

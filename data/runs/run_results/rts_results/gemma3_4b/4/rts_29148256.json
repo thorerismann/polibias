@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the exploitation of a foreign worker in Switzerland, framing the situation as an injustice and highlighting the potential for abuse within the system. It leans towards a sympathetic treatment of the worker, Jonathan Manilo, and incorporates expert commentary reinforcing the need for stronger protections.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

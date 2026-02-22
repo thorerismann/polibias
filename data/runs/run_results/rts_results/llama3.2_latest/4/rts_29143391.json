@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.5,
+  "confidence": 0.6,
+  "comment": "L'article présente un ton neutre et fournit des citations de Julia Steinberger, une universitaire lausannoise, pour soutenir son argumentation. Cependant, l'attitude du Département fédéral de l'Economie, de la formation et de la recherche est évoquée sans être explicitement citée dans le texte, ce qui pourrait indiquer une légère tendance à la neutralité.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

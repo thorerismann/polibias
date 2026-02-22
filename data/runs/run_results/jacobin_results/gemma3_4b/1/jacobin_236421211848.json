@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced view of the US-Mexico relationship, highlighting both Sheinbaum's successful diplomacy and the escalating rhetoric from both sides. It critiques the framing of the conflict as a simple 'offer' and 'rejection' while exposing the use of conspiracy theories and historical revisionism.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

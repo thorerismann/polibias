@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the relationship between the US and Switzerland in a way that favors the US, highlighting economic benefits and Trump's perspective. It also subtly criticizes the Swiss representatives for their actions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

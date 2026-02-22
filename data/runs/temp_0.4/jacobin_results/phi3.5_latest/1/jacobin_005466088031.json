@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left due to its critical view of traditional structure-based organizing and endorsement of a worker-to-worker approach within the context of labor movements in auto plants; however, it remains neutral as both sides are discussed without clear favoritism. The framing suggests skepticism towards conventional methods but also acknowledges their historical successes.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

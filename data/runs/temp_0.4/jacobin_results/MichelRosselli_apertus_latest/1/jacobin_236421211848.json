@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "This article covers a complex and nuanced diplomatic situation between the United States and Mexico, focusing on the leadership of Mexican President Claudia Sheinbaum's response to threats from former US president Donald Trump. The tone is generally critical towards Trump's actions and rhetoric, which could be considered left-leaning or favorable to the left. However, the subject matter itself (diplomatic relations between two countries) does not inherently lean left or right.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

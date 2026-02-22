@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses Donald Trump's comments about the Swiss economy and his trade policies with Switzerland, but does not present any clear political bias or opinion from guests.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

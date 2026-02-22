@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article criticizes France's plan to encourage egg freezing, framing it as a solution that doesn't work and potentially harmful. It leans towards a right-leaning perspective on family values.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

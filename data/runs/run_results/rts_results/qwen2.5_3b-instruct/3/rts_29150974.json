@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.75,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on the criticism of verbal and physical attacks against defense lawyers, emphasizing the need for judicial integrity and reiterating the importance of legal representation and fair trials.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29150974.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une perspective négative sur le bitcoin en utilisant un langage qui suggère que la baisse de prix est due à des craintes concernant les actions du FED et l’impact potentiel d'un 'tour de vis monétaire'. Le ton général semble critique ou préoccupé par le marché, ce qui indique une tendance vers un point de vue plus conservateur. Il n'y a pas non plus mention explicite des voix politiques spécifiques favorisées dans l'article.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

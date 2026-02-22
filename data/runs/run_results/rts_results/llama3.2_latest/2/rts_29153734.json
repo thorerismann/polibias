@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.1,
+  "confidence": 0.7,
+  "comment": "L'article présente un ton neutre, mais la citation du directeur adjoint de l'OSAV semble légèrement plus critique envers les entreprises accusées de réagir trop tardivement. Le contexte généralement positif envers le rôle des autorités dans la garantie de la sécurité alimentaire est également pertinent.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily discusses the UAW's shift towards worker-to-worker organizing, favoring a more agile and less traditional approach. It highlights the union's past shortcomings and frames the current strategy as a necessary adaptation to achieve mass organizing success, particularly in the face of declining union density.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

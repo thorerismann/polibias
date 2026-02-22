@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a slight left-leaning bias by focusing on the Christian observance of Ash Wednesday and Lent in relation to Islamic Ramadan without giving equal weight or comparison between them.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "cathinfo_259731758893.json",
+  "prompt_hash": "1af9330e7254"
+}

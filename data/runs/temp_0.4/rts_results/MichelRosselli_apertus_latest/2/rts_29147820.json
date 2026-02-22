@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de manière neutre du sujet des rentes d'invalidité, sans favoriser un camp politique en particulier.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

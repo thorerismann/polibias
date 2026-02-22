@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un concours de ski et de week-end en hiver, avec des prix offerts par des sociétés suisses. Le ton est neutre et les informations sont fournies de manière équilibrée.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

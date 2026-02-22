@@ -1,0 +1,12 @@
+{
+  "draws": 1500,
+  "tune": 1500,
+  "chains": 4,
+  "cores": 2,
+  "target_accept": 0.9,
+  "random_seed": 42,
+  "collapse_runs": false,
+  "complete_articles_only": false,
+  "no_imputation": false,
+  "test_fraction": 0.5
+}

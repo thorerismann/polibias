@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": -0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton objectif et inquisatif, questionnant les responsabilités de la ville et du gouvernement italien pour le glissement de terrain. Cependant, certains passages semblent légèrement plus critiques envers le gouvernement que contre l'administration locale.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced discussion of organizing strategies within the UAW, favoring a pragmatic approach that blends traditional structure-based methods with a more fluid, momentum-based model. It highlights the union's past shortcomings and emphasizes the need for adaptability and strategic thinking to address the challenges of mass organizing.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.7,
+  "confidence": 0.9,
+  "comment": "The article presents a left-leaning perspective on the Iranian opposition and its leader Reza Pahlavi, framing the protests as a struggle for democracy and freedom against an authoritarian regime.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

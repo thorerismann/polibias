@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.25,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision nettement critique de l'armée israélienne et de son lien avec les universités suisses, ce qui indique un traitement favorables à la gauche. Le discours de Julia Steinberger, professeure lausannoise, est également caractérisé par des allusions à des crimes de guerre et à l'importance de l'éthique dans la science, ce qui renforce cette interprétation.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

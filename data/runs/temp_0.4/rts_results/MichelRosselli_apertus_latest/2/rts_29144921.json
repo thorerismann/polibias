@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente un événement historique sans prise de position politique évidente, mais il met en lumière les conséquences d'une catastrophe naturelle et la nécessité d'investissements dans des ouvrages de protection contre les avalanches.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une approche neutre et informative sur l'initiative de la chaîne de prière eucharistique organisée par le Conseil des conférences épiscopales d’Europe, sans faire preuve de partialité politique ou religieuse. La couverture est limitée aux détails de l'organisation et aux dates des célébrations eucharistiques, sans évoquer des positions politiques ou religieuses partiales.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "1af9330e7254"
+}

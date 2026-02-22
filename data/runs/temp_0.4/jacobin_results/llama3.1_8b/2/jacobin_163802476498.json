@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "The article appears to have a generally neutral tone, but with some subtle left-leaning biases in the framing and treatment of the topic. The guest's bias is slightly right-leaning due to their discussion of public-private partnerships.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

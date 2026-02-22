@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article frames the US relationship with Europe negatively, highlighting perceived American attempts to undermine European unity and autonomy. The expert quoted leans left-leaning in her analysis.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

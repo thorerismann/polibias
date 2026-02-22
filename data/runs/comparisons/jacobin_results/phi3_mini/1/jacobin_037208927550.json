@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.85,
+  "comment": "The article appears to be slightly left-leaning due to its critical tone towards the IOC's financial strategies and Samaranch’s political background.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

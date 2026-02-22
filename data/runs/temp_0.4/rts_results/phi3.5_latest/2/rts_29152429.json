@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans left-leaning by highlighting the alleged violence and aggression against a young man during political protests associated with La France Insoumise (LFI), an entity often seen as part of the far-left in French politics. The framing suggests that this incident is connected to clashes between extremist groups, which typically carry negative connotations within right-leaning narratives. Furthermore, it attributes blame towards LFI and their service d'ordre without presenting a balanced view or positive aspects of the situation.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

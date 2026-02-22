@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides factual information about the February perfect month without promoting or favoring a political ideology.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

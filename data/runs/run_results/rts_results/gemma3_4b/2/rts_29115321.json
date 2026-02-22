@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the situation as a destabilizing shift driven by US actions, particularly Trump's policies, and paints a negative picture of Europe's vulnerability and dependence on the US. It leans heavily against the US, characterizing their actions as disruptive and aimed at weakening the EU.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29115321.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral factual account of the Bitcoin price drop and its potential causes. There is no clear political slant in the topic or framing.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

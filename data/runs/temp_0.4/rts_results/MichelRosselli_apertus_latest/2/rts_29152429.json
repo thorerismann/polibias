@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article traite de manière neutre d'un drame politique, en se concentrant sur les déclarations des partis politiques sans prendre parti pour l'une ou l'autre faction.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

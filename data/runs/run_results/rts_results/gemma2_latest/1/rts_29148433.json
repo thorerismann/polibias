@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a neutral obituary focusing on the life and career of James Van Der Beek. There are no overt political leanings or biases.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

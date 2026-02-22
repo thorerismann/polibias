@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article focuses on calls for regime change in Iran, primarily through the voices of opposition figures and Donald Trump's support, leaning towards a critical perspective of the Iranian government. It highlights the mobilization and international attention surrounding the protests.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

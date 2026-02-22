@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced and empathetic portrayal of mother-led movements, highlighting their focus on care, safety, and recognition as key issues. The tone is generally neutral, but slightly leans towards a left-leaning perspective due to the emphasis on social justice and collective action.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_mothers_nordic_welfare_state_social_reproduction.json",
+  "prompt_hash": "1af9330e7254"
+}

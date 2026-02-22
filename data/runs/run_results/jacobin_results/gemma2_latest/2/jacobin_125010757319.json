@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a largely negative view of the Chaves administration, criticizing its policies and framing them as harmful. The tone is critical and leans left.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

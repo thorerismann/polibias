@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "The article presents a left-leaning perspective on the US-Europe relationship, criticizing American actions and emphasizing European autonomy.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

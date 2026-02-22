@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article criticizes the integration of AI in schools, arguing that it undermines parental authority and replaces traditional values with a 'Silicon pater familias'. The author suggests that this development is a moral takeover, where technology companies dictate what 'best interests' an AI model should carry into conversations with children. The tone is critical and left-leaning.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}

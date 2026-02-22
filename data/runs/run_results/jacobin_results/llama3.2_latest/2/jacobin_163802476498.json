@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral and informative discussion on the evolution of universal childcare in New York City, with Bill de Blasio's administration playing a key role in its implementation. The author provides context on the policy's history, its goals, and the challenges it faced, without taking a clear stance or promoting a particular ideology.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et ne semble pas favoriser une idéologie particulière. Cependant, la mention de l'incendie qui a fait 41 morts et 115 blessés pourrait être perçue comme une approche plus sensible aux victimes du côté gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

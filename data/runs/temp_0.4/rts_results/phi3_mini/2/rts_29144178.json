@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to be reporting on a serious issue of animal maltreatment without clear political bias and maintains an objective tone throughout the piece.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

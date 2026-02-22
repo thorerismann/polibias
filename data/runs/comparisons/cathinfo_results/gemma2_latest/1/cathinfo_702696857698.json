@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents factual information about the commemorative events for Pope Benedict XVI. There is no discernible political leaning in the subject matter or tone.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

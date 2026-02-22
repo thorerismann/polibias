@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": null,
+  "comment": "The article discusses the opening ceremony of a neutral event (the Olympic Games) without showing any clear political bias towards left or right perspectives in its content and narrative.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

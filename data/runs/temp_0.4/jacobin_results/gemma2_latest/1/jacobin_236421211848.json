@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": -0.5,
+  "confidence": 0.6,
+  "comment": "The article presents a narrative of tension between Mexico and the US, with a slight left-leaning framing due to criticism of Trump's rhetoric and actions. Guests like Steve Bannon and Peter Schweizer lean right.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

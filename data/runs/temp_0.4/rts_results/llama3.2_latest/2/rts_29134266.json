@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision critique de la relation entre l'Europe et les États-Unis, soulignant les difficultés de confiance et les menaces perçues par la Russie. Le ton est analytique et nuancé, avec des citations de Nicole Gnesotto qui renforcent cette perspective.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

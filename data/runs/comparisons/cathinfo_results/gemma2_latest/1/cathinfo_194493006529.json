@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "The article primarily focuses on a religious directive and subscription information. Political leanings are not discernible.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "1af9330e7254"
+}

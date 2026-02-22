@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article shows a clear left-leaning bias by criticizing the reliance on American military support and questioning US intentions towards Europe's sovereignty (framing_bias: -0.6). The author also implies skepticism about America’s willingness to defend European interests, suggesting that this is a form of political chauvinism or Euro-centric perspective rather than an objective analysis (treatment_bias: -0.8 and guests_bias: -1.0 due to the critical tone towards US actions). The subject matter focuses on EU autonomy in defense, which aligns with leftist sentiments of self-reliance over interventionism.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

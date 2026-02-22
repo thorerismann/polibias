@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": null,
+  "comment": "L'article fournit des informations factuelles sur le concept d'un 'mois parfait', sans présenter de langage partisan ou faire référence à une position politique spécifique. Le ton est neutre et informatif.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

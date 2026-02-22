@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article maintains a relatively neutral stance on the subject by presenting facts about Ukraine's political situation and public opinion without overtly favoring either left or right-leaning perspectives. It discusses Zelensky’s position as an independent actor rather than aligning with any particular ideological bias, hence scoring slightly towards a neutral framing (slight negative due to the context of conflict). The guests' perspective is not explicitly political and thus scores zero for guest_bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

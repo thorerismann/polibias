@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": null,
+  "status": "fallback",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

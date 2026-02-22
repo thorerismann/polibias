@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article presents a largely neutral overview of Swiss-Iraqi economic relations, highlighting opportunities and challenges. It subtly favors a positive outlook by emphasizing Swiss strengths and the Iraqi government's desire for modernization.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

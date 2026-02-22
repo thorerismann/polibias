@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article reports on a tragic event in Crans-Montana with an objective tone and does not indicate any political leaning or bias towards left or right ideologies. The framing is neutral as it discusses the aftermath of an incident without express support for either side.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

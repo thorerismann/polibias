@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.1,
+  "confidence": 0.7,
+  "comment": "The article focuses on a Republican-led initiative and frames it positively. It also presents arguments from right-leaning sources more favorably.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "1af9330e7254"
+}

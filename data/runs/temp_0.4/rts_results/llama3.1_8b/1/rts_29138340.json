@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.3,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the topic, but with a slightly left-leaning bias due to the inclusion of quotes from a socialist and green party representatives. The framing of the article highlights the potential drawbacks of the initiative, such as increased debt, while also presenting the concerns of the opposition.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article appears to have a slight left-leaning bias due to the emphasis on environmental concerns and criticism of enduring debt for climate action; however, it also presents arguments from both sides fairly.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

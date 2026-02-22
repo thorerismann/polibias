@@ -1,0 +1,22 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.4,
+  "confidence": 0.7,
+  "comment": "The article strongly frames marijuana as harmful and cites anecdotal evidence to support this claim. The author presents a clear right-leaning perspective on the topic.",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

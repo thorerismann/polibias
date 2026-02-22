@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article discusses the rise of hyperpolitics and its impact on political engagement, framing it as a left-leaning critique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_hyperpolitics_jager_institutions_media_review.json",
+  "prompt_hash": "1af9330e7254"
+}

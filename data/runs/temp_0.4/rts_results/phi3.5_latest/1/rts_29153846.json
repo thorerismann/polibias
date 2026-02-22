@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left due to its focus on social issues like healthcare accessibility and poverty among children in Switzerland without showing a clear preference for either political side. The tone is critical of current conditions but neutral towards specific parties or policies.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

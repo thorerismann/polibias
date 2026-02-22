@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article presents multiple perspectives on the violent incident, highlighting clashes between far-right and far-left groups. It emphasizes accusations and defenses from various political figures and groups, offering a nuanced but potentially biased account of the events.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

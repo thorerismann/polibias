@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "The article appears to have a slight left-leaning bias, primarily due to the framing and tone of the narrative. The language used by Michael Beer, the deputy director of OSAV, is critical towards the companies involved in the recall.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

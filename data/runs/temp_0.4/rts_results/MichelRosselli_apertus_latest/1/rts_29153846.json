@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de la pauvreté en Suisse, une problématique qui n'est pas clairement liée à un parti politique spécifique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

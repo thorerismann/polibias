@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left by presenting a critique of an initiative proposed for climate action and emphasizing existing efforts within Switzerland's current system rather than advocating significant new spending or policy changes typically associated with right-leaning viewpoints. The framing is critical but not overtly biased, suggesting some skepticism about the effectiveness of additional funding without clear evidence presented in favor by any specific political party.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

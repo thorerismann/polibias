@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.625,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on Rodrigo Chaves's administration, which is portrayed negatively with a framing that leans left due to its critique of the populist approach and its emphasis on confrontation over compromise.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

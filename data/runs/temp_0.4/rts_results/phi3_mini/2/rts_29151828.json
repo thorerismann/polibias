@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a balanced view of the protests in Iran with some slight left-leaning bias due to its focus on peaceful demonstrations and democratic aspirations while also mentioning dissent within opposition groups.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

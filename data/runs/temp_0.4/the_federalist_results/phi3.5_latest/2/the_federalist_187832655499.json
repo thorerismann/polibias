@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.95,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.98,
+  "comment": "The article presents a clear left-leaning bias against the American Constitution Society (ACS) and its approach to judicial appointments under Phil Brest's leadership by criticizing their perceived failure compared to The Federalist Society while framing them as part of an effort to weaponize the judiciary. Jeffrey Toobin, a CNN legal analyst known for his conservative leanings according to contextual clues in this excerpt and past writings, is quoted without counterarguments or neutrality from right-leaning sources which implies bias against leftist efforts within The ACS.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_18_nyt_accidentally_confesses_theres_a_left_wing_jud.json",
+  "prompt_hash": "1af9330e7254"
+}

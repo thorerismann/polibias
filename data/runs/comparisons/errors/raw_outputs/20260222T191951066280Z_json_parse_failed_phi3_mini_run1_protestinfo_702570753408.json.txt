@@ -1,0 +1,13 @@
+{
+   "title": "<|Article Start|>",
+   "content": [
+      {
+         "paragraph": "OLIVIER TESQUET Non seulement ces entreprises sont revenues sur la défense de grands principes, des droits humains, de l’égalité, mais elles ont mis en scène leur revivalent. Dans l'Amérique trumpienne, il n’y a plus aucun gain politique à se positionner comme défenseeur de ces valeurs.",
+         "summary": "OLIVIER TESQUET criticizes tech companies for abandoning their defense of fundamental principles and human rights in favor of appeasing the Trump administration. This shift, according to him, offers no political advantage."
+      },
+      {
+         "paragraph": "... et une forme de sécessionnisme.",
+         "summary": "'Technofascisme' is described as an authoritarian power structure and a mode of circulating thought within tech companies. It includes elements like Elon Musk’s initial support for Trump, which later turned into advocacy for secessionism."
+      },
+      {
+        

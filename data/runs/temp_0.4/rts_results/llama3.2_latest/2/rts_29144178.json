@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais il est possible que le sujet lui-même soit légèrement plus tendance à gauche en raison de l'accent mis sur les maltraitances animales et la situation sociale des agriculteurs. Le traitement des deux côtés de la question est équilibré, mais les citations du paysan et du conseiller d'État pourraient être interprétées comme légèrement plus favorables à gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

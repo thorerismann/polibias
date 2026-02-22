@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses Rodrigo Chaves's administration in Costa Rica, which presents itself as an outsider with a populist style and technocratic economic policies. The article highlights the tensions between Chaves's aggressive approach to dismantling institutional barriers and the political establishment and press. While the article does not clearly favor one side over another, it criticizes Chaves for his confrontational rhetoric and attacks on the welfare state.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

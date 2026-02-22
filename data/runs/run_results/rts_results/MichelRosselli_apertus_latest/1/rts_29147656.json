@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "Article treats the incident and its aftermath with a neutral tone, focusing on legal aid and compensation for victims. No clear political or biased voices mentioned in the article.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

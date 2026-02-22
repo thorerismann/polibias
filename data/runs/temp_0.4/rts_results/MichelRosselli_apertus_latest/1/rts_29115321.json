@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article examine la situation actuelle de l'Europe, qui est confrontée à des menaces externes et internes. Il souligne que les États-Unis sont en train de démanteler leur propre ordre mondial, ce qui a un impact majeur sur le reste du monde, notamment l'Europe.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29115321.json",
+  "prompt_hash": "1af9330e7254"
+}

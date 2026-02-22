@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article maintains a slightly negative tone towards Swiss athletes by highlighting their failures and shortcomings in various sports events without emphasizing any positive achievements or aspects of the performances mentioned. The framing suggests that Switzerland may not be as competitive on an international scale.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

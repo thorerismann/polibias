@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article presents a generally positive outlook on Swiss-Iraqi economic relations, highlighting investment opportunities and the benefits of Swiss expertise. It acknowledges potential risks but emphasizes the Iraqi government's desire for modernization and partnerships.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

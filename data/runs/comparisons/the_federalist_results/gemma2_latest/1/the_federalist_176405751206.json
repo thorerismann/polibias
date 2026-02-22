@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article criticizes France's fertility plan, framing it as a solution that doesn't address the root causes of declining birth rates and potentially harming women. The author leans right in their commentary.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "the_federalist_176405751206.json",
+  "prompt_hash": "1af9330e7254"
+}

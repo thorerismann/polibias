@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.75,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article heavily focuses on the violent confrontation between far-left and far-right groups, presenting a biased perspective that leans to the right.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

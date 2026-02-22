@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente une analyse équilibrée sur les opportunités économiques en Irak, mettant en avant le potentiel du marché tout en soulignant les défis géopolitiques et institutionnels qui freinent l'investissement.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

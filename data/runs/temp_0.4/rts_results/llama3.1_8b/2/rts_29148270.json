@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.75,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the Ukrainian government's stance on elections, but leans slightly left in its framing and treatment of the issue.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

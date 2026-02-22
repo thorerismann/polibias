@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses a labor movement's strategy and experiences with organizing in the auto industry from both left-leaning (favoring worker solidarity) to slightly right-leaning perspectives due to its critique of traditional business unionism but without strong ideological language. The framing is critical yet constructive, focusing on practical strategies for labor organization rather than political agendas.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

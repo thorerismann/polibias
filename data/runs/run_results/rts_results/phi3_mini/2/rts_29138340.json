@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article appears to lean left due to its framing and treatment of the climate initiative with skepticism towards funding it through increased debt as suggested by Simone de Montmollin's quotes.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision globale de la réglementation des déchets textiles, en mettant l'accent sur les impacts environnementaux et sociaux. La déléguée générale du collectif Ethique sur l'Etiquette, Mathilde Pousseo, exprime ses préoccupations quant à la responsabilité transférée sur les organisations caritatives.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

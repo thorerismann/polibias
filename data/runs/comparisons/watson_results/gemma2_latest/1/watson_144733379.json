@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents a factual account of the potential US tariffs and their implications for Switzerland. The framing is slightly left-leaning due to emphasis on potential negative impacts on Swiss businesses.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "watson_144733379.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the French government's initiative as potentially problematic, highlighting risks associated with IVF and questioning the long-term impact on societal values. It leans right by criticizing government intervention in reproductive choices and raising concerns about a transactional view of family formation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

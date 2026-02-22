@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "This article covers multiple sports from the Winter Olympics, including skiing and biathlon, but does not show any clear political bias in terms of subject selection, framing, treatment or guest speakers.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

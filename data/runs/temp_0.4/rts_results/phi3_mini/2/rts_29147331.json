@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article appears to be relatively neutral in its tone and content towards both political sides as it reports on Swiss athletes' performances across different sports without displaying any apparent bias.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

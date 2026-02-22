@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the leftist-led judicial coup in the United States, which aims to stymie President Trump's agenda by appointing activist judges who will abuse their authority. The author also notes that this strategy is a last resort for the left as they have limited power through other branches of government.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_18_nyt_accidentally_confesses_theres_a_left_wing_jud.json",
+  "prompt_hash": "1af9330e7254"
+}

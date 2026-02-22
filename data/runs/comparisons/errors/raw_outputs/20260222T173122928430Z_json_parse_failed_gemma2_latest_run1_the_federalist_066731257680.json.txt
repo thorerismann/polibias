@@ -1,0 +1,22 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.3,
+  "confidence": 0.6,
+  "comment": "The article presents a legal case with arguments from both sides. While it focuses on the Supreme Court ruling, the framing leans slightly left due to emphasis on dissenting opinions and potential negative consequences of Trump's actions.",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

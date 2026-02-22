@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a critical analysis of the corporate media's handling of a shooting incident involving a trans-identifying individual, highlighting perceived bias and selective reporting.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_17_corporate_media_give_trans_hockey_game_shooter_th.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article strongly criticizes the role of technology corporations and their partnership with teachers' unions in education through AI systems without clear parental consent or involvement, suggesting a left-leaning bias towards concerns about privacy, autonomy, and democratic processes. The framing is critical of an overreliance on algorithms for child development which echoes themes common to more progressive social commentary.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_20_how_developers_are_making_ai_your_kids_third_pare.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article is a standard contest announcement with legal disclaimers and sponsor information. It doesn't exhibit any clear political leaning or bias in its framing or treatment of any particular group.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

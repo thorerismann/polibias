@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article appears to have a slight left-leaning bias by criticizing the potential negative impact of current textile waste on environmental and social aspects without directly attacking any political group or policy but rather suggesting regulatory measures for improvement; it also mentions caritative organizations potentially being burdened, hinting at an underlying concern with corporate practices. The framing is critical towards industries' sustainability issues while advocating transparency which may be seen as progressive.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

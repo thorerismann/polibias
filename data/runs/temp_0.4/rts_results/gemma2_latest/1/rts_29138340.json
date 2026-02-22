@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents both sides of the climate fund debate, but leans slightly right in its framing by highlighting concerns about debt and government overreach.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

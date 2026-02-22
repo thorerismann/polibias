@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article aborde les tensions entre l'Europe et les États-Unis, en particulier concernant la dépendance de l'Europe envers le système militaire américain. Il met en lumière les divisions internes au sein de l'Union européenne sur la question de la défense collective et souligne la nécessité pour l'Europe d'acquérir une autonomie stratégique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

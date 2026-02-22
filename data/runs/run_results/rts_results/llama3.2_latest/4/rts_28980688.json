@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.9,
+  "confidence": 0.85,
+  "comment": "L'article présente une vision positive de la relation économique entre l'Irak et la Suisse, en mettant en avant les opportunités d'investissement et la stabilité du pays. Les citations des ambassadeurs suisses et des entrepreneurs irakiens sont également présentées comme positives et favorables à l'établissement de partenariats économiques.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

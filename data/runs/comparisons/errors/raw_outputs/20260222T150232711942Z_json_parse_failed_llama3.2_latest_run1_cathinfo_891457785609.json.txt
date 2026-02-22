@@ -1,0 +1,8 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais il y a une légère tendance à privilégier les points de vue catholiques et protestants suisses. Le sujet de la peinture italienne de la Renaissance est abordé avec enthousiasme, ce qui peut donner l'impression que le ton est plus favorables aux artistes du courant réaliste.", "L'article présente un ton neutre et objectif, mais il y a une légère tendance à privilégier les points de vue catholiques et protestants suisses. Le sujet de la peinture italienne de la Renaissance est abordé avec enthousiasme, ce qui peut donner l'impression que le ton est plus favorables aux artistes du courant réaliste.":
+  "L'article présente un ton neutre et objectif, mais il y a une lég

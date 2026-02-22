@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "Le sujet de l'article est la mobilisation académique contre les liens entre la science et l'armée israélienne, ce qui peut être considéré comme un point de vue critique envers le gouvernement israélien. La framing bias est négative car l'article présente des critiques sur ces liens sans équivoque. Le traitement de l'information est neutre, avec une mention du collectif académique mais sans favoriser explicitement aucun côté. Les invités sont principalement les membres du collectif et Julia Steinberger, qui exprime un point de vue critique envers le gouvernement israélien, ce qui donne une bias guests négatif.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

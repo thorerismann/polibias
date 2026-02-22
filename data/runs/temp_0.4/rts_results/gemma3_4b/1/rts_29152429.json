@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article presents multiple perspectives on the violent incident, highlighting clashes between far-right and far-left militants. It details accusations and defenses from various political actors, including Macron, LFI, and the victim's family, without definitively assigning blame.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

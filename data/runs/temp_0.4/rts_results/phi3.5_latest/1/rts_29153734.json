@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une perspective légèrement à gauche en critiquant les entreprises pour leur réaction tardive et demandant des mesures plus strictes de contrôle sans montrer un parti pris clair ou favoriser l'une par rapport à l'autre. Le ton est critique mais neutre, avec un accent mis sur la protection sanitaire plutôt que le blâme politique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

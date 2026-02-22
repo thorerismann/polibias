@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article maintains a neutral tone and does not show explicit bias towards either left or right-leaning ideologies; it discusses the need for professionalism among lawyers amidst media coverage of legal proceedings without favoritism toward any political side.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29150974.json",
+  "prompt_hash": "1af9330e7254"
+}

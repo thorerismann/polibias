@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article discusses animal welfare with a neutral tone and framing without explicit political bias (framing_bias: 0.0). The treatment of the subject matter is also balanced, neither overtly supporting nor opposing agricultural practices but rather focusing on facts about mistreatment cases; thus slight negative score for treatment bias due to its critical perspective (-0.2). There are no politically charged guests or speakers mentioned (guests_bias: 0.0), and the overall neutrality suggests high confidence in a non-partisan approach.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

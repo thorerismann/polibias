@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "The article leans towards a left-leaning perspective by highlighting the opposition's call for democracy and criticizing Iranian authorities while also emphasizing international intervention as necessary. The framing is critical of current leadership with calls to end 'the Republic Islamic.' Quoted guests, including figures associated historically with monarchy in Iran (Reza Pahlavi), suggest a right-leaning bias due to their association and the implied connection between monarchism and opposition against an authoritarian regime. The overall tone suggests sympathy towards anti-authoritarian movements.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

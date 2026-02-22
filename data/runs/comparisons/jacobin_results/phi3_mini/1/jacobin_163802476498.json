@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a historical and political analysis of universal childcare in New York City with some left-leaning elements but remains relatively neutral overall.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

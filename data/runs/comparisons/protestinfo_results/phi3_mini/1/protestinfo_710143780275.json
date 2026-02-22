@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article's title suggests a focus on religion which could lean towards conservative perspectives often associated with the right-leaning bias in Switzerland. The framing and treatment of religious topics within the text appears to favor traditional views typically aligned with political conservatism.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "1af9330e7254"
+}

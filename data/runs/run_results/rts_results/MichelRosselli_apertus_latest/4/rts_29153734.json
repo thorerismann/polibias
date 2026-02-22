@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article focuses on the recent recalls of baby milk due to contamination with cereulide, a bacterial toxin. The director of the Office fédéral de la sécurité alimentaire et des affaires vétérinaires (OSAV) expresses dissatisfaction with the reaction times of companies involved and emphasizes the importance of immediate action in case of potential health risks.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

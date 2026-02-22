@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une récit objectif et détaillé du cas de Jonathan Manilo, mais les citations d'experts comme Leila Boussemacer ajoutent un ton critique et critique envers le système suisse de travail, ce qui peut être perçu comme un biais gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

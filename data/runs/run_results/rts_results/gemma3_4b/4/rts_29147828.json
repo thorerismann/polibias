@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.9,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article heavily frames the ongoing conflict through the lens of historical trauma, particularly focusing on the experiences of Poland and Ukraine due to the legacy of Nazi Germany and the current Russian invasion. It presents a deeply negative portrayal of Russian actions and highlights the enduring impact of war on civilian lives.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147828.json",
+  "prompt_hash": "1af9330e7254"
+}

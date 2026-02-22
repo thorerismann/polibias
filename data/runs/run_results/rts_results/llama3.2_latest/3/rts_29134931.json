@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "L'article présente une analyse objective des événements en question, mais peut être influencé par une légère orientation à gauche en raison de la mention de la 'protection civile' et du fait qu'il s'agit d'une procédure contre un individu identifié par le nom 'X'. La crédibilité de l'article est élevée, mais il conviendrait d'être plus précis sur les conséquences attendues du projet de pont pour éviter de donner l'impression que les progrès seraient mal gérés.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "The article discusses a large protest against the Iranian government, with participants calling for democracy and an end to the Islamic Republic. The opposition leader Reza Pahlavi is seen as a potential symbol of unity among different political factions.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

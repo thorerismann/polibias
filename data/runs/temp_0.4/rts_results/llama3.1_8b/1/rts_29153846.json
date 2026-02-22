@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical view of the economic situation in Switzerland, highlighting poverty and inequality issues. The tone is informative and neutral, with no apparent bias towards any political ideology.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

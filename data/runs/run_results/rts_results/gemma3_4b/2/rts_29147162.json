@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the issue of textile waste as a problem requiring regulation and increased transparency, aligning with a left-leaning perspective on environmental protection. It highlights the negative impacts of 'fast fashion' and criticizes potential loopholes in the regulations.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

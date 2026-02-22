@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une analyse critique des tendances réactionnaires dans la Silicon Valley, mettant en évidence les élites technologiques et leur influence sur la politique américaine. Le ton est délibérément critique et remet en question les valeurs de la tech, ce qui suggère un biais à gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

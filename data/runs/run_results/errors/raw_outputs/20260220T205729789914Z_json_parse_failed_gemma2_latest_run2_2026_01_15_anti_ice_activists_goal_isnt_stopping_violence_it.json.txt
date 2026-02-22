@@ -1,0 +1,22 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.6,
+  "confidence": 0.95,
+  "comment": "The article strongly frames ICE enforcement as necessary and justified, criticizing those who oppose it as unprincipled and dangerous. It features quotes from law enforcement officials supporting this viewpoint.",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

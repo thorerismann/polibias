@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the impact of mass migration on American society and culture, with a focus on Hillary Clinton's acknowledgment that it has gone 'too far' and is 'disruptive and destabilizing'. It argues that while Democrats have historically criticized conservatives for similar views, they are now trying to rebrand themselves as moderate in response to shifting public opinion against mass migration.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_17_hillary_clinton_says_mass_migration_went_too_far_.json",
+  "prompt_hash": "1af9330e7254"
+}

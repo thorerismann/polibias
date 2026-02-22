@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents neutral factual information about 'perfect' February months. There is no discernible political slant or bias.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

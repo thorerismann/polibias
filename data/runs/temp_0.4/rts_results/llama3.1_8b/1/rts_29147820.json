@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning perspective on the topic of disability benefits in Switzerland, focusing on government measures and reforms without explicit bias towards any political ideology.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

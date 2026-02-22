@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton critique envers la Suisse pour son accès aux soins médicaux et sa lutte contre la pauvreté, ce qui suggère une orientation de gauche. La préférence accordée à des études comme l'expérience des mineurs vivant dans les ménages monoparentaux peut également être interprétée comme un accent de gauche. Cependant, le ton n'est pas outrancier et la discussion reste centrée sur les chiffres et les statistiques, ce qui maintient une certaine neutralité.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

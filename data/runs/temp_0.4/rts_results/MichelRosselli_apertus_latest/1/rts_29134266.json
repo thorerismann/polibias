@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de la relation complexe entre l'Europe et les États-Unis, avec une focalisation sur les tensions au sein de l'OTAN et le rôle des États-Unis dans la défense européenne.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.1,
+  "confidence": 0.95,
+  "comment": "This article heavily frames the situation in Gaza as a continuation of a genocide, emphasizing Israeli actions and the deprivation of Palestinians. It presents a strongly critical perspective, focusing on the ongoing violence and restrictions on aid.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_gaza_ceasefire_trump_real_estate.json",
+  "prompt_hash": "1af9330e7254"
+}

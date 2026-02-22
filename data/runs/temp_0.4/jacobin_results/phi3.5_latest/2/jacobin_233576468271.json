@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.2,
+  "confidence": 0.85,
+  "comment": "The article discusses the author's academic and intellectual journey with a focus on social movements for change rather than explicitly favoring left or right ideologies; however, there is slight framing bias due to mention of figures like Tom Hayden who are associated historically more closely with progressive causes. The treatment seems neutral towards political parties but leans slightly negative against the establishment by critiquing its role in US foreign policy.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_power_structure_research_labor_locker.json",
+  "prompt_hash": "1af9330e7254"
+}

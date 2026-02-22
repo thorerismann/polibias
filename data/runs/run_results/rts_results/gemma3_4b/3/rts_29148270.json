@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced overview of the challenges to holding elections in Ukraine, citing both Ukrainian and US perspectives. It highlights the conditions set by Zelensky for elections and the obstacles posed by the ongoing conflict.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.85,
+  "guests_bias": -0.95,
+  "confidence": 0.95,
+  "comment": "The article displays a clear left-leaning bias with negative framing towards the U.S., particularly in its portrayal of Trump's statements and policies as aggressive or paranoid.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

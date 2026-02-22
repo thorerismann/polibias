@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "This article discusses the recent drop in Bitcoin's value, attributing it to massive liquidation and uncertainty about monetary policy in the US. It frames this as a negative development for investors who had borrowed money to invest in Bitcoin.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

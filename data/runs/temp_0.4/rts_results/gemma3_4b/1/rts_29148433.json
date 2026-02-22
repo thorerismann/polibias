@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article is a straightforward obituary, focusing on the deceased's life and passing. The tone is respectful and neutral, with a slight positive framing emphasizing courage and dignity.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

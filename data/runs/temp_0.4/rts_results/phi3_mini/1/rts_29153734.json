@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article maintains a slight left-leaning bias by highlighting regulatory concerns and emphasizing consumer safety over corporate responsibility; it frames the issue as one of insufficient action from companies but does not heavily criticize or favor any political ideology.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

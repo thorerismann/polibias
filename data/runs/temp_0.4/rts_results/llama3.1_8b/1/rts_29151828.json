@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.8,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.9,
+  "confidence": 0.7,
+  "comment": "The article appears to lean left due to its sympathetic portrayal of the Iranian opposition and criticism of the Islamic Republic, but some neutral language is used.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

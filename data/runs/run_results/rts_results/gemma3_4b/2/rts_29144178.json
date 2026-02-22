@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.1,
+  "confidence": 0.7,
+  "comment": "The article presents a factual account of animal neglect, focusing on the circumstances and reactions of those involved. It highlights concerns about oversight and potential systemic issues within the agricultural sector, with a cautious approach to assigning blame.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

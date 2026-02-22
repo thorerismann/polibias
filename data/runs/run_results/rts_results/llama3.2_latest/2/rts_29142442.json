@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.05,
+  "confidence": 0.8,
+  "comment": "La cérémonie d'ouverture des Jeux olympiques d'hiver à Milan a été marquée par une atmosphère de paix et d'harmonie, avec un message de promotion du design italien et de la mode. La direction artistique a été confiée à Marco Ballich, qui a réussi à rassembler des talents internationaux pour cette cérémonie inédite.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

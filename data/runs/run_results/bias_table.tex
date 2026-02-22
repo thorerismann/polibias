@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering
+\caption{Mean bias scores per model}
+\label{tab:bias_scores}
+\begin{tabular}{l r r r r r r r}
+\hline
+Model & $n$ & Subject & Framing & Treatment & Guests & Overall & Confidence \\
+\hline
+MichelRosselli/apertus:latest & 78 & -0.138 & -0.909 & -0.573 & -0.112 & -0.431 & 0.867 \\
+gemma2:latest & 93 & 0.040 & -0.020 & -0.132 & 0.031 & -0.020 & 0.753 \\
+gemma3:4b & 113 & 0.199 & 0.320 & 0.258 & 0.084 & 0.215 & 0.810 \\
+llama3.1:8b & 39 & -0.424 & -0.477 & -0.404 & -0.249 & -0.388 & 0.861 \\
+llama3.2:latest & 177 & -0.617 & -0.189 & -0.258 & -0.129 & -0.298 & 0.859 \\
+phi3.5:latest & 22 & -0.639 & -0.718 & -0.734 & -0.610 & -0.679 & 0.923 \\
+phi3:mini & 82 & -0.515 & -0.701 & -0.591 & -0.243 & -0.513 & 0.927 \\
+qwen2.5:3b-instruct & 145 & -0.527 & -0.666 & -0.616 & -0.036 & -0.461 & 0.982 \\
+\hline
+\end{tabular}
+\end{table}

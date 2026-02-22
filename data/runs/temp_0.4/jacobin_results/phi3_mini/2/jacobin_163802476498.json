@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual account of Bill de Blasio's approach to universal pre-K in New York City without overtly favoring any political ideology.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

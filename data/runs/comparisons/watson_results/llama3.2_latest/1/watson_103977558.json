@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Art und Weise, wie die Ereignisse dargestellt werden, zeigt eine gewisse Neutraleität. Die Behauptung der pakistanischen Regierung über die Verantwortung des IS für den Anschlag wird jedoch durch die Aussage Pakistans, dass ein Afghaner als Drahtzieher verantwortlich gemacht wurde, untermauert.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_103977558.json",
+  "prompt_hash": "1af9330e7254"
+}

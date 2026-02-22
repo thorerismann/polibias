@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article highlights the failure of various social movements, including Black Lives Matter, to achieve lasting political gains and criticizes the lack of solidarity among activists.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_hyperpolitics_jager_institutions_media_review.json",
+  "prompt_hash": "1af9330e7254"
+}

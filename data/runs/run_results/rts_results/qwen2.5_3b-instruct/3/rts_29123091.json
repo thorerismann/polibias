@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is purely informational and does not contain any overtly biased framing or treatment of political issues.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

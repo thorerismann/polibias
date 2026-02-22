@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.9,
+  "comment": "The article presents a balanced view of the UAW's organizing strategy, highlighting both its successes and limitations. The author acknowledges the challenges of organizing at scale and emphasizes the need for strategic fluency in choosing the right mix of organizing models and tactics to win.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": 0.15,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced and balanced view of the mother-led movements in Sweden, highlighting their grassroots nature and collective responses to public care issues. The tone is generally neutral, but slightly leans towards a left-leaning perspective on the importance of care and accountability.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

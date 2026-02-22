@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article discusses the inadequacies of current compensation systems and proposes measures to improve support for victims, leaning slightly left in its recommendations.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

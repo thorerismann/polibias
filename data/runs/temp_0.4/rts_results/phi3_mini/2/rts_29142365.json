@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a negative outlook on Bitcoin's performance and attributes its decline to fear of monetary tightening by the Fed under Kevin Warsh without providing any specific evidence or analysis from multiple sources; it also suggests that investors are fleeing technology assets for more traditional safe havens like gold and silver. It lacks a balanced view, focusing primarily on negative aspects.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

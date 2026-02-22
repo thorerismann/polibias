@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Der Artikel vermittelt eine kritische Darstellung der US-Regierung unter Trump, insbesondere im Hinblick auf die mögliche Annexion von Grönland durch Dänemark. Die Art und Weise, wie die Ereignisse dargestellt werden, lässt darauf schließen, dass der Artikel einen linken politischen Hintergrund hat.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

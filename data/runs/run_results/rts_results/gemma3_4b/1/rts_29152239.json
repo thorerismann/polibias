@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.2,
+  "confidence": 0.85,
+  "comment": "The article presents a conflict narrative, primarily focusing on Israeli actions and Palestinian casualties, with a framing that leans towards portraying Israel negatively. It highlights Palestinian accounts of civilian deaths and accuses Israel of violating the ceasefire, while presenting Israeli justifications for their actions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29152239.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses a historical event without taking sides, focusing on the impact and lessons learned from the avalanche disaster of 1951 in Switzerland.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente principalement des mesures réglementaires environnementales et sociales sans une forte inclinaison politique claire; il met l'accent sur les préoccupations de la Commission européenne pour réduire le gaspillage textile avec un léger ton critique concernant leur impact potentiel sur les organisations caritatives. Le contenu semble neutre mais légèrement centré vers une approche plus écologique, ce qui suggère une perspective modérément à gauche.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

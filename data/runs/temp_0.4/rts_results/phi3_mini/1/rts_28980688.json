@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.35,
+  "guests_bias": -0.45,
+  "confidence": 0.87,
+  "comment": "The article leans slightly left with a focus on economic development and the role of Switzerland in supporting Iraq's growth despite regional instability. It also highlights corruption as an obstacle to foreign investment.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article discusses calendar patterns and occurrences, presenting factual information without a discernible political leaning. It focuses on astronomical and calendar conventions, making it neutral in its presentation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

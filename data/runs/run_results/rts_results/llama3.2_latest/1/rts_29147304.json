@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente un ton positif et élogieux envers Franjo von Allmen, considérant ses performances comme « parfaitement secondées » et son « moisson historique ». Le langage utilisé est également très appréciatif, avec des expressions telles que « FvA » et « le premier Suisse à s'adjuger le titre olympique en super-G chez les messieurs. »",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

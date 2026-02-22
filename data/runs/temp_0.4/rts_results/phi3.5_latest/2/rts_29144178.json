@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.85,
+  "comment": "The article maintains a neutral tone focusing on the event and responses from various parties without explicit political alignment or ideology bias.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

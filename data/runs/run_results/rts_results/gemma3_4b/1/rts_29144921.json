@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article focuses on a natural disaster and its aftermath, with a focus on the need for investment in avalanche protection. It highlights the political response and the long-term efforts to mitigate the risk, presenting a balanced view of the situation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

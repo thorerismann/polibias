@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article suggests that the plan is overly focused on women's reproductive rights and ignores the importance of natural procreation and the potential consequences of relying on assisted reproductive technology.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

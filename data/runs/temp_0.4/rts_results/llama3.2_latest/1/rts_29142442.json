@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.05,
+  "guests_bias": 0.01,
+  "confidence": 0.8,
+  "comment": "La cérémonie a également mis en valeur les talents de l'artiste italien Giorgio Armani, décédé récemment, ainsi que ceux de la mode et du design.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

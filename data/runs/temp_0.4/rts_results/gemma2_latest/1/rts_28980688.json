@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents a neutral overview of Swiss businesses operating in Iraq. It highlights both the potential and challenges of this market.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

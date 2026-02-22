@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article overwhelmingly portrays the dire humanitarian situation in Gaza, highlighting the ongoing conflict, Israeli restrictions on aid, and the struggles of the population. It presents a critical perspective on the 'New Gaza' plan, framing it as a disregard for Palestinian needs and aspirations.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

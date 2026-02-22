@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.7,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic selection, but the framing and tone lean slightly right-leaning. The treatment of the left is more favorable than the right. Quoted speakers are mostly experts from the SLF, which leans left.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

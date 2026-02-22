@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.0,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'auteur, Nicole Gnesotto, est une historienne et spécialiste des questions européennes et de sécurité, ce qui confère une crédibilité à ses arguments. Cependant, la tonalité peut être considérée comme légèrement partiale en faveur de l'Europe et contre les États-Unis.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

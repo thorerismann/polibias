@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente principalement des informations sur une réforme d’assurance invalidité sans un ton ou une présentation clairement favorisant le côté gauche ou droit; il se concentre davantage sur les détails de la politique et ses implications financières. La neutralité est évidente, avec seulement quelques indices légers suggérant des préoccupations concernant l'augmentation du nombre d’assurés sans un fort biais partisan.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

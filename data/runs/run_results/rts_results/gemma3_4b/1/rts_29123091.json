@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article is a standard contest announcement detailing prize giveaways and rules. There is no discernible political leaning or favoring of any particular group.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

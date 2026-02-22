@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision libérale et critique envers l'initiative pour un fonds climat, avec des arguments qui suggèrent que la Suisse dispose d'un dispositif légal et cohérent pour protéger le climat. Les citations de Simone de Montmollin soulignent également la nécessité d'une gestion durable et saine des finances, ce qui peut être interprété comme une approche plus prudente et conservatrice.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

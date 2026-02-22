@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": null,
+  "guests_bias": 0.0,
+  "confidence": 0.56,
+  "comment": "This article is about the death of James Van Der Beek, a well-known actor from the United States. The subject matter itself does not have any political leanings, and neither does the framing or tone suggest any bias towards left or right.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

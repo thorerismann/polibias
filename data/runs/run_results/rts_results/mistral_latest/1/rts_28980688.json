@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article is neutral and informative about Swiss businesses operating in Iraq, with no clear bias towards any political party or ideology.",
+  "status": "ok",
+  "model": "mistral:latest",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

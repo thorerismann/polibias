@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans left by discussing labor issues and organizing methods favorably towards worker-to-worker organization over traditional union strategies; it also criticizes the lack of preparation in current staff for such efforts.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

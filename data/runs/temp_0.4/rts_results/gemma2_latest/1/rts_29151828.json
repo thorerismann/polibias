@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.6,
+  "confidence": 0.8,
+  "comment": "The article strongly favors the perspective of Reza Pahlavi and those seeking regime change in Iran. It highlights their calls for action and portrays them favorably while downplaying opposing viewpoints.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

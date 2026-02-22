@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral subject, but frames the topic in a right-leaning manner, treating the US president favorably and quoting him directly. The lack of diverse perspectives from Swiss officials is notable.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

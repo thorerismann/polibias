@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article reports on a case of animal abuse in Switzerland, focusing on the farmer's neglect and the authorities' response. While it does not explicitly favor either side, the tone leans slightly critical towards the farmer (framing_bias) and seems to express some concern for his situation (treatment_bias).",
+  "status": "ok",
+  "model": "mistral:latest",
+  "article": "29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

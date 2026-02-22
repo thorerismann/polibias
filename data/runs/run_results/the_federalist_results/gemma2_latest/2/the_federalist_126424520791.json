@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.95,
+  "comment": "The article heavily criticizes Stephen Colbert and late-night talk shows for perceived left-leaning bias, framing them as promoting Democrats and engaging in censorship avoidance tactics.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_18_stephen_colberts_nightly_democrat_extravaganza_co.json",
+  "prompt_hash": "1af9330e7254"
+}

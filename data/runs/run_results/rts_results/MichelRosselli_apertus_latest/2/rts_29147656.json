@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.38,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article aborde le sujet de l'incendie à Crans-Montana, qui est un événement neutre politiquement. Le ton et la narration sont légèrement négatifs (accord à l'amiable, inégalités de traitement), mais le sujet n'est pas clairement pro-droite ou pro-gauche.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "L'article ne présente pas de position politique claire et n'inclut aucun invité ou sujet politiquement orienté.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

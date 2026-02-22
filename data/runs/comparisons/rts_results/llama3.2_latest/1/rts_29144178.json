@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.25,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais les citations de l'agriculteur et des autorités suggèrent une certaine sympathie pour la cause du paysan, ce qui pourrait indiquer une légère prédominance de l'objectivité sur le côté droit.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

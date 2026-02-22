@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans left by criticizing right-leaning narratives and actions associated with the Trump administration's rhetoric on Mexico; it also highlights negative aspects of these interactions without clear reference to specific political figures from either side for quotations.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

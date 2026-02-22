@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a slight left-leaning bias by focusing on the Ukrainian perspective and mention of Zelensky's popularity post invasion without significant right leanings or endorsement. The framing is slightly more negative towards Russia due to discussions about invasions but remains factual, hence not strongly biased.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

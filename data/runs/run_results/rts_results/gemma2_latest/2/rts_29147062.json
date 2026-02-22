@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.5,
+  "confidence": 0.6,
+  "comment": "The article focuses on a trade dispute between the US and Switzerland, with Trump's perspective heavily featured. The framing emphasizes Trump's claims about Swiss economic dependence on the US.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article leans towards a left-leaning bias by accusing the 'extrême droite' and highlighting violence against LFI members without clear evidence of their involvement in it. The framing is critical of both sides but with more emphasis on potential rightist aggression, which suggests a slight leftward slant.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

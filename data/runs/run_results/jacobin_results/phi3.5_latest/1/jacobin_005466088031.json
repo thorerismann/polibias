@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left by advocating for worker-to-worker organizing and critiquing traditional structure-based methods within the context of labor movements in auto plants; however, it maintains a neutral tone towards specific political parties or ideologies. The treatment bias appears to favor strategies that empower workers directly rather than relying on professional staff.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a variety of cultural events without expressing clear political leanings. The tone is neutral and informative.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29150791.json",
+  "prompt_hash": "1af9330e7254"
+}

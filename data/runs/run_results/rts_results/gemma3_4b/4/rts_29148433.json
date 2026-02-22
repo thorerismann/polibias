@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a straightforward obituary for a deceased individual. The language used ('courage, foi et dignité') leans slightly towards a traditional, faith-based perspective, but the core focus is simply reporting the facts of his life and passing.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

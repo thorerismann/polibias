@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision générale de la réglementation des déchets textiles, soulignant les avantages environnementaux et sociaux de la mesure. La déclaration d'opposition de Mathilde Pousseo, déléguée générale du collectif Ethique sur l'Etiquette, met en évidence les risques potentiels pour les organisations caritatives et le transfert de responsabilité.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

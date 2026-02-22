@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.2,
+  "confidence": 0.85,
+  "comment": "The article primarily focuses on the exploitation of a foreign worker in Switzerland, presenting a sympathetic narrative and highlighting the systemic issues with temporary work permits. It leans slightly right by emphasizing the need for legal protections and the Swiss government's past actions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical perspective on France's approach to addressing declining birth rates, highlighting potential negative consequences of incentivizing assisted reproductive technology. It leans right by questioning the ethics and potential risks associated with such interventions and framing the issue as a concern for societal stability and citizen contribution.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article appears to lean slightly left due to its focus on victims' needs and criticisms of the current system; however, it maintains a factual tone without strong partisan language.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

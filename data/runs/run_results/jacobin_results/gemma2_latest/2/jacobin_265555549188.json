@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article strongly condemns Israeli actions in Gaza, using loaded language and framing the situation as a genocide. It presents a one-sided view with little counter-argument.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_gaza_ceasefire_trump_real_estate.json",
+  "prompt_hash": "1af9330e7254"
+}

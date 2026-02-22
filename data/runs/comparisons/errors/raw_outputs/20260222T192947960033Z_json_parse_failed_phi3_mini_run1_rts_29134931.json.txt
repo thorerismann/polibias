@@ -1,0 +1,10 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left due to the emphasis on systemic negligence and inadequate preparation for natural disasters. However, it maintains a neutral tone towards specific political parties or figures.",
+  "explanation_details": {
+    "subject_bias": "-0.5: The topic of environmental safety and government accountability leans slightly left due to the societal impact on citizens affected by negligence in disaster preparedness measures, which is a concern often highlighted within progressive circles.", 
+    "framing_bias": "-1.0: The article frames its narrative around criticism of past and current government actions (or lack thereof), suggesting an overall right-leaning bias due to the emphasis on systemic issues rather than individual responsibility or blame, which is

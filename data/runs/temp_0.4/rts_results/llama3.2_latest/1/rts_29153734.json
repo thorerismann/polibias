@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision relativement neutre du sujet, en soulignant les actions de l'OSAV et les réactions des entreprises. Cependant, la mention de la Fondation pour la protection des consommateurs et la critique de Danone suggèrent un légèrement plus de ton favorables aux consommateurs.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29153734.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et apaisé, en mettant l'accent sur la création d'un espace de discussion pour promouvoir la zizanie. Le langage utilisé est formel et n'a aucun caractère partisan.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

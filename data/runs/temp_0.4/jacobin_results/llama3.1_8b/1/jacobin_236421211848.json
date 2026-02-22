@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "Article presents a negative view of Trump's actions and policies, while portraying Mexico's president as effective in handling the situation.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

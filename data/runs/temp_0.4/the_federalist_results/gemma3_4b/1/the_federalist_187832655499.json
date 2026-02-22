@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.85,
+  "framing_bias": 0.9,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.3,
+  "confidence": 0.85,
+  "comment": "This article heavily frames the Biden administration's judicial appointments as a deliberate attempt to obstruct Trump and the Republican agenda, utilizing strong language and accusations of 'weaponizing the judicial system.' The treatment of the left is overwhelmingly negative, portraying them as actively seeking to undermine constitutional principles.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_18_nyt_accidentally_confesses_theres_a_left_wing_jud.json",
+  "prompt_hash": "1af9330e7254"
+}

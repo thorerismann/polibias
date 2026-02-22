@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article's language and tone are generally neutral, but the framing of James Van Der Beek's passing as a 'cher' (dear) moment suggests a left-leaning bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

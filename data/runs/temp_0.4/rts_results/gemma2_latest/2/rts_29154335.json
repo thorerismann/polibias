@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article reports on a factual event with no discernible political slant. The tone is neutral and objective.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29154335.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article criticizes the US approach towards Mexico and implies a negative view of President Trump's comments on Mexican immigration policies; it also references historical events in a way that seems to undermine American exceptionalism from a left-leaning perspective.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

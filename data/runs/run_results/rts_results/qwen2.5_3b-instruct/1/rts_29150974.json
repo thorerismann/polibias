@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on condemning attacks against defense lawyers and emphasizes the importance of maintaining judicial integrity, which is a left-leaning topic. The tone is strongly critical of those attacking legal professionals.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29150974.json",
+  "prompt_hash": "1af9330e7254"
+}

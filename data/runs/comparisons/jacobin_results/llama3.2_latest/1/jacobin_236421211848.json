@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a left-leaning narrative, with the Mexican president being portrayed as a strong and intelligent leader. The framing is critical of Trump's behavior, particularly his promotion of conspiracy theories.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "1af9330e7254"
+}

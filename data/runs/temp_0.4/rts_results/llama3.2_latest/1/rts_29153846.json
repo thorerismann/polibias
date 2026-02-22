@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une analyse critique des inégalités sociales en Suisse, soulignant les défis liés à l'accès aux soins médicaux et la pauvreté. La tonalité est objective et informative, sans déclencher un parti pris politique évident.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": null,
+  "status": "fallback",
+  "model": "phi3:mini",
+  "article": "2026_02_17_corporate_media_give_trans_hockey_game_shooter_th.json",
+  "prompt_hash": "1af9330e7254"
+}

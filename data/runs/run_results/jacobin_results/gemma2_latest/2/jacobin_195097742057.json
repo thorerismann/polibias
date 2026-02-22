@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article discusses political trends with a focus on the decline of traditional institutions and the rise of online activism. The tone is analytical rather than overtly partisan.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "2026_02_hyperpolitics_jager_institutions_media_review.json",
+  "prompt_hash": "1af9330e7254"
+}

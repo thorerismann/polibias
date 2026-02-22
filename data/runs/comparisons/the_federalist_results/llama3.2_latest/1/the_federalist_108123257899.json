@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The tone is critical of the media's role in perpetuating this narrative and implies that older Americans are more likely to view younger generations as irresponsible.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "1af9330e7254"
+}

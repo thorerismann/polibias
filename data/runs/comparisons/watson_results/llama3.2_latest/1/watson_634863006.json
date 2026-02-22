@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0,
+  "framing_bias": 0,
+  "treatment_bias": 0,
+  "guests_bias": 0,
+  "confidence": 1,
+  "comment": "Es wird kein politischer Kommentar abgegeben, die Artikel konzentriert sich ausschließlich auf das Ereignis.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_634863006.json",
+  "prompt_hash": "1af9330e7254"
+}

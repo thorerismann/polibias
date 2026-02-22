@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "L'article présente une analyse objective des événements financiers, mais les extrêts sont légèrement plus à gauche en raison de la mention du terme « séisme » pour décrire l'impact du bitcoin sur le marché. Le ton reste cependant neutre et informatif.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article portrays Rodrigo Chaves's administration as populist and confrontational, with a focus on criticizing the political establishment and the press. The author suggests that Chaves's approach is more aggressive than that of the technocratic right, but fails to provide concrete policy achievements.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

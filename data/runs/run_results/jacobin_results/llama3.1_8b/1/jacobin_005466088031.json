@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a left-leaning perspective on labor organizing, emphasizing the importance of worker-to-worker organizing and criticizing traditional structure-based approaches. The author's experiences with the UAW and their approach to Stand Up 2.0 are presented as a successful example of this approach.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

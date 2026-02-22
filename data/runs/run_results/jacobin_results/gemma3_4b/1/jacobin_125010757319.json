@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents Rodrigo Chaves' administration as aggressively right-leaning, utilizing confrontational rhetoric and attacking established institutions. It highlights failures in policy and exacerbation of social and economic issues, particularly concerning welfare and gender equality, framing Chaves as prioritizing confrontation over consensus.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

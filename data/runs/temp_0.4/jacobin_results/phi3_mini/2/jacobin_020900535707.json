@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a largely neutral perspective with minor left-leaning tones in discussing societal issues and public care systems.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_mothers_nordic_welfare_state_social_reproduction.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.05,
+  "treatment_bias": 0.15,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "L'article présente une sélection de sujets variés, dont des concerts, des spectacles et des événements sportifs, sans apparence de préférence politique. Le ton est neutre, avec quelques mentions de valeurs positives telles que le « bonheur » et la « compréhension ». Cependant, les titres des articles (par exemple « Le chemin des métaphores ») et les descriptions des événements semblent favoriser une approche positive et optimiste, ce qui pourrait indiquer un légère préférence pour le bien-être et l'éducation.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29150791.json",
+  "prompt_hash": "1af9330e7254"
+}

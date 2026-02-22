@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the controversy surrounding Stephen Colbert's late-night show and his interview with a Democratic candidate, highlighting issues of political bias and equal time requirements.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_18_stephen_colberts_nightly_democrat_extravaganza_co.json",
+  "prompt_hash": "1af9330e7254"
+}

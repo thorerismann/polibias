@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.75,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article has a neutral tone, but with a slight left-leaning bias due to the emphasis on Swiss skiers' achievements and the historical context of their successes.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

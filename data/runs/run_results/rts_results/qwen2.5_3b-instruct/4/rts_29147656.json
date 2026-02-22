@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article highlights the need for more support and compensation for victims, particularly from private insurance companies which are often insufficient. It also mentions efforts to organize discussions between parties involved in cases.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

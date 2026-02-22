@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.05,
+  "treatment_bias": 0.01,
+  "guests_bias": 0.02,
+  "confidence": 0.8,
+  "comment": "La cérémonie d'ouverture des Jeux olympiques d'hiver à Milan a été une émission de plus en plus pacifique et apaisante, avec un message de paix et d'harmonie qui a réuni les athlètes et les publics. La présence de plusieurs personnalités du monde de la mode et de la musique a ajouté à cette ambiance conviviale.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

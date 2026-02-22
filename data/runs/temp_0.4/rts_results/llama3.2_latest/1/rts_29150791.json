@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "L'article présente un contenu varié, allant de concerts de musique classique à spectacles de marionnettes et de catch-impro. La plupart des articles sont neutres ou sans préférence politique évidente.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29150791.json",
+  "prompt_hash": "1af9330e7254"
+}

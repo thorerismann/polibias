@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Le sujet choisi est une personne décédée et son combat contre le cancer, sans connotation politique explicite ou parti pris partisan dans la narration. Le ton semble empathique et respectueux, indiquant un point de vue neutre.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

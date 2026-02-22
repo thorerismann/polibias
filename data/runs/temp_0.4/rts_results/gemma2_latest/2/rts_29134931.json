@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.4,
+  "comment": "The article focuses on a natural disaster and the government's response. There is a slight left-leaning framing due to criticism of government inaction and prioritization of infrastructure projects over immediate needs.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": 1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision très positive de Franjo von Allmen, mettant en avant ses réalisations et son historique en termes de médailles olympiques. Le ton est celebrant et il n'y a aucune critique ni remarque négative sur les autres skieurs suisses ou étrangers.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

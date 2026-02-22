@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une perspective critique envers les liens entre la science et l'armée israélienne sans faire de généralisation ouvertement politique, ce qui suggère un léger à gauche-bias dans le sujet choisi ainsi que son ton. Le focus sur des activités éthiquement discutables pourrait indiquer une critique anti-militariste souvent associée aux positions politiques plus progressistes.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

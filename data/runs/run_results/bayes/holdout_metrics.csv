@@ -1,0 +1,11 @@
+component,metric,value
+failure,brier,0.20648364112788226
+failure,log_loss,0.6008215563223968
+failure,accuracy_0.5,0.6908602150537635
+failure,roc_auc,0.7444670937682003
+failure,n_test,372.0
+score,mae,0.19104498094886224
+score,rmse,0.25296842700676025
+score,r2,0.47761757135861715
+score,corr,0.7046124445300317
+score,n_test,201.0

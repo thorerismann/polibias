@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.4,
+  "guests_bias": 0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais il y a une légère prédominance de réflexions sur les conséquences du glissement de terrain pour la gauche. Le gouvernement italien est critiqué pour son manque d'action face aux problèmes de sécurité géologique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

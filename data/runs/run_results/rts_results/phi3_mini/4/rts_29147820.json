@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article appears to favor the right with a left-leaning tone and language towards welfare reforms for young adults, but it's still relatively balanced overall.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

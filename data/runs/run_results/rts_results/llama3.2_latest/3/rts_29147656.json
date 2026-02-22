@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais les faits et les chiffres mentionnés suggèrent une attention plus grande accordée aux victimes et à leurs familles, ce qui peut indiquer une légère préférence pour le point de vue gauche. Le sujet du soutien financier et des indemnités pour les victimes est également traité de manière neutre, mais sans évoquer explicitement les implications politiques ou sociales.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

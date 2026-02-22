@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.75,
+  "treatment_bias": 0.25,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre, mais la framing bias est légèrement à gauche en soulignant l'importance de la protection contre les avalanches et les conséquences politiques de l'hiver 1951.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

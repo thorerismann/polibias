@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is clearly left-leaning and critical of right-wing politicization in religious spaces within Ghana. It also seems to be supportive towards the GCBC's directive.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "1af9330e7254"
+}

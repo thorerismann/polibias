@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a factual account of Franjo von Allmen's achievement in skiing without overtly favoring any political ideology or leanings and maintains an objective tone throughout.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

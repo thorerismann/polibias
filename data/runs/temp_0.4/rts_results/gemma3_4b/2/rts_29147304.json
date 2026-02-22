@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.6,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on Swiss skiers' successes at the Olympics, highlighting Franjo von Allmen's impressive achievements and medals. It offers a positive and celebratory tone towards the Swiss team's performance.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

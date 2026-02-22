@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.57,
+  "comment": "L'article présente des faits et analyse les causes de la chute du bitcoin, sans prendre parti politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

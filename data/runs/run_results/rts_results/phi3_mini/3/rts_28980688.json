@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": 0.25,
+  "treatment_bias": 0.05,
+  "guests_bias": 0.1,
+  "confidence": 0.98,
+  "comment": "The article provides a balanced overview of Swiss business in Iraq with some leanings towards stability and quality that could slightly appeal to left-leaning readers due to the positive aspects on economic development. However, there is no strong political bias detected.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

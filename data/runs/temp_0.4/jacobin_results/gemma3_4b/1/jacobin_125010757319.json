@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a largely critical view of Rodrigo Chaves's administration, highlighting aggressive tactics, failures in policy implementation, and negative impacts on social programs. It frames his approach as overly confrontational and detrimental to Costa Rica's welfare state and gender equality.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

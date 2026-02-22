@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Le concours est organisé de manière neutre et ne présente aucune préférence pour la gauche ou la droite. Les conditions de participation sont claires et les règles du jeu sont égales pour tous les participants.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

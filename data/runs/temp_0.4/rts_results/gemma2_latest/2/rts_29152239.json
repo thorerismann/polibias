@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.1,
+  "confidence": 0.7,
+  "comment": "The article focuses on Palestinian casualties and perspectives, framing the Israeli actions as violations of a ceasefire. The language used towards Israel is more critical.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29152239.json",
+  "prompt_hash": "1af9330e7254"
+}

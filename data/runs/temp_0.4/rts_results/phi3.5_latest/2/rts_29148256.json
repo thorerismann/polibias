@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses a legal case involving labor rights and exploitation without directly favoring any political ideology or leanings. The tone is neutral to slightly critical of the employment practices but does not explicitly support either left-wing (left) or right-leaning perspectives.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

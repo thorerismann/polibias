@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a neutral tone and does not explicitly favor any political ideology or leaning when discussing the landslide event in Niscemi; it focuses on reporting facts about an environmental disaster without delving into policy critique related to left-right politics.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

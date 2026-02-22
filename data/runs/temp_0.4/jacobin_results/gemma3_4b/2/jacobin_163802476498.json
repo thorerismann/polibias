@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced discussion of de Blasio's Universal Pre-K initiative, primarily focusing on the rationale behind its design and the debates surrounding its implementation. It leans slightly towards a supportive perspective, highlighting the administration's commitment to equity and the practical considerations driving the program's structure. ",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

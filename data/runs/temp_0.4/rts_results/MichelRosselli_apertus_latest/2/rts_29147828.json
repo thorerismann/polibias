@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Cet article traite de l'histoire et des conséquences de la Seconde Guerre mondiale en Pologne et en Ukraine, mettant en lumière les expériences personnelles de ceux qui ont survécu à cette période. Le ton est grave, soulignant les horreurs vécues par ces populations.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147828.json",
+  "prompt_hash": "1af9330e7254"
+}

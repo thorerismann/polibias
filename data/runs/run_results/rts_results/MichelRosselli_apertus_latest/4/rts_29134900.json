@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article met en lumière les conditions de vie difficiles et inhumaines dans la bande de Gaza, sans présenter un point de vue politique clair ou une analyse partisane des événements.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

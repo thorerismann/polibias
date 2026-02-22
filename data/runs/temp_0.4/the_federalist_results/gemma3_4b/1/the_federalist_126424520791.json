@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.85,
+  "framing_bias": 0.9,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.95,
+  "confidence": 0.8,
+  "comment": "This article exhibits a strongly right-leaning bias, consistently framing Stephen Colbert and CBS as engaging in unfair practices and censorship. It uses highly critical language and accusations of 'pimping' and 'shilling' to portray Colbert's show negatively, while highlighting legal arguments about the equal time rule to support its claims.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_18_stephen_colberts_nightly_democrat_extravaganza_co.json",
+  "prompt_hash": "1af9330e7254"
+}

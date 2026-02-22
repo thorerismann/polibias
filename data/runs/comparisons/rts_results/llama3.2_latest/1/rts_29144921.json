@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente un ton neutre et objectif, mais le sujet de l'avalanche suisse en 1951 est souvent associé à la protection environnementale et aux investissements gouvernementaux, ce qui pourrait indiquer une légère orientation vers le centre ou la droite.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

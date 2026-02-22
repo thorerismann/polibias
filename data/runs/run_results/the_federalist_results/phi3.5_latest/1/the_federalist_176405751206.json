@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.65,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article criticizes the French government's approach to fertility and implies a left-leaning bias against policies that promote assisted reproductive technology without addressing underlying societal issues related to career focus over family life. The framing suggests skepticism towards incentives for delaying childbearing, hinting at conservative values about marriage and reproduction.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.8,
+  "confidence": 0.9,
+  "comment": "L'article présente une critique de la politique suisse en matière d'immigration et de travail, en soulignant les abus commis contre Jonathan Manilo. La tonalité est préoccupée et critique envers le système juridique suisse.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

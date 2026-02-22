@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical view of hyperpolitics, suggesting that the current political landscape is characterized by a lack of institutionalized involvement and a decline in civic life. The author argues that this has led to the rise of hyperpolitics, which emphasizes individualistic and disaggregated forms of protest. Overall, the tone is neutral and analytical, with no clear partisan leanings.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_hyperpolitics_jager_institutions_media_review.json",
+  "prompt_hash": "1af9330e7254"
+}

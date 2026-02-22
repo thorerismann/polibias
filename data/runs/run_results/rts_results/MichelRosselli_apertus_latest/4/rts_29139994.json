@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.25,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un fait mathématique et historique sans inclinaison politique évidente, mais avec une légère tendance à expliquer les phénomènes astronomiques et calendaires.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29139994.json",
+  "prompt_hash": "1af9330e7254"
+}

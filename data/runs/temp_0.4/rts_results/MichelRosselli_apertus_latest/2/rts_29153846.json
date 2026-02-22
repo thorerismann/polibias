@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article aborde la problématique de la pauvreté en Suisse sans adopter un point de vue clairement partisan, se concentrant sur les statistiques et les données fournies par l'OFS.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

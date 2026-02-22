@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.6,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision generally positive de l'implication économique suisse en Irak, soulignant les opportunités de croissance et la stabilité du pays. Cependant, il met également en évidence les défis géopolitiques et institutionnels qui freinent la confiance des investisseurs.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

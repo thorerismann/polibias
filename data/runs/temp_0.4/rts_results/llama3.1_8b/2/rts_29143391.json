@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article appears to have a strong anti-Israel bias, with the author presenting a one-sided view of the issue and quoting only one side's perspective. The language used is emotive and critical towards Israel, without providing a balanced view.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

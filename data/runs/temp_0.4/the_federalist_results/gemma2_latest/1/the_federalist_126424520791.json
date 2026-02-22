@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": null,
+  "status": "fallback",
+  "model": "gemma2:latest",
+  "article": "2026_02_18_stephen_colberts_nightly_democrat_extravaganza_co.json",
+  "prompt_hash": "1af9330e7254"
+}

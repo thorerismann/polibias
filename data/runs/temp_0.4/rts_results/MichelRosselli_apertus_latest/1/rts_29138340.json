@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente un débat sur l'initiative pour un fonds climat en Suisse, sans prendre clairement parti politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

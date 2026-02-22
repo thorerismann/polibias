@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.2,
+  "confidence": 0.9,
+  "comment": "The article presents a neutral and informative discussion about the universal pre-K initiative, with no apparent bias towards either side of the political spectrum. The author provides historical context and quotes from Bill de Blasio to support their arguments, which adds credibility to the piece.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

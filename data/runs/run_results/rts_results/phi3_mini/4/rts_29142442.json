@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.1,
+  "confidence": 0.85,
+  "comment": "The article is slightly left-leaning due to its focus on the symbolic connection between city and mountains as well as international representation within Italy's borders which reflect a more global perspective that can align with progressive ideals. The positive tone towards multiculturalism in sports events suggests some leaning toward inclusivity often associated with liberal viewpoints.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

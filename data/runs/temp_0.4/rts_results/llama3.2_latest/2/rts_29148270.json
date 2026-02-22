@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision équilibrée de la situation, mais avec une légère tendance à favoriser les positions ukrainiennes. Le ton est objectif et informatif, sans dénigrement ni attaque personnelle contre les politiciens ou les groupes politiques.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

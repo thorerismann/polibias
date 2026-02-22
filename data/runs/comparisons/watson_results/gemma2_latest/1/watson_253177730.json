@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on a Ukrainian cyber operation against Russia, framing it as a successful defensive action. However, the discussion of Belarus's role leans slightly rightward.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "watson_253177730.json",
+  "prompt_hash": "1af9330e7254"
+}

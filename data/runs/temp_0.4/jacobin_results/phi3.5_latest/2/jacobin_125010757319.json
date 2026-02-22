@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": "Not applicable as there are no guests mentioned.",
+  "confidence": 0.95,
+  "comment": "The article demonstrates a clear left-leaning bias against Rodrigo Chaves's administration by highlighting its confrontational rhetoric and attacks on the welfare state while criticizing his policy failures to address poverty and inequality effectively.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

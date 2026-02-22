@@ -1,0 +1,22 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.1,
+  "confidence": 0.9,
+  "comment": "The article heavily criticizes the proposed redistricting plan, framing it as a Democratic power grab and voter disenfranchisement. Republican voices are quoted more frequently than Democratic ones.",
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

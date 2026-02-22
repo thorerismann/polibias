@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses a historical event without taking sides or favoring either political perspective.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

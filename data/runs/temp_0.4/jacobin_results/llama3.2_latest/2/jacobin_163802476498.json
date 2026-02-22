@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral discussion of universal childcare, with no clear left- or right-leaning perspective. The framing is informative and objective, with some subtle hints at the benefits of universal childcare. The treatment of both sides is generally even-handed, although there are some nuanced discussions about the challenges of implementing such a program.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

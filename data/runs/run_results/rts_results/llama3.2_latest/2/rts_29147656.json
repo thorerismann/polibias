@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton neutre et fournit des informations factuelles sur la situation, sans faire de déclarations partiales ou émotionnelles. Cependant, le langage utilisé pour décrire les conséquences de l'incendie (41 morts et 115 blessés) pourrait être considéré comme légèrement plus dramatique que nécessaire, ce qui pourrait suggérer un léger biais à la gauche dans la manière dont l'événement est présenté.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

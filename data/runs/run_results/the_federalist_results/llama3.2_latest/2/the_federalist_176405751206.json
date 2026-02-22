@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.2,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a left-leaning perspective on the French government's plan to encourage women to freeze their eggs through assisted reproductive technology. The author criticizes the plan, arguing that it may create a false sense of security among individuals who could otherwise have children naturally, and that it does not address the root causes of declining fertility rates.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

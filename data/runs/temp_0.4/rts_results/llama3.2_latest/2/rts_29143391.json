@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre, mais la citation de Julia Steinberger souligne l'importance de l'éthique en science. La position du Collectif pour la liberté académique et la rupture avec l'accord 'Lead Agency' suggère une tendance légèrement de gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29143391.json",
+  "prompt_hash": "1af9330e7254"
+}

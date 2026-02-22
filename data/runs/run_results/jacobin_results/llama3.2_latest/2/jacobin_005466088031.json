@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents a left-leaning perspective on labor organizing, highlighting the success of worker-to-worker organizing and criticizing traditional structure-based approaches. The author's experience as a UAW leader is evident in their strategic fluency and ability to adapt to challenging situations.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

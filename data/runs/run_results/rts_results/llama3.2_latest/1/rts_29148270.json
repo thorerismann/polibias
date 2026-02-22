@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision relativement neutre de la situation, mais avec des allusions légères à la pression américaine sur l'Ukraine pour organiser des élections avant un cessez-le-feu. La représentation du président Zelensky comme un dirigeant capable et populaire est également notée positivement.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

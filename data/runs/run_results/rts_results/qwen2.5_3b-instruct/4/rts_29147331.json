@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.2,
+  "confidence": 1.0,
+  "comment": "The article focuses more on Alpine skiing and biathlon achievements, with no prominent guest voices identified. The tone is neutral towards the subject matter.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

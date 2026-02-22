@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.7,
+  "confidence": 0.8,
+  "comment": "The article focuses on the dire humanitarian situation in Gaza, quoting Palestinian voices and highlighting the suffering caused by the conflict. The framing is strongly critical of Israel's policies and actions.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

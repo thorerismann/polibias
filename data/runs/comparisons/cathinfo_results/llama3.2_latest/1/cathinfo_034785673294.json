@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un sujet neutre (la nomination de Markus Cott) et une framing neutre, traitant les deux parties politiques avec impartialité. Les citations de Markus Cott et du Conseil de fondation de Missio Suisse sont également neutres, en soulignant l'importance de la mission universelle et de la dimension universelle de l'Église. Le ton est formel et respectueux.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_034785673294.json",
+  "prompt_hash": "1af9330e7254"
+}

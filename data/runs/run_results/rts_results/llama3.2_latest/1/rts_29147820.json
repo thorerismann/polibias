@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une réforme de la rente d'invalidité qui vise à soutenir les jeunes adultes et à stabiliser les finances de l'assurance maladie. La tonalité est neutre, mais il y a quelques expressions positives envers les jeunes personnes.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147820.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the opposition movement in Iran, framing it as a call for democratic change and international intervention. It features voices advocating for the overthrow of the current regime, largely supported by Western figures like Trump and Reza Pahlavi.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

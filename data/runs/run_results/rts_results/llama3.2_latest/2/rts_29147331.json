@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et ne favorise ni le côté gauche ni le côté droit. La couverture des é Prendre part à la qualification, les résultats de la course sont présentés sans parti pris, mais il est remarqué que les noms des athlètes français et bulgare sont mentionnés avec plus de détails que ceux des autres concurrents.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

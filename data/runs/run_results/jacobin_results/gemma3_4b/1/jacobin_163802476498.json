@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a largely neutral discussion of the development and implementation of New York City's Universal Pre-K program, focusing on the motivations and decisions behind its design. It explores various perspectives on the program's scope and potential future, including debates around funding, delivery models, and eligibility criteria.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

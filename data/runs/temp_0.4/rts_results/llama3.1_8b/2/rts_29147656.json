@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning tone, focusing on the government's response to the disaster and the need for support from the Confederation. The language used is objective, but there is a subtle emphasis on the victims' rights and the importance of aid.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

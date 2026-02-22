@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.1,
+  "confidence": 0.6,
+  "comment": "The article presents both sides of the political spectrum involved in the altercation. However, there is a slight left-leaning framing due to the emphasis on the far-right's alleged violence.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

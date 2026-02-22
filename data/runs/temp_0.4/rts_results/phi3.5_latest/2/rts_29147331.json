@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": null,
+  "comment": "The article provides factual information about various sports events and performances without overtly favoring any political ideology or leanings; it focuses on neutral reporting of athletic accomplishments at the Olympics with a slight negative framing towards Swiss snowboarders who did not qualify. The bias is minimal, hence close to zero.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

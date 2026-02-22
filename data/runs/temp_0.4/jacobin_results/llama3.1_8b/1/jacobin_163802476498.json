@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to left-leaning view on universal childcare, focusing on the implementation and feasibility of such programs in New York City. The discussion highlights the importance of universality and equity in access to early childhood education.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

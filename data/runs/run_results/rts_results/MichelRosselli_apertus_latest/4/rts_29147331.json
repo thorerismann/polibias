@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article covers various sports events from the Winter Olympics, including skiing and snowboarding, with a neutral tone.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

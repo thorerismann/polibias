@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article leans towards a negative framing of the Swiss-US trade relations with Donald Trump's critical tone and mentioning of increased tariffs on Swiss products indicate left bias (framing_bias: -0.85). The treatment is also skewed against Switzerland as it implies unfavorable conditions imposed by President Trump, suggesting a negative viewpoint which aligns more closely with right-leaning perspectives in the context of trade policies and criticisms towards them (treatment_bias: -0.9), though no specific political figures or parties are quoted to determine guests bias; hence it's neutral at 0. The overall tone suggests a slight conservative slant, but without clear left-leaning rhetoric which would be closer to +1.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

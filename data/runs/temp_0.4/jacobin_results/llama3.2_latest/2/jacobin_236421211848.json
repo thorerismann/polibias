@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a left-leaning perspective on the Mexican president's strategy, highlighting her efforts to maintain good relations with the US while defending Mexico's security policy. The framing of Trump's comments and the White House's message is also portrayed as biased towards the right, emphasizing American sovereignty and dominance.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

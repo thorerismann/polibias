@@ -1,0 +1,9 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.5,
+  "treatment_bias": 0.2,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision critique de la situation politique iranienne, mettant en avant les revendications des opposants à la République islamique et les appels à l'action internationale. La mention de Donald Trump et de son soutien au renversement du pouvoir iranien ajoute un ton de défense des droits humains et de promotion d'une démocratie. Cependant, il est important de noter que la couverture est relativement équilibrée et ne présente pas une perspective unique ou partielle.", "La presse internationale joue un rôle crucial dans la diffusion de l'information sur les événements en Iran, et cette article montre l'importance d'une couverture médiale critique pour comprendre les complexités de la situation politique iranienne.":"",
+  "subject_bias": -1.0,
+  "framing_bias": -0

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente une interdiction de destruction des invendus textiles, qui est justifiée par les préoccupations environnementales et sociales liées à la fast fashion. L'UE espère inciter les entreprises à revoir leurs modèles d'affaires pour réduire l'impact négatif sur l'environnement.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

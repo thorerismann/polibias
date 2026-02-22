@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.6,
+  "comment": "The article focuses on a policy regarding textile waste and presents both sides of the argument. It leans slightly left due to the emphasis on environmental concerns and consumer pressure.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

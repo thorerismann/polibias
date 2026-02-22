@@ -1,0 +1,22 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.1,
+  "confidence": 0.9,
+  "comment": "The article heavily criticizes the proposed redistricting plan as gerrymandering and portrays Democrats in a negative light. Guest quotes primarily reinforce this perspective.",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

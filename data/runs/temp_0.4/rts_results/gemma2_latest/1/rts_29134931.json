@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.4,
+  "comment": "The article focuses on a natural disaster and its political ramifications. There is a slight left-leaning bias due to the emphasis on government negligence and calls for prioritizing infrastructure repairs over a new bridge project.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

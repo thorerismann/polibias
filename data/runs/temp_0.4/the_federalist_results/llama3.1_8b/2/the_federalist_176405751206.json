@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical view of France's fertility plan, questioning its effectiveness and potential consequences on societal values.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

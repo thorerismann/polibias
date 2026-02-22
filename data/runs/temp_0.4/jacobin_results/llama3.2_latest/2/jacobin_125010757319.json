@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article portrays Chaves's administration as favoring a more aggressive and confrontational approach to governance, which is reminiscent of far-right ideologies. The tone of the article suggests that Chaves's policies have had negative consequences for the welfare state and gender equality in Costa Rica.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "2026_02_costa_rica_fernandez_ppso_security.json",
+  "prompt_hash": "1af9330e7254"
+}

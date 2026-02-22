@@ -1,0 +1,13 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente un ton nettement critique envers les avocats et leurs actions, indiquant une tendance à la stigmatisation des avocats dans l'article. La phrase « le temps de la justice n’est pas celui des médias » suggère également une opposition claire entre les médias et la justice réelle.", "Les bâtonniers ont appelé à la retenue, notamment dans les prises de parole dans les médias et les réseaux sociaux, ce qui indique un ton plus calme et respectueux envers les avocats.":"",
+  "subject_bias": -0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente un ton

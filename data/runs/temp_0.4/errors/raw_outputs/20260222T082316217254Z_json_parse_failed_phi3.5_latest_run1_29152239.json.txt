@@ -1,0 +1,7 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article predominantly focuses on the negative impacts of Israeli actions and criticizes their disregard for a ceasefire agreement, indicating left-leaning bias (subject_bias: -0.8). The framing is critical towards Israel's military operations in Gaza with terms like 'generally considered as genocidal by several international bodies', suggesting strong negative sentiment and rightward political leanings (framing_bias: -0.9). There's a clear treatment bias against Israeli actions, emphasizing their violation of the ceasefire agreement without presenting Israel’s perspective or reasoning behind its military operations which indicates left-leaning slant in reporting on this issue (treatment_bias: -1.0). The guests mentioned are from Palestine and criticize Israeli policies directly

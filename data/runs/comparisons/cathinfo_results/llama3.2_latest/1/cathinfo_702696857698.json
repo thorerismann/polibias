@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, en mettant en avant les objets personnels du pape Joseph Ratzinger sans prendre position sur son parcours ou ses idées. Les événements organisés pour commémorer sa naissance sont présentés de manière informative et objective.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

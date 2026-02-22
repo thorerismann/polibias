@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a left-leaning perspective on the U.S. Supreme Court's ruling against President Trump's imposition of tariffs under an emergency economics law.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "1af9330e7254"
+}

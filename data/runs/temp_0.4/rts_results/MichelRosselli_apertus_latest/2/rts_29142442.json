@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "La cérémonie d'ouverture des Jeux olympiques d'hiver de Milan Cortina 2026 a été décrite comme un événement symbolique, mettant en avant la paix et l'harmonie culturelle. Aucun parti politique n'a été clairement identifié dans le reportage.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

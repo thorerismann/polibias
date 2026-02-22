@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article seems to lean left due to the focus on inclusivity and equal opportunity for participants in a ski competition with prize money provided by sponsors that are not explicitly mentioned as right-leaning entities.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

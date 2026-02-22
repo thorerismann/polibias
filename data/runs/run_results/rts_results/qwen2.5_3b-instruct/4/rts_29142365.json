@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses the drop in Bitcoin prices, focusing on forced selling and its impact on other markets like gold and silver, with a moderate left-leaning framing.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

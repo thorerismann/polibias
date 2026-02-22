@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article focuses on a case of alleged exploitation and abuse, presenting a sympathetic view of the Filipino worker's situation. It highlights the problematic nature of the employer's practices and the legal challenges faced by the worker, leaning slightly towards a critical perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

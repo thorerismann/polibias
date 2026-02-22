@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses EU regulations on textile waste, with a focus on environmental and social impacts, but also mentions concerns from the charity sector. The text is generally neutral in terms of subject matter.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "29147162.json",
+  "prompt_hash": "1af9330e7254"
+}

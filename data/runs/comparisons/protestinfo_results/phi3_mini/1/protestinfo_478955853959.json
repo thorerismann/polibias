@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left with a focus on charitable giving and traditional values but remains mostly neutral in tone.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "1af9330e7254"
+}

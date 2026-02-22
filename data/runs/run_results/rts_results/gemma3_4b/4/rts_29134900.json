@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article overwhelmingly depicts the dire humanitarian situation in Gaza, highlighting the ongoing suffering and lack of opportunity despite attempts at development. The focus on Israeli restrictions and the voices of Gazan residents clearly lean towards a critical perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

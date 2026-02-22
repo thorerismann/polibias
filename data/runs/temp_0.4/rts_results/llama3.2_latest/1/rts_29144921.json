@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.25,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente un ton neutre et informatif, mais avec une légère tendance à favoriser la perspective suisse sur l'événement. Le traitement des événements est relativement équilibré, mais les citations de Stefan Margreth donnent une légère impression de défense de la protection contre les avalanches.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

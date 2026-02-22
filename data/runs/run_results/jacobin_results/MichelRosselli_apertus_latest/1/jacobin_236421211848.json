@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.789,
+  "comment": "The article discusses the diplomatic relations between Mexico and the United States, particularly focusing on President Trump's interactions with Mexican President Claudia Sheinbaum. The tone is critical of Trump's actions and rhetoric, while praising Sheinbaum's leadership and diplomacy.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "2026_02_sheinbaum_trump_oil_cuba_blockade.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "L'article présente une description réaliste de la vie à Gaza après le cessez-le-feu, mettant en lumière les conditions inhumaines et la détresse de la population palestinienne. Il ne prend pas parti pour un camp politique particulier et se concentre sur l'impact humain du conflit.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

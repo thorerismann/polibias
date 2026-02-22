@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly to the left due to its focus on social justice and public accountability for care services; it frames these issues with a negative bias towards right-leaning policies that cut welfare benefits.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_mothers_nordic_welfare_state_social_reproduction.json",
+  "prompt_hash": "1af9330e7254"
+}

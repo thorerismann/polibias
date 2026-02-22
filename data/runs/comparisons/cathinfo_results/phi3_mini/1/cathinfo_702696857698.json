@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.9,
+  "confidence": 0.85,
+  "comment": "The article appears to lean slightly left due to its focus on the spiritual and personal aspects of Benedict XVI's life rather than his political stances or conservative views that are often highlighted in right-leaning narratives about him.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

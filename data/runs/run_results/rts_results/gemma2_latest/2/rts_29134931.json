@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.2,
+  "comment": "Insufficient information to determine bias.",
+  "status": "recovered",
+  "model": "gemma2:latest",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

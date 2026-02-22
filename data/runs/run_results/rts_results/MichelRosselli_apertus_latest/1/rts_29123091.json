@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Neutral content without any identifiable political leaning or biases from the mentioned subject, framing, treatment and guest participation.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29123091.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly to the left with a focus on victims' needs and criticizes current limitations in disaster scenarios. The framing of seeking amicable agreements for compensation indicates sympathy towards victims but does not clearly favor one political ideology over another.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "L'article présente un ton neutre et ne semble pas avoir de préférence pour la gauche ou la droite, mais le sujet du bitcoin et son lien avec l'économie américaine peuvent suggérer une légère orientation à gauche en raison des mentions de 'la tech' et de 'le grand flou sur l'économie américaine'. Les experts cités sont également mentionnés sans spécifier leur orientation politique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

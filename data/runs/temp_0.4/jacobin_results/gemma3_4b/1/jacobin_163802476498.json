@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced discussion of the development and implementation of Universal Pre-K, primarily focusing on Bill de Blasio's approach. It leans slightly towards a supportive view of the initiative, highlighting its motivations and rationale, while acknowledging different perspectives on its design and potential future.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "2026_02_universal_childcare_mamdani_hochul_de_blasio.json",
+  "prompt_hash": "1af9330e7254"
+}

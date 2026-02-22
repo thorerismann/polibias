@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, sans préférence pour une idéologie ou une religion en particulier. Les informations sont présentées de manière claire et concise sur les points communs et les différences entre le Carême et le Ramadan.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_259731758893.json",
+  "prompt_hash": "1af9330e7254"
+}

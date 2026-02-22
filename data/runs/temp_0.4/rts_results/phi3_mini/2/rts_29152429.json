@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a narrative with strong left-leaning bias by focusing on the victimization of Quentin and attributing it to an organized group linked to La France Insoumise (LFI), implying that LFI members are violent or aggressive. The language used, such as 'lynch' and suggesting a planned attack against him personally rather than for political reasons, indicates this bias.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29152429.json",
+  "prompt_hash": "1af9330e7254"
+}

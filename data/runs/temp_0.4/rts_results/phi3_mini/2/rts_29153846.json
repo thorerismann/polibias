@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of Switzerland's healthcare system and its impact on the poorest Swiss citizens without explicitly favoring any political ideology.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29153846.json",
+  "prompt_hash": "1af9330e7254"
+}

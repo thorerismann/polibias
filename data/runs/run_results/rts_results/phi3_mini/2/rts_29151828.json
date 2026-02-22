@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article presents a left-leaning perspective on the Iranian protests and opposition to the Islamic Republic with an emphasis on democratic change. The framing suggests dissatisfaction with current political conditions in Iran.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

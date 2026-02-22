@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.92,
+  "comment": "The article criticizes the French government's approach to addressing declining fertility rates by promoting egg freezing and IVF among women in their late twenties as a solution, suggesting it may have negative implications for societal values such as family formation over career. The tone leans towards skepticism of this policy direction.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "2026_02_18_frances_plan_to_lure_women_into_freezing_their_eg.json",
+  "prompt_hash": "1af9330e7254"
+}

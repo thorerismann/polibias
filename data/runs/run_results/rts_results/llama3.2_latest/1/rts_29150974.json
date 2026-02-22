@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton critique envers les attaques verbales et physiques des avocats, mais sans aller à l'extrême. Le langage utilisé est formel et objective, indiquant une tendance légèrement gauche dans la rédaction.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29150974.json",
+  "prompt_hash": "1af9330e7254"
+}

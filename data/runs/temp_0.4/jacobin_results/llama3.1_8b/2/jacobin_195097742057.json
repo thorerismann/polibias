@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article discusses the concept of 'hyperpolitics' and its impact on modern society, with a focus on the decline of institutionalized involvement in politics and the rise of disorganized dissent. The author's tone is critical of the current state of politics and suggests that hyperpolitics has led to a lack of direction and lasting change.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "2026_02_hyperpolitics_jager_institutions_media_review.json",
+  "prompt_hash": "1af9330e7254"
+}

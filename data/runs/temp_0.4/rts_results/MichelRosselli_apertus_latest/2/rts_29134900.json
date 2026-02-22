@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.3,
+  "confidence": 0.78,
+  "comment": "Le sujet est présenté sous un angle critique de la situation à Gaza, avec une tonalité négative et des invités (journaliste et jeune diplômée) qui expriment leur désespoir face aux conditions de vie difficiles dans le territoire.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29134900.json",
+  "prompt_hash": "1af9330e7254"
+}

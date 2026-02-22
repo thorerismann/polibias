@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.9,
+  "confidence": 0.8,
+  "comment": "The article heavily favors the Iranian opposition and their calls for regime change, framing them as democratic and peaceful while portraying the Iranian government negatively.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29151828.json",
+  "prompt_hash": "1af9330e7254"
+}

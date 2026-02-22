@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans towards a negative framing of the Swiss-US relationship and Donald Trump's policies with strong left bias in its language use and critique on Switzerland’s trade deal benefits for US companies over their own economy.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article appears to lean slightly right due to its critical tone towards the lack of proper safety measures and government response but remains fairly neutral overall.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

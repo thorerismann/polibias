@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.95,
+  "comment": "The article leans left with a focus on labor rights and organizing strategies favoring worker-to-worker methods over traditional structure-based approaches in the context of auto plant unionization efforts.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "2026_02_uaw_vw_mercedes_higher_ed.json",
+  "prompt_hash": "1af9330e7254"
+}

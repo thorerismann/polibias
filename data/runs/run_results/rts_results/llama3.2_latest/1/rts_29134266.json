@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision critique des relations entre l'Europe et les États-Unis, soulignant la dépendance de l'Europe envers les États-Unis et les efforts de Trump pour détruire l'Union européenne. La tone est analytique et critique envers les politiques américaines.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

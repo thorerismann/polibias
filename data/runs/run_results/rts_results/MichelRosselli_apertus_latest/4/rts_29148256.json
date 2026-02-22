@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.58,
+  "comment": "Le cas de Jonathan Manilo est présenté avec un ton critique envers les pratiques d’exploitation du travail en Suisse, ce qui suggère une tendance à gauche dans le traitement des informations.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

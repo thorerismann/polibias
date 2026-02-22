@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "While the article acknowledges the complexities of the situation, it does not explicitly take a left-leaning or right-leaning stance on the issues presented.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "1af9330e7254"
+}

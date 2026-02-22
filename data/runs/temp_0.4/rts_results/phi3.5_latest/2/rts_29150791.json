@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article content is entirely neutral and does not demonstrate any political leaning or bias towards the left or right ideologies; it discusses various cultural events without mention of politics.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "29150791.json",
+  "prompt_hash": "1af9330e7254"
+}

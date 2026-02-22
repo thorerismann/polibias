@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article presents a negative view of US foreign policy and its impact on Europe, framing it as destabilizing and threatening. Quoted experts largely echo this perspective.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "29115321.json",
+  "prompt_hash": "1af9330e7254"
+}

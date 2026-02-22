@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans left with a clear bias against the Republican stance on Medicaid cuts and towards acknowledging unsustainable growth in healthcare spending as an issue requiring reform.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}
