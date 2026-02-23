@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses grassroots movements in Sweden led by mothers, focusing on their demands for public accountability and better care for children with disabilities. The tone is critical of the underfunding and discrimination faced by these groups, which could be seen as left-leaning.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.8,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article appears to be a sympathetic interview with a left-leaning academic, discussing their involvement in the New Left movement and their research on power structures.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses a historical event without taking sides, has a slightly negative framing towards the political decisions made after the disaster, and does not heavily favor any guests or speakers.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

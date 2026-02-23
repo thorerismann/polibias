@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.6,
+  "confidence": 0.95,
+  "comment": "Der Artikel zeigt eine klare negative Tendenz gegenüber Jacques Moretti und ähnlichen Figuren in Bezug auf soziale Normen und rechtliche Konsequenzen ihrer Handlungen. Der Ton ist kritisch mit einem Fokus darauf, Fehler gemacht zu haben statt Verantwortung für die Folgen.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_104591318.json",
+  "prompt_hash": "1af9330e7254"
+}

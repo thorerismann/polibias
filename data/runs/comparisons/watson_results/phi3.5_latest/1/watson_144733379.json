@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans slightly towards a left-leaning perspective by discussing potential negative impacts on industries and workers due to increased tariffs but maintains neutrality in presenting the facts about Trump's options without overt favoritism. The framing suggests concern for economic security, aligning more closely with typical progressive viewpoints.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_144733379.json",
+  "prompt_hash": "1af9330e7254"
+}

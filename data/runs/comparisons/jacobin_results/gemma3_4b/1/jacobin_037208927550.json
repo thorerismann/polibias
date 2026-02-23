@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.6,
+  "confidence": 0.8,
+  "comment": "The article explores the IOC's consideration of private equity investment, highlighting Samaranch's proposals and investor interest. The focus on Samaranch, with his family's history, and the inclusion of investment banker perspectives leans towards a right-leaning assessment of the situation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

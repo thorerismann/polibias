@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 1.0,
+  "comment": "The article frames the topic with a left-leaning bias by critiquing tech industry practices and figures like Elon Musk for perceived authoritarianism. The tone suggests disapproval of current diversity policies in Silicon Valley.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

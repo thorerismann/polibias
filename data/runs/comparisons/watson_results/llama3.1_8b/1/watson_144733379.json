@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses the potential impact of US tariffs on Swiss imports, with a neutral tone and no clear left or right bias. The subject matter is complex and requires an understanding of trade policies.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_144733379.json",
+  "prompt_hash": "1af9330e7254"
+}

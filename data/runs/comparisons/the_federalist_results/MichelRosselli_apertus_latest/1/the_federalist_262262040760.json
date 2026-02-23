@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.87,
+  "comment": "The article presents a neutral subject, discussing Medicaid spending and its growth without taking sides. The framing is slightly left-leaning as it criticizes the Democrats for their claims about 'cuts' in Medicaid. Treatment of the issue shows some favor towards Republicans who attempted to slow down Medicaid's unsustainable growth. No clear political actors are quoted or invited, so guests bias is neutral.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

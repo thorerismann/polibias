@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly to the left by criticizing an initiative and emphasizing current Swiss climate policies rather than supporting new ones. The framing suggests a negative view towards additional funding for environmental measures without clear evidence of efficiency or necessity.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

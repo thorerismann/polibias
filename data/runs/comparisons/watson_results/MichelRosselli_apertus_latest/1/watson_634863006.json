@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article does not mention any political figures or issues, so the subject bias is neutral (0.0). The framing of the story leans slightly negative (-1.0), as it focuses on a tragic event without providing additional context that could shift the tone to more positive or neutral. There's no clear treatment bias towards either left or right, and there are no quoted speakers or invited voices mentioned in the article.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_634863006.json",
+  "prompt_hash": "1af9330e7254"
+}

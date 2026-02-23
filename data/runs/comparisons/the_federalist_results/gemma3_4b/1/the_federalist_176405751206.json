@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the French initiative as potentially problematic, highlighting risks associated with IVF and questioning the effectiveness of incentivizing births. It leans right by criticizing the government's approach and suggesting it could lead to a decline in traditional family values.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_176405751206.json",
+  "prompt_hash": "1af9330e7254"
+}

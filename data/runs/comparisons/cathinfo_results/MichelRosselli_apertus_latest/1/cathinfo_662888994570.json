@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de la tentation de Jésus dans le désert, un sujet religieux et historique, sans aucune orientation politique évidente.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "1af9330e7254"
+}

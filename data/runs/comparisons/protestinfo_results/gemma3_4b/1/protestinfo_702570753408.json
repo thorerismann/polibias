@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.65,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.75,
+  "guests_bias": -0.45,
+  "confidence": 0.85,
+  "comment": "The article strongly criticizes tech companies' shift away from diversity and inclusion, framing it as a reactionary move influenced by the Trump administration. It highlights concerns about 'technofascism' and the potential for tech giants to exert authoritarian control, drawing on historical and philosophical influences to support its analysis.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

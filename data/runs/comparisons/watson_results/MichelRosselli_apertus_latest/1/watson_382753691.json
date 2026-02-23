@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel präsentiert KI im Gesundheitswesen als eine neutrale Technologie, die sowohl Chancen als auch Herausforderungen bietet. Es wird betont, dass KI ein ergänzendes Werkzeug ist und nicht als Wunderlösung wahrgenommen werden sollte.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_382753691.json",
+  "prompt_hash": "1af9330e7254"
+}

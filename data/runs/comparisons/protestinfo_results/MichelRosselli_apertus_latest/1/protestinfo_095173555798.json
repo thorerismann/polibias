@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente un regard neutre sur le sujet, mettant en avant les efforts communs des églises pour aider les personnes en situation de précarité.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

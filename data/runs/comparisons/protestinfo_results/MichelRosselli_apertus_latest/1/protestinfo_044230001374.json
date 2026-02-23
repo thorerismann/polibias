@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de manière équilibrée le concept des Rencontres de la zizanie, en mettant l'accent sur leur objectif de créer un espace de discussion apaisée et contradictoire. Aucune déclaration politique explicite n'est faite.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

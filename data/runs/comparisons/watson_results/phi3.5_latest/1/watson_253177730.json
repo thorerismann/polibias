@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel behandelt die Ereignisse und Perspektiven neutral mit einem leichten Fokus auf den ukrainischen Standpunkt ohne klar links- oder rechtsorientierte Bevorzugung. Die Erwähnung von Sanktionen gegen Belarus könnte als eine Sichtweise interpretiert werden, die sich mehr an der Reaktion des westlichen Blocks (Ukraine und NATO) auf belarussische Handlungen orientiert.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_253177730.json",
+  "prompt_hash": "1af9330e7254"
+}

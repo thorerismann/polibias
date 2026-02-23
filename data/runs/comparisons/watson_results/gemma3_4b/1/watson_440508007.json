@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the negative impact of Trump's tariffs on Swiss businesses, particularly the watch industry, while also highlighting the government's cautious approach and desire for negotiation. It presents a somewhat critical view of Trump's policies and reactions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_440508007.json",
+  "prompt_hash": "1af9330e7254"
+}

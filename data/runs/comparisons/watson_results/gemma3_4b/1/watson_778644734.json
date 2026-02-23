@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a factual account of Trump's proposal to send a hospital ship to Greenland, highlighting the tensions surrounding the potential annexation threat. It largely neutral in tone, focusing on the logistical aspects and diplomatic responses to the situation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

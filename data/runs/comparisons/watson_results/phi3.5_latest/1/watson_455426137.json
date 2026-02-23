@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel konzentriert sich hauptsächlich auf ein Ereignis im Zusammenhang mit der Sicherheit von Präsident Trump ohne explizite politische Neigung und behandelt die beteiligten Behörden neutral. Der Ton ist leicht gegen das Thema gerichtet, aber keine Partei offen unterstützt oder kritisiert wird.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_455426137.json",
+  "prompt_hash": "1af9330e7254"
+}

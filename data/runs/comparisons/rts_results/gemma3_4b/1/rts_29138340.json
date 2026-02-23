@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a cautious, fiscally conservative view of the climate initiative, highlighting concerns about debt and the effectiveness of funding mechanisms. It favors existing Swiss legal frameworks and emphasizes targeted, efficient measures over broad investment.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

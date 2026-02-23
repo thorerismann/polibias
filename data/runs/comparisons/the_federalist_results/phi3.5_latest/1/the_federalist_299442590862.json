@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.8,
+  "confidence": 0.92,
+  "comment": "The article leans left due to its criticism of current Senate practices and endorsement of the talking filibuster as a means for more open debate (subject bias). The framing is critical with respect to Republican efforts towards voting reforms like voter ID laws, suggesting skepticism about their motives or effectiveness. Treatment-wise, there's an apparent favoritism toward leftist arguments and concerns over Senate dysfunction from a right perspective (treatment bias). The guests mentioned are largely critical of Republican views on filibustering reform which is associated with the Democratic Party in this context; hence, it indicates more criticism than support for Republicans' positions regarding their political stance or guest speakers. Overall confidence level reflects high certainty based on language and sentiments expressed.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite principalement des dates et du calcul de Pâques sans aucune indication d'un parti pris politique ou préférence partisane. Le ton est informatif et neutre.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_259731758893.json",
+  "prompt_hash": "1af9330e7254"
+}

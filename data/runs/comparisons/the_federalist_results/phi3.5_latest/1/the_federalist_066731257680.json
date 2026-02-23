@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article critiques the Supreme Court's ruling and majority opinion without a clear left or right bias but leans slightly towards framing that questions presidential authority from what seems to be conservative perspectives given dissenting opinions align with more traditionally Republican views. No specific political guests are quoted, resulting in neutral treatment_bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "1af9330e7254"
+}

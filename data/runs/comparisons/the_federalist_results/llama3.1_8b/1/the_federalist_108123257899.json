@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article critiques the media's framing of Gen Z's spending habits, arguing that it perpetuates generational division and ignores policy decisions that contribute to the cost of living.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "1af9330e7254"
+}

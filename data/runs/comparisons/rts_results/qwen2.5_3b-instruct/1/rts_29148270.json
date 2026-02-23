@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.5,
+  "confidence": 1.0,
+  "comment": "The article heavily focuses on the political situation in Ukraine and its challenges, presenting a left-leaning perspective through quotes from Ukrainian officials and experts.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

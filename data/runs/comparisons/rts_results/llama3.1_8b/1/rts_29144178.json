@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the issue, but with a slight leaning towards left-leaning perspectives due to the emphasis on animal welfare and the criticism of the agricultural practices. The tone is informative and neutral, but with some subtle hints at right-leaning views from the perspective of the agricultural industry.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

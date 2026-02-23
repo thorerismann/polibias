@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article focuses on grassroots movements advocating for public care, suggesting a slight left-leaning perspective. It favorably portrays the mothers' efforts to combat inadequate services and defend their rights, highlighting their resistance to austerity measures.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

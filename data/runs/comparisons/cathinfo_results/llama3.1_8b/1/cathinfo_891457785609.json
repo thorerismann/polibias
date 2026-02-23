@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.333,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.222,
+  "guests_bias": -0.111,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral tone, focusing on the artist's work and process, without explicit bias towards any particular religion or ideology.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "1af9330e7254"
+}

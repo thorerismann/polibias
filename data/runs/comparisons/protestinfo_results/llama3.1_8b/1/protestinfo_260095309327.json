@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.7,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic, with some left-leaning framing and treatment biases. The guests interviewed are all Christian skiers, which may indicate a right-leaning bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "1af9330e7254"
+}

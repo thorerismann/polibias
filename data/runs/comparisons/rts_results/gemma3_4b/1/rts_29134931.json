@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the disaster and its causes, with a slight emphasis on the government's response and the need for preventative measures. It highlights the systemic issues of inadequate geological surveys and delayed compensation, presenting a critical perspective on the situation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

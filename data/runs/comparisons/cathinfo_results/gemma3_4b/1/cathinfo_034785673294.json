@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a positive overview of Markus Cott's extensive experience and commitment to humanitarian work and mission, reflecting favorably on his appointment. It highlights his international background and alignment with Missio's goals.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_034785673294.json",
+  "prompt_hash": "1af9330e7254"
+}

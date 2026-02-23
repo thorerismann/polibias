@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article primarily frames the Swiss-US relationship through a critical lens, highlighting Trump's perspective and questioning Switzerland's 'perfect' image. It leans right by emphasizing Trump's assertions and the benefits he perceives the US receives from the relationship.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

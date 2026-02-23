@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning perspective on the topic of Trump's announcement to send a hospital ship to Greenland, highlighting the potential risks and uncertainties surrounding the move.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.7,
+  "confidence": 0.85,
+  "comment": "The article critiques the increasing influence of AI in education, highlighting concerns about parental authority and the potential for bias in AI decision-making.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}

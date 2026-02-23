@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the political situation in Ukraine and the obstacles to organizing elections during a time of war, but does not provide clear left or right leaning perspectives.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article presents a generally positive view of Swiss businesses operating in Iraq, highlighting the country's stability and potential for investment. However, it also touches on the challenges faced by Iraqi businesses, including geopolitical tensions and corruption.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

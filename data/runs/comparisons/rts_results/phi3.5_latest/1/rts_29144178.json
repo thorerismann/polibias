@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente une situation neutre concernant la politique avec un léger penchant vers le conservateur en mettant l'accent sur les responsabilités individuelles et traditionnelles de l'agriculture sans forte critique ou soutien partisan. Les invités sont neutrales, ne favorisant aucune orientation politiquement.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

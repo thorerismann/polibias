@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Der Artikel konzentriert sich hauptsächlich auf ein Unglücksfall ohne politische Ausrichtung und behandelt die Ereignisse neutral. Keine spezifischen Parteistellungen oder Bias in Bezug auf Links- bzw. Rechtsparteien sind erkennbar.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_634863006.json",
+  "prompt_hash": "1af9330e7254"
+}

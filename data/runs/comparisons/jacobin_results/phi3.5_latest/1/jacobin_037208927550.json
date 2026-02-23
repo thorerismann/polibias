@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.9,
+  "comment": "The article leans slightly left due to its critical tone towards the IOC's financial strategies and focus on potential exploitation for profit ('Sport is becoming an asset class'). The guests are also more likely from a right-leaning perspective as they propose private equity solutions. Overall, there seems to be skepticism about commercializing sports through privatization.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

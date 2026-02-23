@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.1,
+  "confidence": 0.95,
+  "comment": "The article leans towards a left-leaning perspective by highlighting the lack of trust in American alliance and advocating for European autonomy over defense procurement as well as critiquing US policies aimed at dismantling EU unity. The tone suggests skepticism about America's intentions, while emphasizing Europe’s potential to build its own strength through strategic choices.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

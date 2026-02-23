@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article leans right by advocating for the revival of the filibuster and criticizing the current state of the Senate as unproductive. It frames the debate around restoring a more traditional, deliberative Senate process and highlights concerns about the influence of 'messaging' bills and donor interests.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "1af9330e7254"
+}

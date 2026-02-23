@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the cyber operation, highlighting both the Ukrainian and Russian perspectives. However, it slightly leans towards the left by criticizing Belarus' involvement in the conflict.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_253177730.json",
+  "prompt_hash": "1af9330e7254"
+}

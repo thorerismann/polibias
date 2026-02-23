@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article traite principalement d'une directive ecclésiastique sans biais politique explicite et avec une légère tendance à mettre en avant les aspects non politiques de la situation. La framing est neutre mais suggère un souci pour le rôle sacré des lieux, ce qui peut être interprété comme légerement centrée sur l'aspect religieux plutôt que politique. Il n'y a pas d'invités ou de discours politiques distincts mentionnés.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "1af9330e7254"
+}

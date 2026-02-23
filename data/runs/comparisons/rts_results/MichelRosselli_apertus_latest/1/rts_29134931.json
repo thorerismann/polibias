@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article traite un sujet naturel sans parti pris politique, mais le ton est plutôt critique envers les autorités pour leur manque d'action face aux dangers géologiques connus.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

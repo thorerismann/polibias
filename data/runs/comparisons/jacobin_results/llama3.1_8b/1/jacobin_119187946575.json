@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a sympathetic and detailed account of the Young Lords' takeover of Lincoln Hospital, highlighting their demands for better healthcare services and their efforts to create a detoxification program. The framing is generally left-leaning, with a focus on social justice and community empowerment.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a neutral tone without clear left or right bias in its subject matter concerning food distribution and community support for those experiencing precarity; guests are not distinguished by political leanings but rather their roles within the organization. The framing is slightly towards social welfare with no distinct ideological slant.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

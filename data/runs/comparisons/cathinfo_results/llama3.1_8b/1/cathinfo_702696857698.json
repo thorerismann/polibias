@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.7,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning tone, focusing on the life and legacy of Pope Benedict XVI without sensationalism or bias. However, the inclusion of quotes from Catholic sources and the emphasis on his theological contributions may indicate a subtle favoring of conservative Catholic perspectives.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

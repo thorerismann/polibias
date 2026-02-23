@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente principalement les faits sans une forte inclinaison politique dans le choix du sujet ou la narration (subject bias: 0). Le ton pourrait être légèrement perçu comme mettant en relief l'insuffisance des mesures de sécurité et d'infrastructure, ce qui peut suggérer un angle critique sur les politiques gouvernementales sans une forte orientation partisane claire (framing bias: -0.1). Il traite équitablement à la fois du problème actuel et des défis structurels plus larges en Italie avec peu de biais perçu dans le traitement ou l'équilibre entre les voix politiques mentionnées (treatment and guests bias: 0, confidence high).",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

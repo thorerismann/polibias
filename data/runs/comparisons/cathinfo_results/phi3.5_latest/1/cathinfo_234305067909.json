@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une perspective religieuse avec un léger biais à la gauche en mettant l'accent sur les dangers des voies de satisfaction faciles et le besoin spirituel pour la joie authentique. La framing est légèrement conservatrice sans ouvertement favoriser aucune extrémité politique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_234305067909.json",
+  "prompt_hash": "1af9330e7254"
+}

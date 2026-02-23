@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans heavily to the left politically by criticizing how Christians have historically succumbisced to worldly temptations and structures instead of following Christ's example strictly. The framing is negative towards Christian institutions for their misuse of religious teachings.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "1af9330e7254"
+}

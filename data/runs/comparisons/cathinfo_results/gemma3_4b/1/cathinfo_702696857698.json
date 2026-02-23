@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article provides a factual overview of a museum exhibit dedicated to the life and work of Joseph Ratzinger/Pope Benedict XVI. It focuses on the collection of his personal items and the associated events, presenting a neutral and informative account.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

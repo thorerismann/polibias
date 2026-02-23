@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.625,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on Jacques Moretti's past and his relationships, which are portrayed negatively. The framing is critical of Moretti's actions and the people associated with him.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "watson_104591318.json",
+  "prompt_hash": "1af9330e7254"
+}

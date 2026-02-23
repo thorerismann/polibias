@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a Ghanaian church's concern about political use of religious spaces. It focuses on a call to maintain the sanctity of these spaces outside of political influence, with an advertisement for a religious news outlet.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "1af9330e7254"
+}

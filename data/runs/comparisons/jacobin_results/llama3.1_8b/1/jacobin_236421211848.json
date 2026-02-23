@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.92,
+  "comment": "The article presents a negative view of the US government's actions and policies, particularly with regards to Mexico, while portraying Mexican president Claudia Sheinbaum in a positive light. The tone is critical of Trump and his administration.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the legal challenges to Donald Trump's tariffs and their impact on Swiss companies, particularly in the luxury watch industry.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_440508007.json",
+  "prompt_hash": "1af9330e7254"
+}

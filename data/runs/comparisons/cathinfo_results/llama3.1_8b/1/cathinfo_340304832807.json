@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to be neutral in its selection of topic, but frames the issue of promoting peace through prayer as a positive and necessary action, which may lean slightly left. The treatment of the subject is also somewhat favorable to the left, as it emphasizes the importance of interfaith dialogue and cooperation.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "1af9330e7254"
+}

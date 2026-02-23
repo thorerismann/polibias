@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente une initiative culturelle sans positionnement politique clairement défendu ou critique; il met l'accent sur la discussion et le partage d'idées diverses dans un contexte de société polarisée.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

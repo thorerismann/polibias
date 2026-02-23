@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article aborde le sujet de la maltraitance animale dans une vallée spécifique, sans prendre parti politique et en présentant les faits avec un ton neutre.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

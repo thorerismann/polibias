@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.1,
+  "confidence": 0.95,
+  "comment": "L'article présente principalement le point de vue d'une source ukrainienne et met en évidence les défis à l'organisation des élections dans un contexte conflictuel avec la Russie, ce qui suggère une inclinaison vers Kiev ou contre Moscou. Le ton est critique vis-à-vis du gouvernement américain pour exercer pression sur le sujet sans garanties de sécurité suffisantes.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

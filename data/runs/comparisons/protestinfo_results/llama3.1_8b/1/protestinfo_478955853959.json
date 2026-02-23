@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to have a neutral tone, but slightly favors the left with its focus on charitable giving and community involvement during Lent.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "1af9330e7254"
+}

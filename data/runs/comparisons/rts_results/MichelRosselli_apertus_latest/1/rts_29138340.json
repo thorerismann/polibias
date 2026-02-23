@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente un débat sur une initiative pour la protection du climat, sans prendre position clairement en faveur d'un camp politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

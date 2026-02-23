@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "The article presents a nuanced discussion of the talking filibuster, highlighting its potential benefits for Senate deliberation and public engagement.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "1af9330e7254"
+}

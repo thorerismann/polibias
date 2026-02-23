@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a strongly right-leaning narrative, framing Medicaid reforms as necessary to slow unsustainable spending growth and criticizing Democrats for misrepresenting the impact of those reforms.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

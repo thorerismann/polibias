@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.85,
+  "framing_bias": -0.92,
+  "treatment_bias": -0.75,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article predominantly focuses on the opposing views to an initiative for a climate fund, highlighting concerns about its feasibility and potential negative impacts.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

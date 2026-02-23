@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": "-1.0",
+  "confidence": 0.95,
+  "comment": "Der Artikel zeigt eine klare linksorientierte Perspektive mit starker Kritik an israelischen Politiken und Unterstützung für die Palästinenseransprüche. Der Ton ist entschieden gegen Israel gerichtet.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_561501559.json",
+  "prompt_hash": "1af9330e7254"
+}

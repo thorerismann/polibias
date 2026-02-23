@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.3,
+  "guests_bias": 1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic selection, but leans right in its framing and treatment of the subject, with a strong emphasis on private equity as a solution to the IOC's financial woes. The inclusion of Juan Antonio Samaranch's quotes adds a right-leaning bias from the guest perspective.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

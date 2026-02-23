@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.6,
+  "confidence": 0.8,
+  "comment": "The article appears to lean left in its selection of topics and framing, with a focus on criticizing Trump's economic policies. The tone is generally neutral, but the quoted voices from Swiss companies seem to have a more left-leaning perspective.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_440508007.json",
+  "prompt_hash": "1af9330e7254"
+}

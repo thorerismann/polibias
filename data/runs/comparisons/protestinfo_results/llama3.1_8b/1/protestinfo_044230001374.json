@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "This article appears to be leaning left due to its focus on ecumenism and dialogue, but the tone is neutral and respectful of opposing views.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

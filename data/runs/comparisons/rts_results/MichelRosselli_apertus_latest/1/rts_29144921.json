@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article se concentre sur un événement historique significatif pour la Suisse, l'hiver des avalanches de 1951. Il présente les faits avec une neutralité apparente et ne prend pas position politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

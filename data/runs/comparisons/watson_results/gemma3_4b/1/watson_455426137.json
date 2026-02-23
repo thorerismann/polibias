@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a factual account of an attempted intrusion at Mar-a-Lago, focusing on the actions of the Secret Service and local law enforcement. The framing leans slightly right due to the emphasis on the armed individual and the use of force by law enforcement.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_455426137.json",
+  "prompt_hash": "1af9330e7254"
+}

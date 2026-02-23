@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une tenture de carême qui critique les actions face au changement climatique avec un léger penchant à gauche en soulignant la nécessité d’une action plus significative et le rôle des institutions religieuses dans ce contexte. Il n'y a pas de spécifiques invités politiques ou leurs opinions exprimées, donc les biais concernant les invités sont neutres.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

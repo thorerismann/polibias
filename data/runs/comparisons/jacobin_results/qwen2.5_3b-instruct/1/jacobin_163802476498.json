@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses the implementation and framing of a universal pre-K initiative, focusing on its political context and debates around funding sources and service delivery.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

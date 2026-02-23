@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.2,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article appears to lean slightly left due to its negative portrayal of Trump's actions and right-leaning bias in the framing around European countries opposing U.S.' stance on Arctic annexation.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article strongly frames Republicans as attempting to control Medicaid spending while Democrats are accused of exaggerating the impact of the reconciliation bill. It consistently highlights projected increases in spending under both Republican and Democratic administrations, presenting a skeptical view of claims about cuts.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

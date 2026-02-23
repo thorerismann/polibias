@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the impact of mass migration on society, highlighting its disruptive and destabilizing nature. It criticizes Democrats for their past stance on conservatives who expressed similar concerns while pointing out that now they are acknowledging common sense. The tone is left-leaning as it critiques Democratic policies and personalities.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_313808358172.json",
+  "prompt_hash": "1af9330e7254"
+}

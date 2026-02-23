@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article discusses the IOC's exploration of new financing sources, including private equity, to cover the costs of hosting events. The framing is left-leaning as it highlights potential issues with private equity and its impact on sports operations. The treatment bias is neutral as there are no clear indications of favoritism towards either side.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

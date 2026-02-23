@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article title references a chronicle and a religious topic (RTSreligion). Without further context, it's impossible to determine a political bias. The subject matter is neutral.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "1af9330e7254"
+}

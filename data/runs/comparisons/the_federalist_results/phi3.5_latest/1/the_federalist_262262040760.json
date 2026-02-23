@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans left in its criticism of Democrats' handling and expansion of Medicaid under Biden-era policies while highlighting the unsustainable growth despite Republican reforms; it frames this as a failure rather than progress for Republicans.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

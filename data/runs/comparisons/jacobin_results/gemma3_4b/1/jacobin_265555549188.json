@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.1,
+  "confidence": 0.9,
+  "comment": "The article heavily frames the situation in Gaza as a continuation of genocide, emphasizing Israeli actions and restrictions on aid. It presents a strongly critical perspective of the Israeli regime and its policies, while largely omitting any positive framing of the ceasefire deal.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_265555549188.json",
+  "prompt_hash": "1af9330e7254"
+}

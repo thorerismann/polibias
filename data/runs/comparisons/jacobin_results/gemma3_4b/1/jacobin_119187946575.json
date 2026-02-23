@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the actions of the Young Lords and their efforts to improve healthcare access in the Bronx, presenting a sympathetic view of their activism. It highlights the systemic issues of healthcare inequality and the political context surrounding the events.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "1af9330e7254"
+}

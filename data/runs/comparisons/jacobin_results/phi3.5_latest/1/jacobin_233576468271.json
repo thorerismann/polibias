@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.3,
+  "confidence": 0.95,
+  "comment": "The article leans slightly left due to its focus on social movements and critique of political structures with a historical context that suggests progressive or reformist leanings; guests are primarily influential figures associated with the counterculture movement.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

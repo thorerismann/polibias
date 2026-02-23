@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is neutral in its subject and framing, but leans towards the left in terms of treatment of both sides (Catholic and Protestant churches) equally.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

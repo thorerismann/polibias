@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.92,
+  "comment": "The article predominantly criticizes the US approach towards Mexico and implies a negative portrayal of its policies under President Trump's administration by highlighting conspiracy theories about Mexican influence in domestic politics; thus indicating left-leaning bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "1af9330e7254"
+}

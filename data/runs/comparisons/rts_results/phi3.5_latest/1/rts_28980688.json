@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une vue neutre sur le sujet en discutant des aspects économiques et politiques sans montrer de préférence partisane claire. Le ton est informatif plutôt que persuasif ou biaisé.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

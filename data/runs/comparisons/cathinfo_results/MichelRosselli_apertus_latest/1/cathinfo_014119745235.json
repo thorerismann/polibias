@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "La tenture de Carême est une œuvre d'art qui aborde des défis mondiaux comme le changement climatique, les conflits et les divisions sociales. L'artiste allemande Konstanze Trommer espère que son image incitera à la réflexion. Bien qu'elle ne conduira pas à un changement radical des mentalités, elle estime qu'il ne faut pas relâcher nos efforts pour sensibiliser les gens à l'importance d'un monde où il fait bon vivre.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

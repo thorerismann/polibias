@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article discusses the potential deployment of a US Navy hospital ship to Greenland, which is part of Denmark. The subject and framing are neutral as it covers both sides of the political spectrum (the conflict between the USA and Denmark). The treatment bias leans towards left by mentioning European countries like Germany, Britain, and France who support Denmark and Grönland.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

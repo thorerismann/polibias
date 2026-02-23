@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article focuses on an artist's successful project within a historic Catholic space, highlighting his artistic background and spiritual perspective. It presents a neutral and appreciative tone towards the artist's work and its integration within the basilica.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "1af9330e7254"
+}

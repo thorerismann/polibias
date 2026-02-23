@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans heavily towards a negative portrayal of the Swiss and their relationship with Donald Trump's policies, indicating left-leaning bias in both subject matter selection and framing/narrative tone.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

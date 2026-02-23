@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": "Not applicable as no specific guests are mentioned.",
+  "confidence": 0.95,
+  "comment": "The article presents a clear left-leaning perspective by critiquing the administration's attacks on Costa Rica’s welfare state and gender politics while highlighting its populist rhetoric against elites. The framing is confrontational towards right policies.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "1af9330e7254"
+}

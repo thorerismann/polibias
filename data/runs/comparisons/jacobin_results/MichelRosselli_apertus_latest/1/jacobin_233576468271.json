@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the origin of power research, influences from Tom Hayden and C. Wright Mills, and its application to US foreign policy, especially the Dominican Republic invasion in 1965.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": "Cannot determine from the provided text snippet.",
+  "framing_bias": "Cannot determine from the provided text snippet.",
+  "treatment_bias": "Cannot determine from the provided text snippet.",
+  "guests_bias": "Cannot determine from the provided text snippet, as no specific guests or speakers are mentioned.",
+  "confidence": "Low confidence due to insufficient information in the given excerpt.",
+  "comment": null,
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_718368840123.json",
+  "prompt_hash": "1af9330e7254"
+}

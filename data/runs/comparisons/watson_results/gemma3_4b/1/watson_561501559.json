@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced view of the Israeli-Palestinian conflict, highlighting criticism from Arab and Muslim states regarding the US Ambassador's comments. It also details the ongoing territorial disputes and recent actions by the Israeli government.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_561501559.json",
+  "prompt_hash": "1af9330e7254"
+}

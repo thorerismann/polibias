@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a strong critique of the increasing use of AI in education, framing it as a threat to parental authority and traditional family values. It highlights concerns about algorithmic control and the potential displacement of human judgment, leaning towards a conservative perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}
