@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a project aimed at fostering dialogue in a polarized society, using a biblical parable as inspiration. It focuses on creating a space for contradictory ideas and promoting open discussion.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

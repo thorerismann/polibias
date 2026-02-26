@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article focuses on union decline in certain sectors, framing it negatively. It highlights instances where unions lost ground, particularly in manufacturing and logistics.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

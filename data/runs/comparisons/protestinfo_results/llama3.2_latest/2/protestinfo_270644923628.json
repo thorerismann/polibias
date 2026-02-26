@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.15,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision nuancée et ouverte sur le rôle des rituels chrétiens dans la société contemporaine, en reconnaissant les demandes de personnes non chrétiennes tout en soulignant l'importance de la formation et de la clarté dans la célébration des rites. Les citations de Gabriel Ringlet et Pierre Gisel apportent une perspective intéressante sur le sujet.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": "Cannot determine from the text provided.",
+  "framing_bias": "Cannot determine from the text provided.",
+  "treatment_bias": "Cannot determine from the text provided.",
+  "guests_bias": "Cannot determine from the text provided.",
+  "confidence": 0.0,
+  "comment": "The given text does not contain any political or ideological content to assess bias; it merely states a news headline and date.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "1af9330e7254"
+}

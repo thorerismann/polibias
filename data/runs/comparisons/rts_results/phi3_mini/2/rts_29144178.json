@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article appears to have a slight left-leaning bias in its framing and treatment of the subject matter by focusing on animal welfare concerns within agricultural practices. However, it maintains neutrality towards political actors mentioned.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

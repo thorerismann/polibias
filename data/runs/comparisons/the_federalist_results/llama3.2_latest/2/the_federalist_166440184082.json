@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of the increasing role of AI in schools, highlighting concerns about the lack of parental involvement and the potential for AI to supplant traditional family structures. The author argues that the development of AI systems is being driven by powerful tech companies without sufficient oversight or consideration for human values.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}

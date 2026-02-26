@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un sujet neutre (la tenture de Carême) et une framing neutre, mais avec des éléments qui pourraient être perçus comme favorables à la gauche (abordage des défis mondiaux tels que le changement climatique), tandis que les quotes de l'artiste semblent plus centrées sur l'importance d'une sensibilisation aux problèmes mondiaux sans prendre position politique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

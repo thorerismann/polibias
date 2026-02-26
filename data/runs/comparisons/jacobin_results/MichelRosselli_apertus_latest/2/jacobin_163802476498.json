@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the history and development of universal pre-K in New York City, focusing on its political and social context rather than offering a clear left or right leaning.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

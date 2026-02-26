@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans towards a negative portrayal of Belarus's role in the conflict and Russia's actions without providing substantial evidence for such claims within the text itself.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "watson_253177730.json",
+  "prompt_hash": "1af9330e7254"
+}

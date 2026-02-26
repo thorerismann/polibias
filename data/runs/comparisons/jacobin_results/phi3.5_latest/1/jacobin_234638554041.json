@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left due to its critical stance on potential political motives and failures within French institutions in handling related cases; it emphasizes accountability through an investigative commission with a focus on transparency for public understanding.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

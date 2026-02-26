@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic selection, but leans slightly left in its framing and treatment of the subject. The quoted speakers are from a mix of backgrounds, but lean left overall.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

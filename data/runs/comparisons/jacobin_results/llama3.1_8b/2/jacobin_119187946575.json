@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.7,
+  "confidence": 0.85,
+  "comment": "The article presents a sympathetic and historical account of the Young Lords' takeover of Lincoln Hospital, highlighting their demands for better health services and greater community control. The narrative is framed around the activists' perspective, with quotes from former participants and public health officials emphasizing the importance of addressing systemic racism and poverty in healthcare.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "1af9330e7254"
+}

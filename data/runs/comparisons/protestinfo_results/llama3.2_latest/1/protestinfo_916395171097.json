@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision neutre sur le sujet, en invitant un historien du catholicisme pour discuter de la place des catholiques intégristes. Cependant, la mention de « catholiques intégristes » pourrait être perçue comme étant légèrement négative ou stigmatisante.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

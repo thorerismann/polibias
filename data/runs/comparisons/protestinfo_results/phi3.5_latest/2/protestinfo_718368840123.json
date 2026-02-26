@@ -1,0 +1,12 @@
+{
+  "subject_bias": "The subject of the article is religion, which by itself does not inherently lean left or right politically.",
+  "framing_bias": "Without context on how religious aspects are discussed in relation to political views, it's neutral: <0.0>.",
+  "treatment_bias": "<0.0> as there is no indication of favoritism towards any side.",
+  "guests_bias": "<0.0>, since specific guests or speakers are not mentioned in the snippet provided.",
+  "confidence": "1.0",
+  "comment": "The subject matter, religion, does not suggest political bias on its own; additional context is needed for a more accurate assessment.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_718368840123.json",
+  "prompt_hash": "1af9330e7254"
+}

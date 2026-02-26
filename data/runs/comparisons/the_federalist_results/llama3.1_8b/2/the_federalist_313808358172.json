@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.9,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "The article presents a right-leaning perspective on mass migration, criticizing Democrats for their policies and framing the issue as a threat to national unity and security.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_313808358172.json",
+  "prompt_hash": "1af9330e7254"
+}

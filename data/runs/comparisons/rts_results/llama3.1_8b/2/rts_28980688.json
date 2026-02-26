@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article appears to have a neutral tone, but with a slight left-leaning bias due to the emphasis on economic development and cooperation between Switzerland and Iraq. The quotes from Iraqi officials and business leaders also suggest a favorable view of Swiss involvement in the country.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

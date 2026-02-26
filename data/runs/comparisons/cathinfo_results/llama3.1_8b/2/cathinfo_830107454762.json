@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.75,
+  "guests_bias": 0.25,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced view of the sionism chrétien controversy, highlighting both the concerns of the patriarches and the perspectives of its proponents. However, the framing bias leans left due to the emphasis on the potential harm caused by the movement to the unity of the Church and the presence of Christians in the region.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

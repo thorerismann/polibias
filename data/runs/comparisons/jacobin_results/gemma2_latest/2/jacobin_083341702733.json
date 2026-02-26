@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article criticizes calls for boycotts as ineffective and potentially harmful to working-class people. It frames the issue as a power imbalance between billionaires and the working class.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "1af9330e7254"
+}

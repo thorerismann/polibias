@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Es gibt keine Hinweise darauf, dass der Artikel eine politische Agenda verfolgt oder eine bestimmte Ausrichtung bevorzugt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

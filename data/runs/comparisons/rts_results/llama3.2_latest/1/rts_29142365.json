@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre, mais utilise des expressions telles que « la spirale de la mort » pour décrire le mouvement de liquidation forcée, ce qui peut être perçu comme une légère tendance vers l'analyse critique du système financier. La mention des incertitudes et des experts craignant une contagion ajoute une touche d'objectivité.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

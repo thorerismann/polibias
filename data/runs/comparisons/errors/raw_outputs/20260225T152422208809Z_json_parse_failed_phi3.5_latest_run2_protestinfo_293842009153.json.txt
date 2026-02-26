@@ -1,0 +1,8 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The subject suggests a critique of healthcare collaboration potentially prioritizing efficiency over other aspects; the framing implies skepticism towards such collaborations with an undertone suggesting left-leaning concerns about corporate influence in public services. Treatment bias is slightly negative toward right perspectives that may favor less regulation and more market-driven approaches to healthcare, but without specific guests mentioned or clear political actors quoted, the guest's bias cannot be determined precisely; overall confidence is high due to strong left-leaning cues in subject matter. ",
+  "confidence_explanation": "The language used indicates a slight skepticism towards efficiency and potential corporate influence which align with typical concerns of more progressive or liberal viewpoints, hence the negative scores for bias; however, without specific political figures quoted, it's not

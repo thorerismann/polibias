@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the IOC's exploration of new financing sources, including private equity. The framing is left-leaning as it highlights potential negative aspects (e.g., 'not cheap' and 'their tools are not particularly novel'). Treatment bias is unclear since no clear favoritism towards either side is evident.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

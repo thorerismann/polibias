@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article critiques the simplistic notion of boycotts, arguing they disproportionately impact lower-income individuals. It suggests focusing on systemic issues rather than individual consumer choices, aligning with a left-leaning perspective on economic inequality and corporate power.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "1af9330e7254"
+}

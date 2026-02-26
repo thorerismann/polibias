@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article predominantly discusses a left-leaning organizing strategy and the challenges faced by UAW in implementing it, with no clear right-wing voices or arguments presented.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "1af9330e7254"
+}

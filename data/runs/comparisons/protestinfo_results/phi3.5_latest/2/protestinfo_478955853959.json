@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a neutral topic about traditional and vegetarian soups during Lent without leaning towards any political ideology; it maintains an informative tone throughout with slight left-leaning framing due to the emphasis on charity but overall remains nonpartisan. The guests or speakers' bias is not evident as no specific politically charged figures are quoted.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "1af9330e7254"
+}

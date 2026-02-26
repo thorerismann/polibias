@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.3,
+  "comment": "The subject matter is about Catholicism and its place in society. The framing is neutral as it poses questions for discussion. No clear political leanings are evident from the guests.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

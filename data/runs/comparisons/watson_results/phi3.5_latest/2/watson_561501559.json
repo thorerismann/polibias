@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.65,
+  "guests_bias": "-",
+  "confidence": 0.95,
+  "comment": "Der Artikel zeigt eine klare linksorientierte Perspektive auf die israelische Siedlungspolitik und deren internationale Kritik, mit einem starken Fokus darauf, wie diese gegen palästinensischen Willen erfolgt. Die Quellen scheinen hauptsächlich linke oder progressive Standpunkte zu repräsentieren.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_561501559.json",
+  "prompt_hash": "1af9330e7254"
+}

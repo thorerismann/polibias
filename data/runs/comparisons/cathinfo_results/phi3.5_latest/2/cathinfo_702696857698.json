@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite la naissance et le pontificat de Joseph Ratzinger (Benoît XVI) avec un léger angle conservateur en mettant l'accent sur ses origines régionales allemandes et les objets sacrés associés à son rôle. Cependant, il est neutre sans une forte inclinaison politique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

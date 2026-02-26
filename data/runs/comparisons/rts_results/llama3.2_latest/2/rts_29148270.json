@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton relativement neutre, mais la subject bias est clairement à gauche en soutenant l'opinion de Volodymyr Zelensky et en critiquant les pressions américaines. Le traitement des sujets est également plus favorable aux Ukrainiens que aux Russes.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

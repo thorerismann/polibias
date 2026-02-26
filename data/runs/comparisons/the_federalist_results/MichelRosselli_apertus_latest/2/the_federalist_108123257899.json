@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "The article critiques the framing of Gen Z's spending habits as a generational issue, arguing that it distracts from real economic and policy problems.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "1af9330e7254"
+}

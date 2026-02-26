@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article shows a slight left-leaning bias due to its focus on social support and charity work for the disadvantaged in Morges. The framing is slightly right-leaning as it emphasizes individual responsibility within these programs.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

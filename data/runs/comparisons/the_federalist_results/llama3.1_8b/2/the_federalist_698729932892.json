@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article presents a clear right-leaning bias, focusing on the Trump administration's efforts to enforce immigration laws and criticizing Judge Douglas for ignoring the law. The language used is often emotive and critical of the left, but the article does not contain any overtly inflammatory or misleading statements.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "1af9330e7254"
+}

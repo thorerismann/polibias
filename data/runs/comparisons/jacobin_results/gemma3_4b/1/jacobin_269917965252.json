@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": 0.65,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a skeptical view of the US ‘kingpin strategy’ in combating drug trafficking, highlighting its ineffectiveness and destabilizing consequences. It frames the issue as a complex, fragmented criminal landscape rather than a simple ‘cartel’ problem, suggesting a critique of US foreign policy and the narratives surrounding drug war efforts.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

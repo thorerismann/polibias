@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.05,
+  "treatment_bias": 0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais légèrement plus favorable à la gauche en soulignant les conséquences politiques de l'hiver 1951 et les efforts de recherche et d'investissement menés par le gouvernement suisse pour prévenir les avalanches. Le langage utilisé est formel et scientifique, ce qui confère une impression de neutralité.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29144921.json",
+  "prompt_hash": "1af9330e7254"
+}

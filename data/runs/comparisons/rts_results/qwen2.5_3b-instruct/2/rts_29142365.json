@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on the technical aspects of Bitcoin's price movements and the economic implications, showing a left-leaning subject bias and framing. The treatment is slightly more favorable to the right due to the mention of Fed policies.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

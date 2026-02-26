@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses allegations against Prince Andrew but does not take a clear stance or present political figures.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

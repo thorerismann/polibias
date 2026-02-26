@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the Ukrainian-Russian conflict, but slightly leans left due to its critical tone towards Putin's actions and policies.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_639071414.json",
+  "prompt_hash": "1af9330e7254"
+}

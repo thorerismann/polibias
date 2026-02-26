@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article presents a clear left-leaning bias against President Trump and his administration's policies towards Mexico. The framing of the Mexican leader as 'wonderful and highly intelligent,' contrasted with negative portrayals of US actions, indicates strong right-leaning biases from both subjects.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the capture of El Mencho, a leader of one of Mexico's major drug trafficking organizations, and its potential impact on violence in the country. The author argues that the idea of drug cartels as centralized entities is a fiction created by US foreign policy to serve their interests.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

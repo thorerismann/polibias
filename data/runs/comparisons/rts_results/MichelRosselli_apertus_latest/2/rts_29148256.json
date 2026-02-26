@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article aborde un sujet sensible concernant l'exploitation des travailleurs étrangers et les conditions de travail dans le secteur domestique, mais il maintient une perspective neutre.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

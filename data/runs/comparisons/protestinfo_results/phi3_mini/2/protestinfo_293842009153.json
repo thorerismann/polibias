@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article questions the imposition of efficiency criteria on health services collaboration from a left-leaning perspective with high confidence in its bias assessment.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "1af9330e7254"
+}

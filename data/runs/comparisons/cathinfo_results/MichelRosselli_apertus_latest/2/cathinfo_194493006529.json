@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "La directive pastorale de la GCBC est neutre en termes de sujet, avec un ton légèrement critique à l'égard des abus politiques dans les lieux sacrés.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "1af9330e7254"
+}

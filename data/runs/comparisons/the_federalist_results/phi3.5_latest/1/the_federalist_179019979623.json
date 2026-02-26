@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article criticizes Gavin Newsom's behavior and his political strategy of mimicking Trump-like rude tactics without understanding the consequences or deeper messages behind such actions. The bias towards negative framing is strong.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_179019979623.json",
+  "prompt_hash": "1af9330e7254"
+}

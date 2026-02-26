@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.7,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article from La Chronique RTS appears to have a slight left-leaning bias in its subject matter selection and framing of the issue with clear favoritism towards right guests' perspectives.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,6 @@
+{
+ "Article Summary": {
+    "Current Situation": "Die Ukraine hat gegen Russland einen leichten Vorteil, unterstützt durch die Exklusion von russischen Kommunikationssystemen Starlink. Die ukrainische Armee konnte etwa 200 Quadratkilometern zurückerobern und diese Erfolge wirken als Bremskopf für die russischen Militäraktivitäten.",
+    "Russian Economy": "Trotz optimistischen offiziellen Zahlen der Zentralbank zeigt sich ein tatsächlicher Inflationsdruck in Russland, mit Expertenangaben auf mindestens doppelte Raten. Die Lebensmittelpreise steigen und Hypotheken sind teuer geworden, was zu großen Problemen für die russische Wirtschaft führt.",
+    "Russian Society": "'Game Changer' ist nicht der Fall; jedoch gibt es eine signifikante Anzahl von Russlandbefürwortern oder Unterstützern des Krieges. Die Gesellschaft ist stark atomisiert und Widerstand wird in absehbarer Zeit unwahrscheinlich sein.",
+    "Russian Military": "'Putin hat Schw

@@ -1,0 +1,6 @@
+{
+   "Article": {
+      "Title":"La tension sioniste chrétienne et les patriarches de Jérusalem",
+      "Introduction":"Au Moyen-Orient, une dynamique complexe entre le sionisme religieux et la communauté juive se développe. D'un côté, des mouvements comme 'The Israeli Christian Voice', dirigés par Ihab Shlayan, défendent un engagement politique en faveur d'Israël qui les place dans une position controversée.",
+      "Body":"Les patriarches et chefs des Églises chrétiennes de Terre Sainte ont exprimé leur inquiétude face aux pratiques sionistes parmi leurs fidèles. Ils soulignent que le mandat pour représenter la communauté chrétienne en terre sainte est exclusivement entre les mains des églises apostoliques historiques, qui sont implantées sur place depuis longtemps et ont une autorité reconnue.",
+      "Concerning_Ihab Shlayan":"Le lieutenant-colonel Ihab Shlayan a été présenté comme un fervent part

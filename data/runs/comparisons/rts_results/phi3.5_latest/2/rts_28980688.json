@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente les informations neutrelement sur le sujet des entreprises suisses en Irak et leurs opportunités sans prendre parti politique clairement à droite ou à gauche. Les invités mentionnent l’importance de la qualité et du transfert de savoir-faire, mais cela ne suggère pas un biais partisan spécifique. La seule légère frémissement pourrait être interprété comme une préférence subtile pour les pratiques européennes ou occidentales (qui incluent souvent des systèmes qualité et éducatifs), ce qui peut donner l'impression d’un léger biais, mais cela reste neutre. La stabilisation politique mentionnée est factuelle sans connotation partisane.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

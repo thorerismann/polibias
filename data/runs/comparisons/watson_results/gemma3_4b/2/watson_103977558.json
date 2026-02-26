@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a Pakistani government account of the attacks, framing them as retaliation and implicating Afghan Taliban leaders. It highlights ongoing tensions between Pakistan and Afghanistan, with a focus on Pakistani accusations and Afghan denials, showing a slight bias towards Pakistan's perspective due to the initial reporting and framing of the attacks as 'Vergeltungsmassnahme'.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_103977558.json",
+  "prompt_hash": "1af9330e7254"
+}

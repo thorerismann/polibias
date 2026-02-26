@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.95,
+  "comment": "The article leans slightly to the left by highlighting issues of labor exploitation and lack of legal protections for workers in Switzerland. The framing suggests a critical view towards employment practices related to domestic work, indicating some bias against these conditions.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

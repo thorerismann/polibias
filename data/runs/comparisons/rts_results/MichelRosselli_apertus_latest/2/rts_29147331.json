@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article covers Swiss athletes' performances in various Winter Olympics events, including ski alpin (super-G), snowboard halfpipe and biathlon. It does not show any clear political leanings.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents factual information about a conflict between Pakistan and Afghanistan without overtly favoring either side's political ideology or perspective; it reports on the tension stemming from terrorist attacks attributed to Pakistani Taliban (TTP). The tone is neutral, but there are slight indications of negative framing towards Pakistan due to mentioning military actions and accusations. However, without clear favoritism.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_103977558.json",
+  "prompt_hash": "1af9330e7254"
+}

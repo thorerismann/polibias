@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents a balanced view of Medicaid reforms, but leans slightly towards the left in its framing and treatment of Republicans.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

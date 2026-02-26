@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents historical facts about Saint Francis of Assise and his veneration without a clear political slant or bias towards any side. The framing is mostly factual with slight negative connotation due to the reference to macabre which might slightly lean left but overall neutral. Guests, if present in interviews, are not indicated as having strong right-leaning views.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": "Non applicable (no clear political actors mentioned)",
+  "confidence": 0.95,
+  "comment": "The article has a noticeably negative tone towards cryptocurrency and tech investments, indicating left-leaning bias with high confidence. It frames the bitcoin's volatility as problematic without presenting alternative viewpoints.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

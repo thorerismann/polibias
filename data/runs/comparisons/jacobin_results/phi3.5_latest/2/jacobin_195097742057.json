@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left with a critical tone towards current political engagement and institutions but maintains neutrality in guest selection without clear bias toward any side. The treatment of subjects suggests skepticism about recent movements' effectiveness.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "1af9330e7254"
+}

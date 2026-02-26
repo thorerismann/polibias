@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "La cérémonie a également mis en valeur les talents italiens, avec des artistes comme Andrea Bocelli et Laura Pausini, ainsi que des athlètes comme Nino Niederreiter et Fanny Smith. La représentation de la Suisse a été solide, avec le président Guy Parmelin participant à la réception organisée par le président italien Sergio Mattarella.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

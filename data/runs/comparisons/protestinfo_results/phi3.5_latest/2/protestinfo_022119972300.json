@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.2,
+  "confidence": 0.95,
+  "comment": "L'article présente une approche neutre sur le sujet de la non-mixité des genres avec un léger biais dans l’accentuation du contexte féministe et social dû à son cadre spécifique (un safe space pour les femmes). Les invités ou sources sont principalement représentatifs des intérêts féministes, ce qui peut légèrement influencer la perception. Cependant, le sujet est abordé de manière générale sans fort parti pris politique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

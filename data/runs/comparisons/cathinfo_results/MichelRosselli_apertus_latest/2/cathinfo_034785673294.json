@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article présente un sujet neutre, avec une tonalité légèrement critique envers les institutions (framing bias). Le traitement des sujets est équilibré et il n'y a pas de préférence claire pour l'un ou l'autre côté politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_034785673294.json",
+  "prompt_hash": "1af9330e7254"
+}

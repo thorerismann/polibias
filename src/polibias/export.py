@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import textwrap
 from pathlib import Path
@@ -11,6 +12,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 
 # ---------- Chart builders ----------
@@ -20,7 +22,6 @@ _SOURCE_LABELS = {
     "jacobin": "Jacobin",
     "the_federalist": "The Federalist",
     "watson": "Watson",
-    "lib_inst": "Liberal Institute",
     "protestinfo": "Protestinfo",
     "cathinfo": "Cathinfo",
 }
@@ -62,7 +63,6 @@ def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
         x="model",
         y="overall_bias",
         color="source_label",
-        symbol="run",
         custom_data=[
             "run",
             "article_id",
@@ -176,57 +176,86 @@ def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
     df["comment"] = df["comment"].fillna("").astype(str)
     df["comment_hover"] = df["comment"].map(_wrap_for_hover)
     df["source_label"] = df["source"].astype(str).map(_label_source)
-
-    fig = px.scatter(
-        df,
-        x="article_str",
-        y="overall_bias",
-        color="model",
-        symbol="run",
-        facet_col="source_label",
-        facet_col_wrap=2,
-        custom_data=[
-            "model",
-            "run",
-            "source_label",
-            "subject_bias",
-            "framing_bias",
-            "treatment_bias",
-            "guests_bias",
-            "comment_hover",
-            "confidence",
-        ],
-        hover_data={
-            "article_str": False,
-            "article_id": True,
-            "model": True,
-            "run": True,
-            "source_label": True,
-            "comment": True,
-            "subject_bias": ":.3f",
-            "framing_bias": ":.3f",
-            "treatment_bias": ":.3f",
-            "guests_bias": ":.3f",
-            "overall_bias": ":.3f",
-            "confidence": ":.3f",
-        },
-        title="Overall bias dots by article and source (model color, run symbol)",
+    source_order = (
+        df[["source", "source_label"]]
+        .drop_duplicates()
+        .sort_values("source_label")
+        .reset_index(drop=True)
     )
-    fig.update_yaxes(range=[-1, 1], title="overall_bias")
-    fig.update_xaxes(type="category", tickangle=45, title="article_id")
-    fig.update_layout(height=900)
-    fig.update_traces(
-        hovertemplate=(
-            "<b>Article:</b> %{x}<br>"
-            "<b>Bias:</b> %{y:.3f}<br>"
-            "<b>Model:</b> %{customdata[0]}<br>"
-            "<b>Run:</b> %{customdata[1]}<br>"
-            "<b>Article source:</b> %{customdata[2]}<br>"
-            "<b>Confidence:</b> %{customdata[8]:.3f}<br>"
-            "<b>Sub-biases:</b> subject=%{customdata[3]:.3f}, framing=%{customdata[4]:.3f}, "
-            "treatment=%{customdata[5]:.3f}, guests=%{customdata[6]:.3f}<br>"
-            "<b>Comment:</b><br>%{customdata[7]}<extra></extra>"
+    model_order = sorted(df["model"].dropna().astype(str).unique())
+    palette = px.colors.qualitative.Plotly
+    color_map = {m: palette[i % len(palette)] for i, m in enumerate(model_order)}
+
+    fig = make_subplots(
+        rows=len(source_order),
+        cols=1,
+        shared_xaxes=False,
+        shared_yaxes=True,
+        vertical_spacing=0.06,
+        subplot_titles=source_order["source_label"].tolist(),
+    )
+
+    for row_idx, source in enumerate(source_order["source"], start=1):
+        src_df = df[df["source"] == source].copy()
+        article_order = src_df["article_str"].dropna().astype(str).unique().tolist()
+
+        for model in model_order:
+            model_df = src_df[src_df["model"].astype(str) == model]
+            if model_df.empty:
+                continue
+
+            custom_data = np.column_stack(
+                [
+                    model_df["model"].astype(str),
+                    model_df["run"].astype(str),
+                    model_df["source_label"].astype(str),
+                    model_df["subject_bias"],
+                    model_df["framing_bias"],
+                    model_df["treatment_bias"],
+                    model_df["guests_bias"],
+                    model_df["comment_hover"].astype(str),
+                    model_df["confidence"],
+                ]
+            )
+            fig.add_trace(
+                go.Scatter(
+                    x=model_df["article_str"].astype(str),
+                    y=model_df["overall_bias"],
+                    mode="markers",
+                    name=model,
+                    legendgroup=model,
+                    showlegend=(row_idx == 1),
+                    marker=dict(color=color_map[model], size=8),
+                    customdata=custom_data,
+                    hovertemplate=(
+                        "<b>Article:</b> %{x}<br>"
+                        "<b>Bias:</b> %{y:.3f}<br>"
+                        "<b>Model:</b> %{customdata[0]}<br>"
+                        "<b>Run:</b> %{customdata[1]}<br>"
+                        "<b>Article source:</b> %{customdata[2]}<br>"
+                        "<b>Confidence:</b> %{customdata[8]:.3f}<br>"
+                        "<b>Sub-biases:</b> subject=%{customdata[3]:.3f}, framing=%{customdata[4]:.3f}, "
+                        "treatment=%{customdata[5]:.3f}, guests=%{customdata[6]:.3f}<br>"
+                        "<b>Comment:</b><br>%{customdata[7]}<extra></extra>"
+                    ),
+                ),
+                row=row_idx,
+                col=1,
+            )
+        fig.update_xaxes(
+            type="category",
+            tickangle=45,
+            title_text="article_id",
+            categoryorder="array",
+            categoryarray=article_order,
+            row=row_idx,
+            col=1,
         )
+        fig.update_yaxes(range=[-1, 1], title_text="overall_bias", row=row_idx, col=1)
+
+    fig.update_layout(
+        title="Overall bias dots by article and source (model color)",
+        height=max(500, 330 * len(source_order)),
     )
     return _style_hover(fig)
 
@@ -294,6 +323,7 @@ tr:nth-child(even) { background: #fafafa; }
 .comment-controls select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
 .comment-box { border: 1px solid #ddd; border-radius: 8px; background: #fafafa;
                min-height: 70px; padding: 12px; white-space: pre-wrap; }
+.comment-status { font-size: 0.9em; color: #4b5563; margin: 6px 0 10px; }
 """
 
 
@@ -306,9 +336,13 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
         "model", "run", "source", "article_id", "comment", "subject_bias", "framing_bias",
         "treatment_bias", "guests_bias", "overall_bias", "confidence", "status",
     ]
-    data = bdf[cols].copy().fillna("")
+    data = bdf.copy()
+    for col in cols:
+        if col not in data.columns:
+            data[col] = ""
+    data = data[cols].copy().fillna("")
     records = data.to_dict(orient="records")
-    records_json = json.dumps(records, ensure_ascii=False)
+    records_json = json.dumps(records, ensure_ascii=True).replace("</", "<\\/")
 
     return f"""
 <div id=\"comment-explorer\">
@@ -318,22 +352,31 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
       <select id=\"model-select\"></select>
     </div>
     <div>
-      <label for=\"run-select\">Run</label>
-      <select id=\"run-select\"></select>
+      <label for=\"source-select\">Source</label>
+      <select id=\"source-select\"></select>
     </div>
     <div>
       <label for=\"article-select\">Article</label>
       <select id=\"article-select\"></select>
     </div>
+    <div>
+      <label for=\"run-select\">Run (optional)</label>
+      <select id=\"run-select\"></select>
+    </div>
   </div>
-  <div id=\"comment-box\" class=\"comment-box\">Select model, run, and article.</div>
+  <div id=\"comment-status\" class=\"comment-status\">Loading explorer...</div>
+  <div id=\"comment-box\" class=\"comment-box\">Select any filter(s): model, source, article, run.</div>
 </div>
+<script id=\"comment-data\" type=\"application/json\">{records_json}</script>
 <script>
 (function() {{
-  const rows = {records_json};
+  const dataEl = document.getElementById('comment-data');
+  const rows = JSON.parse((dataEl && dataEl.textContent) ? dataEl.textContent : '[]');
   const modelSel = document.getElementById('model-select');
+  const sourceSel = document.getElementById('source-select');
   const runSel = document.getElementById('run-select');
   const articleSel = document.getElementById('article-select');
+  const statusEl = document.getElementById('comment-status');
   const box = document.getElementById('comment-box');
 
   function uniq(values) {{
@@ -360,18 +403,24 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 
   function filterRows() {{
     const m = selectedValue(modelSel);
+    const s = selectedValue(sourceSel);
     const r = selectedValue(runSel);
     const a = selectedValue(articleSel);
     return rows.filter(x =>
       (!m || String(x.model) === m) &&
+      (!s || String(x.source) === s) &&
       (!r || String(x.run) === r) &&
       (!a || String(x.article_id) === a)
     );
   }}
 
-  function refreshRunOptions() {{
+  function refreshRunOptionsFromBase() {{
     const m = selectedValue(modelSel);
-    const filtered = rows.filter(x => !m || String(x.model) === m);
+    const s = selectedValue(sourceSel);
+    const filtered = rows.filter(x =>
+      (!m || String(x.model) === m) &&
+      (!s || String(x.source) === s)
+    );
     const current = runSel.value;
     setOptions(runSel, uniq(filtered.map(x => String(x.run))));
     if (Array.from(runSel.options).some(o => o.value === current)) runSel.value = current;
@@ -379,9 +428,11 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 
   function refreshArticleOptions() {{
     const m = selectedValue(modelSel);
+    const s = selectedValue(sourceSel);
     const r = selectedValue(runSel);
     const filtered = rows.filter(x =>
       (!m || String(x.model) === m) &&
+      (!s || String(x.source) === s) &&
       (!r || String(x.run) === r)
     );
     const current = articleSel.value;
@@ -409,12 +460,19 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
   }}
 
   setOptions(modelSel, uniq(rows.map(x => String(x.model))));
-  refreshRunOptions();
+  setOptions(sourceSel, uniq(rows.map(x => String(x.source))));
+  refreshRunOptionsFromBase();
   refreshArticleOptions();
   updateCommentBox();
+  statusEl.textContent = `Explorer loaded: rows=${{rows.length}}, models=${{modelSel.options.length - 1}}, sources=${{sourceSel.options.length - 1}}, articles=${{articleSel.options.length - 1}}`;
 
   modelSel.addEventListener('change', () => {{
-    refreshRunOptions();
+    refreshRunOptionsFromBase();
+    refreshArticleOptions();
+    updateCommentBox();
+  }});
+  sourceSel.addEventListener('change', () => {{
+    refreshRunOptionsFromBase();
     refreshArticleOptions();
     updateCommentBox();
   }});
@@ -428,6 +486,183 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 """
 
 
+def build_comment_explorer_page(
+    bias_df: pd.DataFrame,
+    output_path: str | Path,
+    *,
+    title: str = "polibias — Comment Explorer",
+) -> None:
+    cols = [
+        "model", "run", "source", "article_id", "status", "confidence", "overall_bias",
+        "subject_bias", "framing_bias", "treatment_bias", "guests_bias", "comment",
+    ]
+    data = bias_df.copy()
+    for col in cols:
+        if col not in data.columns:
+            data[col] = ""
+    data = data[cols].fillna("")
+
+    def _fmt(value: object) -> str:
+        s = str(value)
+        return "" if s == "nan" else s
+
+    rows_html: list[str] = []
+    for row in data.to_dict(orient="records"):
+        model = _fmt(row["model"])
+        run = _fmt(row["run"])
+        source = _fmt(row["source"])
+        article_id = _fmt(row["article_id"])
+        status = _fmt(row["status"])
+        confidence = _fmt(row["confidence"])
+        overall = _fmt(row["overall_bias"])
+        subject = _fmt(row["subject_bias"])
+        framing = _fmt(row["framing_bias"])
+        treatment = _fmt(row["treatment_bias"])
+        guests = _fmt(row["guests_bias"])
+        comment = _fmt(row["comment"])
+        rows_html.append(
+            "<tr "
+            f"data-model=\"{html.escape(model, quote=True)}\" "
+            f"data-source=\"{html.escape(source, quote=True)}\" "
+            f"data-article=\"{html.escape(article_id, quote=True)}\" "
+            f"data-run=\"{html.escape(run, quote=True)}\" "
+            f"data-status=\"{html.escape(status, quote=True)}\""
+            ">"
+            f"<td>{html.escape(model)}</td>"
+            f"<td>{html.escape(source)}</td>"
+            f"<td>{html.escape(article_id)}</td>"
+            f"<td>{html.escape(run)}</td>"
+            f"<td>{html.escape(status)}</td>"
+            f"<td>{html.escape(confidence)}</td>"
+            f"<td>{html.escape(overall)}</td>"
+            f"<td>{html.escape(subject)}</td>"
+            f"<td>{html.escape(framing)}</td>"
+            f"<td>{html.escape(treatment)}</td>"
+            f"<td>{html.escape(guests)}</td>"
+            f"<td>{html.escape(comment)}</td>"
+            "</tr>"
+        )
+
+    page = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{html.escape(title)}</title>
+<style>
+body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 1600px; margin: auto; padding: 20px; color: #222; }}
+h1 {{ margin-bottom: 8px; }}
+.note {{ color: #555; margin: 0 0 16px; }}
+.controls {{ display: grid; grid-template-columns: repeat(6, minmax(140px, 1fr)); gap: 10px; margin: 12px 0 16px; }}
+.controls label {{ display: block; font-size: 0.9em; color: #444; margin-bottom: 3px; }}
+.controls select, .controls input {{ width: 100%; padding: 7px; border: 1px solid #ccc; border-radius: 6px; }}
+.stats {{ margin: 8px 0 12px; color: #333; }}
+table {{ border-collapse: collapse; width: 100%; table-layout: fixed; }}
+th, td {{ border: 1px solid #ddd; padding: 7px; vertical-align: top; font-size: 13px; }}
+th {{ background: #f7f7f7; position: sticky; top: 0; z-index: 1; }}
+td:nth-child(12), th:nth-child(12) {{ width: 38%; }}
+td:nth-child(12) {{ white-space: pre-wrap; word-break: break-word; }}
+tbody tr:nth-child(even) {{ background: #fafafa; }}
+</style>
+</head>
+<body>
+  <h1>{html.escape(title)}</h1>
+  <p class="note">Standalone comment explorer. Filter by any combination of model/source/article/run/status and text search.</p>
+  <div class="controls">
+    <div><label for="f-model">Model</label><select id="f-model"></select></div>
+    <div><label for="f-source">Source</label><select id="f-source"></select></div>
+    <div><label for="f-article">Article</label><select id="f-article"></select></div>
+    <div><label for="f-run">Run</label><select id="f-run"></select></div>
+    <div><label for="f-status">Status</label><select id="f-status"></select></div>
+    <div><label for="f-text">Search comment</label><input id="f-text" type="text" placeholder="contains text"></div>
+  </div>
+  <div id="stats" class="stats"></div>
+  <table>
+    <thead>
+      <tr>
+        <th>model</th><th>source</th><th>article_id</th><th>run</th><th>status</th>
+        <th>confidence</th><th>overall</th><th>subject</th><th>framing</th><th>treatment</th><th>guests</th><th>comment</th>
+      </tr>
+    </thead>
+    <tbody id="rows">
+      {''.join(rows_html)}
+    </tbody>
+  </table>
+<script>
+(function() {{
+  const rows = Array.from(document.querySelectorAll('#rows tr'));
+  const stats = document.getElementById('stats');
+  const model = document.getElementById('f-model');
+  const source = document.getElementById('f-source');
+  const article = document.getElementById('f-article');
+  const run = document.getElementById('f-run');
+  const status = document.getElementById('f-status');
+  const text = document.getElementById('f-text');
+
+  function uniq(values) {{
+    return Array.from(new Set(values.filter(v => v !== ''))).sort();
+  }}
+  function setOptions(sel, vals) {{
+    sel.innerHTML = '';
+    const all = document.createElement('option');
+    all.value = '__ALL__';
+    all.textContent = 'All';
+    sel.appendChild(all);
+    for (const v of vals) {{
+      const o = document.createElement('option');
+      o.value = v;
+      o.textContent = v;
+      sel.appendChild(o);
+    }}
+  }}
+  function selected(sel) {{ return sel.value === '__ALL__' ? '' : sel.value; }}
+  function refreshOptions() {{
+    const m = selected(model), s = selected(source), r = selected(run), st = selected(status);
+    const base = rows.filter(tr =>
+      (!m || tr.dataset.model === m) &&
+      (!s || tr.dataset.source === s) &&
+      (!r || tr.dataset.run === r) &&
+      (!st || tr.dataset.status === st)
+    );
+    const current = article.value;
+    setOptions(article, uniq(base.map(tr => tr.dataset.article)));
+    if (Array.from(article.options).some(o => o.value === current)) article.value = current;
+  }}
+  function apply() {{
+    const m = selected(model), s = selected(source), a = selected(article), r = selected(run), st = selected(status);
+    const q = text.value.trim().toLowerCase();
+    let shown = 0;
+    for (const tr of rows) {{
+      const ok = (!m || tr.dataset.model === m) &&
+                 (!s || tr.dataset.source === s) &&
+                 (!a || tr.dataset.article === a) &&
+                 (!r || tr.dataset.run === r) &&
+                 (!st || tr.dataset.status === st) &&
+                 (!q || tr.lastElementChild.textContent.toLowerCase().includes(q));
+      tr.style.display = ok ? '' : 'none';
+      if (ok) shown += 1;
+    }}
+    stats.textContent = `Showing ${{shown}} / ${{rows.length}} rows`;
+  }}
+
+  setOptions(model, uniq(rows.map(tr => tr.dataset.model)));
+  setOptions(source, uniq(rows.map(tr => tr.dataset.source)));
+  setOptions(run, uniq(rows.map(tr => tr.dataset.run)));
+  setOptions(status, uniq(rows.map(tr => tr.dataset.status)));
+  setOptions(article, uniq(rows.map(tr => tr.dataset.article)));
+  refreshOptions();
+  apply();
+
+  for (const el of [model, source, article, run, status]) {{
+    el.addEventListener('change', () => {{ refreshOptions(); apply(); }});
+  }}
+  text.addEventListener('input', apply);
+}})();
+</script>
+</body>
+</html>"""
+    Path(output_path).write_text(page, encoding="utf-8")
+
+
 # ---------- Main report builder ----------
 
 def build_html_report(
@@ -437,6 +672,7 @@ def build_html_report(
     *,
     title: str = "polibias — Bias Analysis Report",
     include_tables: bool = True,
+    include_comment_explorer: bool = False,
 ) -> None:
     """Generate a standalone HTML report."""
     from polibias.stats import build_stats_report
@@ -529,12 +765,13 @@ def build_html_report(
     for fig in figs:
         html_parts.append(fig.to_html(full_html=False, include_plotlyjs="cdn"))
 
-    # --- Comment explorer ---
-    html_parts.append("<h2>Comment explorer</h2>")
-    html_parts.append(
-        '<p class="section-note">Use model/run/article selectors to inspect original JSON comments and scores.</p>'
-    )
-    html_parts.append(_comment_explorer_html(bias_df))
+    if include_comment_explorer:
+        # --- Comment explorer ---
+        html_parts.append("<h2>Comment explorer</h2>")
+        html_parts.append(
+            '<p class="section-note">Use model/run/article selectors to inspect original JSON comments and scores.</p>'
+        )
+        html_parts.append(_comment_explorer_html(bias_df))
 
     html_parts.append("</body></html>")
 
@@ -603,6 +840,7 @@ def run_export(
     settings,
     *,
     source: str | None = None,
+    run: int | None = None,
     output_filename: str | None = None,
     include_tables: bool = True,
     write_artifacts: bool = True,
@@ -614,6 +852,8 @@ def run_export(
     bias_df = build_bias_frame(settings)
     if source is not None:
         bias_df = bias_df[bias_df["source"] == source].copy()
+    if run is not None:
+        bias_df = bias_df[bias_df["run"] == run].copy()
     if bias_df.empty:
         print("  No bias data found. Run 'score' and 'analyse' first.")
         return
@@ -621,15 +861,32 @@ def run_export(
     # HTML report
     report_path = settings.run_dir / output_filename if output_filename else settings.report_html_path
     html_path = str(report_path)
-    title = "polibias — Bias Analysis Report" if source is None else f"polibias — {source} Bias Report"
+    if source is None:
+        title = "polibias — Bias Analysis Report"
+    else:
+        title = f"polibias — {source} Bias Report"
+    if run is not None:
+        title = f"{title} (run {run})"
     build_html_report(
         bias_df,
         html_path,
         kappa_bins=settings.kappa_bins,
         title=title,
         include_tables=include_tables,
+        include_comment_explorer=False,
     )
     print(f"  Wrote HTML report: {html_path}")
+
+    # Dedicated comment explorer (no Plotly dependency)
+    report_stem = Path(output_filename).stem if output_filename else "report"
+    comments_filename = f"{report_stem}_comments.html"
+    comments_path = settings.run_dir / comments_filename
+    build_comment_explorer_page(
+        bias_df,
+        comments_path,
+        title=f"{title} — Comment Explorer",
+    )
+    print(f"  Wrote comment explorer: {comments_path}")
 
     if write_artifacts:
         # Article summaries
@@ -649,12 +906,15 @@ def run_export(
 def run_export_cross_source(
     settings,
     *,
+    run: int | None = None,
     output_filename: str = "report_all.html",
     source_reports: Mapping[str, str] | None = None,
 ) -> None:
     from polibias.analysis import build_bias_frame
 
     bias_df = build_bias_frame(settings)
+    if run is not None:
+        bias_df = bias_df[bias_df["run"] == run].copy()
     if bias_df.empty:
         print("  No bias data found. Run 'score' and 'analyse' first.")
         return
@@ -684,17 +944,6 @@ def run_export_cross_source(
         )
         .sort_values("source")
     )
-    cross_tab = (
-        pd.pivot_table(
-            bias_df,
-            index="article_id",
-            columns="source",
-            values="overall_bias",
-            aggfunc="mean",
-        )
-        .reset_index()
-        .sort_values("article_id")
-    )
     source_model_heat = (
         bias_df.groupby(["source", "model"], as_index=False)["overall_bias"]
         .mean()
@@ -723,17 +972,18 @@ def run_export_cross_source(
         "<title>polibias cross-source report</title>",
         f"<style>{_CSS}</style>",
         "</head><body>",
-        "<h1>polibias — Cross-source report</h1>",
+        "<h1>polibias — Cross-source report</h1>" if run is None else f"<h1>polibias — Cross-source report (run {run})</h1>",
         '<p class="section-note">Cross-reference view across all sources in this run.</p>',
         links_html,
         "<h2>Source summary</h2>",
         _df_to_html(by_source_dim),
         "<h2>Source x model summary</h2>",
         _df_to_html(by_source_model),
-        "<h2>Article cross-tab (mean overall bias)</h2>",
-        _df_to_html(cross_tab),
         "<h2>Heatmap</h2>",
         fig.to_html(full_html=False, include_plotlyjs="cdn"),
+        "<h2>Comment explorer</h2>",
+        '<p class="section-note">Use model/source/article/run selectors to inspect original JSON comments and scores.</p>',
+        _comment_explorer_html(bias_df),
         "</body></html>",
     ]
 

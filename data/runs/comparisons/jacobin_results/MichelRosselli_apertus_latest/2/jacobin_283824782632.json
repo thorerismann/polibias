@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "This article covers the state of union growth in various sectors, including construction and health care, while highlighting declines in logistics, manufacturing, and mining/drilling. The tone is neutral, focusing on data rather than making political statements.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,6 @@
+{
+  "subject_bias": -0.75,
+  "framing_bias": -0.65,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "comment": "The article leans left due to its critical tone towards the Senate and Republican efforts for reform (e.g., 'nuke' filibuster), framing of these actions as potentially detrsimental ('the SAVE America Act'), criticism of senators not acting on their policy ideas, and a strong critique against what is perceived to be partisan gridlock within the Senate that undermines its functionality. The use of terms like 'nuke' filibuster indicates disapproval towards Republican efforts for change in voting laws (which are often associated with conservative or right-leaning policies). Additionally, there’s a clear criticism against what is perceived as an overly partisan and dysfunctional Senate that fails to address significant issues. The language used suggests the author believes these actions disfavor Republicans ('The lack of technical engagement,' 'spoils

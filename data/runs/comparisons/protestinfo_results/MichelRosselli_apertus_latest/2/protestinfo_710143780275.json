@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "The article does not appear to discuss political topics or include any clear left- or right-leaning voices.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "1af9330e7254"
+}

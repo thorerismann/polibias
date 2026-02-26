@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 1.0,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un point de vue chrétien et critique les tentations du désert en relation avec la foi et le message de Jésus. Le ton est réfléchi et analytique, sans être trop partisan ou défensif.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "1af9330e7254"
+}

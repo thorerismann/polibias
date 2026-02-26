@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article focuses on the temptation of Jesus, framing it as a struggle against worldly desires and a misinterpretation of religious doctrine. It highlights the dangers of prioritizing earthly power and success over spiritual values, with a critical perspective on the potential for Christianity to be corrupted by secular influences.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "1af9330e7254"
+}

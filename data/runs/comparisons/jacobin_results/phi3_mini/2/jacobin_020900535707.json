@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.15,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "The article leans slightly left due to its focus on social welfare and public accountability for children's rights but maintains a neutral tone overall.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

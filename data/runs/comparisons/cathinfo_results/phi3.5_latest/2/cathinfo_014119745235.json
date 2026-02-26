@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une tenture de Carême avec un titre qui critique le consumisme ('La grande bouffe'), ce qui suggère un léger penchant à gauche envers les préoccupations environnementales et sociales. Le ton est réflexif mais fortement critiquant, sans biais clair vers aucun camp politique spécifique concernant des invités ou leur traitement.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

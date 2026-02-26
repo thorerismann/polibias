@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article maintains a neutral tone with slight left-leaning bias in framing due to the emphasis on community and local initiatives over traditional religious activities.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

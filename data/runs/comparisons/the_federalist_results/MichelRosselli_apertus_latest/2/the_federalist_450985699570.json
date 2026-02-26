@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "Democrats are demanding ID to shovel snow but oppose voter ID, which they claim is 'voter suppression'. The article highlights the hypocrisy and double standards in their stance.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_450985699570.json",
+  "prompt_hash": "1af9330e7254"
+}

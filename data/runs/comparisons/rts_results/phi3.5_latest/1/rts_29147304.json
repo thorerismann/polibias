@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente de manière neutre le sujet avec un léger penchant vers la description des réalisations sportives suisses sans une forte inclinaison politique partisane. Le ton est honorant mais pas excessivement favorable à l'un ou l'autre côté.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral view on the increasing demand for rituals in modern society, featuring perspectives from both religious and secular sources.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "1af9330e7254"
+}

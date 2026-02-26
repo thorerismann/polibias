@@ -3,14 +3,13 @@
 from __future__ import annotations
 
 import json
-from dataclasses import asdict, dataclass, is_dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Any, Dict, List, Optional
 from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
-from polibias.filenames import stable_article_filename
+from polibias.scraper_utils import scrape_urls
 
 
 # ---------- Schema ----------
@@ -212,12 +211,6 @@ def parse_html(url: str, timeout: int = 30) -> RTSArticle:
     )
 
 
-# ---------- Persistence ----------
-
-def _make_filename(article: dict) -> str:
-    return stable_article_filename(article, "rts")
-
-
 def scrape_articles(settings) -> None:
     """Fetch articles from the input URL list and save as JSON.
 
@@ -226,24 +219,6 @@ def scrape_articles(settings) -> None:
     webdata_dir = settings.source_webdata_dir("rts")
     webdata_dir.mkdir(parents=True, exist_ok=True)
 
-    with open(settings.input_file, "r") as f:
+    with open(settings.input_file, "r", encoding="utf-8") as f:
         urls = f.readlines()
-
-    for url in urls:
-        url = url.strip()
-        if not url.startswith("http"):
-            continue
-        try:
-            data = parse_html(url, timeout=settings.scrape_timeout)
-            if is_dataclass(data):
-                data = asdict(data)
-            fname = _make_filename(data)
-            save_path = webdata_dir / fname
-            if save_path.exists():
-                print(f"  [skip] {fname} already exists")
-                continue
-            with open(save_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"  [ok]   {fname}")
-        except Exception as e:
-            print(f"  [err]  {url}: {e}")
+    scrape_urls(urls, webdata_dir, "rts", parse_html, timeout=settings.scrape_timeout)

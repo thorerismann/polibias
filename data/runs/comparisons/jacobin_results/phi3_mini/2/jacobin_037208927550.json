@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "The article displays a slight left-leaning bias by emphasizing the potential negative aspects of private equity in sports financing and associating it with controversial political history.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

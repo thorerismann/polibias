@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.2,
+  "confidence": 0.7,
+  "comment": "The article presents a nuanced view of the Christian community in Israel, highlighting both the concerns of the patriarchs and the perspectives of those who support the sionism chrétien movement. However, the framing of the narrative leans towards criticizing the latter group.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

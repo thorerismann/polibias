@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.2,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a nuanced view of the drug trade, highlighting the limitations of the 'war on drugs' and the complexity of organized crime in Mexico. The author critiques the US foreign policy approach and challenges the conventional narrative about cartels, suggesting that they are not centralized organizations but rather networks of intermarried families and friends.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

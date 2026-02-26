@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.75,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.9,
+  "comment": "The article discusses a religious and political issue from an Israeli perspective without clear bias towards left or right ideologies.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

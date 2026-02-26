@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision générale de la situation des temples en Suisse, sans prendre position politique ou religieuse. La réorganisation des paroisses et l'engagement des associations locales pour créer des lieux communautaires sont présentés comme des solutions positives.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

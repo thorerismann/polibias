@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.8,
+  "guests_bias": "Non applicable (no clear political actors mentioned)",
+  "confidence": 0.95,
+  "comment": "The article has a left-leaning bias by discussing economic uncertainty and potential negative impacts of monetary policy changes without offering alternative perspectives typically associated with right-leaning viewpoints. The tone is critical towards market reactions to central bank decisions.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

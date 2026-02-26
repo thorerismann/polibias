@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses labor organizing strategies, leaning towards a more left-leaning perspective on worker empowerment and unionization.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "1af9330e7254"
+}

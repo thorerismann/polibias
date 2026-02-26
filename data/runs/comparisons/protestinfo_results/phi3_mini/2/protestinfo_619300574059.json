@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a neutral perspective on the closure of temples in Combremont-le-Petit and their transformation into community spaces by an association named 'Mil et Une Miches'. There is slight left bias due to focus on communal activities overrightsizing issues.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

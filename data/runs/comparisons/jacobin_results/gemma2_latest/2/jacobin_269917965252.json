@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article critiques the 'kingpin strategy' of drug enforcement, framing it as counterproductive and potentially destabilizing. While acknowledging the danger of cartels, it leans towards a more nuanced view of their structure and function.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

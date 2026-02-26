@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Der Autor diskutiert die Bedrohung durch eine mögliche Invasion Taiwans durch China, vergleicht sie mit dem Ukraine-Krieg und betont die potenziellen Risiken eines globalen Konflikts.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

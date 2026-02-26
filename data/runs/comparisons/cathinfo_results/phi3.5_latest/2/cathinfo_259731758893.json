@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente des informations factuelles sur les dates et la signification du Carême sans une inclinaison partisane évidente. La mention de l'Aïd-el-Fitr montre un peu d’équilibre mais reste neutre dans le contexte politique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_259731758893.json",
+  "prompt_hash": "1af9330e7254"
+}

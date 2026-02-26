@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.3,
+  "confidence": 0.4,
+  "comment": "The article presents factual details about the bar owner and the fire, with a slight negative framing due to past criminal activity mentioned. The quoted friend of the accused offers a sympathetic perspective.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "watson_104591318.json",
+  "prompt_hash": "1af9330e7254"
+}

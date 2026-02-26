@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses an artwork addressing global issues like climate change and social divisions. The artist expresses a cautious hope for raising awareness, without a strong partisan leaning.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

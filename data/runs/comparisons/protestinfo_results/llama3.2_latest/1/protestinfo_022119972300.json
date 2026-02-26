@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.8,
+  "guests_bias": 1.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision très positive de la pension Bienvenue et de son modèle d'habitation exclusivement féminin, sans critiquer ni remettre en question les règles de non-mixité de genres. Le ton est accueillant et compréhensif, avec des citations de femmes qui ont vécu dans le lieu et qui en parlent avec enthousiasme. Cependant, il conviendrait de noter que l'article ne présente pas d'opposition ou de critique à ce modèle, ce qui pourrait être considéré comme un manque de diversité de perspective.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

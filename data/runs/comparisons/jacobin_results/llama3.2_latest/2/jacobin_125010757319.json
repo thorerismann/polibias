@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article portrays Rodrigo Chaves's administration as populist and confrontational, with a focus on dismantling the welfare state and restricting access to reproductive health services. The tone is critical of Chaves's approach, suggesting that it is right-leaning or favorable to the right.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "1af9330e7254"
+}

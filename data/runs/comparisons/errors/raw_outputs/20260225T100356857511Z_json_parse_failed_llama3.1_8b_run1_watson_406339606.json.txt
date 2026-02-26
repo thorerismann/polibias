@@ -1,0 +1,8 @@
+{ "article": {
+  "title": "",
+  "content": [
+    { "text": "Restprogramm: Langnau (h), Ambri (a), Kloten (h), Lausanne (a), Zürich (a), Biel (h)." },
+    { "text": "Selbst wenn der HC Davos den Rest seiner Spiele verlieren sollte, dürfte er sich den Qualifikations-Sieg holen. Der Vorsprung auf Fribourg beträgt 14 Punkte, die Drachen haben aber nur noch fünf Spiele im Programm und können also maximal 15 Punkte holen." },
+    { "text": "Für Davos geht es im Rest der Qualifikation darum, sich bestmöglich auf die Playoffs vorzubereiten. Dazu müssen sie ihre Form stabilisieren und ihre Stärken ausnutzen." },
+    { "text": "Die direkte Playoff-Qualifikation ist für den HC Davos keine Garantie, aber es ist eine gute Chance, sich für die Playoffs zu qualifizieren." },
+    { "text": "Das Restprogramm der anderen Teams zeigt, dass es

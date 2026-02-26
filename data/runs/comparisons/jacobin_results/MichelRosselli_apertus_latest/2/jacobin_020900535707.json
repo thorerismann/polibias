@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the rise of mother-led movements in Sweden demanding public accountability for children's rights to care, safety, and recognition. The framing is left-leaning as it highlights issues such as underfunding of support services and discrimination faced by mothers with disabilities. The treatment bias leans towards the left as it favors the perspectives of these grassroots movements over more traditional political actors.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

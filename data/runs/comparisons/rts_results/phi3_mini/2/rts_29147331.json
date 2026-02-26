@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.95,
+  "comment": "The article presents a balanced view of the Swiss athletes' performances but leans slightly towards highlighting their shortcomings in snowboard halfpipe and biathlon events.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

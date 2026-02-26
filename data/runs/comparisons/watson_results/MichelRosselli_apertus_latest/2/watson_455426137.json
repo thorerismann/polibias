@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article reports on a security breach at Donald Trump's Mar-a-Lago estate in Florida, where an armed man was shot and killed by Secret Service agents. The subject of the article is neutral as it does not involve any political commentary or advocacy for either side.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_455426137.json",
+  "prompt_hash": "1af9330e7254"
+}

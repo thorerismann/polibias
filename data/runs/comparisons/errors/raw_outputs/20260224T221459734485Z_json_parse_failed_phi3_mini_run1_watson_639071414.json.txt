@@ -1,0 +1,18 @@
+{
+    "title": "<Article Title>",
+    "content": [
+        {
+            "sentence": "Der russische Krieg gegen die Ukraine geht ins fünfte Jahr.",
+            "question": ""
+        },
+        {
+            "sentence": "Wer ist aktuell im Vorteil, die Russen oder die Ukrainer?",
+            "question": "Im Moment sieht es so aus, dass die Ukrainer wieder einen leichten Vorteil haben. Das hat damit zu tun, dass Elon Musk die Russen von seinem Satellitensystem Starlink ausgeschlossen hat."
+        },
+        {
+            "sentence": "Wie wichtig war dieser Erfolg?",
+            "question": "Es ist kein 'Game Changer', aber doch ein erheblicher Bremsklotz für die Russen. Die Ukrainer haben Gebiete zurückerobern in der Grössenordnung von etwa 200 Quadratkilometern."
+        },
+        {
+            "sentence": "Wie stabil ist Russlands Wirtschaft nach 4 Jahren Krieg?",
+            "question": "Die

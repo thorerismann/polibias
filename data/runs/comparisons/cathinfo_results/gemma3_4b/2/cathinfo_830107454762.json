@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily frames the conflict as a dispute over authority and representation within the Christian community in Jerusalem, highlighting concerns about political influence and potential harm to the Christian presence. It presents a nuanced view, acknowledging diverse viewpoints within the Christian community, including those who advocate for a more pro-government stance.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

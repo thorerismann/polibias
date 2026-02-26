@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article advocates for an investigative commission to explore potential irregularities in the Epstein case, focusing on issues of foreign interference, illegal financing, and potential involvement of French political figures. It frames the need for transparency and accountability within the French justice system, while acknowledging the complexities and potential for conspiracy theories.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

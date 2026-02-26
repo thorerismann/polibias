@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.65,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans left due to its focus on public accountability and social justice for care-related issues; it frames these movements positively as grassroots responses rather than through a critical lens that might suggest systemic failures or criticisms of the status quo. There are no specific guests mentioned, so their bias cannot be assessed.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

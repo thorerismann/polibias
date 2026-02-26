@@ -1,0 +1,22 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.1,
+  "confidence": 0.6,
+  "comment": "The article focuses on a Christian ski association, suggesting a slight right-leaning subject bias. The framing is neutral overall, but the emphasis on faith and evangelism leans slightly right. ",
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

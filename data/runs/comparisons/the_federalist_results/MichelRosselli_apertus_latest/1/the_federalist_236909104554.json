@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the controversy surrounding mifepristone, an abortion drug, and the Biden administration's expansion of its use without medical oversight. It highlights concerns from pro-life organizations and Republican lawmakers about the safety risks associated with the drug, particularly for women and unborn babies. The article also touches on states' struggles to enforce their laws limiting mail-order mifepristone due to federal actions.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_236909104554.json",
+  "prompt_hash": "1af9330e7254"
+}

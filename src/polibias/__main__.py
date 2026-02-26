@@ -6,7 +6,6 @@ Grouped command usage::
     python -m polibias scrape --source rts
     python -m polibias scrape --source the_federalist --limit 20
     python -m polibias scrape --source watson --limit 20
-    python -m polibias scrape --source lib_inst --limit 20
     python -m polibias scrape --source protestinfo --limit 20
     python -m polibias scrape --source cathinfo --limit 20
     python -m polibias score --source all
@@ -20,7 +19,6 @@ Grouped command usage::
     python -m polibias viz                        # main report.html
     python -m polibias viz --source rts
     python -m polibias viz --source watson
-    python -m polibias viz --source lib_inst
     python -m polibias viz --source protestinfo
     python -m polibias viz --source cathinfo
     python -m polibias viz --source all           # cross-source report_all.html
@@ -47,7 +45,6 @@ SOURCE_CHOICES = [
     "the_federalist",
     "jacobin",
     "watson",
-    "lib_inst",
     "protestinfo",
     "cathinfo",
     "all",
@@ -55,7 +52,6 @@ SOURCE_CHOICES = [
 SOURCE_ALIAS = {
     "fed": "the_federalist",
     "federalist": "the_federalist",
-    "libinst": "lib_inst",
     "watson_fr": "watson",
     "protestantinfo": "protestinfo",
 }
@@ -65,7 +61,7 @@ QUICK_HELP = """polibias quick help
 Core idea
   --run-dir selects which run folder under data/runs/ to use.
   --source selects which source to act on
-    (rts, the_federalist, jacobin, watson, lib_inst, protestinfo, cathinfo, all).
+    (rts, the_federalist, jacobin, watson, protestinfo, cathinfo, all).
 
 Important
   There is no --source-dir flag.
@@ -87,7 +83,6 @@ Visualization
   polibias viz --run-dir exp_a --source the_federalist
   polibias viz --run-dir exp_a --source jacobin
   polibias viz --run-dir exp_a --source watson
-  polibias viz --run-dir exp_a --source lib_inst
   polibias viz --run-dir exp_a --source protestinfo
   polibias viz --run-dir exp_a --source cathinfo
   polibias viz --run-dir exp_a --source all
@@ -122,7 +117,6 @@ def _translate_legacy_argv(argv: list[str]) -> list[str]:
         "viz-fed": ["viz", "--source", "the_federalist"],
         "viz-jacobin": ["viz", "--source", "jacobin"],
         "viz-all": ["viz", "--source", "all"],
-        "bambi": ["bambi", "analyze"],
         "bambi-analyse": ["bambi", "analyze"],
         "bambi-viz": ["bambi", "viz"],
     }
@@ -152,7 +146,13 @@ def _run_scrape(settings: Settings) -> None:
     print("  Scraping complete.")
 
 
-def _load_source_urls(settings: Settings, source: str, urls_file: Path | None) -> list[str]:
+def _load_source_urls(
+    settings: Settings,
+    source: str,
+    urls_file: Path | None,
+    *,
+    limit: int | None = None,
+) -> list[str]:
     path = Path(urls_file) if urls_file else settings.data_dir / "input_files" / f"{source}_links.txt"
     if not path.exists():
         print(f"  ERROR: URL list not found for source '{source}': {path}")
@@ -162,6 +162,8 @@ def _load_source_urls(settings: Settings, source: str, urls_file: Path | None) -
     if not urls:
         print(f"  ERROR: URL list is empty for source '{source}': {path}")
         sys.exit(1)
+    if limit is not None and limit > 0:
+        urls = urls[:limit]
     return urls
 
 
@@ -169,7 +171,7 @@ def _run_scrape_federalist(settings: Settings, limit: int, urls_file: Path | Non
     from polibias.scraper_federalist import scrape_federalist
 
     out_dir = settings.source_webdata_dir("the_federalist")
-    urls = _load_source_urls(settings, "the_federalist", urls_file)
+    urls = _load_source_urls(settings, "the_federalist", urls_file, limit=limit)
     src = urls_file if urls_file else settings.data_dir / "input_files" / "the_federalist_links.txt"
     print(f"\nScraping {len(urls)} Federalist URLs from {src} → {out_dir}")
     scrape_federalist(urls, out_dir, timeout=settings.scrape_timeout)
@@ -180,7 +182,7 @@ def _run_scrape_jacobin(settings: Settings, limit: int, urls_file: Path | None) 
     from polibias.scraper_jacobin import scrape_jacobin
 
     out_dir = settings.source_webdata_dir("jacobin")
-    urls = _load_source_urls(settings, "jacobin", urls_file)
+    urls = _load_source_urls(settings, "jacobin", urls_file, limit=limit)
     src = urls_file if urls_file else settings.data_dir / "input_files" / "jacobin_links.txt"
     print(f"\nScraping {len(urls)} Jacobin URLs from {src} → {out_dir}")
     scrape_jacobin(urls, out_dir, timeout=settings.scrape_timeout)
@@ -191,29 +193,18 @@ def _run_scrape_watson(settings: Settings, limit: int, urls_file: Path | None) -
     from polibias.scraper_watson import scrape_watson
 
     out_dir = settings.source_webdata_dir("watson")
-    urls = _load_source_urls(settings, "watson", urls_file)
+    urls = _load_source_urls(settings, "watson", urls_file, limit=limit)
     src = urls_file if urls_file else settings.data_dir / "input_files" / "watson_links.txt"
     print(f"\nScraping {len(urls)} Watson URLs from {src} → {out_dir}")
     scrape_watson(urls, out_dir, timeout=settings.scrape_timeout)
     print("  Watson scraping complete.")
 
 
-def _run_scrape_lib_inst(settings: Settings, limit: int, urls_file: Path | None) -> None:
-    from polibias.scraper_lib_inst import scrape_lib_inst
-
-    out_dir = settings.source_webdata_dir("lib_inst")
-    urls = _load_source_urls(settings, "lib_inst", urls_file)
-    src = urls_file if urls_file else settings.data_dir / "input_files" / "lib_inst_links.txt"
-    print(f"\nScraping {len(urls)} Lib Inst URLs from {src} → {out_dir}")
-    scrape_lib_inst(urls, out_dir, timeout=settings.scrape_timeout)
-    print("  Lib Inst scraping complete.")
-
-
 def _run_scrape_protestinfo(settings: Settings, limit: int, urls_file: Path | None) -> None:
     from polibias.scraper_protestinfo import scrape_protestinfo
 
     out_dir = settings.source_webdata_dir("protestinfo")
-    urls = _load_source_urls(settings, "protestinfo", urls_file)
+    urls = _load_source_urls(settings, "protestinfo", urls_file, limit=limit)
     src = urls_file if urls_file else settings.data_dir / "input_files" / "protestinfo_links.txt"
     print(f"\nScraping {len(urls)} Protestinfo URLs from {src} → {out_dir}")
     scrape_protestinfo(urls, out_dir, timeout=settings.scrape_timeout)
@@ -224,7 +215,7 @@ def _run_scrape_cathinfo(settings: Settings, limit: int, urls_file: Path | None)
     from polibias.scraper_cathinfo import scrape_cathinfo
 
     out_dir = settings.source_webdata_dir("cathinfo")
-    urls = _load_source_urls(settings, "cathinfo", urls_file)
+    urls = _load_source_urls(settings, "cathinfo", urls_file, limit=limit)
     src = urls_file if urls_file else settings.data_dir / "input_files" / "cathinfo_links.txt"
     print(f"\nScraping {len(urls)} Cathinfo URLs from {src} → {out_dir}")
     scrape_cathinfo(urls, out_dir, timeout=settings.scrape_timeout)
@@ -237,7 +228,6 @@ def _run_scrape_all_with_input_files(settings: Settings) -> None:
         ("the_federalist", _run_scrape_federalist),
         ("jacobin", _run_scrape_jacobin),
         ("watson", _run_scrape_watson),
-        ("lib_inst", _run_scrape_lib_inst),
         ("protestinfo", _run_scrape_protestinfo),
         ("cathinfo", _run_scrape_cathinfo),
     ]
@@ -341,13 +331,13 @@ def _run_bambi_viz(settings: Settings) -> None:
     print("  Bayesian report complete.")
 
 
-def _run_viz(settings: Settings) -> None:
+def _run_viz(settings: Settings, *, run: int | None = None) -> None:
     import webbrowser
 
     from polibias.export import run_export
 
     print("\nGenerating HTML report ...")
-    run_export(settings)
+    run_export(settings, run=run)
 
     report_path = settings.report_html_path
     if report_path.exists():
@@ -360,7 +350,7 @@ def _run_viz(settings: Settings) -> None:
         sys.exit(1)
 
 
-def _run_viz_source(settings: Settings, source: str, *, output_name: str) -> None:
+def _run_viz_source(settings: Settings, source: str, *, output_name: str, run: int | None = None) -> None:
     import webbrowser
 
     from polibias.export import run_export
@@ -369,6 +359,7 @@ def _run_viz_source(settings: Settings, source: str, *, output_name: str) -> Non
     run_export(
         settings,
         source=source,
+        run=run,
         output_filename=output_name,
         include_tables=False,
         write_artifacts=False,
@@ -384,7 +375,7 @@ def _run_viz_source(settings: Settings, source: str, *, output_name: str) -> Non
         sys.exit(1)
 
 
-def _run_viz_all(settings: Settings) -> None:
+def _run_viz_all(settings: Settings, *, run: int | None = None) -> None:
     import webbrowser
 
     from polibias.export import run_export, run_export_cross_source
@@ -394,7 +385,6 @@ def _run_viz_all(settings: Settings) -> None:
         ("the_federalist", "report_fed.html"),
         ("jacobin", "report_jacobin.html"),
         ("watson", "report_watson.html"),
-        ("lib_inst", "report_lib_inst.html"),
         ("protestinfo", "report_protestinfo.html"),
         ("cathinfo", "report_cathinfo.html"),
     ]
@@ -404,6 +394,7 @@ def _run_viz_all(settings: Settings) -> None:
             run_export(
                 settings,
                 source=source,
+                run=run,
                 output_filename=output_name,
                 include_tables=False,
                 write_artifacts=False,
@@ -415,7 +406,12 @@ def _run_viz_all(settings: Settings) -> None:
         sys.exit(1)
 
     print("\nGenerating cross-source report ...")
-    run_export_cross_source(settings, output_filename="report_all.html", source_reports=generated)
+    run_export_cross_source(
+        settings,
+        run=run,
+        output_filename="report_all.html",
+        source_reports=generated,
+    )
 
     report_path = settings.run_dir / "report_all.html"
     if report_path.exists():
@@ -431,11 +427,18 @@ def _run_check(settings: Settings) -> None:
     print("\nPipeline save-path check")
     print(f"  run dir: {settings.run_dir}")
     web_count = sum(len(list(d.glob("*.json"))) for d in settings.all_source_webdata_dirs)
-    result_count = len(list(settings.results_dir.rglob("*.json")))
+    legacy_result_count = len(list(settings.results_dir.rglob("*.json")))
+    source_result_count = 0
     for src_results in settings.run_dir.glob("*_results"):
-        result_count += len(list(src_results.rglob("*.json")))
+        source_result_count += len(list(src_results.rglob("*.json")))
+    total_result_count = legacy_result_count + source_result_count
     print(f"  webdata JSONs: {web_count}")
-    print(f"  result JSONs: {result_count}")
+    print(
+        "  result JSONs: "
+        f"legacy={legacy_result_count}, "
+        f"per-source={source_result_count}, "
+        f"total={total_result_count}"
+    )
     print(
         "  aggregate CSVs: "
         f"bias_data.csv={'yes' if settings.bias_csv_path.exists() else 'no'}, "
@@ -523,15 +526,15 @@ def _build_parser() -> argparse.ArgumentParser:
     p_scrape = subparsers.add_parser("scrape", parents=[common], help="Scrape article sources")
     p_scrape.add_argument(
         "--source",
-        default="rts",
+        default="all",
         choices=SOURCE_CHOICES,
-        help="Source to scrape (default: rts)",
+        help="Source to scrape (default: all)",
     )
     p_scrape.add_argument(
         "--limit",
         type=int,
         default=20,
-        help="Max articles to fetch for homepage-backed scrapers.",
+        help="Max URLs to process for scrape commands that take URL lists.",
     )
     p_scrape.add_argument(
         "--urls-file",
@@ -567,6 +570,12 @@ def _build_parser() -> argparse.ArgumentParser:
         choices=["default", *SOURCE_CHOICES],
         help="default=report.html, all=report_all.html, otherwise source-specific report",
     )
+    p_viz.add_argument(
+        "--run",
+        type=int,
+        default=None,
+        help="Optional scoring run number to include in charts/tables.",
+    )
 
     p_upload = subparsers.add_parser("upload", parents=[common], help="Upload run outputs to GCS")
     p_upload.add_argument(
@@ -577,8 +586,13 @@ def _build_parser() -> argparse.ArgumentParser:
 
     p_bambi = subparsers.add_parser("bambi", parents=[common], help="Bayesian audit tools")
     p_bambi_sub = p_bambi.add_subparsers(dest="bambi_command")
-    p_bambi_sub.add_parser("viz", help="Build Bayesian HTML report")
-    p_bambi_sub.add_parser("analyze", aliases=["analyse"], help="Run Bayesian fit + holdout")
+    p_bambi_sub.add_parser("viz", parents=[common], help="Build Bayesian HTML report")
+    p_bambi_sub.add_parser(
+        "analyze",
+        aliases=["analyse"],
+        parents=[common],
+        help="Run Bayesian fit + holdout",
+    )
     p_bambi.set_defaults(bambi_command="analyze")
     p_bambi.add_argument("--bayes-draws", type=int, default=1500, help="Bambi posterior draws.")
     p_bambi.add_argument("--bayes-tune", type=int, default=1500, help="Bambi warmup/tune steps.")
@@ -637,20 +651,12 @@ def _dispatch_command(args: argparse.Namespace, settings: Settings, parser: argp
             _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
         elif source == "watson":
             _run_scrape_watson(settings, limit=args.limit, urls_file=args.urls_file)
-        elif source == "lib_inst":
-            _run_scrape_lib_inst(settings, limit=args.limit, urls_file=args.urls_file)
         elif source == "protestinfo":
             _run_scrape_protestinfo(settings, limit=args.limit, urls_file=args.urls_file)
         elif source == "cathinfo":
             _run_scrape_cathinfo(settings, limit=args.limit, urls_file=args.urls_file)
         else:
-            _run_scrape(settings)
-            _run_scrape_federalist(settings, limit=args.limit, urls_file=args.urls_file)
-            _run_scrape_jacobin(settings, limit=args.limit, urls_file=args.urls_file)
-            _run_scrape_watson(settings, limit=args.limit, urls_file=args.urls_file)
-            _run_scrape_lib_inst(settings, limit=args.limit, urls_file=args.urls_file)
-            _run_scrape_protestinfo(settings, limit=args.limit, urls_file=args.urls_file)
-            _run_scrape_cathinfo(settings, limit=args.limit, urls_file=args.urls_file)
+            _run_scrape_all_with_input_files(settings)
         print("\nDone.")
         return
 
@@ -689,25 +695,25 @@ def _dispatch_command(args: argparse.Namespace, settings: Settings, parser: argp
         return
 
     if args.command == "viz":
+        if args.run is not None and args.run < 1:
+            parser.error("--run must be >= 1")
         source = _normalize_source(args.source)
         if source == "default":
-            _run_viz(settings)
+            _run_viz(settings, run=args.run)
         elif source == "all":
-            _run_viz_all(settings)
+            _run_viz_all(settings, run=args.run)
         elif source == "rts":
-            _run_viz_source(settings, "rts", output_name="report_rts.html")
+            _run_viz_source(settings, "rts", output_name="report_rts.html", run=args.run)
         elif source == "the_federalist":
-            _run_viz_source(settings, "the_federalist", output_name="report_fed.html")
+            _run_viz_source(settings, "the_federalist", output_name="report_fed.html", run=args.run)
         elif source == "jacobin":
-            _run_viz_source(settings, "jacobin", output_name="report_jacobin.html")
+            _run_viz_source(settings, "jacobin", output_name="report_jacobin.html", run=args.run)
         elif source == "watson":
-            _run_viz_source(settings, "watson", output_name="report_watson.html")
-        elif source == "lib_inst":
-            _run_viz_source(settings, "lib_inst", output_name="report_lib_inst.html")
+            _run_viz_source(settings, "watson", output_name="report_watson.html", run=args.run)
         elif source == "protestinfo":
-            _run_viz_source(settings, "protestinfo", output_name="report_protestinfo.html")
+            _run_viz_source(settings, "protestinfo", output_name="report_protestinfo.html", run=args.run)
         elif source == "cathinfo":
-            _run_viz_source(settings, "cathinfo", output_name="report_cathinfo.html")
+            _run_viz_source(settings, "cathinfo", output_name="report_cathinfo.html", run=args.run)
         print("\nDone.")
         return
 

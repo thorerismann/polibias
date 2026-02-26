@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une présentation équilibrée de l'engagement de Markus Cott en faveur des personnes défavorisées, mais manque de détails sur son engagement politique spécifique. La mention de la musique comme piste pour promouvoir la dimension universelle de l'Église est une approche positive et inclusive.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_034785673294.json",
+  "prompt_hash": "1af9330e7254"
+}

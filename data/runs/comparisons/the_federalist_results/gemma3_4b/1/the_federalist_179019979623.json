@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "This article exhibits a strongly negative and critical framing of Gavin Newsom, portraying him as a deliberately deceptive and vulgar performer mimicking Donald Trump. The treatment is overwhelmingly unfavorable, focusing on Newsom's perceived strategic missteps and lack of genuine understanding, while highlighting examples of perceived right-leaning behavior.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_179019979623.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article highlights losses in union membership within sectors like manufacturing and logistics while also noting growth elsewhere; it implies a negative view of unions with terms such as 'anti-union' shippers and criticizes the decline without offering substantial support for labor movements. The overall tone suggests leftward bias, though specific political actors are not extensively quoted or featured to establish guests_bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

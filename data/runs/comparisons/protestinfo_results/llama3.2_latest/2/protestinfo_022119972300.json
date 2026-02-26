@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.02,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision positive de la pension Bienvenue, mettant en avant les avantages d'une non-mixité de genres et de diversité sociale pour les femmes. Les citations des dirigeantes de l'association soulignent l'importance de créer un espace sécuritaire féminin. Cependant, il est important de noter que le ton est neutre et ne présente pas de critique ni d'argumentation contre la non-mixité de genres.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

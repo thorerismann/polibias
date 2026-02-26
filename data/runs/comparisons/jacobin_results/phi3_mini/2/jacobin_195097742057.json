@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of contemporary political dynamics with some left-leaning undertones but avoids strong bias against any particular side.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "1af9330e7254"
+}

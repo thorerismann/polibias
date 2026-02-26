@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.8,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision positive et favorable à la foi chrétienne dans le monde du ski, avec des citations d'un co-fondateur de l'association qui souligne les bénéfices de la foi pour les skieurs. Le ton est convivial et encourageant, ce qui suggère un traitement favorables à la religion et aux valeurs chrétiennes.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "1af9330e7254"
+}

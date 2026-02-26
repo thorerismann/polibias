@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the need for an investigative commission to handle a complex case involving child sexual abuse and human trafficking, as well as potential foreign interference and illegal financing in French politics. The author emphasizes that such a commission would allow victims to testify and provide clarity on murky points, including potential involvement of high-profile figures.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

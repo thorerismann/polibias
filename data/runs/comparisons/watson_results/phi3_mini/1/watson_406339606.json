@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.5,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.8,
+  "comment": "The article appears to have a slight left-leaning bias due to its focus on the EVZ Tigers and their successes despite injuries; however, it maintains neutrality towards both teams' playoff chances.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "watson_406339606.json",
+  "prompt_hash": "1af9330e7254"
+}

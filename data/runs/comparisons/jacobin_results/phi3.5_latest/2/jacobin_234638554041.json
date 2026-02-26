@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left with a focus on investigating potential political corruption and misconduct related to child sexual abuse cases involving Epstein's network in France. The framing suggests skepticism towards French institutions handling these issues effectively. Quoted guests are predominantly from parties perceived as more critical of establishment politics, indicating a left-leaning bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

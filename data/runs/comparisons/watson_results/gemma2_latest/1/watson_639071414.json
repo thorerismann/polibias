@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on the ongoing war in Ukraine and presents a largely negative view of Russia's actions. However, it also acknowledges some internal pressures on Putin and potential limitations to his military capabilities.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "watson_639071414.json",
+  "prompt_hash": "1af9330e7254"
+}

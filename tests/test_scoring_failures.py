@@ -39,6 +39,12 @@ def _mk_article(tmp_path: Path) -> Path:
     return p
 
 
+def _mk_article_with_body(tmp_path: Path, body) -> Path:  # noqa: ANN001
+    p = tmp_path / "article_body.json"
+    p.write_text(json.dumps({"body": body}), encoding="utf-8")
+    return p
+
+
 def test_parse_failure_logs_raw_output_file(tmp_path: Path) -> None:
     settings = _mk_settings(tmp_path, parse_retries=0)
     article = _mk_article(tmp_path)
@@ -79,5 +85,95 @@ def test_retry_recovers_after_invalid_json(tmp_path: Path) -> None:
 
     result = score_one_article(client, article, "m1", 1, settings)
 
-    assert result["status"] == "recovered"
+    assert result["status"] == "ok"
     assert result["comment"] == "recovered"
+
+
+def test_missing_body_returns_fallback_without_raising(tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path, parse_retries=0)
+    article = _mk_article_with_body(tmp_path, None)
+    client = _Client([json.dumps({"subject_bias": 0.1})])
+
+    result = score_one_article(client, article, "m1", 1, settings)
+
+    assert result["status"] == "fallback"
+    err_log = settings.errors_dir / "errors.jsonl"
+    assert err_log.exists()
+    entries = [json.loads(line) for line in err_log.read_text(encoding="utf-8").splitlines()]
+    assert any(e["stage"] == "missing_article_body" for e in entries)
+
+
+def test_bias_scores_are_clamped_to_unit_interval(tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path, parse_retries=0)
+    article = _mk_article(tmp_path)
+    client = _Client(
+        [
+            json.dumps(
+                {
+                    "subject_bias": 4.2,
+                    "framing_bias": -9.9,
+                    "treatment_bias": "0.4",
+                    "guests_bias": "-0.25",
+                    "confidence": "0.8",
+                    "comment": "ok",
+                }
+            )
+        ]
+    )
+
+    result = score_one_article(client, article, "m1", 1, settings)
+
+    assert result["status"] == "ok"
+    assert result["subject_bias"] == 1.0
+    assert result["framing_bias"] == -1.0
+    assert result["treatment_bias"] == 0.4
+    assert result["guests_bias"] == -0.25
+
+
+def test_malformed_comment_tail_is_recovered_locally(tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path, parse_retries=0)
+    article = _mk_article(tmp_path)
+    broken = (
+        '{'
+        '"subject_bias": -0.1,'
+        '"framing_bias": 0.3,'
+        '"treatment_bias": 0.2,'
+        '"guests_bias": 0.0,'
+        '"confidence": 0.8,'
+        '"comment": "first comment",'
+        '"first comment": "trailing garbage that should be ignored'
+    )
+    client = _Client([broken])
+
+    result = score_one_article(client, article, "m1", 1, settings)
+
+    assert result["status"] == "recovered"
+    assert result["comment"] == "first comment"
+    err_log = settings.errors_dir / "errors.jsonl"
+    entries = [json.loads(line) for line in err_log.read_text(encoding="utf-8").splitlines()]
+    assert any(e["stage"] == "json_recovered" for e in entries)
+
+
+def test_missing_required_keys_triggers_retry(tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path, parse_retries=1)
+    article = _mk_article(tmp_path)
+    client = _Client(
+        [
+            json.dumps({"subject_bias": 0.1}),
+            json.dumps(
+                {
+                    "subject_bias": 0.1,
+                    "framing_bias": 0.2,
+                    "treatment_bias": 0.3,
+                    "guests_bias": 0.4,
+                    "confidence": 0.9,
+                    "comment": "after retry",
+                }
+            ),
+        ]
+    )
+
+    result = score_one_article(client, article, "m1", 1, settings)
+
+    assert result["status"] == "ok"
+    assert result["comment"] == "after retry"

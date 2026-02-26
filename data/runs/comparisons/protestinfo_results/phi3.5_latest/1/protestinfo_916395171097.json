@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article semble légèrement favoriser une perspective critique ou alternative sur le sujet du catholicisme intégriste sans forte orientation politique claire; les invités ne sont pas explicitement politiquement alignés.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

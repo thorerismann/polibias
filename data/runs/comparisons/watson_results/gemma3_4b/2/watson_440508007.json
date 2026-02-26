@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a negative outcome for Trump due to the court rulings on tariffs, but also highlights potential avenues for Swiss companies to recover funds. The Swiss government's cautious approach reflects the ongoing uncertainty surrounding the US trade policy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_440508007.json",
+  "prompt_hash": "1af9330e7254"
+}

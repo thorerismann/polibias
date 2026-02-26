@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the history of Lincoln Hospital's takeover by Young Lords activists and the creation of the People's Program, which later became Lincoln Detox Center. The framing is generally critical of the existing healthcare system and supportive of the activist efforts to improve health services in underserved communities.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "1af9330e7254"
+}

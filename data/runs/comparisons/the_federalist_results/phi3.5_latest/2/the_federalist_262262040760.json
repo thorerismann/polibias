@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans left due to its critical tone towards the Biden-era Medicaid expansions and positive framing of Republican reforms as common sense solutions for slowing spending growth; it also presents a negative portrayal of Democrats' handling without explicitly supporting one side. The guests or speakers are not clearly partisan, hence neutrality in bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.1,
+  "confidence": 0.7,
+  "comment": "The article focuses on a controversial case of alleged hate crime, framing it as potentially unjust due to the nature of the evidence presented. Quotes from legal experts lean left in their criticism.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

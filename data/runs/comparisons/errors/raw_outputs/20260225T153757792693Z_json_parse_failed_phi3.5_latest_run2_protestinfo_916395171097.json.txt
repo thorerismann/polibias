@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article aborde le catholicisme avec un léger penchant vers les perspectives intégristes ou conservatrices en raison de la mention d'intéressés spécifiques sur ce sujet; cependant, il n'est pas fortement biaisé à gauche. Les invités ne sont pas clairement politiquement orientés dans le texte fourni. Confiance élevée car les données textuelles suggèrent un léger penchant sans preuve solide d'une inclinaison marquée.",
+  "raw_json": {
+    "subject_bias": -0.1,
+    "framing_bias": -0.2,
+    "treatment_bias": -0.15,
+    "guests_bias": 

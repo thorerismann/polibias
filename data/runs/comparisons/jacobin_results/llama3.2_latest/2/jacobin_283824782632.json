@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.6,
+  "comment": "The article presents a neutral tone, but the framing bias is slightly left-leaning due to the emphasis on union growth and decline in certain sectors. The treatment bias is also left-leaning as the article highlights the struggles of mining and drilling workers and their unions.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

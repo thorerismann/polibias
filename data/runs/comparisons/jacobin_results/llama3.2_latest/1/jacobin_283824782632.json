@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "However, some might argue that the article's emphasis on the struggles of certain unions, such as those in logistics and manufacturing, could be seen as slightly left-leaning due to its critical tone towards anti-union practices.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

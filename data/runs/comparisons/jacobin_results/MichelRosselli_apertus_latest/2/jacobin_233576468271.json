@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the origins and influences of power research, with a focus on personal experiences and academic background. It does not show any clear bias towards left or right political leanings.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the need for an investigative commission to clarify aspects of the Epstein case in France, including potential child sexual abuse and human trafficking, foreign interference, and illegal financing. The focus is on transparency and clarity rather than taking a political stance.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

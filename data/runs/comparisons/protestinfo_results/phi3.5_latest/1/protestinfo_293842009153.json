@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.65,
+  "guests_bias": "Not applicable due to lack of political figures mentioned.",
+  "confidence": 0.9,
+  "comment": "The article suggests a critical stance towards the collaboration by questioning its impact on service efficiency and implying potential negative consequences without clear evidence or alternative perspectives provided.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "1af9330e7254"
+}

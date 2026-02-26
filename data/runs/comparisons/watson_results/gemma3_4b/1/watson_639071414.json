@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article leans slightly towards a negative view of Russia's situation, highlighting economic struggles and Putin's intransigence. It frames the conflict as a Ukrainian advantage due to factors like Starlink and the ongoing challenges faced by the Russian economy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_639071414.json",
+  "prompt_hash": "1af9330e7254"
+}

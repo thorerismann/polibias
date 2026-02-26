@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article expresses concern about the increasing influence of AI in education, framing it as a potential threat to parental authority and traditional family values. It highlights the lack of parental involvement in decisions regarding AI implementation and suggests a shift in power dynamics, leaning towards a critique of technological advancements.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "This article appears to have a strong left-leaning bias, focusing on criticisms of neoliberalism and the decline of institutionalized politics. The author's tone is critical of Western democracy and its failure to address social issues.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "1af9330e7254"
+}

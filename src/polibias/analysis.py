@@ -24,18 +24,7 @@ def build_bias_frame(settings) -> pd.DataFrame:
     """
     rows = []
 
-    # Collect all candidate (source, model_dir) pairs to scan
-    def _iter_model_dirs(base_dir, source_label):
-        for run in range(1, settings.runs + 1):
-            for model in settings.models:
-                canonical = base_dir / settings.model_output_dirname(model) / str(run)
-                legacy = base_dir / model.replace(":", "_") / str(run)
-                for d in {canonical, legacy}:
-                    if d.is_dir():
-                        yield source_label, run, model, d
-
-    # Legacy flat results/ dir (pre-source-split runs)
-    for source, run, model, model_dir in _iter_model_dirs(settings.results_dir, "rts"):
+    def _append_rows_from_model_dir(source: str, model: str, run: int, model_dir: Path) -> None:
         for p in model_dir.glob("*.json"):
             data = json.loads(p.read_text(encoding="utf-8"))
             rows.append({
@@ -52,28 +41,27 @@ def build_bias_frame(settings) -> pd.DataFrame:
                 "run": run,
             })
 
+    # Collect all candidate (source, model_dir) pairs to scan
+    def _iter_model_dirs(base_dir, source):
+        for run in range(1, settings.runs + 1):
+            for model in settings.models:
+                canonical = base_dir / settings.model_output_dirname(model) / str(run)
+                legacy = base_dir / model.replace(":", "_") / str(run)
+                for d in {canonical, legacy}:
+                    if d.is_dir():
+                        yield source, run, model, d
+
+    # Legacy flat results/ dir (pre-source-split runs)
+    for source, run, model, model_dir in _iter_model_dirs(settings.results_dir, "rts"):
+        _append_rows_from_model_dir(source, model, run, model_dir)
+
     # Per-source results dirs (<source>_results/)
     for src_dir in sorted(settings.run_dir.glob("*_results")):
         if not src_dir.is_dir():
             continue
-        # Derive source label from directory name, e.g. "rts_results" -> "rts"
-        source_label = src_dir.name.removesuffix("_results")
-        for source, run, model, model_dir in _iter_model_dirs(src_dir, source_label):
-            for p in model_dir.glob("*.json"):
-                data = json.loads(p.read_text(encoding="utf-8"))
-                rows.append({
-                    "source": source_label,
-                    "model": model,
-                    "article_id": p.stem,
-                    "subject_bias": data.get("subject_bias"),
-                    "framing_bias": data.get("framing_bias"),
-                    "treatment_bias": data.get("treatment_bias"),
-                    "guests_bias": data.get("guests_bias"),
-                    "confidence": data.get("confidence"),
-                    "comment": data.get("comment"),
-                    "status": data.get("status", "ok"),
-                    "run": run,
-                })
+        source = src_dir.name.removesuffix("_results")
+        for source, run, model, model_dir in _iter_model_dirs(src_dir, source):
+            _append_rows_from_model_dir(source, model, run, model_dir)
 
     df = pd.DataFrame(rows)
     if not df.empty:

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article critiques contemporary political trends, suggesting a decline in institutionalized politics and a rise in disaggregated activism. The tone is analytical rather than overtly partisan.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a balanced view of Robert Duvall's career and political leanings without overt bias.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "1af9330e7254"
+}

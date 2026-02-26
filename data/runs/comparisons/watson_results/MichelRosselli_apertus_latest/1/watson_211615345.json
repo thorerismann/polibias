@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "Der Artikel behandelt ein Quiz von Wer wird Millionär, das in Deutschland stattfindet und sich auf deutsche Politik und Kultur konzentriert. Es gibt keine offensichtlichen politischen Vorlieben im Inhalt oder den Fragen.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_211615345.json",
+  "prompt_hash": "1af9330e7254"
+}

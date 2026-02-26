@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une critique du système actuel de responsabilité civile et des procédures judiciaires en Suisse dans le contexte d'un désastre tragique sans clairement favoriser un côté politique particulier. Le ton est légèrement à l'opposé droitier, avec une insistance sur les lacunes systémiques mais pas de spécifique soutien ou opposition partisane.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

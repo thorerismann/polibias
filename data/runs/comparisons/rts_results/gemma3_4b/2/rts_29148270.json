@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the situation surrounding potential elections in Ukraine, citing both US and Ukrainian perspectives. It highlights the significant obstacles to holding elections in the current conflict environment.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29148270.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article focuses on the competitive standings and individual team performances as they approach the end of the season, primarily discussing each team's chances of qualifying for the playoffs. There's a slight leaning towards highlighting potential challenges and setbacks for several teams, particularly Lausanne, Rapperswil-Jona, and the EVZ.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_406339606.json",
+  "prompt_hash": "1af9330e7254"
+}

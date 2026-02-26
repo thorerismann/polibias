@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article's tone is critical of Democrats' stance on voter ID, while presenting a more neutral view of Republicans' efforts to pass the SAVE America Act.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_450985699570.json",
+  "prompt_hash": "1af9330e7254"
+}

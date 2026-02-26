@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents Trump's proposal for a hospital ship in Greenland with a neutral tone, but highlights the potential controversy and Dänemark's opposition. It details the ship's capabilities and the existing healthcare infrastructure in Greenland, ultimately suggesting a diplomatic effort to resolve the situation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

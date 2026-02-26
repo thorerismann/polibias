@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a critical view of Belarus's role in cyber operations and its relationship with Russia without overtly favoring either political side; it reports on the actions taken by Ukrainian forces against Russian military communications but does not explicitly endorse or criticize these tactics. The tone is neutral, focusing more on facts than a left-leaning/right-leaning narrative.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_253177730.json",
+  "prompt_hash": "1af9330e7254"
+}

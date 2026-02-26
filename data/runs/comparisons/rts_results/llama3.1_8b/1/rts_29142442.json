@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article appears to lean slightly left due to its focus on the Italian government's involvement in the Olympic Games and its emphasis on social and cultural aspects, but it maintains a neutral tone overall.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

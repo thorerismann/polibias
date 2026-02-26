@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Der Artikel stellt eine leicht satirische und humorvolle Sicht auf ein Quizformat dar, ohne sich explizit für links- oder rechtsorientiert zu positionieren; neutraler Ton mit einem subtilen Schmunzeln über die Schwierigkeit von Fragen. Die Neutralität wird durch den spielerischen Umgang mit einer allgemein bekannten deutschen Speise und eine neutrale Reaktion auf das Format unterstützt.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_211615345.json",
+  "prompt_hash": "1af9330e7254"
+}

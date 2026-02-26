@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a legal analysis of the Supreme Court's ruling against Trump's tariffs, highlighting the majority's interpretation and sharply criticizing it through dissenting voices, particularly Kavanaugh and Thomas. The framing leans slightly conservative due to the emphasis on presidential power and the critique of the majority's reasoning.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "1af9330e7254"
+}

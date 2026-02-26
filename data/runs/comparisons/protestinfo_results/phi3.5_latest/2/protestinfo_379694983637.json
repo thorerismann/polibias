@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une perspective neutre sur la prière en se concentrant principalement sur les expériences personnelles et le témoignage sans fournir de points de vue politiquement biaisés ou favorables à un côté particulier des pratiques religieuses. Le ton est réfléchissant plutôt que persuasif, ce qui suggère une représentation équilibrée.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_379694983637.json",
+  "prompt_hash": "1af9330e7254"
+}

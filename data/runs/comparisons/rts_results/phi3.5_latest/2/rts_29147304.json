@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente principalement des réalisations sportives sans une forte inclinaison politique ou partisane; il met en avant les succès d'un skieur suisse avec un léger sous-entendu de nationalisme positif.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses a challenge and the role of Catholic fundamentalists, featuring an interview with Martin Dumont, an academic on Catholicism.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.0,
+  "comment": "The provided text lacks clear political bias and does not contain specific information about framing or treatment of subjects that would indicate a left-leaning or right-leaning perspective.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view, with quotes from both legal experts and advocacy groups, suggesting that the subject bias is neutral. The framing bias appears to be slightly left-leaning due to the inclusion of criticism of Israel's actions, but this is not explicit or overwhelming. The treatment bias is neutral, as Wilkinson is treated in a factual manner without emotional language. The guests bias is also neutral, with quotes from both sides presented.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

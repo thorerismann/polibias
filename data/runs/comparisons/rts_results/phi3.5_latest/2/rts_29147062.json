@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article predominantly portrays the Switzerland and its relationship with Donald Trump in a negative light by emphasizing unfavorable trade discussions and criticisms from President Trump about Swiss officials' communication skills during his visit to Davos. The guests bias is also clearly left-leaning as it quotes views primarily associated with political figures.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

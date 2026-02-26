@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.5,
+  "confidence": 0.85,
+  "comment": "The article is a eulogy for Robert Duvall, focusing on his filmography and political leanings. The tone is generally neutral, but with a slight left-leaning bias in the framing and treatment of the subject.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "1af9330e7254"
+}

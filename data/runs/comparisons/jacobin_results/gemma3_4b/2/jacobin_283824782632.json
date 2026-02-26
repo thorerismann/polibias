@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on union membership trends and highlights declines in specific sectors like logistics, manufacturing, and mining, while noting growth in construction and healthcare. It contains critical commentary about anti-union practices and political rhetoric surrounding manufacturing jobs.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

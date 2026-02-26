@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.85,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.65,
+  "guests_bias": -0.35,
+  "confidence": 0.9,
+  "comment": "The article exhibits a strongly negative and critical framing of Gavin Newsom, portraying him as a deliberately deceptive and performative figure mimicking Donald Trump. It highlights Newsom's attempts to appeal to a segment of the electorate by adopting a deliberately provocative and insulting style, suggesting a misunderstanding of political dynamics and a reliance on 'cargo culting'.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_179019979623.json",
+  "prompt_hash": "1af9330e7254"
+}

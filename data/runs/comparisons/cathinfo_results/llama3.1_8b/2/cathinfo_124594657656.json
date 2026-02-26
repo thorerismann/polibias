@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article appears to be a neutral obituary for a Tanzanian cardinal, with no apparent bias in topic selection, framing, treatment of political actors, or quoted speakers.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_124594657656.json",
+  "prompt_hash": "1af9330e7254"
+}

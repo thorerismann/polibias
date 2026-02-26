@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.65,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.75,
+  "guests_bias": -0.45,
+  "confidence": 0.85,
+  "comment": "The article presents a strongly critical view of tech companies, framing them as reactionary and potentially fascist, with a clear left-leaning perspective. It highlights concerns about the erosion of diversity and inclusion policies and the rise of authoritarian tendencies within the tech industry.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

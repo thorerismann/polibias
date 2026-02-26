@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "Die Artikel präsentieren eine mehrdeutige Darstellung der Ereignisse, wobei die neue Enthüllung über die Begegnung zwischen Andrew und Monique Giannelloni ein zentrales Thema darstellt. Die Berichte wirfen Fragen bezüglich der Privilegien und des Verhaltens der britischen Königsfamilie auf.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article discusses the author's academic background and influences, particularly Tom Hayden and C. Wright Mills, in shaping their research on power structures.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

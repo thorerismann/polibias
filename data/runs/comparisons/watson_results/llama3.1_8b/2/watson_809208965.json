@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.33,
+  "framing_bias": -0.67,
+  "treatment_bias": -0.42,
+  "guests_bias": -0.11,
+  "confidence": 0.85,
+  "comment": "The article discusses the potential threat of a Chinese invasion of Taiwan, citing historical parallels and military developments. The author presents a nuanced view, acknowledging both the risks and uncertainties involved. Overall, the tone is informative and neutral, with a slight left-leaning bias in framing and treatment.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

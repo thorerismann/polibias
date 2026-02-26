@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": null,
+  "confidence": 0.5,
+  "comment": "The topic is a legal case with potential political implications. The framing slightly favors the right due to emphasis on conservative justices' opinions.",
+  "status": "recovered",
+  "model": "gemma2:latest",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article has a slight left-leaning bias towards James Van Der Beek's personal struggles and his positive outlook on life despite them; however, it maintains neutrality in political terms.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

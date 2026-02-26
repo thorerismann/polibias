@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.7,
+  "confidence": 1.0,
+  "comment": "The article discusses a unique concept of anonymous question sessions to promote dialogue and challenge assumptions, leaning towards a more inclusive approach rather than reinforcing existing divides.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

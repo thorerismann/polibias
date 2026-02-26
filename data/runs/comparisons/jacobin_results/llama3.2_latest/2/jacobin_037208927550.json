@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral discussion of private equity investment in the IOC, with no clear leaning towards left or right. The quotes from Juan Antonio Samaranch are primarily focused on the financial aspects and potential benefits of such investments.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "1af9330e7254"
+}

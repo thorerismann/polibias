@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article primarily frames Taiwan as a significant threat due to potential conflict between major powers, highlighting China's military buildup and Xi Jinping's rhetoric. It presents a cautious, somewhat alarmist view, emphasizing historical parallels and potential risks, but offers limited counterarguments.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

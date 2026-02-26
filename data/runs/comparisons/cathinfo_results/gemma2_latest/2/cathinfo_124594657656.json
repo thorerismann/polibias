@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a neutral obituary about a Catholic cardinal. There are no discernible political leanings.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "cathinfo_124594657656.json",
+  "prompt_hash": "1af9330e7254"
+}

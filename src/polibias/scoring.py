@@ -9,6 +9,7 @@ no extra RAM).
 from __future__ import annotations
 
 import json
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -25,6 +26,11 @@ _REQUIRED_KEYS = [
     "confidence",
     "comment",
 ]
+_BIAS_KEYS = ["subject_bias", "framing_bias", "treatment_bias", "guests_bias"]
+_COMMENT_VALUE_RE = re.compile(
+    r'"comment"\s*:\s*("(?:(?:\\.)|[^"\\])*"|null)',
+    flags=re.DOTALL,
+)
 
 
 # ---------- Ollama interaction ----------
@@ -67,6 +73,97 @@ def _blank_result() -> dict[str, Any]:
     return {k: None for k in _REQUIRED_KEYS}
 
 
+def _to_float_or_none(value: Any) -> float | None:
+    if value is None:
+        return None
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _clamp_bias(value: Any) -> float | None:
+    numeric = _to_float_or_none(value)
+    if numeric is None:
+        return None
+    if numeric < -1.0:
+        return -1.0
+    if numeric > 1.0:
+        return 1.0
+    return numeric
+
+
+def _normalise_model_payload(data: dict[str, Any]) -> dict[str, Any]:
+    clean: dict[str, Any] = {}
+    for key in _BIAS_KEYS:
+        clean[key] = _clamp_bias(data.get(key))
+    clean["confidence"] = _to_float_or_none(data.get("confidence"))
+    comment = data.get("comment")
+    clean["comment"] = None if comment is None else str(comment)
+    return clean
+
+
+def _has_required_keys(data: dict[str, Any]) -> bool:
+    return all(key in data for key in _REQUIRED_KEYS)
+
+
+def _parse_first_json_object(raw: str) -> dict[str, Any] | None:
+    decoder = json.JSONDecoder()
+    text = raw.strip()
+    if not text:
+        return None
+    for idx, ch in enumerate(text):
+        if ch != "{":
+            continue
+        try:
+            parsed, _ = decoder.raw_decode(text[idx:])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(parsed, dict):
+            return parsed
+    return None
+
+
+def _recover_by_comment_tail_trim(raw: str) -> dict[str, Any] | None:
+    text = raw.strip()
+    start = text.find("{")
+    if start == -1:
+        return None
+    match = _COMMENT_VALUE_RE.search(text, pos=start)
+    if match is None:
+        return None
+    candidate = text[start:match.end()].rstrip()
+    if candidate.endswith(","):
+        candidate = candidate[:-1].rstrip()
+    candidate = f"{candidate}}}"
+    try:
+        parsed = json.loads(candidate)
+    except json.JSONDecodeError:
+        return None
+    if isinstance(parsed, dict):
+        return parsed
+    return None
+
+
+def _parse_model_payload(raw: str) -> tuple[dict[str, Any], str, str | None]:
+    try:
+        parsed = json.loads(raw)
+    except Exception:
+        parsed = None
+    if isinstance(parsed, dict) and _has_required_keys(parsed):
+        return parsed, "ok", None
+
+    recovered = _parse_first_json_object(raw)
+    if isinstance(recovered, dict) and _has_required_keys(recovered):
+        return recovered, "recovered", "first_object_trim"
+
+    recovered = _recover_by_comment_tail_trim(raw)
+    if isinstance(recovered, dict) and _has_required_keys(recovered):
+        return recovered, "recovered", "comment_tail_trim"
+
+    raise ValueError("Model output is not a valid object with required keys.")
+
+
 def _format_result(
     data: dict[str, Any],
     *,
@@ -76,9 +173,10 @@ def _format_result(
     prompt_hash: str = "",
 ) -> dict[str, Any]:
     out = _blank_result()
+    norm = _normalise_model_payload(data)
     for k in _REQUIRED_KEYS:
-        if k in data:
-            out[k] = data.get(k)
+        if k in norm:
+            out[k] = norm.get(k)
     out["status"] = status
     out["model"] = model
     out["article"] = article
@@ -128,8 +226,12 @@ def _save_failed_raw(
 def _truncate_raw(raw: str, limit: int = 4000) -> str:
     if len(raw) <= limit:
         return raw
-    head = raw[:2000]
-    tail = raw[-1500:]
+    separator = "\n...\n"
+    budget = max(0, limit - len(separator))
+    head_len = int(budget * 0.6)
+    tail_len = budget - head_len
+    head = raw[:head_len]
+    tail = raw[-tail_len:] if tail_len else ""
     return f"{head}\n...\n{tail}"
 
 
@@ -154,7 +256,22 @@ def score_one_article(
     settings,
 ) -> dict[str, Any]:
     """Score a single article. Returns a result dict."""
-    body = json.loads(article_path.read_text(encoding="utf-8"))["body"]
+    payload = json.loads(article_path.read_text(encoding="utf-8"))
+    body = payload.get("body")
+    if not isinstance(body, str) or not body.strip():
+        _log_error(settings, {
+            "stage": "missing_article_body",
+            "model": model,
+            "article": article_path.name,
+            "run": run,
+        })
+        return _format_result(
+            {},
+            status="fallback",
+            model=model,
+            article=article_path.name,
+            prompt_hash=settings.prompt_hash,
+        )
     body = _truncate_article(body, settings.max_article_chars)
     system_msg = settings.prompt_template
     user_msg = f"Article:\n<<<ARTICLE_START>>>\n{body}\n<<<ARTICLE_END>>>"
@@ -178,11 +295,18 @@ def score_one_article(
 
     # JSON mode should give us valid JSON, but validate structure
     try:
-        data = json.loads(raw)
-        if not isinstance(data, dict):
-            raise ValueError("Model output parsed to a non-object JSON value.")
+        data, status, recovered_via = _parse_model_payload(raw)
+        if recovered_via is not None:
+            _log_error(settings, {
+                "stage": "json_recovered",
+                "model": model,
+                "article": article_path.name,
+                "run": run,
+                "method": recovered_via,
+                "raw_len": len(raw),
+            })
         return _format_result(
-            data, status="ok", model=model,
+            data, status=status, model=model,
             article=article_path.name, prompt_hash=prompt_hash,
         )
     except Exception as e:
@@ -226,11 +350,19 @@ def score_one_article(
             continue
 
         try:
-            data = json.loads(retry_raw)
-            if not isinstance(data, dict):
-                raise ValueError("Model output parsed to a non-object JSON value.")
+            data, status, recovered_via = _parse_model_payload(retry_raw)
+            if recovered_via is not None:
+                _log_error(settings, {
+                    "stage": "retry_recovered",
+                    "model": model,
+                    "article": article_path.name,
+                    "run": run,
+                    "attempt": attempt,
+                    "method": recovered_via,
+                    "raw_len": len(retry_raw),
+                })
             return _format_result(
-                data, status="recovered", model=model,
+                data, status=status, model=model,
                 article=article_path.name, prompt_hash=prompt_hash,
             )
         except Exception as e:

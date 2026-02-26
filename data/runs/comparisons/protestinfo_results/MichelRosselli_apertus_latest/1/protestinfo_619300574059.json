@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de la réorganisation des activités religieuses dans une commune, mettant en lumière les efforts d'une association pour maintenir le temple vivant et l'importance du lieu communautaire.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

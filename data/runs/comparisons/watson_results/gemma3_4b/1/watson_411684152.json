@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article heavily frames the allegations against Prince Andrew as damaging to the British monarchy, focusing on questionable expenses and a troubling encounter. It presents a critical perspective, highlighting multiple sources and Andrew's denials.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

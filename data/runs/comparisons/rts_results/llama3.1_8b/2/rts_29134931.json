@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral tone, but with a slight left-leaning bias in the framing and treatment of the topic. The focus on government accountability and opposition demands for funding suggests a slightly critical view of the current administration.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

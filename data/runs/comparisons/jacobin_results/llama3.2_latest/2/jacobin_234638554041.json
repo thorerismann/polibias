@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.3,
+  "confidence": 0.7,
+  "comment": "The article presents a left-leaning perspective, with the author advocating for an investigative commission to address child sexual abuse and human trafficking in France. The framing is critical of the French justice system's handling of the case, and the treatment of certain individuals is presented as more favorable to the left. However, the tone remains neutral and informative, providing context and examples to support the argument.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

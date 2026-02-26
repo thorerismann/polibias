@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on a political issue (Epstein affair) and advocates for an investigative commission. The tone is generally neutral, but there's a slight left-leaning emphasis in framing the need for transparency and accountability.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

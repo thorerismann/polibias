@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.1,
+  "confidence": 0.6,
+  "comment": "The article focuses on a conflict between traditional Christian leaders and pro-Israel Christian groups. The framing is somewhat critical of the pro-Israel groups.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

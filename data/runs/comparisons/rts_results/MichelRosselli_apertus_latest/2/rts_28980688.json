@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses the increasing Swiss presence in Iraq, highlighting the potential for economic cooperation and modernization. No clear left or right political bias is evident in the subject matter selection or treatment of the topic.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_28980688.json",
+  "prompt_hash": "1af9330e7254"
+}

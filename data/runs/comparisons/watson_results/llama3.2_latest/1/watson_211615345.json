@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Der Artikel behandelt das Thema Millionär mit einer neutralen und humorvollen Note, ohne eine klare politische Ausrichtung zu zeigen. Die Fragen sind spezifisch und technisch, was die Diskussion über die politische Unbekanntheit von Julia Klöckner in der Schweiz unterstützt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_211615345.json",
+  "prompt_hash": "1af9330e7254"
+}

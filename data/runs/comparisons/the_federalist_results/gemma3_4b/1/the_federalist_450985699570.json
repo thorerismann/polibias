@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article heavily frames the debate around voter ID laws, portraying Democrats as hypocritical for demanding IDs to shovel snow while opposing voter ID measures. It utilizes sarcasm and highlights polling data to bolster the Republican argument for election security.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_450985699570.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Der Autor beschreibt die Bedrohung durch eine Invasion Taiwans als grössere Gefahr für den Weltfrieden im Vergleich zum Ukraine-Krieg, da ein Konflikt zwischen China und den USA denkbar wäre.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

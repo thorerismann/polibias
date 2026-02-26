@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.7,
+  "confidence": 0.8,
+  "comment": "The article strongly criticizes nationalism, racism, and anti-semitism, framing them as incompatible with Catholicism. The quoted voices also lean left.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "1af9330e7254"
+}

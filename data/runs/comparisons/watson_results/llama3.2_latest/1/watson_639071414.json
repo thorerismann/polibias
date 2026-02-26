@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.0,
+  "treatment_bias": 0.8,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "Die Ukraine hat einen Vorteil bei der russisch-ukrainischen Konflikt, da die Russen Schwierigkeiten haben, Soldaten für den Krieg zu rekrutieren. Die Lebensmittelpreise steigen stark und die Wirtschaft ist unter Druck.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_639071414.json",
+  "prompt_hash": "1af9330e7254"
+}

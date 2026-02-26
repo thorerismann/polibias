@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a neutral tone without leaning towards any political ideology and does not favor one side over the other in its framing or treatment of subjects. The guests mentioned are religious figures rather than politically charged speakers.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

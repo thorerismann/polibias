@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The author's perspective is generally positive towards de Blasio's approach to universal pre-K, emphasizing its potential to address inequality and promote education for all.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

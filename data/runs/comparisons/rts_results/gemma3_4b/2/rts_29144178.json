@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a factual account of animal neglect and subsequent investigation, with a focus on the farmer's explanation and the authorities' response. It includes perspectives from various stakeholders, including the farmer, a politician from the UDC, and agricultural officials, offering a balanced overview of the situation.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29144178.json",
+  "prompt_hash": "1af9330e7254"
+}

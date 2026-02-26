@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans towards a negative portrayal of Jacques Moretti by associating him with prostitution and suggesting his friends are potentially involved in illegal activities without direct evidence or context provided for such claims. The language used implies moral judgement against the subject.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_104591318.json",
+  "prompt_hash": "1af9330e7254"
+}

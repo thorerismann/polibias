@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.7,
+  "confidence": 1.0,
+  "comment": "The article discusses the growing demand for Christian rituals and rites outside of traditional religious contexts, presenting a balanced view that leans slightly towards inclusivity and innovation.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "1af9330e7254"
+}

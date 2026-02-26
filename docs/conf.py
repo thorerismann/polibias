@@ -3,7 +3,7 @@
 project = "polibias"
 copyright = "2026, polibias contributors"
 author = "polibias contributors"
-release = "0.1.0"
+release = "0.2.0"
 
 extensions = [
     "myst_parser",

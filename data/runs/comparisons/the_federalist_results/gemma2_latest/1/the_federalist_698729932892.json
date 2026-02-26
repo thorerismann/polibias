@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article strongly criticizes a judge's ruling on immigration detention, framing it as an example of judicial overreach and disregard for the law. The author presents a one-sided view favoring stricter immigration enforcement.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "1af9330e7254"
+}

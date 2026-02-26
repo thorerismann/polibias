@@ -57,7 +57,6 @@ polibias scrape --source rts
 polibias scrape --source the_federalist --limit 20
 polibias scrape --source jacobin --limit 20
 polibias scrape --source watson --limit 20
-polibias scrape --source lib_inst --limit 20
 polibias scrape --source protestinfo --limit 20
 polibias scrape --source cathinfo --limit 20
 
@@ -66,7 +65,6 @@ polibias score --run-dir exp_a --source rts
 polibias score --run-dir exp_a --source the_federalist
 polibias score --run-dir exp_a --source jacobin
 polibias score --run-dir exp_a --source watson
-polibias score --run-dir exp_a --source lib_inst
 polibias score --run-dir exp_a --source protestinfo
 polibias score --run-dir exp_a --source cathinfo
 
@@ -81,7 +79,6 @@ polibias viz --run-dir exp_a --source rts
 polibias viz --run-dir exp_a --source the_federalist
 polibias viz --run-dir exp_a --source jacobin
 polibias viz --run-dir exp_a --source watson
-polibias viz --run-dir exp_a --source lib_inst
 polibias viz --run-dir exp_a --source protestinfo
 polibias viz --run-dir exp_a --source cathinfo
 polibias viz --run-dir exp_a --source all        # report_all.html
@@ -98,13 +95,6 @@ pip install -e "[bayes]"
 polibias bambi --run-dir exp_a
 ```
 
-Streamlit control panel (optional):
-
-```bash
-pip install -e "[ui]"
-streamlit run app/streamlit_app.py
-```
-
 ## Output Layout
 
 Shared scraped content:
@@ -113,7 +103,6 @@ Shared scraped content:
 - `data/webdata/the_federalist/*.json`
 - `data/webdata/jacobin/*.json`
 - `data/webdata/watson/*.json`
-- `data/webdata/lib_inst/*.json`
 - `data/webdata/protestinfo/*.json`
 - `data/webdata/cathinfo/*.json`
 
@@ -123,7 +112,6 @@ Per-run outputs:
 - `data/runs/<run_dir>/the_federalist_results/<model>/<run>/*.json`
 - `data/runs/<run_dir>/jacobin_results/<model>/<run>/*.json`
 - `data/runs/<run_dir>/watson_results/<model>/<run>/*.json`
-- `data/runs/<run_dir>/lib_inst_results/<model>/<run>/*.json`
 - `data/runs/<run_dir>/protestinfo_results/<model>/<run>/*.json`
 - `data/runs/<run_dir>/cathinfo_results/<model>/<run>/*.json`
 - `data/runs/<run_dir>/errors/errors.jsonl`
@@ -136,7 +124,6 @@ Per-run outputs:
 - `data/runs/<run_dir>/report_fed.html`
 - `data/runs/<run_dir>/report_jacobin.html`
 - `data/runs/<run_dir>/report_watson.html`
-- `data/runs/<run_dir>/report_lib_inst.html`
 - `data/runs/<run_dir>/report_protestinfo.html`
 - `data/runs/<run_dir>/report_cathinfo.html`
 - `data/runs/<run_dir>/report_all.html`
@@ -155,7 +142,6 @@ Input URL file:
 
 - `data/input_files/rts_links.csv` (or `rts_links.txt`)
 - `data/input_files/watson_links.txt`
-- `data/input_files/lib_inst_links.txt`
 - `data/input_files/protestinfo_links.txt`
 - `data/input_files/cathinfo_links.txt`
 

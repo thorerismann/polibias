@@ -1,0 +1,22 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.6,
+  "comment": "The article presents a legal issue with differing opinions from justices. The framing leans slightly left due to emphasis on the majority opinion and Kavanaugh's dissent.",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

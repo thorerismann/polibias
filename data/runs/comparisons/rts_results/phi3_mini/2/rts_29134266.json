@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article clearly leans towards a left-leaning perspective by emphasizing European autonomy and skepticism of American military support against Russia. It also criticizes the U.S.'s desire to undermine EU cohesion.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

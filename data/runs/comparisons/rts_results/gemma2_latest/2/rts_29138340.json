@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents arguments against a climate fund initiative, giving more space to the opposing viewpoint. The tone is neutral overall.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

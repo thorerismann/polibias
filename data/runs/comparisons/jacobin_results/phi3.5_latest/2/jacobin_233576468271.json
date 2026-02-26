@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.3,
+  "confidence": 0.95,
+  "comment": "The article has a slight left-leaning framing bias due to its focus on social movements and critique of power structures associated with the sugar industry's influence in US foreign policy during Lyndon B. Johnson’s administration; guests like Tom Hayden are presented as major inspirations for progressive change, indicating some treatment bias towards more liberal viewpoints.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

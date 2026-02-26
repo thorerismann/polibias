@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.75,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article has a strong left-leaning bias with negative framing towards mail-order abortion drugs and the Biden administration's policies on them. It treats both sides unfavorably without providing balanced perspectin.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_236909104554.json",
+  "prompt_hash": "1af9330e7254"
+}

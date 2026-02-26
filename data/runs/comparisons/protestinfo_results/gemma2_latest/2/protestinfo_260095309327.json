@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article's focus on a Christian ski association suggests a slight right-leaning subject bias.",
+  "status": "recovered",
+  "model": "gemma2:latest",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "1af9330e7254"
+}

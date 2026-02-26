@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to have a left-leaning bias in its framing and treatment of the Mexican president's strategy, while also criticizing Trump's behavior. The language used to describe Trump's comments and actions is often critical and negative.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "1af9330e7254"
+}

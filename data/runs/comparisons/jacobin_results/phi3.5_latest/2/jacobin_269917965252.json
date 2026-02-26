@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left with a critical view of US foreign policy and its drug war strategy but maintains neutrality in discussing Mexican organizations' structure. There is no clear bias towards guests or treatment balance within quotes.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

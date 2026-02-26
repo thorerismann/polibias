@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article does not contain any political information or bias.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "watson_634863006.json",
+  "prompt_hash": "1af9330e7254"
+}

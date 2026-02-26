@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.85,
+  "comment": "The article focuses on a women-only residence in Lausanne with positive undertones for its mission and community support but leans slightly left due to the emphasis on social justice issues.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

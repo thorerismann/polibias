@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article aborde une question religieuse sans fournir de ton ou d’argumentation politique clairement à droite ou à gauche; il met plutôt en lumière des problèmes au sein même de l’espace sacré indépendant du parti pris. Les invités ne sont pas politiquement alignés, donc un score neutre est approprié.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "1af9330e7254"
+}

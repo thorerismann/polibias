@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "The article discusses a recent immigration decision by the U.S. Court of Appeals for the Fifth Circuit, emphasizing the judges' duty to apply federal law exactly as it is written. The analysis highlights the clear language and legislative history of the statute (8 U.S.C. § 1225) regarding detention of illegal aliens, contrasting with Judge Dana Douglas's decision to ignore the law in favor of a bond hearing requirement.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "1af9330e7254"
+}

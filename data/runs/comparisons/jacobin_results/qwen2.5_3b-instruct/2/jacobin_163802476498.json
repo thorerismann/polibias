@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses the implementation and framing of universal childcare in New York City, leaning left with a focus on addressing inequality and providing universal access.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

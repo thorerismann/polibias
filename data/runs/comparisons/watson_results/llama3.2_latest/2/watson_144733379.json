@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die US-Administration hat eine neue Zollpolitik angekündigt, die den Schweizer Import mit einem temporären Zusatzzoll von 15 Prozent betreffen soll. Die Seco-Staatssekretärin sieht Chancen in der neuen Ausgangslage und betont die Bedeutung des Schutzes der Arbeitsplätze und Produktionsstandorte der Schweiz. Der Präsident Trump hat verschiedene Optionen zur Durchsetzung seiner Zollpolitik, darunter die Möglichkeit, Zölle auf Waren zu verhängen, die die nationale Sicherheit der USA bedrohen.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_144733379.json",
+  "prompt_hash": "1af9330e7254"
+}

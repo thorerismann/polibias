@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "Die Artikel prägen die öffentliche Meinung durch eine Mischung aus positiven und negativen Hinweisen auf das britische Königshaus und den Duke of York. Die Berichte über die Vorwürfe gegen Andrew und die Reaktionen der Royal Family wirken eher kritisch als defensiv.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

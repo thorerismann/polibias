@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a neutral tone without clear political leanings in its framing or treatment of subjects; it discusses community activities and church reorganization from various perspectives equally. The guests mentioned are not explicitly politically charged either.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

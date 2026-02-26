@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "The article discusses the increasing presence of AI in schools and its potential impact on parental authority, framing it as a significant concern for family law and education.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}

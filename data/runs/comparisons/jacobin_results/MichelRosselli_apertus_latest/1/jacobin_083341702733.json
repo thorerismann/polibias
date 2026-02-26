@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the challenges of ethical consumerism for low-income individuals and criticizes efforts that blame them for not making 'ethical' choices due to limited resources.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "1af9330e7254"
+}

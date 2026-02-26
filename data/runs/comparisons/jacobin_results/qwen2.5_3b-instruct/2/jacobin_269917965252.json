@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the impact of taking out major drug traffickers in Mexico and Colombia, presenting a nuanced view that challenges the notion of organized cartels as central entities.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article critiques the effectiveness of boycotts for everyday people, highlighting class disparities and the limitations of individual action. It argues that boycotts can be a powerful tool when part of a larger collective campaign.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "1af9330e7254"
+}

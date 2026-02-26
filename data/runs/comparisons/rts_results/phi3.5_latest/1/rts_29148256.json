@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly to the left by highlighting issues of worker exploitation and legal loopholes in immigration policy for labor purposes without directly attacking any political group or favoring a particular ideology. The tone is critical but neutral towards specific parties.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

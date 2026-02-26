@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a Christian perspective on prayer, focusing on the nature of requests and responses from God. The tone is generally positive and encouraging, leaning slightly towards a traditional religious viewpoint.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "protestinfo_379694983637.json",
+  "prompt_hash": "1af9330e7254"
+}

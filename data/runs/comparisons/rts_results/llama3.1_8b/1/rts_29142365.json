@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to have a slightly left-leaning bias due to its critical tone towards the financial markets and institutions, but it is still relatively neutral in its analysis.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

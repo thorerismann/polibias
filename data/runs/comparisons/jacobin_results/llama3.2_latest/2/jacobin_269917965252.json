@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article suggests that the US approach has failed to address the root causes of violence in Mexico and instead created a new generation of smaller, more discreet traffickers. The author also notes that the term 'cartel' is often used as a convenient fiction to serve US foreign policy interests.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

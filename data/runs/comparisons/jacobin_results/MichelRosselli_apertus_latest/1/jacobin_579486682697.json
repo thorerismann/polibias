@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article focuses on the legal controversy surrounding a hate crime charge against an individual who was allegedly involved in vandalizing the New York Times building with anti-Semitic slogans and leaflets accusing the newspaper of complicity in the Gaza genocide. The evidence presented by prosecutors is criticized as flimsy, raising questions about the legitimacy of the charges.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

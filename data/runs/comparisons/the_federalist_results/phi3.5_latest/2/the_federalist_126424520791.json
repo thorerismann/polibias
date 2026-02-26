@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.98,
+  "comment": "The article heavily favors a left-leaning perspective by critiquing Stephen Colbert's show and its political alignment with Democrats while discussing the FCC equal time rule in relation to bias towards certain candidates. The framing of events suggests criticism rather than neutrality or right-wing favoritism.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_126424520791.json",
+  "prompt_hash": "1af9330e7254"
+}

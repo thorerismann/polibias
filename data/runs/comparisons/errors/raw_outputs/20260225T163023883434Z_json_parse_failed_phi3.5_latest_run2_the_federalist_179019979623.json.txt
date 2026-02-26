@@ -1,0 +1,9 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.9,
+  "confidence": 0.95,
+  "comment": "The article critiques Gavin Newsom's behavior as left-leaning and unfavorable towards his political stance by comparing him to Donald Trump in a negative light; the framing is harshly critical with strong language indicating bias against both candidates.",
+  
+  "explanation_text": "The subject of the article, Gavin Newsom's behavior during public appearances and interactions are compared unfavorably to those typically associated with Donald Trump. The use of phrases like 'cruel', 'vulgar insulting,' and references to a perceived lack of substance behind his actions suggest strong negative framing towards both candidates, which indicates right-wing bias against the Democratic candidate Newsom who is often compared unfavorably in style with Trump. There's also criticism directed at news organizations for not

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -1.0,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 1.0,
+  "comment": "The article presents a left-leaning perspective by discussing the potential invasion of Taiwan as a threat to world peace and drawing parallels with nationalist rhetoric associated with Xi Jinping's rise in power. The tone suggests concern over China's military actions towards Taiwan, indicating a critical view on Chinese expansionism.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

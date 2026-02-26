@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.4,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the benefits and risks of AI in healthcare, highlighting its potential to improve patient care while also acknowledging the need for careful consideration of its limitations and challenges.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_382753691.json",
+  "prompt_hash": "1af9330e7254"
+}

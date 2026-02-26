@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly to the left by criticizing current climate policies and questioning large-scale fund allocations for environmental measures without addressing potential right perspectives or solutions equally. The framing is critical of existing structures rather than offering a balanced view.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a Catholic initiative for prayer and peace during Lent, focusing on the European Church's response to global conflicts. It highlights the participation of various European countries and religious institutions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article portrays Markus Cott's work and background in a positive light for the left-leaning cause of social justice within religious contexts without any clear political bias.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "cathinfo_034785673294.json",
+  "prompt_hash": "1af9330e7254"
+}

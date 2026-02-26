@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral topic selection, but leans left in its framing and treatment of the subject. The language used to describe the market fluctuations is critical towards the right-leaning investment strategies.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

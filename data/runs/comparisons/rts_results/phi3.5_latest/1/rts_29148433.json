@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article se concentre principalement sur la carrière de James Van Der Beek sans une forte inclinaison politique claire, indiquant un léger penchant à gauche en raison du ton rétrospectif et nostalgique. Il n'y a pas d'invités politiques mentionnés ou des indices significatifs pour suggérer la droite.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

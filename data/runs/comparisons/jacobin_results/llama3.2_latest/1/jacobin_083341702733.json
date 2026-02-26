@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced view on the challenges of boycotts, highlighting the difficulties faced by lower-income individuals in making ethical purchasing decisions. The author argues that efforts to promote shopping differently often blame the victim rather than addressing the root issue of concentrated wealth and power.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "1af9330e7254"
+}

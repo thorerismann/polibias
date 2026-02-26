@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.2,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.9,
+  "confidence": 0.8,
+  "comment": "The article presents a negative framing of Trump's intentions towards Greenland and Denmark with clear left-leaning bias in its treatment and guests selection.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "watson_778644734.json",
+  "prompt_hash": "1af9330e7254"
+}

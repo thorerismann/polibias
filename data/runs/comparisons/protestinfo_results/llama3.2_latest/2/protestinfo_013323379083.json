@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "L'article semble traiter les sujets religieux de manière neutre, mais le sujet de la religion en général peut être considéré comme ayant une tendance légèrement droite dans certaines régions du monde. Cependant, sans plus d'informations, il est difficile de déterminer avec certitude la direction de la biais.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents allegations against Prince Andrew with a focus on negative reporting. However, it also includes statements from the palace and Andrew himself defending his actions.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

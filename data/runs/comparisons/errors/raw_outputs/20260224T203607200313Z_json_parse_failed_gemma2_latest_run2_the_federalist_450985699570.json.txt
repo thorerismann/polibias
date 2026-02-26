@@ -1,0 +1,22 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.95,
+  "comment": "The article strongly promotes the SAVE America Act and frames Democrats as opposed to voter ID despite their own requirements for other city services.",
+  
+  
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

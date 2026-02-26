@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Der Artikel behandelt die Ereignisse nach einem verheerenden Brand in Crans-Montana und beleuchtet das Leben des Barbesitzers Jacques Moretti. Es werden Details über seine Vergangenheit, insbesondere im Zusammenhang mit Massagesalons und Escort-Websites, sowie seine Vorstrafe in Frankreich wegen Förderung von Prostitution aufgedeckt. Der Artikel neigt dazu, die negativen Aspekte der Situation zu betonen, ohne eine klare politische Ausrichtung erkennbar zu machen.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_104591318.json",
+  "prompt_hash": "1af9330e7254"
+}

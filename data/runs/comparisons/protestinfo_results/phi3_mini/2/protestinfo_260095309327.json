@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.1,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article seems slightly left-leaning in its framing and treatment of the Christian skier association as a positive community initiative but lacks clear political bias.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "1af9330e7254"
+}

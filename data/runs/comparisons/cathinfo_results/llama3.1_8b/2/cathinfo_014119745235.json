@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral, artistic perspective on the topic of climate change and social divisions, with no clear political bias. However, the framing of the issue as a 'great feast' may lean slightly left, emphasizing the importance of collective action and shared responsibility.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "1af9330e7254"
+}

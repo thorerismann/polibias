@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article is focused on allegations against Prince Andrew, which could be considered a left-leaning bias due to the negative portrayal of him and his connection with Jeffrey Epstein.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning tone, focusing on the cultural and artistic aspects of the Olympic opening ceremony in Milan. The presence of Giorgio Armani's tribute and the mention of progressive politicians like Sergio Mattarella and Giorgia Meloni may contribute to the slight leftward bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

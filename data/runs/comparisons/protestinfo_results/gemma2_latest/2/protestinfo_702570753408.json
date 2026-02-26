@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article strongly criticizes the tech industry and its leaders for their alleged right-leaning shift and embrace of authoritarian values. The framing is highly negative towards these figures.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": null,
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the exploitation of a foreign worker in Switzerland, framing the situation as an injustice and highlighting the systemic issues with temporary work permits. It offers a sympathetic portrayal of Jonathan Manilo's plight and corroborates his claims with legal analysis and expert commentary.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

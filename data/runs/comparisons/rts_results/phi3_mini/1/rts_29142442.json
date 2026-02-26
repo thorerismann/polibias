@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a slight left-leaning tone with its focus on unity and peaceful celebration of cultures but lacks strong partisan language or bias towards any political ideology.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

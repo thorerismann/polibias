@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article maintains a slight left-leaning bias due to its focus on peace and diplomacy within the context of religious practice; however, it is fairly neutral overall as there are no overtly right-wing perspectives presented. The framing emphasizes unity in prayer for conflict resolution without political partisanship.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "1af9330e7254"
+}

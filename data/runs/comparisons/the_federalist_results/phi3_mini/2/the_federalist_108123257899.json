@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans right-leaning by framing Gen Z's food choices as irresponsible and contributing to a generational divide without acknowledging systemic issues affecting affordability for younger demographics.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+    "title": "Der Ukraine-Krieg und seine globalen Implikationen",
+    "content": [
+        {
+            "paragraph": 1,
+            "summary": "Moritz Pöllath stellt die Invasion Taiwans als größte Bedrohung für den Weltfrieden dar. Er argumentiert, dass ein Krieg um Taiwan zu einem direkten Konflikt zwischen China und den USA führen könnte, was im Vergleich zum Ukraine-Konflikt anders wäre.",
+            "key_points": ["Taiwan-Invasion als größte Bedrohung für Weltfrieden", "China vs. USA Krieg"]
+        },
+        {
+            "paragraph": 2,
+            "summary": "Pöllath zieht historische Parallelen zu den 1930er Jahren und betont Xi Jinpings Rhetorik von Blut-und-Boden sowie die Notwendigkeit einer militärischen Vorbereitung. Er weist darauf hin, dass China sich bereits auf eine Invasion vorbereitet.",
+            "key_points": ["Historische

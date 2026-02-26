@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article appears to lean left due to its focus on progressive policies like universal childcare and pre-K, but the tone is generally neutral with a mix of quotes from a former mayor's aide and experts in the field.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

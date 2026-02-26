@@ -56,10 +56,13 @@ def check_input_data(settings) -> Tuple[bool, str]:
     if not settings.input_file.exists():
         return False, f"Input file missing: {settings.input_file}"
     with open(settings.input_file) as f:
-        urls = [l.strip() for l in f if l.strip().startswith("http")]
+        urls = [line.strip() for line in f if line.strip().startswith("http")]
     if not urls:
         return False, f"No URLs found in {settings.input_file}"
-    n_articles = len(list(settings.webdata_dir.glob("*.json"))) if settings.webdata_dir.exists() else 0
+    n_articles = sum(
+        len(list(src_dir.glob("*.json")))
+        for src_dir in settings.all_source_webdata_dirs
+    )
     return True, f"{len(urls)} URLs in input file, {n_articles} scraped articles on disk"
 
 
@@ -69,20 +72,49 @@ def validate(settings) -> bool:
 
     print("\n--- Validation ---")
 
-    ok, msg = check_ollama_reachable(settings)
+    client = None
+    pulled: set[str] = set()
+    try:
+        client = ollama.Client(host=settings.ollama_host)
+        model_list = client.list()
+        pulled = {m.model for m in model_list.models}
+        ok = True
+        msg = f"Ollama reachable at {settings.ollama_host}"
+    except Exception as e:
+        ok = False
+        msg = f"Cannot reach Ollama at {settings.ollama_host}: {e}"
     print(f"{'[ok]' if ok else '[FAIL]'} {msg}")
     if not ok:
         all_ok = False
 
     print("\nModel availability:")
-    for ok, msg in check_models_available(settings):
-        print(f"{'[ok]' if ok else '[FAIL]'} {msg}")
-        if not ok:
-            all_ok = False
+    if pulled:
+        for model in settings.models:
+            model_ok = model in pulled
+            msg = (
+                f"  {model} — available"
+                if model_ok
+                else f"  {model} — NOT FOUND (run: ollama pull {model})"
+            )
+            print(f"{'[ok]' if model_ok else '[FAIL]'} {msg}")
+            if not model_ok:
+                all_ok = False
+    else:
+        print("[FAIL] Cannot list models because Ollama is unreachable.")
+        all_ok = False
 
     print("\nModel digests (for reproducibility):")
-    for model, digest in check_model_digests(settings):
-        print(f"  {model}: {digest}")
+    if client is None:
+        for model in settings.models:
+            print(f"  {model}: unavailable")
+    else:
+        for model in settings.models:
+            try:
+                info = client.show(model)
+                digest = getattr(info, "digest", None) or "unknown"
+            except Exception:
+                digest = "unavailable"
+            print(f"  {model}: {digest}")
 
     ok, msg = check_input_data(settings)
     print(f"\n{'[ok]' if ok else '[FAIL]'} {msg}")

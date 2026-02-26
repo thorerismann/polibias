@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.9,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article strongly criticizes a judge's decision while praising the Trump administration's immigration policies. It frames the legal issue as a clear-cut case of ignoring the law.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "1af9330e7254"
+}

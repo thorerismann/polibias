@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.75,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral and respectful tone towards the Catholic Church and its traditions, but leans slightly left in its framing of the event as a celebration of the 'Esprit saint' (Holy Spirit). The quoted speaker, frère Giulio Cesareo, is a representative of the Franciscan Order, which may contribute to the slight bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

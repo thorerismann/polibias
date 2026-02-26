@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the evolution of Christian rites with a focus on inclusivity and adaptation to contemporary society without showing clear bias towards any political ideology.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton neutre et objectif, mais avec une légère prépondérance de réflexions positives sur la figure de saint François d'Assise et ses reliques. Le langage employé est formel et religieux, sans traces de parti pris politique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

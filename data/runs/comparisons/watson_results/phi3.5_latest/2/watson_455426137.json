@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel behandelt einen Ereignisfall ohne erkennbare politische Vorurteile und neutraler Tonwahl; die Quellen sind offen (Secret Service und Sheriff). Die erwähnte Seite des US-Präsidenten ist nicht direkt involviert, was eine Neutralität unterstreicht. Der Artikel scheint leicht linksorientierter zu sein aufgrund der Diskussion über Sicherheitspersonal gegen ein unerlaubtes Eindringen ohne direkte politische Konnotation.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_455426137.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.5,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on a Swiss skier's success in the Olympic super-G event, with a slight left-leaning tone towards him and his country.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

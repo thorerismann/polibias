@@ -1,0 +1,40 @@
+{
+ "article_summary": {
+    "EVZ Tigers (Bern) struggle to avoid playouts despite a slight lead over Rapperswil-Jona Lakers, with key player Baumgartner potentially sidelined for season due to an underkörper injury. Bernese team had strong form pre-Olympiapause but recent losses impact their standing; they aim for top 10 avoiding playouts and securing two playoff chances through wins against Rapperswil-Jona, Kloten, Fribourg & Zug.": {
+    "percentage_distribution": [
+        {"PlayIns": 0.2},
+        {"Rank11-12": 7.3},
+        {"Playouts": 0.1}
+     ]
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

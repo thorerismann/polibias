@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "L'article présente une maison pour femmes avec des règles spécifiques, ce qui peut être perçu comme un espace sécuritaire et non-mixité de genres. Il n'y a pas d'éléments clairement politiques ou idéologiques dans le contenu.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

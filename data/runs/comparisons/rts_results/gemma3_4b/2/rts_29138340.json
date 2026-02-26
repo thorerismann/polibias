@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a cautious view of the climate initiative, highlighting concerns about funding and potential debt, while acknowledging the need for climate action. It primarily focuses on the arguments against the initiative, particularly from Simone de Montmollin, and frames the issue as a matter of fiscal responsibility and effective policy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29138340.json",
+  "prompt_hash": "1af9330e7254"
+}

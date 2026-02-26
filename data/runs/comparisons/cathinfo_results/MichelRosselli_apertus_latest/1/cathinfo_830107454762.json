@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "L'article traite d'un conflit entre des responsables chrétiens sionistes et les chefs des Églises de Jérusalem, soulignant ainsi un sujet potentiellement sensible politiquement.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

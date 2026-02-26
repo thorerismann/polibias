@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a cautiously optimistic view of AI in Swiss healthcare, highlighting current applications and acknowledging potential risks. It emphasizes a balanced approach, focusing on integration and strategic development rather than unbridled enthusiasm.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_382753691.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.75,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.85,
+  "guests_bias": -0.9,
+  "confidence": 0.95,
+  "comment": "The article presents a left-leaning perspective with strong bias towards the Young Lords and their activism for healthcare rights in historically underserved communities of color within New York City's Bronx neighborhood during the late '60s to early '70s. The framing, treatment, guests selection all align closely with this left-leaning stance.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "1af9330e7254"
+}

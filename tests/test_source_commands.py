@@ -58,7 +58,7 @@ def test_run_export_source_and_cross_source(tmp_path: Path) -> None:
     html = all_report.read_text(encoding="utf-8")
     assert all_report.exists()
     assert "Cross-source report" in html
-    assert "Article cross-tab (mean overall bias)" in html
+    assert "Comment explorer" in html
     assert "report_rts.html" in html
 
 
@@ -86,14 +86,14 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
     monkeypatch.setattr(
         cli,
         "_run_viz_source",
-        lambda s, source, output_name: seen.setdefault("viz", (source, output_name)),
+        lambda s, source, output_name, run=None: seen.setdefault("viz", (source, output_name, run)),
     )
 
     cli.main(["score-federalist"])
     assert seen["score"] == "the_federalist"
 
     cli.main(["viz-fed"])
-    assert seen["viz"] == ("the_federalist", "report_fed.html")
+    assert seen["viz"] == ("the_federalist", "report_fed.html", None)
 
     seen.clear()
     cli.main(["score", "--source", "the_federalist"])
@@ -105,19 +105,11 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
 
     seen.clear()
     cli.main(["viz", "--source", "the_federalist"])
-    assert seen["viz"] == ("the_federalist", "report_fed.html")
+    assert seen["viz"] == ("the_federalist", "report_fed.html", None)
 
     seen.clear()
     cli.main(["scrape", "--source", "watson", "--limit", "9"])
     assert seen["scrape"] == ("watson", 9, None)
-
-    seen.clear()
-    cli.main(["score", "--source", "lib_inst"])
-    assert seen["score"] == "lib_inst"
-
-    seen.clear()
-    cli.main(["viz", "--source", "lib_inst"])
-    assert seen["viz"] == ("lib_inst", "report_lib_inst.html")
 
     seen.clear()
     cli.main(["scrape", "--source", "protestinfo", "--limit", "7"])
@@ -129,7 +121,7 @@ def test_cli_routes_source_commands(monkeypatch, tmp_path: Path) -> None:
 
     seen.clear()
     cli.main(["viz", "--source", "cathinfo"])
-    assert seen["viz"] == ("cathinfo", "report_cathinfo.html")
+    assert seen["viz"] == ("cathinfo", "report_cathinfo.html", None)
 
 
 def test_cli_passes_runs_override(monkeypatch, tmp_path: Path) -> None:
@@ -145,6 +137,21 @@ def test_cli_passes_runs_override(monkeypatch, tmp_path: Path) -> None:
 
     cli.main(["score", "--source", "jacobin", "--runs", "2"])
     assert seen["overrides"]["runs"] == 2
+
+
+def test_cli_passes_viz_run_option(monkeypatch, tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path)
+    seen: dict[str, object] = {}
+
+    monkeypatch.setattr(cli, "load_settings", lambda config_path, **overrides: settings)
+    monkeypatch.setattr(
+        cli,
+        "_run_viz_source",
+        lambda s, source, output_name, run=None: seen.setdefault("viz", (source, output_name, run)),
+    )
+
+    cli.main(["viz", "--source", "jacobin", "--run", "2"])
+    assert seen["viz"] == ("jacobin", "report_jacobin.html", 2)
 
 
 def test_cli_help_prints_quick_help(monkeypatch, capsys) -> None:
@@ -180,3 +187,16 @@ def test_cli_verbose_streams_output(monkeypatch, tmp_path: Path, capsys) -> None
     out = capsys.readouterr().out
     assert "score=jacobin" in out
     assert "Detailed logs:" not in out
+
+
+def test_bambi_viz_subcommand_not_rewritten(monkeypatch, tmp_path: Path) -> None:
+    settings = _mk_settings(tmp_path)
+    seen: dict[str, bool] = {}
+
+    monkeypatch.setattr(cli, "load_settings", lambda config_path, **overrides: settings)
+    monkeypatch.setattr(cli, "_run_bambi_analyse", lambda s, args: seen.setdefault("analyze", True))
+    monkeypatch.setattr(cli, "_run_bambi_viz", lambda s: seen.setdefault("viz", True))
+
+    cli.main(["bambi", "viz", "--run-dir", "comparisons"])
+    assert seen.get("viz") is True
+    assert "analyze" not in seen

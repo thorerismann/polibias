@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article shows a slight left-leaning bias by focusing on the needs of victims and criticizing current support systems for being inadequate. The framing is sympathetic towards those affected.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29147656.json",
+  "prompt_hash": "1af9330e7254"
+}

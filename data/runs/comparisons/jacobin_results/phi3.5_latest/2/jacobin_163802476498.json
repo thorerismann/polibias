@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article discusses universal childcare with a slight left-leaning framing bias by emphasizing its role in addressing inequality and suggesting it as part of public education rather than private market solutions. Treatment is relatively balanced but leans slightly towards the idea that government should play an active role, indicating some degree of favoritism for state involvement without strong negative or positive language against other options.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "1af9330e7254"
+}

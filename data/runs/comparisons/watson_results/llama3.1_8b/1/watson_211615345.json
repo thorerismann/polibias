@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to have a left-leaning bias, as it presents the German politician Julia Klöckner in an unfavorable light and implies that she is not well-known in Switzerland.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_211615345.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.2,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "Der Artikel zeigt eine deutliche linke Tendenz in der Darstellung von Jacques Moretti und seiner Vergangenheit. Die Berichterstattung konzentriert sich auf die negativen Aspekte seines Lebens, während die positiven Aspekte nur oberflächlich erwähnt werden. Dies deutet darauf hin, dass der Artikel eine linke Ausrichtung hat.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_104591318.json",
+  "prompt_hash": "1af9330e7254"
+}

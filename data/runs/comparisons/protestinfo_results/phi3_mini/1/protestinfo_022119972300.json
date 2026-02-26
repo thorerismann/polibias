@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.95,
+  "comment": "The article presents a positive view of the pension Bienvenue and its commitment to providing safe housing for women in Lausanne without men present. The framing is slightly left-leaning due to this focus on social support systems but remains neutral overall.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

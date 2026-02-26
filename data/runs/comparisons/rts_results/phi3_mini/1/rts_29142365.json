@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of Bitcoin's recent price drop and its impact on traditional safe-haven assets like gold and silver. It leans towards the right due to economic conservatism in tone.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,14 @@
+{
+    "title": "Christian Skier Association in the Alps",
+    "body": {
+        "introduction": "In snowy pine-clad mountains, where faith and winter sports converge, Christian skier associations like 'Riders for Christ' are making waves. Initiated by Yann Valdez alongside Mélanie Cretegny in Lausanne, this association began as a small WhatsApp group aimed at creating community among believers on the slopes.",
+        "formation": {
+        "YannValdezQuestions": [
+            {"question": "How did your organization begin?", 
+             "answer": "'Riders for Christ' was born from a desire to connect with fellow Christians in sports, starting as an informal WhatsApp group and growing into organized meet-ups."},
+        "YannValdezMotivationQuestionsAndAnswersLists"
+            ]
+    }, 
+    "membership": {
+      "demographics": [
+          {"genderRatio": "The association has a balanced mix of male and female members, with

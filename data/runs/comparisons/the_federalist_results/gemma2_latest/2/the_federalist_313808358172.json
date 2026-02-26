@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.1,
+  "confidence": 0.9,
+  "comment": "The article strongly frames mass migration as a negative issue and criticizes Democrats for their past stances on the topic. It presents a right-leaning perspective on immigration policy.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "the_federalist_313808358172.json",
+  "prompt_hash": "1af9330e7254"
+}

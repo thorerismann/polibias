@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": null,
+  "confidence": 0.4,
+  "comment": "Topic leans slightly right due to focus on economic policy. Framing is mildly right-leaning in its emphasis on individual responsibility.",
+  "status": "recovered",
+  "model": "gemma2:latest",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "1af9330e7254"
+}

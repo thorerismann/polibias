@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel behandelt ein kontroverses Thema, das mit der Frage nach Israels Anspruch auf grosse Teile des Nahen Ostens verbunden ist. Die Darstellung der Äusserungen von US-Botschafter Huckabee und die Reaktion darauf sind überwiegend negativ gegenüber den Standpunkten der arabischen Staaten und der Organisation für Islamische Zusammenarbeit.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "watson_561501559.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article critiques the 'kingpin strategy' in drug enforcement, framing it as destabilizing and ultimately ineffective. It leans slightly right on subject bias due to its focus on US foreign policy.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

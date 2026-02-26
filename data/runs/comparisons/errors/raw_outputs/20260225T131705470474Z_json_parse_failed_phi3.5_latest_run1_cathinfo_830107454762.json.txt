@@ -1,0 +1,11 @@
+{
+ "articleSummary": {
+    "context": "Les responsables chrétiens sionistes, y compris des catholiques et évangéliques, se mobilisent avec l'appui de leurs homologues israéliens pour répondre à la récente critique du sionisme par les patriarches et chefs d’Églises vivant en Israël. Ces derniers soulignent leur unique représentativité des communautés chrétiennes sur place, exprimée dans une déclaration qui met l'accent sur le rôle historique de ces Églises apostoliques.",
+    "keyPoints": [
+        {
+            "eventDate": "2026-01-17",
+            "description": "Les patriarches rappellent leur autorité unique dans les domaines religieux, communautaires et pastoraux en Terre Sainte."
+        },
+        {
+            "issueAtHand": "Réprimander des idéologies dommageables telles que le sionisme chrétien",
+            "description": "Les patriarches mettent l'ac

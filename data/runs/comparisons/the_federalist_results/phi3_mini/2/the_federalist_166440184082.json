@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "The article strongly suggests a left-leaning bias by portraying AI as an overreaching authority infringing on parental rights and traditional family values. The framing is negative towards technology companies' influence on education.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "1af9330e7254"
+}

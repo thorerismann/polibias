@@ -1,0 +1,22 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.95,
+  "comment": "The article strongly frames voter ID as a positive issue and Democrats opposing it as hypocritical. Guest bias is low as the main voices are politicians and political figures.",
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

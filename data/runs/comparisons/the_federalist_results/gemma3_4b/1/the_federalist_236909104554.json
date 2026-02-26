@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.2,
+  "confidence": 0.7,
+  "comment": "The article strongly frames mifepristone as a dangerous drug and highlights concerns about the Biden administration's policies regarding its availability. It features primarily right-leaning voices expressing frustration with the FDA's inaction and emphasizes the potential harm to women and unborn babies.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_236909104554.json",
+  "prompt_hash": "1af9330e7254"
+}

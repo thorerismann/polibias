@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "The article discusses a Christian skiers' association and interviews its co-founder, highlighting the positive impact of faith in sports without being overtly biased towards either side.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "1af9330e7254"
+}

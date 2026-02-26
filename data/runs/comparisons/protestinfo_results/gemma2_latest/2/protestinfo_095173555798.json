@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article focuses on a charitable food distribution program with no clear political leanings. The tone is neutral and descriptive.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

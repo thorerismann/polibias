@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a factual account of the situation regarding US tariffs and trade policies without overtly favoring any political ideology or side. It discusses actions by President Trump's administration in relation to potential new import duties but does not lean towards left-wing or right-wing bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_144733379.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article has a slight left-leaning bias due to its positive portrayal of James Van Der Beek's career and personal life without highlighting any controversies or right-leaning viewpoints. The framing is predominantly sympathetic towards the actor.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29148433.json",
+  "prompt_hash": "1af9330e7254"
+}

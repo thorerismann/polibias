@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.75,
+  "treatment_bias": null,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a negative framing towards Ihab Shlayan and the Israeli Christian Voice by highlighting their controversial political engagement in favor of Israel within a predominantly right-leaning narrative on Jewish matters.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "1af9330e7254"
+}

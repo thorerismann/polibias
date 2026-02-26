@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a neutral and informative discussion of the Swedish mother-led movements, focusing on their grassroots nature and collective responses to public care issues.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "1af9330e7254"
+}

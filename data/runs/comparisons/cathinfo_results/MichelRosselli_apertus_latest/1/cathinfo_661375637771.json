@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Le sujet est neutre (dignité et valeur de chaque être humain), le framing est légèrement gauche (critique du nationalisme, racisme), le traitement est équilibré, et il n'y a pas de citations politiques évidentes.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "1af9330e7254"
+}

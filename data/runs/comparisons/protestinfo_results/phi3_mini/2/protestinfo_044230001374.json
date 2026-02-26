@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.5,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article appears to be neutral in its subject matter and framing bias while maintaining a balanced treatment of perspectives without favoritism towards political actors.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

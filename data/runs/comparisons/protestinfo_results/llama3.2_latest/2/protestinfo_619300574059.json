@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision relativement neutre de la réorganisation des temples, en mettant l'accent sur les efforts des associations locales pour maintenir la vie communautaire. Cependant, certains passages suggèrent que le contexte religieux est moins représenté, ce qui pourrait affecter la précision du score.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

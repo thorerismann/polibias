@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.02,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.01,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objective, en présentant les opinions de deux spécialistes sur le sujet des rites chrétiens. Les citations de Gabriel Ringlet et Pierre Gisel sont présentées sans critique ni jugement préalable, ce qui contribue à maintenir une neutralité dans la framing du sujet.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "1af9330e7254"
+}

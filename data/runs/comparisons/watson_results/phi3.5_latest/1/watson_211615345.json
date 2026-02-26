@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Der Artikel scheint eine leicht linke Tendenz zu haben durch die Kritik an einer möglichen Unwissenheit der Schweizer Bevölkerung über deutsche Politik und Kultur ohne direkten politischen Kontext oder starke rassistische Sprache. Der Ton ist jedoch neutraler als explizit linker, daher das negative Minuswert.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_211615345.json",
+  "prompt_hash": "1af9330e7254"
+}

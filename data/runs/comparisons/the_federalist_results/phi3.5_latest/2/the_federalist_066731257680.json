@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a largely neutral account of the Supreme Court's ruling against President Trump’s tariffs under IEEPA without overtly favoring any political bias; however, there is slight left-leaning framing in discussing the dissent and criticism towards executive power. The guests or quoted speakers are not distinctively from either side.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "1af9330e7254"
+}

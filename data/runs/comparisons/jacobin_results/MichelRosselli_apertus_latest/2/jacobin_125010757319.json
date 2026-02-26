@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the policies and rhetoric of Rodrigo Chaves, a right-leaning politician in Costa Rica. The tone is critical towards his approach to governance, which emphasizes confrontation with political elites while implementing technocratic economic policies.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "1af9330e7254"
+}

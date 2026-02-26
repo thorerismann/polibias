@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.6,
+  "confidence": 0.95,
+  "comment": "The article presents a mostly negative view of union growth and decline in various sectors with some left-leaning bias evident through the focus on labor issues and criticism towards anti-union practices by certain companies.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 1.0,
+  "comment": "The article clearly leans left by criticizing nationalist and racist ideologies from a Catholic perspective, emphasizing human dignity as central to politics according to Christian values.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "1af9330e7254"
+}

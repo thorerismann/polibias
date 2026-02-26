@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une analyse critique des élites de la Silicon Valley, accusées d'avoir un agenda réactionnaire et de promouvoir une vision technofasciste qui menace les valeurs démocratiques. Les arguments présentés sont soutenus par divers exemples et citations de personnalités influentes dans le domaine, ce qui contribue à la crédibilité de l'analyse.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article maintains a neutral subject bias about the historical event of Saint Francis' death anniversary with no clear political leaning. The framing is slightly left-leaning due to religious context and reverence for Christian traditions but still largely impartial overall. Treatment towards both sides seems balanced without explicit favoritism, hence a neutral treatment bias score. No specific guests or speakers are mentioned that would indicate any political leanings in the 'guests_bias'. The confidence level is high due to clear indications of religious reverence rather than overt politicization.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

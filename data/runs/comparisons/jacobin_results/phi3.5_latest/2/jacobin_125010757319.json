@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a clear left-leaning bias against Rodrigo Chaves's administration by critiquing his populist and technocratic approach as well as its negative impact on welfare state institutions. The framing of the narrative is confrontational towards right ideologies, particularly in economic policies.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "1af9330e7254"
+}

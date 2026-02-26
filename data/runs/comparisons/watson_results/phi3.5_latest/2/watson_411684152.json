@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "Der Artikel zeigt eine leichte bis moderate linksorientierte Bias durch die Betonung von Vorwürfen gegen Andrew und das britische Königshaus sowie den Kontrast zu der Position des Buckingham-Palastes. Der Ton ist negativ gegenüber dem Thema und gibt einen etwas skeptischen Eindruck ab, was auf eine leicht linksorientierte Framing hinweist.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_411684152.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.2,
+  "confidence": 0.85,
+  "comment": "The article primarily focuses on Jonathan Manilo's exploitation and the systemic issues surrounding his case, leaning slightly towards a sympathetic portrayal of his situation. The inclusion of Leila Boussemacer's commentary further emphasizes the broader problem of vulnerable workers and inadequate protections.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29148256.json",
+  "prompt_hash": "1af9330e7254"
+}

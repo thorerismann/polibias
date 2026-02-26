@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a strongly right-leaning perspective on the recent immigration decision by the U.S. Court of Appeals for the Fifth Circuit, with Judge Dana Douglas's dissent being portrayed as left-leaning and biased. The language used to describe the Trump administration's efforts to enforce immigration laws is also predominantly positive, while the criticism of Judge Douglas's approach is framed in a negative light.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "1af9330e7254"
+}

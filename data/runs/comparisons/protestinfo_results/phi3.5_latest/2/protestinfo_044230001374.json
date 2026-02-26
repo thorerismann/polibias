@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article est légèrement à gauche en raison de son engagement pour l'échange démocratique et la réflexion collective sur les préjugés, sans une forte orientation politique claire ni des invités fortement biaisés politiquement. La parabole biblique utilisée suggère un contexte religieux ou spirituel plutôt qu'un cadre strictement partisan.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "1af9330e7254"
+}

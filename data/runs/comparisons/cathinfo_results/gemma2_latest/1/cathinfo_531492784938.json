@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article reports on a religious event with neutral language and tone. There is no discernible political slant.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

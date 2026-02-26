@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.75,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article appears to lean left due to its focus on 'intégristes' (a pejorative term often used by the French left to describe conservative Catholics) and its framing of their place in society as a challenge or problem to be addressed.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical examination of the NYPD's and Manhattan district attorney's handling of the case against Wilkinson, raising questions about the validity of the hate crime charge. The article highlights potential First Amendment concerns and quotes experts who argue that the evidence is flimsy.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

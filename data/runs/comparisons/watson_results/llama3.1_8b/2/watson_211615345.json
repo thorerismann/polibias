@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to lean slightly left in its tone and framing, but the bias is not strong. The author's criticism of Günther Jauch's questions seems to be a neutral commentary on the show's difficulty for Swiss contestants.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_211615345.json",
+  "prompt_hash": "1af9330e7254"
+}

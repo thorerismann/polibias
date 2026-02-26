@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced perspective on union organizing, favoring a pragmatic approach that blends traditional structure-based methods with a more flexible, momentum-based strategy. It highlights the UAW's challenges and ultimately advocates for a bold, offensive strategy to address declining union density.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans left due to its criticism of the Republican-led Senate and support for a talking filibuster as reform; however, it maintains political neutrality by not showing favoritism towards any guest speaker.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "1af9330e7254"
+}

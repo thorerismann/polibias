@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.5,
+  "confidence": 1.0,
+  "comment": "The article focuses heavily on the potential for a conflict between China and Taiwan, presenting it as a serious threat to global stability. It also delves into historical parallels with the rise of authoritarian regimes like Putin's Russia, suggesting that Xi Jinping may follow similar paths.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

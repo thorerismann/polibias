@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans towards criticizing the Democrats' handling of Medicaid and their policies under Biden administration without considering potential positive impacts or Republican reforms objectively. The framing is left-leaning with a tone that suggests right-leaning criticism.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

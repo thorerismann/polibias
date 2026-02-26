@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a clear right-leaning perspective, with the author criticizing Democratic policies and defending Republican reforms to Medicaid. The language used is emotive and critical of Democrats, while portraying Republicans in a positive light.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.75,
+  "comment": "The article focuses on a sports event with neutral language but suggests slight negative framing towards Bernese team's struggles without clear indication of left or right bias.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "watson_406339606.json",
+  "prompt_hash": "1af9330e7254"
+}

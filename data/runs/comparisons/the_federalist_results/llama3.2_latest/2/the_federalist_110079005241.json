@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article portrays a left-leaning perspective on the shooting, suggesting that the media is covering up the shooter's transgender identity and ideology. The language used by news outlets like NBC News and The New York Times is criticized for being too deferential to Dorgan's trans identity, while other outlets are accused of glossing over the shootings as mere 'family disputes' or using euphemisms to avoid discussing the topic. Overall, the article presents a critical view of the media's handling of the shooting and its perceived bias towards transgender issues.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "the_federalist_110079005241.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article heavily criticizes the framing of Gen Z's spending habits by The Wall Street Journal, arguing it exploits generational anxieties for profit and reinforces division. It suggests the issue is rooted in systemic economic factors rather than individual choices.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "1af9330e7254"
+}

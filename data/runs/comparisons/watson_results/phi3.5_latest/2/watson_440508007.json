@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "The article leans slightly to the left due to its critical tone towards Trump's economic policies and focus on companies affected by his tariffs seeking reimbursement. The guests mentioned are predominantly from industries negatively impacted by these policies.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "watson_440508007.json",
+  "prompt_hash": "1af9330e7254"
+}

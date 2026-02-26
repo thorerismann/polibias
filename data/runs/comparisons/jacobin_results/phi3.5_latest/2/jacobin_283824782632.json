@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article leans slightly to the left by highlighting losses in union membership within sectors often associated with conservative economic policies like manufacturing and mining/drilling industries; it also criticizes anti-union practices of companies such as Amazon. The tone suggests concern for workers' rights, indicating a slight leftward bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

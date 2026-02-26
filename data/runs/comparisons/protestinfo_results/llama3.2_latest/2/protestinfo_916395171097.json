@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une approche neutre sur le sujet, en invitant un historien du catholicisme à discuter de la place des catholiques intégristes. La discussion reste claire et objective, sans tendance particulière.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

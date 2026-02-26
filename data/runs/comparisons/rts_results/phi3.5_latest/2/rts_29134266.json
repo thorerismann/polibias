@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.3,
+  "confidence": 0.95,
+  "comment": "The article displays a left-leaning bias by critiquing the reliance of Europe on American military support and questioning U.S.-Europe relations within its contextual framework. The framing is critical towards current geopolitical alignments while advocating for European autonomy in defense, indicating a rightward skew against perceived neoconservative strategies by the United States.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29134266.json",
+  "prompt_hash": "1af9330e7254"
+}

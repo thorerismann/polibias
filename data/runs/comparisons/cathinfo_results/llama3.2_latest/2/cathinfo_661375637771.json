@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision très critique du nationalisme et de l'extrême droite, en mettant en avant les valeurs chrétiennes et la dignité humaine. Le ton est dominé par un discours moralisateur et pédagogique, qui cherche à éduquer le lecteur sur les dangers du nationalisme et de l'antisémitisme.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article analyzes Gavin Newsom's political strategy and its perceived cargo culting nature, suggesting that his approach is based on mimicry rather than substance.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_179019979623.json",
+  "prompt_hash": "1af9330e7254"
+}

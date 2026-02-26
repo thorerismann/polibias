@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article reports a neutral, factual account of a skiing accident in Arosa, without any apparent bias or partisan tone.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_634863006.json",
+  "prompt_hash": "1af9330e7254"
+}

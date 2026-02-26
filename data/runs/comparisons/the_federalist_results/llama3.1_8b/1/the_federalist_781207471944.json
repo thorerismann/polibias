@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article is generally neutral in tone, focusing on Robert Duvall's acting career and personal life without expressing a clear political bias. However, the mention of his conservative views and associations with Republican figures may suggest a subtle right-leaning tendency.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "1af9330e7254"
+}

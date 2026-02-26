@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton relativement neutre, mais le sujet du bitcoin et de la technologie numérique peut être perçu comme plus tendance ou progressiste que conservateur. Le langage utilisé pour décrire les investisseurs qui fuient le risque suggère également une certaine sympathie pour l'investissement responsable.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29142365.json",
+  "prompt_hash": "1af9330e7254"
+}

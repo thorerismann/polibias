@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "This article covers Swiss athletes' performances in various winter sports events, including alpine skiing and biathlon, without showing any clear bias towards the left or right.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29147331.json",
+  "prompt_hash": "1af9330e7254"
+}

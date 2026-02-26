@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -1.0,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article presents a clear left-leaning bias against China's actions and policies towards Taiwan through its framing of the issue as an imminent threat to world peace.",
+  "status": "recovered",
+  "model": "phi3:mini",
+  "article": "watson_809208965.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.75,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic, but with a left-leaning framing and treatment bias. The association 'Mil et Une Miches' is portrayed as a positive force in the community, while the paroisse's decision to close some temples is framed as a necessary response to changing circumstances.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "1af9330e7254"
+}

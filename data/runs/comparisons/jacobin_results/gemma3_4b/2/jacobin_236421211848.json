@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article presents Sheinbaum positively while highlighting US anxieties and historical grievances. It suggests a cyclical pattern of diplomatic maneuvering and escalating rhetoric.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral and informative account of the author's background and research interests, with occasional hints at left-leaning perspectives but no explicit bias.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "1af9330e7254"
+}

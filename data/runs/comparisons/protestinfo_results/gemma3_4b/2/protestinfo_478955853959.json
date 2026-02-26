@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.2,
+  "confidence": 0.7,
+  "comment": "The article focuses on recipes for lenten soups, highlighting charitable aspects and a specific campaign. It leans slightly towards the left through its emphasis on charity and community involvement.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article appears to be a neutral commentary on religion, with no clear political bias.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "1af9330e7254"
+}

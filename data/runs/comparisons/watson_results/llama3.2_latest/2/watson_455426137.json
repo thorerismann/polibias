@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Der Artikel zeigt eine neutrale Berichterstattung über einen Vorfall, in dem ein Mann wegen Eindringens in Mar-a-Lago erschossen wurde. Es gibt keine klaren Hinweise auf eine politische Agenda der Medien oder des Autors.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_455426137.json",
+  "prompt_hash": "1af9330e7254"
+}

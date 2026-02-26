@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article primarily presents factual information about a natural disaster and the subsequent political response in Italy without explicitly favoring any particular ideological viewpoint; however, there is slight left-leaning framing through criticism of existing structures and calls for preventive measures against environmental risks. The guests or sources quoted do not appear to be politically biased.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29134931.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.8,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.9,
+  "confidence": 0.85,
+  "comment": "Die Ukraine hat einen leichten Vorteil im Krieg gegen Russland, da Elon Musk Starlink ausgeschlossen hat und die russische Wirtschaft unter Druck steht.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_639071414.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.02,
+  "framing_bias": 0.01,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton neutre et objectif, sans any de préjugés à gauche ou droite. La narration est centrée sur l'histoire du saint François d'Assise et les événements entourant l'exhumation de ses ossements.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

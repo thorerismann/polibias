@@ -6,16 +6,22 @@ This scraper mirrors the interface of scraper.py for RTS articles.
 
 from __future__ import annotations
 
-import json
 import re
-from dataclasses import asdict, dataclass, is_dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional
-from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
-from polibias.filenames import stable_article_filename
+from polibias.scraper_utils import (
+    extract_author,
+    extract_jsonld_article,
+    extract_keywords,
+    fetch_soup,
+    parse_iso_datetime,
+    safe_strip,
+    scrape_urls,
+)
 
 
 # ---------- Schema ----------
@@ -51,51 +57,10 @@ _HEADERS = {
 }
 
 
-def fetch_soup(url: str, timeout: int = 30) -> BeautifulSoup:
-    req = Request(url, headers=_HEADERS)
-    with urlopen(req, timeout=timeout) as r:
-        ctype = (r.headers.get("Content-Type") or "").lower()
-        if "text/html" not in ctype:
-            raise ValueError(f"Not HTML: {ctype}")
-        html = r.read().decode("utf-8", errors="ignore")
-    soup = BeautifulSoup(html, "html.parser")
-    if not soup.html or not soup.body:
-        raise ValueError("Malformed or non-document HTML")
-    return soup
-
-
-# ---------- JSON-LD ----------
-
-def _extract_jsonld_graph(soup: BeautifulSoup) -> Dict[str, Any]:
-    """Extract the Article node from a JSON-LD @graph structure."""
-    for sc in soup.select('script[type="application/ld+json"]'):
-        raw = sc.string
-        if not raw:
-            continue
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            continue
-        # Handle @graph wrapper (Yoast SEO / WordPress style)
-        graph = data if isinstance(data, list) else data.get("@graph", [])
-        if isinstance(graph, list):
-            for node in graph:
-                if isinstance(node, dict) and node.get("@type") in ("Article", "NewsArticle"):
-                    return node
-        # Flat structure fallback
-        if isinstance(data, dict) and data.get("@type") in ("Article", "NewsArticle"):
-            return data
-    return {}
-
-
 # ---------- Field extractors ----------
 
 def _safe_strip(s: Any) -> Optional[str]:
-    if not s:
-        return None
-    import html as _html
-    s2 = _html.unescape(str(s)).strip()
-    return s2 if s2 else None
+    return safe_strip(s, unescape=True)
 
 
 def _extract_body(soup: BeautifulSoup) -> Optional[str]:
@@ -113,11 +78,9 @@ def _extract_body(soup: BeautifulSoup) -> Optional[str]:
 
 def _extract_author(soup: BeautifulSoup, jsonld: Dict[str, Any]) -> Optional[str]:
     # Prefer JSON-LD author name
-    author = jsonld.get("author")
-    if isinstance(author, dict):
-        return _safe_strip(author.get("name"))
-    if isinstance(author, str):
-        return _safe_strip(author)
+    author = extract_author(jsonld)
+    if author:
+        return author
     # Fallback: HTML element
     el = soup.select_one('[class*="author"]')
     if el:
@@ -129,15 +92,9 @@ def _extract_author(soup: BeautifulSoup, jsonld: Dict[str, Any]) -> Optional[str
 
 
 def _extract_date(soup: BeautifulSoup, jsonld: Dict[str, Any], field: str) -> Optional[str]:
-    raw = jsonld.get(field)
-    if raw:
-        try:
-            return (
-                datetime.fromisoformat(raw.replace("Z", "+00:00"))
-                .strftime("%Y-%m-%d %H:%M:%S")
-            )
-        except ValueError:
-            return raw
+    parsed = parse_iso_datetime(jsonld.get(field))
+    if parsed:
+        return parsed
     # Fallback: <time> tag for datePublished only
     if field == "datePublished":
         time_tag = soup.find("time", datetime=True)
@@ -147,12 +104,7 @@ def _extract_date(soup: BeautifulSoup, jsonld: Dict[str, Any], field: str) -> Op
 
 
 def _extract_keywords(jsonld: Dict[str, Any]) -> List[str]:
-    kw = jsonld.get("keywords")
-    if isinstance(kw, list):
-        return [k.strip() for k in kw if k and str(k).strip()]
-    if isinstance(kw, str):
-        return [p.strip() for p in kw.split(",") if p.strip()]
-    return []
+    return extract_keywords(jsonld)
 
 
 def _extract_section(jsonld: Dict[str, Any]) -> Optional[str]:
@@ -188,8 +140,13 @@ def _extract_canonical(soup: BeautifulSoup, jsonld: Dict[str, Any]) -> Optional[
 # ---------- Orchestrator ----------
 
 def parse_article(url: str, timeout: int = 30) -> FederalistArticle:
-    soup = fetch_soup(url, timeout=timeout)
-    jsonld = _extract_jsonld_graph(soup)
+    soup = fetch_soup(
+        url,
+        headers=_HEADERS,
+        timeout=timeout,
+        require_html_content_type=True,
+    )
+    jsonld = extract_jsonld_article(soup)
 
     return FederalistArticle(
         title=_safe_strip(soup.title.string) if soup.title else None,
@@ -229,10 +186,6 @@ def fetch_article_links(limit: int = 20, timeout: int = 15) -> List[str]:
 
 # ---------- Persistence ----------
 
-def _make_filename(article: dict) -> str:
-    return stable_article_filename(article, "the_federalist")
-
-
 def scrape_federalist(
     urls: List[str],
     out_dir: Path,
@@ -242,32 +195,13 @@ def scrape_federalist(
 
     Skips articles whose JSON file already exists.
     """
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    for url in urls:
-        url = url.strip()
-        if not url.startswith("http"):
-            continue
-        try:
-            data = parse_article(url, timeout=timeout)
-            if is_dataclass(data):
-                data = asdict(data)
-            fname = _make_filename(data)
-            save_path = out_dir / fname
-            if save_path.exists():
-                print(f"  [skip] {fname}")
-                continue
-            with open(save_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"  [ok]   {fname}")
-        except Exception as e:
-            print(f"  [err]  {url}: {e}")
+    scrape_urls(urls, out_dir, "the_federalist", parse_article, timeout=timeout)
 
 
 # ---------- CLI entry point ----------
 
 def main() -> None:
-    """Scrape recent articles from The Federalist homepage and save to data/webdata_federalist/."""
+    """Scrape recent articles from The Federalist homepage and save to data/webdata/the_federalist/."""
     import argparse
 
     parser = argparse.ArgumentParser(
@@ -283,7 +217,7 @@ def main() -> None:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path(__file__).resolve().parents[2] / "data" / "webdata_federalist",
+        default=Path(__file__).resolve().parents[2] / "data" / "webdata" / "the_federalist",
         help="Directory to write JSON files into.",
     )
     parser.add_argument("--limit", type=int, default=20, help="Max articles to fetch from homepage.")

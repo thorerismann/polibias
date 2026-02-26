@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a nuanced and critical view of the US strategy in the 'war on drugs', highlighting its limitations and unintended consequences. It also challenges the conventional notion of drug cartels as centralized organizations, instead portraying them as complex networks of regional clans and horizontally organized structures.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

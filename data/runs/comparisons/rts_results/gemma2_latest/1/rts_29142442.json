@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on the opening ceremony of the Milan Cortina 2026 Winter Olympics. There is no discernible political slant in the topic selection, framing, or treatment of individuals or groups.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "rts_29142442.json",
+  "prompt_hash": "1af9330e7254"
+}

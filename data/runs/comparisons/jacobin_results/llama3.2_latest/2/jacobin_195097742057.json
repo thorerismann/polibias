@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a critical view of hyperpolitics, arguing that it prevents radical alternatives from taking shape and leads to a lack of institutional framework. The author's tone is generally neutral, but there are some subtle hints of left-leaning critique.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "1af9330e7254"
+}

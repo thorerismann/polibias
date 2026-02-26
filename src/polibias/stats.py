@@ -94,13 +94,10 @@ def icc_oneway_matrix(data: np.ndarray) -> float:
 
     grand_mean = data.mean()
     row_means = data.mean(axis=1)
-    col_means = data.mean(axis=0)
 
     # Sum of squares
     ss_total = ((data - grand_mean) ** 2).sum()
     ss_rows = k * ((row_means - grand_mean) ** 2).sum()
-    ss_cols = n * ((col_means - grand_mean) ** 2).sum()
-    ss_error = ss_total - ss_rows - ss_cols
 
     # Mean squares (one-way: treat raters as random)
     ms_between = ss_rows / (n - 1)

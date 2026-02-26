@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article discusses the decline of traditional Christian rituals and the rise of new, more inclusive practices. The authors, Gabriel Ringlet and Pierre Gisel, are both experts in their field and present a nuanced view on how the Church should adapt to changing societal needs.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "1af9330e7254"
+}

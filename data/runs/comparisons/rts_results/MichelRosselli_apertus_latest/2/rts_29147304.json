@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Franjo von Allmen a remporté une médaille historique en super-G, rejoignant ainsi Vreni Schneider comme seul représentant de Swiss-Ski à avoir gagné trois médailles d'or aux Jeux olympiques.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

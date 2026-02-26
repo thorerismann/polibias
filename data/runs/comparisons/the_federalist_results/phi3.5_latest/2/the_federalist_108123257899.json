@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article exhibits a left-leaning framing bias by critiquing the media's portrayal of Gen Z spending habits and suggesting systemic issues rather than individual choices contribute to their financial struggles. The tone indicates disapproval towards this representation.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "1af9330e7254"
+}

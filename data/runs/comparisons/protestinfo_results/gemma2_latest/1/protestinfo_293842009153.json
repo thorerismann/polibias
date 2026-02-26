@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "The article presents a question about the potential impact of collaboration without taking a clear stance. More context is needed for a precise bias assessment.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "1af9330e7254"
+}

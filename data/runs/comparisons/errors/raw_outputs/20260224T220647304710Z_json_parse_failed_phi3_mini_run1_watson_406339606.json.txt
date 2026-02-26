@@ -1,0 +1,22 @@
+{
+    "title": "Hochgeladene Spannung: Die Top Teams im Schweizer Nationalliga A",
+    "summary": {
+        "EVZ Tigers EV Zug (1)": {
+            "playoff-chances_percentage": "97.2%",
+            "rangement": [8, 9],
+            "key_figures": ["Benjamin Baumgartner - verletzungsbedingte Ausfälle"],
+            "restprogramm_overview": {
+                "home": ["Kloten", "Biel", "Ambri"],
+                "away": []
+            }
+        },
+        "EV Zug EVZ (2)": {
+            "playoff-chances_percentage": "88.9%",
+            "rangement": [10, 11],
+            "key_figures": ["Marco Lehmann - angeschlagen"],
+            "restprogramm_overview": {
+                "home": ["Zürich"],
+                "away": []
+            }
+        },
+        "

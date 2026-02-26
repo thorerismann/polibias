@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article slightly leans left due to its critical stance towards the collaboration and health service criteria but remains mostly neutral with a slight lean right in treatment of guests.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "1af9330e7254"
+}

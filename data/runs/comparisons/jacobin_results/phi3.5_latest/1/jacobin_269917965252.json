@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.75,
+  "guests_bias": -0.6,
+  "confidence": 0.92,
+  "comment": "The article heavily criticizes the U.S.'s drug war strategy and suggests a left-leaning perspective by questioning its effectiveness and framing it as perpetuating violence rather than solving issues related to organized crime. The language used implies skepticism towards government policies on drugs, which align with more progressive or liberal viewpoints.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "1af9330e7254"
+}

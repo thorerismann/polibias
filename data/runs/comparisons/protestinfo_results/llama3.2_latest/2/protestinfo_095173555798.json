@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objective, mais avec une légère tendance vers la description des activités de La Halte sans critiquer ni attaquer les acteurs impliqués. Le langage utilisé est généralement formel et respectueux, ce qui suggère une approche équilibrée.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "1af9330e7254"
+}

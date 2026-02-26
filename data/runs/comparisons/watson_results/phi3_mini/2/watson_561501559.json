@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.85,
+  "guests_bias": -0.75,
+  "confidence": 0.95,
+  "comment": "The article clearly leans left-wing with negative framing towards Israel's policies and actions in the region as viewed by several Arabic states.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "watson_561501559.json",
+  "prompt_hash": "1af9330e7254"
+}

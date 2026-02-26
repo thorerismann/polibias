@@ -1,4 +1,3 @@
-url
 https://www.rts.ch/info/economie/2025/article/entreprises-suisses-en-irak-opportunites-et-defis-d-un-marche-prometteur-28980688.html
 https://www.rts.ch/info/monde/2026/article/glissement-de-terrain-en-sicile-niscemi-face-a-une-catastrophe-previsible-29134931.html
 https://www.rts.ch/info/suisse/2026/article/fonds-climat-simone-de-montmollin-defend-le-dispositif-actuel-contre-l-initiative-29138340.html
@@ -8,3 +7,10 @@ https://www.rts.ch/info/suisse/2026/article/l-hiver-1951-quand-les-avalanches-on
 https://www.rts.ch/info/regions/neuchatel/2026/article/maltraitance-animale-a-la-brevine-un-agriculteur-epuise-temoigne-29144178.html
 https://www.rts.ch/info/monde/2026/article/zelensky-pas-d-elections-en-ukraine-sans-cessez-le-feu-et-garanties-de-securite-29148270.html
 https://www.rts.ch/info/suisse/2026/article/le-conseil-federal-veut-une-loi-urgente-pour-les-victimes-de-crans-montana-29147656.html
+https://www.rts.ch/info/culture/cinema/2026/article/james-van-der-beek-star-de-dawson-est-decede-a-48-ans-29148433.html
+https://www.rts.ch/info/suisse/2026/article/domestique-exploite-a-gstaad-la-suisse-ordonne-son-renvoi-malgre-l-abus-29148256.html
+https://www.rts.ch/info/economie/2026/article/bitcoin-chute-a-60-000-dollars-puis-rebondit-le-marche-des-cryptomonnaies-agite-29142365.html
+https://www.rts.ch/sport/jo/milan_cortina-2026/2026/article/franjo-von-allmen-triple-champion-olympique-historique-en-ski-alpin-29147331.html
+https://www.rts.ch/info/monde/2026/article/jo-milan-cortina-2026-ceremonie-d-ouverture-inedite-sur-4-sites-differents-29142442.html
+https://www.rts.ch/sport/ski/2026/article/franjo-von-allmen-triple-d-or-historique-aux-jo-odermatt-en-bronze-29147304.html
+

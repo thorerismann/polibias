@@ -1,0 +1,12 @@
+{
+  "subject_bias": "Cannot determine from the provided text snippet.",
+  "framing_bias": "Cannot determine from the provided text snippet.",
+  "treatment_bias": "Cannot determine from the provided text snippet.",
+  "guests_bias": "Cannot determine from the provided text snippet.",
+  "confidence": 0.0,
+  "comment": "The given article excerpt does not contain sufficient information to assess any political bias.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "1af9330e7254"
+}

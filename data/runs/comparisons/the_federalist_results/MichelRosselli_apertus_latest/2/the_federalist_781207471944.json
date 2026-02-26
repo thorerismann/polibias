@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Article focuses on Duvall’s career and notable performances without taking a clear stance or favoring any political party.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "1af9330e7254"
+}

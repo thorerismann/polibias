@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article clearly targets the New York Times and its Jewish staff with a negative tone suggesting anti-Semitism or bias against Israel's military personnel mentioned in connection to Kahn. The framing of social media posts as evidence for hate crimes without clear proof leans towards left-leaning political rhetoric.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

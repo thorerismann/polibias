@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.5,
+  "confidence": 0.7,
+  "comment": "The article presents a critical view of Donald Trump's statements on Switzerland, highlighting his perceived biases and inaccuracies. The tone is generally negative towards Trump, but the language used is formal and objective.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

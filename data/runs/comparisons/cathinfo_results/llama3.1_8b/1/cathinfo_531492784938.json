@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article appears to be written from a neutral perspective, but with a slightly left-leaning tone. The language used is respectful and informative, without any overtly biased or emotive language.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "1af9330e7254"
+}

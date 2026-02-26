@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.333,
+  "framing_bias": 0.166,
+  "treatment_bias": 0.5,
+  "guests_bias": 1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral tone, focusing on the achievements of Franjo von Allmen and other Swiss skiers. However, it does contain some phrases that could be interpreted as slightly favorable to the right.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

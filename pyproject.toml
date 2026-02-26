@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "polibias"
-version = "0.1.0"
+version = "0.2.0"
 description = "Political bias scoring of news articles using local LLMs (Ollama)."
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -35,9 +35,6 @@ bayes = [
 ]
 cloud = [
     "google-cloud-storage>=2.14",
-]
-ui = [
-    "streamlit>=1.40",
 ]
 
 [project.scripts]

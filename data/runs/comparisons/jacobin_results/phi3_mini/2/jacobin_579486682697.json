@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -0.7,
+  "confidence": 0.98,
+  "comment": "The article leans towards a negative portrayal of Wilkinson and the New York Times with strong left-leaning bias based on their language suggesting hate crime against Jewish staffers.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

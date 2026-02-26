@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article leans left due to its language and focus on Catholic intolerance within the Church. The tone suggests a critical view of Catholics who are described as 'intolerant'. There is no clear bias towards guests or framing.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "1af9330e7254"
+}

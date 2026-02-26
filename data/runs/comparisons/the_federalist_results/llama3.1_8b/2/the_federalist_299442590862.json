@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "The article presents a left-leaning perspective on the Senate's use of the talking filibuster, advocating for its revival as a means to promote debate and discussion in the institution.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "1af9330e7254"
+}

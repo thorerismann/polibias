@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.92,
+  "comment": "The article criticizes the French government's approach to fertility rates and suggests a left-leaning perspective by questioning policies that encourage women to freeze their eggs for later use in reproductive technology. The framing is negative towards these initiatives as it implies potential health risks, societal implications, and questions about the effectiveness of such measures.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "the_federalist_176405751206.json",
+  "prompt_hash": "1af9330e7254"
+}

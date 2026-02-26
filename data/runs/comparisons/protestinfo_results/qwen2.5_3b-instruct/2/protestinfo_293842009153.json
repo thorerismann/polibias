@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article focuses on a collaboration's impact on service offerings, potentially leaning critical towards it.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "1af9330e7254"
+}

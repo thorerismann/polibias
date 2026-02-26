@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 1.0,
+  "comment": "The article focuses heavily on Silicon Valley's shift towards a tech-fascist ideology, criticizing the region for abandoning progressive values and embracing authoritarianism. The author presents a largely negative view of Silicon Valley’s influence.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "1af9330e7254"
+}

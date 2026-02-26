@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article presents a left-leaning perspective on the need for an investigative commission to uncover information about the Epstein affair, focusing on transparency and accountability in government. The author's tone is informative and neutral, but their framing of the issue leans towards favoring a left-wing approach.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

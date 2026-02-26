@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a conflict of opinions regarding Israel's claims to land in the Middle East, highlighting condemnation from Arab and Muslim states. Huckabee's initial comments are framed as controversial, while the article also details the ongoing dispute over territory and settlements.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "watson_561501559.json",
+  "prompt_hash": "1af9330e7254"
+}

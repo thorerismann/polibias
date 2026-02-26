@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article focuses on declining union membership in traditionally right-leaning sectors like manufacturing and mining while highlighting growth in construction and healthcare.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "1af9330e7254"
+}

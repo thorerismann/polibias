@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "The article presents a critical view of the Biden administration's expansion of mail-order abortion drugs and the FDA's handling of mifepristone, with a focus on the potential harm to women and unborn babies.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "the_federalist_236909104554.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses the organization of a prayer chain by the Council of Conferences of European Bishops, focusing on peace and the role of prayer in promoting it. There is no clear political bias in the subject matter or treatment of left vs right.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "1af9330e7254"
+}

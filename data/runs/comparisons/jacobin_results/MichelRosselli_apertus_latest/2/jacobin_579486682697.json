@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.65,
+  "comment": "The article discusses a controversial case involving the arrest of Alexei Wilkinson for alleged hate crime against New York Times staff, stemming from a July 30 vandalism incident and subsequent social media posts. The evidence presented by prosecutors is deemed flimsy by legal experts, raising questions about the legitimacy of the charges.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "1af9330e7254"
+}

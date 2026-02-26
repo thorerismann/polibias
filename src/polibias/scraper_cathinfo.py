@@ -2,18 +2,24 @@
 
 from __future__ import annotations
 
-import json
 import re
 import textwrap
-from dataclasses import asdict, dataclass, is_dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, List, Optional
+from typing import List, Optional
 from urllib.parse import urljoin
-from urllib.request import Request, urlopen
 
 from bs4 import BeautifulSoup
-from polibias.filenames import stable_article_filename
+from polibias.scraper_utils import (
+    extract_author,
+    extract_jsonld_article,
+    extract_keywords,
+    fetch_soup,
+    parse_iso_datetime,
+    safe_strip,
+    scrape_urls,
+)
 
 
 @dataclass
@@ -38,41 +44,6 @@ _HEADERS = {
     "User-Agent": "Mozilla/5.0",
     "Accept-Language": "fr-CH,fr;q=0.9,en;q=0.8",
 }
-
-
-def _safe_strip(value: Any) -> Optional[str]:
-    if value is None:
-        return None
-    text = str(value).strip()
-    return text or None
-
-
-def fetch_soup(url: str, timeout: int = 30) -> BeautifulSoup:
-    req = Request(url, headers=_HEADERS)
-    with urlopen(req, timeout=timeout) as r:
-        html = r.read().decode("utf-8", errors="ignore")
-    soup = BeautifulSoup(html, "html.parser")
-    if not soup.html or not soup.body:
-        raise ValueError("Malformed or non-document HTML")
-    return soup
-
-
-def _extract_jsonld_article(soup: BeautifulSoup) -> dict:
-    for sc in soup.select('script[type="application/ld+json"]'):
-        raw = sc.string
-        if not raw:
-            continue
-        try:
-            data = json.loads(raw)
-        except json.JSONDecodeError:
-            continue
-        nodes = data if isinstance(data, list) else data.get("@graph", [data])
-        if not isinstance(nodes, list):
-            nodes = [nodes]
-        for node in nodes:
-            if isinstance(node, dict) and node.get("@type") in {"NewsArticle", "Article"}:
-                return node
-    return {}
 
 
 def _extract_body(soup: BeautifulSoup) -> Optional[str]:
@@ -111,52 +82,21 @@ def _extract_body(soup: BeautifulSoup) -> Optional[str]:
         if plain and len(plain) > 120:
             if "©" in plain:
                 plain = plain.split("©", 1)[0].strip()
-            return "\n".join(textwrap.wrap(plain, width=120))
+            return textwrap.fill(plain, width=120)
     return None
 
 
-def _extract_keywords(node: dict) -> List[str]:
-    kw = node.get("keywords")
-    if isinstance(kw, list):
-        return [str(k).strip() for k in kw if str(k).strip()]
-    if isinstance(kw, str):
-        return [p.strip() for p in kw.split(",") if p.strip()]
-    return []
-
-
-def _extract_author(node: dict) -> Optional[str]:
-    author = node.get("author")
-    if isinstance(author, dict):
-        return _safe_strip(author.get("name"))
-    if isinstance(author, list) and author:
-        first = author[0]
-        if isinstance(first, dict):
-            return _safe_strip(first.get("name"))
-        return _safe_strip(first)
-    return _safe_strip(author)
-
-
-def _extract_date(value: Any) -> Optional[str]:
-    raw = _safe_strip(value)
-    if not raw:
-        return None
-    try:
-        return datetime.fromisoformat(raw.replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M:%S")
-    except ValueError:
-        return raw
-
-
 def parse_article(url: str, timeout: int = 30) -> CathinfoArticle:
-    soup = fetch_soup(url, timeout=timeout)
-    jsonld = _extract_jsonld_article(soup)
-    title = _safe_strip(jsonld.get("headline")) or _safe_strip(soup.title.string if soup.title else None)
+    soup = fetch_soup(url, headers=_HEADERS, timeout=timeout)
+    jsonld = extract_jsonld_article(soup)
+    title = safe_strip(jsonld.get("headline")) or safe_strip(soup.title.string if soup.title else None)
     canonical = (
-        _safe_strip(jsonld.get("mainEntityOfPage"))
-        or _safe_strip((soup.select_one('link[rel="canonical"]') or {}).get("href"))
+        safe_strip(jsonld.get("mainEntityOfPage"))
+        or safe_strip((soup.select_one('link[rel="canonical"]') or {}).get("href"))
         or url
     )
 
-    description = _safe_strip(jsonld.get("description")) or _safe_strip(
+    description = safe_strip(jsonld.get("description")) or safe_strip(
         (soup.select_one('meta[name="description"]') or {}).get("content")
     )
     body = _extract_body(soup) or description
@@ -165,15 +105,15 @@ def parse_article(url: str, timeout: int = 30) -> CathinfoArticle:
         title=title,
         body=body,
         description=description,
-        headline=_safe_strip(jsonld.get("headline")) or title,
-        author=_extract_author(jsonld),
-        keywords=_extract_keywords(jsonld),
-        article_section=_safe_strip(jsonld.get("articleSection")),
-        in_language=_safe_strip(jsonld.get("inLanguage")) or "fr",
+        headline=safe_strip(jsonld.get("headline")) or title,
+        author=extract_author(jsonld),
+        keywords=extract_keywords(jsonld),
+        article_section=safe_strip(jsonld.get("articleSection")),
+        in_language=safe_strip(jsonld.get("inLanguage")) or "fr",
         canonical_url=canonical,
         publisher_name="Cathinfo",
-        date_published=_extract_date(jsonld.get("datePublished")),
-        date_modified=_extract_date(jsonld.get("dateModified")),
+        date_published=parse_iso_datetime(jsonld.get("datePublished")),
+        date_modified=parse_iso_datetime(jsonld.get("dateModified")),
         date_accessed=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
     )
 
@@ -203,26 +143,5 @@ def fetch_article_links(limit: int = 20, timeout: int = 20) -> List[str]:
     return links
 
 
-def _make_filename(article: dict) -> str:
-    return stable_article_filename(article, "cathinfo")
-
-
 def scrape_cathinfo(urls: List[str], out_dir: Path, timeout: int = 30) -> None:
-    out_dir.mkdir(parents=True, exist_ok=True)
-    for url in urls:
-        url = url.strip()
-        if not url.startswith("http"):
-            continue
-        try:
-            data = parse_article(url, timeout=timeout)
-            if is_dataclass(data):
-                data = asdict(data)
-            fname = _make_filename(data)
-            path = out_dir / fname
-            if path.exists():
-                print(f"  [skip] {fname}")
-                continue
-            path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-            print(f"  [ok]   {fname}")
-        except Exception as e:  # noqa: BLE001
-            print(f"  [err]  {url}: {e}")
+    scrape_urls(urls, out_dir, "cathinfo", parse_article, timeout=timeout)

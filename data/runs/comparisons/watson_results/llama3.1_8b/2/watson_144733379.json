@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to be neutral in its selection of topic, but slightly left-leaning in its framing and tone. The Seco-Staatssekretärin is quoted as saying that the changed circumstances could bring both challenges and opportunities, which suggests a nuanced approach.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "watson_144733379.json",
+  "prompt_hash": "1af9330e7254"
+}

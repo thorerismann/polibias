@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": -0.1,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left due to its focus on investigative journalism and concerns about the French judicial system's handling of high-profile cases. There is a clear sense that more transparency from political figures could be beneficial.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "1af9330e7254"
+}

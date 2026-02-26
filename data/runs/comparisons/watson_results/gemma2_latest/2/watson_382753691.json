@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents a generally positive view of AI in healthcare, highlighting its benefits while acknowledging potential risks. The tone is cautiously optimistic.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "watson_382753691.json",
+  "prompt_hash": "1af9330e7254"
+}

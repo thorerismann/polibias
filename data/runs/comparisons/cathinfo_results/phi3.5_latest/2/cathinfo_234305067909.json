@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une préoccupation religieuse sans biais politique clair et neutre dans le sujet choisi ou la narration. Cependant, il y a un léger penchant vers les perspectives conservatrices en mettant l'accent sur des pratiques traditionnelles de prière.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "cathinfo_234305067909.json",
+  "prompt_hash": "1af9330e7254"
+}

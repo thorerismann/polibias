@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a nuanced critique of online boycotts, arguing that they often underestimate the challenges faced by everyday people in making 'ethical' purchasing decisions. The author suggests that instead of blaming individuals, we should focus on addressing the root causes of inequality and corporate power.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "1af9330e7254"
+}

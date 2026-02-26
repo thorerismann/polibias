@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton neutre et objectif, sans anymesse ni attaque contre la personnalité de Joseph Ratzinger ou son pontificat. Les informations sont présentées de manière impartiale, en évitant les jugements de valeur.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.0,
+  "comment": "The text does not contain any explicit political content or bias indicators.",
+  "status": "recovered",
+  "model": "qwen2.5:3b-instruct",
+  "article": "watson_406339606.json",
+  "prompt_hash": "1af9330e7254"
+}

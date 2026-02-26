@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": null,
+  "confidence": 1.0,
+  "comment": "The article leans left with a negative framing of Russia's situation and treatment in Ukraine conflict; no specific guests or speakers are mentioned.",
+  "status": "recovered",
+  "model": "phi3.5:latest",
+  "article": "watson_639071414.json",
+  "prompt_hash": "1af9330e7254"
+}

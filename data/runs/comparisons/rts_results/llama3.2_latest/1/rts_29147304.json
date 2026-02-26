@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 1.0,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton positif et élogieux envers Franjo von Allmen, décrit comme \"maîtrisant son sujet\" et « réussissant une moisson historique\", ce qui suggère une traitement favorables à l'égard du skieur suisse. Le langage utilisé est également très élogieux, avec des phrases telles que « C'est tellement brutal. Les mots me manquent » qui renforce cette impression de ton positif et de révérence envers le sujet.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29147304.json",
+  "prompt_hash": "1af9330e7254"
+}

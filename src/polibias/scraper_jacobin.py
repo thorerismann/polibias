@@ -15,16 +15,14 @@ HTML class conventions used by Jacobin (custom CSS, no JSON-LD):
 
 from __future__ import annotations
 
-import json
 import re
-from dataclasses import asdict, dataclass, is_dataclass
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
-from urllib.request import Request, urlopen
+from typing import Any, List, Optional
 
 from bs4 import BeautifulSoup
-from polibias.filenames import stable_article_filename
+from polibias.scraper_utils import fetch_soup, parse_iso_datetime, safe_strip, scrape_urls
 
 
 # ---------- Schema ----------
@@ -58,27 +56,10 @@ _HEADERS = {
 }
 
 
-def fetch_soup(url: str, timeout: int = 30) -> BeautifulSoup:
-    req = Request(url, headers=_HEADERS)
-    with urlopen(req, timeout=timeout) as r:
-        ctype = (r.headers.get("Content-Type") or "").lower()
-        if "text/html" not in ctype:
-            raise ValueError(f"Not HTML: {ctype}")
-        html = r.read().decode("utf-8", errors="ignore")
-    soup = BeautifulSoup(html, "html.parser")
-    if not soup.html or not soup.body:
-        raise ValueError("Malformed or non-document HTML")
-    return soup
-
-
 # ---------- Field extractors ----------
 
 def _safe_strip(s: Any) -> Optional[str]:
-    if not s:
-        return None
-    import html as _html
-    s2 = _html.unescape(str(s)).strip()
-    return s2 if s2 else None
+    return safe_strip(s, unescape=True)
 
 
 def _extract_title(soup: BeautifulSoup) -> Optional[str]:
@@ -163,13 +144,7 @@ def _extract_date_published(soup: BeautifulSoup) -> Optional[str]:
     time_tag = soup.find("time", datetime=True)
     if time_tag:
         raw = time_tag["datetime"]
-        try:
-            return (
-                datetime.fromisoformat(raw.replace("Z", "+00:00"))
-                .strftime("%Y-%m-%d %H:%M:%S")
-            )
-        except ValueError:
-            return raw
+        return parse_iso_datetime(raw)
     return None
 
 
@@ -198,7 +173,12 @@ def _extract_canonical(soup: BeautifulSoup) -> Optional[str]:
 # ---------- Orchestrator ----------
 
 def parse_article(url: str, timeout: int = 30) -> JacobinArticle:
-    soup = fetch_soup(url, timeout=timeout)
+    soup = fetch_soup(
+        url,
+        headers=_HEADERS,
+        timeout=timeout,
+        require_html_content_type=True,
+    )
     return JacobinArticle(
         title=_extract_title(soup),
         lead=_extract_lead(soup),
@@ -243,10 +223,6 @@ def fetch_article_links(limit: int = 20, timeout: int = 15) -> List[str]:
 
 # ---------- Persistence ----------
 
-def _make_filename(article: dict) -> str:
-    return stable_article_filename(article, "jacobin")
-
-
 def scrape_jacobin(
     urls: List[str],
     out_dir: Path,
@@ -256,32 +232,13 @@ def scrape_jacobin(
 
     Skips articles whose JSON file already exists.
     """
-    out_dir.mkdir(parents=True, exist_ok=True)
-
-    for url in urls:
-        url = url.strip()
-        if not url.startswith("http"):
-            continue
-        try:
-            data = parse_article(url, timeout=timeout)
-            if is_dataclass(data):
-                data = asdict(data)
-            fname = _make_filename(data)
-            save_path = out_dir / fname
-            if save_path.exists():
-                print(f"  [skip] {fname}")
-                continue
-            with open(save_path, "w", encoding="utf-8") as f:
-                json.dump(data, f, ensure_ascii=False, indent=2)
-            print(f"  [ok]   {fname}")
-        except Exception as e:
-            print(f"  [err]  {url}: {e}")
+    scrape_urls(urls, out_dir, "jacobin", parse_article, timeout=timeout)
 
 
 # ---------- CLI entry point ----------
 
 def main() -> None:
-    """Scrape recent articles from Jacobin and save to data/webdata_jacobin/."""
+    """Scrape recent articles from Jacobin and save to data/webdata/jacobin/."""
     import argparse
 
     parser = argparse.ArgumentParser(
@@ -297,7 +254,7 @@ def main() -> None:
     parser.add_argument(
         "--out-dir",
         type=Path,
-        default=Path(__file__).resolve().parents[2] / "data" / "webdata_jacobin",
+        default=Path(__file__).resolve().parents[2] / "data" / "webdata" / "jacobin",
         help="Directory to write JSON files into.",
     )
     parser.add_argument("--limit", type=int, default=20, help="Max articles from homepage.")

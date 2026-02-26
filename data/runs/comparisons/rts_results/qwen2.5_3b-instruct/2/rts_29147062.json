@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article heavily criticizes Switzerland's trade policies towards the US, presenting them as detrimental to American interests and highlighting Trump's rhetoric without providing a balanced view.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29147062.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses a Supreme Court ruling on President Trump's use of tariffs under the International Emergency Economic Powers Act (IEEPA). The majority opinion, written by Chief Justice John Roberts, concludes that IEEPA does not authorize the president to impose tariffs. Associate Justices Clarence Thomas, Samuel Alito, and Brett Kavanaugh dissent, arguing that the statute does grant such authority.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "1af9330e7254"
+}

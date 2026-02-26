@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a largely neutral overview of the opening ceremony, highlighting key events and participants. It includes mentions of Italian and Swiss dignitaries, reflecting a balanced approach to the event.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29142442.json",
+  "prompt_hash": "1af9330e7254"
+}
