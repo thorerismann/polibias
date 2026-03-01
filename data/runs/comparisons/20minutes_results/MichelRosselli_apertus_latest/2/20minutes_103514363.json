@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "L'article présente une réunion du Conseil de sécurité des Nations Unies présidée par la première dame américaine, Melania Trump. Il aborde le sujet de l'importance de l'éducation pour promouvoir la tolérance et la paix dans le monde. Cependant, il mentionne également les critiques envers les Nations Unies émanant de l'administration Trump.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "1af9330e7254"
+}

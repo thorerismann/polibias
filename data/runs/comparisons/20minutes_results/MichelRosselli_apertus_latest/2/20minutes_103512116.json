@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article traite d'une situation complexe impliquant un mineur et une organisation éducative, sans prendre clairement parti pour l'un ou l'autre.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

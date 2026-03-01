@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.987654321,
+  "comment": "The article provides a neutral subject bias, framing the story in a left-leaning manner with negative treatment towards Prince Andrew and right-leaning guests.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_952658270084.json",
+  "prompt_hash": "1af9330e7254"
+}

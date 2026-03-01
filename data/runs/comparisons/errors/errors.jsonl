@@ -376,3 +376,6 @@
 {"stage": "call_ollama_failed", "model": "MichelRosselli/apertus:latest", "article": "srf_235608563568.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T15:47:41.355783+00:00"}
 {"stage": "call_ollama_failed", "model": "MichelRosselli/apertus:latest", "article": "srf_275943994804.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T15:52:02.858788+00:00"}
 {"stage": "call_ollama_failed", "model": "MichelRosselli/apertus:latest", "article": "srf_303155021951.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T15:54:21.456938+00:00"}
+{"stage": "call_ollama_failed", "model": "MichelRosselli/apertus:latest", "article": "20minutes_103485887.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T16:26:03.388831+00:00"}
+{"stage": "call_ollama_failed", "model": "MichelRosselli/apertus:latest", "article": "20minutes_103504830.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T16:29:48.206143+00:00"}
+{"stage": "call_ollama_failed", "model": "MichelRosselli/apertus:latest", "article": "20minutes_103510423.json", "run": 2, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T16:32:43.490834+00:00"}

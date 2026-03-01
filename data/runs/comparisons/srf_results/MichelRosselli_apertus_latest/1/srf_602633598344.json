@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Der Artikel behandelt den Einsatz von sozialen Medien bei Kindern und Jugendlichen aus einer kritischen Perspektive, wobei die potenziellen negativen Auswirkungen auf die psychische Gesundheit im Vordergrund stehen.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}
