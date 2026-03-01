@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Kurzmeldung über den Tod einer Skifahrerin in Arosa. Faktische Unfallmeldung ohne politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_634863006.json",
+  "prompt_hash": "fdd55acb9e83"
+}

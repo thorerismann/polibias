@@ -1,0 +1,6 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.15,
+  "system_bias": -0.30,
+  "human_bias": -0.20
+}

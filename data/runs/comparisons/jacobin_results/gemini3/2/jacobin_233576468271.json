@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.9,
+  "confidence": 0.9,
+  "comment": "The text discusses 'power research' specifically as a tool for social movements to challenge elite structures and corporate influence. It draws exclusively from left-wing or critical academic influences like Tom Hayden and C. Wright Mills.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

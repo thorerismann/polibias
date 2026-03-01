@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un ton neutre et objectif, mais il est possible de détecter une légère préférence pour les points de vue économiques et technologiques américains. Le langage utilisé est formel et technique, ce qui peut rendre le contenu difficile à comprendre pour certains lecteurs.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

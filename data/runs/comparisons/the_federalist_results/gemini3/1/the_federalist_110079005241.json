@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.85,
+  "framing_bias": 0.95,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.75,
+  "confidence": 0.98,
+  "comment": "The article uses highly partisan language to accuse mainstream media of covering up the shooter's transgender identity. It frames the situation as a manifestation of 'transgender radicalism' and 'depravity'.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_110079005241.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

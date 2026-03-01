@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article uses strongly partisan language to defend Republican Medicaid reforms and criticize Democratic spending policies. It frames the issue as a necessary fiscal correction against an unsustainable 'spending binge'.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

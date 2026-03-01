@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Reportage sur un lieu de distribution alimentaire interconfessionnelle pour personnes en situation de précarité. Légère orientation de gauche liée à la solidarité sociale et au travail diaconal.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "fdd55acb9e83"
+}

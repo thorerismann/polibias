@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a cultural/religious profile about an artist and contains no meaningful left-right political content. Tone is descriptive and favorable toward the artwork rather than toward political actors or ideologies.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

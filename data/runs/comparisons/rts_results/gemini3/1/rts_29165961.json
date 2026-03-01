@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a neutral, business-focused analysis of executive tenure trends in Switzerland. It balances perspectives from academic, corporate, and family-business experts without favoring a specific political ideology.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29165961.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

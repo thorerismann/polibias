@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article describes an ecumenical initiative focused on social dialogue and breaking filter bubbles, which is a neutral cultural topic. The framing is constructive and slightly leans towards progressive humanist values of emancipation and collective reflection.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

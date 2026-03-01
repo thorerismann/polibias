@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et informatif, sans faire de déclarations partiales ou tendancieuses. Cependant, certains passages suggèrent une légère préférence pour les points de vue des entreprises et des gouvernements indiens par rapport aux perspectives internationales.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

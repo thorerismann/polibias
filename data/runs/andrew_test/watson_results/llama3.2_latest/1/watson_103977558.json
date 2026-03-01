@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Quellen der Informationen sind hauptsächlich pakistanische und afghanische Medien, was zu einer leichten Neigung zur Darstellung der Ereignisse aus der Sicht dieser Länder führt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_103977558.json",
+  "prompt_hash": "1af9330e7254"
+}

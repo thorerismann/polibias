@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article is moderately left-leaning due to its focus on grassroots success and community impact of the Wu-Tang Clan but doesn't heavily favor one side over another in tone or framing.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "1af9330e7254"
+}

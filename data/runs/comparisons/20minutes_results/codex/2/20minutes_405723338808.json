@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.12,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.08,
+  "confidence": 0.34,
+  "comment": "Le texte est un fil d’actualité majoritairement factuel, avec un léger biais pro-Ukraine/anti-Russie dans la sélection et le cadrage des événements. Le positionnement gauche-droite au sens partisan reste faible et peu explicite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_405723338808.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

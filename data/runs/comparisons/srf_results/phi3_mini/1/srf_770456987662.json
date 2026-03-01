@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "The article leans slightly left due to its critical framing of the U.S.'s stance towards Iran's nuclear program and military presence in other countries; guests are predominantly from a right-leaning perspective.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

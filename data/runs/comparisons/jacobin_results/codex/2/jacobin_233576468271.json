@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.62,
+  "framing_bias": -0.55,
+  "treatment_bias": -0.48,
+  "guests_bias": -0.72,
+  "confidence": 0.81,
+  "comment": "The interview centers on left-associated intellectual and movement traditions (SDS, power-elite critique, anti-intervention analysis), which tilts subject and framing left. It presents those perspectives sympathetically with no balancing right-leaning voices.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

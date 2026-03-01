@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.25,
+  "guests_bias": -0.1,
+  "confidence": 0.72,
+  "comment": "Le texte est majoritairement factuel (style dépêches), mais la sélection et l’accumulation d’épisodes présentent surtout Trump sous un angle conflictuel. Les voix citées sont surtout institutionnelles et critiques de ses positions, ce qui crée un léger biais global vers la gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

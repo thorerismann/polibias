@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.93,
+  "comment": "L’article traite d’un projet scientifique et funéraire sans angle partisan identifiable. Aucun acteur politique ou clivage gauche-droite n’est mobilisé dans le sujet, le ton ou les sources citées.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

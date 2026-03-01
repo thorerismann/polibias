@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Le texte est essentiellement religieux et culinaire, sans enjeu partisan explicite. La légère orientation vers la solidarité internationale peut suggérer un très faible biais perçu à gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

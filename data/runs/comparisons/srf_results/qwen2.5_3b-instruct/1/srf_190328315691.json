@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.37,
+  "treatment_bias": -0.25,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article does not lean left or right in its topic selection, but has a slight negative framing bias towards the subject and treats him more neutrally.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

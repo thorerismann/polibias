@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.35,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "The article centers on social justice, minority rights, and state accountability, which are characteristic of progressive framing. The sole interviewee is a victim and activist, providing a narrative focused on human rights and institutional reform.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

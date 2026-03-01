@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.97,
+  "comment": "Der Text ist ein unpolitischer Musik-/Kulturbeitrag ohne erkennbare parteipolitische Inhalte. Es gibt keine klaren politischen Akteure oder wertende Links-Rechts-Framing-Elemente.",
+  "status": "ok",
+  "model": "codex",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

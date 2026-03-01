@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.2,
+  "comment": "L’article traite d’un conflit autour d’une agression sexuelle alléguée et d’une exclusion scolaire, sans axe partisan gauche-droite identifiable. Les voix citées sont institutionnelles et familiales, mais pas des acteurs politiques.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "Article trop court pour une évaluation approfondie du biais. Porte sur les catholiques intégristes, sans position éditoriale clairement identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "fdd55acb9e83"
+}

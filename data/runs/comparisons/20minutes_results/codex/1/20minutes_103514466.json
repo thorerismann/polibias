@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.55,
+  "guests_bias": -0.3,
+  "confidence": 0.74,
+  "comment": "L’article met surtout en avant les conséquences humanitaires du blocus américain, avec peu de contre-arguments pro-sanctions. Les sources citées (principalement un responsable de l’ONU) renforcent une lecture critique de la politique américaine.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514466.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

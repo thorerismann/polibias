@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "Les discours des dirigeants iraniens et américains sont dominés par une rhétorique de compromis, mais les actions révèlent des désaccords profonds sur la nature du conflit.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "1af9330e7254"
+}

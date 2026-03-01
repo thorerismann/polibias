@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.5,
+  "confidence": 0.85,
+  "comment": "Attack piece on California Governor Gavin Newsom, depicting him as calculating and inauthentic in his political posturing. Clearly right-leaning, seeking to discredit a likely Democratic presidential contender.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_179019979623.json",
+  "prompt_hash": "fdd55acb9e83"
+}

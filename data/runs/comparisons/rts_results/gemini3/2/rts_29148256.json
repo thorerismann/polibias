@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "L'article adopte une perspective de justice sociale en soulignant l'exploitation d'un travailleur migrant et en critiquant le 'cynisme' des d\u00e9cisions administratives. Les voix cit\u00e9es proviennent uniquement du milieu associatif et social, soutenant une narration favorable aux droits des travailleurs.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29148256.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

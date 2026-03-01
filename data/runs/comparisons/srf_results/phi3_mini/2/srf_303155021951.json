@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a negative view of the pressure and criticism faced by K-Pop artists but does not overtly favor one political ideology or leaning.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.2,
+  "confidence": 0.95,
+  "comment": "The article is slightly left-leaning due to its focus on Emmanuel Macron's government and the positive portrayal of their actions but maintains a mostly neutral tone.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "1af9330e7254"
+}

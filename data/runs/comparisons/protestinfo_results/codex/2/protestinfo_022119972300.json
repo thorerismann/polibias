@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.45,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.3,
+  "confidence": 0.74,
+  "comment": "Le sujet et le cadrage valorisent un espace non mixte féminin avec un vocabulaire de protection et d’inégalités subies, ce qui penche légèrement à gauche/progressiste. Le ton reste surtout descriptif et local, sans attaque frontale d’acteurs politiques de droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.35,
+  "treatment_bias": -0.25,
+  "guests_bias": -0.3,
+  "confidence": 0.74,
+  "comment": "The piece centers structural critiques of neoliberalism, labor decline, and market-centered governance, which generally aligns with left-leaning subject selection and framing. It critiques both left and right currents, but overall treatment and cited voices still lean somewhat left.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

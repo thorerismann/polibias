@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article presents a neutral tone regarding the topic of data center growth in India but leans slightly towards highlighting challenges and costs associated with this development.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

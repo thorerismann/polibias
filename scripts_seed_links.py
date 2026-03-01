@@ -32,6 +32,12 @@ def _get_fetcher(source: str):
     if source == "cathinfo":
         from polibias.scraper_cathinfo import fetch_article_links
         return fetch_article_links
+    if source == "srf":
+        from polibias.scraper_srf import fetch_article_links
+        return fetch_article_links
+    if source == "20minutes":
+        from polibias.scraper_20minutes import fetch_article_links
+        return fetch_article_links
     raise ValueError(f"Unsupported source: {source}")
 
 
@@ -55,6 +61,8 @@ def main() -> int:
             "lib_inst",
             "protestinfo",
             "cathinfo",
+            "srf",
+            "20minutes",
         ],
     )
     parser.add_argument("--limit", type=int, default=10)
@@ -63,7 +71,7 @@ def main() -> int:
     args = parser.parse_args()
 
     sources = (
-        ["jacobin", "the_federalist", "watson", "lib_inst", "protestinfo", "cathinfo"]
+        ["jacobin", "the_federalist", "watson", "lib_inst", "protestinfo", "cathinfo", "srf", "20minutes"]
         if args.source == "all"
         else [args.source]
     )

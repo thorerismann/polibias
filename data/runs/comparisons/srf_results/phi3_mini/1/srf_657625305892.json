@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly left with a strong negative framing towards the right-leaning individual and his family; treatment seems unfavorable for them.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_657625305892.json",
+  "prompt_hash": "1af9330e7254"
+}

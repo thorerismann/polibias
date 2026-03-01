@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.9,
+  "comment": "The article presents a balanced view on the issue of shortening CEO tenures in Swiss companies with some leaning towards concern over stability and long-term impacts but without strong partisan language or bias.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.28,
+  "framing_bias": -0.46,
+  "treatment_bias": -0.39,
+  "guests_bias": -0.31,
+  "confidence": 0.78,
+  "comment": "The piece frames the kingpin strategy and U.S. drug-war narrative as misguided, which aligns more with critiques common on the left than with hardline right law-and-order framing. Quoted voices are mostly academic critics of official U.S. enforcement language rather than pro-enforcement perspectives.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

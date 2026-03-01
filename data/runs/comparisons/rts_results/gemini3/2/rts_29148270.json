@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a neutral overview of the obstacles to holding elections in Ukraine, balancing international pressure with domestic constraints and poll data.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29148270.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

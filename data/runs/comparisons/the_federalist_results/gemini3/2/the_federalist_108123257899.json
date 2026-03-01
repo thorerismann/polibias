@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The text uses right-populist framing, citing inflation ('printed trillions') and lockdowns as causes for economic strife while using the 'Democrat socialist' linguistic marker. It critiques establishment media (WSJ) for distracting from systemic government and regulatory failures.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

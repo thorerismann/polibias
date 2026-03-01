@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Porträt der deutschen Schlagersängerin Helene Fischer zum 20-jährigen Karrierejubiläum, Unterhaltungsthema ohne politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "fdd55acb9e83"
+}

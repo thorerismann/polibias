@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a factual account of the scientific and geopolitical challenges involved in mapping the world's oceans. It maintains a neutral, technocratic tone focused on international cooperation and transparency.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

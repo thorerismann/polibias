@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Das Königshaus steht vor einer Reihe von gesundheitlichen und rechtlichen Problemen, die die Monarchie belasten. Die Verbindung der Kronprinzessin Mette-Marit mit Jeffrey Epstein ist ein weiterer Schlag in eine Pechsträhne, die das norwegische Königshaus aktuell erlebt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "1af9330e7254"
+}

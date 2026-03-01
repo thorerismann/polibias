@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais avec une légère tendance vers la critique des progrès de la cartographie des océans. Le langage utilisé est formel et technique, ce qui suggère que le but du texte est d'éduquer ou informer plutôt que de persuader.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "1af9330e7254"
+}

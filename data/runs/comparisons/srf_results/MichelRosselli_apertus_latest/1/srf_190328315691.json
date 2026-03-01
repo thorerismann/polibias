@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "Der Artikel konzentriert sich auf die Details des Todes von Peter Greene, einem Schauspieler aus den 90er Jahren. Es gibt keine politische Diskussion oder Einbeziehung politischer Akteure.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

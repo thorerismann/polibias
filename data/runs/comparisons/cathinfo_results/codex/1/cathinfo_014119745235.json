@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.22,
+  "framing_bias": -0.28,
+  "treatment_bias": -0.18,
+  "guests_bias": 0.0,
+  "confidence": 0.64,
+  "comment": "L’article traite surtout d’une œuvre religieuse et artistique, mais le choix du thème (climat, inégalités Nord-Sud, sensibilisation) incline légèrement vers des priorités associées à la gauche. Le ton reste globalement descriptif et non partisan, sans opposition explicite entre acteurs politiques.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

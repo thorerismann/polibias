@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article focuses on the benefits of early language acquisition in children's first language, with a neutral tone and no clear bias towards either side.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "1af9330e7254"
+}

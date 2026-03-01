@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.72,
+  "framing_bias": -0.91,
+  "treatment_bias": -0.89,
+  "guests_bias": -0.83,
+  "confidence": 0.9,
+  "comment": "L’article adopte une grille d’analyse fortement critique des figures et idées associées à la droite trumpienne et au techno-libertarianisme, avec un vocabulaire chargé (\"technofascisme\", \"réactionnaire\"). Les voix citées vont quasi exclusivement dans ce sens, sans contrepoids idéologique significatif.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

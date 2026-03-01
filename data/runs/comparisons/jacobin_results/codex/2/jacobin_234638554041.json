@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.18,
+  "framing_bias": -0.24,
+  "treatment_bias": -0.32,
+  "guests_bias": -0.62,
+  "confidence": 0.66,
+  "comment": "The piece centers a France Insoumise perspective and gives sustained space to arguments for a parliamentary probe, with limited balancing from opposing political voices. Right-linked figures and parties are discussed more as subjects of scrutiny than as defended actors.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

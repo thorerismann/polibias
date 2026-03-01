@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.15,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.25,
+  "confidence": 0.48,
+  "comment": "L’article est surtout factuel sur des dysfonctionnements administratifs, avec un léger accent sur les conséquences sociales pour les chômeurs. Les voix citées incluent des syndicats et une association de défense des chômeurs, ce qui incline légèrement vers la gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29165919.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

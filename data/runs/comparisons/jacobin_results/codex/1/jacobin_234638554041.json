@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.45,
+  "confidence": 0.72,
+  "comment": "The piece is largely an interview platforming a France Insoumise perspective, which gives more space and legitimacy to left-aligned actors. It is mostly investigative in intent, but the sourcing and emphasis lean modestly left.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

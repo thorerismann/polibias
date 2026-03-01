@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.02,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.05,
+  "confidence": 0.82,
+  "comment": "Le texte ressemble à un fil d’agence factuel et chronologique, avec très peu de langage évaluatif. Les voix citées sont variées (américaines, iraniennes, européennes), sans avantage partisan net gauche/droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

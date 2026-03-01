@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.2,
+  "confidence": 0.85,
+  "comment": "The article provides a factual analysis of India's infrastructure growth and government incentives, maintaining a neutral tone with a slight focus on pro-business developments. It balances optimistic investment news with cautious observations about long-term job creation.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

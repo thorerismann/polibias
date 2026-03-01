@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.4,
+  "confidence": 0.9,
+  "comment": "The article provides a left-materialist critique of neoliberalism and the decline of collective labor institutions. It frames the current political landscape as a crisis of deinstitutionalization following the era of mass politics.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

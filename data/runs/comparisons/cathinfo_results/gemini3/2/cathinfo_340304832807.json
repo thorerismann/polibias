@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on a Catholic religious initiative for peace and contains no political leanings. It remains neutral by focusing solely on the event's logistics and religious purpose.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

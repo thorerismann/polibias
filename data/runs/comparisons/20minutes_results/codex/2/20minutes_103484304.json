@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.05,
+  "guests_bias": 0.15,
+  "confidence": 0.64,
+  "comment": "The piece is largely a chronological wire-style digest with mostly factual updates and little explicit ideological framing. Any slight right tilt comes from heavier reliance on quotes from the U.S. Trump administration, but overall bias appears low.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

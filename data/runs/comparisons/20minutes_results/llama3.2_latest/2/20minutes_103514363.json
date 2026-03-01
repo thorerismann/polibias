@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.9,
+  "comment": "Le langage utilisé pour décrire la première dame est souvent positif et met en avant ses réalisations, ce qui suggère une présence de framing bias à droite.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "1af9330e7254"
+}

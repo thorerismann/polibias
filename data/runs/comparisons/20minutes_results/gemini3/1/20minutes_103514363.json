@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.2,
+  "confidence": 0.9,
+  "comment": "The article reports on a historic milestone for Melania Trump, balancing the administration's positive rhetoric with factual context about US-UN tensions and budget arrears. The focus on a Republican figure and the inclusion of President Trump's praise results in a slight right-leaning score.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

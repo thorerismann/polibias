@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Artikel über den Tod des Wu-Tang-Clan-Managers, kulturelles und Entertainment-Thema ohne politischen Bezug. Kein erkennbarer politischer Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "fdd55acb9e83"
+}

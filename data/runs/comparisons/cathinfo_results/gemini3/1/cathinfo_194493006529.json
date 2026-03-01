@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article neutrally reports on a religious directive regarding the separation of sacred spaces from partisan politics. No political leaning is evident in the reporting or the subject matter as presented.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

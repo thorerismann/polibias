@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.85,
+  "comment": "The reporting focuses on European and Greenlandic resistance to Trump's territorial ambitions, framing his actions as threats to sovereignty. Most quoted voices are European establishment figures or critics of the Trump administration.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

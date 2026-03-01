@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Chronologie des Skandals um Prinz Andrew und die Epstein-Affäre, faktische Darstellung eines Kriminalfalls ohne Links-Rechts-Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_952658270084.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "The article frames the conflict through a Western institutionalist lens, being highly critical of both Putin's autocracy and Trump's diplomatic approach. It prioritizes a strategy of economic attrition and Ukrainian sovereignty over populist or isolationist narratives.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_639071414.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

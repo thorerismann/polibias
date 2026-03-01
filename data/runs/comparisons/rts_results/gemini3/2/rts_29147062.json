@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.15,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.3,
+  "confidence": 0.85,
+  "comment": "The article reports on Donald Trump's transactional diplomacy with a factual but slightly skeptical framing, particularly regarding 'expensive gifts' and controversial negotiations. While the primary voice is a right-wing actor, the reporting highlights his disparaging remarks about Swiss leadership.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29147062.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

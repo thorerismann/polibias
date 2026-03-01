@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article factually reports on the Norwegian King's health and recent scandals involving the royal family. It maintains a neutral, reportorial tone without clear political alignment.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.33,
+  "comment": "The excerpt is primarily business/finance reporting, with minimal explicit left-right political content. Slightly mixed cues appear: mild commercial-positive language around private equity, but also a subtle critical note via the Franco-family context.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

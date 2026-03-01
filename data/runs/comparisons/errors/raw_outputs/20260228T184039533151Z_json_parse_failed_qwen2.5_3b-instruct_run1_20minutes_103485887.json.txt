@@ -1,0 +1,7 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.25,
+  "system_generated": true
+}

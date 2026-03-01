@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Die Überschwemmungen in Brasilien werden als Katastrophe beschrieben, wobei die Stadtverwaltung und Bürgermeisterin Margarida Salomão von der kritischen Lage sprechen. Die Artikelframing ist neutral bis leicht linientendenz.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "1af9330e7254"
+}

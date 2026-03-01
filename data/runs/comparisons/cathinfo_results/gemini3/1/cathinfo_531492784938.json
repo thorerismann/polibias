@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a factual and neutral account of the exposition of Saint Francis of Assisi's relics. It focuses on historical and religious significance without engaging in political discourse or partisan framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

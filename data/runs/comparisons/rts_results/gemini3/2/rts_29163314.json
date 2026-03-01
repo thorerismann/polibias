@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.1,
+  "confidence": 0.9,
+  "comment": "The article reports on a human rights organization's findings that are highly critical of military and state actions, particularly those of the Israeli government. The framing and voices are centered on NGO advocacy, which typically aligns with progressive humanitarian perspectives.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29163314.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article highlights a vulnerability in commonly used wireless peripherals, emphasizing the need for security awareness and regular firmware updates. It presents a balanced perspective, acknowledging the generally adequate protection of these devices while stressing the importance of vigilance, particularly for high-risk users and organizations.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article examine les raisons du boom des centres de données en Inde, incluant la pression politique pour le stockage national, les incitations publiques et la concurrence fédérale, ainsi que le facteur coût. Il présente une analyse équilibrée sans favoriser explicitement un parti politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

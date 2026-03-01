@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article employs highly critical language to frame Rodrigo Chaves's administration as a regressive, far-right project that undermines the welfare state. Its narrative and focus on gender politics and inequality strongly align with progressive, left-leaning critiques.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

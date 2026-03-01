@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.35,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.74,
+  "comment": "L’article met surtout l’accent sur la vulnérabilité d’un travailleur migrant et critique la réponse institutionnelle, ce qui penche légèrement à gauche sur les enjeux sociaux et de protection. La présence d’une source militante/juridique critique sans contre-voix politique renforce ce biais modéré.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29148256.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

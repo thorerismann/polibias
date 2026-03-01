@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a factual report on the health of King Harald and recent scandals involving the Norwegian royal family. It maintains a neutral tone and does not exhibit a clear partisan lean.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

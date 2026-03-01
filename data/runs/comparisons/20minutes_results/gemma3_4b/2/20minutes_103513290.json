@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a cautiously optimistic view of India's growing data center industry, driven by government policy, incentives, and cost advantages. While acknowledging potential limitations, it highlights significant investments from major global tech companies.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Kriminalfall: Sohn von Regisseur Rob Reiner wegen Doppelmordes angeklagt. Faktische Berichterstattung ohne politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_657625305892.json",
+  "prompt_hash": "fdd55acb9e83"
+}

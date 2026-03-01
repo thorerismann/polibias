@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article adopts the critical perspective of Jerusalem Church leaders, framing Christian Zionism as a 'harmful ideology' and linking Israeli policies to the erosion of local Christian presence. While it provides space for Zionist rebuttals, the overall narrative alignment is strongly with the established religious hierarchy's opposition to the political right.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

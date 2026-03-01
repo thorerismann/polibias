@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.08,
+  "framing_bias": -0.04,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.82,
+  "comment": "Le texte traite surtout d’aide institutionnelle aux victimes et de procédures d’indemnisation, sans conflit partisan explicite. Une légère inclinaison vers une approche interventionniste de l’État peut être perçue, mais le ton reste majoritairement informatif.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29147656.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

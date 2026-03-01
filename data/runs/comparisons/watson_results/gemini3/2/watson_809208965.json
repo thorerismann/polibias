@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.8,
+  "confidence": 0.9,
+  "comment": "The interview provides a platform for a historian who explicitly praises Donald Trump's foreign policy as effective 'realpolitik' while critiquing European dependency on Russia. The framing strongly favors hawkish security perspectives and conservative leadership.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_809208965.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

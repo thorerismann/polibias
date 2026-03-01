@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article scientifique sur le premier laboratoire de taphonomie humaine en Suisse, présentant le projet de manière factuelle et technique. Aucun biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "fdd55acb9e83"
+}

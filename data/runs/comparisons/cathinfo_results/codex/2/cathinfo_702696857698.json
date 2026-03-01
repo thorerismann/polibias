@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.12,
+  "framing_bias": 0.18,
+  "treatment_bias": 0.14,
+  "guests_bias": 0.0,
+  "confidence": 0.72,
+  "comment": "L’article est principalement descriptif et centré sur un événement commémoratif religieux, avec un ton globalement neutre mais respectueux envers une figure associée au catholicisme traditionnel. Il n’y a pas de confrontation politique explicite ni de voix partisanes clairement identifiables.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

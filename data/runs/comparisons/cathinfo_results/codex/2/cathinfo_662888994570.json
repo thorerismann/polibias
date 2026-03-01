@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.56,
+  "comment": "Le texte est principalement théologique et non partisan, avec peu de contenu politique direct. Les critiques du nationalisme triomphaliste, du pouvoir temporel et de l’accumulation des richesses introduisent une légère inclinaison perçue vers la gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

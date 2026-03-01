@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.3,
+  "confidence": 0.75,
+  "comment": "Book review of 'Hyperpolitics' lamenting the decline of mass left-wing politics and the rise of politically inert social media activism. Left-leaning intellectual perspective mourning the weakening of unions and progressive mass parties.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.9,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "Interview using the term 'genocide' to describe Israeli bombardment of Gaza, framing destruction in stark humanitarian terms. Strongly left-leaning, deeply pro-Palestinian in subject, framing, and guests.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_265555549188.json",
+  "prompt_hash": "fdd55acb9e83"
+}

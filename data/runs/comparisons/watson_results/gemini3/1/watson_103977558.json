@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article reports on Pakistani retaliatory strikes against terror groups in Afghanistan following suicide bombings. The tone is largely factual, though it highlights Pakistan's claims of 'clear evidence' against Afghan-based leadership.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_103977558.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,7 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.4,
+  "contextual_complexity_score": 7.2
+}

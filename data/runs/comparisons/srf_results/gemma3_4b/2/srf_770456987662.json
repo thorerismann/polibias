@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral overview of ongoing negotiations between Iran and the US regarding the Iranian nuclear program. It highlights the key players and their stated positions, with a slight leaning towards acknowledging Iranian concerns and US objectives.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L’article est religieux et humanitaire, sans alignement explicite sur des clivages gauche-droite. Le ton et les voix citées restent non partisans.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton relativement neutre, mais les citations de Yétone Hoxa et Jean-Claude Frésard suggèrent une certaine tendance à la critique du déploiement d'agents de sécurité dans les caisses de chômage. Le langage utilisé par les intervenants est souvent émotionnel et critique, ce qui pourrait indiquer une légère prédominance de la perspective gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

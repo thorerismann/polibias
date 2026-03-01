@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.31,
+  "framing_bias": -0.52,
+  "treatment_bias": -0.43,
+  "guests_bias": -0.29,
+  "confidence": 0.68,
+  "comment": "The piece is strongly critical of militarized, punitive drug-war policy and U.S. security framing, which aligns somewhat more with left-leaning policy critiques. It does not focus on U.S. party politics directly, so the lean is moderate rather than extreme.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

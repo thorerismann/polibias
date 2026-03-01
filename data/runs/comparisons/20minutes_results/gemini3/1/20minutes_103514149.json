@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article focuses on the death of a vulnerable refugee and highlights criticisms of Border Patrol's 'inhumane' actions. The narrative is shaped by quotes from a critical local official and emphasizes the victim's vulnerability, characteristic of left-leaning human rights framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

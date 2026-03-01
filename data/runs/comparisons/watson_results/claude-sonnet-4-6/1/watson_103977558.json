@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Meldung über pakistanische Militärschläge gegen Afghanistan als Vergeltung für Terroranschläge. Sachliche Berichterstattung ohne erkennbaren politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_103977558.json",
+  "prompt_hash": "fdd55acb9e83"
+}

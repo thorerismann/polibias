@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.58,
+  "framing_bias": -0.76,
+  "treatment_bias": -0.84,
+  "guests_bias": -0.9,
+  "confidence": 0.93,
+  "comment": "The piece centers on universal publicly provided childcare, a policy agenda typically associated with the left. It frames market-based or means-tested alternatives negatively and presents overwhelmingly progressive voices and arguments.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

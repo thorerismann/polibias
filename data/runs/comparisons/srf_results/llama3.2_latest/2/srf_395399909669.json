@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Die Studie des Nationalen Testinstituts für Cybersicherheit zeigt, dass kabellose Computer-Zubehörgeräte ein Risiko darstellen können. Der Artikel präsentiert eine neutrale Darstellung der Ergebnisse und gibt Tipps zur Verbesserung der Sicherheit.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

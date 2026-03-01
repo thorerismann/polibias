@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.05,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.15,
+  "confidence": 0.66,
+  "comment": "The piece is mostly straight-news with limited evaluative language, but its topic highlights a Trump-related milestone. It includes both favorable and critical context about the Trump administration, yielding near-neutral overall bias.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article discusses India's growing role in AI infrastructure, highlighting both government incentives and private investments. It leans slightly to the left with a focus on national data storage policies and public support for the industry.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

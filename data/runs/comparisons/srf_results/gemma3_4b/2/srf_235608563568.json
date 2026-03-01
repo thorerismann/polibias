@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on the planning and actions of Russia, particularly Putin, highlighting Western intelligence assessments and skepticism towards European responses. It portrays Russia as aggressive and the West as initially underestimating the threat, ultimately learning a lesson from the conflict.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_235608563568.json",
+  "prompt_hash": "1af9330e7254"
+}

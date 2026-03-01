@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Überschwemmungen in Brasilien zeigen, dass der Natur die Oberhand hat. Die Regierung muss mehr tun, um den Klimawandel zu bekämpfen.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "1af9330e7254"
+}

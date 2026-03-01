@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Article factuel sur un risque géologique en Val d'Anniviers avec des informations sur les mesures de surveillance et de protection civile. Aucun biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29166043.json",
+  "prompt_hash": "fdd55acb9e83"
+}

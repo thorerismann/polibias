@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Bericht über Shia LaBeoufs Verhaftung wegen Körperverletzung und homophoben Beleidigungen, faktische Celebrity-News ohne parteipolitischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "fdd55acb9e83"
+}

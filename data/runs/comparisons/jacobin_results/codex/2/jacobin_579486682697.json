@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.45,
+  "framing_bias": -0.62,
+  "treatment_bias": -0.58,
+  "guests_bias": -0.31,
+  "confidence": 0.8,
+  "comment": "The piece frames the prosecution as weak and emphasizes civil-liberties defenses of a pro-Palestinian defendant, which leans left in this context. Quoted voices are mostly aligned with defending speech against state overreach rather than presenting balanced partisan actors.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

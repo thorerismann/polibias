@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.5,
+  "confidence": 0.85,
+  "comment": "The article focuses on a religious critique of far-right nationalism and the AfD, framing these movements as incompatible with Christian values. While it mentions the 'protection of life' (traditionally a right-leaning stance), the dominant narrative is a warning against the rise of the political right.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

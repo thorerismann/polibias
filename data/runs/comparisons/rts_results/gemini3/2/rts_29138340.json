@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.35,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.7,
+  "confidence": 0.9,
+  "comment": "The article focuses heavily on center-right arguments against a left-wing climate initiative, emphasizing fiscal responsibility and potential debt. While it mentions the initiative's proponents, the narrative space is dominated by the opposition's perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29138340.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

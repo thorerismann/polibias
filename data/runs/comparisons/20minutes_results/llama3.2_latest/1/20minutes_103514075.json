@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un sujet neutre, car il s'agit d'un projet scientifique sans lien politique direct. Le ton est objectif et explicatif, avec une mention de la recherche en médecine légale sans allégation partisane.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "1af9330e7254"
+}

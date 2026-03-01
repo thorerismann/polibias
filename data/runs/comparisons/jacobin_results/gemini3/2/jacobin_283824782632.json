@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.6,
+  "confidence": 0.95,
+  "comment": "The article frames labor trends with a strong pro-union perspective, explicitly criticizing corporate 'union-busting' and political 'smokescreens'. It relies on data from a progressive think tank, reinforcing its left-leaning narrative.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

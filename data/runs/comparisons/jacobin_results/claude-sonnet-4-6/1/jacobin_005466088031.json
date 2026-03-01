@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.85,
+  "comment": "Article on union organizing strategies at auto plants, valorizing worker power against corporate resistance. Clearly left-leaning, with a pro-union framing and focus on worker collective action.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "fdd55acb9e83"
+}

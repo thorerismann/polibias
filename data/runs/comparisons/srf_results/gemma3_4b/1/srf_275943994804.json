@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents Jesse Jackson as a prominent civil rights leader and advocate for social justice, highlighting his achievements and struggles. The tone is largely positive and respectful, focusing on his contributions and legacy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

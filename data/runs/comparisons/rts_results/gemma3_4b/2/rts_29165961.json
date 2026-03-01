@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.2,
+  "confidence": 0.8,
+  "comment": "The article discusses a trend of shorter executive terms in Swiss companies, citing expert opinions and data on company longevity. It presents a relatively neutral overview of the issue, with a slight leaning towards acknowledging the challenges of rapid corporate change.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

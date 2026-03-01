@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "The article highlights the success of social welfare programs and exclusively features a left-wing politician. The narrative focuses on the benefits of state intervention in poverty reduction without presenting alternative political perspectives.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

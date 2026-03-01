@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite de l'incendie du Constellation à Crans-Montana, en Suisse, et présente les déclarations de la gérante Jessica Moretti lors d'une audition. Le sujet est neutre (0.0), le ton est légèrement négatif (-1.0) car il met en lumière des échecs dans la gestion de l'incident, mais traite également des actions positives comme l'appel aux secours et l'aide apportée à une victime.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "1af9330e7254"
+}

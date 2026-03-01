@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article principalement descriptif sur la cérémonie d’ouverture des JO, sans angle politique partisan. Les rares mentions d’acteurs politiques sont factuelles et non évaluatives.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29142442.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

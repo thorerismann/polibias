@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 1.0,
+  "comment": "The article is left-leaning with a negative framing towards Russia and favorable to Ukraine's President Zelensky.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_405723338808.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.46,
+  "comment": "Dépêche factuelle et majoritairement descriptive, avec peu de cadrage idéologique explicite gauche/droite. Le récit repose surtout sur les accusations du gouvernement américain, ce qui introduit un léger biais pro-autorités sans forte coloration partisane.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

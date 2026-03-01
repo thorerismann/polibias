@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Bericht über neue Vorwürfe gegen Prinz Andrew im Zusammenhang mit der Epstein-Affäre und einer Masseurin aus dem Buckingham-Palast. Faktisch ohne politischen Links-Rechts-Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_411684152.json",
+  "prompt_hash": "fdd55acb9e83"
+}

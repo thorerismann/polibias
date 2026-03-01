@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7894736842105263,
+  "comment": "The article covers the indirect talks between Iran and the US in Geneva, focusing on the Iranian nuclear program. The tone is neutral as it presents both sides' perspectives without taking a clear stance.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.5,
+  "confidence": 0.85,
+  "comment": "Anti-abortion article describing mifepristone as deadly to 'unborn babies' and criticizing Trump for not curtailing mail-order abortion access. Strongly right-leaning on reproductive rights.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_236909104554.json",
+  "prompt_hash": "fdd55acb9e83"
+}

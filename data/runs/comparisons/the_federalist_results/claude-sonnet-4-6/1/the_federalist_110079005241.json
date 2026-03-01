@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.6,
+  "confidence": 0.9,
+  "comment": "Article attributing a family murder to transgender ideology and blaming 'corporate media' for covering it up. Strongly right-leaning, anti-trans and critical of media coverage.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_110079005241.json",
+  "prompt_hash": "fdd55acb9e83"
+}

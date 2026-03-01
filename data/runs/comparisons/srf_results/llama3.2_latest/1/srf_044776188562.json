@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Der Artikel ist neutral und beschreibt die Geschichte des Wu-Tang Clan ohne politische Aussagen oder Gefärbte. Die Darstellung der Gruppe und ihrer Mitglieder ist objektiv und informativ.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "1af9330e7254"
+}

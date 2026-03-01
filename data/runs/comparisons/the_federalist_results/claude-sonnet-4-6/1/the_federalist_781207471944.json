@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.2,
+  "confidence": 0.7,
+  "comment": "Obituary for actor Robert Duvall explicitly mentioning his Republican political commitments. Slightly right-leaning, valorizing the actor partly for his conservative convictions.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Article sur un projet œcuménique visant à combattre la polarisation sociale et les bulles de filtre à travers le dialogue. Légère orientation progressiste, sans biais partisan fort.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "fdd55acb9e83"
+}

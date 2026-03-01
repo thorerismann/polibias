@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article aborde un sujet neutre (la durée des mandats de dirigeants d'entreprises) et est structuré de manière objective, sans parti pris clair vers la gauche ou la droite. Les invités sont également représentatifs de différents points de vue sur le sujet.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

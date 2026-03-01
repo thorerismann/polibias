@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "Article sur les directives de l'Église catholique au Ghana pour préserver les espaces ecclésiaux de la propagande partisane. Contenu religieux et institutionnel neutre.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "fdd55acb9e83"
+}

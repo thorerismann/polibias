@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.12,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.05,
+  "confidence": 0.63,
+  "comment": "L’article est surtout centré sur une catastrophe naturelle et des défaillances institutionnelles, avec un ton globalement informatif. La critique implicite des priorités du gouvernement (pont vs prévention) introduit un léger biais favorable aux positions de gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29134931.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

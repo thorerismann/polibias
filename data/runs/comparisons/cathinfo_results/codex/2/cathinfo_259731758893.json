@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article explicatif religieux et calendaire, sans enjeu politique explicite ni acteurs partisans. Le ton est descriptif et équilibré entre christianisme et islam.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_259731758893.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

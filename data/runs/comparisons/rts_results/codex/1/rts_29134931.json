@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": -0.1,
+  "confidence": 0.56,
+  "comment": "L’article est surtout un reportage sur une catastrophe naturelle et les défaillances de prévention, avec peu de cadrage idéologique direct. Il présente toutefois des critiques implicites de la gestion publique actuelle et relaie des demandes de réaffectation budgétaire plutôt portées par la gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29134931.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

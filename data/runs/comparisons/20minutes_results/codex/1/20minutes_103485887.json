@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.22,
+  "treatment_bias": -0.28,
+  "guests_bias": -0.3,
+  "confidence": 0.72,
+  "comment": "Compilation de dépêches globalement factuelles, mais l’ensemble met surtout en avant les critiques et inquiétudes face aux positions de Donald Trump sur le Groenland. Cela crée une légère inclinaison anti-droite dans le cadrage, le traitement et les voix citées.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

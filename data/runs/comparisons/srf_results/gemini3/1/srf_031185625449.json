@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on a natural disaster in Brazil. It contains no political framing or bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

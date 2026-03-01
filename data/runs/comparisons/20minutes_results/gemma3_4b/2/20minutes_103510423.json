@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article discusses the slow progress in mapping the ocean floor, highlighting the importance of this data for various applications but also the reluctance of some governments to share their findings. It touches on strategic concerns and potential espionage, adding a layer of complexity to the issue.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.35,
+  "treatment_bias": -0.25,
+  "guests_bias": -0.3,
+  "confidence": 0.78,
+  "comment": "The piece uses a broadly left-leaning analytical frame (anti-neoliberal, pro-collective politics) while also criticizing parts of contemporary left activism. It is not strongly partisan, but the narrative and cited voices tilt mildly to the left.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

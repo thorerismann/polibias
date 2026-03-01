@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Der Artikel beschreibt Jesse Jacksons Leben und Werk in einer neutralen und respektvollen Art, ohne eine klare politische Ausrichtung zu zeigen. Die Erwähnung von Obamas Rede am Ende des Artikels deutet jedoch darauf hin, dass der Artikel auch eine gewisse Nähe zur Demokratischen Partei zeigt.",
+  "status": "recovered",
+  "model": "llama3.2:latest",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

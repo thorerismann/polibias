@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.8,
+  "confidence": 1.0,
+  "comment": "The article uses highly partisan and derogatory language to criticize Stephen Colbert and praise efforts to enforce 'equal time' rules. It relies almost exclusively on conservative viewpoints and frames the issue as a fight against 'left-wing' media bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_126424520791.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

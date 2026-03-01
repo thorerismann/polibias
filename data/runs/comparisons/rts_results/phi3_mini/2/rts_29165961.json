@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.4,
+  "confidence": 0.95,
+  "comment": "The article appears to lean slightly left by focusing on the impact of shorter CEO tenures and internationalization in Swiss companies. The framing bias is more pronounced as it discusses corporate governance issues from a perspective that may favor labor or social considerations over pure market dynamics, which could be seen as right-leaning.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

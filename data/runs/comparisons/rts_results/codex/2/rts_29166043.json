@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.96,
+  "comment": "Article de risque naturel et de sécurité civile sans contenu idéologique identifiable. Les sources citées sont techniques et institutionnelles, sans clivage gauche-droite apparent.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29166043.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a human-interest report regarding a celebrity's death and the subsequent support for his family. It contains no discernible political leaning or bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

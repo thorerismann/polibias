@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article predominantly focuses on the regulation and restrictions of social media, with a strong emphasis on potential negative impacts on children and adolescents. It leans towards a more left-leaning position by highlighting concerns about privacy violations and addiction risks.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

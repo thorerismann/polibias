@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article traite d'une situation géologique préoccupante dans le Val d'Anniviers, en Suisse. Le sujet est neutre et n'a pas de parti pris apparent. La présentation est objective et scientifique, sans inclinaison politique évidente. Le traitement des sujets et les invités (spécialistes) sont également équilibrés.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article sur un artiste suisse ayant peint les stations du chemin de croix pour la basilique Saint-Pierre. Contenu artistique et religieux sans biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "fdd55acb9e83"
+}

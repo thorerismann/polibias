@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article is a biographical piece on Jesse Jackson, focusing on his life and work as a civil rights activist. There is no clear political leaning in the subject matter or tone.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

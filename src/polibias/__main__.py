@@ -8,6 +8,8 @@ Grouped command usage::
     python -m polibias scrape --source watson --limit 20
     python -m polibias scrape --source protestinfo --limit 20
     python -m polibias scrape --source cathinfo --limit 20
+    python -m polibias scrape --source srf --limit 20
+    python -m polibias scrape --source 20minutes --limit 20
     python -m polibias score --source all
     python -m polibias score --source jacobin
     python -m polibias analyze
@@ -21,6 +23,8 @@ Grouped command usage::
     python -m polibias viz --source watson
     python -m polibias viz --source protestinfo
     python -m polibias viz --source cathinfo
+    python -m polibias viz --source srf
+    python -m polibias viz --source 20minutes
     python -m polibias viz --source all           # cross-source report_all.html
     python -m polibias upload --bucket my-bucket
 
@@ -47,6 +51,8 @@ SOURCE_CHOICES = [
     "watson",
     "protestinfo",
     "cathinfo",
+    "srf",
+    "20minutes",
     "all",
 ]
 SOURCE_ALIAS = {
@@ -54,6 +60,8 @@ SOURCE_ALIAS = {
     "federalist": "the_federalist",
     "watson_fr": "watson",
     "protestantinfo": "protestinfo",
+    "20min": "20minutes",
+    "twentyminutes": "20minutes",
 }
 
 QUICK_HELP = """polibias quick help
@@ -61,7 +69,7 @@ QUICK_HELP = """polibias quick help
 Core idea
   --run-dir selects which run folder under data/runs/ to use.
   --source selects which source to act on
-    (rts, the_federalist, jacobin, watson, protestinfo, cathinfo, all).
+    (rts, the_federalist, jacobin, watson, protestinfo, cathinfo, srf, 20minutes, all).
 
 Important
   There is no --source-dir flag.
@@ -85,6 +93,8 @@ Visualization
   polibias viz --run-dir exp_a --source watson
   polibias viz --run-dir exp_a --source protestinfo
   polibias viz --run-dir exp_a --source cathinfo
+  polibias viz --run-dir exp_a --source srf
+  polibias viz --run-dir exp_a --source 20minutes
   polibias viz --run-dir exp_a --source all
 
 Bayesian
@@ -153,7 +163,12 @@ def _load_source_urls(
     *,
     limit: int | None = None,
 ) -> list[str]:
-    path = Path(urls_file) if urls_file else settings.data_dir / "input_files" / f"{source}_links.txt"
+    if urls_file:
+        path = Path(urls_file)
+    else:
+        links_path = settings.data_dir / "input_files" / f"{source}_links.txt"
+        plain_path = settings.data_dir / "input_files" / f"{source}.txt"
+        path = links_path if links_path.exists() else plain_path
     if not path.exists():
         print(f"  ERROR: URL list not found for source '{source}': {path}")
         print("  Provide --urls-file or create the default input file.")
@@ -222,6 +237,28 @@ def _run_scrape_cathinfo(settings: Settings, limit: int, urls_file: Path | None)
     print("  Cathinfo scraping complete.")
 
 
+def _run_scrape_srf(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_srf import scrape_srf
+
+    out_dir = settings.source_webdata_dir("srf")
+    urls = _load_source_urls(settings, "srf", urls_file, limit=limit)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "srf.txt"
+    print(f"\nScraping {len(urls)} SRF URLs from {src} → {out_dir}")
+    scrape_srf(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  SRF scraping complete.")
+
+
+def _run_scrape_20minutes(settings: Settings, limit: int, urls_file: Path | None) -> None:
+    from polibias.scraper_20minutes import scrape_20minutes
+
+    out_dir = settings.source_webdata_dir("20minutes")
+    urls = _load_source_urls(settings, "20minutes", urls_file, limit=limit)
+    src = urls_file if urls_file else settings.data_dir / "input_files" / "20minutes.txt"
+    print(f"\nScraping {len(urls)} 20minutes URLs from {src} → {out_dir}")
+    scrape_20minutes(urls, out_dir, timeout=settings.scrape_timeout)
+    print("  20minutes scraping complete.")
+
+
 def _run_scrape_all_with_input_files(settings: Settings) -> None:
     _run_scrape(settings)
     targets = [
@@ -230,11 +267,14 @@ def _run_scrape_all_with_input_files(settings: Settings) -> None:
         ("watson", _run_scrape_watson),
         ("protestinfo", _run_scrape_protestinfo),
         ("cathinfo", _run_scrape_cathinfo),
+        ("srf", _run_scrape_srf),
+        ("20minutes", _run_scrape_20minutes),
     ]
     for source, fn in targets:
-        default_file = settings.data_dir / "input_files" / f"{source}_links.txt"
-        if not default_file.exists():
-            print(f"  [skip] {source}: no input file at {default_file}")
+        default_links = settings.data_dir / "input_files" / f"{source}_links.txt"
+        default_plain = settings.data_dir / "input_files" / f"{source}.txt"
+        if not default_links.exists() and not default_plain.exists():
+            print(f"  [skip] {source}: no input file at {default_links} or {default_plain}")
             continue
         fn(settings, limit=0, urls_file=None)
 
@@ -387,6 +427,8 @@ def _run_viz_all(settings: Settings, *, run: int | None = None) -> None:
         ("watson", "report_watson.html"),
         ("protestinfo", "report_protestinfo.html"),
         ("cathinfo", "report_cathinfo.html"),
+        ("srf", "report_srf.html"),
+        ("20minutes", "report_20minutes.html"),
     ]
     generated: dict[str, str] = {}
     for source, output_name in targets:
@@ -655,6 +697,10 @@ def _dispatch_command(args: argparse.Namespace, settings: Settings, parser: argp
             _run_scrape_protestinfo(settings, limit=args.limit, urls_file=args.urls_file)
         elif source == "cathinfo":
             _run_scrape_cathinfo(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "srf":
+            _run_scrape_srf(settings, limit=args.limit, urls_file=args.urls_file)
+        elif source == "20minutes":
+            _run_scrape_20minutes(settings, limit=args.limit, urls_file=args.urls_file)
         else:
             _run_scrape_all_with_input_files(settings)
         print("\nDone.")
@@ -714,6 +760,10 @@ def _dispatch_command(args: argparse.Namespace, settings: Settings, parser: argp
             _run_viz_source(settings, "protestinfo", output_name="report_protestinfo.html", run=args.run)
         elif source == "cathinfo":
             _run_viz_source(settings, "cathinfo", output_name="report_cathinfo.html", run=args.run)
+        elif source == "srf":
+            _run_viz_source(settings, "srf", output_name="report_srf.html", run=args.run)
+        elif source == "20minutes":
+            _run_viz_source(settings, "20minutes", output_name="report_20minutes.html", run=args.run)
         print("\nDone.")
         return
 

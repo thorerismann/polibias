@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Article sur les dérives sectaires en ligne ciblant les enfants via des jeux vidéo et messageries. Le sujet est présenté de manière factuelle et alarmiste, sans biais politique gauche-droite clairement identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "fdd55acb9e83"
+}

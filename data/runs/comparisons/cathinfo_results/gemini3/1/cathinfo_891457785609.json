@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a neutral report on a Swiss artist's religious contribution to the Vatican. It emphasizes ecumenical dialogue and artistic tradition rather than political conflict.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

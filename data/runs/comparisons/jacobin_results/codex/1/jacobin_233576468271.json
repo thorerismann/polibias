@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.72,
+  "framing_bias": -0.68,
+  "treatment_bias": -0.61,
+  "guests_bias": -0.74,
+  "confidence": 0.83,
+  "comment": "The interview centers on left-associated figures and ideas (SDS, Tom Hayden, power-elite critique, anti-intervention analysis), which makes the selection and framing lean left. It presents these perspectives positively with no meaningful right-leaning countervoice.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

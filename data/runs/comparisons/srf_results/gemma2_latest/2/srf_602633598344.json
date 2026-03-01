@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article discusses regulations on social media use by minors, presenting both sides of the argument. There's a slight lean towards considering regulations beneficial.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "L'article aborde le thème de la pauvreté et des prestations sociales dans le canton de Vaud, présentant des statistiques sur leur impact positif. Il ne favorise ni l'un ni l'autre côté politique.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "1af9330e7254"
+}

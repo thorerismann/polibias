@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Artikel thematisieren die Trauer um Van Der Beeks Tod und die Unterstützung der Familie durch Freunde und Prominente, ohne eine klare politische Ausrichtung zu zeigen.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "1af9330e7254"
+}

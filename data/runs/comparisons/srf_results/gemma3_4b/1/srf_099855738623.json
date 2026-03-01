@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article focuses on the ongoing efforts to acknowledge and address the historical injustices faced by Jenische and Sinti children placed in the ‘Aktion Kinder der Landstrasse’ program. It highlights the legal recognition of this action as a ‘crime against humanity’ and the continued advocacy for a systematic investigation and reparations process.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

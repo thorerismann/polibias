@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "The article adopts a class-based analysis characteristic of left-wing critique, focusing on the systemic constraints of capitalism and the power of billionaires. It argues for collective labor-based action over individualistic 'political consumption'.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The provided text is a metadata header containing only a program title and date. It contains no political content or topical substance to analyze for bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

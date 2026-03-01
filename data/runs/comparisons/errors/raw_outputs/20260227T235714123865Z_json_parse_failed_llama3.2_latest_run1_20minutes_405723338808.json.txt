@@ -1,0 +1,8 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "treatment_bias_confidence": 0.6,
+  "treatment_effect_size": 0.03,
+  "treatment_effect_sign": -1
+}

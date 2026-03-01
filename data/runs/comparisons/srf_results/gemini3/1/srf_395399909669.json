@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a purely technical and informative report on cybersecurity vulnerabilities in wireless peripherals. It contains no political framing, mentions no political parties, and relies on expert testimony from a technical institute.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

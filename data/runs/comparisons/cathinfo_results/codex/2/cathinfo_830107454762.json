@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.58,
+  "framing_bias": -0.79,
+  "treatment_bias": -0.83,
+  "guests_bias": -0.64,
+  "confidence": 0.89,
+  "comment": "L’article adopte une perspective nettement critique du sionisme chrétien et des politiques israéliennes, en relayant surtout les positions des patriarches et des acteurs chrétiens palestiniens. Les voix pro-israéliennes sont mentionnées mais principalement présentées de façon défavorable ou controversée.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

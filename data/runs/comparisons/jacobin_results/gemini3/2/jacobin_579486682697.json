@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article strongly critiques the prosecution of a pro-Palestine activist, framing the hate crime charges as a violation of First Amendment rights. It exclusively features quotes from civil liberties advocates who challenge the validity of the evidence.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

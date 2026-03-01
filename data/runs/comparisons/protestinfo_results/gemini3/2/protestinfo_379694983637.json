@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "This text is a purely theological and spiritual reflection on the nature of prayer. It contains no political content or references to the left-right spectrum.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_379694983637.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

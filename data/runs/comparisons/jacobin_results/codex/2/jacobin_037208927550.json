@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.43,
+  "comment": "The excerpt is mostly financial and sports-business focused, with limited explicit partisan content. Mentioning Samaranch’s family tie to Franco introduces a mild left-leaning framing cue and slightly less favorable treatment of a figure linked to the right.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

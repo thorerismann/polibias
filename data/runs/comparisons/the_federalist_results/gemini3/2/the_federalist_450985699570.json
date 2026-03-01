@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.9,
+  "confidence": 0.95,
+  "comment": "The article uses highly partisan framing and mocking language to criticize Democratic opposition to voter ID laws. It relies entirely on conservative sources and viewpoints to support its narrative.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_450985699570.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

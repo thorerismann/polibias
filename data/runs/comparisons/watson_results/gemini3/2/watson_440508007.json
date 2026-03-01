@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article reports on the legal failure of Donald Trump's tariff policies using critical framing such as 'aggressive' and 'illegal'. It primarily focuses on the pragmatic economic reactions of Swiss companies and the government.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_440508007.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

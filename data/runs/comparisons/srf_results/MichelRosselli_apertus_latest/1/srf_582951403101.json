@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "Der Artikel berichtet über negative Vorfälle des Schauspielers Shia LaBeouf, ohne eine klare politische Position einzunehmen.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "1af9330e7254"
+}

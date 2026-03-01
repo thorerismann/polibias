@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article reports on a landslide in Niscemi, highlighting historical negligence and the current political debate over infrastructure funding. It provides a balanced view by including both the Prime Minister's visit and the left-wing opposition's policy suggestions.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29134931.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

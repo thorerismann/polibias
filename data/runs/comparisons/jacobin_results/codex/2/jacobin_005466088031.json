@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.62,
+  "framing_bias": -0.78,
+  "treatment_bias": -0.81,
+  "guests_bias": -0.55,
+  "confidence": 0.87,
+  "comment": "The article is strongly pro-union and frames organizing as necessary to confront corporate power, which aligns with left-leaning labor politics. It presents labor strategy and outcomes from a single sympathetic perspective with little ideological counterbalance.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

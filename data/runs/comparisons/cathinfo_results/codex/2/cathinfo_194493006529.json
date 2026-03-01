@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.2,
+  "comment": "Le texte visible est surtout un encart d’abonnement, avec très peu de contenu politique exploitable. L’extrait mentionne une mise à distance de la propagande partisane sans favoriser clairement la gauche ou la droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

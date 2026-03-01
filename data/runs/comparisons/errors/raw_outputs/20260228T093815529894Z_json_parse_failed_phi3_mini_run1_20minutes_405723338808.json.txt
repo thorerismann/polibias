@@ -1,0 +1,24 @@
+{
+    "date": {
+        "day": "26",
+        "month": "02",
+        "year": "2026"
+    },
+    "times": [
+      {"time": "19:56", "note": "Presidential telephone exchange between Donald Trump and Volodymyr Zelensky"},
+      {"time": "04:17 to 04:19", "event": "Several explosions in Kiev, Kharkiv, Dnipropetrovsk, Zaporijjia due to Russian attacks"}
+    ],
+    "locations": [
+        {
+            "city": "Kiev",
+            "country": "Ukraine"
+        },
+        {"city": "Mildenhall", 
+         "country": "United Kingdom"},
+        {"city": "Elmsett", 
+         "country": "United Kingdom"}
+    ],
+    "key_individuals": [
+      {
+          "name": "Volodymyr Zelensky",
+            "role": "President of

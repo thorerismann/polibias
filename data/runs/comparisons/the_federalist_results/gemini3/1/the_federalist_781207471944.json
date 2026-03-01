@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.5,
+  "confidence": 0.95,
+  "comment": "The article explicitly celebrates Duvall as a 'man of the right' and defends his work against mainstream media criticism. The framing is consistently favorable toward his conservative political activities and historical portrayals.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_781207471944.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

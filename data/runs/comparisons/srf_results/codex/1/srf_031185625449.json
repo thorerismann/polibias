@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.96,
+  "comment": "Der Text ist ein kurzer, faktischer Katastrophenbericht ohne erkennbare parteipolitische Einordnung. Es werden keine konkurrierenden politischen Lager bewertet oder bevorzugt.",
+  "status": "ok",
+  "model": "codex",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

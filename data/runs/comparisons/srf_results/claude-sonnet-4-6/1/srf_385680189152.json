@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.65,
+  "comment": "Artikel über den Streit um die Justizreform in Polen, in dem die EU-konforme Position der Regierung Tusk als Ausgangspunkt genommen wird. Die Rahmung ist leicht proeuropäisch und tendenziell kritisch gegenüber der nationalkonservativen PiS.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "fdd55acb9e83"
+}

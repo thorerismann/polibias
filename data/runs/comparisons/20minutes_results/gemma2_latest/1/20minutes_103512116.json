@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on the perspective of the alleged victim and his father, highlighting their claims and dissatisfaction with EF's handling of the situation.",
+  "status": "recovered",
+  "model": "gemma2:latest",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

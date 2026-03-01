@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a neutral report on a Swiss artist's contribution to St. Peter's Basilica. It emphasizes artistic merit and ecumenical cooperation rather than political ideology.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

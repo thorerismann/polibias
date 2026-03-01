@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "Analysis favorable to Mexican president Claudia Sheinbaum's handling of Trump's threats, praising her left-wing security policy. Clearly left-leaning, sympathetic to progressive Latin American governance.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "fdd55acb9e83"
+}

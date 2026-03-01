@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.5,
+  "confidence": 0.9,
+  "comment": "The article provides a systemic critique of the US 'kingpin strategy' and the 'cartel' narrative, which is characteristic of left-leaning drug policy analysis. It also includes a positive reference to the current left-wing Mexican administration's security efforts.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

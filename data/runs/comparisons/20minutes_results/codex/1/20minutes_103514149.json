@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.32,
+  "framing_bias": -0.48,
+  "treatment_bias": -0.44,
+  "guests_bias": -0.27,
+  "confidence": 0.79,
+  "comment": "L’article met en avant la vulnérabilité d’un réfugié et insiste surtout sur les critiques visant les services frontaliers, ce qui incline légèrement vers une lecture plus favorable aux positions pro-migrants. Une version des autorités est mentionnée, mais elle est moins centrale que les éléments accusatoires.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

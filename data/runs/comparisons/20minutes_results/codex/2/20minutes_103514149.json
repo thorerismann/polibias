@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.32,
+  "framing_bias": -0.48,
+  "treatment_bias": -0.44,
+  "guests_bias": -0.25,
+  "confidence": 0.79,
+  "comment": "L’article met en avant la vulnérabilité d’un réfugié et insiste sur des fautes des autorités frontalières, ce qui incline le récit vers une sensibilité pro-migrants. Il inclut toutefois la version officielle de la Border Patrol, ce qui limite légèrement le biais.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

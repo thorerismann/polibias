@@ -1,0 +1,7 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "conflict_bias": 0.8,
+  "negotiation_bias": 0.3
+}

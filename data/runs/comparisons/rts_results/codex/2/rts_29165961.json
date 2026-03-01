@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article économique et managérial sans enjeu partisan explicite ni acteurs politiques. Le ton est descriptif et analytique, avec des sources principalement académiques et professionnelles.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29165961.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

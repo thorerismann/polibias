@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a factual account of poverty reduction in Vaud with some left-leaning undertones by emphasizing social welfare programs' positive impacts but also acknowledges the issue of non-participation among eligible individuals.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "1af9330e7254"
+}

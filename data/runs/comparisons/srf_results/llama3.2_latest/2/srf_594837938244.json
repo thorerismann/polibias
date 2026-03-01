@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Die Artikelpräsentation ist neutral und gibt keine eindeutige politische oder ideologische Ausrichtung vor. Die Sprachkompetenz von Kindern wird gefördert, und die Bedeutung einer multilingualen Erziehung für Familien mit Migrationshintergrund wird hervorgehoben.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "1af9330e7254"
+}

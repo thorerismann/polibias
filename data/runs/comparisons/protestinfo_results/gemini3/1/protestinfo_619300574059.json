@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article neutrally reports on the community-led repurposing of a church building following declining religious attendance. It features local stakeholders focusing on social cohesion rather than partisan political issues.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

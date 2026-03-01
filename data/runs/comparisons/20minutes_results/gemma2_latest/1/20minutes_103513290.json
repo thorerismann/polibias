@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article discusses the rise of data centers in India with a generally neutral tone. There is a slight positive slant towards the potential economic benefits.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "1af9330e7254"
+}

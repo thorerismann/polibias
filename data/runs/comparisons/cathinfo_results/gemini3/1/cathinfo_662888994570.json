@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The religious reflection critiques historical alliances between faith and power, specifically targeting nationalism and wealth accumulation. These themes align with left-leaning social critiques of institutional power.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

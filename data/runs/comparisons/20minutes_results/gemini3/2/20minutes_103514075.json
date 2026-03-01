@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a neutral, scientific report on a new human decomposition and biocomposting research facility in Switzerland. It focuses on forensic science and funeral alternatives without any political framing or partisan lean.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

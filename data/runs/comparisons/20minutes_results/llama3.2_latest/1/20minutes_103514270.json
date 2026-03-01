@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objective, mais le sujet de la banque suisse MBaer et son implication dans des activités illégales peut être perçu comme une critique du système financier américain. La mention de l'arrière-petit-fils du fondateur de Julius Baer, Michael Baer, suggère également un lien avec la famille Baer, ce qui pourrait potentiellement influencer la perception du lecteur.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "1af9330e7254"
+}

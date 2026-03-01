@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.28,
+  "framing_bias": -0.46,
+  "treatment_bias": -0.52,
+  "guests_bias": -0.34,
+  "confidence": 0.78,
+  "comment": "The piece centers civil-liberties concerns around a Gaza-related prosecution and emphasizes weaknesses in the hate-crime case, which aligns somewhat with left-leaning narratives on this issue. Quoted voices are exclusively critical of law enforcement/prosecutors, with no balancing pro-prosecution perspective.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

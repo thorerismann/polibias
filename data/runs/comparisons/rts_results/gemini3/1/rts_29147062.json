@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.4,
+  "confidence": 0.9,
+  "comment": "The article neutrally reports Donald Trump's statements on Swiss-US trade relations and his interactions with Swiss officials. The guests_bias reflects the fact that the quoted content is dominated by Trump's right-wing perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29147062.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

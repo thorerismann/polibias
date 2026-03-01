@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "Article using Hillary Clinton's acknowledgment that immigration went too far to attack Democrats for hypocrisy and accuse them of enabling 'destabilizing' mass migration. Clearly right-leaning and anti-open borders.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_313808358172.json",
+  "prompt_hash": "fdd55acb9e83"
+}

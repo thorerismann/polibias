@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.3,
+  "comment": "The snippet questions the imposition of efficiency criteria on health/social services, which can imply a mild critique of managerialism. However, the text is too brief to definitively assign a political lean.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

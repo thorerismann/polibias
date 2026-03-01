@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.45,
+  "framing_bias": -0.72,
+  "treatment_bias": -0.64,
+  "guests_bias": 0.0,
+  "confidence": 0.79,
+  "comment": "The article centers collective care, welfare protections, and critiques of service cutbacks, which are typically aligned with left-leaning politics. It portrays the featured movements sympathetically and does not include countervailing right-leaning perspectives.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

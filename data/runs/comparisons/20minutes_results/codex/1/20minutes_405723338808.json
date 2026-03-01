@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.18,
+  "framing_bias": -0.14,
+  "treatment_bias": -0.24,
+  "guests_bias": -0.12,
+  "confidence": 0.63,
+  "comment": "The roundup is mostly straight-news, but source selection and quoted voices lean toward Ukraine/EU positions and portray Russia more negatively. Bias appears mild rather than strongly ideological.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_405723338808.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

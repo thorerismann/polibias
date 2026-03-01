@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Artikelsprache ist neutral und es gibt keine klaren Hinweise auf eine politische Ausrichtung des Autors. Die Diskussion um die Justizreform in Polen wird jedoch als kritisch gegenüber der PiS-Regierung dargestellt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "1af9330e7254"
+}

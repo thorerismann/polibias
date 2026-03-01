@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a factual overview of the obstacles to Ukrainian elections, balancing external pressure with local legal and logistical realities. It maintains a neutral tone by citing official statements and independent polling data.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29148270.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

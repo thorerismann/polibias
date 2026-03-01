@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a neutral entertainment report about a K-Pop group and an artist's mental health break. It contains no discernible political bias or actors.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

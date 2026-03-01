@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "Critical analysis of Costa Rican president Rodrigo Chaves as a right-wing populist dismantling the welfare state. Clearly left-leaning, critical of neoliberal and far-right politics in Latin America.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "fdd55acb9e83"
+}

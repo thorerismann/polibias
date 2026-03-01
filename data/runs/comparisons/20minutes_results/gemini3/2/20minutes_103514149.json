@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.3,
+  "confidence": 0.9,
+  "comment": "The article focuses on the tragic death of a vulnerable refugee and highlights sharp criticisms of 'inhumane' treatment by border authorities. It emphasizes institutional failure and the victim's vulnerability over the official justifications.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on administrative and financial aid measures for fire victims in Crans-Montana. It maintains a neutral tone, focusing on government procedures without any partisan framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29147656.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

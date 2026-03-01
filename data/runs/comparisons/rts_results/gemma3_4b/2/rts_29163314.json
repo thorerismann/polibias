@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article focuses on journalist deaths in multiple conflicts, primarily highlighting Israeli actions in Gaza and presenting a critical perspective on the issue. It emphasizes the dangers faced by journalists globally and calls for action to prevent further violence.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29163314.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article principalement financier, sans angle partisan explicite ni traitement différencié de camps politiques.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29142365.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.05,
+  "confidence": 0.8,
+  "comment": "Die Verhandlungen zwischen den USA und dem Iran in Genf scheinen eine konstruktive Haltung zu zeigen, aber es bleibt abzuwarten, ob die beiden Seiten ihre Ziele wirklich erreichen können.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Berichterstattung über eine Naturkatastrophe in Brasilien, ohne politische Einmischung erkennbar.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "1af9330e7254"
+}

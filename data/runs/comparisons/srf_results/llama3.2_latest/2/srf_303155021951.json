@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.05,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Artikel besprechen das Thema K-Pop und die Erfolge der Band Katseye, ohne explizite politische Aussagen zu machen. Die Sprache ist neutral und es gibt keine klaren Hinweise auf eine bestimmte politische Ausrichtung.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "1af9330e7254"
+}

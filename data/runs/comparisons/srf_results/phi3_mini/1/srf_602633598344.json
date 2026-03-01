@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article appears to lean slightly left due to its critical tone towards social media regulation and the positive framing of stricter controls in Australia as well as broader EU discussions on digital services laws that are not present-day reality but represent a progressive stance. Treatment bias is minimal, with no clear favoritism toward right or left viewpoints evident within guest opinions.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

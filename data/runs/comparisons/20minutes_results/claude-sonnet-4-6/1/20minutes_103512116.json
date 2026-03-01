@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Récit d'un adolescent renvoyé d'un séjour linguistique après avoir signalé une agression sexuelle. L'article est nettement sympathique à la victime et critique de l'organisation EF, avec un cadrage favorable à la protection des victimes et aux droits des mineurs.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "fdd55acb9e83"
+}

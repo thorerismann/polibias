@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.3,
+  "confidence": 0.85,
+  "comment": "The article reports on a historic diplomatic event for the First Lady, using generally neutral or descriptive language. It includes positive quotes from Donald Trump and UN officials, though it notes the administration's critical stance toward the UN.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

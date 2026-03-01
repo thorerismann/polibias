@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "Chronique religieuse radiophonique sans contenu textuel substantiel pour une évaluation fiable du biais politique.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Article sur une œuvre d'art de carême abordant le changement climatique et les inégalités mondiales. L'angle écologique et social donne une légère orientation de gauche, typique du discours catholique progressiste sur la justice sociale.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "fdd55acb9e83"
+}

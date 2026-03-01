@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.65,
+  "comment": "Bericht über Verurteilungen des US-Botschafters Huckabee für biblisch begründete Gebietsansprüche Israels durch arabische Staaten. Leicht linksorientiert durch ausführlichere Darstellung der arabischen Kritikperspektive.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_561501559.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,11 @@
+{
+   "title": "Dänemark und USA treffen sich über den Grönlandexport",
+   "date": "14.02.2026",
+   "time_published": "sa 21:00",
+   "content": [
+      {
+         "paragraph": "Der dänische Ministerpräsidentin Mette Frederiksen und ihr groenländischer Amtskollege Jens-Frederik Nielsen werden in München am Donnerstag den Groenländer Export betreffen, nachdem sie sich bereits im Januar 2026 mit US-Botschafter Rasmussen zusammengesetzt hatten. Die beiden Regierungsmitglieder haben die Bedeutung des Grönlands für Dänemark betont und das Land als einzigartigen Teil ihrer Nation bezeichnet.",
+         "summary": "Mette Frederiksen und Jens-Frederik Nielsen, dänische Ministerpräsidentin und Regierungschef von Grönland, treffen sich in München. Sie diskutieren den Export vom Groenlandeis nach Dänemark."
+      },
+      {
+        

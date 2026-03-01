@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article neutrally reports on the EU's approval of the treaty package with Switzerland, focusing on diplomatic procedures and institutional statements. It acknowledges the complexity of the upcoming Swiss domestic debate, including the role of accompanying measures, without taking a partisan stance.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_177112388427.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The text provided consists only of a title and date for a religious chronicle. It contains no political content or arguments to evaluate for bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

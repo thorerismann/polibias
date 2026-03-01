@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.62,
+  "framing_bias": -0.88,
+  "treatment_bias": -0.91,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article strongly criticizes Chaves, the technocratic/far-right agenda, and welfare-state retrenchment using evaluative language aligned with left critiques. There are no meaningful countervailing right-favorable frames or balanced political voices.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

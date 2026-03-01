@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The text is a collection of news snippets providing a balanced overview of diplomatic, military, and humanitarian aspects of the conflict. It quotes a wide variety of international actors from across the political spectrum without favoring a specific ideological narrative.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_405723338808.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

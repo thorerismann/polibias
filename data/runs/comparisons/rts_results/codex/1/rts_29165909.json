@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.99,
+  "comment": "Sports recap with no political topic, framing, or actors. No left/right favoritism is detectable.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29165909.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

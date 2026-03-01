@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Der Artikel behandelt das Thema neutral und gibt keine politische Prägung vor. Die Berichterstattung über den Tod von Peter Greene ist sachlich und unparteiisch.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article focuses heavily on the health issues of King Harald and the legal troubles of family members, presenting a somewhat negative view of the Norwegian monarchy. It highlights several controversies, suggesting a critical perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "1af9330e7254"
+}

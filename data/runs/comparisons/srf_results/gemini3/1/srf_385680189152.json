@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.1,
+  "confidence": 0.9,
+  "comment": "The article maintains a balanced perspective by critiquing both the President's frequent vetos and the Government's attempts to bypass them via decrees. The guest expert provides balance by pointing out perceived EU double standards regarding judicial systems in other member states.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

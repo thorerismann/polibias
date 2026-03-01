@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.08,
+  "framing_bias": 0.15,
+  "treatment_bias": 0.12,
+  "guests_bias": 0.1,
+  "confidence": 0.32,
+  "comment": "The article is a lifestyle/religion interview and contains little explicit left-right political content. Any slight right-leaning signal comes from favorable coverage of evangelical Christian practice, but this is weak and mostly non-political.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

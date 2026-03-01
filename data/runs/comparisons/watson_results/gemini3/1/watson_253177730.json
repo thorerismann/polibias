@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.2,
+  "confidence": 0.85,
+  "comment": "The article reports on a successful Ukrainian cyber operation using exclusively pro-Western and Ukrainian sources. Its framing reflects a liberal internationalist perspective by emphasizing sanctions against authoritarian regimes and cross-border security cooperation.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_253177730.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

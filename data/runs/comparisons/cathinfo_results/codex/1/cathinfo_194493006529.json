@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.24,
+  "comment": "Le texte visible est surtout informatif (directive ecclésiale) puis majoritairement promotionnel pour un abonnement, sans clivage gauche-droite explicite. L’échantillon semble tronqué/paywall, ce qui réduit fortement la certitude.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

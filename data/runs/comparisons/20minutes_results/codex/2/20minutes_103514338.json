@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article de faits divers sans enjeu partisan identifiable. Aucun acteur politique ni cadrage gauche/droite clair n’apparaît.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

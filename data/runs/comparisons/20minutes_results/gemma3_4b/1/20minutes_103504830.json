@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a largely neutral overview of online cults and their rise, focusing on the methods and impact. It leans slightly towards concern due to the increasing numbers of reported cases and the vulnerability of young people, but avoids overtly judgmental language.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "1af9330e7254"
+}

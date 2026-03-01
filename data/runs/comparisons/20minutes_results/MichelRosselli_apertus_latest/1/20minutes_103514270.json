@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Le sujet de l'article est la banque suisse Mbaer, qui risque d'être coupée du système financier américain pour blanchiment d'argent lié à des pays comme l'Iran et la Russie.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "1af9330e7254"
+}

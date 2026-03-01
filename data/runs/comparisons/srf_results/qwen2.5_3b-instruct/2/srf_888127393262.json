@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article focuses on the personal journey of Helene Fischer, emphasizing her early talent and perseverance rather than political or ideological content.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

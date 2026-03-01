@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.95,
+  "guests_bias": 0.4,
+  "confidence": 0.95,
+  "comment": "The article adopts a strongly right-leaning perspective, framing mass migration as a threat to national unity and cultural stability. It treats Democratic figures with significant hostility while validating conservative arguments as 'common sense'.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_313808358172.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

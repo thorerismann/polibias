@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The text strongly favors Republican fiscal perspectives, using loaded terminology like 'welfare-industrial complex' and 'spending binge' to describe Democratic policies. It frames Medicaid reforms as 'common-sense' while dismissing Democratic criticisms as misleading.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

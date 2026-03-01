@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.84,
+  "comment": "Article mainly reports a Catholic peace-prayer initiative with little partisan political content. Any slight lean comes from a generally pacifist framing rather than explicit left-right positioning.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

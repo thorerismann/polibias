@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "Article sur la réduction des activités cultuelles dans des temples réformés faute d'affluence. Contenu sociologique religieux sans biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_619300574059.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article focuses on a hockey match and its outcomes, with no clear political bias in the content itself but leans towards the left framing by highlighting the team's poor performance.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29165909.json",
+  "prompt_hash": "1af9330e7254"
+}

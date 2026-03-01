@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.12,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.69,
+  "comment": "Article mostly focuses on ocean mapping science and logistics, with limited partisan content. Slight pro-West/anti-secrecy framing appears in how state transparency is contrasted across countries.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

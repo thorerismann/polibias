@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual historical account of a natural disaster and the subsequent development of safety infrastructure in Switzerland. It relies on scientific expertise and maintains a neutral, informative tone without partisan framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29144921.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

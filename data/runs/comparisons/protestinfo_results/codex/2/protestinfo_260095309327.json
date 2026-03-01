@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.15,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.34,
+  "comment": "L’article porte sur une association chrétienne de ski et n’aborde quasiment pas de clivages politiques explicites. Le ton est globalement favorable à la foi chrétienne, ce qui peut suggérer une légère inclinaison culturelle vers la droite sans signal partisan net.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

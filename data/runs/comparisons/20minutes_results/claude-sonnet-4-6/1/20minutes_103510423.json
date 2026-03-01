@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article scientifique sur la cartographie des fonds marins et les défis technologiques liés, sans aucun biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "fdd55acb9e83"
+}

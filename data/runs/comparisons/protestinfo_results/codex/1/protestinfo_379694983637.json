@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.96,
+  "comment": "The article is a personal Christian reflection on prayer with no clear left-right political subject matter. It does not discuss political actors, policies, or partisan treatment.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_379694983637.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

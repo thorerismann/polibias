@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article focuses on a criminal background investigation and legal updates regarding a local fire incident. It contains no discernible political actors, ideological framing, or partisan content.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_104591318.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

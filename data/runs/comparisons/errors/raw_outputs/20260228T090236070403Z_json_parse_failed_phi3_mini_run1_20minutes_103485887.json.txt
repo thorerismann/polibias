@@ -1,0 +1,20 @@
+{
+   "revised_article": [
+      {
+         "date":"14.02.2026",
+         "time":"21:00 CEST",
+         "location":"Conférence de Munich sur la sécurité, Allemagne"
+      },
+      {
+         "speaker":"Mette Frederiksen, Première ministre danoise",
+         "quote":"Malheureusement, je crois que (son) désir reste le même. Nous sommes dans une situation qui n'est pas terminée.",
+         "context":"Dialogue avec les États-Unis sur la convoitance du Groenland par Donald Trump"
+      },
+      {
+         "date":"15.02.2026",
+         "time":"17:43 CET",
+         "location":"Conférence de presse à Nuuk, Territoire autonome du Groenland"
+      },
+      {
+         "speaker":"Jens-Frederik Nielsen, Premier ministre groenlandais",
+         "quote":"Le dialogue est engagé et nous

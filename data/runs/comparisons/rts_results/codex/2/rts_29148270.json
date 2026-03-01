@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.05,
+  "confidence": 0.62,
+  "comment": "Le sujet est surtout factuel, mais il met en avant les obstacles au scrutin et relativise la pression de Washington/Kremlin. Le traitement paraît légèrement favorable à la position de Kiev/Zelensky, sans forte charge partisane explicite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29148270.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "Article defending Republican Medicaid cuts by attributing the program's spending explosion to Biden-era policies. Clearly right-leaning, pro-austerity and critical of Democrat social spending.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_262262040760.json",
+  "prompt_hash": "fdd55acb9e83"
+}

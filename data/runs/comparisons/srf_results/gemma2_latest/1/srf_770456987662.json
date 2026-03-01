@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on the Iran-US nuclear talks with neutral language. A slight left lean is observed due to emphasis on Iranian perspective and framing of US actions as potentially escalating tensions.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

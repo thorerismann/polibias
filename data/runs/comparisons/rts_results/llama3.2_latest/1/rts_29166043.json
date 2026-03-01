@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton objectif et informatif, sans dépendance évidente vers une perspective politique particulière. Cependant, les citations de spécialistes sont prises à part, ce qui pourrait influencer légèrement la perception du sujet.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

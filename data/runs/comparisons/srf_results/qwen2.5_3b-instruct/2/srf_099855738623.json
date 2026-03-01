@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.4,
+  "confidence": 1.0,
+  "comment": "The article focuses on the experiences of a former orphan Uschi Waser, highlighting her advocacy for the recognition and addressing of historical injustices related to Jewish children in Switzerland. The interview with Waser is central to the narrative.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

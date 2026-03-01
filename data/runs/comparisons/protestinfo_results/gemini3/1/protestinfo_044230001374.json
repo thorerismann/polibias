@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article reports on an ecumenical event promoting pluralistic dialogue to counter social polarization. It maintains a neutral, descriptive tone without favoring specific political ideologies.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

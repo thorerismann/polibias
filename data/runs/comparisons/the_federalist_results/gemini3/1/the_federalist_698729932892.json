@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.7,
+  "confidence": 0.95,
+  "comment": "The article employes strongly partisan language to praise conservative judicial interpretations and Trump-era immigration policies while disparaging a Biden-appointed judge. It frames the legal dispute as a clear-cut case of 'applying the law' versus 'ignoring' it for political ends.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

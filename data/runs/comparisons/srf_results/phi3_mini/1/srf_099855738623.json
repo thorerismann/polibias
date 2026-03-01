@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article shows a clear left-leaning bias through its subject matter and framing of the events as historical injustices that require acknowledgment and reparation. The tone is sympathetic to Uschi Waser's cause without overtly political language but with an underlying call for societal change regarding past treatment of marginalized groups.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

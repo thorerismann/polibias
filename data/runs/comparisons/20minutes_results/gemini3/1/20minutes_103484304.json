@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The text consists of neutral, factual news snippets reporting on US-Iran tensions from various diplomatic and military perspectives. It provides balanced coverage by quoting officials from the US, Iran, Israel, and the EU.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

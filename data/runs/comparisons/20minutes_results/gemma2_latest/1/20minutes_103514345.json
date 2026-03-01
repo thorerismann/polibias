@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article reports on French government appointments with neutral language and factual reporting. No clear political leanings are evident.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "1af9330e7254"
+}

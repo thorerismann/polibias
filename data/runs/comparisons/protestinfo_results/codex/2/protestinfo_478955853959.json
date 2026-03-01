@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is about Lent soup recipes and charitable parish activities, with no clear partisan political content. Any ideological signal is religious/community-oriented rather than left-right political.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article is a neutral report on a religious address regarding spiritual themes for Lent. It contains no explicit political content or partisan framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_234305067909.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article heavily frames Prince Andrew as a figure of disgrace due to his association with Jeffrey Epstein and subsequent fallout. It presents a critical and largely negative portrayal of his actions and the consequences, particularly highlighting the loss of his titles and royal privileges.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_952658270084.json",
+  "prompt_hash": "1af9330e7254"
+}

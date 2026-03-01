@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision très critique de l'organisation EF et sa décision de renvoyer un mineur accusé d'agression sexuelle. Les faits présentés sont souvent contradictoires, ce qui peut suggérer que l'article cherche à créer des ambiguïtés plutôt que de présenter un récit objectif.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

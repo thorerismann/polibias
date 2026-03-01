@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.58,
+  "framing_bias": -0.67,
+  "treatment_bias": -0.74,
+  "guests_bias": -0.52,
+  "confidence": 0.86,
+  "comment": "The piece is strongly pro-labor, frames corporate resistance as the core obstacle, and advocates scaling union power, which aligns with left-leaning politics. It presents almost exclusively union-side perspectives with little to no right-leaning countervoice.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_005466088031.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

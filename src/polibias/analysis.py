@@ -43,13 +43,19 @@ def build_bias_frame(settings) -> pd.DataFrame:
 
     # Collect all candidate (source, model_dir) pairs to scan
     def _iter_model_dirs(base_dir, source):
-        for run in range(1, settings.runs + 1):
-            for model in settings.models:
-                canonical = base_dir / settings.model_output_dirname(model) / str(run)
-                legacy = base_dir / model.replace(":", "_") / str(run)
-                for d in {canonical, legacy}:
-                    if d.is_dir():
-                        yield source, run, model, d
+        # Dynamically discover models based on existing folders
+        if not base_dir.is_dir():
+            return
+            
+        for model_path in sorted(base_dir.iterdir()):
+            if not model_path.is_dir():
+                continue
+            model = model_path.name
+            # Inside each model, look for run folders (numeric only)
+            for run_path in sorted(model_path.iterdir()):
+                if run_path.is_dir() and run_path.name.isdigit():
+                    run = int(run_path.name)
+                    yield source, run, model, run_path
 
     # Legacy flat results/ dir (pre-source-split runs)
     for source, run, model, model_dir in _iter_model_dirs(settings.results_dir, "rts"):

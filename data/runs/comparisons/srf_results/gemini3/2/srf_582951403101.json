@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article reports on the legal consequences and arrest of actor Shia LaBeouf following a violent incident. It maintains a factual and neutral tone without referencing political actors or ideologies.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}
