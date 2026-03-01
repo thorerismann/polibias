@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article sur les soupes de carême et leur symbolique de simplicité chrétienne, contenu religieux culturel sans biais politique.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "fdd55acb9e83"
+}

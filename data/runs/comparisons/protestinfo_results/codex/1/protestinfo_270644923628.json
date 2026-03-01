@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.92,
+  "comment": "Article centered on religious ritual practices and social transitions, with no clear left-right political framing. Sources quoted are theological/cultural rather than partisan political actors.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

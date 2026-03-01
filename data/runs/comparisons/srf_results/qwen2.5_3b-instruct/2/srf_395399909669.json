@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.25,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses cybersecurity threats to peripheral devices like headsets and keyboards, presenting a balanced view without leaning left or right.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Commentaire biblique sur les tentations de Jésus au désert, contenu théologique et spirituel pur sans biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "fdd55acb9e83"
+}

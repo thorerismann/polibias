@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.9,
+  "confidence": 0.9,
+  "comment": "The article is an interview exclusively featuring a representative from the left-wing France Insoumise party. The framing and treatment are heavily centered on their political agenda and criticisms of right-wing figures.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.3,
+  "confidence": 0.8,
+  "comment": "The text is critical of US foreign policy under Trump and strongly supports European strategic autonomy. It highlights social issues like the 'blocked social elevator' to argue for democratic renewal.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29134266.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

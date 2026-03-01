@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.08,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.82,
+  "comment": "L’article est principalement économique et technologique, avec peu de contenu partisan gauche-droite explicite. Le ton valorise légèrement l’investissement privé et la compétitivité, mais reste globalement analytique.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

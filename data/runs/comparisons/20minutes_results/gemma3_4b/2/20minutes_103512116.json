@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a conflict between the EF organization and the father of a 17-year-old boy who was expelled from a study abroad program after alleging sexual assault. The framing emphasizes the father's concerns about the organization's handling of the situation and the boy's potential victim status, while the EF side highlights prior disciplinary issues and the lack of a formal complaint.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

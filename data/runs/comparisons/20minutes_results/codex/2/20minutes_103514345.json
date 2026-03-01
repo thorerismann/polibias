@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.05,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.79,
+  "comment": "Le texte est principalement factuel et descriptif sur un remaniement ministériel, sans angle idéologique marqué. Une légère tonalité institutionnelle favorable au pouvoir en place apparaît, mais elle reste faible.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

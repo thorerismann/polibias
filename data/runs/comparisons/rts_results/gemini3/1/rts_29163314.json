@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.85,
+  "comment": "The article reports on journalist casualties with a focus on human rights and press freedom, using framing that is critical of state and military actions. The voices included are from the CPJ, an NGO that emphasizes government accountability and humanitarian concerns.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29163314.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Die Art und Weise, wie die Mordverdacht gegen den Sohn des verstorbenen Regisseurs Rob Reiner aufgegriffen wird, zeigt eine klare linke Prägung. Die Berichterstattung konzentriert sich auf das Tragische des Verlusts und die Schuld des Angeklagten, ohne zu hinterfragen, ob es sich um einen rechts- oder linksextremistischen Vorfall handelt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_657625305892.json",
+  "prompt_hash": "1af9330e7254"
+}

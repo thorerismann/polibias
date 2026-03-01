@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.92,
+  "comment": "The article is a science/forensics report about decomposition research and biocomposting, not a partisan political topic. Tone and sourcing are descriptive and technical, with no clear favoritism toward left or right political actors.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

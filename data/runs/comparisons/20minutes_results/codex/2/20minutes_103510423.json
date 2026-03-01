@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.06,
+  "framing_bias": 0.18,
+  "treatment_bias": 0.22,
+  "guests_bias": 0.04,
+  "confidence": 0.62,
+  "comment": "Article mainly focuses on science/technology and maritime data-sharing, with limited direct left-right politics. It frames Western transparency more positively while portraying China/North Korea secrecy more negatively, creating a slight right-leaning tilt.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

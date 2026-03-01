@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.5,
+  "confidence": 0.85,
+  "comment": "Article attacking a Biden-appointed judge for ruling against Trump immigration enforcement as 'dishonorable judicial conduct.' Strongly right-leaning, pro-enforcement immigration policy and critical of progressive judicial activism.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_698729932892.json",
+  "prompt_hash": "fdd55acb9e83"
+}

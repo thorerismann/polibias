@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.7,
+  "confidence": 0.85,
+  "comment": "Defense of a pro-Palestinian activist charged with a hate crime after spraying graffiti on the New York Times building. Strongly left-leaning, critical of prosecution and sympathetic to the Palestinian cause.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_579486682697.json",
+  "prompt_hash": "fdd55acb9e83"
+}

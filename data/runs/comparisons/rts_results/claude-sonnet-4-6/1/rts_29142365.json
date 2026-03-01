@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article traite de la correction du marché des crypto-monnaies de manière factuelle et neutre, sans biais politique identifiable. Aucun acteur politique n'est cité.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29142365.json",
+  "prompt_hash": "fdd55acb9e83"
+}

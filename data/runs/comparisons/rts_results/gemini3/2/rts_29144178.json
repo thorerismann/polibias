@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual and balanced report on a local animal neglect case, focusing on the social and administrative aspects. It includes various professional and political perspectives without adopting a partisan lean.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29144178.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

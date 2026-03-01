@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article reports on a private dispute between a family and a language school regarding an expulsion following an alleged assault. It maintains a neutral stance by presenting both the institution's disciplinary justification and the father's claims of injustice.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

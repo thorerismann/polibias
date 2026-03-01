@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.22,
+  "treatment_bias": -0.28,
+  "guests_bias": 0.24,
+  "confidence": 0.73,
+  "comment": "Le sujet est surtout économique et diplomatique, sans angle idéologique fort dans la sélection du thème. Le cadrage et le traitement paraissent légèrement défavorables à Donald Trump, tandis que la principale voix citée est celle d’un acteur de droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29147062.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

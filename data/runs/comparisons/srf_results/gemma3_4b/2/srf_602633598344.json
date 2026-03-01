@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article explores various approaches to regulating social media access for minors, highlighting both proposed bans and voluntary agreements. It presents a balanced view of the arguments surrounding the issue, with concerns about potential harm alongside discussions of platform accountability and regulatory approaches.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

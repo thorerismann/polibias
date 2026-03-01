@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "La lettre pastorale du cardinal Marx condamne explicitement le nationalisme ethnique, le racisme et l'antisémitisme comme incompatibles avec le catholicisme. Le sujet et le cadrage sont clairement de gauche, défendant la dignité universelle contre les idéologies nationalistes.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "fdd55acb9e83"
+}

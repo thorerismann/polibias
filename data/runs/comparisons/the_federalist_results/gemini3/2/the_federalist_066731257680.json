@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.6,
+  "confidence": 0.9,
+  "comment": "The article overtly supports the conservative dissenting opinion, framing the majority's decision as 'nonsensical' and 'a mess.' It focuses heavily on validating the Trump administration's legal use of tariff powers.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

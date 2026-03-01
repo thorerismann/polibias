@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a biographical retrospective on Helene Fischer's entertainment career and contains no political content. It focuses exclusively on her professional milestones and personal development as a musician.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.42,
+  "framing_bias": -0.58,
+  "treatment_bias": -0.62,
+  "guests_bias": -0.28,
+  "confidence": 0.74,
+  "comment": "L’article adopte une perspective fortement centrée sur les atteintes aux droits de la presse, avec un accent accusatoire contre des acteurs étatiques comme l’armée israélienne et l’Arabie saoudite. Cette sélection et ce cadrage correspondent davantage à une sensibilité perçue comme à gauche qu’à droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29163314.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

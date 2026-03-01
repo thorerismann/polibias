@@ -4,6 +4,10 @@ Political bias scoring of Swiss news articles using local LLMs via [Ollama](http
 
 `polibias` scrapes RTS/Federalist/Jacobin articles, scores them across four bias dimensions with local models, and produces CSV/statistics/HTML outputs.
 
+Live Streamlit dashboard:
+
+- https://politicalbiaswithai.streamlit.app/
+
 ## Bias Dimensions
 
 | Dimension | What it measures |

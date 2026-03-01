@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente une perspective très critique envers l'armée israélienne et ses actions, ce qui suggère un biais à gauche. Le ton est également très alarmiste, avec des phrases telles que \"Nous sommes tous en danger\" qui renforcent cette impression.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29163314.json",
+  "prompt_hash": "1af9330e7254"
+}

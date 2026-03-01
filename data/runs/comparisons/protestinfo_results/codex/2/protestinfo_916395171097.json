@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.28,
+  "framing_bias": -0.14,
+  "treatment_bias": -0.18,
+  "guests_bias": 0.0,
+  "confidence": 0.24,
+  "comment": "Le sujet porte sur des catholiques intégristes, un objet généralement associé à la droite, d’où un léger biais de sélection vers la droite. Le ton semble plutôt analytique mais avec une connotation légèrement critique envers ce courant.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une analyse critique des sectes en ligne, soulignant les dangers de ces groupes et leurs méthodes de manipulation. Le ton est objectif et informatif, avec quelques allusions à des cas réels qui illustrent les conséquences de l'adhésion à ces groupes.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "1af9330e7254"
+}

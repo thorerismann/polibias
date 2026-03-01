@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.7,
+  "confidence": 0.95,
+  "comment": "The article provides a structural critique of US interventionism and capitalism, characterizing the 'war on drugs' as a counterproductive tool of foreign policy. It quotes academics who challenge official narratives and offers a favorable mention of Mexico's current left-leaning administration.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

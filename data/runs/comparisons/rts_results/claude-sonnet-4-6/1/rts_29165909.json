@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article sportif sur les résultats de la Ligue nationale de hockey sur glace suisse. Aucun biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29165909.json",
+  "prompt_hash": "fdd55acb9e83"
+}

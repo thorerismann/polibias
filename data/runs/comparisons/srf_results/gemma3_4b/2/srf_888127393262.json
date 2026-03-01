@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article offers a positive retrospective on Helene Fischer's career, highlighting her success and emphasizing the value of her early experiences. It leans slightly towards celebrating her longevity and artistic evolution.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

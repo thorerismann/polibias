@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a factual sports report regarding Olympic skiing results and historical records. It contains no political content, actors, or bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29147304.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

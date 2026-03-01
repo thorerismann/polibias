@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente une vision très positive de la première dame Melania Trump, en soulignant son engagement pour l'éducation et la tolérance. Le ton est cependant critique envers les Nations Unies et l'administration Trump, ce qui peut indiquer un biais à gauche dans le contenu de l'article.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "1af9330e7254"
+}

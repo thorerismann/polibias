@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article discusses a scientific project studying human decomposition and biocomposting, presenting a neutral subject matter. The framing leans slightly towards innovation and scientific advancement, while the treatment is neutral regarding the topic itself.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "1af9330e7254"
+}

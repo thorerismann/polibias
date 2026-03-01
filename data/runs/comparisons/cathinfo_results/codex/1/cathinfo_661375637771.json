@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": -0.55,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.5,
+  "confidence": 0.82,
+  "comment": "Le texte condamne explicitement le nationalisme ethnique, le racisme et l’AfD, positions associées ici à la droite/far-right. La voix citée est essentiellement celle d’un cardinal qui défend une ligne universaliste et critique ces forces politiques.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents Helene Fischer's career in a mostly factual and respectful manner with slight left-leaning undertones due to the focus on her humble beginnings and personal growth narrative.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.15,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.3,
+  "confidence": 0.67,
+  "comment": "Article mostly straight-news on U.S.-Switzerland tariffs, with limited ideological framing. Tone includes mild critical cues around Trump, while quoted political voice is primarily from a right-leaning actor.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29147062.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

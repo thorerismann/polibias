@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Reportage judiciaire sur les déclarations de la gérante du bar incendié à Crans-Montana, factuel et sans biais politique gauche-droite.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "fdd55acb9e83"
+}

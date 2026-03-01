@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "The article frames Christian Zionism and Israeli settlement policies as threats to local Christian unity and presence. It prioritizes the perspective of traditional Church hierarchies over pro-government Zionist groups.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The text is a collection of factual news snippets providing balanced coverage of statements from US, Iranian, and international officials. It avoids editorializing and uses neutral, wire-service style reporting.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Article nécrologique sur l'acteur James Van Der Beek, contenu purement culturel sans biais politique identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29148433.json",
+  "prompt_hash": "fdd55acb9e83"
+}

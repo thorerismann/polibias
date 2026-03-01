@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.95,
+  "treatment_bias": 0.95,
+  "guests_bias": 0.9,
+  "confidence": 1.0,
+  "comment": "The article uses aggressive, derogatory language to attack liberal media figures while framing regulatory actions from a staunchly conservative perspective. It relies exclusively on right-leaning sources and organizations to support its claims.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_126424520791.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

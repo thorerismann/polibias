@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.05,
+  "guests_bias": -0.01,
+  "confidence": 0.8,
+  "comment": "Die Biografie Uschi Waser ist ein wichtiger Schritt in der Aufarbeitung der Vergangenheit der Pro Juventute und die Forderung nach einer systematischen Aufarbeitung ist berechtigt. Die Schweiz muss ihre Verantwortung für die Opfer dieser Zwangsmassnahmen anerkennen.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

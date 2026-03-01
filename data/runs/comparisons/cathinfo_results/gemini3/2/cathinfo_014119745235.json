@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.0,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "The article discusses a religious art piece focused on climate change and global inequality, topics often aligned with progressive social justice agendas. The framing reflects a critique of environmental inaction and the exploitation of the planet.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

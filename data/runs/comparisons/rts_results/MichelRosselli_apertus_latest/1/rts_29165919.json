@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.68,
+  "comment": "L'article traite de manière neutre des problèmes rencontrés par les caisses de chômage, sans favoriser un camp politique particulier.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

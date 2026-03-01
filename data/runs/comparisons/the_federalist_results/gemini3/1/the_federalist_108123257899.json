@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article employs populist right-leaning rhetoric, specifically blaming inflation on monetary expansion ('printed trillions') and criticizing COVID-19 lockdown policies. It frames legacy media's focus on individual spending as a distraction from these government-driven economic failures.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

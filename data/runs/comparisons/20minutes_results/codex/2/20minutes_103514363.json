@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.18,
+  "framing_bias": -0.12,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.14,
+  "confidence": 0.64,
+  "comment": "Sujet centré sur une initiative de Melania/Donald Trump, ce qui incline légèrement la sélection vers la droite. Le cadrage reste globalement factuel mais ajoute des éléments critiques sur l’administration Trump et l’ONU, d’où une légère balance défavorable à la droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

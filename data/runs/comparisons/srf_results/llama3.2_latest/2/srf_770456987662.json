@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Verhandlungen konzentrieren sich hauptsächlich auf das umstrittene iranische Atomprogramm und die Aufhebung von Sanktionen, wobei der Iran bereit ist, sein Nuklearprogramm zu begrenzen. Die USA fordern jedoch eine Begrenzung des Raketenarsenals und Unterstützung militanter Gruppen wie der Hisbollah im Libanon.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

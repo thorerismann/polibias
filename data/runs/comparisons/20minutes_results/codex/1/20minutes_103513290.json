@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.02,
+  "framing_bias": 0.08,
+  "treatment_bias": 0.06,
+  "guests_bias": 0.1,
+  "confidence": 0.57,
+  "comment": "Article mostly descriptive on industrial policy and investment, with limited left-right ideological framing. Slight pro-business emphasis appears via focus on incentives, costs, and corporate voices.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

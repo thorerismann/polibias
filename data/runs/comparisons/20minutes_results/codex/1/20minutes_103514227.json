@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.22,
+  "framing_bias": -0.18,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.15,
+  "confidence": 0.8,
+  "comment": "L’article met en avant l’efficacité des prestations sociales et adopte un angle plutôt favorable à l’intervention publique, souvent associé au centre-gauche/gauche. Le ton reste globalement informatif, avec une légère asymétrie de sources (principalement la ministre).",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

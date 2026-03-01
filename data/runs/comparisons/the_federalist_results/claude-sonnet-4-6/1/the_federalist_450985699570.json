@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.5,
+  "confidence": 0.85,
+  "comment": "Article attacking NYC Mayor Zohran Mamdani for requiring ID to shovel snow while opposing voter ID laws, framing it as Democratic hypocrisy. Clearly right-leaning, pro-voter ID and anti-socialist.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_450985699570.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.7,
+  "comment": "Rapport social sur la pauvreté dans le canton de Vaud, valorisant l'efficacité des prestations sociales comme outil de réduction de la pauvreté. Le cadrage est favorable au filet social et à son extension, une perspective typiquement de gauche.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "fdd55acb9e83"
+}

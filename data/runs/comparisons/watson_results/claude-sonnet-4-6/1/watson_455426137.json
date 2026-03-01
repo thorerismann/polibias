@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Kurzmeldung über einen erschossenen Eindringling auf dem Mar-a-Lago-Gelände. Sachliche Sicherheitsmeldung ohne politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_455426137.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article reports on the cause of death of a deceased actor, presenting factual details without a clear political slant. It focuses on biographical information and film roles.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

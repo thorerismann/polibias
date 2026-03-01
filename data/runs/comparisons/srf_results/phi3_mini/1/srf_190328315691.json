@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article leans slightly left due to its focus on the unexpected nature of Greene's death and his roles in cult films which are often associated with counterculture movements. The tone is neutral but subtly critical towards right-leaning interpretations by not providing a sensationalist narrative.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

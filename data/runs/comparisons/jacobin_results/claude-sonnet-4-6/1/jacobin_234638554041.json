@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.65,
+  "comment": "Interview on the need for a French parliamentary commission on child sexual abuse networks. Moderately left-leaning in its emphasis on institutional accountability and transparency.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_234638554041.json",
+  "prompt_hash": "fdd55acb9e83"
+}

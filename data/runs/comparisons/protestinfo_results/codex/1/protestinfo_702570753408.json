@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.72,
+  "framing_bias": -0.93,
+  "treatment_bias": -0.9,
+  "guests_bias": -0.84,
+  "confidence": 0.95,
+  "comment": "L’article adopte un cadrage fortement critique des figures et idées associées à Trump, Musk et la droite techno-libertarienne, avec un vocabulaire normatif très négatif. Les voix mises en avant et la sélection des arguments favorisent nettement une lecture alignée à gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on a geological hazard and public safety measures in Switzerland. It maintains a neutral, informative tone without any discernible political leaning.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29166043.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

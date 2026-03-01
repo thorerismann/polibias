@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.62,
+  "framing_bias": -0.74,
+  "treatment_bias": -0.78,
+  "guests_bias": -0.69,
+  "confidence": 0.84,
+  "comment": "The article centers left-coded activist history (Young Lords, structural racism, harm reduction) and frames their actions as effective and justified. Institutional actors are presented mainly as obstacles, with quoted voices overwhelmingly from sympathetic movement participants.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

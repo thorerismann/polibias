@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article focuses on labor exploitation and systemic legal failures from a social justice perspective. It predominantly features a critical voice from a social advocacy group while highlighting the worker's plight.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29148256.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

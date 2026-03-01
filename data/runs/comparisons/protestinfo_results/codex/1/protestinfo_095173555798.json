@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.93,
+  "comment": "Article local et humanitaire sur l’aide alimentaire, sans débat partisan explicite. Le ton de solidarité sociale peut légèrement évoquer une sensibilité de gauche, mais l’ensemble reste largement non politique.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.5,
+  "comment": "The article reports on a legal case against Shia LaBeouf without explicitly expressing political opinions. The tone is neutral and factual.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "1af9330e7254"
+}

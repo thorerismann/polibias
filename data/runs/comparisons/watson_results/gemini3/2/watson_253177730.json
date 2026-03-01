@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.6,
+  "confidence": 0.85,
+  "comment": "The article reports on Ukrainian cyber-intelligence successes using exclusively pro-Ukrainian sources and terminology critical of the Russian 'aggressor state.' This framing aligns with liberal-internationalist perspectives that strongly support Ukrainian defense against authoritarian regimes.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_253177730.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

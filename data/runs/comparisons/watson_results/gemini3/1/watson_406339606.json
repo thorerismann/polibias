@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a sports analysis of the Swiss National League ice hockey season and contains no political content. It evaluates team performances and playoff probabilities without any ideological bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_406339606.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

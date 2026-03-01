@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Reportage über ein mehrsprachiges Leseförderprogramm für Migrantenfamilien in der Schweiz, positiv gegenüber Integration und Herkunftssprachen eingestellt. Leichte Linkstendenz durch das Thema der kulturellen Vielfalt und Integrationsförderung.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a fairly neutral overview of the dispute over judicial reform in Poland, focusing on the political maneuvering and the role of the EU. It highlights the tensions between the current government and the President, and the potential consequences for the Polish legal system and democracy.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "1af9330e7254"
+}

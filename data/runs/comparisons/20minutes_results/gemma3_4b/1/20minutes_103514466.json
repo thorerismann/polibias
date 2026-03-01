@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article heavily frames the situation in Cuba as a humanitarian crisis exacerbated by the US embargo, utilizing strong language and emphasizing the impact on vulnerable populations. It presents a clear critique of the US policy and the UN's concerns regarding the consequences.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103514466.json",
+  "prompt_hash": "1af9330e7254"
+}

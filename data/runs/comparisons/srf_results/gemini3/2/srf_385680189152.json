@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a balanced analysis of the Polish political deadlock, incorporating both the government's reformist goals and the opposition's arguments regarding EU double standards. The tone remains analytical, highlighting the risks to democracy from both the presidential vetoes and the government's use of executive orders.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Réflexion théologique sur la nature de la prière chrétienne, contenu purement religieux et spirituel sans biais politique.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_379694983637.json",
+  "prompt_hash": "fdd55acb9e83"
+}

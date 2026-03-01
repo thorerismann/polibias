@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.7,
+  "confidence": 0.85,
+  "comment": "Interview with a progressive power researcher inspired by Tom Hayden and the SDS, focusing on research in service of social change movements. Clearly left-leaning, oriented toward progressive organizing.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.62,
+  "framing_bias": -0.81,
+  "treatment_bias": -0.84,
+  "guests_bias": -0.76,
+  "confidence": 0.9,
+  "comment": "The interview consistently frames universal, publicly funded childcare as a right and critiques market-based or means-tested alternatives, which aligns with left/progressive policy preferences. Nearly all quoted perspectives support that direction, with little right-leaning counterbalance.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.33,
+  "comment": "Article local et humanitaire sans enjeu partisan explicite. Le ton empathique envers la précarité peut légèrement évoquer un cadrage social, mais l’orientation politique reste globalement neutre.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_095173555798.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

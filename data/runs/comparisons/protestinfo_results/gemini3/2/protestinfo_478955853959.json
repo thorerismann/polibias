@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article is a non-political culinary and charitable guide focused on Lenten soup traditions and recipes. It maintains a purely informative and neutral tone regarding its religious and community context.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_478955853959.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

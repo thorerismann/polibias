@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a factual account of US trade policy developments and their potential impact on the Swiss economy. It maintains a neutral tone and primarily quotes a government official focusing on national economic interests.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_144733379.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

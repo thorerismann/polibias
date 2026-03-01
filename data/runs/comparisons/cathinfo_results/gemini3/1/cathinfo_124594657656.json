@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a factual obituary regarding the passing of Cardinal Polycarp Pengo. It maintains a neutral tone without any political or partisan leanings.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_124594657656.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

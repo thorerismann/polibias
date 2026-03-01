@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.4,
+  "confidence": 0.95,
+  "comment": "The article strongly critiques mainstream media for allegedly downplaying a shooter's transgender identity, employing framing and language typical of right-leaning media criticism. It explicitly aligns itself against what it terms 'transgender ideology' and 'corporate media' agendas.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_110079005241.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

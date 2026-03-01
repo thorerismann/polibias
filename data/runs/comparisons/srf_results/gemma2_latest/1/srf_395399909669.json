@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a technical analysis of cybersecurity risks associated with wireless computer accessories. It does not express overt political opinions or favor any particular political stance.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

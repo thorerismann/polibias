@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.1,
+  "comment": "Extrait très court et non centré sur des acteurs politiques identifiables. Aucun biais gauche/droite clair n’est détectable.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

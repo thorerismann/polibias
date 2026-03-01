@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.08,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.18,
+  "guests_bias": 0.0,
+  "confidence": 0.62,
+  "comment": "Le texte est avant tout religieux et moral, avec peu de contenu partisan explicite. La critique du nationalisme triomphaliste, de l’accumulation des richesses et du pouvoir temporel incline légèrement vers une sensibilité de gauche.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

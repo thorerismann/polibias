@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is neutral in its subject matter and does not show a clear bias towards either side. The framing is slightly negative, indicating concern about the situation without being overtly partisan.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "1af9330e7254"
+}

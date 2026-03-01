@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.45,
+  "guests_bias": -0.2,
+  "confidence": 0.78,
+  "comment": "L’article met surtout en avant les conséquences humanitaires du blocus américain sur Cuba, ce qui incline le cadrage contre la politique américaine. Les voix citées sont principalement onusiennes et critiques des restrictions, avec peu de contrepoint pro-sanctions.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514466.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

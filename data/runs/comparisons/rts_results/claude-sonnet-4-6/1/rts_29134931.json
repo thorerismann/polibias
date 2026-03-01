@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "L'article couvre un désastre naturel en Sicile avec un léger penchant critique envers les insuffisances gouvernementales et implicitement favorable à la position de l'opposition demandant de réorienter le budget du pont vers la sécurisation des infrastructures. La tonalité est principalement factuelle.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29134931.json",
+  "prompt_hash": "fdd55acb9e83"
+}

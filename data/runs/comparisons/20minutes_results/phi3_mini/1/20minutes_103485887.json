@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.75,
+  "treatment_bias": null,
+  "guests_bias": -0.6,
+  "confidence": 0.8,
+  "comment": "The article leans slightly to the right with a high confidence level due to clear language and context.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "1af9330e7254"
+}

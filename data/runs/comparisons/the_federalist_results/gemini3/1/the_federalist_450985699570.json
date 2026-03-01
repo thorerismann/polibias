@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.9,
+  "confidence": 1.0,
+  "comment": "The article uses a mocking tone and selective comparison to frame Democratic opposition to voter ID as hypocritical. It exclusively quotes Republican and conservative sources while presenting partisan arguments as objective common sense.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_450985699570.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

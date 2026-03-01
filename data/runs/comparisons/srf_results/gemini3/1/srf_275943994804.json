@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.9,
+  "comment": "The article reports on the death of Jesse Jackson, a prominent left-wing civil rights leader, using respectful and honoring language from his family's statement. The focus on social justice and civil rights themes typically aligns with a progressive or left-leaning topical interest.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

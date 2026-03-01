@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.6,
+  "confidence": 0.9,
+  "comment": "The article heavily prioritizes the arguments of the dissenting conservative justices, framing the majority's ruling as 'nonsensical' and 'a mess.' It provides significantly more space and sympathetic framing to Justice Kavanaugh\u2019s critique than to Chief Justice Roberts\u2019 majority opinion.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_066731257680.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual account of a Catholic religious initiative for peace across Europe. It maintains a neutral, informative tone without favoring any specific political ideology.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_340304832807.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

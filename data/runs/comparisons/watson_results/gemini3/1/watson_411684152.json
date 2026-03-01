@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article reports on new allegations against Prince Andrew and the Epstein scandal in a factual, reportorial manner. It maintains neutrality by presenting both the accusations and the official denials without adopting a partisan political frame.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_411684152.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

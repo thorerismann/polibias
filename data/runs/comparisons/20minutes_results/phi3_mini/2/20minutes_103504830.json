@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.5,
+  "treatment_bias": null,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article leans slightly left in framing due to its critical view of sectarian manipulation on the internet but treats both sides fairly without clear bias.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "1af9330e7254"
+}

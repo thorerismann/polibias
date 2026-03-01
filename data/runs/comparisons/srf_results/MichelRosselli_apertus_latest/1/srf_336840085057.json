@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article covers the health issues of King Harald and his decision to continue his vacation on the Canary Islands, as well as the legal troubles faced by his grandson Marius Borg Høiby and the connection between Crown Princess Mette-Marit and Jeffrey Epstein.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": 0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.2,
+  "confidence": 0.95,
+  "comment": "['The article appears to have a slight left-leaning bias due to its focus on multilingualism and cultural heritage.', 'While the framing is generally neutral with some positive tone towards language learning in multiple cultures.']",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "1af9330e7254"
+}

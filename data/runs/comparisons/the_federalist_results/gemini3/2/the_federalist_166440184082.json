@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.5,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.7,
+  "confidence": 0.95,
+  "comment": "The text employs a religious and traditionalist framework to argue for parental sovereignty over educational technology and union-led AI initiatives. It leans right by framing Silicon Valley's influence as corporate overreach while citing conservative legislative efforts and organizations favorably.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

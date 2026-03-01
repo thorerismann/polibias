@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.2,
+  "comment": "Le texte est principalement religieux et promotionnel (abonnement), sans enjeu politique explicite gauche/droite. Aucun acteur politique clair n’est traité favorablement ou défavorablement.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_234305067909.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

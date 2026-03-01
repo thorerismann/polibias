@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.93,
+  "comment": "Article religieux et historique sans enjeu partisan identifiable gauche/droite. Le ton est informatif et centré sur la dévotion catholique, pas sur des acteurs politiques.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

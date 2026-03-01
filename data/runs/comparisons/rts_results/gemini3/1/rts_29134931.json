@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article focuses on infrastructure failure and includes the left-wing opposition's critique of the Messina Bridge project. This framing suggests a slight lean towards the opposition's perspective on government priorities.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29134931.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

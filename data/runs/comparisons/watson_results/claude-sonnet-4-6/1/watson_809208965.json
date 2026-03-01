@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "Experteninterview über das Risiko einer chinesischen Invasion Taiwans zwischen 2027 und 2030. Neutrale geopolitische Analyse ohne Links-Rechts-Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_809208965.json",
+  "prompt_hash": "fdd55acb9e83"
+}

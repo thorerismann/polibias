@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.25,
+  "treatment_bias": -0.25,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is balanced in its coverage of Helene Fischer's career, neither favoring the left nor the right. It presents both positive and negative aspects without a clear bias towards any particular viewpoint.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

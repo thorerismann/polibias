@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.4,
+  "confidence": 0.9,
+  "comment": "The article highlights social issues and administrative failures, primarily quoting trade unions and advocacy groups for the unemployed. While it includes official perspectives, the lack of right-leaning political voices results in a slight leftward tilt.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29165919.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

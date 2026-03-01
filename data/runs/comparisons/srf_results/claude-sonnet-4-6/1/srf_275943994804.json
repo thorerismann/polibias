@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "Nachruf auf Jesse Jackson, einer der bekanntesten progressiven Bürgerrechtler der USA. Thema und Tonalität sind klar linksgerichtet, der Artikel würdigt seinen Einsatz für soziale Gerechtigkeit und Gleichberechtigung.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "fdd55acb9e83"
+}

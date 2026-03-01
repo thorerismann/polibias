@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Die ukrainische Cyber-Community hat eine erfolgreiche Operation durchgeführt, um Zugang zu russischen Militärkonten zu erhalten und Informationen über die russische Drohnenoperatoren zu sammeln. Die Rolle von Belarus in dieser Operation ist brisant, da es sich um eine enge Zusammenarbeit zwischen Russland und Belarus handelt.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "watson_253177730.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.5,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article heavily focuses on the pre-war planning and lack of early warnings, presenting a negative view towards Western intelligence agencies' failure to predict the conflict. It also portrays Russia's actions as more rational and less aggressive than suggested by some experts.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_235608563568.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is purely entertainment-focused, reporting on a television game show. There is no political lean in the subject selection, framing, or treatment of the mentioned figures.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_211615345.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

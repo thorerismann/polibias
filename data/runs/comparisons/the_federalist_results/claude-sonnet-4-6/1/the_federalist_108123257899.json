@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.4,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.3,
+  "confidence": 0.7,
+  "comment": "Article criticizing Gen Z spending habits while linking NYC's affordability crisis to the rise of 'Democrat socialist' Zohran Mamdani as mayor. Clearly right-leaning in its anti-socialist framing and critique.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_108123257899.json",
+  "prompt_hash": "fdd55acb9e83"
+}

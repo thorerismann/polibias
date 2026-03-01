@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article reports on the death and legacy of Van Der Beek with a neutral tone. There is no clear political slant in the subject matter or framing.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.4,
+  "confidence": 0.85,
+  "comment": "The article reports on Trump's Greenland announcement with skepticism, highlighting the lack of medical necessity and previous annexation threats. While it quotes Trump directly, the framing emphasizes the resulting diplomatic tensions with Europe.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_778644734.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

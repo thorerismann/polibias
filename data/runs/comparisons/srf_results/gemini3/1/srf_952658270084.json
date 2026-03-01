@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual chronology of Prince Andrew's legal issues and arrest, maintaining an objective and descriptive tone. It focuses on the timeline of events without adopting a partisan political perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_952658270084.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

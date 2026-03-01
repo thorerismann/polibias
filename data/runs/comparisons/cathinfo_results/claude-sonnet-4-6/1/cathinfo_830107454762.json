@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.7,
+  "comment": "Article sur le conflit entre le sionisme chrétien et les Patriarches de Jérusalem représentant les chrétiens locaux de Terre Sainte. Le cadrage favorise la perspective des chrétiens palestiniens qui rejettent les idéologies sionistes chrétiennes.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "fdd55acb9e83"
+}

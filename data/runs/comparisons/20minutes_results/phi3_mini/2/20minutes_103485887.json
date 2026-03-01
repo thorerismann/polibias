@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.5,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.8,
+  "comment": "The article seems to slightly favor a left-leaning perspective by focusing on the importance of Greenland for Denmark and its unique nature within Danish nationhood. However, there is not enough clear bias towards either side in treatment or guest selection.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "1af9330e7254"
+}

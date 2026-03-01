@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.45,
+  "confidence": 0.82,
+  "comment": "Le texte met surtout en avant une condamnation du nationalisme ethnique, du racisme et de l’AfD, avec un cadrage moral aligné sur des positions généralement perçues comme anti-droite radicale. L’absence de contre-voix politiques renforce une orientation globale vers le pôle gauche/anti-droite dans le traitement.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

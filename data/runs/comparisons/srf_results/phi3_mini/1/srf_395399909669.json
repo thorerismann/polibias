@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents a balanced view on cybersecurity for peripheral devices with some emphasis on the risks but also suggests practical solutions and responsible usage.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

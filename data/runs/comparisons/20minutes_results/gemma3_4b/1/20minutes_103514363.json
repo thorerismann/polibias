@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily focuses on Melania Trump's role and the US's involvement with the UN, with a slight positive framing of her actions. It also includes context regarding US criticisms of the UN and recent financial contributions.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "1af9330e7254"
+}

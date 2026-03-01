@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article discusses K-Pop and its impact, including the high-profile of a specific group called Katseye. It mentions criticism they face online but does not lean strongly left or right in terms of subject matter.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "1af9330e7254"
+}

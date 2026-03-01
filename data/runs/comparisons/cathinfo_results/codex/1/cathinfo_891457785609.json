@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.94,
+  "comment": "The article is cultural and religious, focused on an artist and his work in St. Peter’s Basilica. It does not present clear left-right political framing or partisan treatment.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_891457785609.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article leans slightly left with its framing towards the negative impact of security measures on chômeurs' rights and experiences. It also shows a slight bias against right-leaning policies that might prioritize efficiency over individual welfare.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

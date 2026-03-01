@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "Der Beitrag ist vor allem historisch-aufarbeitend und menschenrechtlich orientiert, mit leicht progressiver Empathie im Framing. Eine klare parteipolitische Bevorzugung von links oder rechts ist kaum erkennbar.",
+  "status": "ok",
+  "model": "codex",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.93,
+  "comment": "Article essentiellement factuel et historique sur une catastrophe naturelle, sans clivage gauche-droite explicite. Léger biais potentiel vers des politiques publiques d’investissement et de prévention (incluant le climat), mais non partisan.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29144921.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

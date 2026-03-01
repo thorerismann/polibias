@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article primarily discusses the rise of online cults and their tactics, framing them as a contemporary threat. It highlights the vulnerability of young people and the manipulative nature of these groups, offering a generally critical perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "1af9330e7254"
+}

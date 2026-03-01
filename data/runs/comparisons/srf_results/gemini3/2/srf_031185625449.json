@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on a natural disaster in Brazil, focusing on casualty figures and emergency response measures. There is no discernible political framing or bias in the coverage of this humanitarian event.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

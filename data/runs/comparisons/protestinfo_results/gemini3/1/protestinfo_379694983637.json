@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a purely spiritual reflection on the Christian practice of prayer and contains no political references or themes. Consequently, it does not exhibit any measurable political bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_379694983637.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

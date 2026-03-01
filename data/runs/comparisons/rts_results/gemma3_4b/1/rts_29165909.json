@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "This article reports on two hockey games, focusing on the results and key moments. There's no clear political leaning or favoring of one team over another.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29165909.json",
+  "prompt_hash": "1af9330e7254"
+}

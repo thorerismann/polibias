@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.3,
+  "confidence": 0.8,
+  "comment": "Critical analysis of the IOC's plans to bring private equity into Olympics financing, noting the Samaranch family's Francoist background. Clearly left-leaning, opposing the financialization of sport.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_037208927550.json",
+  "prompt_hash": "fdd55acb9e83"
+}

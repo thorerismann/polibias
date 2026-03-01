@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The text is a factual obituary snippet plus subscription/paywall information, with no clear left-right political content. Any bias present appears religious/editorial rather than partisan.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_124594657656.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

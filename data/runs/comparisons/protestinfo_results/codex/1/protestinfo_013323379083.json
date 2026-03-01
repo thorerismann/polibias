@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.09,
+  "comment": "The provided text appears to be only a program/article label and date, with no substantive political content to assess. Bias scores are therefore neutral with very low confidence.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_013323379083.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

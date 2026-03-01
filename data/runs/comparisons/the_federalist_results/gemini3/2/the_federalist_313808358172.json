@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 1.0,
+  "treatment_bias": 1.0,
+  "guests_bias": 0.7,
+  "confidence": 0.95,
+  "comment": "The article explicitly validates conservative arguments on immigration while framing Democratic policies as 'destabilizing' and hypocritical. It uses highly partisan language and prioritizes right-leaning narratives on cultural compatibility and national security.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_313808358172.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article focuses on climate change and global inequality through a religious lens, themes that align with progressive social justice perspectives. The framing critiques consumerism and environmental inaction, which are hallmarks of left-leaning discourse.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_014119745235.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

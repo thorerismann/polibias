@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.4,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article focuses on a women-only social housing project, framing it positively through a feminist and social-support lens. It highlights the relevance of non-mixed 'safe spaces' in the post-#MeToo era.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

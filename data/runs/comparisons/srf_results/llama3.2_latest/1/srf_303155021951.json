@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Artikelpräsentation ist neutral und enthält keine klaren politischen Aussagen. Die Diskussion um die psychische Belastung von K-Pop-Musikern wird jedoch in einem sehr positiven Licht präsentiert, was eine leichte left-leaning Note verleitet.\n\nDie Verwendung von Begriffen wie \"psychische Belastung\" und das Zitieren von Manon Brannerman als Beispiel für die Notwendigkeit einer Auszeit suggerieren einen humanitären Ansatz, der eher links geprägt ist.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "1af9330e7254"
+}

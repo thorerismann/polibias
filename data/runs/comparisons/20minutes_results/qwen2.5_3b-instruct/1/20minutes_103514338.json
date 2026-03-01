@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article focuses on the gérante's account of the incident, which is slightly biased towards her version of events.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "1af9330e7254"
+}

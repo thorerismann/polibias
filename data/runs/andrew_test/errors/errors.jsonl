@@ -1,0 +1,1 @@
+{"stage": "call_ollama_failed", "model": "llama3.2:latest", "article": "watson_144733379.json", "run": 1, "error": "ReadTimeout('timed out')", "ts": "2026-03-01T15:48:51.770128+00:00"}

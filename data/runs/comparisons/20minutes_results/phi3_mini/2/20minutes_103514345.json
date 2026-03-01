@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.4,
+  "confidence": 0.95,
+  "comment": "The article appears to slightly favor the left due to its focus on progressive policies and appointments of individuals from diverse backgrounds but maintains a largely neutral tone.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "1af9330e7254"
+}

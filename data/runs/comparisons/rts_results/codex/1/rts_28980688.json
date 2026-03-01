@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.12,
+  "treatment_bias": 0.08,
+  "guests_bias": 0.0,
+  "confidence": 0.69,
+  "comment": "L’article est surtout économique et descriptif, avec un léger biais pro-marché/pro-investissement plutôt associé au centre-droit. Il n’y a pas de traitement partisan explicite gauche/droite ni d’acteurs politiques idéologiques clairement opposés.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_28980688.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

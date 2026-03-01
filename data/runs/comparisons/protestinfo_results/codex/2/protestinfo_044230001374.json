@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.93,
+  "comment": "Article centré sur le dialogue social et un événement œcuménique, sans enjeu partisan explicite gauche/droite. Le ton est consensuel et ne favorise pas clairement un camp politique.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_044230001374.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

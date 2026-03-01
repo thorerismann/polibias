@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.75,
+  "comment": "Der Artikel beleuchtet das Schicksal eines Verdingkinds aus der jenischen Gemeinschaft und fordert Aufarbeitung staatlicher Zwangsmassnahmen. Das Thema und die Darstellung sind klar linksorientiert, mit Fokus auf Menschenrechte und staatliches Unrecht gegen Minderheiten.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "fdd55acb9e83"
+}

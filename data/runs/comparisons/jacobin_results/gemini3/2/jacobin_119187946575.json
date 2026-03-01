@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.9,
+  "confidence": 0.95,
+  "comment": "The article provides a sympathetic historical account of the Young Lords' radical health activism and critiques institutional constraints on community programs. It exclusively features voices from the movement and uses terminology aligned with leftist political frameworks.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

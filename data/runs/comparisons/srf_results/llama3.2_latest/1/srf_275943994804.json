@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Der Artikel beschreibt die Biografie von Jesse Jackson, einem prominenten Bürgerrechtler in den USA, in einer neutralen und respektvollen Art. Es gibt keine Hinweise auf eine klare politische Ausrichtung oder Voreingenommenheit.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

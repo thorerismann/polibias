@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article reports on Trump's claims about Greenland while providing context that contradicts his narrative of medical necessity. It highlights the diplomatic friction and opposition from European allies, resulting in a framing critical of the right-wing actor.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_778644734.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

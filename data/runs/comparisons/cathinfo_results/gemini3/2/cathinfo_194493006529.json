@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article neutrally reports on a directive by Ghanaian bishops to prevent the use of church property for partisan political activities. No partisan bias is evident in the framing or content.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_194493006529.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

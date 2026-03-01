@@ -1,0 +1,14 @@
+{ "newsArticles": [
+  {
+    "title": "Ukrainian President Zelensky Confirms Next Trilateral Meeting with Russia and US in March",
+    "content": "Ukrainian President Volodymyr Zelensky announced a planned trilateral meeting between his country, Russia, and the United States to take place early in March. The discussions held in Geneva with American officials had advanced progress towards resolving ongoing conflicts.",
+    "date": "26.02.2026"
+  },
+  {
+    "title": "Two South Africans Died Fighting for Russian Army in Ukraine",
+    "content": "The Minister of Foreign Affairs of South Africa stated that at least two South African citizens died while fighting for the Russian army in Ukraine. The government has identified 17 men who were recruited under a security training guise and sent to the front lines in Donbass.",
+    "date": "26.02.2026"
+  },
+  {
+    "title": "Russia Returns Ukrainian Troops' Corpses, Receives 35 Russian Troops' Corpses",
+    "content": "The corpses of Ukrainian troops have been returned by Russia to Ukraine,

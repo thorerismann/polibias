@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The text consists of short news updates reporting on diplomatic friction and de-escalation between the US and Denmark/Greenland. While it quotes Trump and Rubio, the overall narrative focus on sovereignty and resistance to 'unacceptable' pressure leans slightly toward the European internationalist perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

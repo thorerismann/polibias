@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a neutral report on Swiss-Iraqi economic relations and diplomatic efforts. It focuses on business opportunities and reconstruction challenges without employing partisan framing or favoring specific political ideologies.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_28980688.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

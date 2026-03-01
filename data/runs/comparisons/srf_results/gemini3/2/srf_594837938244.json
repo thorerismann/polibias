@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article highlights a multicultural integration project that supports heritage languages, a topic and approach generally favored by the political left. The reporting is positive and descriptive, lacking critical or opposing perspectives from other political spectrums.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

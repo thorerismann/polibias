@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The provided text is a neutral introductory header for a religious chronicle and contains no substantive political content to evaluate.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_710143780275.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

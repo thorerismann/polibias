@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "Interview on the history of universal childcare advocacy in New York City, valorizing de Blasio's universal pre-K initiative. Clearly left-leaning, favorable to publicly-funded universal social services.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_163802476498.json",
+  "prompt_hash": "fdd55acb9e83"
+}

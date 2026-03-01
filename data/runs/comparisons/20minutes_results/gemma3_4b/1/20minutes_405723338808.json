@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.2,
+  "confidence": 0.7,
+  "comment": "The article focuses on diplomatic efforts and military exchanges between Ukraine, Russia, and the US. It highlights ongoing negotiations, casualties, and military aid, presenting a relatively neutral overview of the conflict.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_405723338808.json",
+  "prompt_hash": "1af9330e7254"
+}

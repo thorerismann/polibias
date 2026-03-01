@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.1,
+  "confidence": 0.65,
+  "comment": "L'article aborde la question des élections ukrainiennes sous pression de l'administration Trump, en donnant davantage la parole à Zelensky et en soulignant les obstacles pratiques à l'organisation d'un scrutin. Le traitement penche légèrement en faveur de la position ukrainienne.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29148270.json",
+  "prompt_hash": "fdd55acb9e83"
+}

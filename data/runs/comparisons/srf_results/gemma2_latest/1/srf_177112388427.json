@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article presents a neutral overview of the new EU-Switzerland agreement. There is a slight rightward lean in framing due to emphasis on EU stability and shared values.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_177112388427.json",
+  "prompt_hash": "1af9330e7254"
+}

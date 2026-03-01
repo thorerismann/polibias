@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.83,
+  "comment": "L’article traite surtout de mesures institutionnelles d’indemnisation après une catastrophe, sans angle partisan explicite. Le ton est factuel et administratif, avec peu d’indices d’un favoritisme gauche/droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29147656.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

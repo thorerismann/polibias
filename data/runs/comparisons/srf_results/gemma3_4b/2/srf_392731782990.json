@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a variety of unusual animal stories, lacking a clear political slant. The focus on animal behavior and conservation offers a neutral perspective.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_392731782990.json",
+  "prompt_hash": "1af9330e7254"
+}

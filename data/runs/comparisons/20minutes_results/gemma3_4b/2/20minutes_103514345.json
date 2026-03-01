@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.1,
+  "confidence": 0.8,
+  "comment": "The article details new government appointments within Macron's administration, highlighting both Macronist and Republican figures. It presents a relatively neutral overview of the changes.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "1af9330e7254"
+}

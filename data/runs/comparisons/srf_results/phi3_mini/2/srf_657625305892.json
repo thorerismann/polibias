@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.7,
+  "confidence": 0.9,
+  "comment": "The article leans slightly to the left with a negative tone towards Rob Reiner's murder accusation and his treatment in court; guests or speakers are not mentioned.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_657625305892.json",
+  "prompt_hash": "1af9330e7254"
+}

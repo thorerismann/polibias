@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.3,
+  "confidence": 0.8,
+  "comment": "L'article présente les conséquences humanitaires du blocus énergétique américain sur Cuba, en donnant surtout la parole aux responsables de l'ONU qui alertent sur la crise. Le sujet et le traitement sont clairement critiques de la politique de Washington envers Cuba.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103514466.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.45,
+  "treatment_bias": 0.55,
+  "guests_bias": 0.75,
+  "confidence": 0.84,
+  "comment": "L'article est centré presque entièrement sur les arguments du camp du non, avec une élue libérale-radicale comme voix dominante. Le camp du oui est mentionné mais peu développé dans ce texte, ce qui crée un déséquilibre pro-centre/droite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29138340.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

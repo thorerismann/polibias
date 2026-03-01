@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton objectif et informatif, mais sans une perspective évidemment de gauche ou de droite. La discussion sur les défis de la cartographie des océans est neutre et ne prend pas position sur les politiques environnementales ou économiques.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103510423.json",
+  "prompt_hash": "1af9330e7254"
+}

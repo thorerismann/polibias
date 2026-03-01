@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on the personal history of a bar owner involved in a fire incident. No political parties or ideologies are mentioned.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_104591318.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

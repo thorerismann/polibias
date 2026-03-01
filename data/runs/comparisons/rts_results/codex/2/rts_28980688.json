@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.05,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.78,
+  "comment": "The article is primarily economic and diplomatic reporting with little explicit left-right political content. Any slight tilt comes from pro-investment, market-friendly emphasis rather than partisan positioning.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_28980688.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

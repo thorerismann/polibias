@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article focuses on the challenges faced by a K-Pop group due to online criticism and public pressure. There is no overt political slant.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The text is a neutral journalistic introduction to a discussion about fundamentalist Catholicism with an academic historian. The subject itself pertains to the traditionalist right, but the framing remains analytical and inquisitive.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

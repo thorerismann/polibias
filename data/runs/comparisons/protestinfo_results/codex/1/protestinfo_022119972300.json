@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.28,
+  "framing_bias": -0.34,
+  "treatment_bias": -0.31,
+  "guests_bias": -0.26,
+  "confidence": 0.74,
+  "comment": "L’article valorise un espace non mixte pour femmes, avec un cadrage positif autour de la sécurité, de #MeToo et des inégalités vécues par les femmes. Le ton reste surtout social et local, sans attaque partisane explicite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_022119972300.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

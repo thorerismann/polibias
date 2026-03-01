@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.48,
+  "framing_bias": -0.72,
+  "treatment_bias": -0.69,
+  "guests_bias": -0.55,
+  "confidence": 0.83,
+  "comment": "L’article adopte majoritairement le cadre des patriarches et des chrétiens palestiniens, en présentant le sionisme chrétien et les appuis pro-israéliens sous un angle surtout critique. Les acteurs pro-israéliens sont mentionnés, mais globalement traités de façon moins favorable.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_830107454762.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

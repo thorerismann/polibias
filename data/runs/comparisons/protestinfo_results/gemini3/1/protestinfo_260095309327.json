@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article provides a positive and uncritical platform for a Christian evangelistic group, focusing on traditional religious values and community building. This favorable treatment of religious organization aligns with a mild social-conservative or right-leaning perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

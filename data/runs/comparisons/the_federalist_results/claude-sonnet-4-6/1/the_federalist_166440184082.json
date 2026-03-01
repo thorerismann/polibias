@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.5,
+  "framing_bias": 0.5,
+  "treatment_bias": 0.5,
+  "guests_bias": 0.3,
+  "confidence": 0.75,
+  "comment": "Article defending parental rights through a Christian conservative lens, opposing state encroachment on family and education. Clearly right-leaning, combining Judeo-Christian tradition with conservative libertarianism.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "fdd55acb9e83"
+}

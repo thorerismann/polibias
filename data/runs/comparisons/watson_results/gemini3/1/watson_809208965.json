@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.6,
+  "confidence": 0.9,
+  "comment": "The interview adopts a hawkish geopolitical stance, framing international relations as a conflict between the 'axis of autocrats' and the West. It provides notably favorable assessments of Donald Trump's foreign policy and conservative European leaders.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_809208965.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.15,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.2,
+  "confidence": 0.85,
+  "comment": "The article advocates for AI integration in healthcare, emphasizing efficiency and innovation, which aligns with centrist to center-right economic perspectives. The author is a representative of 'The Centre' party, contributing to a slightly right-of-center guest profile for this specific commentary.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_382753691.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

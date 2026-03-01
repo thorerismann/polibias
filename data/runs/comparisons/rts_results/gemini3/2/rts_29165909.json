@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article is a factual sports report about ice hockey results and contains no political content. All bias indicators are neutral.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29165909.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.55,
+  "guests_bias": -0.45,
+  "confidence": 0.82,
+  "comment": "L’article met l’accent sur l’exploitation d’un travailleur migrant et sur les insuffisances de la protection institutionnelle, ce qui correspond plutôt à un cadrage social critique associé à la gauche. Les voix citées vont surtout dans ce sens et il n’y a pratiquement pas de contrepoids politique explicite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29148256.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

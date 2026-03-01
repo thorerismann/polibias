@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une vision généralement critique de l'administration américaine et de la banque suisse MBaer, suggérant un lien avec des activités illégales liées à l'Iran et à la Russie. La tone est tendue et les informations sont présentées comme provenant de sources officielles.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "1af9330e7254"
+}

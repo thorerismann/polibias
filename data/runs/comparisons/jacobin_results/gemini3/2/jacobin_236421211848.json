@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The text frames Mexican President Sheinbaum as 'highly intelligent' and successful in her security policies while characterizing U.S. administration rhetoric as 'paranoid conspiracy tropes' and 'high-school diction.' It portrays the Mexican-American War from a critical perspective, focusing on the loss of territory and U.S. provocation.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

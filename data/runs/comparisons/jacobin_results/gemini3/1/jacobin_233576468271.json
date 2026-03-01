@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "The text focuses on critical power structure research rooted in New Left intellectual traditions like SDS and C. Wright Mills. It frames research as a strategic tool for social movements to challenge elite and corporate power structures.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_233576468271.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

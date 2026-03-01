@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": null,
+  "status": "fallback",
+  "model": "codex",
+  "article": "watson_103977558.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

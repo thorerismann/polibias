@@ -22,6 +22,8 @@ import streamlit as st
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BIAS_CSV = REPO_ROOT / "data" / "runs" / "comparisons" / "bias_data.csv"
 SUMMARIES_CSV = REPO_ROOT / "data" / "runs" / "comparisons" / "article_summaries.csv"
+PROMPT_MD = REPO_ROOT / "src" / "polibias" / "prompt.md"
+LIVE_APP_URL = "https://politicalbiaswithai.streamlit.app/"
 
 SOURCE_LABELS: dict[str, str] = {
     "rts": "RTS",
@@ -30,6 +32,8 @@ SOURCE_LABELS: dict[str, str] = {
     "watson": "Watson",
     "protestinfo": "Protestinfo",
     "cathinfo": "Cathinfo",
+    "srf": "SRF",
+    "20minutes": "20 Minutes",
 }
 
 BIAS_DIMS = ["subject_bias", "framing_bias", "treatment_bias", "guests_bias"]
@@ -64,6 +68,11 @@ def load_bias() -> pd.DataFrame:
 @st.cache_data
 def load_summaries() -> pd.DataFrame:
     return pd.read_csv(SUMMARIES_CSV)
+
+
+@st.cache_data
+def load_prompt_template() -> str:
+    return PROMPT_MD.read_text(encoding="utf-8").strip()
 
 
 # ── helpers ────────────────────────────────────────────────────────────────────
@@ -427,6 +436,50 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
         st.caption("Narrow your filters or use the search box to see more results.")
 
 
+def _tab_explanation(df: pd.DataFrame) -> None:
+    st.subheader("What this app is")
+    st.markdown(
+        "This dashboard visualizes political-bias scores generated from scraped articles "
+        "across multiple sources and models."
+    )
+    st.link_button("Open public app URL", LIVE_APP_URL)
+
+    st.subheader("What was done")
+    st.markdown(
+        "- Articles were scraped from configured news sources.\n"
+        "- Local LLMs scored each article on four bias dimensions.\n"
+        "- Each model/run/article score was stored in `bias_data.csv`.\n"
+        "- This app renders read-only analysis for comparison and inspection."
+    )
+
+    st.subheader("Bias dimensions")
+    st.markdown(
+        "- `subject_bias`: topic selection leaning.\n"
+        "- `framing_bias`: framing/tone leaning.\n"
+        "- `treatment_bias`: favorability toward left vs right.\n"
+        "- `guests_bias`: leaning of quoted/invited voices.\n"
+        "- Score range is `[-1.0, +1.0]` where negative=left, positive=right."
+    )
+
+    st.subheader("How to read the tabs")
+    st.markdown(
+        "- `Overview`: dataset size, source×model heatmap, confidence intervals, model summary table.\n"
+        "- `Model Comparison`: scatter, boxplots, and per-dimension means by model.\n"
+        "- `Source Explorer`: article-level behavior inside one source.\n"
+        "- `Comment Explorer`: inspect raw model comments with cascading filters."
+    )
+
+    st.subheader("Exact scoring prompt")
+    st.caption("Source of truth: `src/polibias/prompt.md`")
+    st.code(load_prompt_template(), language="markdown")
+
+    st.subheader("Current filtered view")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Visible scores", len(df))
+    col2.metric("Visible models", df["model"].nunique())
+    col3.metric("Visible sources", df["source"].nunique())
+
+
 # ── app entry point ────────────────────────────────────────────────────────────
 
 def main() -> None:
@@ -436,6 +489,7 @@ def main() -> None:
         layout="wide",
     )
     st.title("polibias — Bias Analysis Dashboard")
+    st.caption(f"Live app URL: {LIVE_APP_URL}")
 
     df_full = load_bias()
 
@@ -481,7 +535,8 @@ def main() -> None:
         return
 
     # ── tabs ───────────────────────────────────────────────────────────────────
-    tab1, tab2, tab3, tab4 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+        "Explanation",
         "Overview",
         "Model Comparison",
         "Source Explorer",
@@ -489,12 +544,14 @@ def main() -> None:
     ])
 
     with tab1:
-        _tab_overview(df)
+        _tab_explanation(df)
     with tab2:
-        _tab_model_comparison(df)
+        _tab_overview(df)
     with tab3:
-        _tab_source_explorer(df)
+        _tab_model_comparison(df)
     with tab4:
+        _tab_source_explorer(df)
+    with tab5:
         _tab_comment_explorer(df)
 
 

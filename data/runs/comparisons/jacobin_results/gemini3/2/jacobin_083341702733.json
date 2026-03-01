@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.8,
+  "guests_bias": -0.3,
+  "confidence": 0.9,
+  "comment": "The article adopts a clear left-leaning perspective by emphasizing class-based barriers to ethical consumption and advocating for collective labor action over individualist boycotts. It specifically critiques billionaires and right-wing rhetoric while centering the needs of the working-class majority.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

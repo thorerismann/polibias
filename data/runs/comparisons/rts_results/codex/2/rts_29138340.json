@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.35,
+  "framing_bias": 0.62,
+  "treatment_bias": 0.71,
+  "guests_bias": 0.84,
+  "confidence": 0.9,
+  "comment": "L’article est centré sur les arguments du camp du non (PLR) contre le fonds climat, avec une forte mise en avant des risques de dette et d’inefficacité. Le camp du oui est mentionné surtout de façon secondaire, ce qui crée un déséquilibre favorable à la droite/centre-droit.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29138340.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

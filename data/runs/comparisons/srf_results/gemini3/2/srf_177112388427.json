@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.2,
+  "confidence": 0.8,
+  "comment": "The article reports neutrally on the EU's progress with the Swiss treaty package but exclusively quotes pro-integration EU officials. It acknowledges the complexity of the Swiss ratification process without including domestic critical voices.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_177112388427.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

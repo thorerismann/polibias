@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual report on a security incident at Mar-a-Lago, relying on official statements from law enforcement. It maintains a neutral, descriptive tone without political commentary or partisan framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_455426137.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

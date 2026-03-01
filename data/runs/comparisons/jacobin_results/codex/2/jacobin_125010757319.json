@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.55,
+  "framing_bias": -0.84,
+  "treatment_bias": -0.88,
+  "guests_bias": 0.0,
+  "confidence": 0.91,
+  "comment": "The article frames Chaves and his agenda with consistently negative language while criticizing hallmarks of right-wing populism and austerity politics. It offers little balancing perspective, producing a clear left-leaning evaluative stance.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

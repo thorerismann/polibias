@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Nachfolgebericht zum Tod von Schauspieler James Van Der Beek, Entertainment-Thema ohne erkennbaren politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "fdd55acb9e83"
+}

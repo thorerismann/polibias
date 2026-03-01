@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is slightly left-leaning due to its focus on EU values and the importance of Switzerland as a partner without emphasizing right-wing policies or criticisms towards the EU.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_177112388427.json",
+  "prompt_hash": "1af9330e7254"
+}

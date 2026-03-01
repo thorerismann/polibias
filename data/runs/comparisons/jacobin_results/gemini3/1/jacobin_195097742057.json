@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.8,
+  "confidence": 0.95,
+  "comment": "The article employs a Marxist materialist framework to critique neoliberalism and the decline of collective labor institutions. It focuses exclusively on the work of a left-wing intellectual and views history through the lens of radical economic justice.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_195097742057.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.3,
+  "confidence": 0.85,
+  "comment": "The article highlights the human cost of administrative failures in the unemployment system, balancing institutional explanations with social advocacy. It frames the deployment of security as a contentious response to legitimate citizen distress.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29165919.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

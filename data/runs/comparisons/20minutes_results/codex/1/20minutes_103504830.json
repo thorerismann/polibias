@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.74,
+  "comment": "L’article est surtout socio-psychologique et axé sur les dérives sectaires en ligne, sans camp politique central favorisé. Une légère inclinaison perçue peut venir d’un ton favorable à la régulation et à la protection des publics vulnérables.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.5,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.4,
+  "confidence": 0.8,
+  "comment": "Article celebrating the imminent end of Colbert's Late Show and attacking him as a left-wing Democrat propagandist. Clearly right-leaning, critical of left-wing media and entertainment.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_126424520791.json",
+  "prompt_hash": "fdd55acb9e83"
+}

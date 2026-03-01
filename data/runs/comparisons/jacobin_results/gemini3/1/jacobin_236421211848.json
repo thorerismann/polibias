@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The text portrays the Mexican president's security policies and diplomatic strategy in a favorable light while characterizing US administration communications as paranoid or 'high-school' in diction. It emphasizes Mexican sovereignty and criticizes historical and modern US interventionist rhetoric.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.33,
+  "comment": "Le sujet porte sur des catholiques intégristes, généralement associés à la droite religieuse. L’extrait est très court et surtout descriptif, donc le biais perçu reste faible.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_916395171097.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.7,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "Article claiming a 'leftist judicial coup' against Trump, using a Toobin op-ed as purported evidence. Clearly right-leaning, denouncing judicial politicization in service of progressive agendas.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_187832655499.json",
+  "prompt_hash": "fdd55acb9e83"
+}

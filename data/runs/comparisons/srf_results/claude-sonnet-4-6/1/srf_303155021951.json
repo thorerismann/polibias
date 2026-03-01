@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Meldung über eine Auszeit eines K-Pop-Bandmitglieds wegen psychischer Belastung, Entertainment-Thema ohne politischen Bezug.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "fdd55acb9e83"
+}

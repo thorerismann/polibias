@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.4,
+  "confidence": 0.85,
+  "comment": "L'article relate la mort d'un réfugié malvoyant abandonné par des agents de la Border Patrol dans le froid de Buffalo. Le sujet, le traitement et les voix citées (maire démocrate, ONU) sont fortement critiques de la politique migratoire de l'administration Trump.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "fdd55acb9e83"
+}

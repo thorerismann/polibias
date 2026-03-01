@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.96,
+  "comment": "The article is about music history and business context, with no clear political topic, framing, or partisan actors. Any left-right bias signal is effectively absent.",
+  "status": "ok",
+  "model": "codex",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.4,
+  "confidence": 0.8,
+  "comment": "Article strongly supporting the SAVE America Act requiring voter ID and proof of citizenship for federal elections. Clearly right-leaning, framing voter ID as essential election security.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "fdd55acb9e83"
+}

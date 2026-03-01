@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article leans left with a framing that questions the handling of minors in sensitive situations and criticizes an organization's decision to exclude rather than investigate allegations against them.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

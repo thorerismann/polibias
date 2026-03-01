@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.7,
+  "guests_bias": -0.6,
+  "confidence": 0.85,
+  "comment": "Entretien dénonçant le virage réactionnaire de la Silicon Valley, qualifiant Musk de 'technofasciste' et critiquant le recul des politiques DEI chez Meta. Clairement à gauche, critique de la collusion entre la tech et l'administration Trump.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "fdd55acb9e83"
+}

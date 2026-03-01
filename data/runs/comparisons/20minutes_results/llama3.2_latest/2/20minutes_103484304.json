@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "L'article présente un ton neutre et objectif, mais les faits présentés suggèrent une légère préférence pour la perspective américaine.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "1af9330e7254"
+}

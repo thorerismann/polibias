@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.7,
+  "framing_bias": 0.85,
+  "treatment_bias": 0.8,
+  "guests_bias": 0.8,
+  "confidence": 0.95,
+  "comment": "The article strongly advocates for the Republican-authored SAVE America Act and conservative legislative strategies. It exclusively features and discusses right-leaning political figures and viewpoints.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

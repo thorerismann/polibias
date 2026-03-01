@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.8,
+  "guests_bias": 1.0,
+  "confidence": 0.95,
+  "comment": "The article strongly advocates for Republican legislative priorities and conservative procedural strategies in the Senate. It exclusively highlights right-leaning figures and arguments while framing the Senate's current dysfunction from a conservative perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_299442590862.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

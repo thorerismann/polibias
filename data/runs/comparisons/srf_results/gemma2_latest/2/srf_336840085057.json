@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "The article primarily reports on the health of King Harald and recent events affecting the Norwegian royal family. There is no clear political slant in the reporting.",
+  "status": "ok",
+  "model": "gemma2:latest",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "1af9330e7254"
+}

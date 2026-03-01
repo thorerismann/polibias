@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.25,
+  "guests_bias": -0.3,
+  "confidence": 0.74,
+  "comment": "L’article est globalement informatif, mais il met en valeur l’efficacité des prestations sociales sans contre-voix politique marquée. La seule voix institutionnelle mise en avant va dans un sens plutôt favorable à une approche sociale publique.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

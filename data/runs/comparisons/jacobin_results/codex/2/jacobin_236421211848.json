@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.85,
+  "guests_bias": 0.2,
+  "confidence": 0.84,
+  "comment": "The passage uses strongly negative descriptors for Trump and his allies while portraying Sheinbaum as patient and effective. Topic choice is mildly left-leaning, with framing and treatment clearly favoring the left over the right.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

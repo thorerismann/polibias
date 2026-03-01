@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a neutral report on legal testimony regarding a nightclub fire and contains no discernable political or ideological bias.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

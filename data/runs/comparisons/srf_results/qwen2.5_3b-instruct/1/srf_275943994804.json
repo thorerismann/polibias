@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": -0.5,
+  "treatment_bias": 0.6,
+  "guests_bias": 0.4,
+  "confidence": 1.0,
+  "comment": "The article focuses on Jesse Jackson's advocacy for social justice and his role in civil rights movements, which is a left-leaning subject. The tone is generally positive towards him.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

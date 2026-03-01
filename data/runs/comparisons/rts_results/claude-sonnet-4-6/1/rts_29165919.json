@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.2,
+  "confidence": 0.7,
+  "comment": "L'article présente les tensions dans les caisses de chômage suite à une panne informatique du SECO, en donnant une voix claire aux défenseurs des chômeurs et en soulignant l'impact sur les personnes vulnérables. Le traitement est sympathique aux chômeurs et critique envers les dysfonctionnements institutionnels.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29165919.json",
+  "prompt_hash": "fdd55acb9e83"
+}

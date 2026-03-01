@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides factual information about a geological fissure without clear political bias in its subject matter or framing. It mentions precautionary measures and preparedness for potential evacuation.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.85,
+  "comment": "The article reports on international backlash against Mike Huckabee's comments, framing them as controversial and a violation of international law. The narrative focuses on the consensus of critics from numerous states and organizations.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_561501559.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

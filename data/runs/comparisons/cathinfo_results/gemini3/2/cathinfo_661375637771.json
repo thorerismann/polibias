@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.4,
+  "guests_bias": -0.6,
+  "confidence": 0.9,
+  "comment": "The article reports on Cardinal Marx's explicit rejection of far-right nationalism and the AfD as incompatible with Christian values. The framing and quoted authority are directed against right-wing populist movements.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_661375637771.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

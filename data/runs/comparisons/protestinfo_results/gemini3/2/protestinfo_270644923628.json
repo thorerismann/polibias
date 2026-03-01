@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.85,
+  "comment": "L'article adopte une perspective progressiste en valorisant l'adaptation des rites traditionnels aux besoins de la soci\u00e9t\u00e9 contemporaine et s\u00e9cularis\u00e9e. Les experts cit\u00e9s soutiennent tous deux cette vision moderniste sans qu'un point de vue traditionaliste ne soit pr\u00e9sent\u00e9.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

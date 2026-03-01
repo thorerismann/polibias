@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.08,
+  "treatment_bias": 0.12,
+  "guests_bias": 0.0,
+  "confidence": 0.63,
+  "comment": "Article mainly reports a religious commemoration in a descriptive tone, with little explicit partisan political content. Slight positive emphasis on a traditionally conservative Catholic figure suggests a mild right-leaning tilt.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_702696857698.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

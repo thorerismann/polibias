@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.45,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.55,
+  "guests_bias": 0.0,
+  "confidence": 0.81,
+  "comment": "The article centers on defending public welfare and critiques service cutbacks, which aligns more with left-leaning priorities. Its narrative is sympathetic to grassroots care activism and presents austerity-related impacts in a critical light.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_020900535707.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

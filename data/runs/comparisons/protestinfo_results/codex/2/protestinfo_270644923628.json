@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.93,
+  "comment": "Article centrée sur les rites religieux et sociaux, sans enjeu partisan gauche-droite explicite. Aucun acteur politique ni traitement différencié des camps n’apparaît.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_270644923628.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

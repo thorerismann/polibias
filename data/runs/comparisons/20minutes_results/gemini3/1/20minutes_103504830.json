@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article maintains a neutral, investigative tone while exploring the sociological and legal challenges of online cults. It balances the need for victim protection with concerns about religious freedom and the potential over-application of the 'cult' label to political movements.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

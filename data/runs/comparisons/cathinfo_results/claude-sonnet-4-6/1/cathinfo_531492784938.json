@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Article sur l'exposition exceptionnelle des reliques de saint François d'Assise pour le 800e anniversaire de sa mort. Contenu religieux et culturel sans biais politique.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_531492784938.json",
+  "prompt_hash": "fdd55acb9e83"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": -0.75,
+  "treatment_bias": -0.8,
+  "guests_bias": 0.0,
+  "confidence": 0.86,
+  "comment": "The passage frames Trump and allied rhetoric in strongly negative terms while portraying Sheinbaum as patient, effective, and evidence-based. Topic choice is moderately left-leaning in emphasis, with no clear balance of partisan guest voices.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_236421211848.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

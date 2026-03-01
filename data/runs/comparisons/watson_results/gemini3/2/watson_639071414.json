@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.1,
+  "confidence": 0.85,
+  "comment": "The article adopts a liberal-internationalist framing that is sharply critical of Donald Trump's foreign policy and Vladimir Putin's regime. It favors Ukrainian strategic interests and academic expertise, aligning with mainstream European center-left perspectives.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "watson_639071414.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

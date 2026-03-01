@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "Meinungsartikel über das Potenzial von KI im Schweizer Gesundheitswesen, sachlich und ausgewogen. Leicht technologieoptimistisch ohne politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_382753691.json",
+  "prompt_hash": "fdd55acb9e83"
+}

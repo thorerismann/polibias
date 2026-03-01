@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.05,
+  "framing_bias": -0.12,
+  "treatment_bias": -0.18,
+  "guests_bias": -0.08,
+  "confidence": 0.62,
+  "comment": "Le texte est surtout factuel, mais il met davantage en avant les contraintes ukrainiennes et relativise les pressions attribuées à Washington, ce qui incline légèrement vers une lecture défavorable au camp de droite (notamment Trump). Le biais reste faible car l’article inclut des éléments contradictoires et des données de sondage.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29148270.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

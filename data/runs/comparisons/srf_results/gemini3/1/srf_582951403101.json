@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual account of a celebrity's criminal incident and court-ordered consequences. There is no discernible political framing or ideological bias in the reporting.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

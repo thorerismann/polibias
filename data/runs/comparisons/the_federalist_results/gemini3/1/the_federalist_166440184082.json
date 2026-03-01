@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.8,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.5,
+  "confidence": 0.9,
+  "comment": "The article strongly advocates for traditional parental authority against what it frames as a 'moral takeover' by Silicon Valley and teachers' unions. It utilizes religious references and conservative legislative framing to critique the implementation of AI in schools.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_166440184082.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

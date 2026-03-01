@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Kurze Katastrophenmeldung über Überschwemmungen in Brasilien, rein faktisch und ohne erkennbaren politischen Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "fdd55acb9e83"
+}

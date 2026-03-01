@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.3,
+  "confidence": 0.75,
+  "comment": "Critical analysis of the failure of the US 'war on drugs' strategy of killing cartel leaders, showing it has not reduced violence. Left-leaning critique of US drug enforcement policy.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_269917965252.json",
+  "prompt_hash": "fdd55acb9e83"
+}

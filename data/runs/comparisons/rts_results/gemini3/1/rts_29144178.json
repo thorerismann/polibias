@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article provides a neutral, investigative report on a local incident of animal mistreatment, balancing the farmer's personal distress with institutional and political perspectives. No significant partisan lean is detected in the reporting of this social and agricultural issue.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29144178.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

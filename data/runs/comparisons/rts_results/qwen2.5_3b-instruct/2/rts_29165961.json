@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.6,
+  "confidence": 1.0,
+  "comment": "The article focuses on the changing landscape of corporate leadership in Switzerland, with a strong emphasis on the negative impacts and reduced influence of long-serving CEOs.",
+  "status": "ok",
+  "model": "qwen2.5:3b-instruct",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

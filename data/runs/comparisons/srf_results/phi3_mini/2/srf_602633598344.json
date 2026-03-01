@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a balanced view on social media regulation with some leaning towards caution and transparency in the EU but mixed reactions to strict measures elsewhere. There's no clear bias toward left or right ideologies.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

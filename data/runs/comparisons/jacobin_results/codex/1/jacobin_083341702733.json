@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.76,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.88,
+  "guests_bias": -0.22,
+  "confidence": 0.93,
+  "comment": "The piece is strongly left-leaning in both framing and evaluative language, explicitly criticizing pro-Trump targets, billionaires, and right-wing arguments. It favors collective labor-style action and portrays the right as aligned with authoritarianism.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_083341702733.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

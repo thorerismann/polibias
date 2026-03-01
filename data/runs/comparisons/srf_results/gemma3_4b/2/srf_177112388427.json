@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a largely neutral overview of the ongoing negotiations between the EU and Switzerland regarding a new treaty. It highlights the EU's desire for a stable partnership with Switzerland while acknowledging the more complex and potentially unpredictable ratification process within Switzerland, which involves a vote by the Swiss people.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "srf_177112388427.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.3,
+  "framing_bias": -0.8,
+  "treatment_bias": -0.9,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article adopts a strongly critical stance toward the Chaves administration, framing his right-wing populist agenda as an attack on the welfare state and gender equality. It uses ideologically charged language consistent with left-leaning critiques.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "jacobin_125010757319.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

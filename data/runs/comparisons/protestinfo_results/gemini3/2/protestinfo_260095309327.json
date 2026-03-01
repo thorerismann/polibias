@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.25,
+  "framing_bias": 0.35,
+  "treatment_bias": 0.45,
+  "guests_bias": 0.5,
+  "confidence": 0.9,
+  "comment": "The article provides a favorable platform for a Christian association focused on evangelism, framing religious faith as a positive alternative to secular 'darkness' in sports. The focus on traditional religious values and personal testimony aligns with a right-leaning cultural perspective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_260095309327.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

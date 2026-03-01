@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.2,
+  "framing_bias": 0.3,
+  "treatment_bias": 0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article primarily presents the manager's account of the events, focusing on her actions and justifications. It highlights her attempts to coordinate a response and her reliance on others, particularly the security guard. The narrative leans slightly towards sympathizing with the manager's actions under duress.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "1af9330e7254"
+}

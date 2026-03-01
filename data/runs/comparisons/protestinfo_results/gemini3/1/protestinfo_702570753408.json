@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.6,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article is a highly critical interview analyzing the 'technofascist' shift of Silicon Valley elites. It frames these developments as a direct threat to democratic values, consistently favoring a left-leaning critique.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "protestinfo_702570753408.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

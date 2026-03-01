@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.4,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article presents a reformist critique of the Church's historical ties to power, wealth, and nationalism. It employs a social-justice-oriented framing to interpret biblical themes, positioning itself against traditionalist or conservative institutional structures.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "cathinfo_662888994570.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

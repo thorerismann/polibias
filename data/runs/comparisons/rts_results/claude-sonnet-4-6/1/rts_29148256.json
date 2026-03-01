@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.5,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "L'article présente le cas d'un travailleur philippin exploité comme domestique en Suisse et critique les lacunes du cadre juridique d'immigration. La tonalité est fortement sympathique aux travailleurs migrants et appelle à une meilleure protection légale, perspective typiquement de gauche.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "rts_29148256.json",
+  "prompt_hash": "fdd55acb9e83"
+}

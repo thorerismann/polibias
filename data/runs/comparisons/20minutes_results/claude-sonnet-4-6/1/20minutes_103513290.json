@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.1,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "Article sur le développement de centres de données en Inde dans la compétition mondiale en IA, avec une tonalité légèrement pro-business et pro-technologie. Pas de biais politique gauche-droite identifiable.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103513290.json",
+  "prompt_hash": "fdd55acb9e83"
+}

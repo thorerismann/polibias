@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a balanced overview of the global and Swiss debate on social media regulation for minors. It neutrally presents both the arguments for increased child protection and the concerns regarding state censorship.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

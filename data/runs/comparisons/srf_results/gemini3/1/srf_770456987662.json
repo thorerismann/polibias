@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual and balanced report on diplomatic negotiations, quoting Iranian, American, and Omani officials. It maintains a neutral tone, focusing on the stated positions of each party without ideological lean.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

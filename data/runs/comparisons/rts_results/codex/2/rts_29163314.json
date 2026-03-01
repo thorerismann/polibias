@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.35,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.55,
+  "guests_bias": -0.4,
+  "confidence": 0.74,
+  "comment": "The piece centers on journalist killings and emphasizes allegations against state actors (especially Israel and Saudi Arabia) using strongly critical language from CPJ sources. It presents no balancing official responses from the accused governments, producing a clear left-leaning tilt in framing and treatment.",
+  "status": "ok",
+  "model": "codex",
+  "article": "rts_29163314.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

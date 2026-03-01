@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.05,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.86,
+  "comment": "The piece is a straightforward institutional announcement about a Vatican/Missio appointment with minimal partisan political content. Slightly positive framing around refugees and disadvantaged people appears humanitarian rather than clearly left-right political.",
+  "status": "ok",
+  "model": "codex",
+  "article": "cathinfo_034785673294.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

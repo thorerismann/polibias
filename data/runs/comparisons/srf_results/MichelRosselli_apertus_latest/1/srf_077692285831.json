@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "Der Artikel berichtet über den Tod des Schauspielers James Van Der Beek und die Reaktionen seiner Freunde und Familie. Die Berichterstattung ist neutral, da keine politische Einstellung erkennbar ist.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "1af9330e7254"
+}

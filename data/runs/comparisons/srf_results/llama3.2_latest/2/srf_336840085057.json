@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Artikel berichten über die aktuellen Anklagen gegen Marius Borg Høiby und Mette-Marits Verbindung mit Jeffrey Epstein, ohne jedoch eine klare politische oder soziale Botschaft zu vermitteln. Die Berichterstattung ist neutral und informativ.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "1af9330e7254"
+}

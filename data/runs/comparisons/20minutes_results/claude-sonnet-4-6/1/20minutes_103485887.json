@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": -0.1,
+  "confidence": 0.65,
+  "comment": "Live-blog sur les revendications de Trump sur le Groenland, donnant principalement la parole aux dirigeants danois et groenlandais qui s'y opposent. Le traitement est légèrement critique envers les ambitions territoriales de Trump.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "20minutes_103485887.json",
+  "prompt_hash": "fdd55acb9e83"
+}

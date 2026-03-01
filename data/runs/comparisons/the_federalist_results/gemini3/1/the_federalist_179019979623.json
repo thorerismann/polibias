@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.8,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.7,
+  "confidence": 0.95,
+  "comment": "The article is a sharp polemic that characterizes Gavin Newsom's behavior as a shallow, 'vulgar' imitation of Donald Trump. It maintains a consistently derisive tone toward Democrats while presenting Republican figures like JD Vance as substantive and effective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_179019979623.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

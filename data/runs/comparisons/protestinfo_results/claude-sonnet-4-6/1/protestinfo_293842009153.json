@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.4,
+  "comment": "Article trop court pour évaluation fiable du biais politique. Contenu textuel insuffisant.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "fdd55acb9e83"
+}

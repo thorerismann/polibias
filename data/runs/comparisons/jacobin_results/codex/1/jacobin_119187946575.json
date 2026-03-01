@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.42,
+  "framing_bias": -0.66,
+  "treatment_bias": -0.74,
+  "guests_bias": -0.57,
+  "confidence": 0.87,
+  "comment": "The piece centers left-associated activism, structural public health critiques, and anti-racist framing, indicating a clear left lean in topic and narrative. It treats Young Lords-aligned actors sympathetically and features mostly voices from that side, with little countervailing right-leaning perspective.",
+  "status": "ok",
+  "model": "codex",
+  "article": "jacobin_119187946575.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

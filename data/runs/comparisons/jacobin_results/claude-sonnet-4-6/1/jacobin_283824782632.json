@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "Analysis of 2025 US union membership statistics, highlighting gains and losses across sectors. Clearly left-leaning, treating union density as a key indicator of workers' political power.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "jacobin_283824782632.json",
+  "prompt_hash": "fdd55acb9e83"
+}

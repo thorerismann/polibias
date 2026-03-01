@@ -1,0 +1,14 @@
+{ "newsArticles": [
+  {
+    "headline": "Le président ukrainien Volodymyr Zelensky a évoqué jeudi une prochaine réunion tripartite entre son pays, la Russie et les États-Unis 'début mars' aux Émirats arabes unis",
+    "datePublished": "26.02.2026",
+    "dateModified": "26.02.2026"
+  },
+  {
+    "headline": "Au moins deux Sud-Africains sont morts en Ukraine alors qu’ils combattaient pour l’armée russe, a annoncé jeudi le ministre des Affaires étrangères",
+    "datePublished": "26.02.2026",
+    "dateModified": "26.02.2026"
+  },
+  {
+    "headline": "Moscou n’a «aucune échéance» pour mettre fin au conflit en Ukraine, a dit jeudi le ministre des Affaires étrangères russe",
+    "datePublished": "26.02.202

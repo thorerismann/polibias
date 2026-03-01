@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "Die Biografie von Uschi Waser zeigt die dunkle Seite der Schweizer Geschichte und fordert eine systematische Aufarbeitung der Verfolgung der Jenischen. Die Artikelschreibweise ist neutral, aber die Fokus auf die Opfer und ihre Erinnerungen wirft Fragen über die Reaktion des Bundesrats auf die Verbrechen gegen die Menschlichkeit auf.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

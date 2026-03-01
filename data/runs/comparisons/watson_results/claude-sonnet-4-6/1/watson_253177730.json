@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "Bericht über ukrainische Cyberoperationen gegen russische Drohnenpiloten. Leicht pro-ukrainisch in der Darstellung, ohne parteipolitischen Links-Rechts-Bias.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "watson_253177730.json",
+  "prompt_hash": "fdd55acb9e83"
+}

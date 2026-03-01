@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.15,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.18,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article is slightly left-leaning but maintains a neutral tone overall with no clear bias towards guests or treatment of political actors.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "rts_29165909.json",
+  "prompt_hash": "1af9330e7254"
+}

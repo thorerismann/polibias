@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.6,
+  "framing_bias": 0.9,
+  "treatment_bias": 0.9,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article uses highly partisan and derogatory language to criticize a CNN analyst and Democrat-appointed judges. It explicitly frames judicial opposition to the Trump administration as a 'leftist-led judicial coup'.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "the_federalist_187832655499.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

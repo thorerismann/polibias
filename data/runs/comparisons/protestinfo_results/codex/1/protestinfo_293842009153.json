@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.16,
+  "comment": "The excerpt is too short and lacks clear partisan cues, actors, or policy context. It has a mildly skeptical tone toward efficiency-driven health-service criteria, which may weakly align with left-leaning framing.",
+  "status": "ok",
+  "model": "codex",
+  "article": "protestinfo_293842009153.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article presents a positive outlook on multicultural integration through native language support, a topic typically associated with progressive social policy. It focuses on educational success and personal testimony without featuring explicit political actors or dissenting views.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

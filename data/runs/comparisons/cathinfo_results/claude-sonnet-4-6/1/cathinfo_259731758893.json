@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.6,
+  "comment": "Article œcuménique comparant Carême chrétien et Ramadan islamique, valorisant les points communs entre les deux religions. Légère orientation vers le dialogue interreligieux sans biais politique partisan fort.",
+  "status": "ok",
+  "model": "claude-sonnet-4-6",
+  "article": "cathinfo_259731758893.json",
+  "prompt_hash": "fdd55acb9e83"
+}

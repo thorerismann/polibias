@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.6,
+  "treatment_bias": 0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "The article primarily focuses on the negative consequences of a new IT system implementation on unemployment benefits claims, highlighting increased security measures and employee stress. It leans towards a critical perspective regarding the system's impact and the resulting difficulties for claimants.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

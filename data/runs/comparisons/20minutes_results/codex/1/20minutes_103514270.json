@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.05,
+  "framing_bias": 0.02,
+  "treatment_bias": 0.08,
+  "guests_bias": 0.0,
+  "confidence": 0.63,
+  "comment": "Dépêche principalement factuelle et institutionnelle, avec un léger biais pro-autorités américaines car les accusations officielles dominent sans contre-voix substantielle. L’axe gauche/droite reste globalement faible et peu explicite.",
+  "status": "ok",
+  "model": "codex",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "44ff6fe2e2c3"
+}

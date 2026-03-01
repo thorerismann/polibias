@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.3,
+  "framing_bias": 0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a dispute between a father and an organization regarding his son's abrupt return home from a study abroad program, alleging sexual assault. The framing emphasizes the father's concerns about the organization's handling of the situation and the son's potential victim status, while the organization defends its actions based on prior behavioral issues.",
+  "status": "ok",
+  "model": "gemma3:4b",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

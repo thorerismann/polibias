@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is slightly left-leaning in its subject matter but maintains a neutral tone and narrative overall. It does not show favoritism towards either political side when discussing the actor's life or career.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

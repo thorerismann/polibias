@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article is a factual and descriptive report on the 2026 Winter Olympics opening ceremony. It mentions political figures like Giorgia Meloni and Guy Parmelin strictly in a protocol-based, diplomatic context without any partisan framing.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "rts_29142442.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.0,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "L'article présente un ton neutre et analyse les résultats de l'étude sans prendre parti. Cependant, certaines citations soulignent la pression constante sur les entreprises et la réduction du pouvoir des dirigeants, ce qui pourrait être interprété comme une critique légèrement à gauche.",
+  "status": "ok",
+  "model": "llama3.2:latest",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

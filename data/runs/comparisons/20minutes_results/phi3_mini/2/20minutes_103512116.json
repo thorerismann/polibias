@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "The article suggests a bias against the organization EF and its treatment of Paul's case as primarily disciplinary rather than protective or investigative. The framing is left-leaning with an emphasis on perceived injustice towards the minor involved.",
+  "status": "ok",
+  "model": "phi3:mini",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

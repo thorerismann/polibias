@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article provides a factual account of a criminal case involving a public figure without any political framing or ideological slant. No political actors are quoted, and the reporting remains strictly objective.",
+  "status": "ok",
+  "model": "gemini3",
+  "article": "srf_657625305892.json",
+  "prompt_hash": "gemini-cli-adhoc"
+}
