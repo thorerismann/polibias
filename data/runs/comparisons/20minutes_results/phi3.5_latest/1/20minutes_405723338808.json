@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": null,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": null,
+  "comment": "The provided text does not contain explicit political bias indicators. Further analysis is required for a more accurate assessment.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_405723338808.json",
+  "prompt_hash": "1af9330e7254"
+}

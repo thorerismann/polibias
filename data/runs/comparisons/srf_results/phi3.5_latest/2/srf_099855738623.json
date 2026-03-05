@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.5,
+  "confidence": 0.85,
+  "comment": "The article leans slightly to the left by discussing a historically marginalized group and focusing on systemic issues within Swiss society regarding this topic; guests are predominantly from an advocacy perspective for Jenische people rather than political entities with oppositional viewpoints. The framing is sympathetic towards those affected, suggesting treatment bias against mainstream perspectives.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

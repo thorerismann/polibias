@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.5,
+  "confidence": 0.8,
+  "comment": "The article appears to have a left-leaning bias, criticizing the government's handling of unemployment benefits and the deployment of security personnel in job centers. The quotes from Yétone Hoxa, a representative of an association defending unemployed people, further reinforce this interpretation.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

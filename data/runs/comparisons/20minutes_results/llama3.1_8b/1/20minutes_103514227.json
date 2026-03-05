@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.25,
+  "framing_bias": -0.5,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning perspective on the topic of poverty in the canton of Vaud, highlighting the effectiveness of social benefits in reducing poverty rates. However, the framing and treatment of the issue suggest a bias towards the left.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "1af9330e7254"
+}

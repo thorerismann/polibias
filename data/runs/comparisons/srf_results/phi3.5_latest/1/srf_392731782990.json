@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents various animal stories without political context or bias; it maintains a neutral stance on the subject matter.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_392731782990.json",
+  "prompt_hash": "1af9330e7254"
+}

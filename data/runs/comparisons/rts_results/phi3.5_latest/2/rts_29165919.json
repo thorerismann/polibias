@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente un sujet neutre concernant le système de chômage sans fournir d'informations biaisées ou favorables à une position politique particulière. Le ton est factuel et inclut des perspectives différentes sur la question du déploiement d'agents de sécurité, ce qui suggère un effort pour maintenir l'équilibre mais avec légèrement plus de préoccupation concernant les difficultés rencontrées par ceux touchés par le système. Les invités ne sont pas explicitement politiquement alignés.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

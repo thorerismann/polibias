@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article provides a neutral, informative overview of the Wu-Tang Clan's history and impact on hip-hop culture.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "1af9330e7254"
+}

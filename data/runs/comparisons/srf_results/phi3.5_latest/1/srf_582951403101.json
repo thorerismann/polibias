@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.0,
+  "treatment_bias": -0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents facts about Shia LaBeouf's behavior without showing a clear political bias or favoritism towards any side, maintaining an objective tone throughout.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "1af9330e7254"
+}

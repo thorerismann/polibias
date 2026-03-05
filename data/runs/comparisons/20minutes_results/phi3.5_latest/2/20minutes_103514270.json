@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "L'article présente clairement une perspective critique à l’égard de la banque suisse MBaer en lien avec des activités illégales et le blanchiment d'argent associé aux intérêts iraniens et russes. Le ton est accusateur, ce qui indique un biais gauche ou anti-banquier.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "1af9330e7254"
+}

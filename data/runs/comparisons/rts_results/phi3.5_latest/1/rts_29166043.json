@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article se concentre sur les risques géologiques et les mesures de sécurité sans présenter un biais politique clair, ce qui justifie une neutralité dans le sujet choisi ainsi que la frise.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

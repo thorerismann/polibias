@@ -9,7 +9,9 @@ No pipeline dependencies — just streamlit, pandas, plotly, numpy.
 
 from __future__ import annotations
 
+import re
 import textwrap
+from collections import Counter
 from pathlib import Path
 
 import numpy as np
@@ -52,6 +54,20 @@ _HOVER_STYLE = dict(
     align="left",
 )
 
+TOKEN_SPLIT_RE = re.compile(r"[^A-Za-zÀ-ÖØ-öø-ÿ]+")
+COMMENT_STOPWORDS = {
+    "the", "and", "for", "that", "this", "with", "from", "have", "has", "was", "were", "are",
+    "but", "not", "its", "their", "they", "them", "into", "about", "than", "also", "only",
+    "very", "more", "most", "much", "many", "such", "can", "could", "would", "should", "there",
+    "here", "when", "where", "what", "which", "while", "then", "than", "without", "between",
+    "dans", "avec", "pour", "une", "des", "les", "est", "sur", "pas", "plus", "comme", "mais",
+    "cette", "cet", "ces", "aux", "par", "qui", "que", "dans", "sans", "tout", "tous", "elle",
+    "elles", "nous", "vous", "ils", "leur", "leurs", "sein", "dont", "afin",
+    "der", "die", "das", "und", "ist", "mit", "nicht", "eine", "einer", "einem", "einen",
+    "den", "dem", "des", "ein", "auch", "als", "auf", "für", "von", "bei", "aus", "über",
+    "durch", "wird", "sind", "war", "waren", "dass", "oder", "zum", "zur", "im", "am",
+}
+
 
 # ── data loading ───────────────────────────────────────────────────────────────
 
@@ -90,6 +106,41 @@ def _wrap_hover(text: str, width: int = 80) -> str:
 def _style(fig: go.Figure) -> go.Figure:
     fig.update_layout(hoverlabel=_HOVER_STYLE)
     return fig
+
+
+def _tokenize_comment(text: str) -> list[str]:
+    tokens = [t for t in TOKEN_SPLIT_RE.split(text.lower()) if len(t) >= 3]
+    return [t for t in tokens if t not in COMMENT_STOPWORDS and not t.isdigit()]
+
+
+def _render_word_cloud(counts: Counter[str], max_words: int = 80) -> str:
+    if not counts:
+        return (
+            "<div style='padding:10px;border:1px solid #e5e7eb;border-radius:8px;color:#6b7280;'>"
+            "No words found for this selection."
+            "</div>"
+        )
+    top = counts.most_common(max_words)
+    max_count = top[0][1]
+    min_count = top[-1][1]
+    spread = max(1, max_count - min_count)
+    colors = ["#0f766e", "#1d4ed8", "#b45309", "#be123c", "#4338ca", "#166534"]
+
+    parts = [
+        "<div style='padding:12px;border:1px solid #e5e7eb;border-radius:8px;"
+        "background:#f8fafc;line-height:2.2;'>"
+    ]
+    for word, count in top:
+        norm = (count - min_count) / spread
+        size = int(13 + (norm * 28))
+        color = colors[hash(word) % len(colors)]
+        parts.append(
+            f"<span title='count={count}' "
+            f"style='display:inline-block;margin:0 8px 6px 0;"
+            f"font-size:{size}px;font-weight:600;color:{color};'>{word}</span>"
+        )
+    parts.append("</div>")
+    return "".join(parts)
 
 
 def _compute_ci(df: pd.DataFrame, col: str = "overall_bias") -> pd.DataFrame:
@@ -408,6 +459,40 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
             search.strip().lower(), na=False, regex=False
         )
         filtered = filtered[mask]
+
+    st.subheader("Word cloud")
+    wc1, wc2 = st.columns([1, 2])
+    with wc1:
+        group_mode = st.selectbox(
+            "Group by",
+            ["source", "model", "model+source"],
+            index=0,
+            key="comment_cloud_group_mode",
+        )
+
+    if group_mode == "source":
+        group_series = filtered["source"].map(lambda s: SOURCE_LABELS.get(str(s), str(s)))
+    elif group_mode == "model":
+        group_series = filtered["model"].astype(str)
+    else:
+        group_series = filtered.apply(
+            lambda r: f"{r['model']} | {SOURCE_LABELS.get(str(r['source']), str(r['source']))}",
+            axis=1,
+        )
+
+    group_values = sorted(group_series.unique().tolist())
+    with wc2:
+        sel_group = st.selectbox(
+            "Selection",
+            group_values if group_values else ["(none)"],
+            key="comment_cloud_group_value",
+        )
+
+    cloud_counts: Counter[str] = Counter()
+    if group_values:
+        for text in filtered[group_series == sel_group]["comment"].fillna("").astype(str):
+            cloud_counts.update(_tokenize_comment(text))
+    st.markdown(_render_word_cloud(cloud_counts), unsafe_allow_html=True)
 
     st.caption(f"Showing {min(len(filtered), 25)} of {len(filtered)} matching rows")
 

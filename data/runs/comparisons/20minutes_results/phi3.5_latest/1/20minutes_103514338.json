@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente le récit sans une forte inclinaison politique dans la subjectivité ou l'objectif; il se concentre sur les faits de l'événement et des actions d'une personne pendant un incendie. Les invités ne sont pas clairement biaisés vers gauche ou droit, et le ton semble neutre envers toutes les perspectives politiques.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "1af9330e7254"
+}

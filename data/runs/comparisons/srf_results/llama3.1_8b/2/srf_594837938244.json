@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.05,
+  "guests_bias": -0.15,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral, informative tone, focusing on the 'Schenk mir eine Geschichte' initiative in Switzerland. It highlights the importance of preserving heritage languages and promoting early language development among children from multilingual families.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "1af9330e7254"
+}

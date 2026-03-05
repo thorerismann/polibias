@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article reports on a natural disaster in Brazil, focusing on the facts and consequences without taking a clear political stance.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "1af9330e7254"
+}

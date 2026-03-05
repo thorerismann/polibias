@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "This article appears to be a factual report on natural disasters in Brazil, with no apparent bias or political undertones.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_031185625449.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.85,
+  "treatment_bias": -0.9,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article exhibits a left-leaning bias through its critical framing of the Swiss bank's alleged involvement in illegal activities and corruption related to Iranian interests. The tone suggests disapproval towards such institutions that are perceived as facilitating these actions.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514270.json",
+  "prompt_hash": "1af9330e7254"
+}

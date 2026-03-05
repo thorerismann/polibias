@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic selection, but the framing is slightly left-leaning due to its focus on supporting multilingual families and promoting early language development in their native languages. The treatment of the subject is generally balanced, with quotes from both parents and project leaders. However, the overall tone suggests a slight bias towards supporting the integration of migrants into Swiss society through language education.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_594837938244.json",
+  "prompt_hash": "1af9330e7254"
+}

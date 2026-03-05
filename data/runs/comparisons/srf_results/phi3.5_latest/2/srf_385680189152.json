@@ -1,0 +1,12 @@
+{
+  "subject_bias": -1.0,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": null,
+  "confidence": 1.0,
+  "comment": "The article shows a strong left-leaning bias by critiquing Poland's judiciary and conservative government policies ('Nothing Gutes', 'bestial'). The framing is consistently critical of the rightist PiS party.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "1af9330e7254"
+}

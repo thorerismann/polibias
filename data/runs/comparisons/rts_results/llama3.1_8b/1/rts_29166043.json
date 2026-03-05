@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.1,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to slightly left-leaning view on the subject, focusing on the risks and consequences of the landslide without taking a clear stance. The language used is objective, but some quotes from local authorities may be seen as slightly more favorable to the left.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

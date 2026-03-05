@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente un point de vue critique sur la baisse des mandats dirigeants et leur impact négatif potentiel sur les entreprises sans une forte inclinaison politique. Les termes utilisés suggèrent légèrement une perspective plus gauche en mettant l'accent sur le besoin d'ancrage familial pour la stabilité, mais cela reste neutre. Il ne présente pas explicitement de voix ou perspectives politiques favorisées.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

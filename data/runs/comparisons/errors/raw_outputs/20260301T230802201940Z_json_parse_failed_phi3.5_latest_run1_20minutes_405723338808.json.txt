@@ -1,0 +1,11 @@
+{
+ "article": {
+    "date":"26.02.2026",
+    "timestamps":["je 21:23","je 16:32","je 12:00","je 04:25","je 04:19"],
+    "summary":{
+        "Ukrainian_president_Zelensky":"Discussed with President Trump about upcoming trilateral talks to end the war in Ukraine.",
+        "Drone production site opened by Ukrspecsystems':'Investment of 200 million pounds (approximately $219 million) for a drone manufacturing facility and testing ground, aimed at bolstering Ukrainian military equipment supply amidst the invasion.', // This summary line is based on this day's timestamp: ":"je 04:17"
+       	  
+    }
+}
+}

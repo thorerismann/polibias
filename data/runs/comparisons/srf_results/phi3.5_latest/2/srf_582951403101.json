@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.0,
+  "treatment_bias": -0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "The article presents factual information about Shia LaBeouf's behavior and legal consequences without displaying any political bias or favoritism towards a particular ideology. The language used is neutral, focusing solely on the events described.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "1af9330e7254"
+}

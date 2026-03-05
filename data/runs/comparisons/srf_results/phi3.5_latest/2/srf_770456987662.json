@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.2,
+  "confidence": 0.9,
+  "comment": "The article leans slightly to the left with a focus on Iran's perspective and skepticism towards US claims about their intentions. The framing suggests criticism of both sides but emphasizes more on concerns over potential conflict escalation rather than direct political alignment. Treatment bias is negative for neither side, while guests are predominantly from the left-leaning standpoint.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

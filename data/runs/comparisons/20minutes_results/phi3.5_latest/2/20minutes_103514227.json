@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a slight left-leaning bias by highlighting the positive impact of social welfare programs and advocating for their cohesion within government departments. The tone is factual with an emphasis on data from reports rather than emotional or highly partisan language, suggesting neutral framing.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "1af9330e7254"
+}

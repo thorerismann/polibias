@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -1.0,
+  "treatment_bias": -0.7,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a negative portrayal of Shia LaBeouf, focusing on his violent behavior and past controversies, which may indicate a left-leaning bias in the framing and treatment of the topic.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_582951403101.json",
+  "prompt_hash": "1af9330e7254"
+}

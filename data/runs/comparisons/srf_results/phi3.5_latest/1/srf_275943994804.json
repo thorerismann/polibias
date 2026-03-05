@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": null,
+  "confidence": 0.9,
+  "comment": "The subject matter of Jesse Jackson's civil rights activism and his affiliation with left-leaning organizations suggest a negative bias towards right ideologies; framing emphasizes justice and equality which are commonly associated with liberal values.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

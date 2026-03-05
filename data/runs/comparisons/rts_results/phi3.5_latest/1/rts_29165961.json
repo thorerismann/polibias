@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente une analyse neutre sur les tendances actuelles des mandats de dirigeants dans les grandes entreprises suisses sans prendre explicitement parti politique. Le ton est légèrement à gauche en mettant en avant la baisse du pouvoir et l’internationalisation croissante, mais cela reste objectif. Les invités mentionnés n'ont pas une forte orientation partisane claire.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

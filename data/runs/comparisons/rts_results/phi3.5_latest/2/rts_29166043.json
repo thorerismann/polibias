@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.98,
+  "comment": "L'article présente des informations factuelles sur une situation géologique sans prendre parti politique, avec un léger penchant vers la prévention et l’organisation d’évacuation pour les risques naturels.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

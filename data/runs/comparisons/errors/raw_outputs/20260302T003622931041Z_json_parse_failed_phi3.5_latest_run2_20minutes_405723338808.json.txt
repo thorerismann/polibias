@@ -1,0 +1,11 @@
+{
+ "article": {
+    "date":"26.02.2026",
+    "timescale": ["je 21:23","je 16:32","je 12:00","je 04:25"],
+    "content": [
+        {
+            "summary":"Le président ukrainien Volodymyr Zelensky a discuté avec le président américain Donald Trump sur la situation en Ukraine, planifiant des discussions trilatérales pour tenter de mettre fin à la guerre. Un échange téléphonique précédent s'est produit mercredi.",
+            "details":"Zelensky et Trump ont eu un appel qui a jeté les bases d'une réunion prévue jeudi en Angleterre, où ils discuteront de moyens pour soutenir l’approvisionnement militaire ukrainien avec des équipements importants comme les drones."
+        },
+        {
+            "summary":"Des explosions ont été entendues dans Kiev et plusieurs grandes villes du centre-sud, ce qui semble être une

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "The article leans slightly to the left due to its focus on Iran's nuclear program and criticism of US foreign policy towards it; framing is critical with a negative tone toward current negotiations and policies regarding sanctions.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_770456987662.json",
+  "prompt_hash": "1af9330e7254"
+}

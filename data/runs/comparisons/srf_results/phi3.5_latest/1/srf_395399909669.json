@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel behandelt die Cybersicherheit neutral und konzentriert sich auf informative Informationen ohne politische Vorurteile zu suggerieren. Der Ton ist leicht skeptisch gegenüber kabelloser Gerätesicherheit, was jedoch ein objektiver Fokus darauf legt, dass diese besser durch Kabel gesichert werden sollten.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

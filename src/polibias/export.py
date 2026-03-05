@@ -321,6 +321,13 @@ tr:nth-child(even) { background: #fafafa; }
                     margin: 14px 0; align-items: end; }
 .comment-controls label { display: block; font-size: 0.9em; color: #555; margin-bottom: 4px; }
 .comment-controls select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.comment-word-controls { display: grid; grid-template-columns: minmax(180px, 260px) minmax(220px, 1fr);
+                         gap: 10px; margin: 8px 0 10px; align-items: end; }
+.comment-word-controls label { display: block; font-size: 0.9em; color: #555; margin-bottom: 4px; }
+.comment-word-controls select { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 6px; }
+.comment-cloud { border: 1px solid #ddd; border-radius: 8px; background: #f8fafc;
+                 min-height: 84px; padding: 12px; line-height: 2.1; }
+.comment-cloud-empty { color: #6b7280; font-size: 0.95em; }
 .comment-box { border: 1px solid #ddd; border-radius: 8px; background: #fafafa;
                min-height: 70px; padding: 12px; white-space: pre-wrap; }
 .comment-status { font-size: 0.9em; color: #4b5563; margin: 6px 0 10px; }
@@ -364,6 +371,21 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
       <select id=\"run-select\"></select>
     </div>
   </div>
+  <div class=\"comment-word-controls\">
+    <div>
+      <label for=\"cloud-mode-select\">Word cloud grouping</label>
+      <select id=\"cloud-mode-select\">
+        <option value=\"source\">Per source</option>
+        <option value=\"model\">Per model</option>
+        <option value=\"model_source\">Per model + source</option>
+      </select>
+    </div>
+    <div>
+      <label for=\"cloud-group-select\">Word cloud selection</label>
+      <select id=\"cloud-group-select\"></select>
+    </div>
+  </div>
+  <div id=\"comment-cloud\" class=\"comment-cloud\"><span class=\"comment-cloud-empty\">Loading word cloud...</span></div>
   <div id=\"comment-status\" class=\"comment-status\">Loading explorer...</div>
   <div id=\"comment-box\" class=\"comment-box\">Select any filter(s): model, source, article, run.</div>
 </div>
@@ -376,8 +398,24 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
   const sourceSel = document.getElementById('source-select');
   const runSel = document.getElementById('run-select');
   const articleSel = document.getElementById('article-select');
+  const cloudModeSel = document.getElementById('cloud-mode-select');
+  const cloudGroupSel = document.getElementById('cloud-group-select');
+  const cloudEl = document.getElementById('comment-cloud');
   const statusEl = document.getElementById('comment-status');
   const box = document.getElementById('comment-box');
+  const stopwords = new Set([
+    'the','and','for','that','this','with','from','have','has','was','were','are','but','not',
+    'its','their','they','them','into','about','than','also','only','very','more','most','much',
+    'many','such','can','could','would','should','there','here','when','where','what','which',
+    'while','without','between','dans','avec','pour','une','des','les','est','sur','pas','plus',
+    'comme','mais','cette','cet','ces','aux','par','qui','que','sans','tout','tous','elle',
+    'elles','nous','vous','ils','leur','leurs','sein','dont','afin','der','die','das','und',
+    'ist','mit','nicht','eine','einer','einem','einen','den','dem','des','ein','auch','als',
+    'auf','für','von','bei','aus','über','durch','wird','sind','war','waren','dass','oder',
+    'zum','zur','im','am'
+  ]);
+  const tokenSplitRe = /[^A-Za-zÀ-ÖØ-öø-ÿ]+/;
+  const cloudColors = ['#0f766e','#1d4ed8','#b45309','#be123c','#4338ca','#166534'];
 
   function uniq(values) {{
     return Array.from(new Set(values)).filter(v => v !== '').sort();
@@ -399,6 +437,33 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 
   function selectedValue(sel) {{
     return sel.value === '__ALL__' ? null : sel.value;
+  }}
+
+  function labelSource(v) {{
+    const map = {{
+      rts: 'RTS',
+      jacobin: 'Jacobin',
+      the_federalist: 'The Federalist',
+      watson: 'Watson',
+      protestinfo: 'Protestinfo',
+      cathinfo: 'Cathinfo',
+      srf: 'SRF',
+      '20minutes': '20 Minutes'
+    }};
+    return map[v] || v;
+  }}
+
+  function tokenize(text) {{
+    return String(text || '')
+      .toLowerCase()
+      .split(tokenSplitRe)
+      .filter(t => t.length >= 3 && !stopwords.has(t) && !/^\\d+$/.test(t));
+  }}
+
+  function cloudKey(row, mode) {{
+    if (mode === 'model') return String(row.model);
+    if (mode === 'model_source') return String(row.model) + ' | ' + labelSource(String(row.source));
+    return labelSource(String(row.source));
   }}
 
   function filterRows() {{
@@ -459,28 +524,91 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     box.textContent = lines.join('\n\n---\n\n') + suffix;
   }}
 
+  function renderCloudWords(wordCounts) {{
+    cloudEl.innerHTML = '';
+    const entries = Array.from(wordCounts.entries()).sort((a, b) => b[1] - a[1]).slice(0, 80);
+    if (!entries.length) {{
+      const empty = document.createElement('span');
+      empty.className = 'comment-cloud-empty';
+      empty.textContent = 'No words found for this selection.';
+      cloudEl.appendChild(empty);
+      return;
+    }}
+    const maxCount = entries[0][1];
+    const minCount = entries[entries.length - 1][1];
+    const spread = Math.max(1, maxCount - minCount);
+    for (const [word, count] of entries) {{
+      const norm = (count - minCount) / spread;
+      const size = Math.round(13 + norm * 28);
+      const span = document.createElement('span');
+      span.textContent = word;
+      span.title = 'count=' + count;
+      span.style.display = 'inline-block';
+      span.style.margin = '0 8px 6px 0';
+      span.style.fontWeight = '600';
+      span.style.fontSize = size + 'px';
+      span.style.color = cloudColors[word.length % cloudColors.length];
+      cloudEl.appendChild(span);
+    }}
+  }}
+
+  function updateWordCloud() {{
+    const filtered = filterRows();
+    const mode = cloudModeSel.value;
+    const keys = uniq(filtered.map(x => cloudKey(x, mode)));
+    const current = cloudGroupSel.value;
+    setOptions(cloudGroupSel, keys);
+    if (Array.from(cloudGroupSel.options).some(o => o.value === current)) {{
+      cloudGroupSel.value = current;
+    }} else if (cloudGroupSel.options.length > 1) {{
+      cloudGroupSel.value = cloudGroupSel.options[1].value;
+    }}
+    const selected = selectedValue(cloudGroupSel);
+    if (!selected) {{
+      renderCloudWords(new Map());
+      return;
+    }}
+    const counts = new Map();
+    for (const row of filtered) {{
+      if (cloudKey(row, mode) !== selected) continue;
+      for (const tok of tokenize(row.comment)) {{
+        counts.set(tok, (counts.get(tok) || 0) + 1);
+      }}
+    }}
+    renderCloudWords(counts);
+  }}
+
   setOptions(modelSel, uniq(rows.map(x => String(x.model))));
   setOptions(sourceSel, uniq(rows.map(x => String(x.source))));
   refreshRunOptionsFromBase();
   refreshArticleOptions();
+  updateWordCloud();
   updateCommentBox();
   statusEl.textContent = `Explorer loaded: rows=${{rows.length}}, models=${{modelSel.options.length - 1}}, sources=${{sourceSel.options.length - 1}}, articles=${{articleSel.options.length - 1}}`;
 
   modelSel.addEventListener('change', () => {{
     refreshRunOptionsFromBase();
     refreshArticleOptions();
+    updateWordCloud();
     updateCommentBox();
   }});
   sourceSel.addEventListener('change', () => {{
     refreshRunOptionsFromBase();
     refreshArticleOptions();
+    updateWordCloud();
     updateCommentBox();
   }});
   runSel.addEventListener('change', () => {{
     refreshArticleOptions();
+    updateWordCloud();
     updateCommentBox();
   }});
-  articleSel.addEventListener('change', updateCommentBox);
+  articleSel.addEventListener('change', () => {{
+    updateWordCloud();
+    updateCommentBox();
+  }});
+  cloudModeSel.addEventListener('change', updateWordCloud);
+  cloudGroupSel.addEventListener('change', updateWordCloud);
 }})();
 </script>
 """
@@ -556,6 +684,11 @@ h1 {{ margin-bottom: 8px; }}
 .controls label {{ display: block; font-size: 0.9em; color: #444; margin-bottom: 3px; }}
 .controls select, .controls input {{ width: 100%; padding: 7px; border: 1px solid #ccc; border-radius: 6px; }}
 .stats {{ margin: 8px 0 12px; color: #333; }}
+.cloud-controls {{ display: grid; grid-template-columns: minmax(180px, 260px) minmax(220px, 1fr); gap: 10px; margin: 8px 0 10px; }}
+.cloud-controls label {{ display: block; font-size: 0.9em; color: #444; margin-bottom: 3px; }}
+.cloud-controls select {{ width: 100%; padding: 7px; border: 1px solid #ccc; border-radius: 6px; }}
+.word-cloud {{ border: 1px solid #ddd; border-radius: 8px; background: #f8fafc; min-height: 84px; padding: 12px; line-height: 2.1; margin-bottom: 12px; }}
+.word-cloud-empty {{ color: #6b7280; font-size: 0.95em; }}
 table {{ border-collapse: collapse; width: 100%; table-layout: fixed; }}
 th, td {{ border: 1px solid #ddd; padding: 7px; vertical-align: top; font-size: 13px; }}
 th {{ background: #f7f7f7; position: sticky; top: 0; z-index: 1; }}
@@ -576,6 +709,11 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
     <div><label for="f-text">Search comment</label><input id="f-text" type="text" placeholder="contains text"></div>
   </div>
   <div id="stats" class="stats"></div>
+  <div class="cloud-controls">
+    <div><label for="f-cloud-mode">Word cloud grouping</label><select id="f-cloud-mode"><option value="source">Per source</option><option value="model">Per model</option><option value="model_source">Per model + source</option></select></div>
+    <div><label for="f-cloud-group">Word cloud selection</label><select id="f-cloud-group"></select></div>
+  </div>
+  <div id="word-cloud" class="word-cloud"><span class="word-cloud-empty">Loading word cloud...</span></div>
   <table>
     <thead>
       <tr>
@@ -597,6 +735,22 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
   const run = document.getElementById('f-run');
   const status = document.getElementById('f-status');
   const text = document.getElementById('f-text');
+  const cloudMode = document.getElementById('f-cloud-mode');
+  const cloudGroup = document.getElementById('f-cloud-group');
+  const cloudEl = document.getElementById('word-cloud');
+  const stopwords = new Set([
+    'the','and','for','that','this','with','from','have','has','was','were','are','but','not',
+    'its','their','they','them','into','about','than','also','only','very','more','most','much',
+    'many','such','can','could','would','should','there','here','when','where','what','which',
+    'while','without','between','dans','avec','pour','une','des','les','est','sur','pas','plus',
+    'comme','mais','cette','cet','ces','aux','par','qui','que','sans','tout','tous','elle',
+    'elles','nous','vous','ils','leur','leurs','sein','dont','afin','der','die','das','und',
+    'ist','mit','nicht','eine','einer','einem','einen','den','dem','des','ein','auch','als',
+    'auf','für','von','bei','aus','über','durch','wird','sind','war','waren','dass','oder',
+    'zum','zur','im','am'
+  ]);
+  const tokenSplitRe = /[^A-Za-zÀ-ÖØ-öø-ÿ]+/;
+  const cloudColors = ['#0f766e','#1d4ed8','#b45309','#be123c','#4338ca','#166534'];
 
   function uniq(values) {{
     return Array.from(new Set(values.filter(v => v !== ''))).sort();
@@ -615,6 +769,86 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
     }}
   }}
   function selected(sel) {{ return sel.value === '__ALL__' ? '' : sel.value; }}
+  function labelSource(v) {{
+    const map = {{
+      rts: 'RTS',
+      jacobin: 'Jacobin',
+      the_federalist: 'The Federalist',
+      watson: 'Watson',
+      protestinfo: 'Protestinfo',
+      cathinfo: 'Cathinfo',
+      srf: 'SRF',
+      '20minutes': '20 Minutes'
+    }};
+    return map[v] || v;
+  }}
+  function tokenize(textValue) {{
+    return String(textValue || '')
+      .toLowerCase()
+      .split(tokenSplitRe)
+      .filter(t => t.length >= 3 && !stopwords.has(t) && !/^\\d+$/.test(t));
+  }}
+  function cloudKey(tr, mode) {{
+    if (mode === 'model') return tr.dataset.model;
+    if (mode === 'model_source') return tr.dataset.model + ' | ' + labelSource(tr.dataset.source);
+    return labelSource(tr.dataset.source);
+  }}
+  function visibleRows() {{
+    return rows.filter(tr => tr.style.display !== 'none');
+  }}
+  function renderCloudWords(wordCounts) {{
+    cloudEl.innerHTML = '';
+    const entries = Array.from(wordCounts.entries()).sort((a, b) => b[1] - a[1]).slice(0, 80);
+    if (!entries.length) {{
+      const empty = document.createElement('span');
+      empty.className = 'word-cloud-empty';
+      empty.textContent = 'No words found for this selection.';
+      cloudEl.appendChild(empty);
+      return;
+    }}
+    const maxCount = entries[0][1];
+    const minCount = entries[entries.length - 1][1];
+    const spread = Math.max(1, maxCount - minCount);
+    for (const [word, count] of entries) {{
+      const norm = (count - minCount) / spread;
+      const size = Math.round(13 + norm * 28);
+      const span = document.createElement('span');
+      span.textContent = word;
+      span.title = 'count=' + count;
+      span.style.display = 'inline-block';
+      span.style.margin = '0 8px 6px 0';
+      span.style.fontWeight = '600';
+      span.style.fontSize = size + 'px';
+      span.style.color = cloudColors[word.length % cloudColors.length];
+      cloudEl.appendChild(span);
+    }}
+  }}
+  function updateWordCloud() {{
+    const shown = visibleRows();
+    const mode = cloudMode.value;
+    const keys = uniq(shown.map(tr => cloudKey(tr, mode)));
+    const current = cloudGroup.value;
+    setOptions(cloudGroup, keys);
+    if (Array.from(cloudGroup.options).some(o => o.value === current)) {{
+      cloudGroup.value = current;
+    }} else if (cloudGroup.options.length > 1) {{
+      cloudGroup.value = cloudGroup.options[1].value;
+    }}
+    const selectedGroup = selected(cloudGroup);
+    if (!selectedGroup) {{
+      renderCloudWords(new Map());
+      return;
+    }}
+    const counts = new Map();
+    for (const tr of shown) {{
+      if (cloudKey(tr, mode) !== selectedGroup) continue;
+      const textCell = tr.lastElementChild ? tr.lastElementChild.textContent : '';
+      for (const tok of tokenize(textCell)) {{
+        counts.set(tok, (counts.get(tok) || 0) + 1);
+      }}
+    }}
+    renderCloudWords(counts);
+  }}
   function refreshOptions() {{
     const m = selected(model), s = selected(source), r = selected(run), st = selected(status);
     const base = rows.filter(tr =>
@@ -642,6 +876,7 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
       if (ok) shown += 1;
     }}
     stats.textContent = `Showing ${{shown}} / ${{rows.length}} rows`;
+    updateWordCloud();
   }}
 
   setOptions(model, uniq(rows.map(tr => tr.dataset.model)));
@@ -656,6 +891,8 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
     el.addEventListener('change', () => {{ refreshOptions(); apply(); }});
   }}
   text.addEventListener('input', apply);
+  cloudMode.addEventListener('change', updateWordCloud);
+  cloudGroup.addEventListener('change', updateWordCloud);
 }})();
 </script>
 </body>

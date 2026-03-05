@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.3,
+  "treatment_bias": 0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to be neutral, with a slight leaning towards the right due to its focus on Helene Fischer's career and personal life. However, it also raises some criticisms of the music industry, which may indicate a slightly left-leaning bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

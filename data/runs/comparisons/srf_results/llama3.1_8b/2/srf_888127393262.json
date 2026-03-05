@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral tone, focusing on Helene Fischer's career and personal life without clear left or right leanings. However, the framing bias is slightly negative due to the mention of the 'Debatte um Kinderlied' (debate about children's song) which may imply some controversy.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

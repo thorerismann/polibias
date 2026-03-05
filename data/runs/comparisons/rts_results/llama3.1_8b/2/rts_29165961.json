@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral topic selection, but with a slight left-leaning framing bias due to the emphasis on the negative consequences of short-term thinking in business. The treatment bias is slightly right-leaning as it quotes experts who express concerns about the volatility and instability caused by frequent leadership changes.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29165961.json",
+  "prompt_hash": "1af9330e7254"
+}

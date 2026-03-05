@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "L'article présente le récit sans une forte inclinaison politique et traite les événements factuels objectivement. La framing est légèrement à l’endroit de la gestion du personnel en raison d'une critique implicitement positive des actions prises par Jessica Moretti, mais cela ne suggère pas un parti pris clair ou une manchette partisane. Les invités non mentionnés sont neutres et il n'y a aucun signe distinctif de favoritisme politique dans le traitement.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "1af9330e7254"
+}

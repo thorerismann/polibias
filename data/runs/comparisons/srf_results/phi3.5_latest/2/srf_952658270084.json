@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.95,
+  "guests_bias": -1.0,
+  "confidence": 0.97,
+  "comment": "The article heavily frames the subject with negative bias towards Andrew and suggests a left-leaning perspective by criticizing his actions in relation to Epstein's case. The treatment of guests or quoted speakers also shows clear disfavor toward him.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_952658270084.json",
+  "prompt_hash": "1af9330e7254"
+}

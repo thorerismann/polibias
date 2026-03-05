@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": 0.3,
+  "guests_bias": 0.5,
+  "confidence": 0.8,
+  "comment": "Article presents a balanced view of the Iran-US negotiations, but with a slightly pro-US bias in the framing and treatment of information.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "1af9330e7254"
+}

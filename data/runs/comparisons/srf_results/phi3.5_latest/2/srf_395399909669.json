@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a neutral stance on the subject with slight left-leaning framing by emphasizing security concerns and suggesting cautious behavior without overt political bias or favoritism towards any side. The focus is more informative than persuasive.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

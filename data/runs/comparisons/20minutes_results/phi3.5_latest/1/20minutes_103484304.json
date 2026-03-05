@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.7,
+  "treatment_bias": null,
+  "guests_bias": null,
+  "confidence": 0.8,
+  "comment": "The subject matter is political but not inherently biased towards a side; framing suggests negative sentiment toward US actions.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "1af9330e7254"
+}

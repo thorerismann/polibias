@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -1.0,
+  "treatment_bias": -1.0,
+  "guests_bias": -1.0,
+  "confidence": 0.9,
+  "comment": "This article appears to be neutral in its subject selection, but leans left in its framing and treatment of the topic. The quoted speaker is a representative of the UN, which is generally considered a left-leaning organization.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "20minutes_103514466.json",
+  "prompt_hash": "1af9330e7254"
+}

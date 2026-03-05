@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.2,
+  "guests_bias": -0.3,
+  "confidence": 0.85,
+  "comment": "L'article présente une légère tendance à la critique des politiques de l'administration Trump envers les Nations Unies et son impact sur le financement américain au budget général de l'ONU, suggérant un cadre plus conservateur ou critiqué. Les guests bias est négatif car il mentionne que Melania Trump a été comparée à une star du cinéma dans ce contexte politique.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514363.json",
+  "prompt_hash": "1af9330e7254"
+}

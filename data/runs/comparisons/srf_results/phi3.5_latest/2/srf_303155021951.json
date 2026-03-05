@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Der Artikel konzentriert sich ausschliesslich auf die K-Pop-Industrie ohne politische Ausrichtung und behandelt das Thema neutral. Keine spezifischen Bias in Bezug auf linke oder rechte Perspektiven sind erkennbar.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_303155021951.json",
+  "prompt_hash": "1af9330e7254"
+}

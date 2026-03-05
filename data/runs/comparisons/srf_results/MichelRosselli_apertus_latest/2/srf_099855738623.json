@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.85,
+  "comment": "Der Artikel behandelt die Geschichte von Uschi Waser, einem ehemaligen Verdingkind, und ihre Forderung nach einer systematischen Aufarbeitung administrativer Zwangsmassnahmen in der Schweiz. Die Berichterstattung ist neutral und fokussiert sich auf die persönliche Geschichte und die Forderungen der Betroffenen.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

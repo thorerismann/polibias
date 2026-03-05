@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral to left-leaning perspective on the events surrounding the Constellation fire, focusing on the owner's account and raising questions about her actions during the incident.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "20minutes_103514338.json",
+  "prompt_hash": "1af9330e7254"
+}

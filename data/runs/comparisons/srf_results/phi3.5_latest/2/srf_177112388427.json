@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.15,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a slight left-leaning bias in its subject selection and framing by emphasizing the importance of shared values between EU nations and Switzerland; however, it remains largely neutral with no clear favoritism towards either political side for treatment or guests' perspectives. The confidence level is high due to consistent language suggesting cooperation without overt partisan rhetoric.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_177112388427.json",
+  "prompt_hash": "1af9330e7254"
+}

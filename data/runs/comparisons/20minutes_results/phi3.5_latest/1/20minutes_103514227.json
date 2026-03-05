@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article maintains a slight left-leaning bias by discussing social welfare positively and focusing on the success of these programs in reducing poverty rates within Vaud canton; however, it remains fairly neutral overall with no strong favoritism towards either political side. The guests or speakers are not distinctly from one political spectrum.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514227.json",
+  "prompt_hash": "1af9330e7254"
+}

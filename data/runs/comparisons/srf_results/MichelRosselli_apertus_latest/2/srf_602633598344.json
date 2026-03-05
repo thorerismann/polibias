@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "Der Artikel behandelt das Thema der Einschränkung von sozialen Medien für Kinder und Jugendliche aus einer neutralen Perspektive, ohne eine klare politische Richtung zu verfolgen.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": 0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": -0.4,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral subject, but with a slightly left-leaning framing and treatment bias due to the mention of Macron's government and the appointment of Macronist ministers.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.8,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.9,
+  "guests_bias": -1.0,
+  "confidence": 0.85,
+  "comment": "The article is a neutral obituary for Jesse Jackson, focusing on his life and achievements as a civil rights leader. The language used is respectful and favorable to the left, but does not contain any overtly biased or sensationalized content.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

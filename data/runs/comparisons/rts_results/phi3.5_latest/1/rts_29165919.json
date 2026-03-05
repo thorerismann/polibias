@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente un sujet neutre sur les réactions au déploiement de personnel de sécurité dans certaines caisses de chômage sans prendre explicitement parti politique. Le ton suggère une légère frustration face aux complications causées par le nouveau système informatique, ce qui pourrait être perçu comme un angle plus sympathique envers les demandeurs d'emploi ou ceux affectés négativement par la situation.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29165919.json",
+  "prompt_hash": "1af9330e7254"
+}

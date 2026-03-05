@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article discusses a scientific study on human decomposition and biocomposting in Switzerland with neutral language indicating slight left-leaning bias due to the progressive nature of alternative funeral practices mentioned. There are no specific guests or quotations that indicate political leanings.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "1af9330e7254"
+}

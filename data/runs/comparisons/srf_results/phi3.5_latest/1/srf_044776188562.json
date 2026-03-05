@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Der Artikel behandelt den Wu-Tang Clan neutral mit einem leichten Fokus auf ihre historischen Errungenschaften und Einfluss im Hip-Hop ohne klare politische Vorurteile zu implizieren. Die Beschreibung ist informativ und stilistisch neutrale, was einen minimalistischen Bias nahelegt.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "1af9330e7254"
+}

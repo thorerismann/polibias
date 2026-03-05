@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une critique d'une décision prise par un organisme (EF), mettant en lumière ce qu'il perçoit comme une mauvaise gestion de la situation et le manque apparent de soutien pour les victimes mineures. Le ton est légèrement accusateur à l'égard des actions d'EF, suggérant un léger biais gauche sur ces questions sociales. Il n'y a pas une représentation claire ou significative du point de vue politique dans le texte.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103512116.json",
+  "prompt_hash": "1af9330e7254"
+}

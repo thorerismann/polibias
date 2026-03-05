@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article focuses on a criminal case without explicit left or right bias, maintaining neutral tone and factual reporting.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_657625305892.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,3 @@
+{
+ "summary": "Les négociations entre les États-Unis et l'Iran ont connu une reprise après la pause, avec Donald Trump exprimant son insatisfaction concernant le rythme des discussions. Les menaces américaines de frappes sur l'Iran poussent plusieurs compagnies aériennes à annuler leurs vols vers Téhéran et Israël est désormais considéré comme dangereux pour les non essentiels, avec une augmentation du nombre d'annulations. Les discussions techniques suivront en Suisse la semaine prochaine."
+}

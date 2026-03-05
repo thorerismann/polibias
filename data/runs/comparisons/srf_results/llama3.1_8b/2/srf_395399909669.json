@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.7,
+  "comment": "The article presents a neutral and informative tone, highlighting the importance of cybersecurity for devices beyond just computers. The author's focus on the risks associated with wireless peripherals and the need for regular firmware updates suggests a balanced approach.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_395399909669.json",
+  "prompt_hash": "1af9330e7254"
+}

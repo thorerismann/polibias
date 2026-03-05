@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.6,
+  "guests_bias": -0.8,
+  "confidence": 0.9,
+  "comment": "L'article choisit de mettre en avant les nominations au gouvernement français dans le contexte du groupe macroniste et montre une légère tendance à favoriser ce biais politique avec peu d’équilibre entre la gauche et la droite mentionnées. La source est l'AFP, qui elle-même n'est pas nécessairement unanime en termes de ligne éditoriale.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514345.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.65,
+  "treatment_bias": -0.65,
+  "guests_bias": null,
+  "confidence": 0.9,
+  "comment": "Der Artikel spricht Jesse Jacksons Beitrag zum Bürgerrechtsbewegung und seine Verbindung mit der Demokratischen Partei positiv hervor, was eine leichte linksorientierte Subjekt-Bias impliziert. Die Sprache ist ebenfalls eher left-leaning in Bezug auf Framing und Treatment Bias sowie die Fehlende Präsenz politischer Persönlichkeiten unterstützt diese Schlussfolgerung.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_275943994804.json",
+  "prompt_hash": "1af9330e7254"
+}

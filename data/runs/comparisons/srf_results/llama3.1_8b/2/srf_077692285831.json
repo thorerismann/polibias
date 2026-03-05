@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.5,
+  "framing_bias": 0.0,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.8,
+  "confidence": 0.7,
+  "comment": "The article discusses the death of a public figure, Van Der Beek, and focuses on the family's financial struggles and the support they received from friends and celebrities. The tone is neutral and informative, with some subtle left-leaning undertones in the treatment of the subject.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "1af9330e7254"
+}

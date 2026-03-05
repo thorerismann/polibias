@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.2,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article's tone is neutral, but the framing of Peter Greene's death as 'plötzlich' (sudden) and the emphasis on his age may be slightly left-leaning.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

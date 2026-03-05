@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Der Artikel beschreibt lediglich die Todesumstände von Peter Greene ohne politische Ausrichtung oder Vorurteile in der Sprache und im Kontext. Alle Informationen sind neutral und zu einem historischen Ereignis konzentriert.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_190328315691.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente une situation d'actualité sans fournir de points de vue politiquement partisans spécifiques ou favoriser un côté politique particulier dans le sujet sur les services américains de l'immigration et la gestion des réfugiés. Le ton est principalement informatif, avec quelques critiques implicites concernant les procédures actuelles.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "1af9330e7254"
+}

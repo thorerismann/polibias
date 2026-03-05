@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.33,
+  "framing_bias": -0.67,
+  "treatment_bias": -0.44,
+  "guests_bias": -1.0,
+  "confidence": 0.8,
+  "comment": "The article presents a critical perspective on Switzerland's past treatment of the Romani people, highlighting the need for further accountability and recognition of historical injustices.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_099855738623.json",
+  "prompt_hash": "1af9330e7254"
+}

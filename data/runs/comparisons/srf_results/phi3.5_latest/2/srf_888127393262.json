@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "Der Artikel konzentriert sich hauptsächlich auf Helene Fischer's Karriere ohne explizite politische Ausrichtung und behandelt ihre Erfahrungen neutral. Der leicht negative Framing könnte ein subtiler Hinweis darauf hindeuten, dass die Autorin möglicherweise eine bestimmte Perspektive oder Meinung hat, aber dies ist nicht ausreichend präsentiert für einen höheren Bias-Score. Die Gesamtneutralität und Fokus auf persönliche Erfahrungen unterstreichen den neutralen Schwerpunkt.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to be neutral in its subject selection, but shows a slight left-leaning bias in framing and treatment of the topic. However, the lack of clear political actors makes it difficult to determine a strong guests bias.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_336840085057.json",
+  "prompt_hash": "1af9330e7254"
+}

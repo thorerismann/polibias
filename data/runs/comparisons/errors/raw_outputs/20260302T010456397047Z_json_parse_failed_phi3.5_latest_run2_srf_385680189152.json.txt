@@ -1,0 +1,8 @@
+{
+  "subject_bright": -0.8,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.65,
+  "guests_bias": -0.6,
+  "confidence": 0.92,
+  "comment": "The article demonstrates a left-leaning bias by critiquing the politicization of Poland's judiciary and framing it as harmful to democracy ('Nothing Gutes'). The guests are implicitly more critical towards rightist policies (PiS), further supporting this lean. Treatment is slightly biased against actions taken by a conservative government, indicated through phrases like 'bestial', suggesting disapproval of the PiS's approach."
+}

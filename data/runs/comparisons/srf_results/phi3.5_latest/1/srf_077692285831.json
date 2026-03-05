@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": 0.0,
+  "treatment_bias": -1.0,
+  "guests_bias": 0.0,
+  "confidence": 1.0,
+  "comment": "Der Artikel behandelt die Situation von Van Der Beeks Familie nach seinem Tod neutral und konzentriert sich auf ihre Unterstützung, ohne politische Ansichten zu fördern oder vorzuschreiben. Keine expliziten Zeichen für links- oder rechtsorientierte Framing sind erkennbar.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_077692285831.json",
+  "prompt_hash": "1af9330e7254"
+}

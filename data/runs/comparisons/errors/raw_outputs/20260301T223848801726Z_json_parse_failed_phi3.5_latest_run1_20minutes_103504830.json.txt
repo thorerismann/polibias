@@ -1,0 +1,16 @@
+{
+ "ArticleSummary": {
+    "MainTheme": "L'influence croissante d'internet sur la propagation des sectes, remplaçant les anciennes méthodes de recrutement par l'utilisation d'influenceurs en ligne et le cybermanipulation.",
+    "KeyCharactersAndEvents": [
+      {
+        "Character": "Un groupe charismatique sur Roblox",
+        "EventDescription": "Les joueurs étaient initiés à une forme de spiritualité immatérielle associée au symbole du jeu, conduisant finalement aux pratiques coercitives."
+      },
+       {
+         "Character": "Anciens membres et recruteurs",
+        "EventDescription": "'Robert Shinn' est un exemple d’individu qui a utilisé son influence pour entraîner des jeunes danseurs dans une situation manipulatrice, prenant contrôle de leurs revenus."
+      }
+    ],
+    "ImpactAndStatistics": {
+        "IncreaseInSectsReported": true, 
+        

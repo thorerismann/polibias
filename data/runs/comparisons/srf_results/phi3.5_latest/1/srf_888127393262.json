@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Der Artikel stellt Helene Fischer als erfolgreichen deutschen Sängerin ohne explizite links- oder rechtsorientierte Perspektive dar und behandelt ihre Karriere im Kontext ihrer musikalischen Errungenschaften gleichermaßen objektiv. Die erwähnte Debatte über Kinderlieder deutet jedoch leicht auf eine linke, familienfreundliche Ausrichtung hin.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_888127393262.json",
+  "prompt_hash": "1af9330e7254"
+}

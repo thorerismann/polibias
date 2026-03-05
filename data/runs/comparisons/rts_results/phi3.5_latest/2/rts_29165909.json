@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.6,
+  "treatment_bias": -0.6,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "L'article présente principalement une équipe perdante et montre un léger biais à gauche envers Genève-Servette avec des descriptions négatives de leurs performances. Le ton est légèrement pessimiste mais reste neutre sans clairement favoriser le côté droit ou laïc.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "rts_29165909.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.7,
+  "treatment_bias": -0.65,
+  "guests_bias": null,
+  "confidence": 0.9,
+  "comment": "L'article présente principalement un point de vue critique sur les relations entre les États-Unis et l'Iran avec une légère tendance à la gauche en raison du ton accusateur vis-à-vis des actions iraniennes et d'une mise en avant possiblement excessive des efforts diplomatiques américains. Les sources ou invités ne sont pas clairement politiquement alignés, donc guests_bias est indéterminée.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103484304.json",
+  "prompt_hash": "1af9330e7254"
+}

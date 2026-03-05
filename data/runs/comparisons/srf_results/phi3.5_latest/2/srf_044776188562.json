@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.9,
+  "comment": "Der Artikel ist leicht linksorientiert mit Fokus auf die historischen und kulturellen Beiträge eines Hip-Hop-Gruppens, ohne starke politische Propagierung. Die Sprache scheint neutral zu sein, aber der Kontext deutet darauf hin, dass er den Einfluss einer afroamerikanischen Gemeinschaft feiert.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "srf_044776188562.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -0.1,
+  "treatment_bias": -0.2,
+  "guests_bias": null,
+  "confidence": 0.95,
+  "comment": "The article focuses on a human interest story involving potential negligence by immigration authorities without directly favoring any particular political ideology or leaning. The framing suggests some criticism of the handling of refugee cases which may imply a slight left-leaning bias in concern for vulnerable populations, but it remains largely neutral and factual.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514149.json",
+  "prompt_hash": "1af9330e7254"
+}

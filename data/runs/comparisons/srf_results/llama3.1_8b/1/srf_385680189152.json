@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.4,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.2,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article appears to be neutral in its presentation of the topic, but slightly leans left due to the criticism of the PiS party and the EU's involvement. The framing is also somewhat left-leaning, as it highlights the potential negative consequences of the reform for democracy.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_385680189152.json",
+  "prompt_hash": "1af9330e7254"
+}

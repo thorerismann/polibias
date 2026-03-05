@@ -1,0 +1,12 @@
+{
+  "subject_bias": 0.0,
+  "framing_bias": -1.0,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.0,
+  "confidence": 0.75,
+  "comment": "The article covers a variety of animal stories, including a wolf swimming across the Vierwaldstättersee and a kormoran with an angel hook in its beak. The framing is neutral, focusing on the unusual events rather than political leanings.",
+  "status": "ok",
+  "model": "MichelRosselli/apertus:latest",
+  "article": "srf_392731782990.json",
+  "prompt_hash": "1af9330e7254"
+}

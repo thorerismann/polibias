@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.3,
+  "treatment_bias": -0.1,
+  "guests_bias": 0.0,
+  "confidence": 0.8,
+  "comment": "The article presents a balanced view of the topic, discussing both sides of the issue and providing examples from various countries. However, it leans slightly to the left in its framing and tone, emphasizing the potential negative effects of social media on children and advocating for stricter regulations.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "srf_602633598344.json",
+  "prompt_hash": "1af9330e7254"
+}

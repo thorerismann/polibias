@@ -1,0 +1,12 @@
+{
+  "subject_bias": null,
+  "framing_bias": -0.7,
+  "treatment_bias": null,
+  "guests_bias": -0.65,
+  "confidence": 0.8,
+  "comment": "The article frames the issue with a negative slant towards online manipulation and control by certain groups or individuals, suggesting left-leaning bias in framing. Treatment of guests seems to imply skepticism about their motives without clear evidence for extreme right views.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103504830.json",
+  "prompt_hash": "1af9330e7254"
+}

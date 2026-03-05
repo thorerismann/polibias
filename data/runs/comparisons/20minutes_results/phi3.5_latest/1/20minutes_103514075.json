@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.1,
+  "framing_bias": -0.2,
+  "treatment_bias": -0.3,
+  "guests_bias": 0.0,
+  "confidence": 0.95,
+  "comment": "The article has a slight left-leaning bias due to its focus on scientific and environmental aspects of human decomposition for biocomposting purposes; the tone is neutral but slightly critical towards traditional funeral practices. No specific political guests or speakers are quoted.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514075.json",
+  "prompt_hash": "1af9330e7254"
+}

@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.2,
+  "framing_bias": -0.1,
+  "treatment_bias": 0.0,
+  "guests_bias": 0.3,
+  "confidence": 0.8,
+  "comment": "The article presents a neutral tone, discussing the potential risks and consequences of the landslide without taking a clear stance. The inclusion of expert opinions from both Michael Digout and Olivier Perruchoud suggests a balanced approach.",
+  "status": "ok",
+  "model": "llama3.1:8b",
+  "article": "rts_29166043.json",
+  "prompt_hash": "1af9330e7254"
+}

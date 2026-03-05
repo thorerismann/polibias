@@ -1,0 +1,12 @@
+{
+  "subject_bias": -0.7,
+  "framing_bias": -0.9,
+  "treatment_bias": -0.8,
+  "guests_bias": -1.0,
+  "confidence": 0.95,
+  "comment": "The article clearly leans left-leaning due to its critical framing of the U.S.-imposed blockade on Cuba and focuses heavily on humanitarian impacts from an apparent Cuban perspective or a source sympathetic to it. The guests bias is also negative towards any rightist viewpoint, suggesting no such perspectives are quoted.",
+  "status": "ok",
+  "model": "phi3.5:latest",
+  "article": "20minutes_103514466.json",
+  "prompt_hash": "1af9330e7254"
+}
