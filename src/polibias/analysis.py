@@ -11,6 +11,18 @@ import pandas as pd
 
 _WS_RE = re.compile(r"\s+")
 _TAG_RE = re.compile(r"<[^>]+>")
+_ONE_OFF_MODELS = {"claude-sonnet-4-6", "codex", "gemini3"}
+
+
+def model_cohort(model: Any) -> str:
+    return "one-off" if str(model) in _ONE_OFF_MODELS else "baseline"
+
+
+def model_display_name(model: Any) -> str:
+    label = str(model)
+    if label in _ONE_OFF_MODELS:
+        return f"{label} [one-off]"
+    return label
 
 
 # ---------- Bias results ----------
@@ -30,6 +42,8 @@ def build_bias_frame(settings) -> pd.DataFrame:
             rows.append({
                 "source": source,
                 "model": model,
+                "model_cohort": model_cohort(model),
+                "model_display": model_display_name(model),
                 "article_id": p.stem,
                 "subject_bias": data.get("subject_bias"),
                 "framing_bias": data.get("framing_bias"),
