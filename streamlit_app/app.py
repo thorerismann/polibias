@@ -55,6 +55,7 @@ _HOVER_STYLE = dict(
 )
 
 TOKEN_SPLIT_RE = re.compile(r"[^A-Za-zÀ-ÖØ-öø-ÿ]+")
+ONE_OFF_MODELS = {"claude-sonnet-4-6", "codex", "gemini3"}
 COMMENT_STOPWORDS = {
     "the", "and", "for", "that", "this", "with", "from", "have", "has", "was", "were", "are",
     "but", "not", "its", "their", "they", "them", "into", "about", "than", "also", "only",
@@ -66,6 +67,26 @@ COMMENT_STOPWORDS = {
     "der", "die", "das", "und", "ist", "mit", "nicht", "eine", "einer", "einem", "einen",
     "den", "dem", "des", "ein", "auch", "als", "auf", "für", "von", "bei", "aus", "über",
     "durch", "wird", "sind", "war", "waren", "dass", "oder", "zum", "zur", "im", "am",
+    "article", "articles", "comment", "comments", "report", "reports", "reporting", "bias",
+    "biased", "political", "politically", "politique", "politiques", "model", "models",
+    "source", "sources", "left", "right", "leaning", "neutral", "identifiable", "clear",
+    "clearly", "appears", "overall", "focus", "focuses", "focused", "cover", "covers",
+    "covered", "coverage", "discusses", "describes", "described", "presents", "presented",
+    "article", "larticle", "factuel", "factual", "factuelle", "factually",
+}
+DESCRIPTIVE_SUFFIXES = (
+    "able", "ible", "al", "ant", "ary", "ative", "ed", "ent", "ful", "ial", "ible", "ic",
+    "ical", "ish", "ive", "less", "ory", "ous", "y", "aire", "ant", "euse", "eux", "if",
+    "ifs", "ive", "ives", "ique", "iques",
+)
+DESCRIPTIVE_WHITELIST = {
+    "alarmist", "balanced", "balance", "critical", "cautious", "controversial", "diplomatic",
+    "ethical", "favorable", "favourable", "hostile", "humanitarian", "negative", "positive",
+    "optimistic", "pessimistic", "sympathetic", "technical", "tense", "urgent", "neutre",
+    "neutres", "negative", "negatif", "negative", "positif", "positive", "positives",
+    "critique", "critiques", "equilibre", "equilibree", "equilibrees", "prudent",
+    "prudente", "prudentes", "favorable", "favorables", "hostile", "humanitaire",
+    "humanitaires", "alarmiste", "alarmistes", "technique", "techniques", "tendu", "tendue",
 }
 
 
@@ -74,6 +95,12 @@ COMMENT_STOPWORDS = {
 @st.cache_data
 def load_bias() -> pd.DataFrame:
     df = pd.read_csv(BIAS_CSV)
+    if "model_cohort" not in df.columns:
+        df["model_cohort"] = df["model"].map(lambda m: "one-off" if str(m) in ONE_OFF_MODELS else "baseline")
+    if "model_display" not in df.columns:
+        df["model_display"] = df["model"].map(
+            lambda m: f"{m} [one-off]" if str(m) in ONE_OFF_MODELS else str(m)
+        )
     df["source_label"] = df["source"].map(SOURCE_LABELS).fillna(df["source"])
     df["comment"] = df["comment"].fillna("").astype(str)
     for col in [*BIAS_DIMS, "overall_bias", "confidence"]:
@@ -109,8 +136,15 @@ def _style(fig: go.Figure) -> go.Figure:
 
 
 def _tokenize_comment(text: str) -> list[str]:
-    tokens = [t for t in TOKEN_SPLIT_RE.split(text.lower()) if len(t) >= 3]
-    return [t for t in tokens if t not in COMMENT_STOPWORDS and not t.isdigit()]
+    tokens = [t for t in TOKEN_SPLIT_RE.split(text.lower()) if len(t) >= 4]
+    filtered = [
+        t for t in tokens
+        if t not in COMMENT_STOPWORDS
+        and not t.isdigit()
+        and not t.startswith("http")
+        and (t in DESCRIPTIVE_WHITELIST or t.endswith(DESCRIPTIVE_SUFFIXES))
+    ]
+    return filtered
 
 
 def _render_word_cloud(counts: Counter[str], max_words: int = 80) -> str:
@@ -146,7 +180,7 @@ def _render_word_cloud(counts: Counter[str], max_words: int = 80) -> str:
 def _compute_ci(df: pd.DataFrame, col: str = "overall_bias") -> pd.DataFrame:
     """Mean ± 95% CI per model (z-approximation, fine for n ≥ 30)."""
     rows = []
-    for model, grp in df.groupby("model"):
+    for model, grp in df.groupby("model_display"):
         vals = grp[col].dropna()
         n = len(vals)
         if n < 2:
@@ -229,7 +263,7 @@ def _chart_scatter_by_model(df: pd.DataFrame) -> go.Figure:
     d["comment_hover"] = d["comment"].map(_wrap_hover)
     fig = px.scatter(
         d,
-        x="model",
+        x="model_display",
         y="overall_bias",
         color="source_label",
         custom_data=[
@@ -237,7 +271,7 @@ def _chart_scatter_by_model(df: pd.DataFrame) -> go.Figure:
             "subject_bias", "framing_bias", "treatment_bias", "guests_bias",
             "comment_hover",
         ],
-        labels={"model": "Model", "overall_bias": "Overall bias", "source_label": "Source"},
+        labels={"model_display": "Model", "overall_bias": "Overall bias", "source_label": "Source"},
         title="Overall bias by model",
     )
     fig.update_yaxes(range=[-1.2, 1.2])
@@ -263,8 +297,8 @@ def _chart_scatter_by_model(df: pd.DataFrame) -> go.Figure:
 def _chart_box_by_model(df: pd.DataFrame) -> go.Figure:
     fig = px.box(
         df,
-        x="model", y="overall_bias",
-        color="model", points="all",
+        x="model_display", y="overall_bias",
+        color="model_display", points="all",
         title="Bias distribution by model",
     )
     fig.update_yaxes(range=[-1.2, 1.2])
@@ -274,7 +308,7 @@ def _chart_box_by_model(df: pd.DataFrame) -> go.Figure:
 
 def _chart_subbias_bar(df: pd.DataFrame) -> go.Figure:
     rows = []
-    for model, grp in df.groupby("model"):
+    for model, grp in df.groupby("model_display"):
         for dim in BIAS_DIMS:
             rows.append({
                 "model": model,
@@ -299,13 +333,13 @@ def _chart_source_dots(df: pd.DataFrame, source: str) -> go.Figure:
     if src_df.empty:
         return go.Figure()
     src_df["comment_hover"] = src_df["comment"].map(_wrap_hover)
-    model_order = sorted(src_df["model"].unique())
+    model_order = sorted(src_df["model_display"].unique())
     color_map = {m: PALETTE[i % len(PALETTE)] for i, m in enumerate(model_order)}
     article_order = sorted(src_df["article_id"].unique())
 
     fig = go.Figure()
     for model in model_order:
-        mdf = src_df[src_df["model"] == model]
+        mdf = src_df[src_df["model_display"] == model]
         custom = np.column_stack([
             mdf["run"].astype(str),
             mdf["confidence"].fillna(0).astype(float),
@@ -363,7 +397,7 @@ def _tab_overview(df: pd.DataFrame) -> None:
 
     st.subheader("Model summary")
     summary = (
-        df.groupby("model")
+        df.groupby(["model_display", "model_cohort"])
         .agg(
             overall_mean=("overall_bias", "mean"),
             overall_std=("overall_bias", "std"),
@@ -383,12 +417,20 @@ def _tab_overview(df: pd.DataFrame) -> None:
 
 
 def _tab_model_comparison(df: pd.DataFrame) -> None:
-    st.plotly_chart(_chart_scatter_by_model(df), use_container_width=True)
+    cohort_options = ["All", "baseline", "one-off"]
+    sel_cohort = st.segmented_control(
+        "Model cohort",
+        cohort_options,
+        default="All",
+        selection_mode="single",
+    )
+    model_df = df if sel_cohort in (None, "All") else df[df["model_cohort"] == sel_cohort]
+    st.plotly_chart(_chart_scatter_by_model(model_df), use_container_width=True)
     c1, c2 = st.columns(2)
     with c1:
-        st.plotly_chart(_chart_box_by_model(df), use_container_width=True)
+        st.plotly_chart(_chart_box_by_model(model_df), use_container_width=True)
     with c2:
-        st.plotly_chart(_chart_subbias_bar(df), use_container_width=True)
+        st.plotly_chart(_chart_subbias_bar(model_df), use_container_width=True)
 
 
 def _tab_source_explorer(df: pd.DataFrame) -> None:
@@ -435,10 +477,10 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
     filtered = df if sel_source == "All" else df[df["source"] == sel_source]
 
     with c2:
-        models = ["All"] + sorted(filtered["model"].unique())
+        models = ["All"] + sorted(filtered["model_display"].unique())
         sel_model = st.selectbox("Model", models)
 
-    filtered = filtered if sel_model == "All" else filtered[filtered["model"] == sel_model]
+    filtered = filtered if sel_model == "All" else filtered[filtered["model_display"] == sel_model]
 
     with c3:
         articles = ["All"] + sorted(filtered["article_id"].unique())
@@ -473,10 +515,10 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
     if group_mode == "source":
         group_series = filtered["source"].map(lambda s: SOURCE_LABELS.get(str(s), str(s)))
     elif group_mode == "model":
-        group_series = filtered["model"].astype(str)
+        group_series = filtered["model_display"].astype(str)
     else:
         group_series = filtered.apply(
-            lambda r: f"{r['model']} | {SOURCE_LABELS.get(str(r['source']), str(r['source']))}",
+            lambda r: f"{r['model_display']} | {SOURCE_LABELS.get(str(r['source']), str(r['source']))}",
             axis=1,
         )
 
@@ -504,7 +546,7 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
         comment = row["comment"].strip() or "(no comment)"
         src_label = SOURCE_LABELS.get(str(row["source"]), str(row["source"]))
         header = (
-            f"**{row['model']}** | {src_label} | `{row['article_id']}` | "
+            f"**{row['model_display']}** | {src_label} | `{row['article_id']}` | "
             f"run {row['run']} | bias **{row['overall_bias']:.3f}** | "
             f"conf {row['confidence']:.2f} | `{row['status']}`"
         )
@@ -561,7 +603,7 @@ def _tab_explanation(df: pd.DataFrame) -> None:
     st.subheader("Current filtered view")
     col1, col2, col3 = st.columns(3)
     col1.metric("Visible scores", len(df))
-    col2.metric("Visible models", df["model"].nunique())
+    col2.metric("Visible models", df["model_display"].nunique())
     col3.metric("Visible sources", df["source"].nunique())
 
 
@@ -590,7 +632,7 @@ def main() -> None:
             format_func=lambda s: SOURCE_LABELS.get(s, s),
         )
 
-        all_models = sorted(df_full["model"].unique())
+        all_models = sorted(df_full["model_display"].unique())
         sel_models = st.multiselect("Models", all_models, default=all_models)
 
         all_runs = sorted(df_full["run"].unique())
@@ -609,7 +651,7 @@ def main() -> None:
     if sel_sources:
         df = df[df["source"].isin(sel_sources)]
     if sel_models:
-        df = df[df["model"].isin(sel_models)]
+        df = df[df["model_display"].isin(sel_models)]
     if sel_runs:
         df = df[df["run"].isin([int(r) for r in sel_runs])]
     if status_filter == "ok only":

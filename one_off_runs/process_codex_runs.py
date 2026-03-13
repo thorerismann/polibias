@@ -1,3 +1,4 @@
+import argparse
 import concurrent.futures
 import hashlib
 import json
@@ -108,6 +109,16 @@ def _invoke_codex(prompt: str, body: str, schema_path: Path) -> dict[str, Any]:
         return json.loads(raw)
 
 
+def _existing_status(out_path: Path) -> str | None:
+    if not out_path.exists():
+        return None
+    try:
+        payload = json.loads(out_path.read_text(encoding="utf-8"))
+    except Exception:
+        return "invalid"
+    return str(payload.get("status") or "")
+
+
 def _score_file(
     source: str,
     web_file: Path,
@@ -115,11 +126,14 @@ def _score_file(
     prompt: str,
     phash: str,
     schema_path: Path,
+    *,
+    retry_fallbacks: bool = False,
 ) -> str:
     out_dir = Path(f"data/runs/comparisons/{source}_results/{MODEL_NAME}/{run_id}")
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / web_file.name
-    if out_path.exists():
+    status = _existing_status(out_path)
+    if status and not (retry_fallbacks and status in {"fallback", "invalid"}):
         return f"SKIP {source}/{web_file.name} run={run_id}"
 
     payload = json.loads(web_file.read_text(encoding="utf-8"))
@@ -151,6 +165,17 @@ def _score_file(
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--source", action="append", dest="sources")
+    parser.add_argument("--article", action="append", dest="articles")
+    parser.add_argument("--run", action="append", type=int, dest="runs")
+    parser.add_argument("--retry-fallbacks", action="store_true")
+    parser.add_argument("--max-workers", type=int, default=MAX_WORKERS)
+    args = parser.parse_args()
+
+    source_filter = set(args.sources or [])
+    article_filter = set(args.articles or [])
+    run_ids = tuple(args.runs or RUN_IDS)
     prompt = _prompt_text()
     phash = _prompt_hash(prompt)
     schema_path = _schema_path()
@@ -159,17 +184,30 @@ def main() -> None:
         if not source_dir.is_dir():
             continue
         source = source_dir.name
+        if source_filter and source not in source_filter:
+            continue
         for file_path in sorted(source_dir.glob("*.json")):
-            for run_id in RUN_IDS:
+            if article_filter and file_path.name not in article_filter:
+                continue
+            for run_id in run_ids:
                 tasks.append((source, file_path, run_id))
 
     print(f"Prompt hash: {phash}")
     print(f"Total tasks: {len(tasks)}")
     saved = 0
     skipped = 0
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=args.max_workers) as pool:
         futures = [
-            pool.submit(_score_file, s, p, r, prompt, phash, schema_path)
+            pool.submit(
+                _score_file,
+                s,
+                p,
+                r,
+                prompt,
+                phash,
+                schema_path,
+                retry_fallbacks=args.retry_fallbacks,
+            )
             for s, p, r in tasks
         ]
         for i, fut in enumerate(concurrent.futures.as_completed(futures), start=1):

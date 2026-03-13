@@ -14,6 +14,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+from polibias.analysis import model_cohort, model_display_name
+
 
 # ---------- Chart builders ----------
 
@@ -25,10 +27,47 @@ _SOURCE_LABELS = {
     "protestinfo": "Protestinfo",
     "cathinfo": "Cathinfo",
 }
+_COMMENT_STOPWORDS = {
+    "the", "and", "for", "that", "this", "with", "from", "have", "has", "was", "were", "are",
+    "but", "not", "its", "their", "they", "them", "into", "about", "than", "also", "only",
+    "very", "more", "most", "much", "many", "such", "can", "could", "would", "should", "there",
+    "here", "when", "where", "what", "which", "while", "without", "between", "dans", "avec",
+    "pour", "une", "des", "les", "est", "sur", "pas", "plus", "comme", "mais", "cette", "cet",
+    "ces", "aux", "par", "qui", "que", "sans", "tout", "tous", "elle", "elles", "nous", "vous",
+    "ils", "leur", "leurs", "sein", "dont", "afin", "der", "die", "das", "und", "ist", "mit",
+    "nicht", "eine", "einer", "einem", "einen", "den", "dem", "des", "ein", "auch", "als",
+    "auf", "für", "von", "bei", "aus", "über", "durch", "wird", "sind", "war", "waren", "dass",
+    "oder", "zum", "zur", "im", "am", "article", "articles", "comment", "comments", "report",
+    "reports", "reporting", "bias", "biased", "political", "politically", "politique",
+    "politiques", "model", "models", "source", "sources", "left", "right", "leaning", "neutral",
+    "identifiable", "clear", "clearly", "appears", "overall", "focus", "focuses", "focused",
+    "cover", "covers", "covered", "coverage", "discusses", "describes", "described", "presents",
+    "presented", "larticle", "factuel", "factual", "factuelle", "factually",
+}
+_COMMENT_DESCRIPTIVE_SUFFIXES = (
+    "able", "ible", "al", "ant", "ary", "ative", "ed", "ent", "ful", "ial", "ic", "ical", "ish",
+    "ive", "less", "ory", "ous", "y", "aire", "euse", "eux", "if", "ifs", "ives", "ique", "iques",
+)
+_COMMENT_DESCRIPTIVE_WHITELIST = {
+    "alarmist", "balanced", "balance", "critical", "cautious", "controversial", "diplomatic",
+    "ethical", "favorable", "favourable", "hostile", "humanitarian", "negative", "positive",
+    "optimistic", "pessimistic", "sympathetic", "technical", "tense", "urgent", "neutre",
+    "neutres", "negatif", "positif", "positives", "critique", "critiques", "equilibre",
+    "equilibree", "equilibrees", "prudent", "prudente", "prudentes", "favorables",
+    "humanitaire", "humanitaires", "alarmiste", "alarmistes", "technique", "techniques",
+    "tendu", "tendue",
+}
 
 
 def _label_source(source: str) -> str:
     return _SOURCE_LABELS.get(source, str(source))
+
+
+def _with_model_metadata(df: pd.DataFrame) -> pd.DataFrame:
+    out = df.copy()
+    out["model_cohort"] = out["model"].map(model_cohort)
+    out["model_display"] = out["model"].map(model_display_name)
+    return out
 
 
 def _style_hover(fig: go.Figure) -> go.Figure:
@@ -55,12 +94,12 @@ def _wrap_for_hover(value: str, width: int = 85) -> str:
 
 
 def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
-    df = bdf.copy()
+    df = _with_model_metadata(bdf)
     df["source_label"] = df["source"].astype(str).map(_label_source)
     df["comment_hover"] = df["comment"].fillna("").astype(str).map(_wrap_for_hover)
     fig = px.scatter(
         df,
-        x="model",
+        x="model_display",
         y="overall_bias",
         color="source_label",
         custom_data=[
@@ -76,7 +115,7 @@ def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
         hover_data={
             "source_label": False,
             "source": False,
-            "model": True,
+            "model_display": True,
             "run": True,
             "article_id": True,
             "overall_bias": ":.3f",
@@ -88,7 +127,7 @@ def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
             "comment": True,
         },
         labels={
-            "model": "Model",
+            "model_display": "Model",
             "overall_bias": "Overall bias",
             "source_label": "Article source",
         },
@@ -114,17 +153,18 @@ def _bias_scatter_by_model(bdf: pd.DataFrame) -> go.Figure:
 
 
 def _bias_box_by_model(bdf: pd.DataFrame) -> go.Figure:
-    fig = px.box(bdf, x="model", y="overall_bias", points="all", color="model",
+    df = _with_model_metadata(bdf)
+    fig = px.box(df, x="model_display", y="overall_bias", points="all", color="model_display",
                  title="Bias variance by model")
     fig.update_layout(showlegend=False)
     return _style_hover(fig)
 
 
 def _bias_heatmap(bdf: pd.DataFrame) -> go.Figure:
-    bdf = bdf.copy()
+    bdf = _with_model_metadata(bdf)
     bdf["article_str"] = bdf["article_id"].astype(str)
     pivot = bdf.pivot_table(
-        index="article_str", columns="model", values="overall_bias", aggfunc="mean",
+        index="article_str", columns="model_display", values="overall_bias", aggfunc="mean",
     )
     height = max(400, 30 * len(pivot))
     fig = px.imshow(
@@ -138,8 +178,8 @@ def _bias_heatmap(bdf: pd.DataFrame) -> go.Figure:
 def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
     """Dot chart across the 4 sub-bias dimensions (article x bias, model as color)."""
     dims = ["subject_bias", "framing_bias", "treatment_bias", "guests_bias"]
-    long_df = bdf.melt(
-        id_vars=["model", "article_id", "run", "comment", "source"],
+    long_df = _with_model_metadata(bdf).melt(
+        id_vars=["model", "model_display", "article_id", "run", "comment", "source"],
         value_vars=dims,
         var_name="dimension",
         value_name="bias",
@@ -150,7 +190,7 @@ def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
         long_df,
         x="article_str",
         y="bias",
-        color="model",
+        color="model_display",
         facet_col="dimension",
         facet_col_wrap=2,
         hover_data={
@@ -171,7 +211,7 @@ def _subbias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
 
 def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
     """Dot chart with same underlying article-model-run data as the heatmap family."""
-    df = bdf.copy()
+    df = _with_model_metadata(bdf)
     df["article_str"] = df["article_id"].astype(str)
     df["comment"] = df["comment"].fillna("").astype(str)
     df["comment_hover"] = df["comment"].map(_wrap_for_hover)
@@ -182,7 +222,7 @@ def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
         .sort_values("source_label")
         .reset_index(drop=True)
     )
-    model_order = sorted(df["model"].dropna().astype(str).unique())
+    model_order = sorted(df["model_display"].dropna().astype(str).unique())
     palette = px.colors.qualitative.Plotly
     color_map = {m: palette[i % len(palette)] for i, m in enumerate(model_order)}
 
@@ -200,13 +240,13 @@ def _overall_bias_dot_by_article(bdf: pd.DataFrame) -> go.Figure:
         article_order = src_df["article_str"].dropna().astype(str).unique().tolist()
 
         for model in model_order:
-            model_df = src_df[src_df["model"].astype(str) == model]
+            model_df = src_df[src_df["model_display"].astype(str) == model]
             if model_df.empty:
                 continue
 
             custom_data = np.column_stack(
                 [
-                    model_df["model"].astype(str),
+                    model_df["model_display"].astype(str),
                     model_df["run"].astype(str),
                     model_df["source_label"].astype(str),
                     model_df["subject_bias"],
@@ -340,10 +380,10 @@ def _df_to_html(df: pd.DataFrame, float_fmt: str = "%.3f") -> str:
 
 def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     cols = [
-        "model", "run", "source", "article_id", "comment", "subject_bias", "framing_bias",
+        "model_display", "run", "source", "article_id", "comment", "subject_bias", "framing_bias",
         "treatment_bias", "guests_bias", "overall_bias", "confidence", "status",
     ]
-    data = bdf.copy()
+    data = _with_model_metadata(bdf)
     for col in cols:
         if col not in data.columns:
             data[col] = ""
@@ -403,17 +443,9 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
   const cloudEl = document.getElementById('comment-cloud');
   const statusEl = document.getElementById('comment-status');
   const box = document.getElementById('comment-box');
-  const stopwords = new Set([
-    'the','and','for','that','this','with','from','have','has','was','were','are','but','not',
-    'its','their','they','them','into','about','than','also','only','very','more','most','much',
-    'many','such','can','could','would','should','there','here','when','where','what','which',
-    'while','without','between','dans','avec','pour','une','des','les','est','sur','pas','plus',
-    'comme','mais','cette','cet','ces','aux','par','qui','que','sans','tout','tous','elle',
-    'elles','nous','vous','ils','leur','leurs','sein','dont','afin','der','die','das','und',
-    'ist','mit','nicht','eine','einer','einem','einen','den','dem','des','ein','auch','als',
-    'auf','für','von','bei','aus','über','durch','wird','sind','war','waren','dass','oder',
-    'zum','zur','im','am'
-  ]);
+  const stopwords = new Set({json.dumps(sorted(_COMMENT_STOPWORDS), ensure_ascii=False)});
+  const descriptiveSuffixes = {json.dumps(sorted(_COMMENT_DESCRIPTIVE_SUFFIXES), ensure_ascii=False)};
+  const descriptiveWhitelist = new Set({json.dumps(sorted(_COMMENT_DESCRIPTIVE_WHITELIST), ensure_ascii=False)});
   const tokenSplitRe = /[^A-Za-zÀ-ÖØ-öø-ÿ]+/;
   const cloudColors = ['#0f766e','#1d4ed8','#b45309','#be123c','#4338ca','#166534'];
 
@@ -457,12 +489,18 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     return String(text || '')
       .toLowerCase()
       .split(tokenSplitRe)
-      .filter(t => t.length >= 3 && !stopwords.has(t) && !/^\\d+$/.test(t));
+      .filter(t =>
+        t.length >= 4 &&
+        !stopwords.has(t) &&
+        !/^\\d+$/.test(t) &&
+        !t.startsWith('http') &&
+        (descriptiveWhitelist.has(t) || descriptiveSuffixes.some(s => t.endsWith(s)))
+      );
   }}
 
   function cloudKey(row, mode) {{
-    if (mode === 'model') return String(row.model);
-    if (mode === 'model_source') return String(row.model) + ' | ' + labelSource(String(row.source));
+    if (mode === 'model') return String(row.model_display);
+    if (mode === 'model_source') return String(row.model_display) + ' | ' + labelSource(String(row.source));
     return labelSource(String(row.source));
   }}
 
@@ -472,7 +510,7 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     const r = selectedValue(runSel);
     const a = selectedValue(articleSel);
     return rows.filter(x =>
-      (!m || String(x.model) === m) &&
+      (!m || String(x.model_display) === m) &&
       (!s || String(x.source) === s) &&
       (!r || String(x.run) === r) &&
       (!a || String(x.article_id) === a)
@@ -483,7 +521,7 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     const m = selectedValue(modelSel);
     const s = selectedValue(sourceSel);
     const filtered = rows.filter(x =>
-      (!m || String(x.model) === m) &&
+      (!m || String(x.model_display) === m) &&
       (!s || String(x.source) === s)
     );
     const current = runSel.value;
@@ -496,7 +534,7 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     const s = selectedValue(sourceSel);
     const r = selectedValue(runSel);
     const filtered = rows.filter(x =>
-      (!m || String(x.model) === m) &&
+      (!m || String(x.model_display) === m) &&
       (!s || String(x.source) === s) &&
       (!r || String(x.run) === r)
     );
@@ -514,7 +552,7 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
 
     const lines = filtered.slice(0, 10).map(x => {{
       const c = x.comment && String(x.comment).trim() ? String(x.comment) : '(no comment)';
-      return `model=${{x.model}} | run=${{x.run}} | source=${{x.source}} | article=${{x.article_id}}\n` +
+      return `model=${{x.model_display}} | run=${{x.run}} | source=${{x.source}} | article=${{x.article_id}}\n` +
              `status=${{x.status}} | conf=${{x.confidence}} | overall=${{x.overall_bias}}\n` +
              `subject=${{x.subject_bias}}, framing=${{x.framing_bias}}, treatment=${{x.treatment_bias}}, guests=${{x.guests_bias}}\n` +
              `comment: ${{c}}`;
@@ -578,7 +616,7 @@ def _comment_explorer_html(bdf: pd.DataFrame) -> str:
     renderCloudWords(counts);
   }}
 
-  setOptions(modelSel, uniq(rows.map(x => String(x.model))));
+  setOptions(modelSel, uniq(rows.map(x => String(x.model_display))));
   setOptions(sourceSel, uniq(rows.map(x => String(x.source))));
   refreshRunOptionsFromBase();
   refreshArticleOptions();
@@ -621,10 +659,10 @@ def build_comment_explorer_page(
     title: str = "polibias — Comment Explorer",
 ) -> None:
     cols = [
-        "model", "run", "source", "article_id", "status", "confidence", "overall_bias",
+        "model_display", "run", "source", "article_id", "status", "confidence", "overall_bias",
         "subject_bias", "framing_bias", "treatment_bias", "guests_bias", "comment",
     ]
-    data = bias_df.copy()
+    data = _with_model_metadata(bias_df)
     for col in cols:
         if col not in data.columns:
             data[col] = ""
@@ -636,7 +674,7 @@ def build_comment_explorer_page(
 
     rows_html: list[str] = []
     for row in data.to_dict(orient="records"):
-        model = _fmt(row["model"])
+        model = _fmt(row["model_display"])
         run = _fmt(row["run"])
         source = _fmt(row["source"])
         article_id = _fmt(row["article_id"])
@@ -738,17 +776,9 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
   const cloudMode = document.getElementById('f-cloud-mode');
   const cloudGroup = document.getElementById('f-cloud-group');
   const cloudEl = document.getElementById('word-cloud');
-  const stopwords = new Set([
-    'the','and','for','that','this','with','from','have','has','was','were','are','but','not',
-    'its','their','they','them','into','about','than','also','only','very','more','most','much',
-    'many','such','can','could','would','should','there','here','when','where','what','which',
-    'while','without','between','dans','avec','pour','une','des','les','est','sur','pas','plus',
-    'comme','mais','cette','cet','ces','aux','par','qui','que','sans','tout','tous','elle',
-    'elles','nous','vous','ils','leur','leurs','sein','dont','afin','der','die','das','und',
-    'ist','mit','nicht','eine','einer','einem','einen','den','dem','des','ein','auch','als',
-    'auf','für','von','bei','aus','über','durch','wird','sind','war','waren','dass','oder',
-    'zum','zur','im','am'
-  ]);
+  const stopwords = new Set({json.dumps(sorted(_COMMENT_STOPWORDS), ensure_ascii=False)});
+  const descriptiveSuffixes = {json.dumps(sorted(_COMMENT_DESCRIPTIVE_SUFFIXES), ensure_ascii=False)};
+  const descriptiveWhitelist = new Set({json.dumps(sorted(_COMMENT_DESCRIPTIVE_WHITELIST), ensure_ascii=False)});
   const tokenSplitRe = /[^A-Za-zÀ-ÖØ-öø-ÿ]+/;
   const cloudColors = ['#0f766e','#1d4ed8','#b45309','#be123c','#4338ca','#166534'];
 
@@ -786,7 +816,13 @@ tbody tr:nth-child(even) {{ background: #fafafa; }}
     return String(textValue || '')
       .toLowerCase()
       .split(tokenSplitRe)
-      .filter(t => t.length >= 3 && !stopwords.has(t) && !/^\\d+$/.test(t));
+      .filter(t =>
+        t.length >= 4 &&
+        !stopwords.has(t) &&
+        !/^\\d+$/.test(t) &&
+        !t.startsWith('http') &&
+        (descriptiveWhitelist.has(t) || descriptiveSuffixes.some(s => t.endsWith(s)))
+      );
   }}
   function cloudKey(tr, mode) {{
     if (mode === 'model') return tr.dataset.model;
@@ -942,7 +978,9 @@ def build_html_report(
                           'Scale: -1.0 (left) to +1.0 (right).</p>')
         if not report["model_summary"].empty:
             summary = report["model_summary"].copy()
-            display_cols = ["model"]
+            summary["cohort"] = summary["model"].map(model_cohort)
+            summary["model"] = summary["model"].map(model_display_name)
+            display_cols = ["model", "cohort"]
             for c in ["overall_bias_mean", "subject_bias_mean", "framing_bias_mean",
                       "treatment_bias_mean", "guests_bias_mean",
                       "overall_bias_std", "n_ok", "n_recovered", "n_fallback"]:
@@ -955,7 +993,9 @@ def build_html_report(
         html_parts.append('<p class="section-note">If the CI crosses zero, the model\'s '
                           'bias is not statistically distinguishable from neutral.</p>')
         if not report["model_ci"].empty:
-            html_parts.append(_df_to_html(report["model_ci"]))
+            model_ci = report["model_ci"].copy()
+            model_ci["model"] = model_ci["model"].map(model_display_name)
+            html_parts.append(_df_to_html(model_ci))
 
         # --- ICC table ---
         html_parts.append("<h2>Within-model consistency (ICC)</h2>")
@@ -963,7 +1003,9 @@ def build_html_report(
                           'ICC(1,1) measures how consistently a model scores the same article '
                           'across runs. 0 = random, 1 = perfect. Below 0.4 is poor.</p>')
         if not report["icc_per_model"].empty:
-            html_parts.append(_df_to_html(report["icc_per_model"]))
+            icc_per_model = report["icc_per_model"].copy()
+            icc_per_model["model"] = icc_per_model["model"].map(model_display_name)
+            html_parts.append(_df_to_html(icc_per_model))
 
         # --- Fleiss' kappa ---
         kappa = report["fleiss_kappa"]
@@ -1041,7 +1083,8 @@ def build_article_summaries(bias_df: pd.DataFrame) -> pd.DataFrame:
 
 def build_latex_table(bias_df: pd.DataFrame) -> str:
     """Generate a LaTeX table of mean bias per model."""
-    summary = bias_df.groupby("model").agg(
+    report_df = _with_model_metadata(bias_df)
+    summary = report_df.groupby("model_display").agg(
         n=("overall_bias", "count"),
         subject=("subject_bias", "mean"),
         framing=("framing_bias", "mean"),
@@ -1063,7 +1106,7 @@ def build_latex_table(bias_df: pd.DataFrame) -> str:
     ]
     for _, r in summary.iterrows():
         lines.append(
-            f"{r['model']} & {r['n']:.0f} & {r['subject']:.3f} & {r['framing']:.3f} "
+            f"{r['model_display']} & {r['n']:.0f} & {r['subject']:.3f} & {r['framing']:.3f} "
             f"& {r['treatment']:.3f} & {r['guests']:.3f} & {r['overall']:.3f} "
             f"& {r['confidence']:.3f} \\\\" 
         )
@@ -1167,6 +1210,8 @@ def run_export_cross_source(
         )
         .sort_values(["source", "overall_bias_mean"], ascending=[True, False])
     )
+    by_source_model["cohort"] = by_source_model["model"].map(model_cohort)
+    by_source_model["model"] = by_source_model["model"].map(model_display_name)
     by_source_dim = (
         bias_df.groupby("source", as_index=False)
         .agg(
@@ -1182,9 +1227,9 @@ def run_export_cross_source(
         .sort_values("source")
     )
     source_model_heat = (
-        bias_df.groupby(["source", "model"], as_index=False)["overall_bias"]
+        _with_model_metadata(bias_df).groupby(["source", "model_display"], as_index=False)["overall_bias"]
         .mean()
-        .pivot(index="source", columns="model", values="overall_bias")
+        .pivot(index="source", columns="model_display", values="overall_bias")
     )
     fig = px.imshow(
         source_model_heat,
