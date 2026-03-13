@@ -502,40 +502,6 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
         )
         filtered = filtered[mask]
 
-    st.subheader("Word cloud")
-    wc1, wc2 = st.columns([1, 2])
-    with wc1:
-        group_mode = st.selectbox(
-            "Group by",
-            ["source", "model", "model+source"],
-            index=0,
-            key="comment_cloud_group_mode",
-        )
-
-    if group_mode == "source":
-        group_series = filtered["source"].map(lambda s: SOURCE_LABELS.get(str(s), str(s)))
-    elif group_mode == "model":
-        group_series = filtered["model_display"].astype(str)
-    else:
-        group_series = filtered.apply(
-            lambda r: f"{r['model_display']} | {SOURCE_LABELS.get(str(r['source']), str(r['source']))}",
-            axis=1,
-        )
-
-    group_values = sorted(group_series.unique().tolist())
-    with wc2:
-        sel_group = st.selectbox(
-            "Selection",
-            group_values if group_values else ["(none)"],
-            key="comment_cloud_group_value",
-        )
-
-    cloud_counts: Counter[str] = Counter()
-    if group_values:
-        for text in filtered[group_series == sel_group]["comment"].fillna("").astype(str):
-            cloud_counts.update(_tokenize_comment(text))
-    st.markdown(_render_word_cloud(cloud_counts), unsafe_allow_html=True)
-
     st.caption(f"Showing {min(len(filtered), 25)} of {len(filtered)} matching rows")
 
     if filtered.empty:
@@ -561,6 +527,45 @@ def _tab_comment_explorer(df: pd.DataFrame) -> None:
 
     if len(filtered) > 25:
         st.caption("Narrow your filters or use the search box to see more results.")
+
+def _tab_wordcloud(df: pd.DataFrame) -> None:
+    st.subheader("Wordcloud")
+    st.markdown(
+        "Visualze the most common words in the comments per model and per source."
+    )
+
+    wc1, wc2 = st.columns([1, 2])
+    with wc1:
+        group_mode = st.selectbox(
+            "Group by",
+            ["source", "model", "model+source"],
+            index=0,
+            key="comment_cloud_group_mode",
+        )
+
+    if group_mode == "source":
+        group_series = df["source"].map(lambda s: SOURCE_LABELS.get(str(s), str(s)))
+    elif group_mode == "model":
+        group_series = df["model_display"].astype(str)
+    else:
+        group_series = df.apply(
+            lambda r: f"{r['model_display']} | {SOURCE_LABELS.get(str(r['source']), str(r['source']))}",
+            axis=1,
+        )
+
+    group_values = sorted(group_series.unique().tolist())
+    with wc2:
+        sel_group = st.selectbox(
+            "Selection",
+            group_values if group_values else ["(none)"],
+            key="comment_cloud_group_value",
+        )
+
+    cloud_counts: Counter[str] = Counter()
+    if group_values:
+        for text in df[group_series == sel_group]["comment"].fillna("").astype(str):
+            cloud_counts.update(_tokenize_comment(text))
+    st.markdown(_render_word_cloud(cloud_counts), unsafe_allow_html=True)
 
 
 def _tab_explanation(df: pd.DataFrame) -> None:
@@ -662,12 +667,13 @@ def main() -> None:
         return
 
     # ── tabs ───────────────────────────────────────────────────────────────────
-    tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
         "Explanation",
         "Overview",
         "Model Comparison",
         "Source Explorer",
         "Comment Explorer",
+        "Wordcloud"
     ])
 
     with tab1:
@@ -680,6 +686,8 @@ def main() -> None:
         _tab_source_explorer(df)
     with tab5:
         _tab_comment_explorer(df)
+    with tab6:
+        _tab_wordcloud(df)
 
 
 if __name__ == "__main__":
